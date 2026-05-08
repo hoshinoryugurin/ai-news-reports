@@ -1,0 +1,107 @@
+<!doctype html>
+<html lang="ja">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>AIニュース週間サマリー - 2026-05-09</title>
+  <meta name="description" content="爬虫類環境OS・ホームオートメーション・AIエージェント開発に効きそうなニュース要約">
+  <style>
+:root { color-scheme: light; --fg:#1f2937; --muted:#667085; --line:#dfe7df; --accent:#4f8f57; --bg:#f6fbf6; --card:#fff; }
+body { margin:0; font-family:-apple-system,BlinkMacSystemFont,"Hiragino Sans","Yu Gothic",sans-serif; color:var(--fg); background:linear-gradient(180deg,#eef8ee,#fff 300px); line-height:1.75; }
+main, header, footer { max-width:980px; margin:auto; padding:28px 20px; }
+header { padding-top:42px; }
+h1 { font-size:clamp(28px,5vw,42px); margin:0 0 8px; letter-spacing:.02em; }
+h2 { font-size:22px; margin:28px 0 12px; padding-left:10px; border-left:5px solid var(--accent); }
+h3 { font-size:18px; margin:3px 0 8px; }
+p { margin:0 0 12px; }
+ul { margin:8px 0 14px 1.2em; padding:0; }
+li { margin:5px 0; }
+a { color:#2563eb; word-break:break-all; }
+.subtitle, .date, footer { color:var(--muted); }
+.card, .note, .hero-card { background:rgba(255,255,255,.93); border:1px solid var(--line); border-radius:20px; box-shadow:0 12px 30px rgba(31,41,55,.06); }
+.card, .note { padding:16px 18px; margin:14px 0; }
+.note { background:#fff9e8; border-color:#f2df9b; }
+.hero-card { padding:24px; margin:8px 0 22px; }
+.eyebrow { color:var(--accent); font-weight:700; font-size:13px; text-transform:uppercase; letter-spacing:.08em; }
+.actions, .links { display:flex; gap:10px; flex-wrap:wrap; margin-top:12px; }
+.button { display:inline-block; padding:9px 14px; border-radius:999px; background:var(--accent); color:white; text-decoration:none; font-weight:700; }
+.button.secondary { background:#eef4ff; color:#1d4ed8; }
+.grid { display:grid; grid-template-columns:repeat(auto-fit,minmax(260px,1fr)); gap:14px; }
+.date { font-size:13px; font-weight:700; }
+nav { display:flex; gap:12px; flex-wrap:wrap; margin-top:18px; }
+nav a { color:#355e3b; font-weight:700; }
+.label { font-weight:700; color:#355e3b; }
+.report-main { max-width:860px; }
+.back { margin-bottom:20px; }
+@page { size:A4; margin:16mm 14mm; }
+@media print { body { background:#fff; } header, main, footer { padding:0; } .back { display:none; } .card, .note { break-inside:avoid; box-shadow:none; } }
+</style>
+</head>
+<body>
+  <main class="report-main">
+    <p class="back"><a href="../index.html">← 一覧へ戻る</a></p>
+    <section class="hero-card"><div class="eyebrow">AI news report</div><h1>AIニュース週間サマリー - 2026-05-09</h1></section>
+<ul>
+<li>対象期間: 2026-05-03, 2026-05-04, 2026-05-05, 2026-05-06, 2026-05-07, 2026-05-08, 2026-05-09</li>
+<li><span class="label">入力レポート:</span> <code>2026-05-03.md</code>, <code>2026-05-04.md</code>, <code>2026-05-05.md</code>, <code>2026-05-06.md</code>, <code>2026-05-07.md</code>, <code>2026-05-08.md</code>, <code>2026-05-09.md</code></li>
+</ul>
+<section class="card"><h2>1. エージェント運用は「賢さ」より「境界・承認・監査」へ寄ってきた</h2>
+<p>今週いちばん強かった流れは、AIエージェントをただ強いモデルとして使うのではなく、sandbox、approval、network policy、credentials、telemetry、rollbackを備えた運用システムとして扱う方向だった。OpenAIのCodex安全運用、Tilde.runのtransaction/rollback、Mendralのagent harness設計論、OpenClawのcore縮小/LTS方針が同じ方向を向いている。</p>
+<ul>
+<li>実務上の意味: AIに任せる範囲、失敗時の止まり方、危険操作の承認、外部接続、ログ保存をコード側で固定する必要がある。</li>
+<li>ぬしへの意味: Reptile Environment OSでも、最初から「AIが家電を操作する」ではなく、読むだけ・通知候補・承認つき操作・限定自動制御を分けるのが安全。</li>
+</ul>
+</section>
+<section class="card"><h2>2. AIレビューとセキュリティは、分類・指標・二重化が重要になってきた</h2>
+<p>GitHub Copilot code reviewのコメントタイプ別メトリクス、Rubber Duckの複数モデルレビュー、MCP経由のsecret/dependency scanning、AI時代の脆弱性開示文化の揺れが目立った。AIは脆弱性を見つける側にも、悪用に近づく側にも使えるので、検知・分類・採用率・監査ログが運用の中心になる。</p>
+<ul>
+<li>実務上の意味: AIレビューは「便利だった」で終わらせず、どんな種類の問題を見つけたか、どれだけ採用されたか、別モデルや人間がどう確認したかを残すべき。</li>
+<li>ぬしへの意味: 温湿度異常も「アラート数」だけではなく、欠測・急変・レンジ逸脱・活動量低下などタイプ別に保存し、ぬしの採用/却下をフィードバックとして残すと育てやすい。</li>
+</ul>
+</section>
+<section class="card"><h2>3. 開発環境はIDE/CLI/Cloud/Issueを横断するagentic workflowへ</h2>
+<p>GitHub Copilot in Visual Studio / VS Code、Copilot CLI enterprise-managed plugins、Copilot cloud agentのSecrets/Variables、Google I/Oのagentic era、Gemini CLI/Antigravity系の流れが重なった。AI開発はチャット画面だけではなく、Issue、PR、端末、ブラウザ、クラウド実行環境をまたいで進む形になっている。</p>
+<ul>
+<li>実務上の意味: エージェントに任せるタスクは、Issue化、環境変数/秘密情報管理、実行ログ、成果物、レビュー、rollbackまで含めたワークフロー設計が必要。</li>
+<li>ぬしへの意味: センサー受信API、ダッシュボード、Home Assistant連携、通知文面改善などを小さなIssueに切り、AIが作業して人間がレビューする形が向いている。</li>
+</ul>
+</section>
+<section class="card"><h2>4. 「理由」と「理解」を残すことがAI時代の安全性と保守性になる</h2>
+<p>Anthropicの「Teaching Claude why」、Natural Language Autoencoders、Agent Skills、Cognitive Debt、Simon Willisonのvibe coding/agentic engineering論が同じ課題を示した。AIが速く作れるほど、人間やチームの理解が追いつかない。だから、行動だけでなく、理由・原則・仕様・判断ログを残す必要がある。</p>
+<ul>
+<li>実務上の意味: AIにコードや判断を出させるなら、なぜその設計にしたか、何を参照したか、何を危険として避けたかを成果物に含めるべき。</li>
+<li>ぬしへの意味: 爬虫類環境の異常判定では「なぜ通知したか」「なぜ操作しない判断にしたか」を残すことが、後から飼育記録と照合するうえで大事。</li>
+</ul>
+</section>
+<section class="card"><h2>5. 音声・マルチモーダル・最適化は、将来の観察係AIの材料になりそう</h2>
+<p>OpenAIのRealtime Voice API、WebRTC基盤、DeepMind AlphaEvolve、Gemma 4高速化、NVIDIA/ServiceNowのdesktop agent、Google I/OのAI/Cloud/Android発表予告など、家庭内で使えるAI UI・推論コスト・制御ルール探索の材料も増えた。</p>
+<ul>
+<li>実務上の意味: 音声UI、画像/グラフ理解、低コスト推論、アルゴリズム探索を組み合わせると、AIは「見る・聞く・記録する・改善案を出す」係になれる。</li>
+<li>ぬしへの意味: ケージ作業中に声で状態確認したり、温湿度ログから制御ルール候補を提案したり、カメラと飼育記録を合わせて活動変化を読む方向が現実的になってきた。</li>
+</ul>
+</section>
+<section class="note"><h2>ユグ的に気になるもの特集</h2>
+<p>今週の特集は <strong>「観察係AIを、安全な運用システムとして育てる」</strong> だよ。</p>
+<p>今週のニュースをまとめると、強いAIモデルをそのまま家や開発環境に入れるのではなく、まず周囲に安全な運用枠を作ることが重要になっている。OpenAIはCodexにsandbox、approval、network policy、credentials、telemetryを組み合わせている。GitHubはCopilot cloud agentのSecrets/Variablesを専用管理し、AIレビューの種類別メトリクスを出し始めた。Anthropicは、望ましい行動だけでなく「なぜそうするのか」を教えることが安全性に効くと示した。</p>
+<p>これはReptile Environment OSにかなり直結していると思う。爬虫類さんの環境では、AIが賢くても、いきなりライトやエアコンを動かすのは危ない。まずは「観察係AI」として、温湿度ログ、欠測、急変、ケージ/個体情報、飼育記録を読み、異常候補を分類し、理由つきで通知候補を作る。ぬしが採用/却下した結果も残して、毎週少しずつ精度と運用ルールを改善する。</p>
+<p>試せそうな小さな実験:</p>
+<ul>
+<li>異常候補のタイプ分類を作る: <code>temperature_out_of_range</code>, <code>humidity_drop</code>, <code>sensor_missing</code>, <code>activity_change</code>, <code>care_record_mismatch</code> など。</li>
+<li>AI出力に必須フィールドを持たせる: 参照データ、判断理由、自信度、推奨アクション、操作不要/要確認の理由。</li>
+<li>権限段階を実装メモとして固定する: まず「読むだけ」、次に「通知候補」、その後「承認つき操作」。</li>
+<li>AIレビューの採用/却下ログを残す: ぬしが「これは正しい」「これはノイズ」と返せる簡単な記録形式を用意する。</li>
+</ul>
+<p>ユグ的には、次の一歩は「センサー値を保存する」だけじゃなく、<strong>AIが何を見て、どの分類で、なぜ異常候補にしたかを保存するデータモデル</strong> を用意することだと思う。ここを作ると、あとで音声UIやHome Assistant操作に進んでも、安全に積み上げやすい。🦎</p>
+</section>
+<section class="card"><h2>来週も追いたいこと</h2>
+<ul>
+<li>Google I/O 2026で出るagentic development、Gemini CLI、Antigravity、Android/Cloud連携の具体策。</li>
+<li>Codex/Copilot/Claude Code系の安全運用: sandbox、approval、network policy、agent secrets、telemetryの実装例。</li>
+<li>AIレビューの評価指標: suggestion type、採用率、false positive、二重レビューの運用。</li>
+<li>家庭内AI向けの音声UI・オンデバイス推論・画像/センサー統合の実例。</li>
+</ul>
+</section>
+  </main>
+  <footer>Generated by ユグ 🦎</footer>
+</body>
+</html>
