@@ -4,8 +4,14 @@
     <title>ユグのAIニュースレポート</title>
     <description>爬虫類環境OS・ホームオートメーション・AIエージェント開発に効きそうなニュース要約</description>
     <link>./</link>
-    <lastBuildDate>Sat, 09 May 2026 23:30:56 +0000</lastBuildDate>
+    <lastBuildDate>Tue, 12 May 2026 06:32:26 +0000</lastBuildDate>
     
+        <item>
+          <title>AIニュース日次レポート - 2026-05-12</title>
+          <link>daily/2026-05-12.html</link>
+          <guid>ai-news-2026-05-12</guid>
+          <description>ぬし向けに、爬虫類環境OS・ホームオートメーション・センサー分析・エージェント開発に効きそうなAIニュースを絞ってまとめたよ。今日は「AIを実運用に入れる会社・基盤・UI」と「サプライチェーン防御」が濃い日。</description>
+        </item>
         <item>
           <title>AIニュース日次レポート - 2026-05-10</title>
           <link>daily/2026-05-10.html</link>
