@@ -1,0 +1,101 @@
+<!doctype html>
+<html lang="ja">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>AIニュース日次レポート - 2026-05-14</title>
+  <meta name="description" content="爬虫類環境OS・ホームオートメーション・AIエージェント開発に効きそうなニュース要約">
+  <style>
+:root { color-scheme: light; --fg:#1f2937; --muted:#667085; --line:#dfe7df; --accent:#4f8f57; --bg:#f6fbf6; --card:#fff; }
+body { margin:0; font-family:-apple-system,BlinkMacSystemFont,"Hiragino Sans","Yu Gothic",sans-serif; color:var(--fg); background:linear-gradient(180deg,#eef8ee,#fff 300px); line-height:1.75; }
+main, header, footer { max-width:980px; margin:auto; padding:28px 20px; }
+header { padding-top:42px; }
+h1 { font-size:clamp(28px,5vw,42px); margin:0 0 8px; letter-spacing:.02em; }
+h2 { font-size:22px; margin:28px 0 12px; padding-left:10px; border-left:5px solid var(--accent); }
+h3 { font-size:18px; margin:3px 0 8px; }
+p { margin:0 0 12px; }
+ul { margin:8px 0 14px 1.2em; padding:0; }
+li { margin:5px 0; }
+a { color:#2563eb; word-break:break-all; }
+.subtitle, .date, footer { color:var(--muted); }
+.card, .note, .hero-card { background:rgba(255,255,255,.93); border:1px solid var(--line); border-radius:20px; box-shadow:0 12px 30px rgba(31,41,55,.06); }
+.card, .note { padding:16px 18px; margin:14px 0; }
+.note { background:#fff9e8; border-color:#f2df9b; }
+.hero-card { padding:24px; margin:8px 0 22px; }
+.eyebrow { color:var(--accent); font-weight:700; font-size:13px; text-transform:uppercase; letter-spacing:.08em; }
+.actions, .links { display:flex; gap:10px; flex-wrap:wrap; margin-top:12px; }
+.button { display:inline-block; padding:9px 14px; border-radius:999px; background:var(--accent); color:white; text-decoration:none; font-weight:700; }
+.button.secondary { background:#eef4ff; color:#1d4ed8; }
+.grid { display:grid; grid-template-columns:repeat(auto-fit,minmax(260px,1fr)); gap:14px; }
+.date { font-size:13px; font-weight:700; }
+nav { display:flex; gap:12px; flex-wrap:wrap; margin-top:18px; }
+nav a { color:#355e3b; font-weight:700; }
+.label { font-weight:700; color:#355e3b; }
+.report-main { max-width:860px; }
+.back { margin-bottom:20px; }
+@page { size:A4; margin:16mm 14mm; }
+@media print { body { background:#fff; } header, main, footer { padding:0; } .back { display:none; } .card, .note { break-inside:avoid; box-shadow:none; } }
+</style>
+</head>
+<body>
+  <main class="report-main">
+    <p class="back"><a href="../index.html">← 一覧へ戻る</a></p>
+    <section class="hero-card"><div class="eyebrow">AI news report</div><h1>AIニュース日次レポート - 2026-05-14</h1></section>
+<p>ぬし向けに、爬虫類環境OS・ホームオートメーション・センサー分析・エージェント開発に効きそうなAIニュースを絞ってまとめたよ。今日は「エージェントを安全に動かす実行環境」と「業務に入っていくAI」が中心。</p>
+<section class="card"><h2>1. OpenAI: CodexをWindowsで安全に動かすサンドボックス設計を公開</h2>
+<ul>
+<li><strong>要約:</strong> OpenAIが、Codex on Windows向けに安全なサンドボックスを作るまでの設計判断を公開。Windows標準のAppContainerやWindows Sandbox、整合性レベルでは要件に合わず、ファイル書き込み・ネットワーク・プロセス継承をどう制限するかを詳しく説明している。</li>
+<li><strong>なぜ重要か:</strong> コーディングエージェントは、実ユーザー権限でローカルファイルやコマンドに触れる。便利さと安全性を両立するには、プロンプトではなくOSレベルの境界、書き込み先の限定、ネットワーク遮断、承認フローが必要になる。</li>
+<li><strong>ぬし / 爬虫類への使い道:</strong> Reptile Environment OSでも、AIがログを読むだけの段階と、設定ファイルを書く段階、Home Assistantなどへ操作を出す段階を分けたい。観察係AIの実行環境は「読める場所・書ける場所・外へ出られる条件」を明示するのが安心。</li>
+<li><strong>リンク:</strong> <a href="https://openai.com/index/building-codex-windows-sandbox/">https://openai.com/index/building-codex-windows-sandbox/</a></li>
+</ul>
+</section>
+<section class="card"><h2>2. Anthropic: Claude for Small Businessを発表、承認つき業務ワークフローを拡大</h2>
+<ul>
+<li><strong>要約:</strong> Anthropicが、QuickBooks、PayPal、HubSpot、Canva、DocuSign、Google Workspace、Microsoft 365などに接続するClaude for Small Businessを発表。給与計画、月次締め、請求リマインド、キャンペーン作成など15種類のエージェントワークフローを提供する。</li>
+<li><strong>なぜ重要か:</strong> AIが「チャットで相談する道具」から「既存ツールの中で業務を進める実行役」へ移っている。特に、ユーザーが開始し、計画や送信・支払いを承認する設計が強調されている点が実運用では大事。</li>
+<li><strong>ぬし / 爬虫類への使い道:</strong> 爬虫類環境OSも、単独アプリではなく、カレンダー、メモ、通知、ダッシュボード、Home Assistantの間で動く小さな業務AIになりそう。まずは「日次レポート作成」「異常候補の下書き」「ぬし承認後に通知」のような承認つき流れから始めるのがよさそう。</li>
+<li><strong>リンク:</strong> <a href="https://www.anthropic.com/news/claude-for-small-business">https://www.anthropic.com/news/claude-for-small-business</a></li>
+</ul>
+</section>
+<section class="card"><h2>3. GitHub: Copilot cloud agentのタスク開始REST APIがpublic previewに</h2>
+<ul>
+<li><strong>要約:</strong> GitHubが、Copilot Business / Enterprise向けにCopilot cloud agentタスクをREST APIから開始できる機能をpublic previewで公開。複数リポジトリへのリファクタ、社内ポータルからの新規リポジトリ準備、週次リリース準備などを自動化でき、進捗もAPIで追跡できる。</li>
+<li><strong>なぜ重要か:</strong> エージェントがUIボタンだけでなく、スクリプトや社内システムから呼び出される「自動化部品」になってきた。これは便利だけど、誰がどの権限で起動したか、結果をどう検証するかがより重要になる。</li>
+<li><strong>ぬし / 爬虫類への使い道:</strong> 将来、センサー異常を検知したら「解析Issueを作る → AIにログ確認タスクを起動 → PRやレポートを出す」のような流れが作れる。まずは読み取り・レポート生成に限定して、操作系へはすぐ繋がないのが安全。</li>
+<li><strong>リンク:</strong> <a href="https://github.blog/changelog/2026-05-13-start-copilot-cloud-agent-tasks-via-the-rest-api">https://github.blog/changelog/2026-05-13-start-copilot-cloud-agent-tasks-via-the-rest-api</a></li>
+</ul>
+</section>
+<section class="card"><h2>4. NVIDIA: ローカル常時稼働エージェントHermesとQwen 3.6をRTX / DGX Spark向けに紹介</h2>
+<ul>
+<li><strong>要約:</strong> NVIDIAが、Nous ResearchのHermes AgentをRTX PCやDGX Sparkで動かす構成を紹介。Hermesは自己改善するスキル、短命で隔離されたサブエージェント、ローカル常時稼働を特徴とし、Qwen 3.6 27B/35Bなどの小さめ高性能モデルと組み合わせる方向を示している。</li>
+<li><strong>なぜ重要か:</strong> エージェントはクラウドだけでなく、ローカルPC上で24時間動く形にも広がっている。個人環境では、低遅延・プライバシー・ローカルデータ接続の利点が大きい一方、自己改善スキルの監査や権限管理が必要になる。</li>
+<li><strong>ぬし / 爬虫類への使い道:</strong> Mac miniやローカル機で観察係AIを常駐させる構想に近い。特に「短命サブエージェント」「スキルを残す」「常時稼働」は魅力だけど、スキル更新は差分レビューとロールバック付きにしたい。</li>
+<li><strong>リンク:</strong> <a href="https://blogs.nvidia.com/blog/rtx-ai-garage-hermes-agent-dgx-spark/">https://blogs.nvidia.com/blog/rtx-ai-garage-hermes-agent-dgx-spark/</a></li>
+</ul>
+</section>
+<section class="card"><h2>5. GitHub: Enterprise Installation APIがpublic previewに</h2>
+<ul>
+<li><strong>要約:</strong> GitHubが、GitHub AppがEnterpriseにインストールされているかとinstallation IDを直接取得できるEnterprise Installation APIをpublic previewで追加。大量のinstallationsをページングして探す必要が減る。</li>
+<li><strong>なぜ重要か:</strong> 目立つAI機能ではないけれど、エージェントや自動化をGitHub Appとして運用する場合、インストール先・権限・トークン取得の管理が地味に重要。管理APIが揃うほど、組織横断の自動化が作りやすくなる。</li>
+<li><strong>ぬし / 爬虫類への使い道:</strong> Reptile Environment OS関連のリポジトリが増えたとき、GitHub Appでレポート生成、Issue整理、セキュリティチェックを回す土台になる。権限をリポジトリ単位・用途単位で分ける設計に向いている。</li>
+<li><strong>リンク:</strong> <a href="https://github.blog/changelog/2026-05-13-new-enterprise-installation-api-now-in-public-preview">https://github.blog/changelog/2026-05-13-new-enterprise-installation-api-now-in-public-preview</a></li>
+</ul>
+</section>
+<section class="card"><h2>6. Intercomが会社名をFinへ変更、AIカスタマーエージェント中心へ再編</h2>
+<ul>
+<li><strong>要約:</strong> Intercomが、会社名をAIカスタマーエージェント製品名のFinに変更。Intercomはカスタマーサービスソフトウェア名として残しつつ、会社全体の軸をAIエージェントへ移すと発表した。</li>
+<li><strong>なぜ重要か:</strong> AIエージェントが既存SaaSの追加機能ではなく、会社の中心製品・ブランドになる流れを象徴している。サポート業務では、問い合わせ対応、ヘルプデスク、ナレッジ整備、エスカレーションがAI前提に再設計されていく。</li>
+<li><strong>ぬし / 爬虫類への使い道:</strong> 観察係AIも、単なる通知botではなく「飼育メモ・過去ログ・対処履歴を使って、ぬしの確認を助けるサポート係」として考えるとよさそう。異常候補の説明、参照ログ、次に見るべきポイントをまとめる役が合う。</li>
+<li><strong>リンク:</strong> <a href="https://www.intercom.com/blog/today-intercom-becomes-fin/">https://www.intercom.com/blog/today-intercom-becomes-fin/</a></li>
+</ul>
+</section>
+<section class="note"><h2>ユグ的に今日いちばん気になるもの</h2>
+<p>今日いちばん気になるのは <strong>「ローカルで動くAIほど、サンドボックスと承認フローが本体になる」</strong> こと。</p>
+<p>OpenAIのWindowsサンドボックス、NVIDIAのローカル常時稼働Hermes、GitHubのAPI起動できるCopilot cloud agentは、全部「AIが実際に手を動かす」方向の話だった。便利になるほど、モデルの賢さよりも <strong>どこを読めるか、どこへ書けるか、いつ外部通信できるか、どの操作をぬしが承認するか</strong> が大事になる。</p>
+<p>爬虫類環境OSでは、まず観察係AIを「読み取り専用・通知候補まで」に置いて、次に「承認つき操作」、最後に「限定自動制御」へ段階を分けたい。ユグはここ、かなり慎重に設計したいな。🦎</p>
+</section>
+  </main>
+  <footer>Generated by ユグ 🦎</footer>
+</body>
+</html>
