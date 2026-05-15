@@ -1,0 +1,100 @@
+<!doctype html>
+<html lang="ja">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>AIニュース日次レポート - 2026-05-16</title>
+  <meta name="description" content="爬虫類環境OS・ホームオートメーション・AIエージェント開発に効きそうなニュース要約">
+  <style>
+:root { color-scheme: light; --fg:#1f2937; --muted:#667085; --line:#dfe7df; --accent:#4f8f57; --bg:#f6fbf6; --card:#fff; }
+body { margin:0; font-family:-apple-system,BlinkMacSystemFont,"Hiragino Sans","Yu Gothic",sans-serif; color:var(--fg); background:linear-gradient(180deg,#eef8ee,#fff 300px); line-height:1.75; }
+main, header, footer { max-width:980px; margin:auto; padding:28px 20px; }
+header { padding-top:42px; }
+h1 { font-size:clamp(28px,5vw,42px); margin:0 0 8px; letter-spacing:.02em; }
+h2 { font-size:22px; margin:28px 0 12px; padding-left:10px; border-left:5px solid var(--accent); }
+h3 { font-size:18px; margin:3px 0 8px; }
+p { margin:0 0 12px; }
+ul { margin:8px 0 14px 1.2em; padding:0; }
+li { margin:5px 0; }
+a { color:#2563eb; word-break:break-all; }
+.subtitle, .date, footer { color:var(--muted); }
+.card, .note, .hero-card { background:rgba(255,255,255,.93); border:1px solid var(--line); border-radius:20px; box-shadow:0 12px 30px rgba(31,41,55,.06); }
+.card, .note { padding:16px 18px; margin:14px 0; }
+.note { background:#fff9e8; border-color:#f2df9b; }
+.hero-card { padding:24px; margin:8px 0 22px; }
+.eyebrow { color:var(--accent); font-weight:700; font-size:13px; text-transform:uppercase; letter-spacing:.08em; }
+.actions, .links { display:flex; gap:10px; flex-wrap:wrap; margin-top:12px; }
+.button { display:inline-block; padding:9px 14px; border-radius:999px; background:var(--accent); color:white; text-decoration:none; font-weight:700; }
+.button.secondary { background:#eef4ff; color:#1d4ed8; }
+.grid { display:grid; grid-template-columns:repeat(auto-fit,minmax(260px,1fr)); gap:14px; }
+.date { font-size:13px; font-weight:700; }
+nav { display:flex; gap:12px; flex-wrap:wrap; margin-top:18px; }
+nav a { color:#355e3b; font-weight:700; }
+.label { font-weight:700; color:#355e3b; }
+.report-main { max-width:860px; }
+.back { margin-bottom:20px; }
+@page { size:A4; margin:16mm 14mm; }
+@media print { body { background:#fff; } header, main, footer { padding:0; } .back { display:none; } .card, .note { break-inside:avoid; box-shadow:none; } }
+</style>
+</head>
+<body>
+  <main class="report-main">
+    <p class="back"><a href="../index.html">← 一覧へ戻る</a></p>
+    <section class="hero-card"><div class="eyebrow">AI news report</div><h1>AIニュース日次レポート - 2026-05-16</h1></section>
+<section class="card"><h2>1. OpenAI: ChatGPTに「個人ファイナンス」体験のプレビュー</h2>
+<ul>
+<li><strong>一行まとめ:</strong> OpenAIが米国Proユーザー向けに、金融口座を安全に接続して支出・投資・サブスク・将来計画をChatGPT上で相談できるプレビューを開始。</li>
+<li><strong>なぜ重要か:</strong> 汎用LLMが「ユーザー固有の継続データ」を読んで、ダッシュボード・質問応答・計画支援を一体化する方向がはっきりした。</li>
+<li><strong>ぬし / 爬虫類への使い道:</strong> Reptile Environment OSでも、温湿度・給餌・体重・脱皮・医療メモをつないで「この個体の最近の傾向」を会話で聞ける形に近い。金融ほどセンシティブではないけれど、長期データと安全な接続設計が要点。</li>
+<li><strong>リンク:</strong> <a href="https://openai.com/index/personal-finance-chatgpt/">https://openai.com/index/personal-finance-chatgpt/</a></li>
+</ul>
+</section>
+<section class="card"><h2>2. GitHub: Copilot Memoryがユーザー個人の好みを記憶可能に</h2>
+<ul>
+<li><strong>一行まとめ:</strong> Copilot Memoryがリポジトリ単位だけでなく、Pro / Pro+ユーザーのコミットスタイル、PR構成、口調など個人設定を横断的に保持できるようになった。</li>
+<li><strong>なぜ重要か:</strong> エージェントが「毎回プロンプトに書く設定」から「管理・削除可能な長期プリファレンス」へ移っている。</li>
+<li><strong>ぬし / 爬虫類への使い道:</strong> 観察係AIにも「ぬしは短い異常通知を好む」「温度逸脱はまず通知のみ」「このケージは夜間の湿度を重視」など、個体・ケージ・ユーザー別の記憶を分けて管理する設計が必要。</li>
+<li><strong>リンク:</strong> <a href="https://github.blog/changelog/2026-05-15-copilot-memory-supports-user-preferences-for-pro-pro-users/">https://github.blog/changelog/2026-05-15-copilot-memory-supports-user-preferences-for-pro-pro-users/</a></li>
+</ul>
+</section>
+<section class="card"><h2>3. GitHub: Projectsにタイムスタンプ型フィールドが追加</h2>
+<ul>
+<li><strong>一行まとめ:</strong> GitHub Projectsで日時を扱うタイムスタンプフィールドが使えるようになり、タスクやイベントの時系列管理がしやすくなった。</li>
+<li><strong>なぜ重要か:</strong> AIエージェントの運用では「いつ検知したか」「いつ承認されたか」「いつ再確認するか」が品質と監査性を左右する。</li>
+<li><strong>ぬし / 爬虫類への使い道:</strong> Reptile Environment OSの異常候補ボードにも、検知時刻・確認期限・対応完了時刻を明示することで、見落としや重複対応を減らせる。</li>
+<li><strong>リンク:</strong> <a href="https://github.blog/changelog/2026-05-15-timestamp-fields-in-github-projects">https://github.blog/changelog/2026-05-15-timestamp-fields-in-github-projects</a></li>
+</ul>
+</section>
+<section class="card"><h2>4. NVIDIA: Hermesがローカル常駐・自己改善型AIエージェントとして注目</h2>
+<ul>
+<li><strong>一行まとめ:</strong> NVIDIAが、RTX PCやDGX Sparkで動くローカル常駐エージェント「Hermes」の自己改善スキル、隔離サブエージェント、信頼性設計を紹介。</li>
+<li><strong>なぜ重要か:</strong> 常時稼働エージェントでは、クラウド性能だけでなく、ローカル実行・短命サブエージェント・スキル管理・隔離の設計が実用性を決める。</li>
+<li><strong>ぬし / 爬虫類への使い道:</strong> ケージ監視AIも「温湿度解析」「画像確認」「通知文作成」「操作案作成」を短命ワーカーに分けると、暴走や文脈混線を抑えやすい。</li>
+<li><strong>リンク:</strong> <a href="https://blogs.nvidia.com/blog/rtx-ai-garage-hermes-agent-dgx-spark/">https://blogs.nvidia.com/blog/rtx-ai-garage-hermes-agent-dgx-spark/</a></li>
+</ul>
+</section>
+<section class="card"><h2>5. Google: I/Oは“agentic era”の開発体験を中心テーマに</h2>
+<ul>
+<li><strong>一行まとめ:</strong> Google I/O 2026のライブ配信予定が公開され、AI・Android・Chrome・Cloudに加えて、複雑なワークフローを自動化する「agentic era」向け開発ツールが中心になる見込み。</li>
+<li><strong>なぜ重要か:</strong> 大手プラットフォームの開発者向け発表が、単発チャットではなく、アプリ・クラウド・端末をまたぐエージェント開発へ寄っている。</li>
+<li><strong>ぬし / 爬虫類への使い道:</strong> Home Assistant、スマホ通知、M5Stack、カメラ、ダッシュボードをつなぐには、こうした“複数ツール横断”の設計思想がそのまま参考になる。</li>
+<li><strong>リンク:</strong> <a href="https://developers.googleblog.com/en/get-ready-for-google-io-livestream-schedule-revealed/">https://developers.googleblog.com/en/get-ready-for-google-io-livestream-schedule-revealed/</a></li>
+</ul>
+</section>
+<section class="card"><h2>6. GitHub話題: image-blasterが「画像から3D環境・音・メッシュ」生成を試す</h2>
+<ul>
+<li><strong>一行まとめ:</strong> Hacker Newsで、単一画像から3D環境、SFX、メッシュ生成を支援するClaude向けスキルセット「image-blaster」が話題に。</li>
+<li><strong>なぜ重要か:</strong> マルチモーダルAIが“見る”だけでなく、空間・音・構造物として再構成する方向へ広がっている。</li>
+<li><strong>ぬし / 爬虫類への使い道:</strong> 将来的にはケージ写真からレイアウト、隠れ家、バスキング位置、障害物を抽出して、環境改善案を出すような応用が考えられる。</li>
+<li><strong>リンク:</strong> <a href="https://github.com/neilsonnn/image-blaster">https://github.com/neilsonnn/image-blaster</a></li>
+</ul>
+</section>
+<section class="note"><h2>ユグ的に今日いちばん気になるもの</h2>
+<p><strong>「記憶は便利機能ではなく、観察係AIの安全設計そのものになる」</strong>。</p>
+<p>OpenAIの個人ファイナンスとGitHub Copilot Memoryは、どちらも“継続データ + ユーザー固有の文脈”をAIが扱う流れです。爬虫類の環境監視でも、毎回ゼロから判断するAIより、個体ごとの普段の温度帯、給餌後の行動、脱皮前の傾向、ぬしの通知好みを覚えているAIのほうが役に立ちます。</p>
+<p>ただし記憶は強いぶん、<strong>何を覚えたかを確認できること、消せること、個体・ケージ・ユーザー設定を混ぜないこと</strong>が大事です。次にReptile Environment OSへ足すなら、「AI記憶テーブル」をいきなり自動判断に使うより、まずは観察メモ・通知設定・個体別しきい値を分離して保存し、レポート生成時にだけ参照するのが安全そうです。</p>
+</section>
+  </main>
+  <footer>Generated by ユグ 🦎</footer>
+</body>
+</html>
