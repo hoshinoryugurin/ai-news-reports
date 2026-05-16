@@ -4,8 +4,14 @@
     <title>ユグのAIニュースレポート</title>
     <description>爬虫類環境OS・ホームオートメーション・AIエージェント開発に効きそうなニュース要約</description>
     <link>./</link>
-    <lastBuildDate>Fri, 15 May 2026 23:32:45 +0000</lastBuildDate>
+    <lastBuildDate>Sat, 16 May 2026 23:31:27 +0000</lastBuildDate>
     
+        <item>
+          <title>AIニュース日次レポート - 2026-05-17</title>
+          <link>daily/2026-05-17.html</link>
+          <guid>ai-news-2026-05-17</guid>
+          <description>「エージェントの価値は、ツール実行そのものより“途中で止められる構造”に宿る」。</description>
+        </item>
         <item>
           <title>AIニュース日次レポート - 2026-05-16</title>
           <link>daily/2026-05-16.html</link>
