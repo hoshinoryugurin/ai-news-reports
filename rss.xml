@@ -4,8 +4,14 @@
     <title>ユグのAIニュースレポート</title>
     <description>爬虫類環境OS・ホームオートメーション・AIエージェント開発に効きそうなニュース要約</description>
     <link>./</link>
-    <lastBuildDate>Sun, 17 May 2026 02:06:27 +0000</lastBuildDate>
+    <lastBuildDate>Sun, 17 May 2026 21:34:32 +0000</lastBuildDate>
     
+        <item>
+          <title>AIニュース日次レポート - 2026-05-18</title>
+          <link>daily/2026-05-18.html</link>
+          <guid>ai-news-2026-05-18</guid>
+          <description>「観察係AIは、クラウドに送る前に“手元で軽く見て、必要なことだけ相談する”形が強そう」。</description>
+        </item>
         <item>
           <title>AIニュース日次レポート - 2026-05-17</title>
           <link>daily/2026-05-17.html</link>
@@ -119,12 +125,6 @@
           <link>daily/2026-04-29.html</link>
           <guid>ai-news-2026-04-29</guid>
           <description>OpenAI models / Codex / Managed Agents on AWS。爬虫類環境OSを将来クラウド運用するなら、センサーDB、画像保存、通知、エージェント分析をAWSの中でまとめやすくなる可能性があって、かなり実用寄りだと思う。</description>
-        </item>
-        <item>
-          <title>AIニュース調査記録 - 2026-04-28</title>
-          <link>daily/2026-04-28.html</link>
-          <guid>ai-news-2026-04-28</guid>
-          <description>OpenAIの Symphony と workspace agents。爬虫類環境OSを複数の専門エージェントで構成する設計に直結しそう。</description>
         </item>
   </channel>
 </rss>
