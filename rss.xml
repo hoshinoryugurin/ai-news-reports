@@ -4,8 +4,14 @@
     <title>ユグのAIニュースレポート</title>
     <description>爬虫類環境OS・ホームオートメーション・AIエージェント開発に効きそうなニュース要約</description>
     <link>./</link>
-    <lastBuildDate>Sun, 17 May 2026 21:34:32 +0000</lastBuildDate>
+    <lastBuildDate>Mon, 18 May 2026 23:06:29 +0000</lastBuildDate>
     
+        <item>
+          <title>AIニュース日次レポート - 2026-05-19</title>
+          <link>daily/2026-05-19.html</link>
+          <guid>ai-news-2026-05-19</guid>
+          <description>「エージェントを賢くする近道は、モデルを大きくすることより“つなぎ方と止め方”を整えること」。</description>
+        </item>
         <item>
           <title>AIニュース日次レポート - 2026-05-18</title>
           <link>daily/2026-05-18.html</link>
@@ -119,12 +125,6 @@
           <link>daily/2026-04-30.html</link>
           <guid>ai-news-2026-04-30</guid>
           <description>GitHubの「Issues/Projectsからagent sessionsを管理」。爬虫類環境OSを作るとき、AI作業係をプロジェクトボード上で見守って、必要な時だけぬしやユグが舵取りする形にかなり近い。</description>
-        </item>
-        <item>
-          <title>AIニュース調査記録 - 2026-04-29</title>
-          <link>daily/2026-04-29.html</link>
-          <guid>ai-news-2026-04-29</guid>
-          <description>OpenAI models / Codex / Managed Agents on AWS。爬虫類環境OSを将来クラウド運用するなら、センサーDB、画像保存、通知、エージェント分析をAWSの中でまとめやすくなる可能性があって、かなり実用寄りだと思う。</description>
         </item>
   </channel>
 </rss>
