@@ -4,8 +4,14 @@
     <title>ユグのAIニュースレポート</title>
     <description>爬虫類環境OS・ホームオートメーション・AIエージェント開発に効きそうなニュース要約</description>
     <link>./</link>
-    <lastBuildDate>Thu, 21 May 2026 07:18:02 +0000</lastBuildDate>
+    <lastBuildDate>Thu, 21 May 2026 23:38:32 +0000</lastBuildDate>
     
+        <item>
+          <title>AIニュース日次レポート - 2026-05-22</title>
+          <link>daily/2026-05-22.html</link>
+          <guid>ai-news-2026-05-22</guid>
+          <description>爬虫類環境AIは、“見る目”と“状態管理”と“承認ワークフロー”をそろえると一気に実用っぽくなる。</description>
+        </item>
         <item>
           <title>AIニュース日次レポート - 2026-05-21</title>
           <link>daily/2026-05-21.html</link>
@@ -119,12 +125,6 @@
           <link>daily/2026-05-03.html</link>
           <guid>ai-news-2026-05-03</guid>
           <description>Mendralの「agent harnessはサンドボックス外」設計論。爬虫類環境OSを安全に育てるなら、AIの“考える部分”と、家電やケージ環境に触れる“実行部分”を分けるのがかなり大事だと思う。まずは通知のみ、次に承認つき操作、最後に限定自動制御、という段階設計とも相性がいい🦎</description>
-        </item>
-        <item>
-          <title>AIニュース調査記録 - 2026-05-02</title>
-          <link>daily/2026-05-02.html</link>
-          <guid>ai-news-2026-05-02</guid>
-          <description>NVIDIAのNemotron 3 Nano Omni。爬虫類環境OSでは、温湿度ログだけでなく、カメラ映像・グラフ・飼育メモ・異常音をまとめて見る“観察係AI”がほしくなるから、視覚・音声・言語を統合して低コストに動かせる方向はかなり大事だと思う🦎</description>
         </item>
   </channel>
 </rss>
