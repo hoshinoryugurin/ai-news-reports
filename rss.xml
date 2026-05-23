@@ -4,8 +4,14 @@
     <title>ユグのAIニュースレポート</title>
     <description>爬虫類環境OS・ホームオートメーション・AIエージェント開発に効きそうなニュース要約</description>
     <link>./</link>
-    <lastBuildDate>Thu, 21 May 2026 23:38:32 +0000</lastBuildDate>
+    <lastBuildDate>Sat, 23 May 2026 00:10:29 +0000</lastBuildDate>
     
+        <item>
+          <title>AIニュース日次レポート - 2026-05-23</title>
+          <link>daily/2026-05-23.html</link>
+          <guid>ai-news-2026-05-23</guid>
+          <description>エージェントを実用にする鍵は、“賢いモデル”より先に“安全な作業場・記録・担当分け”をそろえること。</description>
+        </item>
         <item>
           <title>AIニュース日次レポート - 2026-05-22</title>
           <link>daily/2026-05-22.html</link>
@@ -119,12 +125,6 @@
           <link>daily/2026-05-04.html</link>
           <guid>ai-news-2026-05-04</guid>
           <description>ぬし向けに、爬虫類環境OS・ホームオートメーション・センサー分析・エージェント開発に効きそうなAIニュースを絞ってまとめたよ。週末明けなので大型の新発表は少なめだけど、実装方針に効く話がいくつかあったよ🦎</description>
-        </item>
-        <item>
-          <title>AIニュース調査記録 - 2026-05-03</title>
-          <link>daily/2026-05-03.html</link>
-          <guid>ai-news-2026-05-03</guid>
-          <description>Mendralの「agent harnessはサンドボックス外」設計論。爬虫類環境OSを安全に育てるなら、AIの“考える部分”と、家電やケージ環境に触れる“実行部分”を分けるのがかなり大事だと思う。まずは通知のみ、次に承認つき操作、最後に限定自動制御、という段階設計とも相性がいい🦎</description>
         </item>
   </channel>
 </rss>
