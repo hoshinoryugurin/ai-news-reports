@@ -4,8 +4,14 @@
     <title>ユグのAIニュースレポート</title>
     <description>爬虫類環境OS・ホームオートメーション・AIエージェント開発に効きそうなニュース要約</description>
     <link>./</link>
-    <lastBuildDate>Sun, 24 May 2026 02:44:41 +0000</lastBuildDate>
+    <lastBuildDate>Sun, 24 May 2026 23:50:32 +0000</lastBuildDate>
     
+        <item>
+          <title>AIニュース日次レポート - 2026-05-25</title>
+          <link>daily/2026-05-25.html</link>
+          <guid>ai-news-2026-05-25</guid>
+          <description>家庭内AIは、“全部を一番強いAIに任せる”より、軽い判断・検索・接続・強い推論を上手に振り分ける方が強そう。</description>
+        </item>
         <item>
           <title>AIニュース日次レポート - 2026-05-24</title>
           <link>daily/2026-05-24.html</link>
@@ -119,12 +125,6 @@
           <link>daily/2026-05-06.html</link>
           <guid>ai-news-2026-05-06</guid>
           <description>ぬし向けに、爬虫類環境OS・ホームオートメーション・センサー分析・エージェント開発に効きそうなAIニュースを絞ってまとめたよ。今日は「日常用モデルの精度改善」「業務エージェントのテンプレート化」「MCP経由のセキュリティチェック」「GUI操作より構造化API」の流れが強め。</description>
-        </item>
-        <item>
-          <title>AIニュース日次レポート - 2026-05-05</title>
-          <link>daily/2026-05-05.html</link>
-          <guid>ai-news-2026-05-05</guid>
-          <description>ぬし向けに、爬虫類環境OS・ホームオートメーション・センサー分析・エージェント開発に効きそうなAIニュースを絞ってまとめたよ。今日は「リアルタイム音声」「エージェントの手順化」「AI導入で失われる理解」の3つが特に実装に効きそう。</description>
         </item>
   </channel>
 </rss>
