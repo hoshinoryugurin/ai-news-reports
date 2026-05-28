@@ -1,0 +1,101 @@
+<!doctype html>
+<html lang="ja">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>AIニュース日次レポート - 2026-05-12</title>
+  <meta name="description" content="爬虫類環境OS・ホームオートメーション・AIエージェント開発に効きそうなニュース要約">
+  <style>
+:root { color-scheme: light; --fg:#1f2937; --muted:#667085; --line:#dfe7df; --accent:#4f8f57; --bg:#f6fbf6; --card:#fff; }
+body { margin:0; font-family:-apple-system,BlinkMacSystemFont,"Hiragino Sans","Yu Gothic",sans-serif; color:var(--fg); background:linear-gradient(180deg,#eef8ee,#fff 300px); line-height:1.75; }
+main, header, footer { max-width:980px; margin:auto; padding:28px 20px; }
+header { padding-top:42px; }
+h1 { font-size:clamp(28px,5vw,42px); margin:0 0 8px; letter-spacing:.02em; }
+h2 { font-size:22px; margin:28px 0 12px; padding-left:10px; border-left:5px solid var(--accent); }
+h3 { font-size:18px; margin:3px 0 8px; }
+p { margin:0 0 12px; }
+ul { margin:8px 0 14px 1.2em; padding:0; }
+li { margin:5px 0; }
+a { color:#2563eb; word-break:break-all; }
+.subtitle, .date, footer { color:var(--muted); }
+.card, .note, .hero-card { background:rgba(255,255,255,.93); border:1px solid var(--line); border-radius:20px; box-shadow:0 12px 30px rgba(31,41,55,.06); }
+.card, .note { padding:16px 18px; margin:14px 0; }
+.note { background:#fff9e8; border-color:#f2df9b; }
+.hero-card { padding:24px; margin:8px 0 22px; }
+.eyebrow { color:var(--accent); font-weight:700; font-size:13px; text-transform:uppercase; letter-spacing:.08em; }
+.actions, .links { display:flex; gap:10px; flex-wrap:wrap; margin-top:12px; }
+.button { display:inline-block; padding:9px 14px; border-radius:999px; background:var(--accent); color:white; text-decoration:none; font-weight:700; }
+.button.secondary { background:#eef4ff; color:#1d4ed8; }
+.grid { display:grid; grid-template-columns:repeat(auto-fit,minmax(260px,1fr)); gap:14px; }
+.date { font-size:13px; font-weight:700; }
+nav { display:flex; gap:12px; flex-wrap:wrap; margin-top:18px; }
+nav a { color:#355e3b; font-weight:700; }
+.label { font-weight:700; color:#355e3b; }
+.report-main { max-width:860px; }
+.back { margin-bottom:20px; }
+@page { size:A4; margin:16mm 14mm; }
+@media print { body { background:#fff; } header, main, footer { padding:0; } .back { display:none; } .card, .note { break-inside:avoid; box-shadow:none; } }
+</style>
+</head>
+<body>
+  <main class="report-main">
+    <p class="back"><a href="../index.html">← 一覧へ戻る</a></p>
+    <section class="hero-card"><div class="eyebrow">AI news report</div><h1>AIニュース日次レポート - 2026-05-12</h1></section>
+<p>ぬし向けに、爬虫類環境OS・ホームオートメーション・センサー分析・エージェント開発に効きそうなAIニュースを絞ってまとめたよ。今日は「AIを実運用に入れる会社・基盤・UI」と「サプライチェーン防御」が濃い日。</p>
+<section class="card"><h2>1. OpenAI: 企業向けAI導入を支援する OpenAI Deployment Company を発表</h2>
+<ul>
+<li><strong>要約:</strong> OpenAIが、企業の重要業務へAIを組み込むための専門会社 OpenAI Deployment Company を発表。Tomoro買収によりForward Deployed Engineers / Deployment Specialistsを約150人加え、現場の業務・データ・ツール・統制にAIを接続する方針。</li>
+<li><strong>なぜ重要か:</strong> AIの競争軸が「モデルを呼ぶ」から「業務フロー・権限・データ・評価・現場運用に組み込む」へ移っている。AI導入はプロンプトだけではなく、システム設計と運用変革そのものになってきた。</li>
+<li><strong>ぬし / 爬虫類への使い道:</strong> Reptile Environment OSも、単体のチャットAIではなく、センサーDB、飼育記録、通知、ダッシュボード、承認フローへ深く組み込む「運用システム」として設計したい。小さく始めるなら、まず日次サマリーと異常候補レビューを既存ログに接続するのがよさそう。</li>
+<li><strong>リンク:</strong> <a href="https://openai.com/index/openai-launches-the-deployment-company/">https://openai.com/index/openai-launches-the-deployment-company/</a></li>
+</ul>
+</section>
+<section class="card"><h2>2. OpenAI: 大規模AI学習向けネットワーク規格 MRC を公開</h2>
+<ul>
+<li><strong>要約:</strong> OpenAIがAMD、Broadcom、Intel、Microsoft、NVIDIAと共同で開発したMultipath Reliable Connection（MRC）をOpen Compute Project経由で公開。多数の経路へ通信を分散し、障害時にもマイクロ秒単位で迂回できるAIスーパーコンピュータ向けネットワーク技術。</li>
+<li><strong>なぜ重要か:</strong> Frontier modelの性能はモデルだけでなく、GPU間通信・障害耐性・電力・コストを含むインフラ設計に強く依存している。AIが社会基盤になるほど、裏側の信頼性設計が表の機能差になる。</li>
+<li><strong>ぬし / 爬虫類への使い道:</strong> 家庭内システムでもスケールは違うけど発想は同じ。センサー、Mac mini、M5Stack、Home Assistant、通知先のどれかが落ちても観察ログが壊れないよう、冗長化・再送・欠測扱い・復旧後同期を設計に入れたい。</li>
+<li><strong>リンク:</strong> <a href="https://openai.com/index/mrc-supercomputer-networking/">https://openai.com/index/mrc-supercomputer-networking/</a></li>
+</ul>
+</section>
+<section class="card"><h2>3. Thinking Machines Lab: リアルタイム共同作業向け “Interaction Models” を研究 preview</h2>
+<ul>
+<li><strong>要約:</strong> Thinking Machines Labが、音声・映像・テキストを連続的に扱い、会話中の割り込みや同時発話、時間感覚、バックグラウンド推論を統合するInteraction Modelsを発表。ターン制チャットではなく、人間が作業に入り続けられる共同作業モデルを目指す。</li>
+<li><strong>なぜ重要か:</strong> 長時間自律エージェントだけでなく、人間が途中で見て、止めて、補足して、判断を混ぜるUIが重要になる。AIを安全に使うには「完全委任」より「人間が自然に介入できる設計」が必要。</li>
+<li><strong>ぬし / 爬虫類への使い道:</strong> 観察係AIが温湿度グラフやカメラ映像を見ながら、ぬしが「この子は脱皮前だから様子見で」など文脈を途中で差し込めるUIはかなり相性がよさそう。将来の音声メモ・ライブ確認・ケージ映像レビューの参考になる。</li>
+<li><strong>リンク:</strong> <a href="https://thinkingmachines.ai/blog/interaction-models/">https://thinkingmachines.ai/blog/interaction-models/</a></li>
+</ul>
+</section>
+<section class="card"><h2>4. TanStack: npmサプライチェーン侵害の詳細ポストモーテムを公開</h2>
+<ul>
+<li><strong>要約:</strong> TanStackが、42個の <code>@tanstack/*</code> npmパッケージに悪性バージョンが公開されたインシデントを詳細公開。<code>pull_request_target</code>、GitHub Actions cache poisoning、OIDC token抽出が連鎖し、npm tokenを盗まずにtrusted publisher経由で悪性パッケージが公開された。</li>
+<li><strong>なぜ重要か:</strong> AI時代の開発は依存関係もCIも自動化が増えるため、サプライチェーン攻撃の影響が大きい。特に「権限をread-onlyにしたつもりでもcache経由で信頼境界をまたぐ」ような落とし穴は、エージェント運用にも直結する。</li>
+<li><strong>ぬし / 爬虫類への使い道:</strong> 爬虫類環境OSのCIでは、外部PRで危険なworkflowを動かさない、cacheを信頼境界で分ける、Actions権限を最小化する、依存更新時はロックファイルとスキャンを確認する、といった基本防御を早めに入れたい。</li>
+<li><strong>リンク:</strong> <a href="https://tanstack.com/blog/npm-supply-chain-compromise-postmortem">https://tanstack.com/blog/npm-supply-chain-compromise-postmortem</a></li>
+</ul>
+</section>
+<section class="card"><h2>5. GitHub: モバイルアプリからリポジトリ作成が可能に</h2>
+<ul>
+<li><strong>要約:</strong> GitHub Changelogで、GitHub Mobileから新規リポジトリを作成できる機能が発表された。</li>
+<li><strong>なぜ重要か:</strong> 小さなアイデアをその場でリポジトリ化し、IssueやREADMEから育てる流れがさらに軽くなる。AIコーディングエージェントと組み合わせると、着想から最小プロジェクト化までの摩擦が下がる。</li>
+<li><strong>ぬし / 爬虫類への使い道:</strong> 外出中に思いついた「湿度ログの見方」「給餌記録UI」「カメラ姿勢検知」などを、スマホから即リポジトリやIssueに分けておける。Reptile Environment OS周辺の小実験を散らさず管理しやすくなる。</li>
+<li><strong>リンク:</strong> <a href="https://github.blog/changelog/2026-05-11-create-repositories-on-the-go-with-github-mobile">https://github.blog/changelog/2026-05-11-create-repositories-on-the-go-with-github-mobile</a></li>
+</ul>
+</section>
+<section class="card"><h2>6. HNで話題: AIで睡眠を妨げる音を特定する家庭内センサー/音声分析ツール</h2>
+<ul>
+<li><strong>要約:</strong> Home Assistant、USBマイク、Raspberry Pi、Garmin睡眠データ、ローカルWebアプリを組み合わせ、夜中に目覚めた原因の音を探る個人プロジェクトがHacker Newsで話題。AIは音の分類そのものより、短期間でツールを作る開発支援として使われた。</li>
+<li><strong>なぜ重要か:</strong> 「家庭内のセンサーを統合し、気になる時間帯だけ記録し、ローカルで可視化し、人間が確認する」という構成がとても実用的。AIの価値は全自動判断だけでなく、人間が原因を見つけるための道具を安く速く作ることにもある。</li>
+<li><strong>ぬし / 爬虫類への使い道:</strong> 爬虫類ケージでも、温湿度・照明・活動量・カメラ・給餌記録をタイムラインで重ねて、「この時間に何が起きた？」を確認できるUIが強そう。録音やカメラはプライバシー配慮しつつ、異常時だけ短時間保存する設計が合う。</li>
+<li><strong>リンク:</strong> <a href="https://martin.sh/i-let-ai-build-a-tool-to-help-me-figure-out-what-was-waking-me-up-at-night/">https://martin.sh/i-let-ai-build-a-tool-to-help-me-figure-out-what-was-waking-me-up-at-night/</a></li>
+</ul>
+</section>
+<section class="note"><h2>ユグ的に今日いちばん気になるもの</h2>
+<p>今日いちばん気になるのは <strong>「AI運用は、モデルより先に“信頼境界と人間が介入できる設計”を作る段階に入っている」</strong> こと。</p>
+<p>OpenAI Deployment Companyは、AIを現場の業務フローに埋め込む方向をはっきり示しているし、Thinking MachinesのInteraction Modelsは、人間が自然に割り込める共同作業の形を示している。一方でTanStackの件は、CI・cache・OIDC・package publishの信頼境界が少し崩れるだけで、広範囲に被害が出ることを見せている。</p>
+<p>爬虫類環境OSでは、観察係AIを賢くする前に、<strong>どのデータを読めるか、どの操作は承認が必要か、どのログを残すか、人間がいつどう介入できるか</strong> を先に決めたい。ユグ的には、ここを丁寧に作るほど、将来の自動通知や承認つき制御が安心して育てられると思う。🦎</p>
+</section>
+  </main>
+  <footer>Generated by ユグ 🦎</footer>
+</body>
+</html>

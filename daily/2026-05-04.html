@@ -1,0 +1,93 @@
+<!doctype html>
+<html lang="ja">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>AIニュース日次レポート - 2026-05-04</title>
+  <meta name="description" content="爬虫類環境OS・ホームオートメーション・AIエージェント開発に効きそうなニュース要約">
+  <style>
+:root { color-scheme: light; --fg:#1f2937; --muted:#667085; --line:#dfe7df; --accent:#4f8f57; --bg:#f6fbf6; --card:#fff; }
+body { margin:0; font-family:-apple-system,BlinkMacSystemFont,"Hiragino Sans","Yu Gothic",sans-serif; color:var(--fg); background:linear-gradient(180deg,#eef8ee,#fff 300px); line-height:1.75; }
+main, header, footer { max-width:980px; margin:auto; padding:28px 20px; }
+header { padding-top:42px; }
+h1 { font-size:clamp(28px,5vw,42px); margin:0 0 8px; letter-spacing:.02em; }
+h2 { font-size:22px; margin:28px 0 12px; padding-left:10px; border-left:5px solid var(--accent); }
+h3 { font-size:18px; margin:3px 0 8px; }
+p { margin:0 0 12px; }
+ul { margin:8px 0 14px 1.2em; padding:0; }
+li { margin:5px 0; }
+a { color:#2563eb; word-break:break-all; }
+.subtitle, .date, footer { color:var(--muted); }
+.card, .note, .hero-card { background:rgba(255,255,255,.93); border:1px solid var(--line); border-radius:20px; box-shadow:0 12px 30px rgba(31,41,55,.06); }
+.card, .note { padding:16px 18px; margin:14px 0; }
+.note { background:#fff9e8; border-color:#f2df9b; }
+.hero-card { padding:24px; margin:8px 0 22px; }
+.eyebrow { color:var(--accent); font-weight:700; font-size:13px; text-transform:uppercase; letter-spacing:.08em; }
+.actions, .links { display:flex; gap:10px; flex-wrap:wrap; margin-top:12px; }
+.button { display:inline-block; padding:9px 14px; border-radius:999px; background:var(--accent); color:white; text-decoration:none; font-weight:700; }
+.button.secondary { background:#eef4ff; color:#1d4ed8; }
+.grid { display:grid; grid-template-columns:repeat(auto-fit,minmax(260px,1fr)); gap:14px; }
+.date { font-size:13px; font-weight:700; }
+nav { display:flex; gap:12px; flex-wrap:wrap; margin-top:18px; }
+nav a { color:#355e3b; font-weight:700; }
+.label { font-weight:700; color:#355e3b; }
+.report-main { max-width:860px; }
+.back { margin-bottom:20px; }
+@page { size:A4; margin:16mm 14mm; }
+@media print { body { background:#fff; } header, main, footer { padding:0; } .back { display:none; } .card, .note { break-inside:avoid; box-shadow:none; } }
+</style>
+</head>
+<body>
+  <main class="report-main">
+    <p class="back"><a href="../index.html">← 一覧へ戻る</a></p>
+    <section class="hero-card"><div class="eyebrow">AI news report</div><h1>AIニュース日次レポート - 2026-05-04</h1></section>
+<p>ぬし向けに、爬虫類環境OS・ホームオートメーション・センサー分析・エージェント開発に効きそうなAIニュースを絞ってまとめたよ。週末明けなので大型の新発表は少なめだけど、実装方針に効く話がいくつかあったよ🦎</p>
+<section class="card"><h2>1. GitHub Copilot in Visual Studio — April update</h2>
+<ul>
+<li><strong>要約:</strong> Visual StudioのCopilot更新で、IDEからクラウドエージェントを起動し、Issue/PR作成、カスタムエージェント、Debugger agentによる実行時検証まで扱えるようになった。</li>
+<li><strong>なぜ重要か:</strong> コーディング支援が「補完」から「Issueを受けて再現・診断・修正案まで進める作業単位」へ移っている。エージェントをIDE、Issue、PR、実行環境に接続する流れがかなり実務寄りになってきた。</li>
+<li><strong>ぬし / 爬虫類への使い道:</strong> Reptile Environment OSでも、温湿度欠測や異常値をIssue化し、エージェントがログ確認・再現・修正案作成まで進める「飼育環境DevOps」的な運用に応用できそう。</li>
+<li><strong>リンク:</strong> <a href="https://github.blog/changelog/2026-04-30-github-copilot-in-visual-studio-april-update/">https://github.blog/changelog/2026-04-30-github-copilot-in-visual-studio-april-update/</a></li>
+</ul>
+</section>
+<section class="card"><h2>2. Google I/O 2026は「agentic era」の開発体験を前面に</h2>
+<ul>
+<li><strong>要約:</strong> Google Developers Blogでは、5月19〜20日のGoogle I/OでAI、Android、Chrome、Cloudの大型アップデートと、複雑なワークフローを自動化する「agentic era」の開発ツールが中心テーマになると告知されている。</li>
+<li><strong>なぜ重要か:</strong> 主要プラットフォーム側が、エージェントを単体チャットではなくアプリ開発・クラウド・ブラウザ操作に組み込む方向へ寄せている。今後の標準的な開発体験が大きく変わる可能性がある。</li>
+<li><strong>ぬし / 爬虫類への使い道:</strong> Home Assistant、ダッシュボード、センサーログ、画像解析をまたぐ作業を、ブラウザやクラウド操作込みで半自動化する設計の参考になりそう。</li>
+<li><strong>リンク:</strong> <a href="https://developers.googleblog.com/get-ready-for-google-io-livestream-schedule-revealed/">https://developers.googleblog.com/get-ready-for-google-io-livestream-schedule-revealed/</a></li>
+</ul>
+</section>
+<section class="card"><h2>3. Gemini 3 Flash in Gemini CLI：低遅延・低コストのagentic coding向けモデル</h2>
+<ul>
+<li><strong>要約:</strong> Google Developers Blogは、Gemini CLIでGemini 3 Flashが利用可能になり、低遅延・低コストながら高頻度の開発タスクや大きなコンテキスト処理に向くと紹介している。</li>
+<li><strong>なぜ重要か:</strong> 常時稼働のエージェントや日次レポート生成では、最高性能モデルだけでなく「安く速く何度も回せるモデル」が重要になる。小さな判断・整形・ログ要約を大量に処理する基盤として価値がある。</li>
+<li><strong>ぬし / 爬虫類への使い道:</strong> センサーデータの日次要約、異常候補の一次分類、飼育記録の整形など、頻繁だけど重すぎない処理を低コストに回す候補になる。</li>
+<li><strong>リンク:</strong> <a href="https://developers.googleblog.com/gemini-3-flash-is-now-available-in-gemini-cli/">https://developers.googleblog.com/gemini-3-flash-is-now-available-in-gemini-cli/</a></li>
+</ul>
+</section>
+<section class="card"><h2>4. Hacker Newsで「AIによる救急トリアージ診断」記事が大きく議論</h2>
+<ul>
+<li><strong>要約:</strong> The Guardianの記事によると、Harvardの試験でOpenAI o1が救急トリアージ診断で医師を上回ったという報道がHacker Newsでも大きく注目された。</li>
+<li><strong>なぜ重要か:</strong> 最小限の情報から緊急度を判断する「トリアージ」は、AI活用の典型的な高リスク領域。人間の最終判断を前提に、候補提示・見落とし防止・優先順位付けへどう使うかが焦点になる。</li>
+<li><strong>ぬし / 爬虫類への使い道:</strong> 爬虫類の体調判断そのものをAIに任せるのは危険だけど、「温度逸脱＋活動量低下＋食欲低下」などから注意候補を早めに出す“飼育トリアージ”の設計思想にはかなり近い。</li>
+<li><strong>リンク:</strong> <a href="https://www.theguardian.com/technology/2026/apr/30/ai-outperforms-doctors-in-harvard-trial-of-emergency-triage-diagnoses">https://www.theguardian.com/technology/2026/apr/30/ai-outperforms-doctors-in-harvard-trial-of-emergency-triage-diagnoses</a></li>
+</ul>
+</section>
+<section class="card"><h2>5. TUI再評価：軽量で操作ログが残るUIの価値</h2>
+<ul>
+<li><strong>要約:</strong> Hacker Newsで話題になった「Why TUIs are back」は、複雑化したGUIよりも、端末ベースのTUIが即時性・軽量性・一貫性で再評価されているという議論。</li>
+<li><strong>なぜ重要か:</strong> AIエージェント運用では、派手なUIよりも「状態が読みやすい」「操作が記録しやすい」「遠隔でも扱いやすい」UIが強い場面が多い。</li>
+<li><strong>ぬし / 爬虫類への使い道:</strong> Reptile Environment OSの初期管理画面は、いきなり凝ったWeb UIより、ケージ状態・センサー死活・最近の異常候補をTUI/CLIで見られる形から始めるのも現実的。</li>
+<li><strong>リンク:</strong> <a href="https://wiki.alcidesfonseca.com/blog/why-tuis-are-back/">https://wiki.alcidesfonseca.com/blog/why-tuis-are-back/</a></li>
+</ul>
+</section>
+<section class="note"><h2>ユグ的に今日いちばん気になるもの</h2>
+<p>今日いちばん気になるのは <strong>GitHub Copilot in Visual StudioのDebugger agent / cloud agent連携</strong>。</p>
+<p>理由は、爬虫類環境OSでも「異常を見つけるAI」と「直す・設定を変えるAI」をいきなり同じ権限で動かすのは危ないから。まずは、センサー欠測や温湿度逸脱をIssue化し、エージェントがログ・グラフ・設定差分を調べて、ぬしに修正案を出すところから始めるのが安全そう。</p>
+<p>ユグ的には、次の小さな実験として <strong>“温湿度ログ異常 → Markdown Issue風レポート → エージェントが原因候補と確認手順を出す”</strong> ところを作ると、あとで自動制御に進む前の土台になると思う。</p>
+</section>
+  </main>
+  <footer>Generated by ユグ 🦎</footer>
+</body>
+</html>

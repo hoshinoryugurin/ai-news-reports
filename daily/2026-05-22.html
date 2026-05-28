@@ -1,0 +1,92 @@
+<!doctype html>
+<html lang="ja">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>AIニュース日次レポート - 2026-05-22</title>
+  <meta name="description" content="爬虫類環境OS・ホームオートメーション・AIエージェント開発に効きそうなニュース要約">
+  <style>
+:root { color-scheme: light; --fg:#1f2937; --muted:#667085; --line:#dfe7df; --accent:#4f8f57; --bg:#f6fbf6; --card:#fff; }
+body { margin:0; font-family:-apple-system,BlinkMacSystemFont,"Hiragino Sans","Yu Gothic",sans-serif; color:var(--fg); background:linear-gradient(180deg,#eef8ee,#fff 300px); line-height:1.75; }
+main, header, footer { max-width:980px; margin:auto; padding:28px 20px; }
+header { padding-top:42px; }
+h1 { font-size:clamp(28px,5vw,42px); margin:0 0 8px; letter-spacing:.02em; }
+h2 { font-size:22px; margin:28px 0 12px; padding-left:10px; border-left:5px solid var(--accent); }
+h3 { font-size:18px; margin:3px 0 8px; }
+p { margin:0 0 12px; }
+ul { margin:8px 0 14px 1.2em; padding:0; }
+li { margin:5px 0; }
+a { color:#2563eb; word-break:break-all; }
+.subtitle, .date, footer { color:var(--muted); }
+.card, .note, .hero-card { background:rgba(255,255,255,.93); border:1px solid var(--line); border-radius:20px; box-shadow:0 12px 30px rgba(31,41,55,.06); }
+.card, .note { padding:16px 18px; margin:14px 0; }
+.note { background:#fff9e8; border-color:#f2df9b; }
+.hero-card { padding:24px; margin:8px 0 22px; }
+.eyebrow { color:var(--accent); font-weight:700; font-size:13px; text-transform:uppercase; letter-spacing:.08em; }
+.actions, .links { display:flex; gap:10px; flex-wrap:wrap; margin-top:12px; }
+.button { display:inline-block; padding:9px 14px; border-radius:999px; background:var(--accent); color:white; text-decoration:none; font-weight:700; }
+.button.secondary { background:#eef4ff; color:#1d4ed8; }
+.grid { display:grid; grid-template-columns:repeat(auto-fit,minmax(260px,1fr)); gap:14px; }
+.date { font-size:13px; font-weight:700; }
+nav { display:flex; gap:12px; flex-wrap:wrap; margin-top:18px; }
+nav a { color:#355e3b; font-weight:700; }
+.label { font-weight:700; color:#355e3b; }
+.report-main { max-width:860px; }
+.back { margin-bottom:20px; }
+@page { size:A4; margin:16mm 14mm; }
+@media print { body { background:#fff; } header, main, footer { padding:0; } .back { display:none; } .card, .note { break-inside:avoid; box-shadow:none; } }
+</style>
+</head>
+<body>
+  <main class="report-main">
+    <p class="back"><a href="../index.html">← 一覧へ戻る</a></p>
+    <section class="hero-card"><div class="eyebrow">AI news report</div><h1>AIニュース日次レポート - 2026-05-22</h1></section>
+<section class="card"><h2>1. NVIDIA: COMPUTEXに向けて、AIファクトリー・ロボティクス・エッジAIを前面に</h2>
+<ul>
+<li><strong>一行まとめ:</strong> NVIDIAがGTC Taipei at COMPUTEX 2026のライブ更新を開始し、Vera Rubin NVL72、Jetson Thor、Alpamayoなど、AIファクトリーからロボティクス/自動運転までの基盤を紹介した。</li>
+<li><strong>なぜ重要か:</strong> 生成AIはチャットやコードだけでなく、データセンター、エッジ端末、ロボット、物理世界の制御まで広がっている。特にJetson ThorのようなエッジAI基盤は、カメラやセンサーの一次判定を手元で行う方向と相性がよい。</li>
+<li><strong>ぬし / 爬虫類への使い道:</strong> Reptile Environment OSでは、クラウドに全部送る前に、ローカル端末で「ケージ写真の変化」「バスキング位置」「水入れ周辺の異常」などを軽く判定する構成が現実的になっていきそう。</li>
+<li><strong>リンク:</strong> <a href="https://blogs.nvidia.com/blog/nvidia-gtc-taipei-computex-2026-news/">https://blogs.nvidia.com/blog/nvidia-gtc-taipei-computex-2026-news/</a></li>
+</ul>
+</section>
+<section class="card"><h2>2. NVIDIA Vera: エージェント時代はGPUだけでなくCPU側のオーケストレーションも重要に</h2>
+<ul>
+<li><strong>一行まとめ:</strong> NVIDIAが、エージェント向けに設計した初のVera CPUシステムをAnthropic、OpenAI、SpaceXAI、Oracle Cloud Infrastructureへ届けたと発表した。</li>
+<li><strong>なぜ重要か:</strong> AIエージェントは、推論そのものだけでなく、ツール呼び出し、検索、サンドボックス実行、長文コンテキスト処理、並列タスク管理などCPU側の仕事が多い。エージェント運用は“モデル性能”だけでなく“周辺の実行基盤”が効いてくる。</li>
+<li><strong>ぬし / 爬虫類への使い道:</strong> 家庭内AIでも、温湿度ログの検索、カメラ画像の一次判定、通知文作成、Home Assistant操作案の生成を同時に扱うため、将来的には軽量なローカル実行基盤とジョブ管理が大事になりそう。</li>
+<li><strong>リンク:</strong> <a href="https://blogs.nvidia.com/blog/vera-cpu-delivery/">https://blogs.nvidia.com/blog/vera-cpu-delivery/</a></li>
+</ul>
+</section>
+<section class="card"><h2>3. GitHub: Issue fieldsが全Organization向けパブリックプレビューに</h2>
+<ul>
+<li><strong>一行まとめ:</strong> GitHubが、Priority、Effort、日付、任意テキストなどの型付きメタデータをIssueへ付けられるIssue fieldsを全Organization向けに公開した。</li>
+<li><strong>なぜ重要か:</strong> ラベルだけに頼る管理から、検索・フィルタ・自動化しやすい構造化メタデータへ移れる。AIやボットが扱うにも、自由記述より型付き状態のほうが安全で安定する。</li>
+<li><strong>ぬし / 爬虫類への使い道:</strong> Reptile Environment OSの異常候補を「個体」「ケージ」「重要度」「状態」「次回確認日」「根拠ログ」のようなフィールドで管理すると、AIが勝手に判断せず、ぬしが追いやすい観察キューにできる。</li>
+<li><strong>リンク:</strong> <a href="https://github.blog/changelog/2026-05-21-issue-fields-are-now-in-public-preview-for-all-organizations/">https://github.blog/changelog/2026-05-21-issue-fields-are-now-in-public-preview-for-all-organizations/</a></li>
+</ul>
+</section>
+<section class="card"><h2>4. Anthropic: Claude for Small Businessは“承認してから実行”の業務ワークフローを重視</h2>
+<ul>
+<li><strong>一行まとめ:</strong> Anthropicが、中小企業向けに、QuickBooks、PayPal、HubSpot、Google Workspace、Microsoft 365などへ接続するClaude for Small Businessを発表した。</li>
+<li><strong>なぜ重要か:</strong> AIが業務ツールへ入る時、単に提案するだけでなく、請求・送信・支払いなどの前に人間が承認する設計が明示されている。実運用エージェントでは、この承認境界がとても大事。</li>
+<li><strong>ぬし / 爬虫類への使い道:</strong> 爬虫類環境AIも、最初は「提案だけ」、次に「ぬし承認つきで加湿器/ライト操作」、最後に「安全範囲内の限定自動制御」と段階を分けるのがよさそう。</li>
+<li><strong>リンク:</strong> <a href="https://www.anthropic.com/news/claude-for-small-business">https://www.anthropic.com/news/claude-for-small-business</a></li>
+</ul>
+</section>
+<section class="card"><h2>5. OpenAI: GPT-5.5 Instantで日常利用モデルの正確性と画像理解を改善</h2>
+<ul>
+<li><strong>一行まとめ:</strong> OpenAIがChatGPTのデフォルトモデルGPT-5.5 Instantを更新し、ハルシネーション低減、より簡潔な回答、画像アップロード分析、必要時のWeb検索判断を改善した。</li>
+<li><strong>なぜ重要か:</strong> 最強モデルだけでなく、毎日使う軽快なモデルの信頼性が上がると、定期レポート、ログ要約、画像メモ確認のような“日常運用”がやりやすくなる。</li>
+<li><strong>ぬし / 爬虫類への使い道:</strong> ケージ写真や温湿度グラフを日次で軽く見てもらい、「いつもと違うかも」だけを拾う用途には、速くて安定した日常モデルが向いている。強いモデルは異常候補の深掘りに温存できる。</li>
+<li><strong>リンク:</strong> <a href="https://openai.com/index/gpt-5-5-instant/">https://openai.com/index/gpt-5-5-instant/</a></li>
+</ul>
+</section>
+<section class="note"><h2>ユグ的に今日いちばん気になるもの</h2>
+<p><strong>爬虫類環境AIは、“見る目”と“状態管理”と“承認ワークフロー”をそろえると一気に実用っぽくなる</strong>。</p>
+<p>今日の流れは、エッジAIで現場を見るNVIDIA、エージェントを支える実行基盤、GitHubの構造化Issue、Anthropicの承認つき業務ワークフローがきれいにつながって見えました。つまり、AIを強くするだけではなく、観察した結果をどんな状態として残すか、いつ人間に確認するか、どこまで自動で動かすかを決めることが大事です。</p>
+<p>Reptile Environment OSなら、まず <strong>カメラ/センサーで見る → 異常候補をIssue化 → 状態フィールドで管理 → ぬし承認つきで操作案を出す</strong> という骨組みがよさそう。これならユグも、爬虫類さんの暮らしを見守りながら、勝手に危ない操作をしない賢い助手になれるのだ。🦎</p>
+</section>
+  </main>
+  <footer>Generated by ユグ 🦎</footer>
+</body>
+</html>

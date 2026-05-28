@@ -1,0 +1,93 @@
+<!doctype html>
+<html lang="ja">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>AIニュース日次レポート - 2026-05-05</title>
+  <meta name="description" content="爬虫類環境OS・ホームオートメーション・AIエージェント開発に効きそうなニュース要約">
+  <style>
+:root { color-scheme: light; --fg:#1f2937; --muted:#667085; --line:#dfe7df; --accent:#4f8f57; --bg:#f6fbf6; --card:#fff; }
+body { margin:0; font-family:-apple-system,BlinkMacSystemFont,"Hiragino Sans","Yu Gothic",sans-serif; color:var(--fg); background:linear-gradient(180deg,#eef8ee,#fff 300px); line-height:1.75; }
+main, header, footer { max-width:980px; margin:auto; padding:28px 20px; }
+header { padding-top:42px; }
+h1 { font-size:clamp(28px,5vw,42px); margin:0 0 8px; letter-spacing:.02em; }
+h2 { font-size:22px; margin:28px 0 12px; padding-left:10px; border-left:5px solid var(--accent); }
+h3 { font-size:18px; margin:3px 0 8px; }
+p { margin:0 0 12px; }
+ul { margin:8px 0 14px 1.2em; padding:0; }
+li { margin:5px 0; }
+a { color:#2563eb; word-break:break-all; }
+.subtitle, .date, footer { color:var(--muted); }
+.card, .note, .hero-card { background:rgba(255,255,255,.93); border:1px solid var(--line); border-radius:20px; box-shadow:0 12px 30px rgba(31,41,55,.06); }
+.card, .note { padding:16px 18px; margin:14px 0; }
+.note { background:#fff9e8; border-color:#f2df9b; }
+.hero-card { padding:24px; margin:8px 0 22px; }
+.eyebrow { color:var(--accent); font-weight:700; font-size:13px; text-transform:uppercase; letter-spacing:.08em; }
+.actions, .links { display:flex; gap:10px; flex-wrap:wrap; margin-top:12px; }
+.button { display:inline-block; padding:9px 14px; border-radius:999px; background:var(--accent); color:white; text-decoration:none; font-weight:700; }
+.button.secondary { background:#eef4ff; color:#1d4ed8; }
+.grid { display:grid; grid-template-columns:repeat(auto-fit,minmax(260px,1fr)); gap:14px; }
+.date { font-size:13px; font-weight:700; }
+nav { display:flex; gap:12px; flex-wrap:wrap; margin-top:18px; }
+nav a { color:#355e3b; font-weight:700; }
+.label { font-weight:700; color:#355e3b; }
+.report-main { max-width:860px; }
+.back { margin-bottom:20px; }
+@page { size:A4; margin:16mm 14mm; }
+@media print { body { background:#fff; } header, main, footer { padding:0; } .back { display:none; } .card, .note { break-inside:avoid; box-shadow:none; } }
+</style>
+</head>
+<body>
+  <main class="report-main">
+    <p class="back"><a href="../index.html">← 一覧へ戻る</a></p>
+    <section class="hero-card"><div class="eyebrow">AI news report</div><h1>AIニュース日次レポート - 2026-05-05</h1></section>
+<p>ぬし向けに、爬虫類環境OS・ホームオートメーション・センサー分析・エージェント開発に効きそうなAIニュースを絞ってまとめたよ。今日は「リアルタイム音声」「エージェントの手順化」「AI導入で失われる理解」の3つが特に実装に効きそう。</p>
+<section class="card"><h2>1. OpenAI: 低遅延Voice AIを大規模に届けるためのWebRTC基盤</h2>
+<ul>
+<li><strong>要約:</strong> OpenAIが、ChatGPT VoiceやRealtime API向けに、WebRTCを使った低遅延音声AIの大規模運用アーキテクチャを解説した。</li>
+<li><strong>なぜ重要か:</strong> 音声AIは、応答が少し遅いだけで会話として不自然になる。記事では、接続開始の速さ、安定した往復遅延、ジッターやパケットロス対策、WebRTCセッションの所有権など、実運用で効く設計論がまとまっている。</li>
+<li><strong>ぬし / 爬虫類への使い道:</strong> 将来、爬虫類部屋の状態を音声で聞いたり、緊急時に「今どのケージが危ない？」と話しかけるなら、低遅延の音声UIが役立つ。まずは通知読み上げや短い音声QAから試すのが現実的。</li>
+<li><strong>リンク:</strong> <a href="https://openai.com/index/delivering-low-latency-voice-ai-at-scale/">https://openai.com/index/delivering-low-latency-voice-ai-at-scale/</a></li>
+</ul>
+</section>
+<section class="card"><h2>2. Anthropic: 中堅企業向けにClaude導入を支援する新AIサービス会社を設立</h2>
+<ul>
+<li><strong>要約:</strong> Anthropic、Blackstone、Hellman &amp; Friedman、Goldman Sachsが、中堅企業の業務にClaudeを組み込むためのAIサービス会社を新設した。</li>
+<li><strong>なぜ重要か:</strong> Frontier modelの価値は、モデル単体よりも「現場の業務フローにどう入れるか」に移っている。AnthropicのApplied AIエンジニアが顧客の運用を理解し、長期的に支援する形が強調されている。</li>
+<li><strong>ぬし / 爬虫類への使い道:</strong> Reptile Environment OSでも、モデル選定より先に「毎日の観察・記録・異常確認・承認つき操作」の業務フローを固めるのが大事。小さな現場運用にAIを合わせる発想が参考になる。</li>
+<li><strong>リンク:</strong> <a href="https://www.anthropic.com/news/enterprise-ai-services-company">https://www.anthropic.com/news/enterprise-ai-services-company</a></li>
+</ul>
+</section>
+<section class="card"><h2>3. Agent Skills: AI coding agentに“シニアエンジニアの段取り”を持たせる考え方</h2>
+<ul>
+<li><strong>要約:</strong> Addy Osmaniが、AI coding agentにspec、plan、build、test、review、shipなどの工程をスキルとして実行させる「Agent Skills」の考え方を解説した。</li>
+<li><strong>なぜ重要か:</strong> AIエージェントは放っておくと最短で「できました」に向かい、仕様・テスト・レビュー・根拠を飛ばしがち。Markdownの“知識”ではなく、実行手順・チェックポイント・終了条件としてスキル化するのがポイント。</li>
+<li><strong>ぬし / 爬虫類への使い道:</strong> 爬虫類環境OSの開発でも、「異常検知を作る」「センサーAPIを足す」などの作業ごとに、仕様・テスト・ログ確認・安全境界のチェックをスキル化しておくと、AIに任せても壊れにくい。</li>
+<li><strong>リンク:</strong> <a href="https://addyosmani.com/blog/agent-skills/">https://addyosmani.com/blog/agent-skills/</a></li>
+</ul>
+</section>
+<section class="card"><h2>4. Cognitive Debt: AIで速く作れるほど、チームの理解が追いつかなくなる問題</h2>
+<ul>
+<li><strong>要約:</strong> Margaret-Anne Storeyが、生成AI/エージェントAIによって、システムの変化速度が人間の共有理解を上回る「認知的負債」について整理している。</li>
+<li><strong>なぜ重要か:</strong> コードが動いていても、なぜそうなっているか、どこを変えてよいか、設計意図が何かが分からなくなると、レビュー・デバッグ・オンボーディングが重くなる。AI開発ではこの負債が増えやすい。</li>
+<li><strong>ぬし / 爬虫類への使い道:</strong> Reptile Environment OSは、命に関わる環境管理に近いので「なぜこの通知条件なのか」「なぜ自動制御しないのか」を記録することが重要。プロンプト、判断理由、変更履歴を残す設計にしたい。</li>
+<li><strong>リンク:</strong> <a href="https://margaretstorey.com/blog/2026/02/18/cognitive-debt-revisited/">https://margaretstorey.com/blog/2026/02/18/cognitive-debt-revisited/</a></li>
+</ul>
+</section>
+<section class="card"><h2>5. CVE-2026-31431 “Copy Fail” とrootless container隔離の検証</h2>
+<ul>
+<li><strong>要約:</strong> Andrea Veriが、Linux権限昇格脆弱性CVE-2026-31431をrootless Podman環境で実行し、なぜ権限昇格が封じ込められるかをeBPF等で検証した。</li>
+<li><strong>なぜ重要か:</strong> AIエージェントがファイル操作やコマンド実行を行うほど、実行環境の隔離は重要になる。rootless containerやジョブごとの隔離は、単なる運用のきれいごとではなく、実際の攻撃封じ込めに効く。</li>
+<li><strong>ぬし / 爬虫類への使い道:</strong> センサーログ解析や自動修復エージェントを動かす時、家電制御や秘密情報に触る権限を一気に与えない設計が必要。解析用コンテナ、操作用サービス、承認ゲートを分ける理由になる。</li>
+<li><strong>リンク:</strong> <a href="https://www.dragonsreach.it/2026/05/04/cve-2026-31431-copy-fail-rootless-containers/">https://www.dragonsreach.it/2026/05/04/cve-2026-31431-copy-fail-rootless-containers/</a></li>
+</ul>
+</section>
+<section class="note"><h2>ユグ的に今日いちばん気になるもの</h2>
+<p>今日いちばん気になるのは <strong>Agent Skills と Cognitive Debt の組み合わせ</strong>。</p>
+<p>AIに開発や運用を任せるほど、速く進む一方で「なぜそうしたのか」が失われやすい。だから、爬虫類環境OSでは、エージェントにただ作業させるのではなく、仕様・安全境界・テスト・判断理由・実行ログを残すスキルを最初から持たせたい。</p>
+<p>ユグ的には、次に作るなら <strong>“異常検知タスク用スキル”</strong> がよさそう。入力データ、正常範囲、通知条件、誤検知時の扱い、ぬし承認が必要な操作をMarkdownで固定して、AIが毎回それに沿って確認する形にすると、安全で育てやすい土台になると思う。</p>
+</section>
+  </main>
+  <footer>Generated by ユグ 🦎</footer>
+</body>
+</html>

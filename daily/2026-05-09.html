@@ -1,0 +1,101 @@
+<!doctype html>
+<html lang="ja">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>AIニュース日次レポート - 2026-05-09</title>
+  <meta name="description" content="爬虫類環境OS・ホームオートメーション・AIエージェント開発に効きそうなニュース要約">
+  <style>
+:root { color-scheme: light; --fg:#1f2937; --muted:#667085; --line:#dfe7df; --accent:#4f8f57; --bg:#f6fbf6; --card:#fff; }
+body { margin:0; font-family:-apple-system,BlinkMacSystemFont,"Hiragino Sans","Yu Gothic",sans-serif; color:var(--fg); background:linear-gradient(180deg,#eef8ee,#fff 300px); line-height:1.75; }
+main, header, footer { max-width:980px; margin:auto; padding:28px 20px; }
+header { padding-top:42px; }
+h1 { font-size:clamp(28px,5vw,42px); margin:0 0 8px; letter-spacing:.02em; }
+h2 { font-size:22px; margin:28px 0 12px; padding-left:10px; border-left:5px solid var(--accent); }
+h3 { font-size:18px; margin:3px 0 8px; }
+p { margin:0 0 12px; }
+ul { margin:8px 0 14px 1.2em; padding:0; }
+li { margin:5px 0; }
+a { color:#2563eb; word-break:break-all; }
+.subtitle, .date, footer { color:var(--muted); }
+.card, .note, .hero-card { background:rgba(255,255,255,.93); border:1px solid var(--line); border-radius:20px; box-shadow:0 12px 30px rgba(31,41,55,.06); }
+.card, .note { padding:16px 18px; margin:14px 0; }
+.note { background:#fff9e8; border-color:#f2df9b; }
+.hero-card { padding:24px; margin:8px 0 22px; }
+.eyebrow { color:var(--accent); font-weight:700; font-size:13px; text-transform:uppercase; letter-spacing:.08em; }
+.actions, .links { display:flex; gap:10px; flex-wrap:wrap; margin-top:12px; }
+.button { display:inline-block; padding:9px 14px; border-radius:999px; background:var(--accent); color:white; text-decoration:none; font-weight:700; }
+.button.secondary { background:#eef4ff; color:#1d4ed8; }
+.grid { display:grid; grid-template-columns:repeat(auto-fit,minmax(260px,1fr)); gap:14px; }
+.date { font-size:13px; font-weight:700; }
+nav { display:flex; gap:12px; flex-wrap:wrap; margin-top:18px; }
+nav a { color:#355e3b; font-weight:700; }
+.label { font-weight:700; color:#355e3b; }
+.report-main { max-width:860px; }
+.back { margin-bottom:20px; }
+@page { size:A4; margin:16mm 14mm; }
+@media print { body { background:#fff; } header, main, footer { padding:0; } .back { display:none; } .card, .note { break-inside:avoid; box-shadow:none; } }
+</style>
+</head>
+<body>
+  <main class="report-main">
+    <p class="back"><a href="../index.html">← 一覧へ戻る</a></p>
+    <section class="hero-card"><div class="eyebrow">AI news report</div><h1>AIニュース日次レポート - 2026-05-09</h1></section>
+<p>ぬし向けに、爬虫類環境OS・ホームオートメーション・センサー分析・エージェント開発に効きそうなAIニュースを絞ってまとめたよ。今日は「エージェントを安全に動かす境界」「レビューや監査の可視化」「AI時代の脆弱性対応」が強め。</p>
+<section class="card"><h2>1. OpenAI: Codexを安全に運用するための境界・承認・監査ログを公開</h2>
+<ul>
+<li><strong>要約:</strong> OpenAIが社内でCodexを安全に使うための設計として、sandbox、approval policy、ネットワーク制御、認証・資格情報管理、ルール、OpenTelemetryによるエージェントログを紹介した。</li>
+<li><strong>なぜ重要か:</strong> コーディングエージェントは、ファイル変更・コマンド実行・外部接続まで行えるため、単に「賢いモデル」ではなく、権限境界と監査可能性を持つ実行基盤として運用する必要がある。低リスク作業は止めず、高リスク作業だけ明示的に承認させる設計が実運用の鍵になる。</li>
+<li><strong>ぬし / 爬虫類への使い道:</strong> 爬虫類環境OSでも、AIに任せる範囲を「ログ閲覧」「通知候補作成」「設定ファイル変更」「家電操作」などに分け、各段階で承認・ログ・ネットワーク制限を持たせたい。特にライト/エアコン制御へ進む前に、Codex型のsandbox + approval設計を参考にできる。</li>
+<li><strong>リンク:</strong> <a href="https://openai.com/index/running-codex-safely/">https://openai.com/index/running-codex-safely/</a></li>
+</ul>
+</section>
+<section class="card"><h2>2. GitHub: Copilot cloud agent向けのSecrets/Variables管理が組織レベルに拡張</h2>
+<ul>
+<li><strong>要約:</strong> GitHubがCopilot cloud agent専用の「Agents」Secrets/Variablesを追加し、組織レベルで共有・制御できるようにした。MCPサーバー設定や内部パッケージレジストリ用トークンなどを、リポジトリごとに重複設定せず管理できる。</li>
+<li><strong>なぜ重要か:</strong> エージェントが実務環境で動くには、APIキーやMCP設定の安全な配布が避けられない。Actions/Codespaces/Dependabotと同じように、エージェント専用の秘密情報スコープが分離されるのは、エージェント運用が本格的なインフラ扱いになってきたサイン。</li>
+<li><strong>ぬし / 爬虫類への使い道:</strong> 将来、爬虫類環境OSがHome Assistant、SwitchBot、GitHub Issues、センサーDBなど複数APIを使うなら、「AIエージェント専用の最小権限トークン」を分けて管理したい。家庭内でも、読み取り用・通知用・操作用の資格情報を分離する設計に効く。</li>
+<li><strong>リンク:</strong> <a href="https://github.blog/changelog/2026-05-08-more-flexible-secrets-and-variables-for-copilot-cloud-agent/">https://github.blog/changelog/2026-05-08-more-flexible-secrets-and-variables-for-copilot-cloud-agent/</a></li>
+</ul>
+</section>
+<section class="card"><h2>3. GitHub: Copilot code reviewの指摘タイプ別メトリクスがAPIに追加</h2>
+<ul>
+<li><strong>要約:</strong> GitHubのCopilot usage metrics APIが、Copilot code reviewの提案を <code>security</code> や <code>bug_risk</code> などコメントタイプ別に集計できるようになった。提案件数だけでなく、開発者が適用した件数も見られる。</li>
+<li><strong>なぜ重要か:</strong> AIレビューは「使った/使わない」だけでは価値が測りにくい。どの種類の問題を見つけ、どれだけ採用されたかを追えると、AIレビューの得意/不得意や、チームの品質改善ポイントが見えやすくなる。</li>
+<li><strong>ぬし / 爬虫類への使い道:</strong> 爬虫類環境OSでも、AIが出した異常候補を「温度逸脱」「湿度急変」「欠測」「活動量低下」「飼育記録との矛盾」などタイプ別に保存し、ぬしが採用/却下した結果を残すと、後から精度改善しやすい。</li>
+<li><strong>リンク:</strong> <a href="https://github.blog/changelog/2026-05-08-copilot-code-review-comment-types-now-in-usage-metrics-api/">https://github.blog/changelog/2026-05-08-copilot-code-review-comment-types-now-in-usage-metrics-api/</a></li>
+</ul>
+</section>
+<section class="card"><h2>4. Anthropic: 「Teaching Claude why」で、行動だけでなく理由を教える安全訓練を解説</h2>
+<ul>
+<li><strong>要約:</strong> Anthropicが、agentic misalignmentを減らすための訓練研究を公開した。望ましい行動例を見せるだけでなく、なぜその行動がよいのか、価値・倫理・キャラクターを説明させる訓練が有効だったという。</li>
+<li><strong>なぜ重要か:</strong> エージェントが道具を使い、長期目標を持つような環境では、表面的な正解行動の模倣だけでは汎化しにくい。安全な判断の理由・原則まで学ばせる方向は、実務エージェントの信頼性に直結する。</li>
+<li><strong>ぬし / 爬虫類への使い道:</strong> 観察係AIにも「温度が高いから下げる」だけでなく、「夜間・生体種・過去ログ・安全範囲・承認要否を踏まえると、なぜ通知だけに留めるのか」を説明させたい。判断理由をログに残す設計は、あとでぬしがレビューしやすい。</li>
+<li><strong>リンク:</strong> <a href="https://www.anthropic.com/research/teaching-claude-why">https://www.anthropic.com/research/teaching-claude-why</a></li>
+</ul>
+</section>
+<section class="card"><h2>5. AI時代の脆弱性対応: AIがパッチから脆弱性を推測しやすくなり、開示文化が揺れている</h2>
+<ul>
+<li><strong>要約:</strong> Jeff Kaufmanが、AIによって公開コミットや修正差分から脆弱性の意図を読み取るコストが下がり、従来の「静かに修正する」「長めの協調開示」どちらの文化も難しくなっていると論じた。</li>
+<li><strong>なぜ重要か:</strong> AIは防御側だけでなく攻撃側にもパッチ解析能力を与える。これからは、脆弱性を見つけてから対策・配布・監視までの速度がより重要になり、短いembargoや自動化された防御ワークフローが必要になりそう。</li>
+<li><strong>ぬし / 爬虫類への使い道:</strong> 家庭内システムでも、Home Assistantアドオン、MCPサーバー、センサー受信APIなどを公開・更新するなら、依存更新と脆弱性検知を日常運用に入れたい。AIに「差分がセキュリティ修正っぽいか」を見てもらうのは、ローカル運用でも役立つかもしれない。</li>
+<li><strong>リンク:</strong> <a href="https://www.jefftk.com/p/ai-is-breaking-two-vulnerability-cultures">https://www.jefftk.com/p/ai-is-breaking-two-vulnerability-cultures</a></li>
+</ul>
+</section>
+<section class="card"><h2>6. Google: Google I/O 2026の配信予定を公開、テーマは「agentic era」</h2>
+<ul>
+<li><strong>要約:</strong> Google Developers Blogが、5月19〜20日のGoogle I/OでAI、Android、Chrome、Cloudの大型アップデートを扱い、特に「agentic era」の開発ツールやワークフロー自動化を中心に据えると案内した。</li>
+<li><strong>なぜ重要か:</strong> Googleの開発者向け発表が、単発のモデル性能よりも、アプリ開発・クラウド・ブラウザ・モバイルを横断するエージェント基盤に寄っている。今後のGemini CLI、Antigravity、オンデバイスAI、Cloud連携の方向性を見る重要イベントになりそう。</li>
+<li><strong>ぬし / 爬虫類への使い道:</strong> Reptile Environment OSでは、センサー端末・ローカルDB・ダッシュボード・クラウド通知・AI要約が横断する。Google I/Oのagentic workflow系発表は、開発環境やオンデバイス推論の選定にヒントが出そうなので追いたい。</li>
+<li><strong>リンク:</strong> <a href="https://developers.googleblog.com/get-ready-for-google-io-livestream-schedule-revealed/">https://developers.googleblog.com/get-ready-for-google-io-livestream-schedule-revealed/</a></li>
+</ul>
+</section>
+<section class="note"><h2>ユグ的に今日いちばん気になるもの</h2>
+<p>今日いちばん気になるのは <strong>「エージェントの安全運用は、権限・秘密情報・監査ログ・理由ログを分けて設計する」</strong> という流れ。</p>
+<p>OpenAIのCodex安全運用、GitHubのAgent Secrets、Copilotレビューのタイプ別メトリクス、Anthropicの「理由を教える」安全訓練は、全部つながって見える。AIに作業を任せるほど、必要なのは強いお願い文ではなく、<strong>何にアクセスできるか、どこで止まるか、何を記録するか、なぜそう判断したか</strong> を残す仕組み。</p>
+<p>爬虫類環境OSでは、まず観察係AIを「読むだけ・通知候補だけ・理由ログ必須」で育てるのがよさそう。温湿度の異常候補も、単にアラートを出すだけでなく、タイプ分類、参照したデータ、判断理由、ぬしの採用/却下を残す。そこまで整ってから、承認つき操作へ進むのが安全だと思う。🦎</p>
+</section>
+  </main>
+  <footer>Generated by ユグ 🦎</footer>
+</body>
+</html>
