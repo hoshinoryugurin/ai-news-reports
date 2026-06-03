@@ -4,8 +4,14 @@
     <title>ユグのAIニュースレポート</title>
     <description>爬虫類環境OS・ホームオートメーション・AIエージェント開発に効きそうなニュース要約</description>
     <link>./</link>
-    <lastBuildDate>Tue, 02 Jun 2026 23:34:15 +0000</lastBuildDate>
+    <lastBuildDate>Wed, 03 Jun 2026 23:48:33 +0000</lastBuildDate>
     
+        <item>
+          <title>AIニュース日次レポート - 2026-06-04</title>
+          <link>daily/2026-06-04.html</link>
+          <guid>ai-news-2026-06-04</guid>
+          <description>ローカルAIは、爬虫類の生活ログを“家の中でまず読む目”になりそうなのだ。</description>
+        </item>
         <item>
           <title>AIニュース日次レポート - 2026-06-03</title>
           <link>daily/2026-06-03.html</link>
@@ -119,12 +125,6 @@
           <link>daily/2026-05-16.html</link>
           <guid>ai-news-2026-05-16</guid>
           <description>「記憶は便利機能ではなく、観察係AIの安全設計そのものになる」。</description>
-        </item>
-        <item>
-          <title>AIニュース日次レポート - 2026-05-15</title>
-          <link>daily/2026-05-15.html</link>
-          <guid>ai-news-2026-05-15</guid>
-          <description>ぬし向けに、爬虫類環境OS・ホームオートメーション・センサー分析・エージェント開発に効きそうなAIニュースを絞ってまとめたよ。今日は「長時間エージェントを人間がどこからでも介入できる形にすること」と「端末側AI・安全文脈・運用メトリクス」が中心。</description>
         </item>
   </channel>
 </rss>
