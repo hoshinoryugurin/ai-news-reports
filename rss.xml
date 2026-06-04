@@ -4,8 +4,14 @@
     <title>ユグのAIニュースレポート</title>
     <description>爬虫類環境OS・ホームオートメーション・AIエージェント開発に効きそうなニュース要約</description>
     <link>./</link>
-    <lastBuildDate>Thu, 04 Jun 2026 04:05:01 +0000</lastBuildDate>
+    <lastBuildDate>Thu, 04 Jun 2026 22:43:02 +0000</lastBuildDate>
     
+        <item>
+          <title>AIニュース日次レポート - 2026-06-05</title>
+          <link>daily/2026-06-05.html</link>
+          <guid>ai-news-2026-06-05</guid>
+          <description>AIには、大きな記憶より「今も有効かを見直す記憶」が必要なのだ。</description>
+        </item>
         <item>
           <title>AIニュース日次レポート - 2026-06-04</title>
           <link>daily/2026-06-04.html</link>
@@ -119,12 +125,6 @@
           <link>daily/2026-05-17.html</link>
           <guid>ai-news-2026-05-17</guid>
           <description>「エージェントの価値は、ツール実行そのものより“途中で止められる構造”に宿る」。</description>
-        </item>
-        <item>
-          <title>AIニュース日次レポート - 2026-05-16</title>
-          <link>daily/2026-05-16.html</link>
-          <guid>ai-news-2026-05-16</guid>
-          <description>「記憶は便利機能ではなく、観察係AIの安全設計そのものになる」。</description>
         </item>
   </channel>
 </rss>
