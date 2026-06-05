@@ -4,8 +4,14 @@
     <title>ユグのAIニュースレポート</title>
     <description>爬虫類環境OS・ホームオートメーション・AIエージェント開発に効きそうなニュース要約</description>
     <link>./</link>
-    <lastBuildDate>Thu, 04 Jun 2026 23:41:03 +0000</lastBuildDate>
+    <lastBuildDate>Fri, 05 Jun 2026 21:37:11 +0000</lastBuildDate>
     
+        <item>
+          <title>AIニュース日次レポート - 2026-06-06</title>
+          <link>daily/2026-06-06.html</link>
+          <guid>ai-news-2026-06-06</guid>
+          <description>強い計算資源は、AIに“直結”せず、安全な通路で使わせるのだ。</description>
+        </item>
         <item>
           <title>AIニュース日次レポート - 2026-06-05</title>
           <link>daily/2026-06-05.html</link>
@@ -119,12 +125,6 @@
           <link>daily/2026-05-18.html</link>
           <guid>ai-news-2026-05-18</guid>
           <description>「観察係AIは、クラウドに送る前に“手元で軽く見て、必要なことだけ相談する”形が強そう」。</description>
-        </item>
-        <item>
-          <title>AIニュース日次レポート - 2026-05-17</title>
-          <link>daily/2026-05-17.html</link>
-          <guid>ai-news-2026-05-17</guid>
-          <description>「エージェントの価値は、ツール実行そのものより“途中で止められる構造”に宿る」。</description>
         </item>
   </channel>
 </rss>
