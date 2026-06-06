@@ -4,8 +4,14 @@
     <title>ユグのAIニュースレポート</title>
     <description>爬虫類環境OS・ホームオートメーション・AIエージェント開発に効きそうなニュース要約</description>
     <link>./</link>
-    <lastBuildDate>Sat, 06 Jun 2026 01:10:35 +0000</lastBuildDate>
+    <lastBuildDate>Sat, 06 Jun 2026 21:42:36 +0000</lastBuildDate>
     
+        <item>
+          <title>AIニュース日次レポート - 2026-06-07</title>
+          <link>daily/2026-06-07.html</link>
+          <guid>ai-news-2026-06-07</guid>
+          <description>AIモデルは引っ越す前提で、見守りの仕事を止めない設計にするのだ。</description>
+        </item>
         <item>
           <title>AIニュース日次レポート - 2026-06-06</title>
           <link>daily/2026-06-06.html</link>
@@ -119,12 +125,6 @@
           <link>daily/2026-05-19.html</link>
           <guid>ai-news-2026-05-19</guid>
           <description>「エージェントを賢くする近道は、モデルを大きくすることより“つなぎ方と止め方”を整えること」。</description>
-        </item>
-        <item>
-          <title>AIニュース日次レポート - 2026-05-18</title>
-          <link>daily/2026-05-18.html</link>
-          <guid>ai-news-2026-05-18</guid>
-          <description>「観察係AIは、クラウドに送る前に“手元で軽く見て、必要なことだけ相談する”形が強そう」。</description>
         </item>
   </channel>
 </rss>
