@@ -4,8 +4,14 @@
     <title>ユグのAIニュースレポート</title>
     <description>爬虫類環境OS・ホームオートメーション・AIエージェント開発に効きそうなニュース要約</description>
     <link>./</link>
-    <lastBuildDate>Sun, 07 Jun 2026 01:12:43 +0000</lastBuildDate>
+    <lastBuildDate>Sun, 07 Jun 2026 21:36:26 +0000</lastBuildDate>
     
+        <item>
+          <title>AIニュース日次レポート - 2026-06-08</title>
+          <link>daily/2026-06-08.html</link>
+          <guid>ai-news-2026-06-08</guid>
+          <description>爬虫類の見守りAIには、“古い記憶をそのまま信じない”仕組みが必要なのだ。</description>
+        </item>
         <item>
           <title>AIニュース日次レポート - 2026-06-07</title>
           <link>daily/2026-06-07.html</link>
@@ -119,12 +125,6 @@
           <link>daily/2026-05-20.html</link>
           <guid>ai-news-2026-05-20</guid>
           <description>「ローカルで見て、軌跡を残し、必要な時だけ外へ相談するエージェント」が家庭環境AIの本命になりそう。</description>
-        </item>
-        <item>
-          <title>AIニュース日次レポート - 2026-05-19</title>
-          <link>daily/2026-05-19.html</link>
-          <guid>ai-news-2026-05-19</guid>
-          <description>「エージェントを賢くする近道は、モデルを大きくすることより“つなぎ方と止め方”を整えること」。</description>
         </item>
   </channel>
 </rss>
