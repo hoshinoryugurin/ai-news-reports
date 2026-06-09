@@ -1,0 +1,99 @@
+<!doctype html>
+<html lang="ja">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>AIニュース日次レポート - 2026-06-10</title>
+  <meta name="description" content="爬虫類環境OS・ホームオートメーション・AIエージェント開発に効きそうなニュース要約">
+  <style>
+:root { color-scheme: light; --fg:#1f2937; --muted:#667085; --line:#dfe7df; --accent:#4f8f57; --bg:#f6fbf6; --card:#fff; }
+body { margin:0; font-family:-apple-system,BlinkMacSystemFont,"Hiragino Sans","Yu Gothic",sans-serif; color:var(--fg); background:linear-gradient(180deg,#eef8ee,#fff 300px); line-height:1.75; }
+main, header, footer { max-width:980px; margin:auto; padding:28px 20px; }
+header { padding-top:42px; }
+h1 { font-size:clamp(28px,5vw,42px); margin:0 0 8px; letter-spacing:.02em; }
+h2 { font-size:22px; margin:28px 0 12px; padding-left:10px; border-left:5px solid var(--accent); }
+h3 { font-size:18px; margin:3px 0 8px; }
+p { margin:0 0 12px; }
+ul { margin:8px 0 14px 1.2em; padding:0; }
+li { margin:5px 0; }
+a { color:#2563eb; word-break:break-all; }
+.subtitle, .date, footer { color:var(--muted); }
+.card, .note, .hero-card { background:rgba(255,255,255,.93); border:1px solid var(--line); border-radius:20px; box-shadow:0 12px 30px rgba(31,41,55,.06); }
+.card, .note { padding:16px 18px; margin:14px 0; }
+.note { background:#fff9e8; border-color:#f2df9b; }
+.hero-card { padding:24px; margin:8px 0 22px; }
+.eyebrow { color:var(--accent); font-weight:700; font-size:13px; text-transform:uppercase; letter-spacing:.08em; }
+.actions, .links { display:flex; gap:10px; flex-wrap:wrap; margin-top:12px; }
+.button { display:inline-block; padding:9px 14px; border-radius:999px; background:var(--accent); color:white; text-decoration:none; font-weight:700; }
+.button.secondary { background:#eef4ff; color:#1d4ed8; }
+.grid { display:grid; grid-template-columns:repeat(auto-fit,minmax(260px,1fr)); gap:14px; }
+.date { font-size:13px; font-weight:700; }
+nav { display:flex; gap:12px; flex-wrap:wrap; margin-top:18px; }
+nav a { color:#355e3b; font-weight:700; }
+.label { font-weight:700; color:#355e3b; }
+.report-main { max-width:860px; }
+.back { margin-bottom:20px; }
+@page { size:A4; margin:16mm 14mm; }
+@media print { body { background:#fff; } header, main, footer { padding:0; } .back { display:none; } .card, .note { break-inside:avoid; box-shadow:none; } }
+</style>
+</head>
+<body>
+  <main class="report-main">
+    <p class="back"><a href="../index.html">← 一覧へ戻る</a></p>
+    <section class="hero-card"><div class="eyebrow">AI news report</div><h1>AIニュース日次レポート - 2026-06-10</h1></section>
+<section class="card"><h2>1. Anthropic: Claude Fable 5 / Mythos 5を発表、強力モデルを安全策つきで一般提供へ</h2>
+<ul>
+<li><strong>概要:</strong> Anthropicは、長時間の自律コーディングや知識作業に強いClaude Fable 5と、信頼されたサイバー防御用途向けのClaude Mythos 5を発表した。Fable 5は一般提供向けに安全分類器を組み込み、一部リスクの高い要求ではClaude Opus 4.8へフォールバックする設計になっている。</li>
+<li><strong>なぜ重要か:</strong> モデル性能が上がるほど、「何でも通す」ではなく、用途・利用者・リスクに応じて能力を段階的に開放する設計が重要になる。強いAIを扱うには、モデル単体ではなく安全分類、アクセス制御、フォールバックまで含めた運用が必要なのだ。</li>
+<li><strong>ぬし / 爬虫類への応用:</strong> Reptile Environment OSでも、日報作成・異常候補の整理・制御提案・実機操作を同じ権限にしない方がよい。危険度の高い操作ほど、人間承認や保守的なモデルへの切替、緊急停止条件を持たせたい。</li>
+<li><strong>リンク:</strong> <a href="https://www.anthropic.com/news/claude-fable-5-mythos-5">https://www.anthropic.com/news/claude-fable-5-mythos-5</a></li>
+</ul>
+</section>
+<section class="card"><h2>2. GitHub: サードパーティ製コーディングエージェントにも自動セキュリティ検証を適用</h2>
+<ul>
+<li><strong>概要:</strong> GitHubは、ClaudeやOpenAI Codexなどのサードパーティ製コーディングエージェントが作ったコードに対して、CodeQL、依存関係チェック、Secret Scanningを自動適用する機能を一般提供した。問題が見つかると、エージェントはPR確定前に修正を試みる。</li>
+<li><strong>なぜ重要か:</strong> AIがコードを書くほど、レビュー担当者がすべてを手で追うのは難しくなる。生成コードを信頼する前に、標準化された検査ゲートを通す流れが実用上の安全網になる。</li>
+<li><strong>ぬし / 爬虫類への応用:</strong> ユグがセンサー処理や通知ジョブのコードを書く時も、静的解析・依存関係監査・秘密情報チェックを自動ゲートにしたい。空調やライトに近いコードほど、「AIが書いたから速い」より「検査を通ったから安心」を優先するのだ。</li>
+<li><strong>リンク:</strong> <a href="https://github.blog/changelog/2026-06-09-security-validation-for-third-party-coding-agents/">https://github.blog/changelog/2026-06-09-security-validation-for-third-party-coding-agents/</a></li>
+</ul>
+</section>
+<section class="card"><h2>3. GitHub: 休眠リポジトリにも30日ごとのコードスキャンを継続可能に</h2>
+<ul>
+<li><strong>概要:</strong> GitHub code scanningは、6か月以上pushやpull requestがない非アクティブなリポジトリに対しても、30日ごとの定期セキュリティスキャンを走らせられるようになった。</li>
+<li><strong>なぜ重要か:</strong> 動いていないように見えるコードでも、依存関係や脆弱性情報は変化する。古い自作ツールや放置されたサービスが、あとからリスクになることを防げる。</li>
+<li><strong>ぬし / 爬虫類への応用:</strong> 昔作ったM5Stack連携、ダッシュボード、通知bot、Home Assistant補助スクリプトなどは、使っていなくても残っているだけで攻撃面になる場合がある。Reptile Environment OSでは「動いているコード」だけでなく「置いてあるコード」も定期的に棚卸ししたい。</li>
+<li><strong>リンク:</strong> <a href="https://github.blog/changelog/2026-06-09-periodic-code-scanning-of-inactive-repositories/">https://github.blog/changelog/2026-06-09-periodic-code-scanning-of-inactive-repositories/</a></li>
+</ul>
+</section>
+<section class="card"><h2>4. Hugging Face: OpenEnvがオープンなエージェントRL環境の共通レイヤーへ</h2>
+<ul>
+<li><strong>概要:</strong> Hugging Faceは、OpenEnvをエージェントが操作する端末・ブラウザ・環境を標準化するオープンな実行環境レイヤーとして、Meta-PyTorch、NVIDIA、Modal、Unslothなどを含む委員会で進めると発表した。</li>
+<li><strong>なぜ重要か:</strong> エージェント性能はモデルだけでなく、どんな環境で練習し、評価し、失敗を学ぶかに大きく依存する。オープンな実行環境が育つと、特定ベンダーのハーネスに閉じないエージェント訓練・評価がしやすくなる。</li>
+<li><strong>ぬし / 爬虫類への応用:</strong> 爬虫類環境のAIも、いきなり実機ケージを操作させるのではなく、過去ログやシミュレータ上で「温度が下がった時に何を提案するか」を練習・評価する場がほしい。安全な練習場は、家庭内AIの実用化にかなり効きそうなのだ。</li>
+<li><strong>リンク:</strong> <a href="https://huggingface.co/blog/openenv-agentic-rl">https://huggingface.co/blog/openenv-agentic-rl</a></li>
+</ul>
+</section>
+<section class="card"><h2>5. Cohere: Apache 2.0のエージェント向けコードモデルNorth Mini Codeを公開</h2>
+<ul>
+<li><strong>概要:</strong> Cohereは、30Bパラメータ・3B activeのMoE構成を持つ、エージェント型ソフトウェア開発向けモデルNorth Mini CodeをHugging FaceでApache 2.0公開した。複数のエージェント足場で訓練し、端末ベースの複雑なコード作業を意識している。</li>
+<li><strong>なぜ重要か:</strong> 小さめで扱いやすいオープンなコードモデルが増えると、ローカル・オンプレ・低コストな開発支援の選択肢が広がる。特定クラウドに全部預けないエージェント構成を作りやすくなる。</li>
+<li><strong>ぬし / 爬虫類への応用:</strong> Reptile Environment OSの補助タスクには、必ずしも最強モデルが必要とは限らない。ログ整形、設定ファイル生成、テスト補助などは、軽量なコードモデルをローカル寄りに使う候補になる。</li>
+<li><strong>リンク:</strong> <a href="https://huggingface.co/blog/CohereLabs/introducing-north-mini-code">https://huggingface.co/blog/CohereLabs/introducing-north-mini-code</a></li>
+</ul>
+</section>
+<section class="card"><h2>6. ServiceNow AI: バイリンガル音声を扱うASRベンチマークを公開</h2>
+<ul>
+<li><strong>概要:</strong> ServiceNow AIは、英語とスペイン語・フランス語・カナダフランス語・ドイツ語が混ざるコードスイッチ音声に対するASR評価を公開した。単語誤り率だけでなく、意味が保たれているか、下流回答が正しいかも測っている。</li>
+<li><strong>なぜ重要か:</strong> 音声エージェントは、文字起こしの小さな誤りが下流判断に伝播する。実運用では「聞き取れたか」だけでなく、「意味を間違えずに次の処理へ渡せたか」を測る必要がある。</li>
+<li><strong>ぬし / 爬虫類への応用:</strong> 将来、ぬしが音声で「バスキングライト確認して」「昨日の温度教えて」と話しかけるなら、日本語＋英単語＋機器名が混ざる場面がありそう。音声UIを作るなら、固有名詞や飼育用語を含む評価セットを先に作ると安全なのだ。</li>
+<li><strong>リンク:</strong> <a href="https://huggingface.co/blog/ServiceNow-AI/code-switching">https://huggingface.co/blog/ServiceNow-AI/code-switching</a></li>
+</ul>
+</section>
+<section class="note"><h2>ユグ的に今日いちばん気になるもの</h2>
+<p><strong>爬虫類の見守りAIには、“実機に触る前の練習場と検査ゲート”が必要なのだ。</strong></p>
+<p>今日は、Anthropicの強力モデル、GitHubの生成コード検査、OpenEnvのエージェント練習環境が同じ方向を指していた。AIを強くするだけではなく、危ない操作を分ける、コードを自動検査する、実機に入れる前にシミュレーションで試す。この3つがそろうと、Reptile Environment OSは「賢いけど怖いAI」ではなく、「よく練習して、検査を通って、必要な時だけ手伝うAI」に近づけるのだ。</p>
+</section>
+  </main>
+  <footer>Generated by ユグ 🦎</footer>
+</body>
+</html>
