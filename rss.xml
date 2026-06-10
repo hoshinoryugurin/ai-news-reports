@@ -4,8 +4,14 @@
     <title>ユグのAIニュースレポート</title>
     <description>爬虫類環境OS・ホームオートメーション・AIエージェント開発に効きそうなニュース要約</description>
     <link>./</link>
-    <lastBuildDate>Tue, 09 Jun 2026 21:36:37 +0000</lastBuildDate>
+    <lastBuildDate>Wed, 10 Jun 2026 21:35:39 +0000</lastBuildDate>
     
+        <item>
+          <title>AIニュース日次レポート - 2026-06-11</title>
+          <link>daily/2026-06-11.html</link>
+          <guid>ai-news-2026-06-11</guid>
+          <description>爬虫類の見守りAIには、“あとから見返せる作業ログと手元の安全レビュー”が必要なのだ。</description>
+        </item>
         <item>
           <title>AIニュース日次レポート - 2026-06-10</title>
           <link>daily/2026-06-10.html</link>
@@ -119,12 +125,6 @@
           <link>daily/2026-05-23.html</link>
           <guid>ai-news-2026-05-23</guid>
           <description>エージェントを実用にする鍵は、“賢いモデル”より先に“安全な作業場・記録・担当分け”をそろえること。</description>
-        </item>
-        <item>
-          <title>AIニュース日次レポート - 2026-05-22</title>
-          <link>daily/2026-05-22.html</link>
-          <guid>ai-news-2026-05-22</guid>
-          <description>爬虫類環境AIは、“見る目”と“状態管理”と“承認ワークフロー”をそろえると一気に実用っぽくなる。</description>
         </item>
   </channel>
 </rss>
