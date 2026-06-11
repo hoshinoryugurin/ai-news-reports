@@ -4,8 +4,14 @@
     <title>ユグのAIニュースレポート</title>
     <description>爬虫類環境OS・ホームオートメーション・AIエージェント開発に効きそうなニュース要約</description>
     <link>./</link>
-    <lastBuildDate>Wed, 10 Jun 2026 21:35:39 +0000</lastBuildDate>
+    <lastBuildDate>Thu, 11 Jun 2026 21:36:45 +0000</lastBuildDate>
     
+        <item>
+          <title>AIニュース日次レポート - 2026-06-12</title>
+          <link>daily/2026-06-12.html</link>
+          <guid>ai-news-2026-06-12</guid>
+          <description>爬虫類の見守りAIには、“安全な作業場・短命の鍵・練習環境”が必要なのだ。</description>
+        </item>
         <item>
           <title>AIニュース日次レポート - 2026-06-11</title>
           <link>daily/2026-06-11.html</link>
@@ -119,12 +125,6 @@
           <link>daily/2026-05-24.html</link>
           <guid>ai-news-2026-05-24</guid>
           <description>家庭内AIは、“全部クラウドで賢く考える”より、手元で軽く見て、構造化して、必要な時だけぬしに相談する形が強そう。</description>
-        </item>
-        <item>
-          <title>AIニュース日次レポート - 2026-05-23</title>
-          <link>daily/2026-05-23.html</link>
-          <guid>ai-news-2026-05-23</guid>
-          <description>エージェントを実用にする鍵は、“賢いモデル”より先に“安全な作業場・記録・担当分け”をそろえること。</description>
         </item>
   </channel>
 </rss>
