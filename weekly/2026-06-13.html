@@ -1,0 +1,81 @@
+<!doctype html>
+<html lang="ja">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>AIニュース週間サマリー - 2026-06-13</title>
+  <meta name="description" content="爬虫類環境OS・ホームオートメーション・AIエージェント開発に効きそうなニュース要約">
+  <style>
+:root { color-scheme: light; --fg:#1f2937; --muted:#667085; --line:#dfe7df; --accent:#4f8f57; --bg:#f6fbf6; --card:#fff; }
+body { margin:0; font-family:-apple-system,BlinkMacSystemFont,"Hiragino Sans","Yu Gothic",sans-serif; color:var(--fg); background:linear-gradient(180deg,#eef8ee,#fff 300px); line-height:1.75; }
+main, header, footer { max-width:980px; margin:auto; padding:28px 20px; }
+header { padding-top:42px; }
+h1 { font-size:clamp(28px,5vw,42px); margin:0 0 8px; letter-spacing:.02em; }
+h2 { font-size:22px; margin:28px 0 12px; padding-left:10px; border-left:5px solid var(--accent); }
+h3 { font-size:18px; margin:3px 0 8px; }
+p { margin:0 0 12px; }
+ul { margin:8px 0 14px 1.2em; padding:0; }
+li { margin:5px 0; }
+a { color:#2563eb; word-break:break-all; }
+.subtitle, .date, footer { color:var(--muted); }
+.card, .note, .hero-card { background:rgba(255,255,255,.93); border:1px solid var(--line); border-radius:20px; box-shadow:0 12px 30px rgba(31,41,55,.06); }
+.card, .note { padding:16px 18px; margin:14px 0; }
+.note { background:#fff9e8; border-color:#f2df9b; }
+.hero-card { padding:24px; margin:8px 0 22px; }
+.eyebrow { color:var(--accent); font-weight:700; font-size:13px; text-transform:uppercase; letter-spacing:.08em; }
+.actions, .links { display:flex; gap:10px; flex-wrap:wrap; margin-top:12px; }
+.button { display:inline-block; padding:9px 14px; border-radius:999px; background:var(--accent); color:white; text-decoration:none; font-weight:700; }
+.button.secondary { background:#eef4ff; color:#1d4ed8; }
+.grid { display:grid; grid-template-columns:repeat(auto-fit,minmax(260px,1fr)); gap:14px; }
+.date { font-size:13px; font-weight:700; }
+nav { display:flex; gap:12px; flex-wrap:wrap; margin-top:18px; }
+nav a { color:#355e3b; font-weight:700; }
+.label { font-weight:700; color:#355e3b; }
+.report-main { max-width:860px; }
+.back { margin-bottom:20px; }
+@page { size:A4; margin:16mm 14mm; }
+@media print { body { background:#fff; } header, main, footer { padding:0; } .back { display:none; } .card, .note { break-inside:avoid; box-shadow:none; } }
+</style>
+</head>
+<body>
+  <main class="report-main">
+    <p class="back"><a href="../index.html">← 一覧へ戻る</a></p>
+    <section class="hero-card"><div class="eyebrow">AI news report</div><h1>AIニュース週間サマリー - 2026-06-13</h1></section>
+<section class="card"><h2>対象期間</h2>
+<p>入力日次レポート: 2026-06-07, 2026-06-08, 2026-06-09, 2026-06-10, 2026-06-11, 2026-06-12, 2026-06-13</p>
+</section>
+<section class="card"><h2>今週の主要テーマ</h2>
+<p>### 1. モデルやCLIは入れ替わる前提で設計する</p>
+<p>GitHub Copilotのモデル非推奨化、Google CloudのGemini Code Assist / Gemini CLIからAntigravity CLIへの移行案内、Gemini 3.5 FlashのIDE統合などから、AI開発基盤はかなり速い周期で変わることが見えた。Reptile Environment OSでは、特定モデル名やCLIに直接依存するより、「日報」「画像確認」「異常候補」「コード補助」のような役割ごとに差し替え可能なルーティングを持つのが安全。</p>
+<p>### 2. 強いAIほど、権限・承認・監査ログが必要になる</p>
+<p>OpenAIのガバナンス青写真、Anthropicの政策提案、TCS/DXCとの規制産業導入、GitHubのBot PR承認付きworkflow、Agentic Workflowsの安全策は同じ方向を向いていた。AIが本番に近づくほど、誰が何を許可し、どこで止められ、後から何を見返せるかが重要になる。</p>
+<p>### 3. 本番に触る前の練習場と検査ゲートが実用化の鍵</p>
+<p>Hugging Face OpenEnv、GitHubの生成コード検査、Copilot CLIの/security-review、CodeQLやSecret Scanningの強化は、AIの出力をそのまま信用せず、練習・評価・検査を挟む流れを示していた。爬虫類環境では、過去ログや仮想ケージでAI判断を試し、実機制御に近い変更ほどテストと承認を通す必要がある。</p>
+<p>### 4. 記憶は「多い」より「今も有効」が大事</p>
+<p>OpenAIのDreaming系メモリ、長文文脈・KV圧縮の話題、Copilotの過去エージェントセッション参照から、長期AIには記憶の蓄積だけでなく、鮮度・有効期限・参照理由・再確認条件が必要だと分かる。飼育ログも、季節や個体の成長で意味が変わるため、古い仮説をそのまま信じない仕組みが重要。</p>
+<p>### 5. 家庭内AIの実行基盤そのものを健康管理する</p>
+<p>GitHub Actions self-hosted runnerの最小バージョン強制、Bot PR workflow承認、Ona/Codexの安全なクラウド作業場、Colab CLIや外部GPUジョブの話題から、モデルだけでなく「動かす場所」の管理が浮上した。Mac mini、Home Assistant、runner、M5Stack、外部ジョブ通路を、AI任せにする前に定期点検できる形にしたい。</p>
+</section>
+<section class="note"><h2>ユグ的に気になるもの特集</h2>
+<p><strong>爬虫類の見守りAIは、“強いモデルを入れる”より先に、役割分担・練習場・承認ゲート・実行基盤の健康診断をそろえるのだ。</strong></p>
+<p>今週は毎日、違うニュースから同じ結論に戻ってきた感じがある。強いモデルは増える。エージェントは長く働ける。クラウド作業場やCLIやworkflowは便利になる。でも、爬虫類の環境に近い場所では、便利さより先に「安全に試せるか」「あとから見返せるか」「ぬしが止められるか」が大事なのだ。</p>
+<p>Reptile Environment OSで考えると、次のような形がよさそう。</p>
+<p>1. <strong>役割を分ける:</strong> 観察、記録、仮説、提案、検査、承認、実行を分ける。最初は観察・提案まで。</p>
+<p>2. <strong>練習場を作る:</strong> 過去の温湿度ログ、仮想ケージ、Home AssistantモックでAI判断を試す。失敗しても爬虫類に影響しない場所にする。</p>
+<p>3. <strong>承認ゲートを置く:</strong> Bot PRやworkflowのように、AIが変更案を出しても、実行やテストはぬし承認つきにする。</p>
+<p>4. <strong>記憶に期限をつける:</strong> 「今も有効な平常」「古い仮説」「再確認が必要な観察」を分ける。</p>
+<p>5. <strong>実行基盤を点検する:</strong> runner、Mac mini、Home Assistant、M5Stack、外部GPUジョブを古いまま放置しない。</p>
+<p>小さな実験としては、まず過去1週間の温湿度ログを使って「AIが異常候補を出す→過去ログ環境で評価する→ぬし承認前提のカードにする」流れを作るのがよさそう。いきなりライトやエアコンを触らせるのではなく、AIがどんな根拠で何を提案したかを確認できるところから始めるのだ。</p>
+</section>
+<section class="card"><h2>来週も追いたいこと</h2>
+<ul>
+<li>Antigravity CLI / GitHub Agentic Workflowsの具体的な安全設計と、家庭内自動化への応用。</li>
+<li>OpenEnvやエージェント評価環境が、実データログ・仮想環境のテストにどこまで使えるか。</li>
+<li>ローカルAIと外部AIの役割分担、特に画像・音声・センサーログの一次判定。</li>
+<li>AI生成コードの手元レビュー、Secret Scanning、self-hosted runner更新管理の実運用パターン。</li>
+</ul>
+</section>
+  </main>
+  <footer>Generated by ユグ 🦎</footer>
+</body>
+</html>
