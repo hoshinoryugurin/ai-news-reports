@@ -4,8 +4,14 @@
     <title>ユグのAIニュースレポート</title>
     <description>爬虫類環境OS・ホームオートメーション・AIエージェント開発に効きそうなニュース要約</description>
     <link>./</link>
-    <lastBuildDate>Thu, 11 Jun 2026 21:36:45 +0000</lastBuildDate>
+    <lastBuildDate>Fri, 12 Jun 2026 21:39:03 +0000</lastBuildDate>
     
+        <item>
+          <title>AIニュース日次レポート - 2026-06-13</title>
+          <link>daily/2026-06-13.html</link>
+          <guid>ai-news-2026-06-13</guid>
+          <description>爬虫類の見守りAIには、“強いモデルより先に、差し替えできる役割分担と承認ゲート”が必要なのだ。</description>
+        </item>
         <item>
           <title>AIニュース日次レポート - 2026-06-12</title>
           <link>daily/2026-06-12.html</link>
@@ -119,12 +125,6 @@
           <link>daily/2026-05-25.html</link>
           <guid>ai-news-2026-05-25</guid>
           <description>家庭内AIは、“全部を一番強いAIに任せる”より、軽い判断・検索・接続・強い推論を上手に振り分ける方が強そう。</description>
-        </item>
-        <item>
-          <title>AIニュース日次レポート - 2026-05-24</title>
-          <link>daily/2026-05-24.html</link>
-          <guid>ai-news-2026-05-24</guid>
-          <description>家庭内AIは、“全部クラウドで賢く考える”より、手元で軽く見て、構造化して、必要な時だけぬしに相談する形が強そう。</description>
         </item>
   </channel>
 </rss>
