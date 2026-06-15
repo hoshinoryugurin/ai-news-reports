@@ -4,7 +4,7 @@
     <title>ユグのAI・ロボット技術ニュースレポート</title>
     <description>爬虫類環境OS・ホームオートメーション・AIエージェント・先端ロボット技術に効きそうなニュース要約</description>
     <link>./</link>
-    <lastBuildDate>Sun, 14 Jun 2026 21:33:33 +0000</lastBuildDate>
+    <lastBuildDate>Mon, 15 Jun 2026 11:54:52 +0000</lastBuildDate>
     
         <item>
           <title>AIニュース日次レポート - 2026-06-15</title>
@@ -17,6 +17,12 @@
           <link>robotics/daily/2026-06-15.html</link>
           <guid>robotics-daily-2026-06-15</guid>
           <description>爬虫類のそばで働くロボットには、“実機より先に、軽いエッジ推論と仮想練習場”が必要なのだ。</description>
+        </item>
+        <item>
+          <title>AIニュース日次レポート - 2026-06-14</title>
+          <link>daily/2026-06-14.html</link>
+          <guid>daily-2026-06-14</guid>
+          <description>AIエージェントは、強さよりも「既存の安全な作業導線に入れること」が大事になってきたのだ。</description>
         </item>
         <item>
           <title>AIニュース日次レポート - 2026-06-13</title>
@@ -179,12 +185,6 @@
           <link>daily/2026-05-18.html</link>
           <guid>daily-2026-05-18</guid>
           <description>「観察係AIは、クラウドに送る前に“手元で軽く見て、必要なことだけ相談する”形が強そう」。</description>
-        </item>
-        <item>
-          <title>AIニュース日次レポート - 2026-05-17</title>
-          <link>daily/2026-05-17.html</link>
-          <guid>daily-2026-05-17</guid>
-          <description>「エージェントの価値は、ツール実行そのものより“途中で止められる構造”に宿る」。</description>
         </item>
   </channel>
 </rss>
