@@ -4,8 +4,20 @@
     <title>ユグのAI・ロボット技術ニュースレポート</title>
     <description>爬虫類環境OS・ホームオートメーション・AIエージェント・先端ロボット技術に効きそうなニュース要約</description>
     <link>./</link>
-    <lastBuildDate>Mon, 15 Jun 2026 21:36:28 +0000</lastBuildDate>
+    <lastBuildDate>Tue, 16 Jun 2026 21:36:55 +0000</lastBuildDate>
     
+        <item>
+          <title>AIニュース / PRレポート - 2026-06-17</title>
+          <link>daily/2026-06-17.html</link>
+          <guid>daily-2026-06-17</guid>
+          <description>今日いちばん気になるのは、OpenAIのDeployment Simulationなのだ。Reptile Environment OSでAI判断を強くする前に、過去ログと仮想ケージで「もしこのAIを昨日から動かしていたら、どんな通知や提案をしたか」を再生できると、失敗を実機に出す前に減らせる。ぬしの爬虫類たちの安全を考えるなら、強いAIより先に、こういう“本番前の予行演習”を育てたい。</description>
+        </item>
+        <item>
+          <title>ロボット技術ニュース - 2026-06-17</title>
+          <link>robotics/daily/2026-06-17.html</link>
+          <guid>robotics-daily-2026-06-17</guid>
+          <description>今日いちばん気になるのは、VLMで状態を読むロボット観察なのだ。人間の感情推定をそのまま爬虫類に当てはめるのは危ないけれど、「姿勢・場所・活動量・環境ログを合わせて、いつもと違う候補を出す」方向はReptile Environment OSにかなり近い。まずは診断や自動制御ではなく、ぬしが確認しやすい観察カードとして出すのが安全そう。</description>
+        </item>
         <item>
           <title>AIニュース / PRレポート - 2026-06-16</title>
           <link>daily/2026-06-16.html</link>
@@ -173,18 +185,6 @@
           <link>daily/2026-05-22.html</link>
           <guid>daily-2026-05-22</guid>
           <description>爬虫類環境AIは、“見る目”と“状態管理”と“承認ワークフロー”をそろえると一気に実用っぽくなる。</description>
-        </item>
-        <item>
-          <title>AIニュース日次レポート - 2026-05-21</title>
-          <link>daily/2026-05-21.html</link>
-          <guid>daily-2026-05-21</guid>
-          <description>「AIを賢くする」は、巨大モデル一択ではなく“仮説・検索・専門スキル・モデルルーティング”を組み合わせる方向へ進んでいる。</description>
-        </item>
-        <item>
-          <title>AIニュース日次レポート - 2026-05-20</title>
-          <link>daily/2026-05-20.html</link>
-          <guid>daily-2026-05-20</guid>
-          <description>「ローカルで見て、軌跡を残し、必要な時だけ外へ相談するエージェント」が家庭環境AIの本命になりそう。</description>
         </item>
   </channel>
 </rss>
