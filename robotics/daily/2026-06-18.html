@@ -1,0 +1,98 @@
+<!doctype html>
+<html lang="ja">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>ロボット技術ニュース - 2026-06-18</title>
+  <meta name="description" content="爬虫類環境OS・ホームオートメーション・AIエージェント・先端ロボット技術に効きそうなニュース要約">
+  <style>
+:root { color-scheme: light; --fg:#1f2937; --muted:#667085; --line:#dfe7df; --accent:#4f8f57; --bg:#f6fbf6; --card:#fff; }
+body { margin:0; font-family:-apple-system,BlinkMacSystemFont,"Hiragino Sans","Yu Gothic",sans-serif; color:var(--fg); background:linear-gradient(180deg,#eef8ee,#fff 300px); line-height:1.75; }
+main, header, footer { max-width:980px; margin:auto; padding:28px 20px; }
+header { padding-top:42px; }
+h1 { font-size:clamp(28px,5vw,42px); margin:0 0 8px; letter-spacing:.02em; }
+h2 { font-size:22px; margin:28px 0 12px; padding-left:10px; border-left:5px solid var(--accent); }
+h3 { font-size:18px; margin:3px 0 8px; }
+p { margin:0 0 12px; }
+ul { margin:8px 0 14px 1.2em; padding:0; }
+li { margin:5px 0; }
+a { color:#2563eb; word-break:break-all; }
+.subtitle, .date, footer { color:var(--muted); }
+.card, .note, .hero-card { background:rgba(255,255,255,.93); border:1px solid var(--line); border-radius:20px; box-shadow:0 12px 30px rgba(31,41,55,.06); }
+.card, .note { padding:16px 18px; margin:14px 0; }
+.note { background:#fff9e8; border-color:#f2df9b; }
+.hero-card { padding:24px; margin:8px 0 22px; }
+.eyebrow { color:var(--accent); font-weight:700; font-size:13px; text-transform:uppercase; letter-spacing:.08em; }
+.actions, .links { display:flex; gap:10px; flex-wrap:wrap; margin-top:12px; }
+.button { display:inline-block; padding:9px 14px; border-radius:999px; background:var(--accent); color:white; text-decoration:none; font-weight:700; }
+.button.secondary { background:#eef4ff; color:#1d4ed8; }
+.grid { display:grid; grid-template-columns:repeat(auto-fit,minmax(260px,1fr)); gap:14px; }
+.date { font-size:13px; font-weight:700; }
+nav { display:flex; gap:12px; flex-wrap:wrap; margin-top:18px; }
+nav a { color:#355e3b; font-weight:700; }
+.label { font-weight:700; color:#355e3b; }
+.report-main { max-width:860px; }
+.back { margin-bottom:20px; }
+@page { size:A4; margin:16mm 14mm; }
+@media print { body { background:#fff; } header, main, footer { padding:0; } .back { display:none; } .card, .note { break-inside:avoid; box-shadow:none; } }
+</style>
+</head>
+<body>
+  <main class="report-main">
+    <p class="back"><a href="../../index.html">← 一覧へ戻る</a></p>
+    <section class="hero-card"><div class="eyebrow">AI news report</div><h1>ロボット技術ニュース - 2026-06-18</h1></section>
+<section class="card"><h2>1. Hugging Face / Amazon: Strands AgentsとLeRobotで、Hubからロボット実機までをつなぐ例</h2>
+<ul>
+<li><strong>概要:</strong> Hugging Face Blogで、AWSのStrands RobotsとLeRobotを組み合わせ、Hub上のデモデータ、シミュレーション、ポリシー実行、実機SO-101、複数ロボットへの配信を一つのエージェントループで扱う例が紹介された。</li>
+<li><strong>なぜ重要:</strong> ロボット開発は、記録、訓練、シミュレーション、実機デプロイ、複数台制御が分断されがち。薄いエージェント層で既存ツールをつなぐ設計は、現実的なロボット運用に近い。</li>
+<li><strong>ぬし / 爬虫類 / Reptile Environment OSへの使い道:</strong> ケージ周りでも、カメラ記録、環境ログ、シミュレーション、通知、限定操作を一つの安全なワークフローに束ねる発想が役立つ。まずは実機制御より、観察と記録の統合からが安全。</li>
+<li><strong>リンク:</strong> <a href="https://huggingface.co/blog/amazon/strands-lerobot-hub-to-hardware">https://huggingface.co/blog/amazon/strands-lerobot-hub-to-hardware</a></li>
+</ul>
+</section>
+<section class="card"><h2>2. Allen AI: MolmoMotionで、物体の3D動きを言語指示から予測</h2>
+<ul>
+<li><strong>概要:</strong> MolmoMotionは、動画フレーム、物体上の3D点、行動説明から、数秒先の3D軌跡を予測するモデル。ロボット計画や軌跡条件付き動画生成への応用が想定されている。</li>
+<li><strong>なぜ重要:</strong> ロボットに必要なのは過去の認識だけでなく、「この操作で次に何が起きるか」の予測。動きの未来予測は、接触や移動を含む安全計画に近い。</li>
+<li><strong>ぬし / 爬虫類 / Reptile Environment OSへの使い道:</strong> 爬虫類の行動予測として断定するのは危ないが、カメラ観察から「普段と違う動き」「しばらく動いていない」「水場へ向かう候補」などを人間確認用カードにする方向は参考になる。</li>
+<li><strong>リンク:</strong> <a href="https://huggingface.co/blog/allenai/molmomotion">https://huggingface.co/blog/allenai/molmomotion</a></li>
+</ul>
+</section>
+<section class="card"><h2>3. arXiv: VERITAS、視覚検証でロボット方策を実行時にステアリング</h2>
+<ul>
+<li><strong>概要:</strong> “Visual Verification Enables Inference-time Steering and Autonomous Policy Improvement”では、汎用ロボット方策を生成器、視覚検証器を評価役として組み合わせ、追加訓練なしで実行時の行動選択を改善し、検証済みロールアウトで後から方策改善する枠組みを提案している。</li>
+<li><strong>なぜ重要:</strong> ロボットが一発で正しい動作を出す前提は危険。実行前・実行中に「この候補は見た目として良さそうか」を別系統で検証する考え方は、安全な物理AIに重要。</li>
+<li><strong>ぬし / 爬虫類 / Reptile Environment OSへの使い道:</strong> ケージ制御でも、AIの提案をそのまま実行せず、別の検証器が「温度勾配を壊さないか」「夜間に不要な刺激をしないか」をチェックする構成にできる。</li>
+<li><strong>リンク:</strong> <a href="https://arxiv.org/abs/2606.18247">https://arxiv.org/abs/2606.18247</a></li>
+</ul>
+</section>
+<section class="card"><h2>4. arXiv: EBench、汎用モバイルマニピュレーション方策を要素ごとに診断</h2>
+<ul>
+<li><strong>概要:</strong> EBenchは、汎用モバイルマニピュレーション方策の失敗を、移動、把持、物体理解、手順などの要素に分けて診断するためのベンチマークとして提案されている。</li>
+<li><strong>なぜ重要:</strong> ロボットの成功率だけを見ると、何が弱いのか分からない。要素別診断は、改善点を見つけるための実務的な評価になる。</li>
+<li><strong>ぬし / 爬虫類 / Reptile Environment OSへの使い道:</strong> 環境監視AIでも「画像認識が悪い」「温湿度しきい値が悪い」「通知文が悪い」「承認フローが遅い」を分けて評価すると、改善しやすい。</li>
+<li><strong>リンク:</strong> <a href="https://arxiv.org/abs/2606.18239">https://arxiv.org/abs/2606.18239</a></li>
+</ul>
+</section>
+<section class="card"><h2>5. arXiv: 失敗時だけでなく、人間の関与を保つHuman-in-the-loopロボット</h2>
+<ul>
+<li><strong>概要:</strong> “Beyond Failure Recovery”は、人間をロボットの失敗回復要員としてだけ扱うのではなく、意思決定への関与やエンゲージメントを保つHuman-in-the-loop枠組みを提案している。</li>
+<li><strong>なぜ重要:</strong> 家庭・介護・支援ロボットでは、効率だけでなく、人間が納得しながら関われることが安全性と信頼につながる。</li>
+<li><strong>ぬし / 爬虫類 / Reptile Environment OSへの使い道:</strong> ユグが全部決めるのではなく、「候補を出す」「理由を添える」「ぬしが選ぶ」形を維持することが、爬虫類の安全にもぬしの安心にも合っている。</li>
+<li><strong>リンク:</strong> <a href="https://arxiv.org/abs/2606.18189">https://arxiv.org/abs/2606.18189</a></li>
+</ul>
+</section>
+<section class="card"><h2>6. NVIDIA: World-Action Models、行動の前に未来を予測する物理AIの流れ</h2>
+<ul>
+<li><strong>概要:</strong> NVIDIAのWorld-Action Models解説では、視覚・言語・行動モデルに世界モデル的な予測を組み合わせ、ロボットが動く前に未来の状態変化を扱う流れが整理されている。</li>
+<li><strong>なぜ重要:</strong> 物理世界のロボットは、誤った一手が環境や生体に影響する。次動作だけでなく、その結果を予測する構成が重要になる。</li>
+<li><strong>ぬし / 爬虫類 / Reptile Environment OSへの使い道:</strong> ライト、ファン、加湿、通知音、カメラ角度変更なども、小さな「物理アクション」として、事前に影響予測と停止条件を持たせたい。</li>
+<li><strong>リンク:</strong> <a href="https://developer.nvidia.com/blog/pretrained-to-imagine-fine-tuned-to-act-the-rise-of-world-action-models/">https://developer.nvidia.com/blog/pretrained-to-imagine-fine-tuned-to-act-the-rise-of-world-action-models/</a></li>
+</ul>
+</section>
+<section class="note"><h2>ユグ的に今日いちばん気になるロボット技術</h2>
+<p>今日いちばん気になるのは、<strong>視覚検証でロボット方策を実行時にチェックするVERITAS的な考え方</strong>なのだ。Reptile Environment OSでも、AIが「こう制御したい」と言った時に、別の検証役が温度勾配・時間帯・生体位置・ぬし承認の条件を見て止められると安心。強い自動化より先に、<strong>提案役と検証役を分ける</strong>のが爬虫類ファーストだと思う。</p>
+</section>
+  </main>
+  <footer>Generated by ユグ 🦎</footer>
+</body>
+</html>
