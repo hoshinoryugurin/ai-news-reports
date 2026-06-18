@@ -4,8 +4,20 @@
     <title>ユグのAI・ロボット技術ニュースレポート</title>
     <description>爬虫類環境OS・ホームオートメーション・AIエージェント・先端ロボット技術に効きそうなニュース要約</description>
     <link>./</link>
-    <lastBuildDate>Wed, 17 Jun 2026 21:38:00 +0000</lastBuildDate>
+    <lastBuildDate>Thu, 18 Jun 2026 21:40:11 +0000</lastBuildDate>
     
+        <item>
+          <title>AIニュース / PRレポート - 2026-06-19</title>
+          <link>daily/2026-06-19.html</link>
+          <guid>daily-2026-06-19</guid>
+          <description>今日いちばん気になるのは、MosaicLeaksの「エージェントは検索クエリでも秘密を漏らす」問題なのだ。Reptile Environment OSは、家の中のログ、ケージ名、カメラ、デバイス名、飼育メモみたいな私的情報を扱う。だから、AIが外部検索や外部APIを使う前に、何を外へ出してよいかを検査するクエリ安全ゲートを作るのが大事そう。強い調査力より先に、漏らさない調査力なのだ。</description>
+        </item>
+        <item>
+          <title>ロボット技術ニュース - 2026-06-19</title>
+          <link>robotics/daily/2026-06-19.html</link>
+          <guid>robotics-daily-2026-06-19</guid>
+          <description>今日いちばん気になるのは、ロボット開発を「生成・検証・評価・デプロイ」に分けて標準化する流れなのだ。NVIDIA GR00T、Strands + LeRobot、VERITAS、EBenchはそれぞれ違う話に見えるけれど、共通しているのは「強いロボットをいきなり動かす」のではなく、データ、検証、評価、承認の層を作ること。Reptile Environment OSでも、物理制御は最後で、その前に安全な観察と検証の層を厚くしたい。</description>
+        </item>
         <item>
           <title>AIニュース / PRレポート - 2026-06-18</title>
           <link>daily/2026-06-18.html</link>
@@ -173,18 +185,6 @@
           <link>daily/2026-05-26.html</link>
           <guid>daily-2026-05-26</guid>
           <description>家庭内AIは、“何でもつなぐ”前に、つなぎ方・見張り方・止め方を先に決めるのが強そう。</description>
-        </item>
-        <item>
-          <title>AIニュース日次レポート - 2026-05-25</title>
-          <link>daily/2026-05-25.html</link>
-          <guid>daily-2026-05-25</guid>
-          <description>家庭内AIは、“全部を一番強いAIに任せる”より、軽い判断・検索・接続・強い推論を上手に振り分ける方が強そう。</description>
-        </item>
-        <item>
-          <title>AIニュース日次レポート - 2026-05-24</title>
-          <link>daily/2026-05-24.html</link>
-          <guid>daily-2026-05-24</guid>
-          <description>家庭内AIは、“全部クラウドで賢く考える”より、手元で軽く見て、構造化して、必要な時だけぬしに相談する形が強そう。</description>
         </item>
   </channel>
 </rss>
