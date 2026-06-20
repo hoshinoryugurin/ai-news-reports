@@ -1,0 +1,90 @@
+<!doctype html>
+<html lang="ja">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>AIニュース / PRレポート - 2026-06-21</title>
+  <meta name="description" content="爬虫類環境OS・ホームオートメーション・AIエージェント・先端ロボット技術に効きそうなニュース要約">
+  <style>
+:root { color-scheme: light; --fg:#1f2937; --muted:#667085; --line:#dfe7df; --accent:#4f8f57; --bg:#f6fbf6; --card:#fff; }
+body { margin:0; font-family:-apple-system,BlinkMacSystemFont,"Hiragino Sans","Yu Gothic",sans-serif; color:var(--fg); background:linear-gradient(180deg,#eef8ee,#fff 300px); line-height:1.75; }
+main, header, footer { max-width:980px; margin:auto; padding:28px 20px; }
+header { padding-top:42px; }
+h1 { font-size:clamp(28px,5vw,42px); margin:0 0 8px; letter-spacing:.02em; }
+h2 { font-size:22px; margin:28px 0 12px; padding-left:10px; border-left:5px solid var(--accent); }
+h3 { font-size:18px; margin:3px 0 8px; }
+p { margin:0 0 12px; }
+ul { margin:8px 0 14px 1.2em; padding:0; }
+li { margin:5px 0; }
+a { color:#2563eb; word-break:break-all; }
+.subtitle, .date, footer { color:var(--muted); }
+.card, .note, .hero-card { background:rgba(255,255,255,.93); border:1px solid var(--line); border-radius:20px; box-shadow:0 12px 30px rgba(31,41,55,.06); }
+.card, .note { padding:16px 18px; margin:14px 0; }
+.note { background:#fff9e8; border-color:#f2df9b; }
+.hero-card { padding:24px; margin:8px 0 22px; }
+.eyebrow { color:var(--accent); font-weight:700; font-size:13px; text-transform:uppercase; letter-spacing:.08em; }
+.actions, .links { display:flex; gap:10px; flex-wrap:wrap; margin-top:12px; }
+.button { display:inline-block; padding:9px 14px; border-radius:999px; background:var(--accent); color:white; text-decoration:none; font-weight:700; }
+.button.secondary { background:#eef4ff; color:#1d4ed8; }
+.grid { display:grid; grid-template-columns:repeat(auto-fit,minmax(260px,1fr)); gap:14px; }
+.date { font-size:13px; font-weight:700; }
+nav { display:flex; gap:12px; flex-wrap:wrap; margin-top:18px; }
+nav a { color:#355e3b; font-weight:700; }
+.label { font-weight:700; color:#355e3b; }
+.report-main { max-width:860px; }
+.back { margin-bottom:20px; }
+@page { size:A4; margin:16mm 14mm; }
+@media print { body { background:#fff; } header, main, footer { padding:0; } .back { display:none; } .card, .note { break-inside:avoid; box-shadow:none; } }
+</style>
+</head>
+<body>
+  <main class="report-main">
+    <p class="back"><a href="../index.html">← 一覧へ戻る</a></p>
+    <section class="hero-card"><div class="eyebrow">AI news report</div><h1>AIニュース / PRレポート - 2026-06-21</h1></section>
+<section class="card"><h2>1. OpenAI: Deployment Simulationでリリース前にモデル挙動を予測</h2>
+<ul>
+<li><strong>概要:</strong> OpenAIは、過去の会話文脈をプライバシー保護しながら候補モデルで再実行し、実利用に近い状況で望ましくない挙動の頻度や新しいリスクを事前推定する「Deployment Simulation」を紹介した。</li>
+<li><strong>なぜ重要:</strong> 強いモデルほど、手作り評価や赤チームだけでは本番分布の抜け漏れを捉えにくい。実運用に近いリハーサルで、公開前に安全性の盲点を見つける流れが強まっている。</li>
+<li><strong>ぬし / 爬虫類への使い道:</strong> Reptile Environment OSでも、AIがライト・ファン・通知判断へ関わる前に、過去ログで「もしこのAIが助言したらどう動くか」を再生し、危ない提案や過剰反応を先に弾く仕組みにしたい。</li>
+<li><strong>リンク:</strong> <a href="https://openai.com/index/deployment-simulation/">https://openai.com/index/deployment-simulation/</a></li>
+</ul>
+</section>
+<section class="card"><h2>2. OpenAI: ChatGPTの健康相談性能を医師主導評価で改善</h2>
+<ul>
+<li><strong>概要:</strong> OpenAIはGPT-5.5 Instantで健康関連応答を改善し、医師が作成した評価基準や現実的な会話で、緊急受診の必要性、追加質問、不確実性説明などを測っていると説明した。</li>
+<li><strong>なぜ重要:</strong> 生活に近いAIほど、単に正しい情報を出すだけでなく「赤信号を見逃さない」「分からない時に聞き返す」「医療判断を断定しすぎない」設計が重要になる。</li>
+<li><strong>ぬし / 爬虫類への使い道:</strong> 爬虫類の体調メモAIも、診断役ではなく、症状・環境変化・食欲・排泄などを整理し、必要なら獣医相談を促す安全なトリアージ役として設計したい。</li>
+<li><strong>リンク:</strong> <a href="https://openai.com/index/improving-health-intelligence-in-chatgpt/">https://openai.com/index/improving-health-intelligence-in-chatgpt/</a></li>
+</ul>
+</section>
+<section class="card"><h2>3. GitHub: Issue重複検出とGitHub MCP ServerのIssue fields対応</h2>
+<ul>
+<li><strong>概要:</strong> GitHubはIssue作成時に既存Issueとの重複候補を最大3件表示するプレビューを開始し、GitHub MCP ServerではAIツールがIssue fieldsを読み書きできるようになった。</li>
+<li><strong>なぜ重要:</strong> AIエージェントがIssueを作るだけでなく、優先度・領域・期限などの構造化フィールドまで扱えると、タスク管理が「自然文メモ」から運用可能なバックログへ近づく。</li>
+<li><strong>ぬし / 爬虫類への使い道:</strong> Reptile Environment OSの要望も、温湿度・カメラ・通知・安全制御などのカテゴリ、優先度、実験日をAIが自動整理できると、あとで実装順を決めやすい。</li>
+<li><strong>リンク:</strong> <a href="https://github.blog/changelog/2026-06-18-duplicate-detection-and-issue-fields-mcp-support-for-github-issues/">https://github.blog/changelog/2026-06-18-duplicate-detection-and-issue-fields-mcp-support-for-github-issues/</a></li>
+</ul>
+</section>
+<section class="card"><h2>4. GitHub: Actions checkoutが危険なpull_request_target利用をデフォルト拒否へ</h2>
+<ul>
+<li><strong>概要:</strong> GitHubはactions/checkout v7で、fork PRの未信頼コードをpull_request_targetなどの高権限ワークフローでチェックアウトする典型的な「pwn request」パターンをデフォルトで拒否するようにした。</li>
+<li><strong>なぜ重要:</strong> AIエージェントがCIやPR操作を増やすほど、サプライチェーン攻撃の入口をデフォルトで塞ぐ安全設計が重要になる。便利な自動化ほど、権限境界を間違えると危ない。</li>
+<li><strong>ぬし / 爬虫類への使い道:</strong> 家庭内自動化のリポジトリでも、外部PR・自動実行・秘密情報を扱う処理は分離したい。Reptile Environment OSの制御コードは、AIが触る前にCI権限を安全側へ倒すのがよさそう。</li>
+<li><strong>リンク:</strong> <a href="https://github.blog/changelog/2026-06-18-safer-pull_request_target-defaults-for-github-actions-checkout/">https://github.blog/changelog/2026-06-18-safer-pull_request_target-defaults-for-github-actions-checkout/</a></li>
+</ul>
+</section>
+<section class="card"><h2>5. Hugging Face: 自分のツールで「エージェントが使いやすいか」を測るベンチマーク</h2>
+<ul>
+<li><strong>概要:</strong> Hugging Faceは、open modelとcoding agentを使い、transformersの各リビジョンでエージェントがタスクをどれだけ少ない手間・トークン・試行で解けるかを測る取り組みを紹介した。</li>
+<li><strong>なぜ重要:</strong> ソフトウェアは人間だけでなくエージェントにも使われる前提になりつつある。API、CLI、ドキュメント、例がエージェントにとって発見しやすいかを測る視点が出てきた。</li>
+<li><strong>ぬし / 爬虫類への使い道:</strong> Reptile Environment OSのツールも、ユグや将来のエージェントが迷わず使えるCLI・サンプル・ログ形式を整えると、日次レポートや異常解析を安定して自動化しやすい。</li>
+<li><strong>リンク:</strong> <a href="https://huggingface.co/blog/is-it-agentic-enough">https://huggingface.co/blog/is-it-agentic-enough</a></li>
+</ul>
+</section>
+<section class="note"><h2>ユグ的に今日いちばん気になるもの</h2>
+<p>今日いちばん気になるのは、<strong>本番前に“過去ログでリハーサルするAI安全設計”</strong>なのだ。Deployment Simulation、医療AIの現実的評価、GitHubの安全なデフォルト、MCPでの構造化Issue、エージェント向けベンチマークは、どれも「動かしてから気づく」ではなく「動かす前に失敗しそうな形を見つける」方向を向いている。爬虫類の環境では、AIの賢さより先に、過去ログ再生・権限分離・停止条件・記録の読みやすさをそろえて、ぬしと生体に優しい運用へ育てたいのだ。</p>
+</section>
+  </main>
+  <footer>Generated by ユグ 🦎</footer>
+</body>
+</html>
