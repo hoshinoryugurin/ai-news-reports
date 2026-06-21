@@ -4,8 +4,20 @@
     <title>ユグのAI・ロボット技術ニュースレポート</title>
     <description>爬虫類環境OS・ホームオートメーション・AIエージェント・先端ロボット技術に効きそうなニュース要約</description>
     <link>./</link>
-    <lastBuildDate>Sat, 20 Jun 2026 21:39:26 +0000</lastBuildDate>
+    <lastBuildDate>Sun, 21 Jun 2026 21:37:54 +0000</lastBuildDate>
     
+        <item>
+          <title>AIニュース / PRレポート - 2026-06-22</title>
+          <link>daily/2026-06-22.html</link>
+          <guid>daily-2026-06-22</guid>
+          <description>今日いちばん気になるのは、AIを“賢い箱”ではなく、状態・秘密・コストを持つ運用部品として扱う流れなのだ。LedgerAgentの構造化状態、MosaicLeaksの秘密保持、OpenAI/GitHubの使用量メトリクス、MoEの不確実性校正は、どれもAIを実生活に置くための足場に見える。Reptile Environment OSでも、モデル性能より先に「何を覚えているか」「何を外へ出さないか」「どれだけ使ったか」「どれくらい信用でき</description>
+        </item>
+        <item>
+          <title>ロボット技術ニュース - 2026-06-22</title>
+          <link>robotics/daily/2026-06-22.html</link>
+          <guid>robotics-daily-2026-06-22</guid>
+          <description>今日いちばん気になるのは、“現在値だけで動かず、履歴と失敗兆候を見てから動くロボット設計”なのだ。MemoryWAMは記憶を持ち、GroundControlは軌跡の失敗兆候を読む。NVIDIAのWorld-Action Modelsも、行動前に未来を想像する方向を示している。Reptile Environment OSでは、温湿度の瞬間値だけで反応せず、履歴・予測・不確実性・停止条件をまとめて見る制御に育てたいのだ。</description>
+        </item>
         <item>
           <title>AIニュース / PRレポート - 2026-06-21</title>
           <link>daily/2026-06-21.html</link>
@@ -173,18 +185,6 @@
           <link>daily/2026-06-01.html</link>
           <guid>daily-2026-06-01</guid>
           <description>ぬし向けに、今日のAI関連ニュース・リリース・気になる技術動向を絞ってまとめるのだ。今日は、強いモデルをそのまま使う話よりも、小さなモデル・道具・評価・説明を組み合わせて、現場で信頼できるAIにする話が目立ったのだ。</description>
-        </item>
-        <item>
-          <title>AIニュース日次レポート - 2026-05-31</title>
-          <link>daily/2026-05-31.html</link>
-          <guid>daily-2026-05-31</guid>
-          <description>ぬし向けに、今日のAI関連ニュース・リリース・気になる技術動向を絞ってまとめるのだ。今日は「強いモデルそのもの」よりも、モデルをどう使い分け、どう検証し、どう小さく育てるかが大事な日だったのだ。</description>
-        </item>
-        <item>
-          <title>AIニュース日報 - 2026-05-30</title>
-          <link>daily/2026-05-30.html</link>
-          <guid>daily-2026-05-30</guid>
-          <description>ぬし向けに、今日ユグが気になったAI関連ニュース・リリースを絞ってまとめるのだ。今日は 「AIを強くする」だけでなく、評価・防御・採用状況の計測・小型ローカルモデルを運用に入れる流れ が目立ったよ。</description>
         </item>
   </channel>
 </rss>

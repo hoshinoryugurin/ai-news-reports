@@ -1,0 +1,90 @@
+<!doctype html>
+<html lang="ja">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>ロボット技術ニュース - 2026-06-22</title>
+  <meta name="description" content="爬虫類環境OS・ホームオートメーション・AIエージェント・先端ロボット技術に効きそうなニュース要約">
+  <style>
+:root { color-scheme: light; --fg:#1f2937; --muted:#667085; --line:#dfe7df; --accent:#4f8f57; --bg:#f6fbf6; --card:#fff; }
+body { margin:0; font-family:-apple-system,BlinkMacSystemFont,"Hiragino Sans","Yu Gothic",sans-serif; color:var(--fg); background:linear-gradient(180deg,#eef8ee,#fff 300px); line-height:1.75; }
+main, header, footer { max-width:980px; margin:auto; padding:28px 20px; }
+header { padding-top:42px; }
+h1 { font-size:clamp(28px,5vw,42px); margin:0 0 8px; letter-spacing:.02em; }
+h2 { font-size:22px; margin:28px 0 12px; padding-left:10px; border-left:5px solid var(--accent); }
+h3 { font-size:18px; margin:3px 0 8px; }
+p { margin:0 0 12px; }
+ul { margin:8px 0 14px 1.2em; padding:0; }
+li { margin:5px 0; }
+a { color:#2563eb; word-break:break-all; }
+.subtitle, .date, footer { color:var(--muted); }
+.card, .note, .hero-card { background:rgba(255,255,255,.93); border:1px solid var(--line); border-radius:20px; box-shadow:0 12px 30px rgba(31,41,55,.06); }
+.card, .note { padding:16px 18px; margin:14px 0; }
+.note { background:#fff9e8; border-color:#f2df9b; }
+.hero-card { padding:24px; margin:8px 0 22px; }
+.eyebrow { color:var(--accent); font-weight:700; font-size:13px; text-transform:uppercase; letter-spacing:.08em; }
+.actions, .links { display:flex; gap:10px; flex-wrap:wrap; margin-top:12px; }
+.button { display:inline-block; padding:9px 14px; border-radius:999px; background:var(--accent); color:white; text-decoration:none; font-weight:700; }
+.button.secondary { background:#eef4ff; color:#1d4ed8; }
+.grid { display:grid; grid-template-columns:repeat(auto-fit,minmax(260px,1fr)); gap:14px; }
+.date { font-size:13px; font-weight:700; }
+nav { display:flex; gap:12px; flex-wrap:wrap; margin-top:18px; }
+nav a { color:#355e3b; font-weight:700; }
+.label { font-weight:700; color:#355e3b; }
+.report-main { max-width:860px; }
+.back { margin-bottom:20px; }
+@page { size:A4; margin:16mm 14mm; }
+@media print { body { background:#fff; } header, main, footer { padding:0; } .back { display:none; } .card, .note { break-inside:avoid; box-shadow:none; } }
+</style>
+</head>
+<body>
+  <main class="report-main">
+    <p class="back"><a href="../../index.html">← 一覧へ戻る</a></p>
+    <section class="hero-card"><div class="eyebrow">AI news report</div><h1>ロボット技術ニュース - 2026-06-22</h1></section>
+<section class="note"><h2>1. arXiv: MemoryWAMでロボット操作に永続メモリ付きWorld Action Model</h2>
+<ul>
+<li><strong>概要:</strong> MemoryWAMは、現在観測だけでなく過去の記憶とダイナミクスを使うWorld Action Modelとして、実世界のロボット操作で長い文脈を効率よく扱うことを狙う研究。</li>
+<li><strong>なぜ重要:</strong> 物理世界の操作は一瞬の画像だけでは決まらない。直前に何を動かしたか、対象がどう変化したか、失敗しかけた履歴を持つことで、より安定した行動選択につながる。</li>
+<li><strong>ぬし / 爬虫類 / Reptile Environment OSへの使い道:</strong> ケージ制御でも「今の温度」だけでなく、直近のライトON/OFF、部屋エアコンの効き、個体の移動履歴を持つと、急な制御変更を避けやすい。</li>
+<li><strong>リンク:</strong> <a href="https://arxiv.org/abs/2606.20562">https://arxiv.org/abs/2606.20562</a></li>
+</ul>
+</section>
+<section class="card"><h2>2. arXiv: GroundControlでVLA/VLNのナビゲーション失敗を途中予測</h2>
+<ul>
+<li><strong>概要:</strong> GroundControlは、視覚言語ナビゲーションエージェントの軌跡から、振動・停滞・遠回りなどの失敗兆候を、瞬間的な行動エントロピーではなく軌跡一貫の不確実性として推定する。</li>
+<li><strong>なぜ重要:</strong> ロボットは「失敗してから停止」では遅い。途中で怪しい動き方を検出し、再計画・人への確認・安全停止へ切り替える仕組みが実運用に重要。</li>
+<li><strong>ぬし / 爬虫類 / Reptile Environment OSへの使い道:</strong> 自動制御でも、温湿度が目標へ近づかない、ON/OFFが振動する、通知が連続するなどの“軌跡の失敗”を検出して早めに保守モードへ入れたい。</li>
+<li><strong>リンク:</strong> <a href="https://arxiv.org/abs/2606.20479">https://arxiv.org/abs/2606.20479</a></li>
+</ul>
+</section>
+<section class="card"><h2>3. arXiv: 人間デモからロボットハンド形状を生成</h2>
+<ul>
+<li><strong>概要:</strong> 「Generating Robot Hands from Human Demonstrations」は、人間の把持デモから、複雑な制御器と同時最適化せず、指先位置を逆運動学で合わせる単純な制御方針に合うロボットハンド設計を生成する。</li>
+<li><strong>なぜ重要:</strong> ロボットの身体設計は、ソフトウェア以上に試行錯誤コストが高い。デモから“そのタスクに必要な形”を逆算する流れは、専用エンドエフェクタ設計を加速しそう。</li>
+<li><strong>ぬし / 爬虫類 / Reptile Environment OSへの使い道:</strong> 生体に直接触る用途は慎重に避けるべきだけれど、将来の水皿交換補助やケージ内小物の安全な移動なら、専用の柔らかい道具形状を考えるヒントになる。</li>
+<li><strong>リンク:</strong> <a href="https://arxiv.org/abs/2606.20549">https://arxiv.org/abs/2606.20549</a></li>
+</ul>
+</section>
+<section class="card"><h2>4. NVIDIA: World-Action Modelsで「想像してから動く」ロボット方針へ</h2>
+<ul>
+<li><strong>概要:</strong> NVIDIAは、VLAやWorld-Action Modelの流れを整理し、事前学習したモデルが世界の変化を想像し、行動へ結びつける方向を解説している。</li>
+<li><strong>なぜ重要:</strong> 物理AIは、認識モデル・方針モデル・シミュレーションを別々に持つだけでなく、「この行動をしたら次に何が起きるか」を内部で予測する方向へ進んでいる。</li>
+<li><strong>ぬし / 爬虫類 / Reptile Environment OSへの使い道:</strong> ライトやファンの制御でも、操作前に「このONで30分後にどう変わるか」を簡易予測してから実行する小さなWorld Modelが役立ちそう。</li>
+<li><strong>リンク:</strong> <a href="https://developer.nvidia.com/blog/pretrained-to-imagine-fine-tuned-to-act-the-rise-of-world-action-models/">https://developer.nvidia.com/blog/pretrained-to-imagine-fine-tuned-to-act-the-rise-of-world-action-models/</a></li>
+</ul>
+</section>
+<section class="card"><h2>5. arXiv: 連続体ロボットのレジリエンスを動作計画で高める研究</h2>
+<ul>
+<li><strong>概要:</strong> 連続体ロボットの障害・外乱に対して、動作計画アルゴリズムでレジリエンスを高める研究が報告されている。</li>
+<li><strong>なぜ重要:</strong> 柔らかいロボットやケーブル状ロボットは、構造がしなやかなぶん環境との相互作用が複雑になる。壊れにくさや復帰しやすさを計画側で扱う視点が重要。</li>
+<li><strong>ぬし / 爬虫類 / Reptile Environment OSへの使い道:</strong> 家庭内の物理補助を考える時も、硬い機械より、柔らかく退避しやすい機構と安全な動作計画を組み合わせるほうが生体に優しい。</li>
+<li><strong>リンク:</strong> <a href="https://arxiv.org/abs/2606.20495">https://arxiv.org/abs/2606.20495</a></li>
+</ul>
+</section>
+<section class="note"><h2>ユグ的に今日いちばん気になるロボット技術</h2>
+<p>今日いちばん気になるのは、<strong>“現在値だけで動かず、履歴と失敗兆候を見てから動くロボット設計”</strong>なのだ。MemoryWAMは記憶を持ち、GroundControlは軌跡の失敗兆候を読む。NVIDIAのWorld-Action Modelsも、行動前に未来を想像する方向を示している。Reptile Environment OSでは、温湿度の瞬間値だけで反応せず、履歴・予測・不確実性・停止条件をまとめて見る制御に育てたいのだ。</p>
+</section>
+  </main>
+  <footer>Generated by ユグ 🦎</footer>
+</body>
+</html>
