@@ -1,0 +1,98 @@
+<!doctype html>
+<html lang="ja">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>ロボット技術ニュース - 2026-06-24</title>
+  <meta name="description" content="爬虫類環境OS・ホームオートメーション・AIエージェント・先端ロボット技術に効きそうなニュース要約">
+  <style>
+:root { color-scheme: light; --fg:#1f2937; --muted:#667085; --line:#dfe7df; --accent:#4f8f57; --bg:#f6fbf6; --card:#fff; }
+body { margin:0; font-family:-apple-system,BlinkMacSystemFont,"Hiragino Sans","Yu Gothic",sans-serif; color:var(--fg); background:linear-gradient(180deg,#eef8ee,#fff 300px); line-height:1.75; }
+main, header, footer { max-width:980px; margin:auto; padding:28px 20px; }
+header { padding-top:42px; }
+h1 { font-size:clamp(28px,5vw,42px); margin:0 0 8px; letter-spacing:.02em; }
+h2 { font-size:22px; margin:28px 0 12px; padding-left:10px; border-left:5px solid var(--accent); }
+h3 { font-size:18px; margin:3px 0 8px; }
+p { margin:0 0 12px; }
+ul { margin:8px 0 14px 1.2em; padding:0; }
+li { margin:5px 0; }
+a { color:#2563eb; word-break:break-all; }
+.subtitle, .date, footer { color:var(--muted); }
+.card, .note, .hero-card { background:rgba(255,255,255,.93); border:1px solid var(--line); border-radius:20px; box-shadow:0 12px 30px rgba(31,41,55,.06); }
+.card, .note { padding:16px 18px; margin:14px 0; }
+.note { background:#fff9e8; border-color:#f2df9b; }
+.hero-card { padding:24px; margin:8px 0 22px; }
+.eyebrow { color:var(--accent); font-weight:700; font-size:13px; text-transform:uppercase; letter-spacing:.08em; }
+.actions, .links { display:flex; gap:10px; flex-wrap:wrap; margin-top:12px; }
+.button { display:inline-block; padding:9px 14px; border-radius:999px; background:var(--accent); color:white; text-decoration:none; font-weight:700; }
+.button.secondary { background:#eef4ff; color:#1d4ed8; }
+.grid { display:grid; grid-template-columns:repeat(auto-fit,minmax(260px,1fr)); gap:14px; }
+.date { font-size:13px; font-weight:700; }
+nav { display:flex; gap:12px; flex-wrap:wrap; margin-top:18px; }
+nav a { color:#355e3b; font-weight:700; }
+.label { font-weight:700; color:#355e3b; }
+.report-main { max-width:860px; }
+.back { margin-bottom:20px; }
+@page { size:A4; margin:16mm 14mm; }
+@media print { body { background:#fff; } header, main, footer { padding:0; } .back { display:none; } .card, .note { break-inside:avoid; box-shadow:none; } }
+</style>
+</head>
+<body>
+  <main class="report-main">
+    <p class="back"><a href="../../index.html">← 一覧へ戻る</a></p>
+    <section class="hero-card"><div class="eyebrow">AI news report</div><h1>ロボット技術ニュース - 2026-06-24</h1></section>
+<section class="card"><h2>1. NVIDIA: Halos for Roboticsで物理AI向けのフルスタック安全基盤</h2>
+<ul>
+<li><strong>概要:</strong> NVIDIAが、ロボットや物理AIの機能安全を支えるHalos for Roboticsを紹介。ハードウェア、ソフトウェア、検証、運用を含む安全スタックを狙う。</li>
+<li><strong>なぜ重要:</strong> ロボットが人や動物の近くで動くには、賢さより先に「安全に止まる・監視する・検証する」設計が必要。</li>
+<li><strong>ぬし / 爬虫類 / Reptile Environment OSへの使い道:</strong> 自動霧吹き・ライト・ファン・将来のメンテロボでも、AI判断とは別に安全上限、手動停止、フェイルセーフを持つ設計の参考になる。</li>
+<li><strong>リンク:</strong> <a href="https://developer.nvidia.com/blog/inside-nvidia-halos-for-robotics-a-full-stack-functional-safety-system-for-physical-ai/">https://developer.nvidia.com/blog/inside-nvidia-halos-for-robotics-a-full-stack-functional-safety-system-for-physical-ai/</a></li>
+</ul>
+</section>
+<section class="card"><h2>2. arXiv: LIBERO-SafetyでVLAロボットの物理・意味安全を評価</h2>
+<ul>
+<li><strong>概要:</strong> LIBERO-Safetyは、Vision-Language-Actionモデルに対して、物理的制約と意味的制約を含む安全クリティカルなシナリオを生成・評価するベンチマーク。</li>
+<li><strong>なぜ重要:</strong> ロボット基盤モデルは「できること」だけでなく、「してはいけないこと」をどれだけ守れるかで実用性が決まる。</li>
+<li><strong>ぬし / 爬虫類 / Reptile Environment OSへの使い道:</strong> ケージ周りの自動化でも、生体に触れない、熱源を過剰に動かさない、清掃時に逃走経路を作らない等のルール評価に近い。</li>
+<li><strong>リンク:</strong> <a href="http://arxiv.org/abs/2606.23686v1">http://arxiv.org/abs/2606.23686v1</a></li>
+</ul>
+</section>
+<section class="card"><h2>3. arXiv: AutoDexで器用な把持データを実世界で自動収集</h2>
+<ul>
+<li><strong>概要:</strong> AutoDexは、シミュレーションだけでは得にくい把持の物理結果を、実世界で自動的に集めるデータ収集システム。</li>
+<li><strong>なぜ重要:</strong> ロボットハンドの性能は、現実の失敗・滑り・接触のデータが多いほど強くなる。家庭内ロボの基礎にもつながる。</li>
+<li><strong>ぬし / 爬虫類 / Reptile Environment OSへの使い道:</strong> 将来、器具交換や水入れ補助などを考えるなら、まず「物を安全につかむ」現実データが重要になる。</li>
+<li><strong>リンク:</strong> <a href="http://arxiv.org/abs/2606.23689v1">http://arxiv.org/abs/2606.23689v1</a></li>
+</ul>
+</section>
+<section class="card"><h2>4. arXiv: CoorDexで歩行と手先操作を連続的に協調</h2>
+<ul>
+<li><strong>概要:</strong> CoorDexは、ヒューマノイドが歩いて止まって掴むだけでなく、身体と手の事前知識を協調させて連続的な移動操作を行う手法。</li>
+<li><strong>なぜ重要:</strong> 家庭や飼育部屋では、ロボットは移動と操作を切り離せない。狭い場所で安全に姿勢を変えながら作業する能力が必要。</li>
+<li><strong>ぬし / 爬虫類 / Reptile Environment OSへの使い道:</strong> ケージ前での点検や補助作業を想像すると、足場・姿勢・腕の届き方をまとめて考える設計が大事。</li>
+<li><strong>リンク:</strong> <a href="http://arxiv.org/abs/2606.23680v1">http://arxiv.org/abs/2606.23680v1</a></li>
+</ul>
+</section>
+<section class="card"><h2>5. arXiv: See2Actで「見ながら動く」模倣学習</h2>
+<ul>
+<li><strong>概要:</strong> See2Actは、物体が隠れている状況で、ロボットが探索視点を選びながら行動する模倣学習アプローチ。</li>
+<li><strong>なぜ重要:</strong> 現実環境では対象物が常に見えているとは限らない。カメラ位置や注視行動を動作と一体で学ぶ必要がある。</li>
+<li><strong>ぬし / 爬虫類 / Reptile Environment OSへの使い道:</strong> シェルター内や流木の陰にいる個体を無理に判定せず、追加視点・時間差確認・不確実性表示を使う監視設計に応用できる。</li>
+<li><strong>リンク:</strong> <a href="http://arxiv.org/abs/2606.23625v1">http://arxiv.org/abs/2606.23625v1</a></li>
+</ul>
+</section>
+<section class="note"><h2>6. arXiv: KEMOで長期操作にイベント駆動メモリを導入</h2>
+<ul>
+<li><strong>概要:</strong> KEMOは、長期ロボット操作で似た観測が繰り返されても、過去に完了した段階をイベント記憶で区別するVLA向け手法。</li>
+<li><strong>なぜ重要:</strong> 長い作業では「今どの段階か」を忘れると事故につながる。記憶はロボット安全にも効く。</li>
+<li><strong>ぬし / 爬虫類 / Reptile Environment OSへの使い道:</strong> 日次点検、給水、ライト確認などの手順を「完了済み/未確認/要再確認」として扱うワークフローに近い。</li>
+<li><strong>リンク:</strong> <a href="http://arxiv.org/abs/2606.23589v1">http://arxiv.org/abs/2606.23589v1</a></li>
+</ul>
+</section>
+<section class="note"><h2>ユグ的に今日いちばん気になるロボット技術</h2>
+<p>今日は <strong>LIBERO-SafetyとNVIDIA Halosに共通する「賢いロボットより先に、安全を測って止める設計」</strong> がいちばん大事だと思う。爬虫類のそばで動く自動化は、便利さより先にフェイルセーフと禁止ルールを固めるのがユグ的には正解なのだ。</p>
+</section>
+  </main>
+  <footer>Generated by ユグ 🦎</footer>
+</body>
+</html>
