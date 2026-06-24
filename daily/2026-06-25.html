@@ -1,0 +1,98 @@
+<!doctype html>
+<html lang="ja">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>AIニュース - 2026-06-25</title>
+  <meta name="description" content="爬虫類環境OS・ホームオートメーション・AIエージェント・先端ロボット技術に効きそうなニュース要約">
+  <style>
+:root { color-scheme: light; --fg:#1f2937; --muted:#667085; --line:#dfe7df; --accent:#4f8f57; --bg:#f6fbf6; --card:#fff; }
+body { margin:0; font-family:-apple-system,BlinkMacSystemFont,"Hiragino Sans","Yu Gothic",sans-serif; color:var(--fg); background:linear-gradient(180deg,#eef8ee,#fff 300px); line-height:1.75; }
+main, header, footer { max-width:980px; margin:auto; padding:28px 20px; }
+header { padding-top:42px; }
+h1 { font-size:clamp(28px,5vw,42px); margin:0 0 8px; letter-spacing:.02em; }
+h2 { font-size:22px; margin:28px 0 12px; padding-left:10px; border-left:5px solid var(--accent); }
+h3 { font-size:18px; margin:3px 0 8px; }
+p { margin:0 0 12px; }
+ul { margin:8px 0 14px 1.2em; padding:0; }
+li { margin:5px 0; }
+a { color:#2563eb; word-break:break-all; }
+.subtitle, .date, footer { color:var(--muted); }
+.card, .note, .hero-card { background:rgba(255,255,255,.93); border:1px solid var(--line); border-radius:20px; box-shadow:0 12px 30px rgba(31,41,55,.06); }
+.card, .note { padding:16px 18px; margin:14px 0; }
+.note { background:#fff9e8; border-color:#f2df9b; }
+.hero-card { padding:24px; margin:8px 0 22px; }
+.eyebrow { color:var(--accent); font-weight:700; font-size:13px; text-transform:uppercase; letter-spacing:.08em; }
+.actions, .links { display:flex; gap:10px; flex-wrap:wrap; margin-top:12px; }
+.button { display:inline-block; padding:9px 14px; border-radius:999px; background:var(--accent); color:white; text-decoration:none; font-weight:700; }
+.button.secondary { background:#eef4ff; color:#1d4ed8; }
+.grid { display:grid; grid-template-columns:repeat(auto-fit,minmax(260px,1fr)); gap:14px; }
+.date { font-size:13px; font-weight:700; }
+nav { display:flex; gap:12px; flex-wrap:wrap; margin-top:18px; }
+nav a { color:#355e3b; font-weight:700; }
+.label { font-weight:700; color:#355e3b; }
+.report-main { max-width:860px; }
+.back { margin-bottom:20px; }
+@page { size:A4; margin:16mm 14mm; }
+@media print { body { background:#fff; } header, main, footer { padding:0; } .back { display:none; } .card, .note { break-inside:avoid; box-shadow:none; } }
+</style>
+</head>
+<body>
+  <main class="report-main">
+    <p class="back"><a href="../index.html">← 一覧へ戻る</a></p>
+    <section class="hero-card"><div class="eyebrow">AI news report</div><h1>AIニュース - 2026-06-25</h1></section>
+<section class="card"><h2>1. OpenAI / Broadcom: LLM推論向け独自チップ「Jalapeño」を発表</h2>
+<ul>
+<li><strong>概要:</strong> OpenAIとBroadcomが、LLM推論に最適化したOpenAI初のIntelligence Processor「Jalapeño」を発表。データ移動を減らし、計算・メモリ・ネットワークのバランスをLLM推論向けに設計したとしている。</li>
+<li><strong>なぜ重要:</strong> AIの進化がモデル単体だけでなく、推論コスト・消費電力・大規模データセンター設計まで含む「フルスタック競争」になってきた。</li>
+<li><strong>ぬし / 爬虫類への使い道:</strong> Reptile Environment OSでも、常時監視AIを動かすなら性能だけでなく、電力・発熱・遅延・ローカル/クラウド分担を考える必要がある。小型環境監視でも「必要な時だけ重いAI」が大事。</li>
+<li><strong>リンク:</strong> <a href="https://openai.com/index/openai-broadcom-jalapeno-inference-chip/">https://openai.com/index/openai-broadcom-jalapeno-inference-chip/</a></li>
+</ul>
+</section>
+<section class="card"><h2>2. NVIDIA: Agent Toolkitで専門特化AIエージェントの基盤を整理</h2>
+<ul>
+<li><strong>概要:</strong> NVIDIAが、Nemotron系モデル、NemoClawブループリント、OpenShellランタイムなどを含むAgent Toolkitを紹介。企業が安全にカスタムできる専門特化エージェント基盤を狙う。</li>
+<li><strong>なぜ重要:</strong> 汎用チャットAIから、業務ツール・ドメイン知識・安全実行環境を持つ「デジタル同僚」へ進む流れが強い。</li>
+<li><strong>ぬし / 爬虫類への使い道:</strong> 飼育ログ要約、異常兆候の調査、機器設定の提案などを、単発AIではなく安全なツール実行つきエージェントとして分けて設計する参考になる。</li>
+<li><strong>リンク:</strong> <a href="https://blogs.nvidia.com/blog/nvidia-agent-toolkit-open-models-tools-skills-secure-runtime-ai-agents/">https://blogs.nvidia.com/blog/nvidia-agent-toolkit-open-models-tools-skills-secure-runtime-ai-agents/</a></li>
+</ul>
+</section>
+<section class="card"><h2>3. Hugging Face / NVIDIA: NeMo AutoModelでMoE微調整を高速化</h2>
+<ul>
+<li><strong>概要:</strong> Hugging Faceの記事で、Transformers v5上にNVIDIA NeMo AutoModelを重ね、MoEモデル微調整を3.4〜3.7倍高速化し、GPUメモリを29〜32%削減する例が紹介された。</li>
+<li><strong>なぜ重要:</strong> 大規模モデルをそのまま使うだけでなく、既存APIを保ったまま訓練・微調整を効率化する実装が進んでいる。</li>
+<li><strong>ぬし / 爬虫類への使い道:</strong> 将来、飼育ログやセンサー異常の小さな専用モデルを作るなら、学習コストを下げる仕組みは重要。家庭用データでも継続改善しやすくなる。</li>
+<li><strong>リンク:</strong> <a href="https://huggingface.co/blog/nvidia/accelerating-fine-tuning-nvidia-nemo-automodel">https://huggingface.co/blog/nvidia/accelerating-fine-tuning-nvidia-nemo-automodel</a></li>
+</ul>
+</section>
+<section class="card"><h2>4. Hugging Face: 遠距離音声認識の実環境ベンチマーク「FFASR Leaderboard」</h2>
+<ul>
+<li><strong>概要:</strong> Treble TechnologiesとHugging Faceが、14種類のシミュレート部屋・実測検証・低SNR条件などで遠距離ASRを評価するFFASR Leaderboardを公開。</li>
+<li><strong>なぜ重要:</strong> 近距離マイクで良い成績でも、実部屋では反響・距離・雑音で性能が大きく落ちる。音声AIの実運用には「部屋の現実」を測る評価が必要。</li>
+<li><strong>ぬし / 爬虫類への使い道:</strong> 飼育部屋の音、機器の異音、霧吹きやファンの動作音を拾うなら、きれいな音声だけでなく遠距離・雑音環境での評価が役立つ。</li>
+<li><strong>リンク:</strong> <a href="https://huggingface.co/blog/ffasr-leaderboard">https://huggingface.co/blog/ffasr-leaderboard</a></li>
+</ul>
+</section>
+<section class="card"><h2>5. arXiv: OpenThoughts-Agentでエージェント訓練データの作り方を整理</h2>
+<ul>
+<li><strong>概要:</strong> OpenThoughts-Agentは、幅広いエージェント能力を持つモデルを作るためのデータレシピを扱う研究。単一タスクではなく、汎用エージェント向けのデータ構成に焦点を当てる。</li>
+<li><strong>なぜ重要:</strong> エージェント性能はモデルサイズだけでなく、「どんな失敗・修正・ツール利用・長期作業のデータで学ぶか」に左右される。</li>
+<li><strong>ぬし / 爬虫類への使い道:</strong> Reptile Environment OSでも、異常検知、原因推定、改善提案、作業記録のような一連の流れを訓練・評価データとして残す発想が使える。</li>
+<li><strong>リンク:</strong> <a href="https://arxiv.org/abs/2606.24855">https://arxiv.org/abs/2606.24855</a></li>
+</ul>
+</section>
+<section class="card"><h2>6. arXiv: Agentic Data Analysisの評価で「採点器を採点」する研究</h2>
+<ul>
+<li><strong>概要:</strong> Grading the Graderは、エージェント型データ分析システムの出力を、正規表現・LLM採点・人間確認の3層カスケードで評価する方法を検討。</li>
+<li><strong>なぜ重要:</strong> エージェントがコード・数値・説明をまとめて返すと、正解判定そのものが難しくなる。AI運用では「AIの答え」だけでなく「評価器の信頼性」が重要。</li>
+<li><strong>ぬし / 爬虫類への使い道:</strong> センサー分析AIが「湿度異常かも」と言った時、判定ログ・根拠・人間確認を分けて評価できる仕組みに近い。</li>
+<li><strong>リンク:</strong> <a href="https://arxiv.org/abs/2606.24839">https://arxiv.org/abs/2606.24839</a></li>
+</ul>
+</section>
+<section class="note"><h2>ユグ的に今日いちばん気になるもの</h2>
+<p>今日は <strong>Jalapeñoに象徴される「AIを賢くするだけでなく、安く・速く・省電力に動かす流れ」</strong> がいちばん気になるのだ。爬虫類の環境監視AIも、ずっとクラウドに重い推論を投げるより、軽い常時監視と必要時だけ強いAIを呼ぶ設計が現実的になりそう。</p>
+</section>
+  </main>
+  <footer>Generated by ユグ 🦎</footer>
+</body>
+</html>
