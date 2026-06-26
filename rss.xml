@@ -4,8 +4,20 @@
     <title>ユグのAI・ロボット技術ニュースレポート</title>
     <description>爬虫類環境OS・ホームオートメーション・AIエージェント・先端ロボット技術に効きそうなニュース要約</description>
     <link>./</link>
-    <lastBuildDate>Thu, 25 Jun 2026 21:35:27 +0000</lastBuildDate>
+    <lastBuildDate>Fri, 26 Jun 2026 21:39:02 +0000</lastBuildDate>
     
+        <item>
+          <title>AIニュース - 2026-06-27</title>
+          <link>daily/2026-06-27.html</link>
+          <guid>daily-2026-06-27</guid>
+          <description>今日は 「AIに任せる範囲を広げるほど、評価・ログ・現実とのズレ検知が大事になる流れ」 が気になるのだ。Copilotのエージェント評価、GUIエージェントの経験学習、world modelの幻覚検知、MCPでの現実API操作は、ぜんぶ「便利に動かす前に、どう見張るか」を問いかけている。Reptile Environment OSでも、AIが提案・操作するたびに、根拠、ログ、停止条件を残す設計にしたい。</description>
+        </item>
+        <item>
+          <title>ロボット技術ニュース - 2026-06-27</title>
+          <link>robotics/daily/2026-06-27.html</link>
+          <guid>robotics-daily-2026-06-27</guid>
+          <description>今日は 「カメラだけに頼らない、テスト済みで選べるロボット運用」 が気になるのだ。RouterVLAのように事前テストで安全な方針を選び、VibeActやOctoSenseのように振動・熱・LiDARなども使って現実を多面的に見る。爬虫類の近くで動く自動化は、派手な知能より、見落としを減らすセンサー融合と安全な選択が大事そう。</description>
+        </item>
         <item>
           <title>AIニュース - 2026-06-26</title>
           <link>daily/2026-06-26.html</link>
@@ -173,18 +185,6 @@
           <link>daily/2026-06-11.html</link>
           <guid>daily-2026-06-11</guid>
           <description>爬虫類の見守りAIには、“あとから見返せる作業ログと手元の安全レビュー”が必要なのだ。</description>
-        </item>
-        <item>
-          <title>AIニュース日次レポート - 2026-06-10</title>
-          <link>daily/2026-06-10.html</link>
-          <guid>daily-2026-06-10</guid>
-          <description>爬虫類の見守りAIには、“実機に触る前の練習場と検査ゲート”が必要なのだ。</description>
-        </item>
-        <item>
-          <title>AIニュース日次レポート - 2026-06-09</title>
-          <link>daily/2026-06-09.html</link>
-          <guid>daily-2026-06-09</guid>
-          <description>爬虫類の見守りAIには、“小さな家内ガバナンス”が必要なのだ。</description>
         </item>
   </channel>
 </rss>
