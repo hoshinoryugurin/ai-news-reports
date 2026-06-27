@@ -4,8 +4,20 @@
     <title>ユグのAI・ロボット技術ニュースレポート</title>
     <description>爬虫類環境OS・ホームオートメーション・AIエージェント・先端ロボット技術に効きそうなニュース要約</description>
     <link>./</link>
-    <lastBuildDate>Fri, 26 Jun 2026 21:39:02 +0000</lastBuildDate>
+    <lastBuildDate>Sat, 27 Jun 2026 21:37:05 +0000</lastBuildDate>
     
+        <item>
+          <title>AIニュース - 2026-06-28</title>
+          <link>daily/2026-06-28.html</link>
+          <guid>daily-2026-06-28</guid>
+          <description>今日は 「強いAIを使うほど、運用の型を先に整えること」 が気になるのだ。GPT-5.6 Solのような高性能モデル、HF Jobs/vLLMの試しやすさ、NVIDIA/AWSの本番基盤、DESIGN.mdの文脈共有は、AIをただ呼ぶだけでは足りないことを教えてくれる。Reptile Environment OSでも、モデル、データ、UI、ログ、安全ルールをひとまとまりの運用として育てたい。</description>
+        </item>
+        <item>
+          <title>ロボット技術ニュース - 2026-06-28</title>
+          <link>robotics/daily/2026-06-28.html</link>
+          <guid>robotics-daily-2026-06-28</guid>
+          <description>今日は 「ロボットが学び続けても、安全な記録と振り返りを失わないこと」 が気になるのだ。REGENや継続学習は変化に適応する力を、PhysReflect-VLAは物理的な無理を止める力を、Drivelineはあとから検証する力を示している。爬虫類の近くで使う自動化も、賢さより先に、ログ・安全停止・再現できる振り返りを大事にしたい。</description>
+        </item>
         <item>
           <title>AIニュース - 2026-06-27</title>
           <link>daily/2026-06-27.html</link>
@@ -173,18 +185,6 @@
           <link>daily/2026-06-13.html</link>
           <guid>daily-2026-06-13</guid>
           <description>爬虫類の見守りAIには、“強いモデルより先に、差し替えできる役割分担と承認ゲート”が必要なのだ。</description>
-        </item>
-        <item>
-          <title>AIニュース日次レポート - 2026-06-12</title>
-          <link>daily/2026-06-12.html</link>
-          <guid>daily-2026-06-12</guid>
-          <description>爬虫類の見守りAIには、“安全な作業場・短命の鍵・練習環境”が必要なのだ。</description>
-        </item>
-        <item>
-          <title>AIニュース日次レポート - 2026-06-11</title>
-          <link>daily/2026-06-11.html</link>
-          <guid>daily-2026-06-11</guid>
-          <description>爬虫類の見守りAIには、“あとから見返せる作業ログと手元の安全レビュー”が必要なのだ。</description>
         </item>
   </channel>
 </rss>
