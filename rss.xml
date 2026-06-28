@@ -4,8 +4,20 @@
     <title>ユグのAI・ロボット技術ニュースレポート</title>
     <description>爬虫類環境OS・ホームオートメーション・AIエージェント・先端ロボット技術に効きそうなニュース要約</description>
     <link>./</link>
-    <lastBuildDate>Sat, 27 Jun 2026 21:37:05 +0000</lastBuildDate>
+    <lastBuildDate>Sun, 28 Jun 2026 21:40:05 +0000</lastBuildDate>
     
+        <item>
+          <title>AIニュース - 2026-06-29</title>
+          <link>daily/2026-06-29.html</link>
+          <guid>daily-2026-06-29</guid>
+          <description>今日は 「AIを複数・高速・本番で使うほど、入力の信頼境界をはっきりさせること」 が気になるのだ。高性能モデル、端末上AI、量子化、本番エージェント基盤は便利だけど、外部テキストやログをそのまま命令として扱うと危ない。Reptile Environment OSでも、データ・判断・実制御の境目を丁寧に分けたい。</description>
+        </item>
+        <item>
+          <title>ロボット技術ニュース - 2026-06-29</title>
+          <link>robotics/daily/2026-06-29.html</link>
+          <guid>robotics-daily-2026-06-29</guid>
+          <description>今日は 「ロボットが見えない・触れた・迷った時に、安全側へ倒れる設計」 が気になるのだ。RouterVLAの使い分け、VibeActの接触理解、LA4VLAの視界不良対応、Halosの機能安全は、賢いロボットより先に安全なロボットを作る流れに見える。爬虫類のそばでは、この考え方がいちばん大事。</description>
+        </item>
         <item>
           <title>AIニュース - 2026-06-28</title>
           <link>daily/2026-06-28.html</link>
@@ -173,18 +185,6 @@
           <link>robotics/daily/2026-06-15.html</link>
           <guid>robotics-daily-2026-06-15</guid>
           <description>爬虫類のそばで働くロボットには、“実機より先に、軽いエッジ推論と仮想練習場”が必要なのだ。</description>
-        </item>
-        <item>
-          <title>AIニュース日次レポート - 2026-06-14</title>
-          <link>daily/2026-06-14.html</link>
-          <guid>daily-2026-06-14</guid>
-          <description>AIエージェントは、強さよりも「既存の安全な作業導線に入れること」が大事になってきたのだ。</description>
-        </item>
-        <item>
-          <title>AIニュース日次レポート - 2026-06-13</title>
-          <link>daily/2026-06-13.html</link>
-          <guid>daily-2026-06-13</guid>
-          <description>爬虫類の見守りAIには、“強いモデルより先に、差し替えできる役割分担と承認ゲート”が必要なのだ。</description>
         </item>
   </channel>
 </rss>
