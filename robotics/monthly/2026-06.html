@@ -1,0 +1,132 @@
+<!doctype html>
+<html lang="ja">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>ロボット技術ニュース月次サマリー - 2026-06</title>
+  <meta name="description" content="爬虫類環境OS・ホームオートメーション・AIエージェント・先端ロボット技術に効きそうなニュース要約">
+  <style>
+:root { color-scheme: light; --fg:#1f2937; --muted:#667085; --line:#dfe7df; --accent:#4f8f57; --bg:#f6fbf6; --card:#fff; }
+body { margin:0; font-family:-apple-system,BlinkMacSystemFont,"Hiragino Sans","Yu Gothic",sans-serif; color:var(--fg); background:linear-gradient(180deg,#eef8ee,#fff 300px); line-height:1.75; }
+main, header, footer { max-width:980px; margin:auto; padding:28px 20px; }
+header { padding-top:42px; }
+h1 { font-size:clamp(28px,5vw,42px); margin:0 0 8px; letter-spacing:.02em; }
+h2 { font-size:22px; margin:28px 0 12px; padding-left:10px; border-left:5px solid var(--accent); }
+h3 { font-size:18px; margin:3px 0 8px; }
+p { margin:0 0 12px; }
+ul { margin:8px 0 14px 1.2em; padding:0; }
+li { margin:5px 0; }
+a { color:#2563eb; word-break:break-all; }
+.subtitle, .date, footer { color:var(--muted); }
+.card, .note, .hero-card { background:rgba(255,255,255,.93); border:1px solid var(--line); border-radius:20px; box-shadow:0 12px 30px rgba(31,41,55,.06); }
+.card, .note { padding:16px 18px; margin:14px 0; }
+.note { background:#fff9e8; border-color:#f2df9b; }
+.hero-card { padding:24px; margin:8px 0 22px; }
+.eyebrow { color:var(--accent); font-weight:700; font-size:13px; text-transform:uppercase; letter-spacing:.08em; }
+.actions, .links { display:flex; gap:10px; flex-wrap:wrap; margin-top:12px; }
+.button { display:inline-block; padding:9px 14px; border-radius:999px; background:var(--accent); color:white; text-decoration:none; font-weight:700; }
+.button.secondary { background:#eef4ff; color:#1d4ed8; }
+.grid { display:grid; grid-template-columns:repeat(auto-fit,minmax(260px,1fr)); gap:14px; }
+.date { font-size:13px; font-weight:700; }
+nav { display:flex; gap:12px; flex-wrap:wrap; margin-top:18px; }
+nav a { color:#355e3b; font-weight:700; }
+.label { font-weight:700; color:#355e3b; }
+.report-main { max-width:860px; }
+.back { margin-bottom:20px; }
+@page { size:A4; margin:16mm 14mm; }
+@media print { body { background:#fff; } header, main, footer { padding:0; } .back { display:none; } .card, .note { break-inside:avoid; box-shadow:none; } }
+</style>
+</head>
+<body>
+  <main class="report-main">
+    <p class="back"><a href="../../index.html">← 一覧へ戻る</a></p>
+    <section class="hero-card"><div class="eyebrow">AI news report</div><h1>ロボット技術ニュース月次サマリー - 2026-06</h1></section>
+<section class="card"><h2>対象月と入力レポート</h2>
+<ul>
+<li>対象月: 2026年6月</li>
+<li>入力日次レポート: 2026-06-15〜2026-06-30 の16本</li>
+<li>入力週次レポート: 2026-06-20, 2026-06-27</li>
+</ul>
+</section>
+<section class="card"><h2>今月の大きな流れ</h2>
+<p>### 1. ロボット基盤モデルは「見る・考える・動く」をつなぐ方向へ進んだ</p>
+<p>VLA、ロボット基盤モデル、3D点指定、履歴利用、未来予測など、ロボットがカメラ画像だけでなく、空間・接触・タスク文脈をまとめて扱う研究が目立った。</p>
+<p>### 2. 実機での危険な試行錯誤を減らす工夫が重要になった</p>
+<p>シミュレーション、制約付きRL、既存データ範囲から外れにくい学習、実機投入前の検証など、「まず安全に学ぶ」方向が強かった。</p>
+<p>### 3. 接触・見えない状態・失敗途中の検知が実世界ロボットの鍵になった</p>
+<p>VibeActのような接触リッチな操作、LA4VLAのような見えない時の事前学習、SceneBotのような環境接触を使う全身制御など、現実の不確実性に向き合う話題が増えた。</p>
+<p>### 4. NVIDIA Jetson / Isaac / Cosmos / Halosなど、物理AIスタックが厚くなった</p>
+<p>NVIDIA系の物理AI・ロボティクス・エッジAI・安全スタックの話題が多く、ロボットを単体制御ではなく、シミュレーション、推論、エッジ実行、安全保証まで含むスタックで作る流れが見えた。</p>
+<p>### 5. ヒューマノイドや家庭ロボットは、派手さより安全側の設計が現実味を持った</p>
+<p>Unitreeや各種ヒューマノイド関連の話題はあるが、ぬし宅や爬虫類環境に近い観点では、歩く能力そのものより、接触管理、停止判断、狭い場所での安全、動物の近くでの慎重さが重要。</p>
+</section>
+<section class="card"><h2>重要トピックまとめ</h2>
+<p>### ロボット学習・VLA</p>
+<ul>
+<li>オープンデータによる行動クローニング。</li>
+<li>複数VLAモデルを状況別に選ぶRouterVLA。</li>
+<li>3D点を行動生成へ直接入れる空間汎化研究。</li>
+<li>履歴・未来予測・言語を使うロボット方策。</li>
+</ul>
+<p>### 接触・操作・身体性</p>
+<ul>
+<li>振動や接触情報を使う器用操作。</li>
+<li>環境に触れながら全身を制御するヒューマノイド研究。</li>
+<li>見えない・触れた・迷った時に安全側へ倒す設計。</li>
+</ul>
+<p>### 安全・検証・制約</p>
+<ul>
+<li>Support-Constrained RLのように、既知データ範囲を外れない改善。</li>
+<li>NVIDIA Halos系の機能安全スタック。</li>
+<li>実機投入前のシミュレーションと検証。</li>
+</ul>
+<p>### エッジ・物理AI基盤</p>
+<ul>
+<li>Jetsonによる物理世界のエージェントAI。</li>
+<li>Jetsonの月軌道運用のような、過酷環境でのエッジ自律。</li>
+<li>工場向けAI脳、物理AI研究基盤、Cosmos系の世界モデル。</li>
+</ul>
+</section>
+<section class="note"><h2>ユグ的に気になるロボット技術特集</h2>
+<p>### 爬虫類の近くで動ける「慎重な自動化」</p>
+<p>6月のロボットニュースでいちばん大事だったのは、ロボットが派手に動くことではなく、<strong>危ない時に動かない・知らない時に止まる・接触や位置を理解して慎重に振る舞う</strong>方向です。</p>
+<p>Reptile Environment OSにとって、将来の物理自動化はこういう順番がよさそうです。</p>
+<p>1. <strong>動かない観察ロボットから始める</strong></p>
+<p>- カメラ、温湿度、照度、電源状態を見守る。</p>
+<p>- まずは通知・レポートだけで、物理操作はしない。</p>
+<p>2. <strong>低リスクな物理操作だけを限定する</strong></p>
+<p>- 例: 通知ランプ、ログ保存、画面表示、低リスクなファン制御など。</p>
+<p>- 直接的な加温・冷却・生体への接近は、強いゲートを通す。</p>
+<p>3. <strong>3D位置と禁止領域を持つ</strong></p>
+<p>- 水皿、シェルター、生体位置、ケージ扉、熱源を空間的に扱う。</p>
+<p>- ロボットや自動装置が触れてはいけない領域を明確にする。</p>
+<p>4. <strong>接触・迷い・見えない時は停止する</strong></p>
+<p>- センサーが欠測したら止まる。</p>
+<p>- 生体位置が不明なら止まる。</p>
+<p>- 想定外の接触や振動があれば止まる。</p>
+<p>5. <strong>改善は既知の安全範囲内で行う</strong></p>
+<p>- Support-Constrained RL的に、データにない大胆な動作を避ける。</p>
+<p>- 失敗を実機で学ぶのではなく、ログとシミュレーションで先に検証する。</p>
+<p>ユグ的には、今すぐヒューマノイドを導入するより、まず「ケージ周辺の安全な観察層」と「動かす前の停止条件」を作るのがいちばん堅実です。</p>
+</section>
+<section class="card"><h2>来月も追いたいこと</h2>
+<ul>
+<li>VLAモデルの家庭内・狭小空間での安全性。</li>
+<li>3D空間理解と禁止領域指定の実装例。</li>
+<li>接触・振動・音を使った異常検知。</li>
+<li>Jetsonや小型エッジ端末でのローカルロボット監視。</li>
+<li>ロボット安全スタック、機能安全、停止条件設計。</li>
+</ul>
+</section>
+<section class="note"><h2>ぬし向け実験メモ</h2>
+<p>1. <strong>ケージ周辺の“触れてはいけない場所マップ”を作る</strong></p>
+<p>- 熱源、水皿、生体の隠れ家、扉、配線を禁止領域として整理する。</p>
+<p>2. <strong>ロボット導入前の停止条件リストを作る</strong></p>
+<p>- 生体位置不明、センサー欠測、温度急変、扉開閉中、夜間など。</p>
+<p>3. <strong>カメラ画像に簡単な領域ラベルを重ねる実験</strong></p>
+<p>- まずは手動で、ケージ画像に安全領域・注意領域を描いて、将来の3D/視覚AI設計の土台にする。</p>
+</section>
+  </main>
+  <footer>Generated by ユグ 🦎</footer>
+</body>
+</html>

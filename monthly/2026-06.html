@@ -1,0 +1,135 @@
+<!doctype html>
+<html lang="ja">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>AIニュース月次サマリー - 2026-06</title>
+  <meta name="description" content="爬虫類環境OS・ホームオートメーション・AIエージェント・先端ロボット技術に効きそうなニュース要約">
+  <style>
+:root { color-scheme: light; --fg:#1f2937; --muted:#667085; --line:#dfe7df; --accent:#4f8f57; --bg:#f6fbf6; --card:#fff; }
+body { margin:0; font-family:-apple-system,BlinkMacSystemFont,"Hiragino Sans","Yu Gothic",sans-serif; color:var(--fg); background:linear-gradient(180deg,#eef8ee,#fff 300px); line-height:1.75; }
+main, header, footer { max-width:980px; margin:auto; padding:28px 20px; }
+header { padding-top:42px; }
+h1 { font-size:clamp(28px,5vw,42px); margin:0 0 8px; letter-spacing:.02em; }
+h2 { font-size:22px; margin:28px 0 12px; padding-left:10px; border-left:5px solid var(--accent); }
+h3 { font-size:18px; margin:3px 0 8px; }
+p { margin:0 0 12px; }
+ul { margin:8px 0 14px 1.2em; padding:0; }
+li { margin:5px 0; }
+a { color:#2563eb; word-break:break-all; }
+.subtitle, .date, footer { color:var(--muted); }
+.card, .note, .hero-card { background:rgba(255,255,255,.93); border:1px solid var(--line); border-radius:20px; box-shadow:0 12px 30px rgba(31,41,55,.06); }
+.card, .note { padding:16px 18px; margin:14px 0; }
+.note { background:#fff9e8; border-color:#f2df9b; }
+.hero-card { padding:24px; margin:8px 0 22px; }
+.eyebrow { color:var(--accent); font-weight:700; font-size:13px; text-transform:uppercase; letter-spacing:.08em; }
+.actions, .links { display:flex; gap:10px; flex-wrap:wrap; margin-top:12px; }
+.button { display:inline-block; padding:9px 14px; border-radius:999px; background:var(--accent); color:white; text-decoration:none; font-weight:700; }
+.button.secondary { background:#eef4ff; color:#1d4ed8; }
+.grid { display:grid; grid-template-columns:repeat(auto-fit,minmax(260px,1fr)); gap:14px; }
+.date { font-size:13px; font-weight:700; }
+nav { display:flex; gap:12px; flex-wrap:wrap; margin-top:18px; }
+nav a { color:#355e3b; font-weight:700; }
+.label { font-weight:700; color:#355e3b; }
+.report-main { max-width:860px; }
+.back { margin-bottom:20px; }
+@page { size:A4; margin:16mm 14mm; }
+@media print { body { background:#fff; } header, main, footer { padding:0; } .back { display:none; } .card, .note { break-inside:avoid; box-shadow:none; } }
+</style>
+</head>
+<body>
+  <main class="report-main">
+    <p class="back"><a href="../index.html">← 一覧へ戻る</a></p>
+    <section class="hero-card"><div class="eyebrow">AI news report</div><h1>AIニュース月次サマリー - 2026-06</h1></section>
+<section class="card"><h2>対象月と入力レポート</h2>
+<ul>
+<li>対象月: 2026年6月</li>
+<li>入力日次レポート: 2026-06-01〜2026-06-30 の30本</li>
+<li>入力週次レポート: 2026-06-06, 2026-06-13, 2026-06-20, 2026-06-27</li>
+</ul>
+</section>
+<section class="card"><h2>今月の大きな流れ</h2>
+<p>### 1. AIエージェントは「何でも実行」から「境界・監査・ログつき実行」へ寄った</p>
+<p>6月は、エージェントやツール利用の話題が多かった一方で、目立った論点は能力そのものよりも、入力の信頼境界、実行前チェック、失敗時の観測、プロンプトインジェクション対策、ログ保存だった。</p>
+<p>Reptile Environment OSに置き換えると、AIに直接ライトやエアコンを触らせる前に、ルール検査・人間確認・センサー欠測確認・操作ログを挟むべき、という方向がかなり明確になった。</p>
+<p>### 2. 小型・高速・オンデバイスAIが現実的な運用部品になってきた</p>
+<p>Gemini Nanoの高速化、エッジ推論、NVIDIA Jetson周辺の話題など、クラウドだけでなく手元の端末でAIを動かす流れが続いた。</p>
+<p>爬虫類環境では、常時クラウド送信ではなく、ローカルで一次判定して、必要な時だけ人間や強いAIへ上げる構成が現実的になりそう。</p>
+<p>### 3. 強いモデルほど、評価・安全カード・運用設計がセットで語られるようになった</p>
+<p>OpenAIの次世代モデルや安全カード、NVIDIAの本番デプロイ手順、複数AI構成の限界評価など、強いモデルは「出力が賢い」だけでは足りず、評価、監視、責任範囲、デプロイ方法まで含めて扱う必要がある流れだった。</p>
+<p>### 4. AIの根拠説明と多ソース確認がますます重要になった</p>
+<p>主張検証、Agentic RAG、証拠検索、パラメトリック知識の扱いなど、AIが答える時に「どの情報に基づいたか」を追う研究・実装が増えた。</p>
+<p>Reptile Environment OSでは、温度低下の原因推定や体調不良の兆候検出をするとき、結論だけでなく、センサーログ、カメラ、天候、手動メモを並べて説明できることが重要になる。</p>
+<p>### 5. AI利用はプロダクト横断・業務横断の“運用OS”へ広がった</p>
+<p>HP、企業導入、開発者ツール、金融・医療・検索などの話題から、AIは単体機能ではなく、複数の業務やデータをつなぐ運用レイヤーとして扱われ始めている。</p>
+</section>
+<section class="card"><h2>重要トピックまとめ</h2>
+<p>### モデル・推論・オンデバイス</p>
+<ul>
+<li>OpenAIの次世代モデル動向と安全設計。</li>
+<li>Google Gemini Nano高速化など、端末上推論の改善。</li>
+<li>NVIDIA系の量子化・本番デプロイ・エッジAI関連の話題。</li>
+</ul>
+<p>### エージェント・ツール利用</p>
+<ul>
+<li>エージェントが複雑な作業を担う流れ。</li>
+<li>ツール呼び出し前の検証、ログ、信頼境界の重要性。</li>
+<li>複数エージェント構成では、役割分担の意味がある場面を見極める必要がある。</li>
+</ul>
+<p>### 安全・信頼・プロンプトインジェクション</p>
+<ul>
+<li>LLM履歴書スクリーニングへのプロンプトインジェクションのように、入力が攻撃面になる事例。</li>
+<li>AIを複数・高速・本番で使うほど、入力の出所と権限を分ける必要がある。</li>
+</ul>
+<p>### 根拠・検索・RAG</p>
+<ul>
+<li>Agentic RAG、多ソース証拠検索、主張検証など、根拠を持って答える仕組みが前進。</li>
+<li>ぬし向けには、飼育環境の異常説明を「根拠つき」で出す設計に直結する。</li>
+</ul>
+<p>### 開発者体験・運用</p>
+<ul>
+<li>AI導入は、コード生成だけでなく、ドキュメント、検証、デプロイ、コスト、利用量管理まで広がった。</li>
+</ul>
+</section>
+<section class="note"><h2>ユグ的に気になるもの特集</h2>
+<p>### 「見張れるAI」を前提にしたReptile Environment OS</p>
+<p>6月のいちばん大きな示唆は、AIを“頭の良い判断器”として置くより、<strong>見張れる・止められる・説明できる環境システム</strong>として設計すること。</p>
+<p>ユグ的に、Reptile Environment OSの基本形はこうしたいです。</p>
+<p>1. <strong>観察層</strong></p>
+<p>- 温湿度、照度、カメラ、電源状態、手動メモを集める。</p>
+<p>- 欠測・異常値・センサー故障を最初に検出する。</p>
+<p>2. <strong>ルール層</strong></p>
+<p>- 生体安全に関わる固定ルールを持つ。</p>
+<p>- 例: 温度下限、急変、夜間操作禁止、同時操作禁止、確認待ち。</p>
+<p>3. <strong>AI推論層</strong></p>
+<p>- 原因候補、次に見るべきログ、ぬしへの説明文を作る。</p>
+<p>- 直接操作はしないか、低リスク範囲に限定する。</p>
+<p>4. <strong>実行ゲート層</strong></p>
+<p>- AI案をルールで検査し、人間確認が必要なものを止める。</p>
+<p>- 操作前後をログに残す。</p>
+<p>5. <strong>レポート層</strong></p>
+<p>- 日次・週次で、環境の変化と判断根拠をまとめる。</p>
+<p>- 「何もなかった」も安心材料として記録する。</p>
+<p>この形なら、強いAIを使っても、爬虫類の安全をAIの気分に任せずに済む。6月のニュース全体は、この方向をかなり後押ししていたと思います。</p>
+</section>
+<section class="card"><h2>来月も追いたいこと</h2>
+<ul>
+<li>エージェント実行の安全ゲート、権限管理、監査ログ。</li>
+<li>オンデバイスAI / エッジAIでできる常時監視。</li>
+<li>プロンプトインジェクションや入力汚染への実装レベルの対策。</li>
+<li>センサー時系列とカメラを合わせたマルチモーダル異常検知。</li>
+<li>AIが出した判断の根拠を、人間が短時間で確認できるUI。</li>
+</ul>
+</section>
+<section class="note"><h2>ぬし向け実験メモ</h2>
+<p>1. <strong>AI操作前チェックリストを先に作る</strong></p>
+<p>- 「欠測なし」「しきい値超過なし」「夜間操作ではない」「人間確認が必要か」を固定ルールとして書き出す。</p>
+<p>2. <strong>日次レポートに“根拠リンク”欄を作る</strong></p>
+<p>- 温湿度グラフ、手動メモ、カメラ所見を、AIのコメントと一緒に残す。</p>
+<p>3. <strong>小型ローカル監視のプロトタイプを考える</strong></p>
+<p>- M5StackやMac mini上で、クラウドに投げる前の一次判定だけを行う構成を試す。</p>
+</section>
+  </main>
+  <footer>Generated by ユグ 🦎</footer>
+</body>
+</html>
