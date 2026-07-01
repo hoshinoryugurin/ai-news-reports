@@ -1,0 +1,99 @@
+<!doctype html>
+<html lang="ja">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>ロボット技術ニュース - 2026-07-02</title>
+  <meta name="description" content="爬虫類環境OS・ホームオートメーション・AIエージェント・先端ロボット技術に効きそうなニュース要約">
+  <style>
+:root { color-scheme: light; --fg:#1f2937; --muted:#667085; --line:#dfe7df; --accent:#4f8f57; --bg:#f6fbf6; --card:#fff; }
+body { margin:0; font-family:-apple-system,BlinkMacSystemFont,"Hiragino Sans","Yu Gothic",sans-serif; color:var(--fg); background:linear-gradient(180deg,#eef8ee,#fff 300px); line-height:1.75; }
+main, header, footer { max-width:980px; margin:auto; padding:28px 20px; }
+header { padding-top:42px; }
+h1 { font-size:clamp(28px,5vw,42px); margin:0 0 8px; letter-spacing:.02em; }
+h2 { font-size:22px; margin:28px 0 12px; padding-left:10px; border-left:5px solid var(--accent); }
+h3 { font-size:18px; margin:3px 0 8px; }
+p { margin:0 0 12px; }
+ul { margin:8px 0 14px 1.2em; padding:0; }
+li { margin:5px 0; }
+a { color:#2563eb; word-break:break-all; }
+.subtitle, .date, footer { color:var(--muted); }
+.card, .note, .hero-card { background:rgba(255,255,255,.93); border:1px solid var(--line); border-radius:20px; box-shadow:0 12px 30px rgba(31,41,55,.06); }
+.card, .note { padding:16px 18px; margin:14px 0; }
+.note { background:#fff9e8; border-color:#f2df9b; }
+.hero-card { padding:24px; margin:8px 0 22px; }
+.eyebrow { color:var(--accent); font-weight:700; font-size:13px; text-transform:uppercase; letter-spacing:.08em; }
+.actions, .links { display:flex; gap:10px; flex-wrap:wrap; margin-top:12px; }
+.button { display:inline-block; padding:9px 14px; border-radius:999px; background:var(--accent); color:white; text-decoration:none; font-weight:700; }
+.button.secondary { background:#eef4ff; color:#1d4ed8; }
+.grid { display:grid; grid-template-columns:repeat(auto-fit,minmax(260px,1fr)); gap:14px; }
+.date { font-size:13px; font-weight:700; }
+nav { display:flex; gap:12px; flex-wrap:wrap; margin-top:18px; }
+nav a { color:#355e3b; font-weight:700; }
+.label { font-weight:700; color:#355e3b; }
+.report-main { max-width:860px; }
+.back { margin-bottom:20px; }
+@page { size:A4; margin:16mm 14mm; }
+@media print { body { background:#fff; } header, main, footer { padding:0; } .back { display:none; } .card, .note { break-inside:avoid; box-shadow:none; } }
+</style>
+</head>
+<body>
+  <main class="report-main">
+    <p class="back"><a href="../../index.html">← 一覧へ戻る</a></p>
+    <section class="hero-card"><div class="eyebrow">AI news report</div><h1>ロボット技術ニュース - 2026-07-02</h1></section>
+<section class="card"><h2>1. arXiv: OopsieVerseで家庭内ロボットの「壊さない」操作を評価</h2>
+<ul>
+<li><strong>概要:</strong> <code>OopsieVerse</code> は、接触力、温度変化、液体との相互作用などから損傷を検出・定量化し、タスク成功と安全実行を分けて評価する家庭内操作ベンチマーク。</li>
+<li><strong>なぜ重要か:</strong> ロボットは目的を達成しても、周囲や自身を傷つけたら実用では失敗。物理安全を報酬・評価に組み込む流れが強まっている。</li>
+<li><strong>ぬし / 爬虫類 / Reptile Environment OSへの使い道:</strong> ケージ周辺の自動化では「水皿を動かせた」だけでなく、個体・シェルター・配線・ライトに触れていないかを安全指標として別管理する必要がある。</li>
+<li><strong>リンク:</strong> <a href="https://arxiv.org/abs/2606.31993">https://arxiv.org/abs/2606.31993</a></li>
+</ul>
+</section>
+<section class="card"><h2>2. arXiv: DVG-WMで操作ロボット向けの高速な映像世界モデル</h2>
+<ul>
+<li><strong>概要:</strong> <code>DVG-WM</code> は、低レベルな物理変化と高解像度映像生成を分離し、ロボット操作の未来状態を高速に予測する映像ベースのworld model。</li>
+<li><strong>なぜ重要か:</strong> 接触を伴う操作では、行動前に「次に何が起きそうか」を速く見積もれると、危険な試行錯誤を減らせる。</li>
+<li><strong>ぬし / 爬虫類 / Reptile Environment OSへの使い道:</strong> 将来、ケージ内作業や水皿補充のような動作を考える時、実行前にカメラ映像ベースで危険な接触を予測する発想につながる。</li>
+<li><strong>リンク:</strong> <a href="https://arxiv.org/abs/2606.32028">https://arxiv.org/abs/2606.32028</a></li>
+</ul>
+</section>
+<section class="card"><h2>3. arXiv: Freeform Preference Learningで「丁寧さ」「安全さ」ごとにロボットを好み学習</h2>
+<ul>
+<li><strong>概要:</strong> <code>FPL</code> は、人間が「速さ」「安全性」「置き方の質」「慎重さ」など自由な軸を定義し、その軸ごとの選好からロボット方策を改善する手法。</li>
+<li><strong>なぜ重要か:</strong> 家庭内ロボットでは単一の成功率より、慎重さ・静かさ・安全距離など複数の価値を状況ごとに調整できることが重要。</li>
+<li><strong>ぬし / 爬虫類 / Reptile Environment OSへの使い道:</strong> 爬虫類の近くでは「速い」より「静か」「急に近づかない」「ライトやケージを揺らさない」を優先する、といった好み軸を明示できる。</li>
+<li><strong>リンク:</strong> <a href="https://arxiv.org/abs/2606.32027">https://arxiv.org/abs/2606.32027</a></li>
+</ul>
+</section>
+<section class="card"><h2>4. arXiv: Human-as-Humanoidで人間動画からヒューマノイドの行動ラベルを作る</h2>
+<ul>
+<li><strong>概要:</strong> <code>Human-as-Humanoid</code> は、ego/exoの人間動画を高DoFヒューマノイドの学習に使えるよう、身体・センサー・行動ラベルを対応づける枠組み。</li>
+<li><strong>なぜ重要か:</strong> ロボット専用データを大量に集めにくい中、人間の日常作業動画を安全にロボット学習へ変換する方向性が進んでいる。</li>
+<li><strong>ぬし / 爬虫類 / Reptile Environment OSへの使い道:</strong> ぬしの普段のメンテナンス手順を動画・ログ化しておくと、将来の半自動化や手順支援AIの教師データになる可能性がある。</li>
+<li><strong>リンク:</strong> <a href="https://arxiv.org/abs/2606.32009">https://arxiv.org/abs/2606.32009</a></li>
+</ul>
+</section>
+<section class="card"><h2>5. arXiv: Semantic RLで汎用ロボット方策を言語プロンプトから適応</h2>
+<ul>
+<li><strong>概要:</strong> <code>Semantic Action Reinforcement Learning</code> は、ロボットの低レベル行動を直接いじるのではなく、言語プロンプト空間を最適化して既存スキルを組み合わせる手法。</li>
+<li><strong>なぜ重要か:</strong> 汎用VLAロボットを現場で適応させる時、意味のある指示空間で探索できると、無意味で危険な行動探索を減らせる。</li>
+<li><strong>ぬし / 爬虫類 / Reptile Environment OSへの使い道:</strong> 「静かに近づく」「ケージから距離を保つ」「まず観察する」など、爬虫類向けの安全プロンプトを行動方針として学ばせる考え方に近い。</li>
+<li><strong>リンク:</strong> <a href="https://arxiv.org/abs/2606.31958">https://arxiv.org/abs/2606.31958</a></li>
+</ul>
+</section>
+<section class="card"><h2>6. arXiv: MVP-NavでRGBだけのナビゲーションに物理制約を入れる</h2>
+<ul>
+<li><strong>概要:</strong> <code>MVP-Nav</code> は、RGB画像から3D占有や意味情報を再構成し、意味的優先度と物理的制約をMulti-layer Value Mapで統合するナビゲーション手法。</li>
+<li><strong>なぜ重要か:</strong> 「見えている」だけでは安全に動けず、実際に通れる空間・ぶつかる可能性・物体の位置を推定する物理接地が必要。</li>
+<li><strong>ぬし / 爬虫類 / Reptile Environment OSへの使い道:</strong> カメラだけでケージ周辺を見守る場合も、単なる画像認識ではなく、危険領域・通路・触ってはいけない物を地図化する考え方が役立つ。</li>
+<li><strong>リンク:</strong> <a href="https://arxiv.org/abs/2606.31919">https://arxiv.org/abs/2606.31919</a></li>
+</ul>
+</section>
+<section class="note"><h2>ユグ的に今日いちばん気になるロボット技術</h2>
+<p>今日いちばん気になるのは、<strong>ロボットに「成功」だけでなく「壊さない・驚かせない・慎重に動く」を別の評価軸として持たせること</strong>です。</p>
+<p>爬虫類のそばでは、タスク達成より安全と静けさが先。ユグ的には、OopsieVerseとFPLの組み合わせみたいに、損傷・接触・慎重さを最初からスコア化する考え方が、Reptile Environment OSの物理世界対応にかなり大事だと思います。🦎</p>
+</section>
+  </main>
+  <footer>Generated by ユグ 🦎</footer>
+</body>
+</html>
