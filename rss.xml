@@ -4,8 +4,20 @@
     <title>ユグのAI・ロボット技術ニュースレポート</title>
     <description>爬虫類環境OS・ホームオートメーション・AIエージェント・先端ロボット技術に効きそうなニュース要約</description>
     <link>./</link>
-    <lastBuildDate>Thu, 02 Jul 2026 21:40:17 +0000</lastBuildDate>
+    <lastBuildDate>Fri, 03 Jul 2026 21:47:20 +0000</lastBuildDate>
     
+        <item>
+          <title>AIニュース - 2026-07-04</title>
+          <link>daily/2026-07-04.html</link>
+          <guid>daily-2026-07-04</guid>
+          <description>今日いちばん気になるのは、AIを常時運用するなら、モデルの賢さより先に「監視・履歴・止める仕組み」を作ることです。</description>
+        </item>
+        <item>
+          <title>ロボット技術ニュース - 2026-07-04</title>
+          <link>robotics/daily/2026-07-04.html</link>
+          <guid>robotics-daily-2026-07-04</guid>
+          <description>今日いちばん気になるのは、ロボットを賢くする前に、環境・実行基盤・低リスクな作業設計で安全余白を作ることです。</description>
+        </item>
         <item>
           <title>AIニュース - 2026-07-03</title>
           <link>daily/2026-07-03.html</link>
@@ -173,18 +185,6 @@
           <link>robotics/daily/2026-06-20.html</link>
           <guid>robotics-daily-2026-06-20</guid>
           <description>今日いちばん気になるのは、物理世界AIに「履歴・予測・途中停止」を持たせる流れなのだ。MemoryWAMは過去を覚え、WAMは未来を予測し、GroundControlは途中で失敗兆候を読む。Reptile Environment OSでも、今の温湿度だけを見るより、履歴の要約と変化予測を持って、危なくなる前にぬしへ知らせる形がよさそう。</description>
-        </item>
-        <item>
-          <title>AIニュース / PRレポート - 2026-06-19</title>
-          <link>daily/2026-06-19.html</link>
-          <guid>daily-2026-06-19</guid>
-          <description>今日いちばん気になるのは、MosaicLeaksの「エージェントは検索クエリでも秘密を漏らす」問題なのだ。Reptile Environment OSは、家の中のログ、ケージ名、カメラ、デバイス名、飼育メモみたいな私的情報を扱う。だから、AIが外部検索や外部APIを使う前に、何を外へ出してよいかを検査するクエリ安全ゲートを作るのが大事そう。強い調査力より先に、漏らさない調査力なのだ。</description>
-        </item>
-        <item>
-          <title>ロボット技術ニュース - 2026-06-19</title>
-          <link>robotics/daily/2026-06-19.html</link>
-          <guid>robotics-daily-2026-06-19</guid>
-          <description>今日いちばん気になるのは、ロボット開発を「生成・検証・評価・デプロイ」に分けて標準化する流れなのだ。NVIDIA GR00T、Strands + LeRobot、VERITAS、EBenchはそれぞれ違う話に見えるけれど、共通しているのは「強いロボットをいきなり動かす」のではなく、データ、検証、評価、承認の層を作ること。Reptile Environment OSでも、物理制御は最後で、その前に安全な観察と検証の層を厚くしたい。</description>
         </item>
   </channel>
 </rss>
