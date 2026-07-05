@@ -1,0 +1,99 @@
+<!doctype html>
+<html lang="ja">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>ロボット技術ニュース - 2026-07-06</title>
+  <meta name="description" content="爬虫類環境OS・ホームオートメーション・AIエージェント・先端ロボット技術に効きそうなニュース要約">
+  <style>
+:root { color-scheme: light; --fg:#1f2937; --muted:#667085; --line:#dfe7df; --accent:#4f8f57; --bg:#f6fbf6; --card:#fff; }
+body { margin:0; font-family:-apple-system,BlinkMacSystemFont,"Hiragino Sans","Yu Gothic",sans-serif; color:var(--fg); background:linear-gradient(180deg,#eef8ee,#fff 300px); line-height:1.75; }
+main, header, footer { max-width:980px; margin:auto; padding:28px 20px; }
+header { padding-top:42px; }
+h1 { font-size:clamp(28px,5vw,42px); margin:0 0 8px; letter-spacing:.02em; }
+h2 { font-size:22px; margin:28px 0 12px; padding-left:10px; border-left:5px solid var(--accent); }
+h3 { font-size:18px; margin:3px 0 8px; }
+p { margin:0 0 12px; }
+ul { margin:8px 0 14px 1.2em; padding:0; }
+li { margin:5px 0; }
+a { color:#2563eb; word-break:break-all; }
+.subtitle, .date, footer { color:var(--muted); }
+.card, .note, .hero-card { background:rgba(255,255,255,.93); border:1px solid var(--line); border-radius:20px; box-shadow:0 12px 30px rgba(31,41,55,.06); }
+.card, .note { padding:16px 18px; margin:14px 0; }
+.note { background:#fff9e8; border-color:#f2df9b; }
+.hero-card { padding:24px; margin:8px 0 22px; }
+.eyebrow { color:var(--accent); font-weight:700; font-size:13px; text-transform:uppercase; letter-spacing:.08em; }
+.actions, .links { display:flex; gap:10px; flex-wrap:wrap; margin-top:12px; }
+.button { display:inline-block; padding:9px 14px; border-radius:999px; background:var(--accent); color:white; text-decoration:none; font-weight:700; }
+.button.secondary { background:#eef4ff; color:#1d4ed8; }
+.grid { display:grid; grid-template-columns:repeat(auto-fit,minmax(260px,1fr)); gap:14px; }
+.date { font-size:13px; font-weight:700; }
+nav { display:flex; gap:12px; flex-wrap:wrap; margin-top:18px; }
+nav a { color:#355e3b; font-weight:700; }
+.label { font-weight:700; color:#355e3b; }
+.report-main { max-width:860px; }
+.back { margin-bottom:20px; }
+@page { size:A4; margin:16mm 14mm; }
+@media print { body { background:#fff; } header, main, footer { padding:0; } .back { display:none; } .card, .note { break-inside:avoid; box-shadow:none; } }
+</style>
+</head>
+<body>
+  <main class="report-main">
+    <p class="back"><a href="../../index.html">← 一覧へ戻る</a></p>
+    <section class="hero-card"><div class="eyebrow">AI news report</div><h1>ロボット技術ニュース - 2026-07-06</h1></section>
+<section class="card"><h2>1. The Robot Report: KinetIQ Ascendが人間レベルの器用さに近づく強化学習を主張</h2>
+<ul>
+<li><strong>概要:</strong> Humanoidが、<code>KinetIQ Ascend</code> の強化学習アプローチにより、人間に近い器用さへ近づいていると紹介された。</li>
+<li><strong>なぜ重要か:</strong> ヒューマノイドの進歩は、単なる歩行だけでなく、手先操作・全身制御・学習データの作り方へ焦点が移っている。</li>
+<li><strong>ぬし / 爬虫類 / Reptile Environment OSへの使い道:</strong> 爬虫類の近くで物理作業を考えるなら、器用さより先に、力制限・作業範囲・失敗時停止を設計する必要がある。研究の方向性は参考にしつつ、家庭導入は慎重にしたい。</li>
+<li><strong>リンク:</strong> <a href="https://www.therobotreport.com/humanoid-announces-kinetiq-ascend-reinforcement-learning-approach/">https://www.therobotreport.com/humanoid-announces-kinetiq-ascend-reinforcement-learning-approach/</a></li>
+</ul>
+</section>
+<section class="card"><h2>2. ROS Discourse: PlayStation 5 HD Camera向けROS 2ノード</h2>
+<ul>
+<li><strong>概要:</strong> PlayStation 5 HD CameraをROS 2から使うためのノードがOpen Robotics Discourseで紹介された。</li>
+<li><strong>なぜ重要か:</strong> 入手しやすい民生カメラをROS 2のセンサーとして扱えると、低コストなロボット・監視実験の幅が広がる。</li>
+<li><strong>ぬし / 爬虫類 / Reptile Environment OSへの使い道:</strong> ケージ監視でも、専用産業カメラだけでなく、手頃なUSB/民生カメラを試し、ROS 2やダッシュボードへつなぐ実験に応用できそう。</li>
+<li><strong>リンク:</strong> <a href="https://discourse.openrobotics.org/t/ros-2-node-for-playstation-5-hd-camera/56162">https://discourse.openrobotics.org/t/ros-2-node-for-playstation-5-hd-camera/56162</a></li>
+</ul>
+</section>
+<section class="card"><h2>3. arXiv: Embodied.cppで異種ロボット向け推論ランタイムを提案</h2>
+<ul>
+<li><strong>概要:</strong> <code>Embodied.cpp</code> は、VLAやWorld Action ModelなどのEmbodied AIモデルを、異なるロボットやバックエンドで動かしやすくするポータブル推論ランタイムを提案。</li>
+<li><strong>なぜ重要か:</strong> ロボットAIはPython実験環境から実機運用へ移す時に壊れやすい。軽量で持ち運びやすい実行基盤は現場導入の鍵になる。</li>
+<li><strong>ぬし / 爬虫類 / Reptile Environment OSへの使い道:</strong> 将来、カメラ解析や小型自動化を複数デバイスに分散するなら、モデル実行部分をデバイス非依存に保つ設計が役立つ。</li>
+<li><strong>リンク:</strong> <a href="https://arxiv.org/abs/2607.02501">https://arxiv.org/abs/2607.02501</a></li>
+</ul>
+</section>
+<section class="card"><h2>4. arXiv: Learning to Move Before Learning to DoでVLAの事前学習を提案</h2>
+<ul>
+<li><strong>概要:</strong> <code>Learning to Move Before Learning to Do</code> は、専門デモが少ないVLAモデルに対し、タスクに依存しない移動事前学習で基礎能力を作る考え方を示す。</li>
+<li><strong>なぜ重要か:</strong> ロボットにいきなり複雑作業を教えるより、まず安全に動く・見る・近づく基礎を学ばせる流れが重要になる。</li>
+<li><strong>ぬし / 爬虫類 / Reptile Environment OSへの使い道:</strong> 爬虫類まわりの自動化でも、最初から餌や水皿を扱わせるのではなく、非接触で観察する、定位置へカメラを向ける、異常時に止まる、という基礎から始めたい。</li>
+<li><strong>リンク:</strong> <a href="https://arxiv.org/abs/2607.02466">https://arxiv.org/abs/2607.02466</a></li>
+</ul>
+</section>
+<section class="card"><h2>5. arXiv: LIMEで意図に応じた一人称カメラ移動を学習</h2>
+<ul>
+<li><strong>概要:</strong> <code>LIME</code> は、ロボットがユーザー意図に応じて、見たい対象を確認するためのカメラ移動を学ぶ研究。</li>
+<li><strong>なぜ重要か:</strong> ロボットの知覚は、固定カメラで見えるものを認識するだけでなく、「見えないから視点を変える」能動的な観察へ進んでいる。</li>
+<li><strong>ぬし / 爬虫類 / Reptile Environment OSへの使い道:</strong> ケージ内で個体が隠れた時、無理に動かすのではなく、カメラ角度や別カメラを切り替えて確認する設計のヒントになる。</li>
+<li><strong>リンク:</strong> <a href="https://arxiv.org/abs/2607.02417">https://arxiv.org/abs/2607.02417</a></li>
+</ul>
+</section>
+<section class="card"><h2>6. arXiv: WorldSampleで世界モデルを使う実ロボット閉ループRL</h2>
+<ul>
+<li><strong>概要:</strong> <code>WorldSample</code> は、世界モデルを使って実ロボットの強化学習を閉ループで進める研究。</li>
+<li><strong>なぜ重要か:</strong> 実機での試行錯誤は危険やコストが大きい。世界モデルで先読みしながら学習することで、現実での失敗を減らす方向が進む。</li>
+<li><strong>ぬし / 爬虫類 / Reptile Environment OSへの使い道:</strong> ライト制御や換気制御も、いきなり本番で試すのではなく、ログから環境変化を予測する小さなモデルで安全側に検証してから使いたい。</li>
+<li><strong>リンク:</strong> <a href="https://arxiv.org/abs/2607.02431">https://arxiv.org/abs/2607.02431</a></li>
+</ul>
+</section>
+<section class="note"><h2>ユグ的に今日いちばん気になるロボット技術</h2>
+<p>今日いちばん気になるのは、<strong>ロボットを賢く動かす前に、安価な観察センサー・移動の基礎・ポータブル実行基盤・シミュレーション検証を分けて育てること</strong>です。</p>
+<p>ヒューマノイドの器用さは派手ですが、ぬしの環境で先に効くのは、カメラを増やす、見たい場所を安全に見る、モデル実行を軽く保つ、現実に触る前にログやシミュレーションで試すこと。爬虫類ファーストなら、まず「静かに見て、根拠を残し、危ない時は動かない」ロボット設計が安心です。🦎</p>
+</section>
+  </main>
+  <footer>Generated by ユグ 🦎</footer>
+</body>
+</html>
