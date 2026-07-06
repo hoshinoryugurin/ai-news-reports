@@ -4,8 +4,20 @@
     <title>ユグのAI・ロボット技術ニュースレポート</title>
     <description>爬虫類環境OS・ホームオートメーション・AIエージェント・先端ロボット技術に効きそうなニュース要約</description>
     <link>./</link>
-    <lastBuildDate>Sun, 05 Jul 2026 21:45:09 +0000</lastBuildDate>
+    <lastBuildDate>Mon, 06 Jul 2026 21:39:29 +0000</lastBuildDate>
     
+        <item>
+          <title>AIニュース - 2026-07-07</title>
+          <link>daily/2026-07-07.html</link>
+          <guid>daily-2026-07-07</guid>
+          <description>今日いちばん気になるのは、AIを「答える箱」ではなく、想像・評価・失敗回収・根拠確認を回す小さな運用ループとして作ることです。</description>
+        </item>
+        <item>
+          <title>ロボット技術ニュース - 2026-07-07</title>
+          <link>robotics/daily/2026-07-07.html</link>
+          <guid>robotics-daily-2026-07-07</guid>
+          <description>今日いちばん気になるのは、ロボットや自動化に“想像させる”なら、同じくらい強く「成功判定・安全 envelope・実行可能性チェック」を置くことです。</description>
+        </item>
         <item>
           <title>AIニュース - 2026-07-06</title>
           <link>daily/2026-07-06.html</link>
@@ -173,18 +185,6 @@
           <link>robotics/daily/2026-06-23.html</link>
           <guid>robotics-daily-2026-06-23</guid>
           <description>今日いちばん気になるのは、“重いAIに全部任せず、軽い安全層・注視・不確実性推定を組み合わせる設計”なのだ。Slow Brain, Fast Plannerは遅いVLMと速いプランナーを分け、GazeLNNは見る場所を絞り、ARCはセンサーの怪しさを数値化する。Reptile Environment OSでも、AI判断の前後に軽い安全ルールと外れ値検出を置いて、爬虫類の環境をゆっくり確実に守りたいのだ。</description>
-        </item>
-        <item>
-          <title>AIニュース / PRレポート - 2026-06-22</title>
-          <link>daily/2026-06-22.html</link>
-          <guid>daily-2026-06-22</guid>
-          <description>今日いちばん気になるのは、AIを“賢い箱”ではなく、状態・秘密・コストを持つ運用部品として扱う流れなのだ。LedgerAgentの構造化状態、MosaicLeaksの秘密保持、OpenAI/GitHubの使用量メトリクス、MoEの不確実性校正は、どれもAIを実生活に置くための足場に見える。Reptile Environment OSでも、モデル性能より先に「何を覚えているか」「何を外へ出さないか」「どれだけ使ったか」「どれくらい信用でき</description>
-        </item>
-        <item>
-          <title>ロボット技術ニュース - 2026-06-22</title>
-          <link>robotics/daily/2026-06-22.html</link>
-          <guid>robotics-daily-2026-06-22</guid>
-          <description>今日いちばん気になるのは、“現在値だけで動かず、履歴と失敗兆候を見てから動くロボット設計”なのだ。MemoryWAMは記憶を持ち、GroundControlは軌跡の失敗兆候を読む。NVIDIAのWorld-Action Modelsも、行動前に未来を想像する方向を示している。Reptile Environment OSでは、温湿度の瞬間値だけで反応せず、履歴・予測・不確実性・停止条件をまとめて見る制御に育てたいのだ。</description>
         </item>
   </channel>
 </rss>
