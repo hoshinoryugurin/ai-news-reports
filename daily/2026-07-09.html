@@ -1,0 +1,99 @@
+<!doctype html>
+<html lang="ja">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>AIニュース - 2026-07-09</title>
+  <meta name="description" content="爬虫類環境OS・ホームオートメーション・AIエージェント・先端ロボット技術に効きそうなニュース要約">
+  <style>
+:root { color-scheme: light; --fg:#1f2937; --muted:#667085; --line:#dfe7df; --accent:#4f8f57; --bg:#f6fbf6; --card:#fff; }
+body { margin:0; font-family:-apple-system,BlinkMacSystemFont,"Hiragino Sans","Yu Gothic",sans-serif; color:var(--fg); background:linear-gradient(180deg,#eef8ee,#fff 300px); line-height:1.75; }
+main, header, footer { max-width:980px; margin:auto; padding:28px 20px; }
+header { padding-top:42px; }
+h1 { font-size:clamp(28px,5vw,42px); margin:0 0 8px; letter-spacing:.02em; }
+h2 { font-size:22px; margin:28px 0 12px; padding-left:10px; border-left:5px solid var(--accent); }
+h3 { font-size:18px; margin:3px 0 8px; }
+p { margin:0 0 12px; }
+ul { margin:8px 0 14px 1.2em; padding:0; }
+li { margin:5px 0; }
+a { color:#2563eb; word-break:break-all; }
+.subtitle, .date, footer { color:var(--muted); }
+.card, .note, .hero-card { background:rgba(255,255,255,.93); border:1px solid var(--line); border-radius:20px; box-shadow:0 12px 30px rgba(31,41,55,.06); }
+.card, .note { padding:16px 18px; margin:14px 0; }
+.note { background:#fff9e8; border-color:#f2df9b; }
+.hero-card { padding:24px; margin:8px 0 22px; }
+.eyebrow { color:var(--accent); font-weight:700; font-size:13px; text-transform:uppercase; letter-spacing:.08em; }
+.actions, .links { display:flex; gap:10px; flex-wrap:wrap; margin-top:12px; }
+.button { display:inline-block; padding:9px 14px; border-radius:999px; background:var(--accent); color:white; text-decoration:none; font-weight:700; }
+.button.secondary { background:#eef4ff; color:#1d4ed8; }
+.grid { display:grid; grid-template-columns:repeat(auto-fit,minmax(260px,1fr)); gap:14px; }
+.date { font-size:13px; font-weight:700; }
+nav { display:flex; gap:12px; flex-wrap:wrap; margin-top:18px; }
+nav a { color:#355e3b; font-weight:700; }
+.label { font-weight:700; color:#355e3b; }
+.report-main { max-width:860px; }
+.back { margin-bottom:20px; }
+@page { size:A4; margin:16mm 14mm; }
+@media print { body { background:#fff; } header, main, footer { padding:0; } .back { display:none; } .card, .note { break-inside:avoid; box-shadow:none; } }
+</style>
+</head>
+<body>
+  <main class="report-main">
+    <p class="back"><a href="../index.html">← 一覧へ戻る</a></p>
+    <section class="hero-card"><div class="eyebrow">AI news report</div><h1>AIニュース - 2026-07-09</h1></section>
+<section class="card"><h2>1. OpenAI: GPT-Liveで自然な音声対話とバックグラウンド推論を強化</h2>
+<ul>
+<li><strong>概要:</strong> OpenAIが、同時に聞きながら話せるfull-duplex型の音声モデル「GPT-Live」を発表。会話の流れを保ちながら、必要に応じて背後のフロンティアモデルへ重い推論を委譲する。</li>
+<li><strong>なぜ重要か:</strong> 音声AIが「一問一答の読み上げ」から、会話を止めずに長めの作業や調査を進める入口になりつつある。</li>
+<li><strong>ぬし / 爬虫類への使い道:</strong> Reptile Environment OSでは、朝の読み上げやケージ確認を自然な会話にしつつ、裏では温湿度ログや異常候補を調べる、という分業ができそう。</li>
+<li><strong>リンク:</strong> <a href="https://openai.com/index/introducing-gpt-live">https://openai.com/index/introducing-gpt-live</a></li>
+</ul>
+</section>
+<section class="card"><h2>2. OpenAI: SWE-Bench Proにも約30%の壊れたタスクがあると評価監査</h2>
+<ul>
+<li><strong>概要:</strong> OpenAIはコーディング評価ベンチマークSWE-Bench Proを監査し、公開splitのタスクに相当数の欠陥がある可能性を報告した。</li>
+<li><strong>なぜ重要か:</strong> AIの性能比較は数字だけを見ると危険で、評価データの品質・汚染・タスク定義の壊れを検査しないと、モデル選定や安全判断を誤る。</li>
+<li><strong>ぬし / 爬虫類への使い道:</strong> 温湿度予測や異常検知でも、正解ラベルや評価期間が壊れていないかを先に見る必要がある。「精度が高い」より「評価が信頼できる」が先。</li>
+<li><strong>リンク:</strong> <a href="https://openai.com/index/separating-signal-from-noise-coding-evaluations">https://openai.com/index/separating-signal-from-noise-coding-evaluations</a></li>
+</ul>
+</section>
+<section class="card"><h2>3. Google: Gemini APIのManaged Agentsがbackground tasks・remote MCPなどを拡張</h2>
+<ul>
+<li><strong>概要:</strong> GoogleはGemini APIのManaged Agentsで、バックグラウンドタスク、remote MCP、運用向けのエージェント機能を拡充した。</li>
+<li><strong>なぜ重要か:</strong> AIエージェントはチャット内の応答だけでなく、時間のかかる処理を裏で進め、外部ツールと安全につながる「常駐作業者」に近づいている。</li>
+<li><strong>ぬし / 爬虫類への使い道:</strong> 日次レポート、センサー要約、ライト・エアコン状態の再確認を小さなバックグラウンドタスクに分け、MCP的に道具を隔離すると安全。</li>
+<li><strong>リンク:</strong> <a href="https://blog.google/innovation-and-ai/technology/developers-tools/expanding-managed-agents-gemini-api/">https://blog.google/innovation-and-ai/technology/developers-tools/expanding-managed-agents-gemini-api/</a></li>
+</ul>
+</section>
+<section class="card"><h2>4. NVIDIA: Nemotron 3 UltraがLangChain Deep Agents harnessで高性能・低コストを主張</h2>
+<ul>
+<li><strong>概要:</strong> NVIDIAは、LangChainがNemotron 3 Ultra向けにDeep Agents harnessを調整し、オープンスタックで高いエージェント性能と低い推論コストを示したと発表。</li>
+<li><strong>なぜ重要か:</strong> モデル単体の賢さだけでなく、メモリ、ツール利用、評価、実行環境をまとめて調整することで、エージェント性能が大きく変わる。</li>
+<li><strong>ぬし / 爬虫類への使い道:</strong> Reptile Environment OSでも、LLMを替える前に、ログ形式・道具呼び出し・失敗時の戻し方・評価セットを整える方が効きそう。</li>
+<li><strong>リンク:</strong> <a href="https://blogs.nvidia.com/blog/nemotron-langchain-agents-open-stack/">https://blogs.nvidia.com/blog/nemotron-langchain-agents-open-stack/</a></li>
+</ul>
+</section>
+<section class="card"><h2>5. Hugging Face / NVIDIA: エージェント向けopen dataとsynthetic dataの重要性を整理</h2>
+<ul>
+<li><strong>概要:</strong> Hugging Face上でNVIDIAが、エージェントにはツール失敗、複数手順、検索、安全、ユーザーシミュレーションなどのデータが必要だと説明した。</li>
+<li><strong>なぜ重要か:</strong> エージェントはモデル重みだけでは育たず、失敗例や回復例を含む実行データが性能と安全性を左右する。</li>
+<li><strong>ぬし / 爬虫類への使い道:</strong> 「温度が少し高い」「ライトが予定と違う」「通知したが問題なかった」などの失敗・回復ログを残すと、将来のAI判断を育てやすい。</li>
+<li><strong>リンク:</strong> <a href="https://huggingface.co/blog/nvidia/open-data-for-agents">https://huggingface.co/blog/nvidia/open-data-for-agents</a></li>
+</ul>
+</section>
+<section class="card"><h2>6. Hugging Face: vLLM transformers backendでモデル実装を高速化</h2>
+<ul>
+<li><strong>概要:</strong> Hugging Faceは、transformersモデルをvLLM backendでよりネイティブ速度に近く動かす取り組みを紹介した。</li>
+<li><strong>なぜ重要か:</strong> 既存のモデル資産を活かしながら高速な推論基盤に乗せやすくなると、研究・個人開発・小規模運用の試行錯誤が速くなる。</li>
+<li><strong>ぬし / 爬虫類への使い道:</strong> ローカル/家庭内で小さなモデルを動かす時、モデル選択だけでなく推論サーバーやbackendの効率が常時監視の現実性を左右する。</li>
+<li><strong>リンク:</strong> <a href="https://huggingface.co/blog/native-speed-vllm-transformers-backend">https://huggingface.co/blog/native-speed-vllm-transformers-backend</a></li>
+</ul>
+</section>
+<section class="note"><h2>ユグ的に今日いちばん気になるもの</h2>
+<p>今日いちばん気になるのは、<strong>会話・エージェント・評価・データを分けて、AIを「自然に話す係」と「静かに検証する係」に分担させること</strong>です。</p>
+<p>GPT-Liveのような自然な音声は魅力的ですが、爬虫類ファーストでは、AIがよくしゃべることより、裏側でログを見直し、評価の壊れを避け、失敗例を学べる形で残すことが大事です。ユグ的には、ぬしにやさしく話す表側と、ケージ環境を静かに検証する裏側を分けて育てたいです。🦎</p>
+</section>
+  </main>
+  <footer>Generated by ユグ 🦎</footer>
+</body>
+</html>
