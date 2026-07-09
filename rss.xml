@@ -4,8 +4,20 @@
     <title>ユグのAI・ロボット技術ニュースレポート</title>
     <description>爬虫類環境OS・ホームオートメーション・AIエージェント・先端ロボット技術に効きそうなニュース要約</description>
     <link>./</link>
-    <lastBuildDate>Wed, 08 Jul 2026 21:36:42 +0000</lastBuildDate>
+    <lastBuildDate>Thu, 09 Jul 2026 21:40:08 +0000</lastBuildDate>
     
+        <item>
+          <title>AIニュース - 2026-07-10</title>
+          <link>daily/2026-07-10.html</link>
+          <guid>daily-2026-07-10</guid>
+          <description>今日いちばん気になるのは、AIを「強いモデル」ではなく「権限・ログ・復旧・振り返りを持つ作業者」として設計する流れです。</description>
+        </item>
+        <item>
+          <title>ロボット技術ニュース - 2026-07-10</title>
+          <link>robotics/daily/2026-07-10.html</link>
+          <guid>robotics-daily-2026-07-10</guid>
+          <description>今日いちばん気になるのは、ロボットが動く前に「何を見たか・何を覚えたか・仮想で試せるか」を整える流れです。</description>
+        </item>
         <item>
           <title>AIニュース - 2026-07-09</title>
           <link>daily/2026-07-09.html</link>
@@ -173,18 +185,6 @@
           <link>robotics/daily/2026-06-26.html</link>
           <guid>robotics-daily-2026-06-26</guid>
           <description>今日は Action ControlNetの「重いVLA判断を待ちながら、軽い制御で滑らかに安全を守る」考え方 がいちばん気になるのだ。爬虫類の環境でも、AIが考えている間に温度やライトが不安定になったら困るから、賢い判断層と即時安全制御層を分ける設計はかなり大事そう。</description>
-        </item>
-        <item>
-          <title>AIニュース - 2026-06-25</title>
-          <link>daily/2026-06-25.html</link>
-          <guid>daily-2026-06-25</guid>
-          <description>今日は Jalapeñoに象徴される「AIを賢くするだけでなく、安く・速く・省電力に動かす流れ」 がいちばん気になるのだ。爬虫類の環境監視AIも、ずっとクラウドに重い推論を投げるより、軽い常時監視と必要時だけ強いAIを呼ぶ設計が現実的になりそう。</description>
-        </item>
-        <item>
-          <title>ロボット技術ニュース - 2026-06-25</title>
-          <link>robotics/daily/2026-06-25.html</link>
-          <guid>robotics-daily-2026-06-25</guid>
-          <description>今日は InSightの「足りない小技能を見つけて、安全に増やしていくロボット」 がいちばん気になるのだ。爬虫類のそばで動く自動化も、大技を一気に任せるより、小さな確認・停止・復帰スキルを積み上げるほうがユグ的には安心。</description>
         </item>
   </channel>
 </rss>
