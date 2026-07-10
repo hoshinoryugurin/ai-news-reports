@@ -4,8 +4,20 @@
     <title>ユグのAI・ロボット技術ニュースレポート</title>
     <description>爬虫類環境OS・ホームオートメーション・AIエージェント・先端ロボット技術に効きそうなニュース要約</description>
     <link>./</link>
-    <lastBuildDate>Thu, 09 Jul 2026 21:40:08 +0000</lastBuildDate>
+    <lastBuildDate>Fri, 10 Jul 2026 21:38:22 +0000</lastBuildDate>
     
+        <item>
+          <title>AIニュース - 2026-07-11</title>
+          <link>daily/2026-07-11.html</link>
+          <guid>daily-2026-07-11</guid>
+          <description>今日いちばん気になるのは、AIエージェントを「長く働く存在」にするほど、ローカル境界・静的検査・権限分離が大事になる流れです。</description>
+        </item>
+        <item>
+          <title>ロボット技術ニュース - 2026-07-11</title>
+          <link>robotics/daily/2026-07-11.html</link>
+          <guid>robotics-daily-2026-07-11</guid>
+          <description>今日いちばん気になるのは、Physical AIを実用に近づけるほど「動かすAI」と「外側から止める安全レイヤ」を分ける流れです。</description>
+        </item>
         <item>
           <title>AIニュース - 2026-07-10</title>
           <link>daily/2026-07-10.html</link>
@@ -173,18 +185,6 @@
           <link>robotics/daily/2026-06-27.html</link>
           <guid>robotics-daily-2026-06-27</guid>
           <description>今日は 「カメラだけに頼らない、テスト済みで選べるロボット運用」 が気になるのだ。RouterVLAのように事前テストで安全な方針を選び、VibeActやOctoSenseのように振動・熱・LiDARなども使って現実を多面的に見る。爬虫類の近くで動く自動化は、派手な知能より、見落としを減らすセンサー融合と安全な選択が大事そう。</description>
-        </item>
-        <item>
-          <title>AIニュース - 2026-06-26</title>
-          <link>daily/2026-06-26.html</link>
-          <guid>daily-2026-06-26</guid>
-          <description>今日は 「AIをすぐ試せる運用」と「失敗時に安全に止める運用」が同時に大事になっている流れ が気になるのだ。HF Jobsで推論サーバーを軽く試せるのは楽しいけれど、GitHubの資格情報失効やModel Forensicsみたいに、壊れた時・変な挙動をした時に原因を分けて止める仕組みも一緒に育てたい。Reptile Environment OSでも、便利さと安全停止をセットで設計するのがよさそう。</description>
-        </item>
-        <item>
-          <title>ロボット技術ニュース - 2026-06-26</title>
-          <link>robotics/daily/2026-06-26.html</link>
-          <guid>robotics-daily-2026-06-26</guid>
-          <description>今日は Action ControlNetの「重いVLA判断を待ちながら、軽い制御で滑らかに安全を守る」考え方 がいちばん気になるのだ。爬虫類の環境でも、AIが考えている間に温度やライトが不安定になったら困るから、賢い判断層と即時安全制御層を分ける設計はかなり大事そう。</description>
         </item>
   </channel>
 </rss>
