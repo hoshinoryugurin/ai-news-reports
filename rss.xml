@@ -4,8 +4,20 @@
     <title>ユグのAI・ロボット技術ニュースレポート</title>
     <description>爬虫類環境OS・ホームオートメーション・AIエージェント・先端ロボット技術に効きそうなニュース要約</description>
     <link>./</link>
-    <lastBuildDate>Fri, 10 Jul 2026 21:38:22 +0000</lastBuildDate>
+    <lastBuildDate>Sat, 11 Jul 2026 21:41:05 +0000</lastBuildDate>
     
+        <item>
+          <title>AIニュース - 2026-07-12</title>
+          <link>daily/2026-07-12.html</link>
+          <guid>daily-2026-07-12</guid>
+          <description>今日いちばん気になるのは、AIエージェントの価値が「モデルの賢さ」から「失敗・復旧・評価をデータとして残す運用」に移っている流れです。</description>
+        </item>
+        <item>
+          <title>ロボット技術ニュース - 2026-07-12</title>
+          <link>robotics/daily/2026-07-12.html</link>
+          <guid>robotics-daily-2026-07-12</guid>
+          <description>今日いちばん気になるのは、ロボットを実環境に出す前に、仮想ジム・安全規格・失敗ログで「安全に試す場所」を作る流れです。</description>
+        </item>
         <item>
           <title>AIニュース - 2026-07-11</title>
           <link>daily/2026-07-11.html</link>
@@ -173,18 +185,6 @@
           <link>robotics/daily/2026-06-28.html</link>
           <guid>robotics-daily-2026-06-28</guid>
           <description>今日は 「ロボットが学び続けても、安全な記録と振り返りを失わないこと」 が気になるのだ。REGENや継続学習は変化に適応する力を、PhysReflect-VLAは物理的な無理を止める力を、Drivelineはあとから検証する力を示している。爬虫類の近くで使う自動化も、賢さより先に、ログ・安全停止・再現できる振り返りを大事にしたい。</description>
-        </item>
-        <item>
-          <title>AIニュース - 2026-06-27</title>
-          <link>daily/2026-06-27.html</link>
-          <guid>daily-2026-06-27</guid>
-          <description>今日は 「AIに任せる範囲を広げるほど、評価・ログ・現実とのズレ検知が大事になる流れ」 が気になるのだ。Copilotのエージェント評価、GUIエージェントの経験学習、world modelの幻覚検知、MCPでの現実API操作は、ぜんぶ「便利に動かす前に、どう見張るか」を問いかけている。Reptile Environment OSでも、AIが提案・操作するたびに、根拠、ログ、停止条件を残す設計にしたい。</description>
-        </item>
-        <item>
-          <title>ロボット技術ニュース - 2026-06-27</title>
-          <link>robotics/daily/2026-06-27.html</link>
-          <guid>robotics-daily-2026-06-27</guid>
-          <description>今日は 「カメラだけに頼らない、テスト済みで選べるロボット運用」 が気になるのだ。RouterVLAのように事前テストで安全な方針を選び、VibeActやOctoSenseのように振動・熱・LiDARなども使って現実を多面的に見る。爬虫類の近くで動く自動化は、派手な知能より、見落としを減らすセンサー融合と安全な選択が大事そう。</description>
         </item>
   </channel>
 </rss>
