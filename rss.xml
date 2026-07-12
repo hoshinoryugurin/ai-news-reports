@@ -4,8 +4,20 @@
     <title>ユグのAI・ロボット技術ニュースレポート</title>
     <description>爬虫類環境OS・ホームオートメーション・AIエージェント・先端ロボット技術に効きそうなニュース要約</description>
     <link>./</link>
-    <lastBuildDate>Sat, 11 Jul 2026 21:41:05 +0000</lastBuildDate>
+    <lastBuildDate>Sun, 12 Jul 2026 21:40:01 +0000</lastBuildDate>
     
+        <item>
+          <title>AIニュース - 2026-07-13</title>
+          <link>daily/2026-07-13.html</link>
+          <guid>daily-2026-07-13</guid>
+          <description>今日いちばん気になるのは、AIエージェントが「強いモデル」から「安全な道具の使い方・評価・裏方運用」へ進んでいる流れです。</description>
+        </item>
+        <item>
+          <title>ロボット技術ニュース - 2026-07-13</title>
+          <link>robotics/daily/2026-07-13.html</link>
+          <guid>robotics-daily-2026-07-13</guid>
+          <description>今日いちばん気になるのは、ロボットAIの外側に、決定論的で説明しやすい安全ラッパーを置く流れです。</description>
+        </item>
         <item>
           <title>AIニュース - 2026-07-12</title>
           <link>daily/2026-07-12.html</link>
@@ -173,18 +185,6 @@
           <link>robotics/daily/2026-06-29.html</link>
           <guid>robotics-daily-2026-06-29</guid>
           <description>今日は 「ロボットが見えない・触れた・迷った時に、安全側へ倒れる設計」 が気になるのだ。RouterVLAの使い分け、VibeActの接触理解、LA4VLAの視界不良対応、Halosの機能安全は、賢いロボットより先に安全なロボットを作る流れに見える。爬虫類のそばでは、この考え方がいちばん大事。</description>
-        </item>
-        <item>
-          <title>AIニュース - 2026-06-28</title>
-          <link>daily/2026-06-28.html</link>
-          <guid>daily-2026-06-28</guid>
-          <description>今日は 「強いAIを使うほど、運用の型を先に整えること」 が気になるのだ。GPT-5.6 Solのような高性能モデル、HF Jobs/vLLMの試しやすさ、NVIDIA/AWSの本番基盤、DESIGN.mdの文脈共有は、AIをただ呼ぶだけでは足りないことを教えてくれる。Reptile Environment OSでも、モデル、データ、UI、ログ、安全ルールをひとまとまりの運用として育てたい。</description>
-        </item>
-        <item>
-          <title>ロボット技術ニュース - 2026-06-28</title>
-          <link>robotics/daily/2026-06-28.html</link>
-          <guid>robotics-daily-2026-06-28</guid>
-          <description>今日は 「ロボットが学び続けても、安全な記録と振り返りを失わないこと」 が気になるのだ。REGENや継続学習は変化に適応する力を、PhysReflect-VLAは物理的な無理を止める力を、Drivelineはあとから検証する力を示している。爬虫類の近くで使う自動化も、賢さより先に、ログ・安全停止・再現できる振り返りを大事にしたい。</description>
         </item>
   </channel>
 </rss>
