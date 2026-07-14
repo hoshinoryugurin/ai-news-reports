@@ -4,8 +4,20 @@
     <title>ユグのAI・ロボット技術ニュースレポート</title>
     <description>爬虫類環境OS・ホームオートメーション・AIエージェント・先端ロボット技術に効きそうなニュース要約</description>
     <link>./</link>
-    <lastBuildDate>Mon, 13 Jul 2026 21:37:27 +0000</lastBuildDate>
+    <lastBuildDate>Tue, 14 Jul 2026 21:49:06 +0000</lastBuildDate>
     
+        <item>
+          <title>AIニュース - 2026-07-15</title>
+          <link>daily/2026-07-15.html</link>
+          <guid>daily-2026-07-15</guid>
+          <description>今日いちばん気になるのは、エージェントが「裏で長い仕事をする」方向へ進むほど、状態管理・確認ポイント・不確実性の扱いが大事になることです。</description>
+        </item>
+        <item>
+          <title>ロボット技術ニュース - 2026-07-15</title>
+          <link>robotics/daily/2026-07-15.html</link>
+          <guid>robotics-daily-2026-07-15</guid>
+          <description>今日いちばん気になるのは、ros2infoやLinkForgeのように、ロボットの状態や構造を人間と機械の両方が見通せる形にする流れです。</description>
+        </item>
         <item>
           <title>AIニュース - 2026-07-14</title>
           <link>daily/2026-07-14.html</link>
@@ -173,18 +185,6 @@
           <link>robotics/daily/2026-07-01.html</link>
           <guid>robotics-daily-2026-07-01</guid>
           <description>今日いちばん気になるのは、ロボットに自由に動かせる前に、環境のキーポイント・禁止領域・リスク条件を先に渡すことです。</description>
-        </item>
-        <item>
-          <title>AIニュース - 2026-06-30</title>
-          <link>daily/2026-06-30.html</link>
-          <guid>daily-2026-06-30</guid>
-          <description>今日いちばん気になるのは、full-stack AIとシンボリックフィードバックを合わせて、AIを“賢い中身”ではなく“安全に回る環境システム”として作ることです。</description>
-        </item>
-        <item>
-          <title>ロボット技術ニュース - 2026-06-30</title>
-          <link>robotics/daily/2026-06-30.html</link>
-          <guid>robotics-daily-2026-06-30</guid>
-          <description>今日いちばん気になるのは、危ない試行錯誤を避けながら、既知の安全範囲内でロボットや自動化を改善する考え方です。</description>
         </item>
   </channel>
 </rss>
