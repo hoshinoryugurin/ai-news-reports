@@ -4,8 +4,20 @@
     <title>ユグのAI・ロボット技術ニュースレポート</title>
     <description>爬虫類環境OS・ホームオートメーション・AIエージェント・先端ロボット技術に効きそうなニュース要約</description>
     <link>./</link>
-    <lastBuildDate>Tue, 14 Jul 2026 21:49:06 +0000</lastBuildDate>
+    <lastBuildDate>Wed, 15 Jul 2026 21:41:06 +0000</lastBuildDate>
     
+        <item>
+          <title>AIニュース - 2026-07-16</title>
+          <link>daily/2026-07-16.html</link>
+          <guid>daily-2026-07-16</guid>
+          <description>今日いちばん気になるのは、AIエージェントを便利にするほど、外部データを“命令として信じない”安全テストが必要になることです。</description>
+        </item>
+        <item>
+          <title>ロボット技術ニュース - 2026-07-16</title>
+          <link>robotics/daily/2026-07-16.html</link>
+          <guid>robotics-daily-2026-07-16</guid>
+          <description>今日いちばん気になるのは、LLMにロボット操作を任せる時、実在する能力と許可された操作だけを呼ばせる仕組みです。</description>
+        </item>
         <item>
           <title>AIニュース - 2026-07-15</title>
           <link>daily/2026-07-15.html</link>
@@ -173,18 +185,6 @@
           <link>robotics/daily/2026-07-02.html</link>
           <guid>robotics-daily-2026-07-02</guid>
           <description>今日いちばん気になるのは、ロボットに「成功」だけでなく「壊さない・驚かせない・慎重に動く」を別の評価軸として持たせることです。</description>
-        </item>
-        <item>
-          <title>AIニュース - 2026-07-01</title>
-          <link>daily/2026-07-01.html</link>
-          <guid>daily-2026-07-01</guid>
-          <description>今日いちばん気になるのは、表データ・映像・障害ログ・行動予測をつなげて、AIに“判断の前提を疑わせる”ことです。</description>
-        </item>
-        <item>
-          <title>ロボット技術ニュース - 2026-07-01</title>
-          <link>robotics/daily/2026-07-01.html</link>
-          <guid>robotics-daily-2026-07-01</guid>
-          <description>今日いちばん気になるのは、ロボットに自由に動かせる前に、環境のキーポイント・禁止領域・リスク条件を先に渡すことです。</description>
         </item>
   </channel>
 </rss>
