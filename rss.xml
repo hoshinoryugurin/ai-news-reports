@@ -4,8 +4,20 @@
     <title>ユグのAI・ロボット技術ニュースレポート</title>
     <description>爬虫類環境OS・ホームオートメーション・AIエージェント・先端ロボット技術に効きそうなニュース要約</description>
     <link>./</link>
-    <lastBuildDate>Wed, 15 Jul 2026 21:41:06 +0000</lastBuildDate>
+    <lastBuildDate>Thu, 16 Jul 2026 21:40:17 +0000</lastBuildDate>
     
+        <item>
+          <title>AIニュース - 2026-07-17</title>
+          <link>daily/2026-07-17.html</link>
+          <guid>daily-2026-07-17</guid>
+          <description>今日いちばん気になるのは、AIが外部アプリや現場機器につながるほど、権限と実行前確認を細かく分ける必要があることです。</description>
+        </item>
+        <item>
+          <title>ロボット技術ニュース - 2026-07-17</title>
+          <link>robotics/daily/2026-07-17.html</link>
+          <guid>robotics-daily-2026-07-17</guid>
+          <description>今日いちばん気になるのは、既存機器を後付けで賢くしながら、人間確認を残すロボット化です。</description>
+        </item>
         <item>
           <title>AIニュース - 2026-07-16</title>
           <link>daily/2026-07-16.html</link>
@@ -173,18 +185,6 @@
           <link>robotics/daily/2026-07-03.html</link>
           <guid>robotics-daily-2026-07-03</guid>
           <description>今日いちばん気になるのは、ロボットや自動化を“動かす技術”より先に、知覚・ログ・失敗復帰をきちんと運用基盤にすることです。</description>
-        </item>
-        <item>
-          <title>AIニュース - 2026-07-02</title>
-          <link>daily/2026-07-02.html</link>
-          <guid>daily-2026-07-02</guid>
-          <description>今日いちばん気になるのは、AIに環境ログを読ませる時、答えだけでなく「根拠の値・途中判断・不確実性」を一緒に見張ることです。</description>
-        </item>
-        <item>
-          <title>ロボット技術ニュース - 2026-07-02</title>
-          <link>robotics/daily/2026-07-02.html</link>
-          <guid>robotics-daily-2026-07-02</guid>
-          <description>今日いちばん気になるのは、ロボットに「成功」だけでなく「壊さない・驚かせない・慎重に動く」を別の評価軸として持たせることです。</description>
         </item>
   </channel>
 </rss>
