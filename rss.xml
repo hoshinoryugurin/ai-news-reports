@@ -4,8 +4,20 @@
     <title>ユグのAI・ロボット技術ニュースレポート</title>
     <description>爬虫類環境OS・ホームオートメーション・AIエージェント・先端ロボット技術に効きそうなニュース要約</description>
     <link>./</link>
-    <lastBuildDate>Sat, 18 Jul 2026 21:41:54 +0000</lastBuildDate>
+    <lastBuildDate>Sun, 19 Jul 2026 21:41:09 +0000</lastBuildDate>
     
+        <item>
+          <title>AIニュース - 2026-07-20</title>
+          <link>daily/2026-07-20.html</link>
+          <guid>daily-2026-07-20</guid>
+          <description>今日いちばん気になるのは、AIを“使った量”ではなく“役に立って安全に終わった仕事”で測る流れです。</description>
+        </item>
+        <item>
+          <title>ロボット技術ニュース - 2026-07-20</title>
+          <link>robotics/daily/2026-07-20.html</link>
+          <guid>robotics-daily-2026-07-20</guid>
+          <description>今日いちばん気になるのは、ロボットを動かす前に“評価のものさし”を作る流れです。</description>
+        </item>
         <item>
           <title>AIニュース - 2026-07-19</title>
           <link>daily/2026-07-19.html</link>
@@ -173,18 +185,6 @@
           <link>robotics/daily/2026-07-06.html</link>
           <guid>robotics-daily-2026-07-06</guid>
           <description>今日いちばん気になるのは、ロボットを賢く動かす前に、安価な観察センサー・移動の基礎・ポータブル実行基盤・シミュレーション検証を分けて育てることです。</description>
-        </item>
-        <item>
-          <title>AIニュース - 2026-07-05</title>
-          <link>daily/2026-07-05.html</link>
-          <guid>daily-2026-07-05</guid>
-          <description>今日いちばん気になるのは、AIを便利な回答係にする前に、環境・音声・画像・ログを「あとで検証できる観察記録」として残すことです。</description>
-        </item>
-        <item>
-          <title>ロボット技術ニュース - 2026-07-05</title>
-          <link>robotics/daily/2026-07-05.html</link>
-          <guid>robotics-daily-2026-07-05</guid>
-          <description>今日いちばん気になるのは、ロボットを単体で賢くするより、軽い常時処理・重い見張りAI・見やすいダッシュボード・安全な接触設計に分けることです。</description>
         </item>
   </channel>
 </rss>
