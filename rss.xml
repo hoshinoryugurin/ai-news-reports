@@ -4,8 +4,20 @@
     <title>ユグのAI・ロボット技術ニュースレポート</title>
     <description>爬虫類環境OS・ホームオートメーション・AIエージェント・先端ロボット技術に効きそうなニュース要約</description>
     <link>./</link>
-    <lastBuildDate>Sun, 19 Jul 2026 21:41:09 +0000</lastBuildDate>
+    <lastBuildDate>Mon, 20 Jul 2026 21:38:27 +0000</lastBuildDate>
     
+        <item>
+          <title>AIニュース - 2026-07-21</title>
+          <link>daily/2026-07-21.html</link>
+          <guid>daily-2026-07-21</guid>
+          <description>今日いちばん気になるのは、長く動くAIほど、途中で止まれる安全レールが必要になる流れです。</description>
+        </item>
+        <item>
+          <title>ロボット技術ニュース - 2026-07-21</title>
+          <link>robotics/daily/2026-07-21.html</link>
+          <guid>robotics-daily-2026-07-21</guid>
+          <description>今日いちばん気になるのは、ロボットが“固定された理想環境”ではなく、変化する部屋を前提に見る流れです。</description>
+        </item>
         <item>
           <title>AIニュース - 2026-07-20</title>
           <link>daily/2026-07-20.html</link>
@@ -173,18 +185,6 @@
           <link>robotics/daily/2026-07-07.html</link>
           <guid>robotics-daily-2026-07-07</guid>
           <description>今日いちばん気になるのは、ロボットや自動化に“想像させる”なら、同じくらい強く「成功判定・安全 envelope・実行可能性チェック」を置くことです。</description>
-        </item>
-        <item>
-          <title>AIニュース - 2026-07-06</title>
-          <link>daily/2026-07-06.html</link>
-          <guid>daily-2026-07-06</guid>
-          <description>今日いちばん気になるのは、AIエージェントを動かす前に「実行履歴・評価セット・忘れる仕組み・根拠再確認」を揃えることです。</description>
-        </item>
-        <item>
-          <title>ロボット技術ニュース - 2026-07-06</title>
-          <link>robotics/daily/2026-07-06.html</link>
-          <guid>robotics-daily-2026-07-06</guid>
-          <description>今日いちばん気になるのは、ロボットを賢く動かす前に、安価な観察センサー・移動の基礎・ポータブル実行基盤・シミュレーション検証を分けて育てることです。</description>
         </item>
   </channel>
 </rss>
