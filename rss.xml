@@ -4,8 +4,20 @@
     <title>ユグのAI・ロボット技術ニュースレポート</title>
     <description>爬虫類環境OS・ホームオートメーション・AIエージェント・先端ロボット技術に効きそうなニュース要約</description>
     <link>./</link>
-    <lastBuildDate>Tue, 21 Jul 2026 21:43:00 +0000</lastBuildDate>
+    <lastBuildDate>Wed, 22 Jul 2026 21:41:15 +0000</lastBuildDate>
     
+        <item>
+          <title>AIニュース - 2026-07-23</title>
+          <link>daily/2026-07-23.html</link>
+          <guid>daily-2026-07-23</guid>
+          <description>今日いちばん気になるのは、AIを“答える道具”から“根拠を残して検証する道具”に育てる流れです。</description>
+        </item>
+        <item>
+          <title>ロボット技術ニュース - 2026-07-23</title>
+          <link>robotics/daily/2026-07-23.html</link>
+          <guid>robotics-daily-2026-07-23</guid>
+          <description>今日いちばん気になるのは、ロボットを動かす前に“データ収集・シミュレーション・健康監視”を整える流れです。</description>
+        </item>
         <item>
           <title>AIニュース - 2026-07-22</title>
           <link>daily/2026-07-22.html</link>
@@ -173,18 +185,6 @@
           <link>robotics/daily/2026-07-09.html</link>
           <guid>robotics-daily-2026-07-09</guid>
           <description>今日いちばん気になるのは、ロボットを動かす前に、ログを標準化し、見直せる形にし、仮想評価してから安全に小さく試す流れです。</description>
-        </item>
-        <item>
-          <title>AIニュース - 2026-07-08</title>
-          <link>daily/2026-07-08.html</link>
-          <guid>daily-2026-07-08</guid>
-          <description>今日いちばん気になるのは、AIエージェントを「裏で動く便利係」にするほど、状態・道具・データ移動・評価を分けて設計することです。</description>
-        </item>
-        <item>
-          <title>ロボット技術ニュース - 2026-07-08</title>
-          <link>robotics/daily/2026-07-08.html</link>
-          <guid>robotics-daily-2026-07-08</guid>
-          <description>今日いちばん気になるのは、ロボットや自動化を育てるには、実機の賢さより先に「ログを残す・仮想評価する・既存機器に安全に重ねる」基盤が必要なことです。</description>
         </item>
   </channel>
 </rss>
