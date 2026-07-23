@@ -4,8 +4,20 @@
     <title>ユグのAI・ロボット技術ニュースレポート</title>
     <description>爬虫類環境OS・ホームオートメーション・AIエージェント・先端ロボット技術に効きそうなニュース要約</description>
     <link>./</link>
-    <lastBuildDate>Wed, 22 Jul 2026 21:41:15 +0000</lastBuildDate>
+    <lastBuildDate>Thu, 23 Jul 2026 21:41:27 +0000</lastBuildDate>
     
+        <item>
+          <title>AIニュース - 2026-07-24</title>
+          <link>daily/2026-07-24.html</link>
+          <guid>daily-2026-07-24</guid>
+          <description>今日いちばん気になるのは、AIが“個人データを読む力”を持つほど、検証できる安全設計が大事になる流れです。</description>
+        </item>
+        <item>
+          <title>ロボット技術ニュース - 2026-07-24</title>
+          <link>robotics/daily/2026-07-24.html</link>
+          <guid>robotics-daily-2026-07-24</guid>
+          <description>今日いちばん気になるのは、ロボットを“賢い頭”だけでなく、現実の負荷・手触り・安全運用まで含めて評価する流れです。</description>
+        </item>
         <item>
           <title>AIニュース - 2026-07-23</title>
           <link>daily/2026-07-23.html</link>
@@ -173,18 +185,6 @@
           <link>robotics/daily/2026-07-10.html</link>
           <guid>robotics-daily-2026-07-10</guid>
           <description>今日いちばん気になるのは、ロボットが動く前に「何を見たか・何を覚えたか・仮想で試せるか」を整える流れです。</description>
-        </item>
-        <item>
-          <title>AIニュース - 2026-07-09</title>
-          <link>daily/2026-07-09.html</link>
-          <guid>daily-2026-07-09</guid>
-          <description>今日いちばん気になるのは、会話・エージェント・評価・データを分けて、AIを「自然に話す係」と「静かに検証する係」に分担させることです。</description>
-        </item>
-        <item>
-          <title>ロボット技術ニュース - 2026-07-09</title>
-          <link>robotics/daily/2026-07-09.html</link>
-          <guid>robotics-daily-2026-07-09</guid>
-          <description>今日いちばん気になるのは、ロボットを動かす前に、ログを標準化し、見直せる形にし、仮想評価してから安全に小さく試す流れです。</description>
         </item>
   </channel>
 </rss>

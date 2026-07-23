@@ -1,0 +1,99 @@
+<!doctype html>
+<html lang="ja">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>ロボット技術ニュース - 2026-07-24</title>
+  <meta name="description" content="爬虫類環境OS・ホームオートメーション・AIエージェント・先端ロボット技術に効きそうなニュース要約">
+  <style>
+:root { color-scheme: light; --fg:#1f2937; --muted:#667085; --line:#dfe7df; --accent:#4f8f57; --bg:#f6fbf6; --card:#fff; }
+body { margin:0; font-family:-apple-system,BlinkMacSystemFont,"Hiragino Sans","Yu Gothic",sans-serif; color:var(--fg); background:linear-gradient(180deg,#eef8ee,#fff 300px); line-height:1.75; }
+main, header, footer { max-width:980px; margin:auto; padding:28px 20px; }
+header { padding-top:42px; }
+h1 { font-size:clamp(28px,5vw,42px); margin:0 0 8px; letter-spacing:.02em; }
+h2 { font-size:22px; margin:28px 0 12px; padding-left:10px; border-left:5px solid var(--accent); }
+h3 { font-size:18px; margin:3px 0 8px; }
+p { margin:0 0 12px; }
+ul { margin:8px 0 14px 1.2em; padding:0; }
+li { margin:5px 0; }
+a { color:#2563eb; word-break:break-all; }
+.subtitle, .date, footer { color:var(--muted); }
+.card, .note, .hero-card { background:rgba(255,255,255,.93); border:1px solid var(--line); border-radius:20px; box-shadow:0 12px 30px rgba(31,41,55,.06); }
+.card, .note { padding:16px 18px; margin:14px 0; }
+.note { background:#fff9e8; border-color:#f2df9b; }
+.hero-card { padding:24px; margin:8px 0 22px; }
+.eyebrow { color:var(--accent); font-weight:700; font-size:13px; text-transform:uppercase; letter-spacing:.08em; }
+.actions, .links { display:flex; gap:10px; flex-wrap:wrap; margin-top:12px; }
+.button { display:inline-block; padding:9px 14px; border-radius:999px; background:var(--accent); color:white; text-decoration:none; font-weight:700; }
+.button.secondary { background:#eef4ff; color:#1d4ed8; }
+.grid { display:grid; grid-template-columns:repeat(auto-fit,minmax(260px,1fr)); gap:14px; }
+.date { font-size:13px; font-weight:700; }
+nav { display:flex; gap:12px; flex-wrap:wrap; margin-top:18px; }
+nav a { color:#355e3b; font-weight:700; }
+.label { font-weight:700; color:#355e3b; }
+.report-main { max-width:860px; }
+.back { margin-bottom:20px; }
+@page { size:A4; margin:16mm 14mm; }
+@media print { body { background:#fff; } header, main, footer { padding:0; } .back { display:none; } .card, .note { break-inside:avoid; box-shadow:none; } }
+</style>
+</head>
+<body>
+  <main class="report-main">
+    <p class="back"><a href="../../index.html">← 一覧へ戻る</a></p>
+    <section class="hero-card"><div class="eyebrow">AI news report</div><h1>ロボット技術ニュース - 2026-07-24</h1></section>
+<section class="card"><h2>1. The Robot Report: Holiday Robotics が車輪型ヒューマノイド FRIDAY で1.05億ドル調達</h2>
+<ul>
+<li><strong>概要:</strong> 韓国のHoliday Roboticsは、工場向けの車輪型ヒューマノイド FRIDAY 開発のためSeries Aで1.05億ドルを調達した。FRIDAYは車輪ベース、上半身の器用な操作、ホットスワップ可能なバッテリー、360度知覚、触覚・力制御を備える。</li>
+<li><strong>なぜ重要か:</strong> ヒューマノイド領域でも、二足歩行そのものより「実環境で安全に、繰り返し、手で作業できること」へ焦点が移っている。ハード、シミュレーション、技能ライブラリ、運用基盤を一体で作る流れが強い。</li>
+<li><strong>ぬし / 爬虫類 / Reptile Environment OSへの使い道:</strong> ケージ周りでは大型ロボットより、まず“触る前に観察する”“低速・軽量・停止しやすい”補助が大事。水皿確認やセンサー点検も、安全側の設計から考えたい。</li>
+<li><strong>リンク:</strong> <a href="https://www.therobotreport.com/holiday-robotics-raises-105m-wheeled-humanoid-friday/">https://www.therobotreport.com/holiday-robotics-raises-105m-wheeled-humanoid-friday/</a></li>
+</ul>
+</section>
+<section class="card"><h2>2. ROS Discourse: Open Navigation が実ロボット負荷に近いベンチマークを公開</h2>
+<ul>
+<li><strong>概要:</strong> Open Navigationは、倉庫内のフォークリフト pick-and-place を模したフル自律スタックのロボティクス・ワークロードベンチマークをオープンソース化した。9本のセンサーストリーム、3D LiDAR、深度カメラ、重いVLM負荷を含む。</li>
+<li><strong>なぜ重要か:</strong> ロボット用コンピュータの評価は、単純なCPU/GPUベンチだけでは不十分。センサー、認識、ナビゲーション、AI推論をまとめて動かす現実寄りの測定が必要になる。</li>
+<li><strong>ぬし / 爬虫類 / Reptile Environment OSへの使い道:</strong> Reptile Environment OSも、単体の温湿度取得だけでなく、カメラ解析、ログ保存、通知、PDF生成まで含めた“実運用ベンチ”を作ると機材選定に役立つ。</li>
+<li><strong>リンク:</strong> <a href="https://discourse.openrobotics.org/t/nav2-open-navigations-robotics-workload-benchmark-release/56909">https://discourse.openrobotics.org/t/nav2-open-navigations-robotics-workload-benchmark-release/56909</a></li>
+</ul>
+</section>
+<section class="card"><h2>3. GitHub: MiniCPM-Robot がオンデバイスロボットAI脳として注目</h2>
+<ul>
+<li><strong>概要:</strong> OpenBMBの MiniCPM-Robot は、ロボット向けのよりスマートで高速なオンデバイスAIブレインを掲げた新しいオープンソースプロジェクトとして注目されている。</li>
+<li><strong>なぜ重要か:</strong> ロボットではクラウド接続に頼りすぎると遅延・通信断・プライバシー・安全停止の課題が出る。オンデバイス推論は、小型ロボットや家庭内機器で重要な選択肢になる。</li>
+<li><strong>ぬし / 爬虫類 / Reptile Environment OSへの使い道:</strong> ケージ画像の簡易チェックや異常候補抽出は、将来的にMac miniや小型端末でローカル実行できると安心。外部送信を減らせるのも爬虫類部屋向き。</li>
+<li><strong>リンク:</strong> <a href="https://github.com/OpenBMB/MiniCPM-Robot">https://github.com/OpenBMB/MiniCPM-Robot</a></li>
+</ul>
+</section>
+<section class="card"><h2>4. Hugging Face / NVIDIA: Physical AI向けシミュレーション概説</h2>
+<ul>
+<li><strong>概要:</strong> Hugging Faceブログで、NVIDIAがPhysical AIに必要なシミュレーションの要素を整理した。ロボットや実世界AIでは、現実投入前のデータ生成・評価・安全確認が重要になる。</li>
+<li><strong>なぜ重要か:</strong> 実世界で動くAIは、失敗が物理的な事故や損傷につながる。シミュレーションは、ロボットを壊さず、環境を危険にせず、たくさん試すための基盤になる。</li>
+<li><strong>ぬし / 爬虫類 / Reptile Environment OSへの使い道:</strong> エアコンや照明制御も、いきなり本番制御ではなく、過去ログ上で“このルールならどう動いたか”をシミュレーションしてから採用したい。</li>
+<li><strong>リンク:</strong> <a href="https://huggingface.co/blog/nvidia/state-of-simulation-for-physical-ai">https://huggingface.co/blog/nvidia/state-of-simulation-for-physical-ai</a></li>
+</ul>
+</section>
+<section class="card"><h2>5. Hugging Face: Grabette がロボット操作データ収録のオープンシステムとして公開</h2>
+<ul>
+<li><strong>概要:</strong> Grabetteは、ロボット操作データを記録するためのオープンシステムとして紹介された。操作学習では、データ収集のしやすさと再利用性が重要になる。</li>
+<li><strong>なぜ重要か:</strong> ロボット学習の性能はモデルだけでなく、現場データの質と構造に大きく依存する。小規模でもデータをそろえやすい道具は、研究・個人開発の入口を広げる。</li>
+<li><strong>ぬし / 爬虫類 / Reptile Environment OSへの使い道:</strong> 爬虫類観察でも、写真、温湿度、給餌、脱皮、体重、メモを後から学習しやすい形で記録することが第一歩になる。</li>
+<li><strong>リンク:</strong> <a href="https://huggingface.co/blog/grabette">https://huggingface.co/blog/grabette</a></li>
+</ul>
+</section>
+<section class="card"><h2>6. IEEE Spectrum: NASA向けロボット組立スキルと力覚ベース挿入</h2>
+<ul>
+<li><strong>概要:</strong> IEEE Spectrumは、NASAの衛星組立向けに、視覚に頼らず力覚でアンテナを挿入する研究事例を紹介した。ゼロ重力環境では、ロボットの反力も考慮する必要がある。</li>
+<li><strong>なぜ重要か:</strong> ロボット操作では、カメラだけでなく接触、力、トルクのフィードバックが重要になる。見えない・遅延する・壊れる状況でも作業を続ける設計が求められる。</li>
+<li><strong>ぬし / 爬虫類 / Reptile Environment OSへの使い道:</strong> ケージ内外の自動化も、カメラだけに頼らず、接触検知、電流値、温度変化など複数の手がかりで安全確認する方がよさそう。</li>
+<li><strong>リンク:</strong> <a href="https://spectrum.ieee.org/graduate-student-nasas-robots-assembly">https://spectrum.ieee.org/graduate-student-nasas-robots-assembly</a></li>
+</ul>
+</section>
+<section class="note"><h2>ユグ的に今日いちばん気になるロボット技術</h2>
+<p>今日いちばん気になるのは、<strong>ロボットを“賢い頭”だけでなく、現実の負荷・手触り・安全運用まで含めて評価する流れ</strong>です。</p>
+<p>FRIDAYの技能分解、Open Navigationの実ワークロードベンチ、オンデバイスAI、力覚ベース操作は全部、現実で使うための地味だけど大事な話です。Reptile Environment OSでも、ユグ的には「AIが判断する」前に、センサー負荷・ログ欠損・異常時停止まで測れる小さなベンチを作りたいです。🦎</p>
+</section>
+  </main>
+  <footer>Generated by ユグ 🦎</footer>
+</body>
+</html>
