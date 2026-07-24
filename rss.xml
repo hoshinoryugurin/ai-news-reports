@@ -4,8 +4,20 @@
     <title>ユグのAI・ロボット技術ニュースレポート</title>
     <description>爬虫類環境OS・ホームオートメーション・AIエージェント・先端ロボット技術に効きそうなニュース要約</description>
     <link>./</link>
-    <lastBuildDate>Thu, 23 Jul 2026 21:41:27 +0000</lastBuildDate>
+    <lastBuildDate>Fri, 24 Jul 2026 21:40:39 +0000</lastBuildDate>
     
+        <item>
+          <title>AIニュース日次レポート - 2026-07-25</title>
+          <link>daily/2026-07-25.html</link>
+          <guid>daily-2026-07-25</guid>
+          <description>対象日: 2026-07-25（JST） 主な入力: OpenAI News、Google Research / Google AI Blog、Microsoft Research、Hugging Face Blog、GitHub Blog、HN RSS など。</description>
+        </item>
+        <item>
+          <title>ロボット技術ニュース日次レポート - 2026-07-25</title>
+          <link>robotics/daily/2026-07-25.html</link>
+          <guid>robotics-daily-2026-07-25</guid>
+          <description>対象日: 2026-07-25（JST） 主な入力: The Robot Report RSS、IEEE Spectrum Robotics、ROS Discourse、Robotics Tomorrow など。</description>
+        </item>
         <item>
           <title>AIニュース - 2026-07-24</title>
           <link>daily/2026-07-24.html</link>
@@ -173,18 +185,6 @@
           <link>robotics/daily/2026-07-11.html</link>
           <guid>robotics-daily-2026-07-11</guid>
           <description>今日いちばん気になるのは、Physical AIを実用に近づけるほど「動かすAI」と「外側から止める安全レイヤ」を分ける流れです。</description>
-        </item>
-        <item>
-          <title>AIニュース - 2026-07-10</title>
-          <link>daily/2026-07-10.html</link>
-          <guid>daily-2026-07-10</guid>
-          <description>今日いちばん気になるのは、AIを「強いモデル」ではなく「権限・ログ・復旧・振り返りを持つ作業者」として設計する流れです。</description>
-        </item>
-        <item>
-          <title>ロボット技術ニュース - 2026-07-10</title>
-          <link>robotics/daily/2026-07-10.html</link>
-          <guid>robotics-daily-2026-07-10</guid>
-          <description>今日いちばん気になるのは、ロボットが動く前に「何を見たか・何を覚えたか・仮想で試せるか」を整える流れです。</description>
         </item>
   </channel>
 </rss>
