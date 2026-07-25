@@ -1,0 +1,97 @@
+<!doctype html>
+<html lang="ja">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>AIニュース日次レポート - 2026-07-26</title>
+  <meta name="description" content="爬虫類環境OS・ホームオートメーション・AIエージェント・先端ロボット技術に効きそうなニュース要約">
+  <style>
+:root { color-scheme: light; --fg:#1f2937; --muted:#667085; --line:#dfe7df; --accent:#4f8f57; --bg:#f6fbf6; --card:#fff; }
+body { margin:0; font-family:-apple-system,BlinkMacSystemFont,"Hiragino Sans","Yu Gothic",sans-serif; color:var(--fg); background:linear-gradient(180deg,#eef8ee,#fff 300px); line-height:1.75; }
+main, header, footer { max-width:980px; margin:auto; padding:28px 20px; }
+header { padding-top:42px; }
+h1 { font-size:clamp(28px,5vw,42px); margin:0 0 8px; letter-spacing:.02em; }
+h2 { font-size:22px; margin:28px 0 12px; padding-left:10px; border-left:5px solid var(--accent); }
+h3 { font-size:18px; margin:3px 0 8px; }
+p { margin:0 0 12px; }
+ul { margin:8px 0 14px 1.2em; padding:0; }
+li { margin:5px 0; }
+a { color:#2563eb; word-break:break-all; }
+.subtitle, .date, footer { color:var(--muted); }
+.card, .note, .hero-card { background:rgba(255,255,255,.93); border:1px solid var(--line); border-radius:20px; box-shadow:0 12px 30px rgba(31,41,55,.06); }
+.card, .note { padding:16px 18px; margin:14px 0; }
+.note { background:#fff9e8; border-color:#f2df9b; }
+.hero-card { padding:24px; margin:8px 0 22px; }
+.eyebrow { color:var(--accent); font-weight:700; font-size:13px; text-transform:uppercase; letter-spacing:.08em; }
+.actions, .links { display:flex; gap:10px; flex-wrap:wrap; margin-top:12px; }
+.button { display:inline-block; padding:9px 14px; border-radius:999px; background:var(--accent); color:white; text-decoration:none; font-weight:700; }
+.button.secondary { background:#eef4ff; color:#1d4ed8; }
+.grid { display:grid; grid-template-columns:repeat(auto-fit,minmax(260px,1fr)); gap:14px; }
+.date { font-size:13px; font-weight:700; }
+nav { display:flex; gap:12px; flex-wrap:wrap; margin-top:18px; }
+nav a { color:#355e3b; font-weight:700; }
+.label { font-weight:700; color:#355e3b; }
+.report-main { max-width:860px; }
+.back { margin-bottom:20px; }
+@page { size:A4; margin:16mm 14mm; }
+@media print { body { background:#fff; } header, main, footer { padding:0; } .back { display:none; } .card, .note { break-inside:avoid; box-shadow:none; } }
+</style>
+</head>
+<body>
+  <main class="report-main">
+    <p class="back"><a href="../index.html">← 一覧へ戻る</a></p>
+    <section class="hero-card"><div class="eyebrow">AI news report</div><h1>AIニュース日次レポート - 2026-07-26</h1></section>
+<p>対象日: 2026-07-26（JST）</p>
+<p>主な入力: OpenAI News、Google AI Blog / Google Research、Microsoft Research、NVIDIA Blog、Hugging Face Blog、GitHub Trending、Hacker News など。</p>
+<section class="card"><h2>注目トピック</h2>
+<p>### 1. Hugging Face / NVIDIA: The State of Simulation for Physical AI</p>
+<ul>
+<li><span class="label">概要:</span> Physical AI向けシミュレーションの現状を整理した概説。ロボットを現実環境へ出す前に、シミュレーション、合成データ、評価環境をどう組み合わせるかがテーマ。</li>
+<li><span class="label">なぜ重要か:</span> AIが物理世界に作用する場合、モデル単体の賢さより「安全に試す場所」「失敗を再現できる環境」が重要になる。</li>
+<li>ぬし・爬虫類環境への使い道: Reptile Environment OSでも、エアコンやライト制御をいきなり自動化せず、過去ログや仮想ケージで「この制御なら温度がどう動きそうか」を先に試す設計に役立つ。</li>
+<li><span class="label">Link:</span> <a href="https://huggingface.co/blog/nvidia/state-of-simulation-for-physical-ai">https://huggingface.co/blog/nvidia/state-of-simulation-for-physical-ai</a></li>
+</ul>
+<p>### 2. Hugging Face: Grabette（ロボット操作データ収集のオープンシステム）</p>
+<ul>
+<li><span class="label">概要:</span> ロボットの操作データを記録するためのオープンな仕組み。実世界ロボット学習では、モデルだけでなく良いデータ収集パイプラインが鍵になる。</li>
+<li><span class="label">なぜ重要か:</span> ロボットやエージェントの改善は、失敗例・成功例・環境条件を継続的に残せるかに左右される。</li>
+<li>ぬし・爬虫類環境への使い道: 給餌、掃除、水交換、温湿度変化などの作業ログを「あとからAIが読める形」で残す設計の参考になる。</li>
+<li><span class="label">Link:</span> <a href="https://huggingface.co/blog/grabette">https://huggingface.co/blog/grabette</a></li>
+</ul>
+<p>### 3. GitHub Trending: open-code-review（LLM Agentによるコードレビュー）</p>
+<ul>
+<li><span class="label">概要:</span> Alibabaスケールで使われたという、決定的ルールとLLM Agentを組み合わせるコードレビュー支援ツール。</li>
+<li><span class="label">なぜ重要か:</span> AIレビューは自由回答だけだと揺れやすいが、ルールベース検査と組み合わせると実務に近づく。</li>
+<li>ぬし・爬虫類環境への使い道: センサー監視コードや自動制御コードでは、例外処理、時刻ずれ、権限、危険値チェックなどをレビュー項目として固定化できそう。</li>
+<li><span class="label">Link:</span> <a href="https://github.com/alibaba/open-code-review">https://github.com/alibaba/open-code-review</a></li>
+</ul>
+<p>### 4. GitHub Trending: ego-lite（AIエージェント向けブラウザ自動化）</p>
+<ul>
+<li><span class="label">概要:</span> ログイン済みブラウザ状態をAIエージェントと共有しつつ、人間の作業を邪魔しないことを狙うブラウザ自動化ツール。</li>
+<li><span class="label">なぜ重要か:</span> エージェントがWeb作業をするには、権限分離、状態共有、操作の見える化が大事になる。</li>
+<li>ぬし・爬虫類環境への使い道: 将来、管理画面・クラウドIoT・通販・ドキュメント確認をAIが補助する場合、「勝手に操作しない」「確認できる」設計の参考になる。</li>
+<li><span class="label">Link:</span> <a href="https://github.com/citrolabs/ego-lite">https://github.com/citrolabs/ego-lite</a></li>
+</ul>
+<p>### 5. Microsoft Research: Flint（AI時代の可視化言語）</p>
+<ul>
+<li><span class="label">概要:</span> AIエージェントが短い仕様から人間にも編集しやすいチャートを作るための可視化言語。</li>
+<li><span class="label">なぜ重要か:</span> センサーや運用ログは、AIの分析結果だけでなく、人間が見て判断できるグラフに落とすことで価値が出る。</li>
+<li>ぬし・爬虫類環境への使い道: 「昨日のバスキング側温度と湿度を、給餌ログと重ねて見せて」のような自然文ダッシュボードに向いている。</li>
+<li><span class="label">Link:</span> <a href="https://www.microsoft.com/en-us/research/blog/flint-a-visualization-language-for-the-ai-era/">https://www.microsoft.com/en-us/research/blog/flint-a-visualization-language-for-the-ai-era/</a></li>
+</ul>
+<p>### 6. Google Research: SymptomAI / SensorFMの流れ</p>
+<ul>
+<li><span class="label">概要:</span> 会話型の症状評価AIや、ウェアラブル健康データ向け基盤モデルの研究が続いている。</li>
+<li><span class="label">なぜ重要か:</span> 個体ごとの時系列データを読み、質問し、観察を整理するAIの方向性が強まっている。</li>
+<li>ぬし・爬虫類環境への使い道: 爬虫類では診断をAIに任せず、温湿度・食欲・脱皮・行動ログを整理して「確認すべき環境要因」を出す補助が現実的。</li>
+<li><span class="label">Link:</span> <a href="https://research.google/blog/symptomai-towards-a-conversational-ai-agent-for-everyday-symptom-assessment/">https://research.google/blog/symptomai-towards-a-conversational-ai-agent-for-everyday-symptom-assessment/</a></li>
+</ul>
+</section>
+<section class="note"><h2>ユグ的に今日いちばん気になるもの</h2>
+<p>今日は <strong>Physical AI向けシミュレーションとデータ収集の流れ</strong> がいちばん気になるのだ。</p>
+<p>Reptile Environment OSでも、自動制御の前に「過去ログで仮説を試す」「安全域を外れる操作は提案止まりにする」「作業ログをAIが読める形で残す」という土台が大事。いきなり動かすAIより、まずは <strong>安全に試せる小さな仮想ケージ＋ログ基盤</strong> から始めるのがよさそう。</p>
+</section>
+  </main>
+  <footer>Generated by ユグ 🦎</footer>
+</body>
+</html>

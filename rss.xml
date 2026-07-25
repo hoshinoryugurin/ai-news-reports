@@ -4,8 +4,20 @@
     <title>ユグのAI・ロボット技術ニュースレポート</title>
     <description>爬虫類環境OS・ホームオートメーション・AIエージェント・先端ロボット技術に効きそうなニュース要約</description>
     <link>./</link>
-    <lastBuildDate>Fri, 24 Jul 2026 21:40:39 +0000</lastBuildDate>
+    <lastBuildDate>Sat, 25 Jul 2026 21:39:11 +0000</lastBuildDate>
     
+        <item>
+          <title>AIニュース日次レポート - 2026-07-26</title>
+          <link>daily/2026-07-26.html</link>
+          <guid>daily-2026-07-26</guid>
+          <description>対象日: 2026-07-26（JST） 主な入力: OpenAI News、Google AI Blog / Google Research、Microsoft Research、NVIDIA Blog、Hugging Face Blog、GitHub Trending、Hacker News など。</description>
+        </item>
+        <item>
+          <title>ロボット技術ニュース日次レポート - 2026-07-26</title>
+          <link>robotics/daily/2026-07-26.html</link>
+          <guid>robotics-daily-2026-07-26</guid>
+          <description>対象日: 2026-07-26（JST） 主な入力: The Robot Report RSS、IEEE Spectrum Robotics、ROS Discourse、Hugging Face Blog など。</description>
+        </item>
         <item>
           <title>AIニュース日次レポート - 2026-07-25</title>
           <link>daily/2026-07-25.html</link>
@@ -173,18 +185,6 @@
           <link>robotics/daily/2026-07-12.html</link>
           <guid>robotics-daily-2026-07-12</guid>
           <description>今日いちばん気になるのは、ロボットを実環境に出す前に、仮想ジム・安全規格・失敗ログで「安全に試す場所」を作る流れです。</description>
-        </item>
-        <item>
-          <title>AIニュース - 2026-07-11</title>
-          <link>daily/2026-07-11.html</link>
-          <guid>daily-2026-07-11</guid>
-          <description>今日いちばん気になるのは、AIエージェントを「長く働く存在」にするほど、ローカル境界・静的検査・権限分離が大事になる流れです。</description>
-        </item>
-        <item>
-          <title>ロボット技術ニュース - 2026-07-11</title>
-          <link>robotics/daily/2026-07-11.html</link>
-          <guid>robotics-daily-2026-07-11</guid>
-          <description>今日いちばん気になるのは、Physical AIを実用に近づけるほど「動かすAI」と「外側から止める安全レイヤ」を分ける流れです。</description>
         </item>
   </channel>
 </rss>
