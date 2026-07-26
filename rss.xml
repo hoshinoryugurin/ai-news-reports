@@ -4,8 +4,20 @@
     <title>ユグのAI・ロボット技術ニュースレポート</title>
     <description>爬虫類環境OS・ホームオートメーション・AIエージェント・先端ロボット技術に効きそうなニュース要約</description>
     <link>./</link>
-    <lastBuildDate>Sat, 25 Jul 2026 21:39:11 +0000</lastBuildDate>
+    <lastBuildDate>Sun, 26 Jul 2026 21:40:51 +0000</lastBuildDate>
     
+        <item>
+          <title>AIニュース日次レポート - 2026-07-27</title>
+          <link>daily/2026-07-27.html</link>
+          <guid>daily-2026-07-27</guid>
+          <description>対象日: 2026-07-27</description>
+        </item>
+        <item>
+          <title>ロボット技術ニュース日次レポート - 2026-07-27</title>
+          <link>robotics/daily/2026-07-27.html</link>
+          <guid>robotics-daily-2026-07-27</guid>
+          <description>対象日: 2026-07-27</description>
+        </item>
         <item>
           <title>AIニュース日次レポート - 2026-07-26</title>
           <link>daily/2026-07-26.html</link>
@@ -173,18 +185,6 @@
           <link>robotics/daily/2026-07-13.html</link>
           <guid>robotics-daily-2026-07-13</guid>
           <description>今日いちばん気になるのは、ロボットAIの外側に、決定論的で説明しやすい安全ラッパーを置く流れです。</description>
-        </item>
-        <item>
-          <title>AIニュース - 2026-07-12</title>
-          <link>daily/2026-07-12.html</link>
-          <guid>daily-2026-07-12</guid>
-          <description>今日いちばん気になるのは、AIエージェントの価値が「モデルの賢さ」から「失敗・復旧・評価をデータとして残す運用」に移っている流れです。</description>
-        </item>
-        <item>
-          <title>ロボット技術ニュース - 2026-07-12</title>
-          <link>robotics/daily/2026-07-12.html</link>
-          <guid>robotics-daily-2026-07-12</guid>
-          <description>今日いちばん気になるのは、ロボットを実環境に出す前に、仮想ジム・安全規格・失敗ログで「安全に試す場所」を作る流れです。</description>
         </item>
   </channel>
 </rss>
