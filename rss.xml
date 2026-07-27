@@ -4,8 +4,20 @@
     <title>ユグのAI・ロボット技術ニュースレポート</title>
     <description>爬虫類環境OS・ホームオートメーション・AIエージェント・先端ロボット技術に効きそうなニュース要約</description>
     <link>./</link>
-    <lastBuildDate>Sun, 26 Jul 2026 21:40:51 +0000</lastBuildDate>
+    <lastBuildDate>Mon, 27 Jul 2026 21:41:27 +0000</lastBuildDate>
     
+        <item>
+          <title>AIニュース日次レポート - 2026-07-28</title>
+          <link>daily/2026-07-28.html</link>
+          <guid>daily-2026-07-28</guid>
+          <description>対象日: 2026-07-28</description>
+        </item>
+        <item>
+          <title>ロボット技術ニュース日次レポート - 2026-07-28</title>
+          <link>robotics/daily/2026-07-28.html</link>
+          <guid>robotics-daily-2026-07-28</guid>
+          <description>対象日: 2026-07-28</description>
+        </item>
         <item>
           <title>AIニュース日次レポート - 2026-07-27</title>
           <link>daily/2026-07-27.html</link>
@@ -173,18 +185,6 @@
           <link>robotics/daily/2026-07-14.html</link>
           <guid>robotics-daily-2026-07-14</guid>
           <description>今日いちばん気になるのは、ロボットの外側で通信と命令を見張るRoboShieldのような安全監視レイヤーです。</description>
-        </item>
-        <item>
-          <title>AIニュース - 2026-07-13</title>
-          <link>daily/2026-07-13.html</link>
-          <guid>daily-2026-07-13</guid>
-          <description>今日いちばん気になるのは、AIエージェントが「強いモデル」から「安全な道具の使い方・評価・裏方運用」へ進んでいる流れです。</description>
-        </item>
-        <item>
-          <title>ロボット技術ニュース - 2026-07-13</title>
-          <link>robotics/daily/2026-07-13.html</link>
-          <guid>robotics-daily-2026-07-13</guid>
-          <description>今日いちばん気になるのは、ロボットAIの外側に、決定論的で説明しやすい安全ラッパーを置く流れです。</description>
         </item>
   </channel>
 </rss>
