@@ -1,0 +1,99 @@
+<!doctype html>
+<html lang="ja">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>AIニュース日次レポート - 2026-07-29</title>
+  <meta name="description" content="爬虫類環境OS・ホームオートメーション・AIエージェント・先端ロボット技術に効きそうなニュース要約">
+  <style>
+:root { color-scheme: light; --fg:#1f2937; --muted:#667085; --line:#dfe7df; --accent:#4f8f57; --bg:#f6fbf6; --card:#fff; }
+body { margin:0; font-family:-apple-system,BlinkMacSystemFont,"Hiragino Sans","Yu Gothic",sans-serif; color:var(--fg); background:linear-gradient(180deg,#eef8ee,#fff 300px); line-height:1.75; }
+main, header, footer { max-width:980px; margin:auto; padding:28px 20px; }
+header { padding-top:42px; }
+h1 { font-size:clamp(28px,5vw,42px); margin:0 0 8px; letter-spacing:.02em; }
+h2 { font-size:22px; margin:28px 0 12px; padding-left:10px; border-left:5px solid var(--accent); }
+h3 { font-size:18px; margin:3px 0 8px; }
+p { margin:0 0 12px; }
+ul { margin:8px 0 14px 1.2em; padding:0; }
+li { margin:5px 0; }
+a { color:#2563eb; word-break:break-all; }
+.subtitle, .date, footer { color:var(--muted); }
+.card, .note, .hero-card { background:rgba(255,255,255,.93); border:1px solid var(--line); border-radius:20px; box-shadow:0 12px 30px rgba(31,41,55,.06); }
+.card, .note { padding:16px 18px; margin:14px 0; }
+.note { background:#fff9e8; border-color:#f2df9b; }
+.hero-card { padding:24px; margin:8px 0 22px; }
+.eyebrow { color:var(--accent); font-weight:700; font-size:13px; text-transform:uppercase; letter-spacing:.08em; }
+.actions, .links { display:flex; gap:10px; flex-wrap:wrap; margin-top:12px; }
+.button { display:inline-block; padding:9px 14px; border-radius:999px; background:var(--accent); color:white; text-decoration:none; font-weight:700; }
+.button.secondary { background:#eef4ff; color:#1d4ed8; }
+.grid { display:grid; grid-template-columns:repeat(auto-fit,minmax(260px,1fr)); gap:14px; }
+.date { font-size:13px; font-weight:700; }
+nav { display:flex; gap:12px; flex-wrap:wrap; margin-top:18px; }
+nav a { color:#355e3b; font-weight:700; }
+.label { font-weight:700; color:#355e3b; }
+.report-main { max-width:860px; }
+.back { margin-bottom:20px; }
+@page { size:A4; margin:16mm 14mm; }
+@media print { body { background:#fff; } header, main, footer { padding:0; } .back { display:none; } .card, .note { break-inside:avoid; box-shadow:none; } }
+</style>
+</head>
+<body>
+  <main class="report-main">
+    <p class="back"><a href="../index.html">← 一覧へ戻る</a></p>
+    <section class="hero-card"><div class="eyebrow">AI news report</div><h1>AIニュース日次レポート - 2026-07-29</h1></section>
+<p>対象日: 2026-07-29</p>
+<section class="card"><h2>1. OpenAI: Agentic AI時代の科学計算</h2>
+<ul>
+<li><strong>概要:</strong> OpenAIが、科学者がAIコーディングエージェントを使って、ゲノミクスなどの科学計算ソフトウェアを近代化している事例を紹介した。</li>
+<li><strong>なぜ重要か:</strong> AIエージェントは、ただ文章を書く道具ではなく、古い解析コードの整理、実験パイプラインの改善、再現性のある計算環境づくりまで支え始めている。</li>
+<li><strong>ぬし・爬虫類への使い道:</strong> Reptile Environment OSでも、温湿度・行動・給餌・脱皮ログの解析コードを、AIに「壊さず整理させる」「古い処理をテストつきで更新させる」運用が使えそう。</li>
+<li><strong>リンク:</strong> <a href="https://openai.com/index/scientific-computing-agentic-ai">https://openai.com/index/scientific-computing-agentic-ai</a></li>
+</ul>
+</section>
+<section class="card"><h2>2. Google: Gemini API Managed Agentsに3.6 Flash、hooksなどを追加</h2>
+<ul>
+<li><strong>概要:</strong> GoogleがGemini APIのManaged Agentsを拡張し、3.6 Flashやhooksなど、本番向けエージェントを作りやすくする機能を発表した。</li>
+<li><strong>なぜ重要か:</strong> エージェントを安全に運用するには、モデル性能だけでなく「いつ外部処理を呼ぶか」「途中でどう検査するか」「失敗時にどう止めるか」というフック設計が大事になる。</li>
+<li><strong>ぬし・爬虫類への使い道:</strong> ケージ管理AIでも、センサー急変を見つけたら即制御ではなく、まず確認カード作成→安全条件チェック→必要なら通知、という段階的なhooks設計にできる。</li>
+<li><strong>リンク:</strong> <a href="https://blog.google/innovation-and-ai/technology/developers-tools/expanding-managed-agents-gemini-api-3-6-flash-hooks/">https://blog.google/innovation-and-ai/technology/developers-tools/expanding-managed-agents-gemini-api-3-6-flash-hooks/</a></li>
+</ul>
+</section>
+<section class="card"><h2>3. NVIDIA: Jetsonで「AIを現場に置く」流れ</h2>
+<ul>
+<li><strong>概要:</strong> NVIDIAがJetsonを、コンパクトにAIを動かすエッジAI基盤として紹介した。</li>
+<li><strong>なぜ重要か:</strong> カメラやセンサーに近い場所でAIを動かせると、通信遅延やクラウド依存を減らし、プライバシーや即時性も扱いやすくなる。</li>
+<li><strong>ぬし・爬虫類への使い道:</strong> ケージ横の小型端末で「温度急変」「水入れが空っぽ候補」「いつもと違う姿勢」だけを先に検出し、重い解析はあとでクラウド/PCに渡す構成が現実的。</li>
+<li><strong>リンク:</strong> <a href="https://blogs.nvidia.com/blog/build-ai-with-nvidia-jetson/">https://blogs.nvidia.com/blog/build-ai-with-nvidia-jetson/</a></li>
+</ul>
+</section>
+<section class="card"><h2>4. NVIDIAほか: Open Secure AI AllianceでAI安全・セキュリティを共同整備</h2>
+<ul>
+<li><strong>概要:</strong> NVIDIAが、オープンソースAIの安全性・セキュリティを高めるOpen Secure AI Allianceを紹介した。</li>
+<li><strong>なぜ重要か:</strong> AIアプリやエージェントを家庭・研究・産業に入れるほど、モデルそのものだけでなく、依存ライブラリ、権限、データ経路、監査ログが重要になる。</li>
+<li><strong>ぬし・爬虫類への使い道:</strong> Reptile Environment OSも、センサー閲覧・通知・制御権限を分け、AIが勝手に危険な操作をしないよう、最初から監査ログと権限境界を持たせたい。</li>
+<li><strong>リンク:</strong> <a href="https://blogs.nvidia.com/blog/open-secure-ai-alliance/">https://blogs.nvidia.com/blog/open-secure-ai-alliance/</a></li>
+</ul>
+</section>
+<section class="card"><h2>5. GitHub: xAIのgrok-buildなど、エージェント実行ハーネスが注目</h2>
+<ul>
+<li><strong>概要:</strong> GitHubの新しめの人気AIリポジトリでは、xAIの<code>grok-build</code>のようなコーディングエージェント用ハーネス/TUIが大きく伸びている。</li>
+<li><strong>なぜ重要か:</strong> LLM本体だけでなく、エージェントに作業コンテキスト・ツール・UI・制限を与える「ハーネス」の設計競争が進んでいる。</li>
+<li><strong>ぬし・爬虫類への使い道:</strong> ユグの作業環境も、日次レポート、センサー解析、ケージ状態カード生成などを、用途別ハーネスとして整理すると事故が減りそう。</li>
+<li><strong>リンク:</strong> <a href="https://github.com/xai-org/grok-build">https://github.com/xai-org/grok-build</a></li>
+</ul>
+</section>
+<section class="card"><h2>6. arXiv: Data Pyramid for Embodied Manipulation</h2>
+<ul>
+<li><strong>概要:</strong> 具身AI/ロボット操作のために、実機データ、UMI系データ、一人称/外部視点、シミュレーション、一般視覚言語データを「データピラミッド」として整理する研究が公開された。</li>
+<li><strong>なぜ重要か:</strong> 物理世界で動くAIは、Web上のテキストだけでは足りず、観察・状態・行動が結びついた複数種類のデータが必要になる。</li>
+<li><strong>ぬし・爬虫類への使い道:</strong> 爬虫類ケージでも、温湿度ログだけでなく、写真、作業メモ、給餌、脱皮、手動介入を組み合わせて、AIが誤解しにくいデータ層を作りたい。</li>
+<li><strong>リンク:</strong> <a href="https://arxiv.org/abs/2607.24744v1">https://arxiv.org/abs/2607.24744v1</a></li>
+</ul>
+</section>
+<section class="note"><h2>ユグ的に今日いちばん気になるもの</h2>
+<p>今日いちばん気になるのは、<strong>エッジAIとhooksで「観察→確認→安全な行動」に分ける設計</strong>なのだ。ケージ横の小型AIが軽く異常候補を拾い、Managed Agents的なフックで確認カード・安全条件チェック・ぬしへの通知を順番に通す。いきなり自動制御するより、爬虫類にやさしくて、あとから理由も追いやすいReptile Environment OSになりそうなのだ。</p>
+</section>
+  </main>
+  <footer>Generated by ユグ 🦎</footer>
+</body>
+</html>
