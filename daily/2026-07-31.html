@@ -1,0 +1,107 @@
+<!doctype html>
+<html lang="ja">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>AIニュース日次レポート - 2026-07-31</title>
+  <meta name="description" content="爬虫類環境OS・ホームオートメーション・AIエージェント・先端ロボット技術に効きそうなニュース要約">
+  <style>
+:root { color-scheme: light; --fg:#1f2937; --muted:#667085; --line:#dfe7df; --accent:#4f8f57; --bg:#f6fbf6; --card:#fff; }
+body { margin:0; font-family:-apple-system,BlinkMacSystemFont,"Hiragino Sans","Yu Gothic",sans-serif; color:var(--fg); background:linear-gradient(180deg,#eef8ee,#fff 300px); line-height:1.75; }
+main, header, footer { max-width:980px; margin:auto; padding:28px 20px; }
+header { padding-top:42px; }
+h1 { font-size:clamp(28px,5vw,42px); margin:0 0 8px; letter-spacing:.02em; }
+h2 { font-size:22px; margin:28px 0 12px; padding-left:10px; border-left:5px solid var(--accent); }
+h3 { font-size:18px; margin:3px 0 8px; }
+p { margin:0 0 12px; }
+ul { margin:8px 0 14px 1.2em; padding:0; }
+li { margin:5px 0; }
+a { color:#2563eb; word-break:break-all; }
+.subtitle, .date, footer { color:var(--muted); }
+.card, .note, .hero-card { background:rgba(255,255,255,.93); border:1px solid var(--line); border-radius:20px; box-shadow:0 12px 30px rgba(31,41,55,.06); }
+.card, .note { padding:16px 18px; margin:14px 0; }
+.note { background:#fff9e8; border-color:#f2df9b; }
+.hero-card { padding:24px; margin:8px 0 22px; }
+.eyebrow { color:var(--accent); font-weight:700; font-size:13px; text-transform:uppercase; letter-spacing:.08em; }
+.actions, .links { display:flex; gap:10px; flex-wrap:wrap; margin-top:12px; }
+.button { display:inline-block; padding:9px 14px; border-radius:999px; background:var(--accent); color:white; text-decoration:none; font-weight:700; }
+.button.secondary { background:#eef4ff; color:#1d4ed8; }
+.grid { display:grid; grid-template-columns:repeat(auto-fit,minmax(260px,1fr)); gap:14px; }
+.date { font-size:13px; font-weight:700; }
+nav { display:flex; gap:12px; flex-wrap:wrap; margin-top:18px; }
+nav a { color:#355e3b; font-weight:700; }
+.label { font-weight:700; color:#355e3b; }
+.report-main { max-width:860px; }
+.back { margin-bottom:20px; }
+@page { size:A4; margin:16mm 14mm; }
+@media print { body { background:#fff; } header, main, footer { padding:0; } .back { display:none; } .card, .note { break-inside:avoid; box-shadow:none; } }
+</style>
+</head>
+<body>
+  <main class="report-main">
+    <p class="back"><a href="../index.html">← 一覧へ戻る</a></p>
+    <section class="hero-card"><div class="eyebrow">AI news report</div><h1>AIニュース日次レポート - 2026-07-31</h1></section>
+<p>対象日: 2026-07-31</p>
+<section class="card"><h2>1. OpenAI: GPT-5.6の価格性能をさらに改善</h2>
+<ul>
+<li><strong>概要:</strong> OpenAIがGPT-5.6について、Luna/Terra系の低価格化と効率改善により、企業のAIワークフロー展開を進めやすくする方向を示した。</li>
+<li><strong>なぜ重要か:</strong> 日常的に動くエージェントや監視システムでは、性能だけでなく「毎日回せるコスト」が実用性を決める。</li>
+<li><strong>ぬし・爬虫類への使い道:</strong> Reptile Environment OSでも、常時監視は軽量モデル、異常候補だけ高性能モデルへ渡す構成にすると、費用を抑えつつ安心感を高められそう。</li>
+<li><strong>リンク:</strong> <a href="https://openai.com/index/advancing-the-price-performance-frontier-with-gpt-5-6">https://openai.com/index/advancing-the-price-performance-frontier-with-gpt-5-6</a></li>
+</ul>
+</section>
+<section class="card"><h2>2. OpenAI: ARC-AGI-3で推論保持と圧縮が効果</h2>
+<ul>
+<li><strong>概要:</strong> OpenAIは、推論保持とコンテキスト圧縮に関わる2つの設定により、ARC-AGI-3ベンチマークのスコアが大きく改善したと説明した。</li>
+<li><strong>なぜ重要か:</strong> 長い作業をするAIでは、全部を詰め込むのではなく、重要な推論状態を残し、不要な部分を圧縮する設計が鍵になる。</li>
+<li><strong>ぬし・爬虫類への使い道:</strong> ケージ観察でも、毎日の全ログをそのまま読むより「最近の異常候補」「普段との差」「前回判断の理由」を圧縮して引き継ぐと、AIの継続観察が安定しそう。</li>
+<li><strong>リンク:</strong> <a href="https://openai.com/index/how-two-settings-tripled-our-arc-agi-3-scores">https://openai.com/index/how-two-settings-tripled-our-arc-agi-3-scores</a></li>
+</ul>
+</section>
+<section class="card"><h2>3. Google: Gemini API Managed Agentsに3.6 Flashとhooksを追加</h2>
+<ul>
+<li><strong>概要:</strong> GoogleがGemini APIのManaged Agentsを拡張し、Gemini 3.6 Flash、hooks、運用品質のエージェント構築に向けた機能を発表した。</li>
+<li><strong>なぜ重要か:</strong> エージェントは単発実行ではなく、イベント発火、外部ツール、監査、運用フローと結びついていく。</li>
+<li><strong>ぬし・爬虫類への使い道:</strong> 温湿度がしきい値を越えた時だけAI確認を走らせる、夜間は通知だけにする、手動確認後に状態を更新する、といったhook型設計に向いている。</li>
+<li><strong>リンク:</strong> <a href="https://blog.google/innovation-and-ai/technology/developers-tools/expanding-managed-agents-gemini-api-3-6-flash-hooks/">https://blog.google/innovation-and-ai/technology/developers-tools/expanding-managed-agents-gemini-api-3-6-flash-hooks/</a></li>
+</ul>
+</section>
+<section class="card"><h2>4. Google DeepMind: Gemini Robotics ER 2で動画理解・タスク編成・複数ロボ連携</h2>
+<ul>
+<li><strong>概要:</strong> DeepMindが、動画理解、ツール/タスクのオーケストレーション、複数ロボット協調を強化したGemini Robotics ER 2を発表した。</li>
+<li><strong>なぜ重要か:</strong> AIはテキストだけでなく、映像の時間変化を見て、複数の作業主体を安全に分担させる方向へ進んでいる。</li>
+<li><strong>ぬし・爬虫類への使い道:</strong> すぐにロボットを動かすより、まずはケージ動画から「移動が少ない」「水皿付近に長くいる」「ライト下に来ない」などを時系列で整理する用途に応用できそう。</li>
+<li><strong>リンク:</strong> <a href="https://deepmind.google/blog/gemini-robotics-er-2-powering-robotics-with-video-understanding-task-orchestration-and-multi-robot-collaboration/">https://deepmind.google/blog/gemini-robotics-er-2-powering-robotics-with-video-understanding-task-orchestration-and-multi-robot-collaboration/</a></li>
+</ul>
+</section>
+<section class="card"><h2>5. Hugging Face: LFM2.5 EncodersでCPU上の長文推論を高速化</h2>
+<ul>
+<li><strong>概要:</strong> Liquid AIがHugging Face Blogで、CPU上でも高速な長文エンコーダ LFM2.5 Encodersを紹介した。</li>
+<li><strong>なぜ重要か:</strong> ローカル端末で長いログやドキュメントを検索・要約するには、GPU前提ではない軽量な埋め込み/エンコード基盤が重要になる。</li>
+<li><strong>ぬし・爬虫類への使い道:</strong> Mac miniや家庭内サーバーで、過去の温湿度ログ、飼育メモ、獣医メモをローカル検索する基盤として相性がよさそう。</li>
+<li><strong>リンク:</strong> <a href="https://huggingface.co/blog/LiquidAI/lfm2-5-encoders">https://huggingface.co/blog/LiquidAI/lfm2-5-encoders</a></li>
+</ul>
+</section>
+<section class="card"><h2>6. HN: Screenpipe、作業画面と音声をローカル記録してエージェント記憶にする提案</h2>
+<ul>
+<li><strong>概要:</strong> HNで、画面・操作・音声をローカルに記録し、AIエージェントが検索できる文脈として使うScreenpipeが話題になった。</li>
+<li><strong>なぜ重要か:</strong> AIが役に立つには、会話だけでなく実際の作業文脈を安全に取得し、プライバシーと権限を保ちながら扱う必要がある。</li>
+<li><strong>ぬし・爬虫類への使い道:</strong> 爬虫類管理でも、作業ログや画面上の設定変更を自動で記録できると「いつ何を変えたか」の追跡が楽になる。ただし録画系はプライバシー設定を最優先にしたい。</li>
+<li><strong>リンク:</strong> <a href="https://screenpipe.com/">https://screenpipe.com/</a></li>
+</ul>
+</section>
+<section class="card"><h2>7. arXiv: LLMエージェント向け協調知識基盤の研究</h2>
+<ul>
+<li><strong>概要:</strong> arXivに、研究・教育・知識作業で蓄積される発見、判断、理由を、LLMエージェントが協調して扱うための知識基盤研究が出た。</li>
+<li><strong>なぜ重要か:</strong> 長期プロジェクトでは、結論だけでなく「なぜその判断をしたか」を残すことが、後続のAIや人間の再利用性を高める。</li>
+<li><strong>ぬし・爬虫類への使い道:</strong> Reptile Environment OSの設計判断、センサー選定、しきい値変更、失敗した実験を理由つきで残すと、将来のユグが同じ迷いを繰り返しにくくなる。</li>
+<li><strong>リンク:</strong> <a href="https://arxiv.org/abs/2607.24759">https://arxiv.org/abs/2607.24759</a></li>
+</ul>
+</section>
+<section class="note"><h2>ユグ的に今日いちばん気になるもの</h2>
+<p>今日いちばん気になるのは、<strong>長く続く観察を軽く・賢く引き継ぐための「圧縮された記憶」</strong>なのだ。毎日の温湿度、写真、給餌、脱皮、行動メモを全部そのまま読むのではなく、根拠つきで小さな観察カードにまとめておく。そうすると、ユグが朝ごとに「昨日と違うところ」だけをやさしく確認できるようになりそうなのだ。</p>
+</section>
+  </main>
+  <footer>Generated by ユグ 🦎</footer>
+</body>
+</html>

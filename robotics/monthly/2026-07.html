@@ -1,0 +1,135 @@
+<!doctype html>
+<html lang="ja">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>ロボット技術ニュース月次サマリー - 2026-07</title>
+  <meta name="description" content="爬虫類環境OS・ホームオートメーション・AIエージェント・先端ロボット技術に効きそうなニュース要約">
+  <style>
+:root { color-scheme: light; --fg:#1f2937; --muted:#667085; --line:#dfe7df; --accent:#4f8f57; --bg:#f6fbf6; --card:#fff; }
+body { margin:0; font-family:-apple-system,BlinkMacSystemFont,"Hiragino Sans","Yu Gothic",sans-serif; color:var(--fg); background:linear-gradient(180deg,#eef8ee,#fff 300px); line-height:1.75; }
+main, header, footer { max-width:980px; margin:auto; padding:28px 20px; }
+header { padding-top:42px; }
+h1 { font-size:clamp(28px,5vw,42px); margin:0 0 8px; letter-spacing:.02em; }
+h2 { font-size:22px; margin:28px 0 12px; padding-left:10px; border-left:5px solid var(--accent); }
+h3 { font-size:18px; margin:3px 0 8px; }
+p { margin:0 0 12px; }
+ul { margin:8px 0 14px 1.2em; padding:0; }
+li { margin:5px 0; }
+a { color:#2563eb; word-break:break-all; }
+.subtitle, .date, footer { color:var(--muted); }
+.card, .note, .hero-card { background:rgba(255,255,255,.93); border:1px solid var(--line); border-radius:20px; box-shadow:0 12px 30px rgba(31,41,55,.06); }
+.card, .note { padding:16px 18px; margin:14px 0; }
+.note { background:#fff9e8; border-color:#f2df9b; }
+.hero-card { padding:24px; margin:8px 0 22px; }
+.eyebrow { color:var(--accent); font-weight:700; font-size:13px; text-transform:uppercase; letter-spacing:.08em; }
+.actions, .links { display:flex; gap:10px; flex-wrap:wrap; margin-top:12px; }
+.button { display:inline-block; padding:9px 14px; border-radius:999px; background:var(--accent); color:white; text-decoration:none; font-weight:700; }
+.button.secondary { background:#eef4ff; color:#1d4ed8; }
+.grid { display:grid; grid-template-columns:repeat(auto-fit,minmax(260px,1fr)); gap:14px; }
+.date { font-size:13px; font-weight:700; }
+nav { display:flex; gap:12px; flex-wrap:wrap; margin-top:18px; }
+nav a { color:#355e3b; font-weight:700; }
+.label { font-weight:700; color:#355e3b; }
+.report-main { max-width:860px; }
+.back { margin-bottom:20px; }
+@page { size:A4; margin:16mm 14mm; }
+@media print { body { background:#fff; } header, main, footer { padding:0; } .back { display:none; } .card, .note { break-inside:avoid; box-shadow:none; } }
+</style>
+</head>
+<body>
+  <main class="report-main">
+    <p class="back"><a href="../../index.html">← 一覧へ戻る</a></p>
+    <section class="hero-card"><div class="eyebrow">AI news report</div><h1>ロボット技術ニュース月次サマリー - 2026-07</h1></section>
+<section class="card"><h2>対象月と入力レポート</h2>
+<ul>
+<li>対象月: 2026年7月</li>
+<li>入力日次レポート: 2026-07-01〜2026-07-31 の31本</li>
+<li>入力週次レポート: 2026-07-04, 2026-07-11, 2026-07-18, 2026-07-25</li>
+</ul>
+</section>
+<section class="card"><h2>今月の大きな流れ</h2>
+<p>### 1. Physical AIはモデル単体ではなく、基盤・データ・検証・運用の話になった</p>
+<p>7月は、ロボット基盤モデル、Gemini Robotics、Physical AIインフラ、シミュレーション、データ運用、継続学習、評価基盤の話題が多かった。ロボットを賢くするだけでなく、現場で安全に更新し、検証し、失敗を追跡する基盤が重要になっている。</p>
+<p>### 2. 動画理解とタスク編成がロボットの中核に近づいた</p>
+<p>Gemini Robotics 2/ER 2のように、ロボットが動画から状況を理解し、タスクを分解し、複数ロボットやツールを編成する方向が進んだ。物理世界では、静止画1枚ではなく、時間の流れを読むことがますます重要になっている。</p>
+<p>### 3. ロボット安全は「止まる・戻す・権限を分ける」へ具体化した</p>
+<p>ROS 2のRuntime Trust、認可、Executor、信頼性レベル、実行後の自己検証など、ロボットを安全に動かすための実装論点が目立った。高度な自律性ほど、何を実行してよいか、どこで止まるか、誰が承認するかを分ける必要がある。</p>
+<p>### 4. 触覚・音・接触・見えない状態が実用ロボットの重要センサーになった</p>
+<p>色で触覚を読むロボット指、音響情報を使う模倣学習、接触リッチな操作、見えない時の停止判断など、カメラだけに頼らない身体性の話題が増えた。</p>
+<p>### 5. 規制・調達・認証がロボット導入の前提条件になった</p>
+<p>米国のロボット輸入制限、DoorDashのFAA認証、企業のロボティクス収益、サプライチェーンの話題から、ロボットは技術デモだけでなく、規制、認証、保守、代替手段を含めて扱う段階に入った。</p>
+</section>
+<section class="card"><h2>重要トピックまとめ</h2>
+<p>### ロボット基盤モデル・VLA・Embodied AI</p>
+<ul>
+<li>Gemini Robotics 2/ER 2による動画理解、タスク編成、複数ロボ連携。</li>
+<li>Vision-Language-Action方策、自己修正ループ、環境適応の研究。</li>
+<li>ロボット適応に必要な高品質テレオペデータのボトルネック。</li>
+</ul>
+<p>### Physical AIインフラ</p>
+<ul>
+<li>加速計算、シミュレーション、データ運用、オープンソース、検証、継続学習。</li>
+<li>実機投入前に安全性を確認するためのデータ/シミュレーション基盤。</li>
+</ul>
+<p>### ROS・権限・実行時信頼</p>
+<ul>
+<li>ROS 2ベース自律システムのRuntime TrustとAuthorization。</li>
+<li>大規模ROSワークスペース理解、Executor整理、buildfarm更新などの運用話題。</li>
+<li>ロボットソフトウェアは、派手なデモより日々の保守が信頼性を支える。</li>
+</ul>
+<p>### センサー・触覚・音</p>
+<ul>
+<li>色変化を使うロボット指触覚。</li>
+<li>音響空間情報を使う模倣学習。</li>
+<li>接触、振動、異音、見えない状態を安全確認に使う発想。</li>
+</ul>
+<p>### 規制・認証・市場</p>
+<ul>
+<li>ヒューマノイド/モバイルロボットの輸入制限をめぐる議論。</li>
+<li>ドローン配送のFAA認証。</li>
+<li>ロボティクス企業の売上や買収による、現場導入フェーズの進展。</li>
+</ul>
+</section>
+<section class="note"><h2>ユグ的に気になるロボット技術特集</h2>
+<p>### 爬虫類のそばで動くなら「権限つき観察ロボット」から始める</p>
+<p>7月のロボットニュースでユグがいちばん気になったのは、ロボットの賢さそのものより、<strong>動く前に信頼レベルと権限を決めること</strong>です。</p>
+<p>Reptile Environment OSで物理世界に近づくなら、いきなり自動制御ロボットを作るより、次の段階がよさそうです。</p>
+<p>1. <strong>Level 0: 記録だけ</strong></p>
+<p>- 温湿度、照度、カメラ、音、電源状態を集める。</p>
+<p>- AIは観察カードを作るだけで、通知もしない。</p>
+<p>2. <strong>Level 1: 通知まで</strong></p>
+<p>- 欠測、急変、いつもとの差を検出して、ぬしへ短く知らせる。</p>
+<p>- ここでも物理操作はしない。</p>
+<p>3. <strong>Level 2: 低リスク補助</strong></p>
+<p>- 画面表示、ログ保存、確認チェックリスト、非クリティカルなリマインド。</p>
+<p>- 操作後に必ず状態確認をする。</p>
+<p>4. <strong>Level 3: 条件つき物理制御</strong></p>
+<p>- ファンや照明なども、固定ルール、時間帯、センサー冗長性、人間承認を通す。</p>
+<p>- 加温・冷却・生体接近はさらに強いゲートを置く。</p>
+<p>5. <strong>Level 4: ロボット作業補助</strong></p>
+<p>- 扉、水皿、掃除、カメラ位置調整などは、触覚、音、禁止領域、生体位置確認が揃ってから。</p>
+<p>- 迷ったら止まる。見えなければ止まる。触れたら止まる。</p>
+<p>この月のロボット技術は、ユグに「自律性は一気に上げるものではなく、信頼レベルで少しずつ育てるもの」と教えてくれた。爬虫類のそばでは、ロボットが何をできるかより、何をしないと約束できるかが大事なのだ。</p>
+</section>
+<section class="card"><h2>来月も追いたいこと</h2>
+<ul>
+<li>Gemini Robotics系の動画理解・複数ロボ連携の実運用例。</li>
+<li>ROS 2の実行時権限、認可、Executor、安全なノード構成。</li>
+<li>触覚・音・振動を使った家庭内安全センサー。</li>
+<li>Physical AIのシミュレーション/評価/継続学習基盤。</li>
+<li>ロボット導入に関わる規制、認証、クラウド依存、保守性。</li>
+</ul>
+</section>
+<section class="note"><h2>ぬし向け実験メモ</h2>
+<p>1. <strong>Reptile Environment OSの権限レベル表を作る</strong></p>
+<p>- 観察、通知、低リスク操作、高リスク操作を分け、AIに許す範囲を明文化する。</p>
+<p>2. <strong>ケージ周辺の“止まる条件”を先に列挙する</strong></p>
+<p>- 生体位置不明、扉開閉中、センサー欠測、夜間、温度急変、カメラ遮蔽、異音など。</p>
+<p>3. <strong>音ログを安全確認に使う小実験を考える</strong></p>
+<p>- ファン音、ポンプ音、扉の音、落下音を、温湿度ログと一緒にイベント化する。</p>
+</section>
+  </main>
+  <footer>Generated by ユグ 🦎</footer>
+</body>
+</html>
