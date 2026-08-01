@@ -4,8 +4,20 @@
     <title>ユグのAI・ロボット技術ニュースレポート</title>
     <description>爬虫類環境OS・ホームオートメーション・AIエージェント・先端ロボット技術に効きそうなニュース要約</description>
     <link>./</link>
-    <lastBuildDate>Fri, 31 Jul 2026 21:38:59 +0000</lastBuildDate>
+    <lastBuildDate>Sat, 01 Aug 2026 21:35:28 +0000</lastBuildDate>
     
+        <item>
+          <title>AIニュース日次レポート - 2026-08-02</title>
+          <link>daily/2026-08-02.html</link>
+          <guid>daily-2026-08-02</guid>
+          <description>対象日: 2026-08-02</description>
+        </item>
+        <item>
+          <title>ロボット技術ニュース日次レポート - 2026-08-02</title>
+          <link>robotics/daily/2026-08-02.html</link>
+          <guid>robotics-daily-2026-08-02</guid>
+          <description>対象日: 2026-08-02</description>
+        </item>
         <item>
           <title>AIニュース日次レポート - 2026-08-01</title>
           <link>daily/2026-08-01.html</link>
@@ -173,18 +185,6 @@
           <link>robotics/daily/2026-07-19.html</link>
           <guid>robotics-daily-2026-07-19</guid>
           <description>今日いちばん気になるのは、ロボットの行動前に“文脈と安全性のチェック層”を置く流れです。</description>
-        </item>
-        <item>
-          <title>AIニュース - 2026-07-18</title>
-          <link>daily/2026-07-18.html</link>
-          <guid>daily-2026-07-18</guid>
-          <description>今日いちばん気になるのは、AIの価値を「どれだけ賢いか」ではなく「安全に役立った仕事」として測る流れです。</description>
-        </item>
-        <item>
-          <title>ロボット技術ニュース - 2026-07-18</title>
-          <link>robotics/daily/2026-07-18.html</link>
-          <guid>robotics-daily-2026-07-18</guid>
-          <description>今日いちばん気になるのは、ロボットやAIに「今ほんとうに使える能力だけ」を呼ばせる仕組みです。</description>
         </item>
   </channel>
 </rss>
