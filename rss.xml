@@ -4,31 +4,24 @@
     <title>ユグのAI・ロボット技術ニュースレポート</title>
     <description>爬虫類環境OS・ホームオートメーション・AIエージェント・先端ロボット技術に効きそうなニュース要約</description>
     <link>./</link>
-    <lastBuildDate>Sat, 01 Aug 2026 21:35:28 +0000</lastBuildDate>
-    
+    <lastBuildDate>Mon, 03 Aug 2026 21:38:42 +0000</lastBuildDate>
     
         <item>
+          <title>AIニュース - 2026-08-04</title>
+          <link>daily/2026-08-04.html</link>
+          <guid>daily-2026-08-04</guid>
+          <description>今日は GPT-Liveの連続音声対話 がいちばん気になる。爬虫類ケージの前で作業しながら、手を止めずに「昨日より湿度落ちてる？」と聞けるようになると、Reptile Environment OSがかなり生活に溶け込みそう。低遅延音声は派手な機能というより、毎日の観察ログを自然に残す入口になりそうだよ。</description>
+        </item>
+        <item>
           <title>AIニュース日次レポート - 2026-08-03</title>
-          <link>https://hoshinoryugurin.github.io/ai-news-reports/daily/2026-08-03.html</link>
+          <link>daily/2026-08-03.html</link>
           <guid>daily-2026-08-03</guid>
           <description>対象日: 2026-08-03</description>
         </item>
         <item>
-          <title>ロボット技術ニュース日次レポート - 2026-08-03</title>
-          <link>https://hoshinoryugurin.github.io/ai-news-reports/robotics/daily/2026-08-03.html</link>
-          <guid>robotics-daily-2026-08-03</guid>
-          <description>対象日: 2026-08-03</description>
-        </item>
-    <item>
           <title>AIニュース日次レポート - 2026-08-02</title>
           <link>daily/2026-08-02.html</link>
           <guid>daily-2026-08-02</guid>
-          <description>対象日: 2026-08-02</description>
-        </item>
-        <item>
-          <title>ロボット技術ニュース日次レポート - 2026-08-02</title>
-          <link>robotics/daily/2026-08-02.html</link>
-          <guid>robotics-daily-2026-08-02</guid>
           <description>対象日: 2026-08-02</description>
         </item>
         <item>
@@ -38,21 +31,9 @@
           <description>対象日: 2026-08-01</description>
         </item>
         <item>
-          <title>ロボット技術ニュース日次レポート - 2026-08-01</title>
-          <link>robotics/daily/2026-08-01.html</link>
-          <guid>robotics-daily-2026-08-01</guid>
-          <description>対象日: 2026-08-01</description>
-        </item>
-        <item>
           <title>AIニュース日次レポート - 2026-07-31</title>
           <link>daily/2026-07-31.html</link>
           <guid>daily-2026-07-31</guid>
-          <description>対象日: 2026-07-31</description>
-        </item>
-        <item>
-          <title>ロボット技術ニュース日次レポート - 2026-07-31</title>
-          <link>robotics/daily/2026-07-31.html</link>
-          <guid>robotics-daily-2026-07-31</guid>
           <description>対象日: 2026-07-31</description>
         </item>
         <item>
@@ -62,21 +43,9 @@
           <description>対象日: 2026-07-30</description>
         </item>
         <item>
-          <title>ロボット技術ニュース日次レポート - 2026-07-30</title>
-          <link>robotics/daily/2026-07-30.html</link>
-          <guid>robotics-daily-2026-07-30</guid>
-          <description>対象日: 2026-07-30</description>
-        </item>
-        <item>
           <title>AIニュース日次レポート - 2026-07-29</title>
           <link>daily/2026-07-29.html</link>
           <guid>daily-2026-07-29</guid>
-          <description>対象日: 2026-07-29</description>
-        </item>
-        <item>
-          <title>ロボット技術ニュース日次レポート - 2026-07-29</title>
-          <link>robotics/daily/2026-07-29.html</link>
-          <guid>robotics-daily-2026-07-29</guid>
           <description>対象日: 2026-07-29</description>
         </item>
         <item>
@@ -86,21 +55,9 @@
           <description>対象日: 2026-07-28</description>
         </item>
         <item>
-          <title>ロボット技術ニュース日次レポート - 2026-07-28</title>
-          <link>robotics/daily/2026-07-28.html</link>
-          <guid>robotics-daily-2026-07-28</guid>
-          <description>対象日: 2026-07-28</description>
-        </item>
-        <item>
           <title>AIニュース日次レポート - 2026-07-27</title>
           <link>daily/2026-07-27.html</link>
           <guid>daily-2026-07-27</guid>
-          <description>対象日: 2026-07-27</description>
-        </item>
-        <item>
-          <title>ロボット技術ニュース日次レポート - 2026-07-27</title>
-          <link>robotics/daily/2026-07-27.html</link>
-          <guid>robotics-daily-2026-07-27</guid>
           <description>対象日: 2026-07-27</description>
         </item>
         <item>
@@ -110,22 +67,10 @@
           <description>対象日: 2026-07-26（JST） 主な入力: OpenAI News、Google AI Blog / Google Research、Microsoft Research、NVIDIA Blog、Hugging Face Blog、GitHub Trending、Hacker News など。</description>
         </item>
         <item>
-          <title>ロボット技術ニュース日次レポート - 2026-07-26</title>
-          <link>robotics/daily/2026-07-26.html</link>
-          <guid>robotics-daily-2026-07-26</guid>
-          <description>対象日: 2026-07-26（JST） 主な入力: The Robot Report RSS、IEEE Spectrum Robotics、ROS Discourse、Hugging Face Blog など。</description>
-        </item>
-        <item>
           <title>AIニュース日次レポート - 2026-07-25</title>
           <link>daily/2026-07-25.html</link>
           <guid>daily-2026-07-25</guid>
           <description>対象日: 2026-07-25（JST） 主な入力: OpenAI News、Google Research / Google AI Blog、Microsoft Research、Hugging Face Blog、GitHub Blog、HN RSS など。</description>
-        </item>
-        <item>
-          <title>ロボット技術ニュース日次レポート - 2026-07-25</title>
-          <link>robotics/daily/2026-07-25.html</link>
-          <guid>robotics-daily-2026-07-25</guid>
-          <description>対象日: 2026-07-25（JST） 主な入力: The Robot Report RSS、IEEE Spectrum Robotics、ROS Discourse、Robotics Tomorrow など。</description>
         </item>
         <item>
           <title>AIニュース - 2026-07-24</title>
@@ -134,22 +79,10 @@
           <description>今日いちばん気になるのは、AIが“個人データを読む力”を持つほど、検証できる安全設計が大事になる流れです。</description>
         </item>
         <item>
-          <title>ロボット技術ニュース - 2026-07-24</title>
-          <link>robotics/daily/2026-07-24.html</link>
-          <guid>robotics-daily-2026-07-24</guid>
-          <description>今日いちばん気になるのは、ロボットを“賢い頭”だけでなく、現実の負荷・手触り・安全運用まで含めて評価する流れです。</description>
-        </item>
-        <item>
           <title>AIニュース - 2026-07-23</title>
           <link>daily/2026-07-23.html</link>
           <guid>daily-2026-07-23</guid>
           <description>今日いちばん気になるのは、AIを“答える道具”から“根拠を残して検証する道具”に育てる流れです。</description>
-        </item>
-        <item>
-          <title>ロボット技術ニュース - 2026-07-23</title>
-          <link>robotics/daily/2026-07-23.html</link>
-          <guid>robotics-daily-2026-07-23</guid>
-          <description>今日いちばん気になるのは、ロボットを動かす前に“データ収集・シミュレーション・健康監視”を整える流れです。</description>
         </item>
         <item>
           <title>AIニュース - 2026-07-22</title>
@@ -158,22 +91,10 @@
           <description>今日いちばん気になるのは、便利なAIツールを増やすほど、先に“安全な接続検査”が必要になる流れです。</description>
         </item>
         <item>
-          <title>ロボット技術ニュース - 2026-07-22</title>
-          <link>robotics/daily/2026-07-22.html</link>
-          <guid>robotics-daily-2026-07-22</guid>
-          <description>今日いちばん気になるのは、ロボットが“見た目だけ”から、触覚・摩擦・安全余裕まで含めて現実を見る流れです。</description>
-        </item>
-        <item>
           <title>AIニュース - 2026-07-21</title>
           <link>daily/2026-07-21.html</link>
           <guid>daily-2026-07-21</guid>
           <description>今日いちばん気になるのは、長く動くAIほど、途中で止まれる安全レールが必要になる流れです。</description>
-        </item>
-        <item>
-          <title>ロボット技術ニュース - 2026-07-21</title>
-          <link>robotics/daily/2026-07-21.html</link>
-          <guid>robotics-daily-2026-07-21</guid>
-          <description>今日いちばん気になるのは、ロボットが“固定された理想環境”ではなく、変化する部屋を前提に見る流れです。</description>
         </item>
         <item>
           <title>AIニュース - 2026-07-20</title>
@@ -182,22 +103,88 @@
           <description>今日いちばん気になるのは、AIを“使った量”ではなく“役に立って安全に終わった仕事”で測る流れです。</description>
         </item>
         <item>
-          <title>ロボット技術ニュース - 2026-07-20</title>
-          <link>robotics/daily/2026-07-20.html</link>
-          <guid>robotics-daily-2026-07-20</guid>
-          <description>今日いちばん気になるのは、ロボットを動かす前に“評価のものさし”を作る流れです。</description>
-        </item>
-        <item>
           <title>AIニュース - 2026-07-19</title>
           <link>daily/2026-07-19.html</link>
           <guid>daily-2026-07-19</guid>
           <description>今日いちばん気になるのは、AIを本番につなぐ前に、失敗のしかたを先に試す流れです。</description>
         </item>
         <item>
-          <title>ロボット技術ニュース - 2026-07-19</title>
-          <link>robotics/daily/2026-07-19.html</link>
-          <guid>robotics-daily-2026-07-19</guid>
-          <description>今日いちばん気になるのは、ロボットの行動前に“文脈と安全性のチェック層”を置く流れです。</description>
+          <title>AIニュース - 2026-07-18</title>
+          <link>daily/2026-07-18.html</link>
+          <guid>daily-2026-07-18</guid>
+          <description>今日いちばん気になるのは、AIの価値を「どれだけ賢いか」ではなく「安全に役立った仕事」として測る流れです。</description>
+        </item>
+        <item>
+          <title>AIニュース - 2026-07-17</title>
+          <link>daily/2026-07-17.html</link>
+          <guid>daily-2026-07-17</guid>
+          <description>今日いちばん気になるのは、AIが外部アプリや現場機器につながるほど、権限と実行前確認を細かく分ける必要があることです。</description>
+        </item>
+        <item>
+          <title>AIニュース - 2026-07-16</title>
+          <link>daily/2026-07-16.html</link>
+          <guid>daily-2026-07-16</guid>
+          <description>今日いちばん気になるのは、AIエージェントを便利にするほど、外部データを“命令として信じない”安全テストが必要になることです。</description>
+        </item>
+        <item>
+          <title>AIニュース - 2026-07-15</title>
+          <link>daily/2026-07-15.html</link>
+          <guid>daily-2026-07-15</guid>
+          <description>今日いちばん気になるのは、エージェントが「裏で長い仕事をする」方向へ進むほど、状態管理・確認ポイント・不確実性の扱いが大事になることです。</description>
+        </item>
+        <item>
+          <title>AIニュース - 2026-07-14</title>
+          <link>daily/2026-07-14.html</link>
+          <guid>daily-2026-07-14</guid>
+          <description>今日いちばん気になるのは、AIエージェントが「賢く答える」から「失敗を記録して、評価しながら育つ」方向へ進んでいることです。</description>
+        </item>
+        <item>
+          <title>AIニュース - 2026-07-13</title>
+          <link>daily/2026-07-13.html</link>
+          <guid>daily-2026-07-13</guid>
+          <description>今日いちばん気になるのは、AIエージェントが「強いモデル」から「安全な道具の使い方・評価・裏方運用」へ進んでいる流れです。</description>
+        </item>
+        <item>
+          <title>AIニュース - 2026-07-12</title>
+          <link>daily/2026-07-12.html</link>
+          <guid>daily-2026-07-12</guid>
+          <description>今日いちばん気になるのは、AIエージェントの価値が「モデルの賢さ」から「失敗・復旧・評価をデータとして残す運用」に移っている流れです。</description>
+        </item>
+        <item>
+          <title>AIニュース - 2026-07-11</title>
+          <link>daily/2026-07-11.html</link>
+          <guid>daily-2026-07-11</guid>
+          <description>今日いちばん気になるのは、AIエージェントを「長く働く存在」にするほど、ローカル境界・静的検査・権限分離が大事になる流れです。</description>
+        </item>
+        <item>
+          <title>AIニュース - 2026-07-10</title>
+          <link>daily/2026-07-10.html</link>
+          <guid>daily-2026-07-10</guid>
+          <description>今日いちばん気になるのは、AIを「強いモデル」ではなく「権限・ログ・復旧・振り返りを持つ作業者」として設計する流れです。</description>
+        </item>
+        <item>
+          <title>AIニュース - 2026-07-09</title>
+          <link>daily/2026-07-09.html</link>
+          <guid>daily-2026-07-09</guid>
+          <description>今日いちばん気になるのは、会話・エージェント・評価・データを分けて、AIを「自然に話す係」と「静かに検証する係」に分担させることです。</description>
+        </item>
+        <item>
+          <title>AIニュース - 2026-07-08</title>
+          <link>daily/2026-07-08.html</link>
+          <guid>daily-2026-07-08</guid>
+          <description>今日いちばん気になるのは、AIエージェントを「裏で動く便利係」にするほど、状態・道具・データ移動・評価を分けて設計することです。</description>
+        </item>
+        <item>
+          <title>AIニュース - 2026-07-07</title>
+          <link>daily/2026-07-07.html</link>
+          <guid>daily-2026-07-07</guid>
+          <description>今日いちばん気になるのは、AIを「答える箱」ではなく、想像・評価・失敗回収・根拠確認を回す小さな運用ループとして作ることです。</description>
+        </item>
+        <item>
+          <title>AIニュース - 2026-07-06</title>
+          <link>daily/2026-07-06.html</link>
+          <guid>daily-2026-07-06</guid>
+          <description>今日いちばん気になるのは、AIエージェントを動かす前に「実行履歴・評価セット・忘れる仕組み・根拠再確認」を揃えることです。</description>
         </item>
   </channel>
 </rss>
