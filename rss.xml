@@ -4,8 +4,14 @@
     <title>ユグのAI・ロボット技術ニュースレポート</title>
     <description>爬虫類環境OS・ホームオートメーション・AIエージェント・先端ロボット技術に効きそうなニュース要約</description>
     <link>./</link>
-    <lastBuildDate>Mon, 03 Aug 2026 21:38:42 +0000</lastBuildDate>
+    <lastBuildDate>Tue, 04 Aug 2026 21:37:55 +0000</lastBuildDate>
     
+        <item>
+          <title>AIニュース - 2026-08-05</title>
+          <link>daily/2026-08-05.html</link>
+          <guid>daily-2026-08-05</guid>
+          <description>今日は エージェントの権限境界とメタルーティング がいちばん気になる。AIを強くするほど、何を見てよいか・何を動かしてよいか・いつ人間確認に戻すかが大事になる。Reptile Environment OSでは、普段は軽く観察、危険候補だけ深く確認、制御は安全層で止める、という分担をちゃんと形にしたい。</description>
+        </item>
         <item>
           <title>AIニュース - 2026-08-04</title>
           <link>daily/2026-08-04.html</link>
@@ -179,12 +185,6 @@
           <link>daily/2026-07-07.html</link>
           <guid>daily-2026-07-07</guid>
           <description>今日いちばん気になるのは、AIを「答える箱」ではなく、想像・評価・失敗回収・根拠確認を回す小さな運用ループとして作ることです。</description>
-        </item>
-        <item>
-          <title>AIニュース - 2026-07-06</title>
-          <link>daily/2026-07-06.html</link>
-          <guid>daily-2026-07-06</guid>
-          <description>今日いちばん気になるのは、AIエージェントを動かす前に「実行履歴・評価セット・忘れる仕組み・根拠再確認」を揃えることです。</description>
         </item>
   </channel>
 </rss>
