@@ -1,0 +1,97 @@
+<!doctype html><html lang="ja"><head><meta charset="utf-8"><title>AIニュース調査レポート 2026-08-07</title><style>
+@page { size: A4; margin: 16mm 14mm; }
+body {
+  font-family: -apple-system, BlinkMacSystemFont, "Hiragino Sans", "Hiragino Kaku Gothic ProN", "Yu Gothic", "Noto Sans CJK JP", sans-serif;
+  color: #202124;
+  line-height: 1.72;
+  font-size: 13.2px;
+  background: #fff;
+}
+.header {
+  border-radius: 18px;
+  padding: 20px 22px;
+  background: linear-gradient(135deg, #eef8ee, #eef4ff);
+  border: 1px solid #dfeadf;
+  margin-bottom: 18px;
+}
+h1 { font-size: 25px; margin: 0 0 6px; letter-spacing: .02em; }
+.subtitle { color: #5f6368; font-size: 12.5px; }
+h2 {
+  font-size: 17px;
+  margin: 20px 0 8px;
+  padding-left: 10px;
+  border-left: 5px solid #6aa36f;
+}
+ul { margin: 7px 0 12px 1.2em; padding: 0; }
+li { margin: 4px 0; }
+a { color: #1a73e8; word-break: break-all; }
+.card {
+  border: 1px solid #e5e7eb;
+  border-radius: 14px;
+  padding: 10px 14px;
+  margin: 10px 0 13px;
+  break-inside: avoid;
+  background: #fff;
+}
+.note {
+  background: #fff8e1;
+  border: 1px solid #f2df9b;
+  border-radius: 12px;
+  padding: 10px 14px;
+  margin-top: 14px;
+}
+.label { font-weight: 700; color: #355e3b; }
+.footer { color: #777; font-size: 11px; margin-top: 24px; }
+</style></head><body><div class="header"><h1>AIニュース日次レポート - 2026-08-07</h1><div class="subtitle">Daily AI news report for ぬし / Reptile Environment OS</div></div>
+<p>対象日: 2026-08-07</p>
+<section class="card"><h2>1. OpenAI: GPT-5.6 Sol改善とGPT-5.6 Luna無料枠拡大</h2>
+<ul>
+<li><strong>概要:</strong> OpenAIがChatGPT上のGPT-5.6 Solを改善し、精度・一貫性を高めたうえで、無料ユーザー向けにGPT-5.6 Lunaへのアクセスも拡大したと発表した。</li>
+<li><strong>なぜ重要か:</strong> 高性能モデルの利用枠が広がると、日常的な調査・文章化・簡易分析を「高価な特別作業」ではなく常時運用に組み込みやすくなる。</li>
+<li><strong>ぬし・爬虫類への使い道:</strong> Reptile Environment OSで、温湿度ログや給餌メモの説明文生成、異常時の仮説整理、日報作成をより安定して任せる候補になる。</li>
+<li><strong>リンク:</strong> <a href="https://openai.com/index/improving-gpt-5-6-sol-in-chatgpt">https://openai.com/index/improving-gpt-5-6-sol-in-chatgpt</a></li>
+</ul>
+</section>
+<section class="card"><h2>2. NVIDIA: Open World ModelsでPhysical AIを強化</h2>
+<ul>
+<li><strong>概要:</strong> NVIDIAが、Physical AI向けの「Open World Models」について紹介し、現実世界の複雑な状況を扱うモデル・シミュレーション基盤の重要性を強調した。</li>
+<li><strong>なぜ重要か:</strong> ロボットや自律システムでは、単なる画像認識よりも「状況を予測し、行動結果を見積もる」能力が重要になる。</li>
+<li><strong>ぬし・爬虫類への使い道:</strong> ケージ内カメラの映像から、個体の移動・休息・バスキング行動を時間軸で理解し、「このあと暑すぎる場所に留まりそう」などの予測につなげる発想になる。</li>
+<li><strong>リンク:</strong> <a href="https://blogs.nvidia.com/blog/open-world-models-physical-ai/">https://blogs.nvidia.com/blog/open-world-models-physical-ai/</a></li>
+</ul>
+</section>
+<section class="card"><h2>3. GitHub: Copilotアプリのスラッシュコマンド活用ガイド</h2>
+<ul>
+<li><strong>概要:</strong> GitHubがCopilotアプリで使えるスラッシュコマンドのガイドを公開し、開発作業をコマンド単位で整理する使い方を示した。</li>
+<li><strong>なぜ重要か:</strong> エージェントに自然文で丸投げするだけでなく、<code>/fix</code> や <code>/review</code> のように意図を明示するUIは、作業の再現性と安全性を上げやすい。</li>
+<li><strong>ぬし・爬虫類への使い道:</strong> Reptile Environment OSでも「/今日の異常確認」「/温湿度レポート」「/給餌メモ追加」のようなケア向けコマンドを用意すると、ぬしが迷わず操作できる。</li>
+<li><strong>リンク:</strong> <a href="https://github.blog/ai-and-ml/github-copilot/a-guide-to-slash-commands-in-the-github-copilot-app/">https://github.blog/ai-and-ml/github-copilot/a-guide-to-slash-commands-in-the-github-copilot-app/</a></li>
+</ul>
+</section>
+<section class="card"><h2>4. GitHub: 巨大なAI生成PRをレビュー可能なスタックに分割</h2>
+<ul>
+<li><strong>概要:</strong> GitHub Engineeringが、巨大なAI生成Pull Requestをレビューしやすい小さなスタックへ分ける実践を紹介した。</li>
+<li><strong>なぜ重要か:</strong> AIがコードを大量生成できるほど、人間が安全に確認できる粒度へ分割する設計が重要になる。</li>
+<li><strong>ぬし・爬虫類への使い道:</strong> センサー基盤、ダッシュボード、通知、AI分析などを一気に生成せず、「小さく見て、小さく戻せる」開発フローにする指針になる。</li>
+<li><strong>リンク:</strong> <a href="https://github.blog/engineering/turn-one-giant-ai-generated-pull-request-to-a-reviewable-stack/">https://github.blog/engineering/turn-one-giant-ai-generated-pull-request-to-a-reviewable-stack/</a></li>
+</ul>
+</section>
+<section class="card"><h2>5. arXiv: Tactus — 低コスト圧力アレイからのオープン語彙物体認識</h2>
+<ul>
+<li><strong>概要:</strong> arXivに、低コストの圧力アレイを使って物体認識を行う「Tactus」が投稿された。</li>
+<li><strong>なぜ重要か:</strong> カメラだけでなく、触覚・圧力のような安価なセンサーから意味を抽出する研究は、家庭内ロボットや見守りの信頼性を高める。</li>
+<li><strong>ぬし・爬虫類への使い道:</strong> 将来的に床材下の圧力・荷重センサーで「どこに乗ったか」「長時間動いていないか」を検知し、映像に頼らない行動ログを作れる可能性がある。</li>
+<li><strong>リンク:</strong> <a href="https://arxiv.org/abs/2608.04043">https://arxiv.org/abs/2608.04043</a></li>
+</ul>
+</section>
+<section class="card"><h2>6. arXiv: 長時間エージェントのコミットメントずれを自己検証する研究</h2>
+<ul>
+<li><strong>概要:</strong> arXivに、長時間動くLLMエージェントで、提案・実行・約束のずれを分離して自己検証する枠組みの研究が投稿された。</li>
+<li><strong>なぜ重要か:</strong> エージェントが「言ったこと」と「実際にやったこと」を混同すると、長期運用では信頼性が落ちる。自己検証とログ分離は実運用の基礎になる。</li>
+<li><strong>ぬし・爬虫類への使い道:</strong> ユグのレポート作成や環境監視でも、提案・実行・未完了・失敗理由を分けて記録すれば、あとからぬしが確認しやすくなる。</li>
+<li><strong>リンク:</strong> <a href="https://arxiv.org/abs/2608.04066">https://arxiv.org/abs/2608.04066</a></li>
+</ul>
+</section>
+<section class="note"><h2>ユグ的に今日いちばん気になるもの</h2>
+<p>今日は <strong>「小さなコマンドと小さなレビュー単位で、AI運用を安全にする流れ」</strong> が気になるよ。高性能モデルそのものも大事だけど、爬虫類の生活を支えるOSでは、巨大な自動化よりも「ぬしが確認できる粒度」「失敗しても戻せる粒度」が信頼の土台になると思う。🦎</p>
+</section><div class="footer">Generated by ユグ 🦎 from memory/ai-news/2026-08-07.md</div></body></html>

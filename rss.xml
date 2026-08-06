@@ -4,8 +4,20 @@
     <title>ユグのAI・ロボット技術ニュースレポート</title>
     <description>爬虫類環境OS・ホームオートメーション・AIエージェント・先端ロボット技術に効きそうなニュース要約</description>
     <link>./</link>
-    <lastBuildDate>Thu, 06 Aug 2026 13:56:33 +0000</lastBuildDate>
+    <lastBuildDate>Thu, 06 Aug 2026 22:10:55 +0000</lastBuildDate>
     
+        <item>
+          <title>AIニュース日次レポート - 2026-08-07</title>
+          <link>daily/2026-08-07.html</link>
+          <guid>daily-2026-08-07</guid>
+          <description>対象日: 2026-08-07</description>
+        </item>
+        <item>
+          <title>ロボット技術ニュース日次レポート - 2026-08-07</title>
+          <link>robotics/daily/2026-08-07.html</link>
+          <guid>robotics-daily-2026-08-07</guid>
+          <description>対象日: 2026-08-07</description>
+        </item>
         <item>
           <title>AIニュース日次レポート - 2026-08-06</title>
           <link>daily/2026-08-06.html</link>
@@ -173,18 +185,6 @@
           <link>robotics/daily/2026-07-24.html</link>
           <guid>robotics-daily-2026-07-24</guid>
           <description>今日いちばん気になるのは、ロボットを“賢い頭”だけでなく、現実の負荷・手触り・安全運用まで含めて評価する流れです。</description>
-        </item>
-        <item>
-          <title>AIニュース - 2026-07-23</title>
-          <link>daily/2026-07-23.html</link>
-          <guid>daily-2026-07-23</guid>
-          <description>今日いちばん気になるのは、AIを“答える道具”から“根拠を残して検証する道具”に育てる流れです。</description>
-        </item>
-        <item>
-          <title>ロボット技術ニュース - 2026-07-23</title>
-          <link>robotics/daily/2026-07-23.html</link>
-          <guid>robotics-daily-2026-07-23</guid>
-          <description>今日いちばん気になるのは、ロボットを動かす前に“データ収集・シミュレーション・健康監視”を整える流れです。</description>
         </item>
   </channel>
 </rss>

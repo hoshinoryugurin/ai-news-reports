@@ -1,0 +1,97 @@
+<!doctype html><html lang="ja"><head><meta charset="utf-8"><title>ロボット技術ニュース調査レポート 2026-08-07</title><style>
+@page { size: A4; margin: 16mm 14mm; }
+body {
+  font-family: -apple-system, BlinkMacSystemFont, "Hiragino Sans", "Hiragino Kaku Gothic ProN", "Yu Gothic", "Noto Sans CJK JP", sans-serif;
+  color: #202124;
+  line-height: 1.72;
+  font-size: 13.2px;
+  background: #fff;
+}
+.header {
+  border-radius: 18px;
+  padding: 20px 22px;
+  background: linear-gradient(135deg, #eef4ff, #f3f0ff);
+  border: 1px solid #dbe4ff;
+  margin-bottom: 18px;
+}
+h1 { font-size: 25px; margin: 0 0 6px; letter-spacing: .02em; }
+.subtitle { color: #5f6368; font-size: 12.5px; }
+h2 {
+  font-size: 17px;
+  margin: 20px 0 8px;
+  padding-left: 10px;
+  border-left: 5px solid #6477d9;
+}
+ul { margin: 7px 0 12px 1.2em; padding: 0; }
+li { margin: 4px 0; }
+a { color: #1a73e8; word-break: break-all; }
+.card {
+  border: 1px solid #e5e7eb;
+  border-radius: 14px;
+  padding: 10px 14px;
+  margin: 10px 0 13px;
+  break-inside: avoid;
+  background: #fff;
+}
+.note {
+  background: #fff8e1;
+  border: 1px solid #f2df9b;
+  border-radius: 12px;
+  padding: 10px 14px;
+  margin-top: 14px;
+}
+.label { font-weight: 700; color: #3643a3; }
+.footer { color: #777; font-size: 11px; margin-top: 24px; }
+</style></head><body><div class="header"><h1>ロボット技術ニュース日次レポート - 2026-08-07</h1><div class="subtitle">Daily robotics technology report for ぬし / Reptile Environment OS</div></div>
+<p>対象日: 2026-08-07</p>
+<section class="card"><h2>1. ROS 2バッグ分析・MLエクスポート向け Rosbag Resurrector</h2>
+<ul>
+<li><strong>概要:</strong> Open Robotics Discourseで、ROS 2 bagをpandas風に分析し、機械学習向けにエクスポートできる「Rosbag Resurrector」が紹介された。</li>
+<li><strong>なぜ重要か:</strong> ロボットのセンサーログは巨大で複雑になりやすい。分析しやすい形へ変換できる道具は、実機の不具合解析や学習データ作成をかなり楽にする。</li>
+<li><strong>ぬし・爬虫類への使い道:</strong> Reptile Environment OSでも、温湿度・照明・カメラ・行動ログを「あとから解析できるデータセット」として扱う設計に近い。日々の見守りログをML-readyにする参考になる。</li>
+<li><strong>リンク:</strong> <a href="https://discourse.openrobotics.org/t/rosbag-resurrector-a-pandas-like-analysis-ml-export-workbench-for-ros-2-bags/57209">https://discourse.openrobotics.org/t/rosbag-resurrector-a-pandas-like-analysis-ml-export-workbench-for-ros-2-bags/57209</a></li>
+</ul>
+</section>
+<section class="card"><h2>2. Physical AI Open-source Platform: CYCLO</h2>
+<ul>
+<li><strong>概要:</strong> ROS Discourseで、Physical AI向けのオープンソースプラットフォーム「CYCLO」が紹介された。</li>
+<li><strong>なぜ重要か:</strong> ロボットにAIを組み込むとき、モデル・センサー・制御・評価をつなぐ共通基盤があると、実験から運用への移行がしやすい。</li>
+<li><strong>ぬし・爬虫類への使い道:</strong> ぬしの環境ではロボット本体より先に、センサー群とAI判断をつなぐ「物理世界AIの小さな基盤」として考えると役立つ。温度制御や通知判断の安全な土台にできる。</li>
+<li><strong>リンク:</strong> <a href="https://discourse.openrobotics.org/t/physical-ai-open-source-platform-cyclo/57201">https://discourse.openrobotics.org/t/physical-ai-open-source-platform-cyclo/57201</a></li>
+</ul>
+</section>
+<section class="card"><h2>3. The Robot Report: AvnetとWeston RobotのエッジAI検査プラットフォーム</h2>
+<ul>
+<li><strong>概要:</strong> AvnetとWeston Robotが、エッジAI検査プラットフォームの提供で協業するとThe Robot Reportが報じた。</li>
+<li><strong>なぜ重要か:</strong> 産業現場では、クラウドに送らず現場側で画像・センサーを処理するエッジAIが、遅延・プライバシー・通信断に強い。</li>
+<li><strong>ぬし・爬虫類への使い道:</strong> ケージ見守りでも、異常姿勢や水入れ状態などをローカルで一次判定し、必要な時だけ通知する構成が現実的になる。</li>
+<li><strong>リンク:</strong> <a href="https://www.therobotreport.com/avnet-and-weston-robot-partner-to-launch-edge-ai-inspection-platform/">https://www.therobotreport.com/avnet-and-weston-robot-partner-to-launch-edge-ai-inspection-platform/</a></li>
+</ul>
+</section>
+<section class="card"><h2>4. HIIがPath Robotics・GrayMatter Roboticsと最大9億ドル規模の契約</h2>
+<ul>
+<li><strong>概要:</strong> HIIがPath RoboticsとGrayMatter Roboticsを含む最大9億ドル規模の契約に参加したと報じられた。</li>
+<li><strong>なぜ重要か:</strong> 溶接・表面処理など、過酷で専門性の高い作業にロボットAIが入り始めている。産業用途では信頼性・安全性・検査可能性が重視される。</li>
+<li><strong>ぬし・爬虫類への使い道:</strong> 家庭内でも、AI制御は「便利そう」だけでなく、作業ログ・安全確認・例外時停止まで含めて設計する必要がある、という教訓になる。</li>
+<li><strong>リンク:</strong> <a href="https://www.therobotreport.com/hii-signs-up-to-900m-agreement-with-path-robotics-graymatter-robotics/">https://www.therobotreport.com/hii-signs-up-to-900m-agreement-with-path-robotics-graymatter-robotics/</a></li>
+</ul>
+</section>
+<section class="card"><h2>5. arXiv: SAFECAST — VLA方策の故障検知</h2>
+<ul>
+<li><strong>概要:</strong> 視覚・言語・行動を結ぶVLAポリシーに対し、失敗検知を強化する「SAFECAST」がarXivに投稿された。</li>
+<li><strong>なぜ重要か:</strong> ロボットAIは「できること」だけでなく、「いま失敗しそう」と自覚して止まれることが重要になる。</li>
+<li><strong>ぬし・爬虫類への使い道:</strong> 爬虫類ケアの自動化でも、AIが確信できない映像判定やセンサー矛盾を検知したら、制御せず通知に留める設計が大切。</li>
+<li><strong>リンク:</strong> <a href="https://arxiv.org/abs/2608.04246">https://arxiv.org/abs/2608.04246</a></li>
+</ul>
+</section>
+<section class="card"><h2>6. arXiv: 基盤モデルを使ったキッチン操作ロボット</h2>
+<ul>
+<li><strong>概要:</strong> arXivに、Foundation Modelsを用いたキッチン操作ロボットの研究が投稿された。</li>
+<li><strong>なぜ重要か:</strong> 家庭環境は物体配置や状況が毎回変わるため、汎用モデルを使ってタスクを理解する研究は家庭ロボット実装の中心になる。</li>
+<li><strong>ぬし・爬虫類への使い道:</strong> 将来、餌・水・掃除の補助ロボットを考えるなら、固定手順よりも「状況を見て安全に手順を選ぶ」考え方が必要になる。</li>
+<li><strong>リンク:</strong> <a href="https://arxiv.org/abs/2608.04042">https://arxiv.org/abs/2608.04042</a></li>
+</ul>
+</section>
+<section class="note"><h2>ユグ的に今日いちばん気になるロボット技術</h2>
+<p>今日は <strong>Rosbag Resurrector</strong> がいちばん気になるよ。派手なロボット本体より、ログをちゃんと後から読める形にする道具は、家庭内の環境AIにも直結する。ぬしのセンサー記録も「あとでAIが学べるログ」に整えていくと、体調不良の原因推定に近づけそう。🦎</p>
+</section><div class="footer">Generated by ユグ 🦎 from memory/robotics-news/2026-08-07.md</div></body></html>
