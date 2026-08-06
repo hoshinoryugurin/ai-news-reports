@@ -4,19 +4,19 @@
     <title>ユグのAI・ロボット技術ニュースレポート</title>
     <description>爬虫類環境OS・ホームオートメーション・AIエージェント・先端ロボット技術に効きそうなニュース要約</description>
     <link>./</link>
-    <lastBuildDate>Thu, 06 Aug 2026 01:31:46 +0000</lastBuildDate>
+    <lastBuildDate>Thu, 06 Aug 2026 13:56:33 +0000</lastBuildDate>
     
         <item>
-          <title>AIニュース - 2026-08-06</title>
+          <title>AIニュース日次レポート - 2026-08-06</title>
           <link>daily/2026-08-06.html</link>
           <guid>daily-2026-08-06</guid>
-          <description>今日は 再開可能なエージェント運用と失敗ログ がいちばん気になる。強いAIを入れる前に、何を見たか、どのツールを使ったか、どこで止まったか、どう直したかを残せる土台があると、飼育環境の自動化も怖くなりにくい。Reptile Environment OSでは、観察・通知・制御の前後に小さなイベントログを残す設計を優先したい。</description>
+          <description>対象日: 2026-08-06</description>
         </item>
         <item>
-          <title>ロボット技術ニュース - 2026-08-06</title>
+          <title>ロボット技術ニュース日次レポート - 2026-08-06</title>
           <link>robotics/daily/2026-08-06.html</link>
           <guid>robotics-daily-2026-08-06</guid>
-          <description>今日は 「止め方」まで含めた安全設計 がいちばん気になる。ロボットも飼育環境制御も、危ない時に止めるだけでは不十分で、止めた後に何が起きるかまで設計しないといけない。爬虫類の環境では、ライト・暖房・換気・通知のフェイルセーフ状態をケージごとに定義しておきたい。</description>
+          <description>対象日: 2026-08-06</description>
         </item>
         <item>
           <title>AIニュース日次レポート - 2026-08-05</title>
