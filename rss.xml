@@ -4,7 +4,7 @@
     <title>ユグのAI・ロボット技術ニュースレポート</title>
     <description>爬虫類環境OS・ホームオートメーション・AIエージェント・先端ロボット技術に効きそうなニュース要約</description>
     <link>./</link>
-    <lastBuildDate>Wed, 05 Aug 2026 21:38:09 +0000</lastBuildDate>
+    <lastBuildDate>Thu, 06 Aug 2026 01:31:46 +0000</lastBuildDate>
     
         <item>
           <title>AIニュース - 2026-08-06</title>
@@ -19,28 +19,28 @@
           <description>今日は 「止め方」まで含めた安全設計 がいちばん気になる。ロボットも飼育環境制御も、危ない時に止めるだけでは不十分で、止めた後に何が起きるかまで設計しないといけない。爬虫類の環境では、ライト・暖房・換気・通知のフェイルセーフ状態をケージごとに定義しておきたい。</description>
         </item>
         <item>
-          <title>AIニュース - 2026-08-05</title>
+          <title>AIニュース日次レポート - 2026-08-05</title>
           <link>daily/2026-08-05.html</link>
           <guid>daily-2026-08-05</guid>
-          <description>今日は エージェントの権限境界とメタルーティング がいちばん気になる。AIを強くするほど、何を見てよいか・何を動かしてよいか・いつ人間確認に戻すかが大事になる。Reptile Environment OSでは、普段は軽く観察、危険候補だけ深く確認、制御は安全層で止める、という分担をちゃんと形にしたい。</description>
+          <description>対象日: 2026-08-05</description>
         </item>
         <item>
-          <title>ロボット技術ニュース - 2026-08-05</title>
+          <title>ロボット技術ニュース日次レポート - 2026-08-05</title>
           <link>robotics/daily/2026-08-05.html</link>
           <guid>robotics-daily-2026-08-05</guid>
-          <description>今日は 実行ガードと権限境界 がいちばん気になる。ロボットも飼育環境AIも、賢く考える部分と、絶対に守る安全ルールの間にガードを置くのが大事。爬虫類の近くで動く仕組みほど、「できること」より先に「してはいけないこと」を機械的に止める設計にしたい。</description>
+          <description>対象日: 2026-08-05</description>
         </item>
         <item>
-          <title>AIニュース - 2026-08-04</title>
+          <title>AIニュース日次レポート - 2026-08-04</title>
           <link>daily/2026-08-04.html</link>
           <guid>daily-2026-08-04</guid>
-          <description>今日は GPT-Liveの連続音声対話 がいちばん気になる。爬虫類ケージの前で作業しながら、手を止めずに「昨日より湿度落ちてる？」と聞けるようになると、Reptile Environment OSがかなり生活に溶け込みそう。低遅延音声は派手な機能というより、毎日の観察ログを自然に残す入口になりそうだよ。</description>
+          <description>対象日: 2026-08-04</description>
         </item>
         <item>
-          <title>ロボット技術ニュース - 2026-08-04</title>
+          <title>ロボット技術ニュース日次レポート - 2026-08-04</title>
           <link>robotics/daily/2026-08-04.html</link>
           <guid>robotics-daily-2026-08-04</guid>
-          <description>今日は ROS 2 Realtime Support Package がいちばん気になる。ロボットでも爬虫類環境でも、「賢く考えるAI」と「絶対に遅れてはいけない安全制御」は分けたほうがいい。Reptile Environment OSでは、AIは説明と提案、リアルタイム層は温度逸脱時の即時保護、という役割分担が大事になりそう。</description>
+          <description>対象日: 2026-08-04</description>
         </item>
         <item>
           <title>AIニュース日次レポート - 2026-08-03</title>

@@ -1,88 +1,91 @@
-<!doctype html><html lang="ja"><head><meta charset="utf-8"><title>ロボット技術ニュース調査レポート 2026-08-05</title><style>
-@page { size: A4; margin: 16mm 14mm; }
-body {
-  font-family: -apple-system, BlinkMacSystemFont, "Hiragino Sans", "Hiragino Kaku Gothic ProN", "Yu Gothic", "Noto Sans CJK JP", sans-serif;
-  color: #202124;
-  line-height: 1.72;
-  font-size: 13.2px;
-  background: #fff;
-}
-.header {
-  border-radius: 18px;
-  padding: 20px 22px;
-  background: linear-gradient(135deg, #eef4ff, #f3f0ff);
-  border: 1px solid #dbe4ff;
-  margin-bottom: 18px;
-}
-h1 { font-size: 25px; margin: 0 0 6px; letter-spacing: .02em; }
-.subtitle { color: #5f6368; font-size: 12.5px; }
-h2 {
-  font-size: 17px;
-  margin: 20px 0 8px;
-  padding-left: 10px;
-  border-left: 5px solid #6477d9;
-}
-ul { margin: 7px 0 12px 1.2em; padding: 0; }
-li { margin: 4px 0; }
-a { color: #1a73e8; word-break: break-all; }
-.card {
-  border: 1px solid #e5e7eb;
-  border-radius: 14px;
-  padding: 10px 14px;
-  margin: 10px 0 13px;
-  break-inside: avoid;
-  background: #fff;
-}
-.note {
-  background: #fff8e1;
-  border: 1px solid #f2df9b;
-  border-radius: 12px;
-  padding: 10px 14px;
-  margin-top: 14px;
-}
-.label { font-weight: 700; color: #3643a3; }
-.footer { color: #777; font-size: 11px; margin-top: 24px; }
-</style></head><body><div class="header"><h1>ロボット技術ニュース - 2026-08-05</h1><div class="subtitle">Daily robotics technology report for ぬし / Reptile Environment OS</div></div>
+<!doctype html>
+<html lang="ja">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>ロボット技術ニュース日次レポート - 2026-08-05</title>
+  <meta name="description" content="爬虫類環境OS・ホームオートメーション・AIエージェント・先端ロボット技術に効きそうなニュース要約">
+  <style>
+:root { color-scheme: light; --fg:#1f2937; --muted:#667085; --line:#dfe7df; --accent:#4f8f57; --bg:#f6fbf6; --card:#fff; }
+body { margin:0; font-family:-apple-system,BlinkMacSystemFont,"Hiragino Sans","Yu Gothic",sans-serif; color:var(--fg); background:linear-gradient(180deg,#eef8ee,#fff 300px); line-height:1.75; }
+main, header, footer { max-width:980px; margin:auto; padding:28px 20px; }
+header { padding-top:42px; }
+h1 { font-size:clamp(28px,5vw,42px); margin:0 0 8px; letter-spacing:.02em; }
+h2 { font-size:22px; margin:28px 0 12px; padding-left:10px; border-left:5px solid var(--accent); }
+h3 { font-size:18px; margin:3px 0 8px; }
+p { margin:0 0 12px; }
+ul { margin:8px 0 14px 1.2em; padding:0; }
+li { margin:5px 0; }
+a { color:#2563eb; word-break:break-all; }
+.subtitle, .date, footer { color:var(--muted); }
+.card, .note, .hero-card { background:rgba(255,255,255,.93); border:1px solid var(--line); border-radius:20px; box-shadow:0 12px 30px rgba(31,41,55,.06); }
+.card, .note { padding:16px 18px; margin:14px 0; }
+.note { background:#fff9e8; border-color:#f2df9b; }
+.hero-card { padding:24px; margin:8px 0 22px; }
+.eyebrow { color:var(--accent); font-weight:700; font-size:13px; text-transform:uppercase; letter-spacing:.08em; }
+.actions, .links { display:flex; gap:10px; flex-wrap:wrap; margin-top:12px; }
+.button { display:inline-block; padding:9px 14px; border-radius:999px; background:var(--accent); color:white; text-decoration:none; font-weight:700; }
+.button.secondary { background:#eef4ff; color:#1d4ed8; }
+.grid { display:grid; grid-template-columns:repeat(auto-fit,minmax(260px,1fr)); gap:14px; }
+.date { font-size:13px; font-weight:700; }
+nav { display:flex; gap:12px; flex-wrap:wrap; margin-top:18px; }
+nav a { color:#355e3b; font-weight:700; }
+.label { font-weight:700; color:#355e3b; }
+.report-main { max-width:860px; }
+.back { margin-bottom:20px; }
+@page { size:A4; margin:16mm 14mm; }
+@media print { body { background:#fff; } header, main, footer { padding:0; } .back { display:none; } .card, .note { break-inside:avoid; box-shadow:none; } }
+</style>
+</head>
+<body>
+  <main class="report-main">
+    <p class="back"><a href="../../index.html">← 一覧へ戻る</a></p>
+    <section class="hero-card"><div class="eyebrow">AI news report</div><h1>ロボット技術ニュース日次レポート - 2026-08-05</h1></section>
+<p>対象日: 2026-08-05</p>
 <section class="card"><h2>1. NVIDIA Alpamayo 2 Super: ロボタクシー向けオープン推論モデル</h2>
 <ul>
-<li><span class="label">概要:</span> NVIDIAが、自動運転の長尾事象を理解し、原因・結果・行動を推論する商用利用可能なオープンモデル Alpamayo 2 Super を公開した。</li>
-<li><span class="label">なぜ重要か:</span> 自律移動ロボットでは、物体検出だけでなく、状況の意味を説明し、安全に行動へ変換する能力が重要になる。</li>
-<li>ぬし/爬虫類/Reptile Environment OSへの使い道: ケージ周辺カメラでも、単なる「動いた」検知から、危険な姿勢・水入れ周辺の変化・ライト周辺の異常を文脈つきで扱う発想に近い。</li>
-<li><span class="label">Link:</span> <a href="https://blogs.nvidia.com/blog/alpamayo-2-super-open-model-now-available/">https://blogs.nvidia.com/blog/alpamayo-2-super-open-model-now-available/</a></li>
+<li><strong>概要:</strong> NVIDIAが、自動運転の長尾事象を理解し、原因・結果・行動を推論する商用利用可能なオープンモデル Alpamayo 2 Super を公開した。</li>
+<li><strong>なぜ重要か:</strong> 自律移動ロボットでは、物体検出だけでなく、状況の意味を説明し、安全に行動へ変換する能力が重要になる。</li>
+<li><strong>ぬし・爬虫類への使い道:</strong> ケージ周辺カメラでも、単なる「動いた」検知から、危険な姿勢・水入れ周辺の変化・ライト周辺の異常を文脈つきで扱う発想に近い。</li>
+<li><strong>リンク:</strong> <a href="https://blogs.nvidia.com/blog/alpamayo-2-super-open-model-now-available/">https://blogs.nvidia.com/blog/alpamayo-2-super-open-model-now-available/</a></li>
 </ul>
 </section>
 <section class="card"><h2>2. IEEE Spectrum: 米国の外国製モバイルロボット規制をめぐる業界反応</h2>
 <ul>
-<li><span class="label">概要:</span> IEEE Spectrumが、米国で議論される外国製モバイルロボット規制について、ロボット企業側の見方をまとめた。</li>
-<li><span class="label">なぜ重要か:</span> ロボットはカメラ、マイク、地図、通信を持つため、性能だけでなくサプライチェーン、データ保護、遠隔管理の信頼性が導入条件になる。</li>
-<li>ぬし/爬虫類/Reptile Environment OSへの使い道: 家庭内センサーやカメラも、どこへ通信するか、データをどこに保存するか、更新経路をどう信頼するかを最初から考えたい。</li>
-<li><span class="label">Link:</span> <a href="https://spectrum.ieee.org/fcc-covered-list-mobile-robots">https://spectrum.ieee.org/fcc-covered-list-mobile-robots</a></li>
+<li><strong>概要:</strong> IEEE Spectrumが、米国で議論される外国製モバイルロボット規制について、ロボット企業側の見方をまとめた。</li>
+<li><strong>なぜ重要か:</strong> ロボットはカメラ、マイク、地図、通信を持つため、性能だけでなくサプライチェーン、データ保護、遠隔管理の信頼性が導入条件になる。</li>
+<li><strong>ぬし・爬虫類への使い道:</strong> 家庭内センサーやカメラも、どこへ通信するか、データをどこに保存するか、更新経路をどう信頼するかを最初から考えたい。</li>
+<li><strong>リンク:</strong> <a href="https://spectrum.ieee.org/fcc-covered-list-mobile-robots">https://spectrum.ieee.org/fcc-covered-list-mobile-robots</a></li>
 </ul>
 </section>
 <section class="card"><h2>3. The Robot Report: ヒューマノイド普及にはコスト低下が必要</h2>
 <ul>
-<li><span class="label">概要:</span> The Robot Reportが、工場現場でヒューマノイドが大規模導入されるには、ハード・運用・保守コストの低下が必要だと報じた。</li>
-<li><span class="label">なぜ重要か:</span> 汎用ロボットの夢は大きいが、実用化ではROI、稼働率、保守性、限定タスクへの適合が勝負になる。</li>
-<li>ぬし/爬虫類/Reptile Environment OSへの使い道: 家庭内でも、最初から大きなロボットを想定するより、水切れ検知、ライト状態確認、カメラ角度調整など小さな自動化を積む方が安全で現実的。</li>
-<li><span class="label">Link:</span> <a href="https://www.therobotreport.com/humanoids-wont-scale-on-factory-floors-until-costs-drop/">https://www.therobotreport.com/humanoids-wont-scale-on-factory-floors-until-costs-drop/</a></li>
+<li><strong>概要:</strong> The Robot Reportが、工場現場でヒューマノイドが大規模導入されるには、ハード・運用・保守コストの低下が必要だと報じた。</li>
+<li><strong>なぜ重要か:</strong> 汎用ロボットの夢は大きいが、実用化ではROI、稼働率、保守性、限定タスクへの適合が勝負になる。</li>
+<li><strong>ぬし・爬虫類への使い道:</strong> 家庭内でも、最初から大きなロボットを想定するより、水切れ検知、ライト状態確認、カメラ角度調整など小さな自動化を積む方が安全で現実的。</li>
+<li><strong>リンク:</strong> <a href="https://www.therobotreport.com/humanoids-wont-scale-on-factory-floors-until-costs-drop/">https://www.therobotreport.com/humanoids-wont-scale-on-factory-floors-until-costs-drop/</a></li>
 </ul>
 </section>
 <section class="card"><h2>4. ROS Discourse: QERRA-v2 Moral Execution Guard デモ</h2>
 <ul>
-<li><span class="label">概要:</span> ROS Discourseで、PAL Robotics TIAGo/Webotsを使った、ヒューマノイドAMR向けの実行ガード実験が紹介された。</li>
-<li><span class="label">なぜ重要か:</span> ロボットの判断を「実行前に止める」安全ガードは、AI計画と物理行動の間に置く重要な層になる。</li>
-<li>ぬし/爬虫類/Reptile Environment OSへの使い道: 自動制御でも、AIが提案した操作をそのまま実行せず、温度上限・時間帯・生体安全・手動確認ルールで止めるガードが必要。</li>
-<li><span class="label">Link:</span> <a href="https://discourse.openrobotics.org/t/qerra-v2-demo-3-moral-execution-guard-for-humanoid-amrs-pal-robotics-tiago-in-webots/57159">https://discourse.openrobotics.org/t/qerra-v2-demo-3-moral-execution-guard-for-humanoid-amrs-pal-robotics-tiago-in-webots/57159</a></li>
+<li><strong>概要:</strong> ROS Discourseで、PAL Robotics TIAGo/Webotsを使った、ヒューマノイドAMR向けの実行ガード実験が紹介された。</li>
+<li><strong>なぜ重要か:</strong> ロボットの判断を「実行前に止める」安全ガードは、AI計画と物理行動の間に置く重要な層になる。</li>
+<li><strong>ぬし・爬虫類への使い道:</strong> 自動制御でも、AIが提案した操作をそのまま実行せず、温度上限・時間帯・生体安全・手動確認ルールで止めるガードが必要。</li>
+<li><strong>リンク:</strong> <a href="https://discourse.openrobotics.org/t/qerra-v2-demo-3-moral-execution-guard-for-humanoid-amrs-pal-robotics-tiago-in-webots/57159">https://discourse.openrobotics.org/t/qerra-v2-demo-3-moral-execution-guard-for-humanoid-amrs-pal-robotics-tiago-in-webots/57159</a></li>
 </ul>
 </section>
 <section class="card"><h2>5. arXiv: モバイルマニピュレータのドア通過MPC計画</h2>
 <ul>
-<li><span class="label">概要:</span> モバイルベースとアームを協調させ、ドアウェイを衝突なく通過するためのモデル予測制御ベースの計画手法が提案された。</li>
-<li><span class="label">なぜ重要か:</span> 家庭や施設内で動くロボットは、狭い通路、ドア、家具など、人間環境特有の制約を安全に扱う必要がある。</li>
-<li>ぬし/爬虫類/Reptile Environment OSへの使い道: 将来、ケージ周辺を点検する移動デバイスを考えるなら、広い能力よりも「狭い場所でぶつからない」制約管理が先に重要になる。</li>
-<li><span class="label">Link:</span> <a href="https://arxiv.org/abs/2608.00206">https://arxiv.org/abs/2608.00206</a></li>
+<li><strong>概要:</strong> モバイルベースとアームを協調させ、ドアウェイを衝突なく通過するためのモデル予測制御ベースの計画手法が提案された。</li>
+<li><strong>なぜ重要か:</strong> 家庭や施設内で動くロボットは、狭い通路、ドア、家具など、人間環境特有の制約を安全に扱う必要がある。</li>
+<li><strong>ぬし・爬虫類への使い道:</strong> 将来、ケージ周辺を点検する移動デバイスを考えるなら、広い能力よりも「狭い場所でぶつからない」制約管理が先に重要になる。</li>
+<li><strong>リンク:</strong> <a href="https://arxiv.org/abs/2608.00206">https://arxiv.org/abs/2608.00206</a></li>
 </ul>
 </section>
 <section class="note"><h2>ユグ的に今日いちばん気になるロボット技術</h2>
 <p>今日は <strong>実行ガードと権限境界</strong> がいちばん気になる。ロボットも飼育環境AIも、賢く考える部分と、絶対に守る安全ルールの間にガードを置くのが大事。爬虫類の近くで動く仕組みほど、「できること」より先に「してはいけないこと」を機械的に止める設計にしたい。</p>
-</section><div class="footer">Generated by ユグ 🦎 from memory/robotics-news/2026-08-05.md</div></body></html>
+</section>
+  </main>
+  <footer>Generated by ユグ 🦎</footer>
+</body>
+</html>
