@@ -1,0 +1,97 @@
+<!doctype html><html lang="ja"><head><meta charset="utf-8"><title>AIニュース調査レポート 2026-08-08</title><style>
+@page { size: A4; margin: 16mm 14mm; }
+body {
+  font-family: -apple-system, BlinkMacSystemFont, "Hiragino Sans", "Hiragino Kaku Gothic ProN", "Yu Gothic", "Noto Sans CJK JP", sans-serif;
+  color: #202124;
+  line-height: 1.72;
+  font-size: 13.2px;
+  background: #fff;
+}
+.header {
+  border-radius: 18px;
+  padding: 20px 22px;
+  background: linear-gradient(135deg, #eef8ee, #eef4ff);
+  border: 1px solid #dfeadf;
+  margin-bottom: 18px;
+}
+h1 { font-size: 25px; margin: 0 0 6px; letter-spacing: .02em; }
+.subtitle { color: #5f6368; font-size: 12.5px; }
+h2 {
+  font-size: 17px;
+  margin: 20px 0 8px;
+  padding-left: 10px;
+  border-left: 5px solid #6aa36f;
+}
+ul { margin: 7px 0 12px 1.2em; padding: 0; }
+li { margin: 4px 0; }
+a { color: #1a73e8; word-break: break-all; }
+.card {
+  border: 1px solid #e5e7eb;
+  border-radius: 14px;
+  padding: 10px 14px;
+  margin: 10px 0 13px;
+  break-inside: avoid;
+  background: #fff;
+}
+.note {
+  background: #fff8e1;
+  border: 1px solid #f2df9b;
+  border-radius: 12px;
+  padding: 10px 14px;
+  margin-top: 14px;
+}
+.label { font-weight: 700; color: #355e3b; }
+.footer { color: #777; font-size: 11px; margin-top: 24px; }
+</style></head><body><div class="header"><h1>AIニュース日次レポート - 2026-08-08</h1><div class="subtitle">Daily AI news report for ぬし / Reptile Environment OS</div></div>
+<p>対象日: 2026-08-08</p>
+<section class="card"><h2>1. OpenAI: 次世代の重要サイバー能力への対応方針</h2>
+<ul>
+<li><strong>概要:</strong> OpenAIが、次の段階の高度なサイバー能力にどう向き合うかについて、評価・安全対策・責任ある公開の考え方を示した。</li>
+<li><strong>なぜ重要か:</strong> AIモデルが実務能力を高めるほど、便利さと同時に悪用リスクも上がる。能力評価、外部検証、利用制限をセットで扱う姿勢が重要になる。</li>
+<li><strong>ぬし・爬虫類への使い道:</strong> Reptile Environment OSでも、AIにできることを増やすほど「通知だけ」「提案まで」「制御まで」の権限境界をはっきり分ける必要がある。</li>
+<li><strong>リンク:</strong> <a href="https://openai.com/index/responding-next-frontier-critical-cyber-capabilities">https://openai.com/index/responding-next-frontier-critical-cyber-capabilities</a></li>
+</ul>
+</section>
+<section class="card"><h2>2. Hugging Face: TutorMoments — AIチューターが助けるタイミングを理解できるか</h2>
+<ul>
+<li><strong>概要:</strong> Hugging Face Blogで、AIチューターが学習者をすぐ助けるべきか、少し待って自力試行を促すべきかを扱うTutorMomentsが紹介された。</li>
+<li><strong>なぜ重要か:</strong> 良いAI支援は、常に答えを出すことではなく、介入のタイミングを選ぶことに近づいている。</li>
+<li><strong>ぬし・爬虫類への使い道:</strong> 爬虫類ケアでも、正常な範囲なら静かに見守り、温湿度急変・水切れ候補・長時間の異常行動だけ声をかける「控えめな介入」設計の参考になる。</li>
+<li><strong>リンク:</strong> <a href="https://huggingface.co/blog/allenai/tutormoments">https://huggingface.co/blog/allenai/tutormoments</a></li>
+</ul>
+</section>
+<section class="card"><h2>3. arXiv: SkillTrace — LLMエージェントのスキル再利用を来歴監査する研究</h2>
+<ul>
+<li><strong>概要:</strong> arXivに、LLMエージェントが再利用するスキルや手順について、複数の実行トレースから来歴を監査するSkillTraceが投稿された。</li>
+<li><strong>なぜ重要か:</strong> エージェントが過去のスキルを使い回す場合、「どの手順を、いつ、なぜ使ったか」が分からないと安全確認が難しくなる。</li>
+<li><strong>ぬし・爬虫類への使い道:</strong> ユグが日次レポート、センサー要約、通知判定を繰り返すなら、使ったルール・データ・判断理由をログとして残す設計が信頼性を上げる。</li>
+<li><strong>リンク:</strong> <a href="https://arxiv.org/abs/2608.05204">https://arxiv.org/abs/2608.05204</a></li>
+</ul>
+</section>
+<section class="card"><h2>4. arXiv: SearchAuditor — 長期探索エージェントの失敗原因を監査する研究</h2>
+<ul>
+<li><strong>概要:</strong> arXivに、長期探索型エージェントの失敗を監査し、どこで失敗したかを帰属するSearchAuditorが投稿された。</li>
+<li><strong>なぜ重要か:</strong> 長時間動くAIでは、最終結果だけ見ても失敗原因が分からない。探索過程の監査は、実運用のデバッグに欠かせない。</li>
+<li><strong>ぬし・爬虫類への使い道:</strong> 環境異常の原因推定でも、「センサー欠測を見落とした」「過去ログ検索が弱かった」など、判断過程を後から直せる形にできる。</li>
+<li><strong>リンク:</strong> <a href="https://arxiv.org/abs/2608.05212">https://arxiv.org/abs/2608.05212</a></li>
+</ul>
+</section>
+<section class="card"><h2>5. GitHub: Copilotアプリのスラッシュコマンド活用ガイド</h2>
+<ul>
+<li><strong>概要:</strong> GitHubがCopilotアプリのスラッシュコマンド活用ガイドを公開し、AI作業を明示的なコマンド単位で進める方法を紹介した。</li>
+<li><strong>なぜ重要か:</strong> 自然文だけでなく、決まったコマンドとして依頼を切り出すと、作業範囲・期待結果・レビュー単位が安定しやすい。</li>
+<li><strong>ぬし・爬虫類への使い道:</strong> 「/水チェック」「/ケージ日報」「/異常候補だけ教えて」のような小さな操作を作れば、ぬしが安心してAI補助を使いやすくなる。</li>
+<li><strong>リンク:</strong> <a href="https://github.blog/ai-and-ml/github-copilot/a-guide-to-slash-commands-in-the-github-copilot-app/">https://github.blog/ai-and-ml/github-copilot/a-guide-to-slash-commands-in-the-github-copilot-app/</a></li>
+</ul>
+</section>
+<section class="card"><h2>6. NVIDIA: Open World ModelsとPhysical AI</h2>
+<ul>
+<li><strong>概要:</strong> NVIDIAが、Physical AI向けに現実世界を予測・理解するOpen World Modelsの考え方を紹介した。</li>
+<li><strong>なぜ重要か:</strong> AIが物理環境で役立つには、静止画の分類だけでなく、時間変化・行動結果・リスクを扱う必要がある。</li>
+<li><strong>ぬし・爬虫類への使い道:</strong> ケージ内の行動ログを「今どう見えるか」だけでなく、「この状態が続くと危険か」「普段と違うか」へ広げる発想につながる。</li>
+<li><strong>リンク:</strong> <a href="https://blogs.nvidia.com/blog/open-world-models-physical-ai/">https://blogs.nvidia.com/blog/open-world-models-physical-ai/</a></li>
+</ul>
+</section>
+<section class="note"><h2>ユグ的に今日いちばん気になるもの</h2>
+<p>今日は <strong>「AIがいつ介入すべきかを選ぶ」設計</strong> がいちばん気になるよ。強いAIほど何でも言いたくなるけれど、爬虫類の生活では、静かに見守る時間も大事。ログを見て、必要なときだけ短く・根拠つきで声をかけるユグに育てていきたいな。🦎</p>
+</section><div class="footer">Generated by ユグ 🦎 from memory/ai-news/2026-08-08.md</div></body></html>
