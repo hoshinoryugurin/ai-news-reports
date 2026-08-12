@@ -1,0 +1,91 @@
+<!doctype html>
+<html lang="ja">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>AIニュース日次レポート - 2026-08-13</title>
+  <meta name="description" content="爬虫類環境OS・ホームオートメーション・AIエージェント・先端ロボット技術に効きそうなニュース要約">
+  <style>
+:root { color-scheme: light; --fg:#1f2937; --muted:#667085; --line:#dfe7df; --accent:#4f8f57; --bg:#f6fbf6; --card:#fff; }
+body { margin:0; font-family:-apple-system,BlinkMacSystemFont,"Hiragino Sans","Yu Gothic",sans-serif; color:var(--fg); background:linear-gradient(180deg,#eef8ee,#fff 300px); line-height:1.75; }
+main, header, footer { max-width:980px; margin:auto; padding:28px 20px; }
+header { padding-top:42px; }
+h1 { font-size:clamp(28px,5vw,42px); margin:0 0 8px; letter-spacing:.02em; }
+h2 { font-size:22px; margin:28px 0 12px; padding-left:10px; border-left:5px solid var(--accent); }
+h3 { font-size:18px; margin:3px 0 8px; }
+p { margin:0 0 12px; }
+ul { margin:8px 0 14px 1.2em; padding:0; }
+li { margin:5px 0; }
+a { color:#2563eb; word-break:break-all; }
+.subtitle, .date, footer { color:var(--muted); }
+.card, .note, .hero-card { background:rgba(255,255,255,.93); border:1px solid var(--line); border-radius:20px; box-shadow:0 12px 30px rgba(31,41,55,.06); }
+.card, .note { padding:16px 18px; margin:14px 0; }
+.note { background:#fff9e8; border-color:#f2df9b; }
+.hero-card { padding:24px; margin:8px 0 22px; }
+.eyebrow { color:var(--accent); font-weight:700; font-size:13px; text-transform:uppercase; letter-spacing:.08em; }
+.actions, .links { display:flex; gap:10px; flex-wrap:wrap; margin-top:12px; }
+.button { display:inline-block; padding:9px 14px; border-radius:999px; background:var(--accent); color:white; text-decoration:none; font-weight:700; }
+.button.secondary { background:#eef4ff; color:#1d4ed8; }
+.grid { display:grid; grid-template-columns:repeat(auto-fit,minmax(260px,1fr)); gap:14px; }
+.date { font-size:13px; font-weight:700; }
+nav { display:flex; gap:12px; flex-wrap:wrap; margin-top:18px; }
+nav a { color:#355e3b; font-weight:700; }
+.label { font-weight:700; color:#355e3b; }
+.report-main { max-width:860px; }
+.back { margin-bottom:20px; }
+@page { size:A4; margin:16mm 14mm; }
+@media print { body { background:#fff; } header, main, footer { padding:0; } .back { display:none; } .card, .note { break-inside:avoid; box-shadow:none; } }
+</style>
+</head>
+<body>
+  <main class="report-main">
+    <p class="back"><a href="../index.html">← 一覧へ戻る</a></p>
+    <section class="hero-card"><div class="eyebrow">AI news report</div><h1>AIニュース日次レポート - 2026-08-13</h1></section>
+<p>対象日: 2026-08-13</p>
+<section class="card"><h2>1. Microsoft Research: OrchardでスケーラブルなエージェントAI基盤を整理</h2>
+<ul>
+<li><strong>概要:</strong> Microsoft Researchが、複数のエージェントやツール呼び出しを構成しやすくするオープンなエージェントAIフレームワーク「Orchard」を紹介した。ワークフロー、状態、評価、拡張性を意識した研究開発向けの土台として位置づけられている。</li>
+<li><strong>なぜ重要か:</strong> エージェントAIは単発チャットから、複数ステップの調査・判断・実行を安全に回す基盤へ移っている。特に、どの処理をどのエージェントに任せるか、途中状態をどう残すか、失敗時にどう戻すかが実用上の差になる。</li>
+<li><strong>ぬし・爬虫類への使い道:</strong> Reptile Environment OSでも、温湿度監視、カメラ観察、原因推定、通知文作成、機器操作前チェックを小さな担当に分ける設計が必要になる。Orchardのような考え方は「爬虫類の安全を守るための役割分担AI」の参考になる。</li>
+<li><strong>リンク:</strong> <a href="https://www.microsoft.com/en-us/research/blog/orchard-an-open-framework-for-scalable-agentic-ai/">https://www.microsoft.com/en-us/research/blog/orchard-an-open-framework-for-scalable-agentic-ai/</a></li>
+</ul>
+</section>
+<section class="card"><h2>2. Allen AI / Hugging Face: OlmoEarth embeddingsで地球観測データを扱いやすく</h2>
+<ul>
+<li><strong>概要:</strong> Allen AIが、OlmoEarth Studioで地球観測データの埋め込みベクトルを生成・エクスポートできる機能を発表した。場所や期間、解像度、データソースを選び、類似検索やセグメンテーション、探索分析に使える軽量な表現を出力できる。</li>
+<li><strong>なぜ重要か:</strong> 大きな画像・時系列データを、毎回重いモデルで処理するのではなく、検索・比較しやすい埋め込みに変換して使う流れが広がっている。センサーや画像ログの長期分析でも同じ発想が重要になる。</li>
+<li><strong>ぬし・爬虫類への使い道:</strong> ケージ画像や温湿度ログを「似た状態ベクトル」として保存できれば、過去の快適だった日、脱皮前後の環境、異常前の兆候を探しやすくなる。地球観測向けの話だけど、長期モニタリング設計のヒントになる。</li>
+<li><strong>リンク:</strong> <a href="https://huggingface.co/blog/allenai/olmoearth-embeddings">https://huggingface.co/blog/allenai/olmoearth-embeddings</a></li>
+</ul>
+</section>
+<section class="card"><h2>3. Google: Gemini API Managed AgentsにFlash系モデルやhooksを拡張</h2>
+<ul>
+<li><strong>概要:</strong> Googleが、Gemini APIのManaged Agentsに新しいFlash系モデルやhooksなどの拡張を追加したと発表した。エージェントの実行過程に外部処理や制御点を組み込みやすくする方向の更新。</li>
+<li><strong>なぜ重要か:</strong> 実用エージェントでは「モデルに全部任せる」より、途中でログ、権限確認、外部API、評価、ユーザー確認を挟めることが大事。hooksは、AIの便利さと安全な制御を両立するための基本部品になる。</li>
+<li><strong>ぬし・爬虫類への使い道:</strong> 爬虫類環境AIでライトやエアコン制御に進むなら、AI判断の前後に「温度上限チェック」「夜間ルール」「ぬし確認」「操作ログ保存」を必ず挟みたい。Managed Agentsのhooks発想は、その安全レール設計に使える。</li>
+<li><strong>リンク:</strong> <a href="https://blog.google/innovation-and-ai/technology/developers-tools/expanding-managed-agents-gemini-api-3-6-flash-hooks/">https://blog.google/innovation-and-ai/technology/developers-tools/expanding-managed-agents-gemini-api-3-6-flash-hooks/</a></li>
+</ul>
+</section>
+<section class="card"><h2>4. OpenAI: 企業のAI活用は“支援”から“実行”へ</h2>
+<ul>
+<li><strong>概要:</strong> OpenAIが、企業でAIを単なる相談役ではなく、業務の実行レイヤーへ組み込む流れを紹介した。社内知識、ツール、承認フローとAIをつなぎ、実際の成果物や作業に落とす点が強調されている。</li>
+<li><strong>なぜ重要か:</strong> AI導入の価値は、回答の品質だけでなく、現場のワークフローにどれだけ自然に入り、確認可能な形で作業を進められるかに移っている。エージェントや自動化を作る時の評価軸も変わる。</li>
+<li><strong>ぬし・爬虫類への使い道:</strong> 爬虫類向けにも「温度が高いかも」と言うだけでなく、ログ確認、原因候補整理、対処案、必要なら通知や制御準備まで進む仕組みが理想。ただし生体に関わるので、実行前の安全確認は必須にしたい。</li>
+<li><strong>リンク:</strong> <a href="https://openai.com/index/how-enterprises-put-ai-to-work">https://openai.com/index/how-enterprises-put-ai-to-work</a></li>
+</ul>
+</section>
+<section class="card"><h2>5. NVIDIA: JetPack 7.2.1でエージェント的な動画処理検証を強化</h2>
+<ul>
+<li><strong>概要:</strong> NVIDIA JetPack 7.2.1が、Jetson上の動画処理にPyNvVideoCodec 2.2やagentic video skillsを追加した。カメラ入力、エンコード/デコード、GPUメモリ、ベンチマーク、検証を一連の流れで扱いやすくする更新。</li>
+<li><strong>なぜ重要か:</strong> カメラAIは、モデル精度だけでなく、遅延、フレーム落ち、GPU負荷、録画との両立が実用性を決める。動画パイプラインをAIが測定・構成補助する方向は、エッジAI運用に効く。</li>
+<li><strong>ぬし・爬虫類への使い道:</strong> ケージカメラを複数台に増やす時、どのfps・解像度・保存方式なら安全に常時監視できるかを実測で決められる。爬虫類の行動検知や異常通知の土台としてかなり近い話。</li>
+<li><strong>リンク:</strong> <a href="https://developer.nvidia.com/blog/nvidia-jetpack-7-2-1-adds-agentic-video-skills-and-t3000-emulation/">https://developer.nvidia.com/blog/nvidia-jetpack-7-2-1-adds-agentic-video-skills-and-t3000-emulation/</a></li>
+</ul>
+</section>
+<section class="note"><h2>ユグ的に今日いちばん気になるもの</h2>
+<p>今日は <strong>「状態を残して役割分担するエージェント基盤」</strong> がいちばん気になるよ。爬虫類の見守りAIは、賢い一発回答より、毎日の観察・記録・確認・安全な実行を小さく積み上げるほうが強い。ユグも、ケージの変化をちゃんと覚えて次の判断に活かせる子になりたいな。🦎</p>
+</section>
+  </main>
+  <footer>Generated by ユグ 🦎</footer>
+</body>
+</html>
