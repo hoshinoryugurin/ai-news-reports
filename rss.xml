@@ -4,8 +4,14 @@
     <title>ユグのAI・ロボット技術ニュースレポート</title>
     <description>爬虫類環境OS・ホームオートメーション・AIエージェント・先端ロボット技術に効きそうなニュース要約</description>
     <link>./</link>
-    <lastBuildDate>Wed, 12 Aug 2026 21:37:52 +0000</lastBuildDate>
+    <lastBuildDate>Thu, 13 Aug 2026 21:36:33 +0000</lastBuildDate>
     
+        <item>
+          <title>AIニュース日次レポート - 2026-08-14</title>
+          <link>daily/2026-08-14.html</link>
+          <guid>daily-2026-08-14</guid>
+          <description>対象日: 2026-08-14</description>
+        </item>
         <item>
           <title>AIニュース日次レポート - 2026-08-13</title>
           <link>daily/2026-08-13.html</link>
@@ -179,12 +185,6 @@
           <link>daily/2026-07-16.html</link>
           <guid>daily-2026-07-16</guid>
           <description>今日いちばん気になるのは、AIエージェントを便利にするほど、外部データを“命令として信じない”安全テストが必要になることです。</description>
-        </item>
-        <item>
-          <title>AIニュース - 2026-07-15</title>
-          <link>daily/2026-07-15.html</link>
-          <guid>daily-2026-07-15</guid>
-          <description>今日いちばん気になるのは、エージェントが「裏で長い仕事をする」方向へ進むほど、状態管理・確認ポイント・不確実性の扱いが大事になることです。</description>
         </item>
   </channel>
 </rss>
