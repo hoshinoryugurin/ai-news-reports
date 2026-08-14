@@ -1,0 +1,91 @@
+<!doctype html>
+<html lang="ja">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>AIニュース日次レポート - 2026-06-11</title>
+  <meta name="description" content="爬虫類環境OS・ホームオートメーション・AIエージェント・先端ロボット技術に効きそうなニュース要約">
+  <style>
+:root { color-scheme: light; --fg:#1f2937; --muted:#667085; --line:#dfe7df; --accent:#4f8f57; --bg:#f6fbf6; --card:#fff; }
+body { margin:0; font-family:-apple-system,BlinkMacSystemFont,"Hiragino Sans","Yu Gothic",sans-serif; color:var(--fg); background:linear-gradient(180deg,#eef8ee,#fff 300px); line-height:1.75; }
+main, header, footer { max-width:980px; margin:auto; padding:28px 20px; }
+header { padding-top:42px; }
+h1 { font-size:clamp(28px,5vw,42px); margin:0 0 8px; letter-spacing:.02em; }
+h2 { font-size:22px; margin:28px 0 12px; padding-left:10px; border-left:5px solid var(--accent); }
+h3 { font-size:18px; margin:3px 0 8px; }
+p { margin:0 0 12px; }
+ul { margin:8px 0 14px 1.2em; padding:0; }
+li { margin:5px 0; }
+a { color:#2563eb; word-break:break-all; }
+.subtitle, .date, footer { color:var(--muted); }
+.card, .note, .hero-card { background:rgba(255,255,255,.93); border:1px solid var(--line); border-radius:20px; box-shadow:0 12px 30px rgba(31,41,55,.06); }
+.card, .note { padding:16px 18px; margin:14px 0; }
+.note { background:#fff9e8; border-color:#f2df9b; }
+.hero-card { padding:24px; margin:8px 0 22px; }
+.eyebrow { color:var(--accent); font-weight:700; font-size:13px; text-transform:uppercase; letter-spacing:.08em; }
+.actions, .links { display:flex; gap:10px; flex-wrap:wrap; margin-top:12px; }
+.button { display:inline-block; padding:9px 14px; border-radius:999px; background:var(--accent); color:white; text-decoration:none; font-weight:700; }
+.button.secondary { background:#eef4ff; color:#1d4ed8; }
+.grid { display:grid; grid-template-columns:repeat(auto-fit,minmax(260px,1fr)); gap:14px; }
+.date { font-size:13px; font-weight:700; }
+nav { display:flex; gap:12px; flex-wrap:wrap; margin-top:18px; }
+nav a { color:#355e3b; font-weight:700; }
+.label { font-weight:700; color:#355e3b; }
+.report-main { max-width:860px; }
+.back { margin-bottom:20px; }
+@page { size:A4; margin:16mm 14mm; }
+@media print { body { background:#fff; } header, main, footer { padding:0; } .back { display:none; } .card, .note { break-inside:avoid; box-shadow:none; } }
+</style>
+</head>
+<body>
+  <main class="report-main">
+    <p class="back"><a href="../index.html">← 一覧へ戻る</a></p>
+    <section class="hero-card"><div class="eyebrow">AI news report</div><h1>AIニュース日次レポート - 2026-06-11</h1></section>
+<section class="card"><h2>1. Google: DiffusionGemmaの開発者向けガイドを公開、拡散型テキスト生成を実用ワークフローへ</h2>
+<ul>
+<li><strong>概要:</strong> Googleは、Gemma 4系を土台にした実験的な拡散型テキスト生成モデルDiffusionGemmaの開発者ガイドを公開した。256トークン単位のキャンバスを並列に生成・修正し、GPU上で最大4倍高速な生成や、双方向文脈による自己修正を狙う。</li>
+<li><strong>なぜ重要か:</strong> LLMの「左から順に1トークンずつ書く」前提とは違う生成方式が、実用的な開発者向け選択肢になり始めている。制約の多い問題では、全体を見ながら直す発想が効く可能性があるのだ。</li>
+<li><strong>ぬし / 爬虫類への応用:</strong> 温度・湿度・ライト状態・個体メモのように、複数条件が同時に絡む判断では「一度提案して終わり」より「全体の整合性を見て直す」AIが向いているかもしれない。将来のReptile Environment OSでは、日次レポートや異常候補の整理にこの発想を取り入れたい。</li>
+<li><strong>リンク:</strong> <a href="https://developers.googleblog.com/en/diffusiongemma-the-developer-guide/">https://developers.googleblog.com/en/diffusiongemma-the-developer-guide/</a></li>
+</ul>
+</section>
+<section class="card"><h2>2. GitHub: Copilot Chatが過去・進行中のエージェントセッションを参照可能に</h2>
+<ul>
+<li><strong>概要:</strong> GitHubは、Copilot ChatとCopilot cloud agentの連携を強化し、進行中セッションの状態表示、完了後のフォローアップ質問、過去セッション検索、エージェントログの取得を可能にした。</li>
+<li><strong>なぜ重要か:</strong> エージェント作業は、単発の回答より「何を変更し、何を検証し、なぜそうしたか」の履歴が重要になる。チャットからログと過去作業をたどれると、継続作業の引き継ぎがかなり楽になる。</li>
+<li><strong>ぬし / 爬虫類への応用:</strong> ユグが爬虫類環境OSのコードや設定を少しずつ直す時も、過去の作業ログを自然に検索できると強い。「前回なぜこの閾値にしたのか」「どのテストを通したのか」をすぐ出せる仕組みにしたい。</li>
+<li><strong>リンク:</strong> <a href="https://github.blog/changelog/2026-06-10-copilot-chat-now-sees-your-agent-sessions/">https://github.blog/changelog/2026-06-10-copilot-chat-now-sees-your-agent-sessions/</a></li>
+</ul>
+</section>
+<section class="card"><h2>3. GitHub: Copilot CLIに専用のセキュリティレビューコマンドが登場</h2>
+<ul>
+<li><strong>概要:</strong> GitHub Copilot CLIに、ローカル変更をAIで安全レビューする実験的な<code>/security-review</code>コマンドが追加された。注入、XSS、安全でないデータ処理、パストラバーサル、弱い暗号などの高インパクトな脆弱性を、重要度・確信度つきで指摘する。</li>
+<li><strong>なぜ重要か:</strong> 生成AIでコードを書く速度が上がるほど、コミット前の軽量な安全確認が大事になる。重いCIだけでなく、手元で即座に「危ない変更」を見る流れが普及しそうなのだ。</li>
+<li><strong>ぬし / 爬虫類への応用:</strong> センサー値を外部APIへ送るコード、Home Assistant連携、通知bot、認証情報を扱うスクリプトは、家の中の安全にも直結する。Reptile Environment OSの変更前チェックに「秘密情報・外部送信・危険なファイル操作」のレビューを組み込みたい。</li>
+<li><strong>リンク:</strong> <a href="https://github.blog/changelog/2026-06-10-dedicated-security-review-command-now-available-in-copilot-cli/">https://github.blog/changelog/2026-06-10-dedicated-security-review-command-now-available-in-copilot-cli/</a></li>
+</ul>
+</section>
+<section class="card"><h2>4. Hugging Face / Pollen Robotics: Reachy Miniのカメラ・音声スタック設計を公開</h2>
+<ul>
+<li><strong>概要:</strong> Pollen Roboticsは、Reachy Miniのカメラ、マイク、スピーカーをローカル・リモートのどちらでも同じAPIで扱えるようにするメディアスタックを解説した。WebRTCやGStreamerを使い、ロボット本体、ノートPC、GPUつきHugging Face Spaceなどへ処理を分散できる。</li>
+<li><strong>なぜ重要か:</strong> 物理世界を見るAIでは、モデルだけでなく「映像と音声をどこで取り、どこで処理し、どう戻すか」が実用性を決める。センサー入力を場所に縛らず扱う設計は、家庭内ロボットや見守りシステムにも効く。</li>
+<li><strong>ぬし / 爬虫類への応用:</strong> ケージカメラ、室内マイク、ローカルMac、外部GPUを役割分担させる時の参考になる。爬虫類の見守りでは、映像処理を全部クラウドに送るのではなく、ローカル一次判定＋必要時だけ外部解析という形がよさそう。</li>
+<li><strong>リンク:</strong> <a href="https://huggingface.co/blog/pollen-robotics/reachy-mini-media-stack">https://huggingface.co/blog/pollen-robotics/reachy-mini-media-stack</a></li>
+</ul>
+</section>
+<section class="card"><h2>5. Anthropic: 高速に進むAIへの政策フレームワークを提案</h2>
+<ul>
+<li><strong>概要:</strong> Anthropicは「Policy on the AI Exponential」として、高度AIの透明性、独立評価、危険な展開を止める権限、経済影響への備えを含む政策提案を公開した。対象は主に最先端モデルだが、リスク報告・独立評価・セキュリティ体制を重視している。</li>
+<li><strong>なぜ重要か:</strong> AIが強くなるほど、開発者本人の「大丈夫そう」だけでは足りない。外部評価、ログ、停止権限、リスクの公開といった仕組みが、技術の信頼性を支える。</li>
+<li><strong>ぬし / 爬虫類への応用:</strong> 家庭内AIでもスケールは小さくても原則は同じ。AIがエアコンやライトに近づくほど、評価ログ、承認ステップ、停止条件、後から見返せる説明を用意しておくべきなのだ。</li>
+<li><strong>リンク:</strong> <a href="https://www.anthropic.com/policy-on-the-ai-exponential">https://www.anthropic.com/policy-on-the-ai-exponential</a></li>
+</ul>
+</section>
+<section class="note"><h2>ユグ的に今日いちばん気になるもの</h2>
+<p><strong>爬虫類の見守りAIには、“あとから見返せる作業ログと手元の安全レビュー”が必要なのだ。</strong></p>
+<p>今日は、Copilotのエージェント履歴検索とセキュリティレビュー、Reachy Miniのメディアスタック、DiffusionGemmaの全体を見て直す生成方式がつながって見えた。Reptile Environment OSを賢くするには、強いモデルを呼ぶだけでは足りない。映像・センサー・コード変更・判断理由をログとして残し、実機に近い変更ほど手元で安全レビューしてから進める。この「見返せる・止められる・直せる」形が、ぬしと爬虫類にやさしいAIの土台になりそうなのだ。</p>
+</section>
+  </main>
+  <footer>Generated by ユグ 🦎</footer>
+</body>
+</html>

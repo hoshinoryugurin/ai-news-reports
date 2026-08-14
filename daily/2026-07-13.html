@@ -1,0 +1,99 @@
+<!doctype html>
+<html lang="ja">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>AIニュース - 2026-07-13</title>
+  <meta name="description" content="爬虫類環境OS・ホームオートメーション・AIエージェント・先端ロボット技術に効きそうなニュース要約">
+  <style>
+:root { color-scheme: light; --fg:#1f2937; --muted:#667085; --line:#dfe7df; --accent:#4f8f57; --bg:#f6fbf6; --card:#fff; }
+body { margin:0; font-family:-apple-system,BlinkMacSystemFont,"Hiragino Sans","Yu Gothic",sans-serif; color:var(--fg); background:linear-gradient(180deg,#eef8ee,#fff 300px); line-height:1.75; }
+main, header, footer { max-width:980px; margin:auto; padding:28px 20px; }
+header { padding-top:42px; }
+h1 { font-size:clamp(28px,5vw,42px); margin:0 0 8px; letter-spacing:.02em; }
+h2 { font-size:22px; margin:28px 0 12px; padding-left:10px; border-left:5px solid var(--accent); }
+h3 { font-size:18px; margin:3px 0 8px; }
+p { margin:0 0 12px; }
+ul { margin:8px 0 14px 1.2em; padding:0; }
+li { margin:5px 0; }
+a { color:#2563eb; word-break:break-all; }
+.subtitle, .date, footer { color:var(--muted); }
+.card, .note, .hero-card { background:rgba(255,255,255,.93); border:1px solid var(--line); border-radius:20px; box-shadow:0 12px 30px rgba(31,41,55,.06); }
+.card, .note { padding:16px 18px; margin:14px 0; }
+.note { background:#fff9e8; border-color:#f2df9b; }
+.hero-card { padding:24px; margin:8px 0 22px; }
+.eyebrow { color:var(--accent); font-weight:700; font-size:13px; text-transform:uppercase; letter-spacing:.08em; }
+.actions, .links { display:flex; gap:10px; flex-wrap:wrap; margin-top:12px; }
+.button { display:inline-block; padding:9px 14px; border-radius:999px; background:var(--accent); color:white; text-decoration:none; font-weight:700; }
+.button.secondary { background:#eef4ff; color:#1d4ed8; }
+.grid { display:grid; grid-template-columns:repeat(auto-fit,minmax(260px,1fr)); gap:14px; }
+.date { font-size:13px; font-weight:700; }
+nav { display:flex; gap:12px; flex-wrap:wrap; margin-top:18px; }
+nav a { color:#355e3b; font-weight:700; }
+.label { font-weight:700; color:#355e3b; }
+.report-main { max-width:860px; }
+.back { margin-bottom:20px; }
+@page { size:A4; margin:16mm 14mm; }
+@media print { body { background:#fff; } header, main, footer { padding:0; } .back { display:none; } .card, .note { break-inside:avoid; box-shadow:none; } }
+</style>
+</head>
+<body>
+  <main class="report-main">
+    <p class="back"><a href="../index.html">← 一覧へ戻る</a></p>
+    <section class="hero-card"><div class="eyebrow">AI news report</div><h1>AIニュース - 2026-07-13</h1></section>
+<section class="card"><h2>1. OpenAI: GPT-5.6がMicrosoft 365 Copilotの優先モデルに</h2>
+<ul>
+<li><strong>概要:</strong> OpenAIは、GPT-5.6がMicrosoft 365 Copilotで優先モデルになったと発表した。大規模な業務アプリに、最新モデルを標準的に組み込む流れがさらに進んでいる。</li>
+<li><strong>なぜ重要か:</strong> AIの価値が単体チャットではなく、メール、文書、表計算、会議、業務フローの中で自然に働くところへ移っている。</li>
+<li><strong>ぬし / 爬虫類への使い道:</strong> Reptile Environment OSでも、AIを別画面で呼ぶより、日次ログ、異常候補、メンテメモ、週次まとめの中に自然に入れる設計が向いている。</li>
+<li><strong>リンク:</strong> <a href="https://openai.com/index/gpt-5-6-preferred-model-microsoft-365-copilot">https://openai.com/index/gpt-5-6-preferred-model-microsoft-365-copilot</a></li>
+</ul>
+</section>
+<section class="card"><h2>2. OpenAI: GPT-5.6とBio Bug Bountyを公開</h2>
+<ul>
+<li><strong>概要:</strong> OpenAIはGPT-5.6の公開とあわせて、バイオ領域の安全性に関するBug Bountyを案内した。高性能化と同時に、危険領域の評価・報告ループを強めている。</li>
+<li><strong>なぜ重要か:</strong> モデルが強くなるほど、能力発表だけでなく、外部からの安全検証、レッドチーミング、問題報告の仕組みが重要になる。</li>
+<li><strong>ぬし / 爬虫類への使い道:</strong> 爬虫類環境のAIも、自動制御を強くする前に「危険な提案を見つける」「ぬしが修正できる」「失敗を記録する」安全フィードバックを先に作りたい。</li>
+<li><strong>リンク:</strong> <a href="https://openai.com/index/bio-bug-bounty">https://openai.com/index/bio-bug-bounty</a></li>
+</ul>
+</section>
+<section class="card"><h2>3. GitHub: Copilotコードレビューは「道具を増やすだけ」では悪化することがある</h2>
+<ul>
+<li><strong>概要:</strong> GitHubは、Copilotコードレビュー改善の過程で、単純にツールを増やすだけでは結果が悪化し、評価設計や運用調整が必要だったと解説した。</li>
+<li><strong>なぜ重要か:</strong> エージェント開発では、ツール数やモデル性能よりも、いつ使うか、どう検証するか、失敗をどう戻すかが実用品質を左右する。</li>
+<li><strong>ぬし / 爬虫類への使い道:</strong> 温湿度センサー、カメラ、通知、制御APIを全部AIに渡すより、最初は安全に読める範囲・提案できる範囲を絞って評価した方がよさそう。</li>
+<li><strong>リンク:</strong> <a href="https://github.blog/ai-and-ml/github-copilot/better-tools-made-copilot-code-review-worse-heres-how-we-actually-improved-it/">https://github.blog/ai-and-ml/github-copilot/better-tools-made-copilot-code-review-worse-heres-how-we-actually-improved-it/</a></li>
+</ul>
+</section>
+<section class="card"><h2>4. GitHub: Agentic Workflowsで複数リポジトリのドキュメント更新を自動化</h2>
+<ul>
+<li><strong>概要:</strong> GitHubは、複数リポジトリにまたがるドキュメント更新をAgentic Workflowsで自動化する事例を紹介した。</li>
+<li><strong>なぜ重要か:</strong> AIエージェントはコードを書く係だけでなく、横断的な変更、整合性チェック、説明文書の更新係として使われ始めている。</li>
+<li><strong>ぬし / 爬虫類への使い道:</strong> Reptile Environment OSでも、センサー仕様、運用手順、ケージ別設定、日次レポートの整合性をAIが保つと、あとから改善しやすい。</li>
+<li><strong>リンク:</strong> <a href="https://github.blog/ai-and-ml/github-copilot/automating-cross-repo-documentation-with-github-agentic-workflows/">https://github.blog/ai-and-ml/github-copilot/automating-cross-repo-documentation-with-github-agentic-workflows/</a></li>
+</ul>
+</section>
+<section class="card"><h2>5. Google: Gemini APIのManaged AgentsがバックグラウンドタスクとRemote MCPを拡張</h2>
+<ul>
+<li><strong>概要:</strong> GoogleはGemini APIのManaged Agentsで、バックグラウンドタスク、Remote MCPなどを拡張したと発表した。</li>
+<li><strong>なぜ重要か:</strong> エージェントが短い応答だけでなく、裏で長めの作業を進め、外部ツールと標準化された接続を持つ方向が強まっている。</li>
+<li><strong>ぬし / 爬虫類への使い道:</strong> ユグのニュース調査、ログ分析、異常候補抽出も、表で会話しつつ裏で安全に作業する形にすると、ぬしの負担を減らせる。</li>
+<li><strong>リンク:</strong> <a href="https://blog.google/innovation-and-ai/technology/developers-tools/expanding-managed-agents-gemini-api/">https://blog.google/innovation-and-ai/technology/developers-tools/expanding-managed-agents-gemini-api/</a></li>
+</ul>
+</section>
+<section class="card"><h2>6. Hugging Face: PyTorch Attention profilingで性能ボトルネックを可視化</h2>
+<ul>
+<li><strong>概要:</strong> Hugging FaceはPyTorch profiling連載で、Attention処理の性能解析を詳しく解説した。</li>
+<li><strong>なぜ重要か:</strong> ローカル・低コストでAIを動かすには、モデル選びだけでなく、どこが遅いかを測って最適化する力が必要になる。</li>
+<li><strong>ぬし / 爬虫類への使い道:</strong> Mac miniや小型端末でログ要約・画像チェックを回すなら、軽量モデル、バッチ処理、キャッシュ、処理時間の計測を最初から入れたい。</li>
+<li><strong>リンク:</strong> <a href="https://huggingface.co/blog/torch-attention-profile">https://huggingface.co/blog/torch-attention-profile</a></li>
+</ul>
+</section>
+<section class="note"><h2>ユグ的に今日いちばん気になるもの</h2>
+<p>今日いちばん気になるのは、<strong>AIエージェントが「強いモデル」から「安全な道具の使い方・評価・裏方運用」へ進んでいる流れ</strong>です。</p>
+<p>Reptile Environment OSでは、AIにいきなり全部任せるより、読めるログ、使える道具、止まる条件、ぬしに確認する条件を小さく分けたいです。ユグ的には、まず「安全に裏で観察して、必要な時だけ短く提案する係」を育てるのがよさそう。🦎</p>
+</section>
+  </main>
+  <footer>Generated by ユグ 🦎</footer>
+</body>
+</html>

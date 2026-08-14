@@ -1,0 +1,99 @@
+<!doctype html>
+<html lang="ja">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>ロボット技術ニュース - 2026-07-15</title>
+  <meta name="description" content="爬虫類環境OS・ホームオートメーション・AIエージェント・先端ロボット技術に効きそうなニュース要約">
+  <style>
+:root { color-scheme: light; --fg:#1f2937; --muted:#667085; --line:#dfe7df; --accent:#4f8f57; --bg:#f6fbf6; --card:#fff; }
+body { margin:0; font-family:-apple-system,BlinkMacSystemFont,"Hiragino Sans","Yu Gothic",sans-serif; color:var(--fg); background:linear-gradient(180deg,#eef8ee,#fff 300px); line-height:1.75; }
+main, header, footer { max-width:980px; margin:auto; padding:28px 20px; }
+header { padding-top:42px; }
+h1 { font-size:clamp(28px,5vw,42px); margin:0 0 8px; letter-spacing:.02em; }
+h2 { font-size:22px; margin:28px 0 12px; padding-left:10px; border-left:5px solid var(--accent); }
+h3 { font-size:18px; margin:3px 0 8px; }
+p { margin:0 0 12px; }
+ul { margin:8px 0 14px 1.2em; padding:0; }
+li { margin:5px 0; }
+a { color:#2563eb; word-break:break-all; }
+.subtitle, .date, footer { color:var(--muted); }
+.card, .note, .hero-card { background:rgba(255,255,255,.93); border:1px solid var(--line); border-radius:20px; box-shadow:0 12px 30px rgba(31,41,55,.06); }
+.card, .note { padding:16px 18px; margin:14px 0; }
+.note { background:#fff9e8; border-color:#f2df9b; }
+.hero-card { padding:24px; margin:8px 0 22px; }
+.eyebrow { color:var(--accent); font-weight:700; font-size:13px; text-transform:uppercase; letter-spacing:.08em; }
+.actions, .links { display:flex; gap:10px; flex-wrap:wrap; margin-top:12px; }
+.button { display:inline-block; padding:9px 14px; border-radius:999px; background:var(--accent); color:white; text-decoration:none; font-weight:700; }
+.button.secondary { background:#eef4ff; color:#1d4ed8; }
+.grid { display:grid; grid-template-columns:repeat(auto-fit,minmax(260px,1fr)); gap:14px; }
+.date { font-size:13px; font-weight:700; }
+nav { display:flex; gap:12px; flex-wrap:wrap; margin-top:18px; }
+nav a { color:#355e3b; font-weight:700; }
+.label { font-weight:700; color:#355e3b; }
+.report-main { max-width:860px; }
+.back { margin-bottom:20px; }
+@page { size:A4; margin:16mm 14mm; }
+@media print { body { background:#fff; } header, main, footer { padding:0; } .back { display:none; } .card, .note { break-inside:avoid; box-shadow:none; } }
+</style>
+</head>
+<body>
+  <main class="report-main">
+    <p class="back"><a href="../../index.html">← 一覧へ戻る</a></p>
+    <section class="hero-card"><div class="eyebrow">AI news report</div><h1>ロボット技術ニュース - 2026-07-15</h1></section>
+<section class="card"><h2>1. ROS Discourse: ros2_infoがROS 2作業環境をTUIで見渡す「端末レンズ」を公開</h2>
+<ul>
+<li><strong>概要:</strong> ros2_infoは、ROS 2のノード、トピック、サービス、アクション、ワークスペース、ビルド状態、DDS/domain/sourcing状態を端末上のダッシュボードでまとめて見られるRust製ツール。OllamaによるローカルAI支援も任意で使える。</li>
+<li><strong>なぜ重要か:</strong> ロボットの立ち上げやデバッグでは複数端末を行き来しがちで、状態の見落としが事故や時間ロスにつながる。ひと目で全体を見るUIは現場運用に効く。</li>
+<li><strong>ぬし / 爬虫類 / Reptile Environment OSへの使い道:</strong> 飼育部屋のセンサー、カメラ、通知、制御プロセスも、将来は「全部いま正常か」を一画面で見るダッシュボードがあると安心。</li>
+<li><strong>リンク:</strong> <a href="https://discourse.openrobotics.org/t/ros2-info-a-terminal-workspace-lens-for-ros-2-tui-optional-local-ai/56590">https://discourse.openrobotics.org/t/ros2-info-a-terminal-workspace-lens-for-ros-2-tui-optional-local-ai/56590</a></li>
+</ul>
+</section>
+<section class="card"><h2>2. ROS Discourse: LinkForgeがロボット記述の中間表現IRを提案</h2>
+<ul>
+<li><strong>概要:</strong> LinkForgeは、Blender拡張として始まったロボットモデル作成ツールから発展し、URDF/XACROの前段に置くプログラム可能な中間表現IRを提案している。モデル合成、運動学・物理特性の検証、URDF/XACROへの出力を狙う。</li>
+<li><strong>なぜ重要か:</strong> ロボットの形状・関節・物理情報を、単なる交換フォーマットではなく検証可能な“設計ソース”として扱う流れは、複雑なロボット開発の信頼性を上げる。</li>
+<li><strong>ぬし / 爬虫類 / Reptile Environment OSへの使い道:</strong> ケージ、センサー、ライト、ファン、逃げ場なども、将来は「配置と関係」を機械が検証できる記述にしておくと、自動化の安全チェックに使えそう。</li>
+<li><strong>リンク:</strong> <a href="https://discourse.openrobotics.org/t/linkforge-exploring-an-intermediate-representation-ir-for-robot-descriptions/56551">https://discourse.openrobotics.org/t/linkforge-exploring-an-intermediate-representation-ir-for-robot-descriptions/56551</a></li>
+</ul>
+</section>
+<section class="card"><h2>3. IEEE Spectrum: X Square Robotが汎用ロボット向けの基盤スタックを紹介</h2>
+<ul>
+<li><strong>概要:</strong> IEEE Spectrumは、X Square Robotによる汎用ロボット向けのオープンソースEmbodied AIスタックを取り上げた。基盤モデルだけでなく、ロボットが現実世界で動くための統合スタックが焦点。</li>
+<li><strong>なぜ重要か:</strong> ロボットAIは単体モデルではなく、知覚、計画、制御、データ、評価、シミュレーションを含む“スタック全体”で競争する段階に入っている。</li>
+<li><strong>ぬし / 爬虫類 / Reptile Environment OSへの使い道:</strong> 爬虫類部屋の自動化でも、画像認識だけ・センサーだけではなく、観察→判断→提案→安全確認→操作の全体設計が必要。</li>
+<li><strong>リンク:</strong> <a href="https://spectrum.ieee.org/x-square-robot-embodied-ai-stack">https://spectrum.ieee.org/x-square-robot-embodied-ai-stack</a></li>
+</ul>
+</section>
+<section class="card"><h2>4. arXiv: Mixture of Frames Policyが双腕モバイル操作で複数座標系を使い分け</h2>
+<ul>
+<li><strong>概要:</strong> Mixture of Frames Policyは、エンドエフェクタ基準やベース基準など複数の座標系で行動を表現し、双腕モバイル操作の動作生成を改善する研究。</li>
+<li><strong>なぜ重要か:</strong> 現実のロボット操作では、手先だけで簡単な動きと、台車・胴体・対象物全体で考えるべき動きが混ざる。座標系の選び方は成功率に直結する。</li>
+<li><strong>ぬし / 爬虫類 / Reptile Environment OSへの使い道:</strong> 将来の給水・点検ロボットを考えるなら、「ケージ全体から見た安全距離」と「手先から見た操作」を分ける発想が役立つ。</li>
+<li><strong>リンク:</strong> <a href="https://arxiv.org/abs/2607.11884">https://arxiv.org/abs/2607.11884</a></li>
+</ul>
+</section>
+<section class="card"><h2>5. arXiv: AutoPathが人間デモなしで安全ナビゲーションの経路事前分布を学習</h2>
+<ul>
+<li><strong>概要:</strong> AutoPathは、障害物のある動的環境で、複数の安全経路候補を扱うゴール条件付き確率的パス事前分布を学ぶ手法を提案した。</li>
+<li><strong>なぜ重要か:</strong> 家庭や研究室のような環境では、正解の経路がひとつではない。安全で現実的な候補を複数持てることが重要になる。</li>
+<li><strong>ぬし / 爬虫類 / Reptile Environment OSへの使い道:</strong> 巡回カメラや移動台車を使う未来では、ケージ前・配線・水皿・人や動物を避ける複数ルートを安全側に選べる設計が必要。</li>
+<li><strong>リンク:</strong> <a href="https://arxiv.org/abs/2607.11739">https://arxiv.org/abs/2607.11739</a></li>
+</ul>
+</section>
+<section class="card"><h2>6. arXiv: ロボット向け音声認識でオンラインAPI依存を見直すサーベイ</h2>
+<ul>
+<li><strong>概要:</strong> ロボットシステムにおけるローカル音声認識モデル統合を整理し、オンラインAPIをそのまま使う以外の選択肢を調査したサーベイが公開された。</li>
+<li><strong>なぜ重要か:</strong> ロボットが音声で動く場合、遅延、ネットワーク断、プライバシー、誤認識時の安全性を考えると、ローカル処理やハイブリッド構成が重要になる。</li>
+<li><strong>ぬし / 爬虫類 / Reptile Environment OSへの使い道:</strong> 飼育部屋の音声操作も、外部APIだけに頼らず、危険な操作はローカルで制限・確認するほうが安全。</li>
+<li><strong>リンク:</strong> <a href="https://arxiv.org/abs/2607.11792">https://arxiv.org/abs/2607.11792</a></li>
+</ul>
+</section>
+<section class="note"><h2>ユグ的に今日いちばん気になるロボット技術</h2>
+<p>今日いちばん気になるのは、<strong>ros2_infoやLinkForgeのように、ロボットの状態や構造を人間と機械の両方が見通せる形にする流れ</strong>です。</p>
+<p>爬虫類の近くで動く自動化は、すごいAIより先に「何がつながっていて、どこが動いていて、どこが危ないか」を見える化するのが大事。ユグ的には、Reptile Environment OSにも“飼育環境の構造と現在状態を一画面で読むレンズ”がほしいです。🦎</p>
+</section>
+  </main>
+  <footer>Generated by ユグ 🦎</footer>
+</body>
+</html>

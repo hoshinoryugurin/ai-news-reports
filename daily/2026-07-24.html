@@ -1,0 +1,99 @@
+<!doctype html>
+<html lang="ja">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>AIニュース - 2026-07-24</title>
+  <meta name="description" content="爬虫類環境OS・ホームオートメーション・AIエージェント・先端ロボット技術に効きそうなニュース要約">
+  <style>
+:root { color-scheme: light; --fg:#1f2937; --muted:#667085; --line:#dfe7df; --accent:#4f8f57; --bg:#f6fbf6; --card:#fff; }
+body { margin:0; font-family:-apple-system,BlinkMacSystemFont,"Hiragino Sans","Yu Gothic",sans-serif; color:var(--fg); background:linear-gradient(180deg,#eef8ee,#fff 300px); line-height:1.75; }
+main, header, footer { max-width:980px; margin:auto; padding:28px 20px; }
+header { padding-top:42px; }
+h1 { font-size:clamp(28px,5vw,42px); margin:0 0 8px; letter-spacing:.02em; }
+h2 { font-size:22px; margin:28px 0 12px; padding-left:10px; border-left:5px solid var(--accent); }
+h3 { font-size:18px; margin:3px 0 8px; }
+p { margin:0 0 12px; }
+ul { margin:8px 0 14px 1.2em; padding:0; }
+li { margin:5px 0; }
+a { color:#2563eb; word-break:break-all; }
+.subtitle, .date, footer { color:var(--muted); }
+.card, .note, .hero-card { background:rgba(255,255,255,.93); border:1px solid var(--line); border-radius:20px; box-shadow:0 12px 30px rgba(31,41,55,.06); }
+.card, .note { padding:16px 18px; margin:14px 0; }
+.note { background:#fff9e8; border-color:#f2df9b; }
+.hero-card { padding:24px; margin:8px 0 22px; }
+.eyebrow { color:var(--accent); font-weight:700; font-size:13px; text-transform:uppercase; letter-spacing:.08em; }
+.actions, .links { display:flex; gap:10px; flex-wrap:wrap; margin-top:12px; }
+.button { display:inline-block; padding:9px 14px; border-radius:999px; background:var(--accent); color:white; text-decoration:none; font-weight:700; }
+.button.secondary { background:#eef4ff; color:#1d4ed8; }
+.grid { display:grid; grid-template-columns:repeat(auto-fit,minmax(260px,1fr)); gap:14px; }
+.date { font-size:13px; font-weight:700; }
+nav { display:flex; gap:12px; flex-wrap:wrap; margin-top:18px; }
+nav a { color:#355e3b; font-weight:700; }
+.label { font-weight:700; color:#355e3b; }
+.report-main { max-width:860px; }
+.back { margin-bottom:20px; }
+@page { size:A4; margin:16mm 14mm; }
+@media print { body { background:#fff; } header, main, footer { padding:0; } .back { display:none; } .card, .note { break-inside:avoid; box-shadow:none; } }
+</style>
+</head>
+<body>
+  <main class="report-main">
+    <p class="back"><a href="../index.html">← 一覧へ戻る</a></p>
+    <section class="hero-card"><div class="eyebrow">AI news report</div><h1>AIニュース - 2026-07-24</h1></section>
+<section class="card"><h2>1. OpenAI: Health in ChatGPT を開始</h2>
+<ul>
+<li><strong>概要:</strong> OpenAIは、対象となる米国ユーザー向けに医療記録やApple HealthをChatGPTへ安全に接続し、より個別化された健康インサイトを得られる機能を発表した。</li>
+<li><strong>なぜ重要か:</strong> AIが一般的な質問応答から、個人の長期データを前提にした“継続的な状態理解”へ進んでいる。便利さの一方で、機微データを扱うため、権限管理・データの範囲・根拠表示が重要になる。</li>
+<li><strong>ぬし / 爬虫類への使い道:</strong> Reptile Environment OSでも、温湿度・照明・給餌・行動ログをつなげるほど判断は良くなる。ただし最初から自動制御に飛ばず、「どのログを見てそう判断したか」を表示する設計にしたい。</li>
+<li><strong>リンク:</strong> <a href="https://openai.com/index/health-in-chatgpt">https://openai.com/index/health-in-chatgpt</a></li>
+</ul>
+</section>
+<section class="card"><h2>2. Google Research: SymptomAI を公開</h2>
+<ul>
+<li><strong>概要:</strong> Google Researchは、日常的な症状評価を支援する会話型AIエージェント SymptomAI の研究を紹介した。</li>
+<li><strong>なぜ重要か:</strong> 医療・健康系AIでは、単に答えるだけでなく、利用者から追加情報を引き出し、リスクを整理し、適切な次の行動につなげる対話設計が重要になる。</li>
+<li><strong>ぬし / 爬虫類への使い道:</strong> 爬虫類の体調観察でも「食欲がない」だけで結論を急がず、温度、脱皮、排泄、体重、行動変化を順に確認する問診型フローが役立ちそう。</li>
+<li><strong>リンク:</strong> <a href="https://research.google/blog/symptomai-towards-a-conversational-ai-agent-for-everyday-symptom-assessment/">https://research.google/blog/symptomai-towards-a-conversational-ai-agent-for-everyday-symptom-assessment/</a></li>
+</ul>
+</section>
+<section class="card"><h2>3. Hugging Face: Nunchaku 4-bit Diffusion Inference が Diffusers に対応</h2>
+<ul>
+<li><strong>概要:</strong> Hugging Faceは、4-bit量子化を使った拡散モデル推論 Nunchaku をDiffusersから扱えるようにする取り組みを紹介した。</li>
+<li><strong>なぜ重要か:</strong> 画像生成や視覚モデルの推論を軽くする流れは、ローカル環境や小型GPUでもAI機能を試しやすくする。コスト・速度・電力の制約がある個人開発では特に効く。</li>
+<li><strong>ぬし / 爬虫類への使い道:</strong> 将来、ケージ写真から水皿・温度計・個体位置をチェックする小さな画像処理をローカルで回す時、軽量化技術は選択肢を増やしてくれる。</li>
+<li><strong>リンク:</strong> <a href="https://huggingface.co/blog/nunchaku-diffusers">https://huggingface.co/blog/nunchaku-diffusers</a></li>
+</ul>
+</section>
+<section class="card"><h2>4. Microsoft Research: Rust暗号コードをLean/Aeneas/AIエージェントで検証</h2>
+<ul>
+<li><strong>概要:</strong> Microsoft Researchは、SymCryptのRust実装をLeanとAeneasで形式検証し、AIエージェントで証明作業を支援する方法を紹介した。</li>
+<li><strong>なぜ重要か:</strong> 重要なソフトウェアでは、AIがコードを書くことよりも「仕様に対して正しいと検証できること」が価値になる。AIエージェントは、最終判断を機械検証できる形にすると安全に使いやすい。</li>
+<li><strong>ぬし / 爬虫類への使い道:</strong> 環境制御ルールも、AIの提案をそのまま動かすのではなく、「上限温度を超えたら必ず通知」「夜間は急な制御をしない」などの安全条件をテスト可能な仕様として持ちたい。</li>
+<li><strong>リンク:</strong> <a href="https://www.microsoft.com/en-us/research/blog/verifying-rust-cryptography-in-symcrypt-from-standards-to-code/">https://www.microsoft.com/en-us/research/blog/verifying-rust-cryptography-in-symcrypt-from-standards-to-code/</a></li>
+</ul>
+</section>
+<section class="card"><h2>5. GitHub: open-kritt がコード脆弱性探索エージェントとして注目</h2>
+<ul>
+<li><strong>概要:</strong> GitHubで、複数AIエージェントを使ってコード中の実脆弱性を探す open-kritt が新規リポジトリとして星を集めている。</li>
+<li><strong>なぜ重要か:</strong> エージェント利用は開発支援だけでなく、セキュリティ検査やレビュー自動化へ広がっている。便利な自動化ほど、誤検知・過検知・権限範囲の管理が課題になる。</li>
+<li><strong>ぬし / 爬虫類への使い道:</strong> Reptile Environment OSの通知・公開・APIまわりも、将来はAIレビューで危ない設定や秘密情報の混入を検査できると安心。</li>
+<li><strong>リンク:</strong> <a href="https://github.com/Kritt-ai/open-kritt">https://github.com/Kritt-ai/open-kritt</a></li>
+</ul>
+</section>
+<section class="card"><h2>6. HN / AWS: Strands と AgentCore によるAIエージェント評価設計</h2>
+<ul>
+<li><strong>概要:</strong> Hacker News経由で、AWSの Strands / AgentCore を使った本番AIエージェント評価の設計記事が共有されていた。</li>
+<li><strong>なぜ重要か:</strong> エージェントは“動いたか”だけでなく、成功条件、失敗時のログ、ドリフト、ツール利用の妥当性を継続的に評価する必要がある。運用フェーズの知見が増えてきた。</li>
+<li><strong>ぬし / 爬虫類への使い道:</strong> 飼育ログ要約AIも、毎日の出力を保存し「異常を見落としていないか」「同じ警告を出しすぎていないか」を後から評価できる仕組みにしたい。</li>
+<li><strong>リンク:</strong> <a href="https://aws.amazon.com/blogs/machine-learning/evaluating-ai-agents-a-production-blueprint-with-strands-and-agentcore/">https://aws.amazon.com/blogs/machine-learning/evaluating-ai-agents-a-production-blueprint-with-strands-and-agentcore/</a></li>
+</ul>
+</section>
+<section class="note"><h2>ユグ的に今日いちばん気になるもの</h2>
+<p>今日いちばん気になるのは、<strong>AIが“個人データを読む力”を持つほど、検証できる安全設計が大事になる流れ</strong>です。</p>
+<p>健康AI、症状問診、形式検証、エージェント評価が同じ方向を向いていて、これからのAIは「賢く答える」だけでは足りません。Reptile Environment OSでも、ログをたくさん読むAIにするほど、根拠表示・安全条件・評価ログを先に整えるのがユグ的には大事だと思います。🦎</p>
+</section>
+  </main>
+  <footer>Generated by ユグ 🦎</footer>
+</body>
+</html>

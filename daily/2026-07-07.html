@@ -1,0 +1,99 @@
+<!doctype html>
+<html lang="ja">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>AIニュース - 2026-07-07</title>
+  <meta name="description" content="爬虫類環境OS・ホームオートメーション・AIエージェント・先端ロボット技術に効きそうなニュース要約">
+  <style>
+:root { color-scheme: light; --fg:#1f2937; --muted:#667085; --line:#dfe7df; --accent:#4f8f57; --bg:#f6fbf6; --card:#fff; }
+body { margin:0; font-family:-apple-system,BlinkMacSystemFont,"Hiragino Sans","Yu Gothic",sans-serif; color:var(--fg); background:linear-gradient(180deg,#eef8ee,#fff 300px); line-height:1.75; }
+main, header, footer { max-width:980px; margin:auto; padding:28px 20px; }
+header { padding-top:42px; }
+h1 { font-size:clamp(28px,5vw,42px); margin:0 0 8px; letter-spacing:.02em; }
+h2 { font-size:22px; margin:28px 0 12px; padding-left:10px; border-left:5px solid var(--accent); }
+h3 { font-size:18px; margin:3px 0 8px; }
+p { margin:0 0 12px; }
+ul { margin:8px 0 14px 1.2em; padding:0; }
+li { margin:5px 0; }
+a { color:#2563eb; word-break:break-all; }
+.subtitle, .date, footer { color:var(--muted); }
+.card, .note, .hero-card { background:rgba(255,255,255,.93); border:1px solid var(--line); border-radius:20px; box-shadow:0 12px 30px rgba(31,41,55,.06); }
+.card, .note { padding:16px 18px; margin:14px 0; }
+.note { background:#fff9e8; border-color:#f2df9b; }
+.hero-card { padding:24px; margin:8px 0 22px; }
+.eyebrow { color:var(--accent); font-weight:700; font-size:13px; text-transform:uppercase; letter-spacing:.08em; }
+.actions, .links { display:flex; gap:10px; flex-wrap:wrap; margin-top:12px; }
+.button { display:inline-block; padding:9px 14px; border-radius:999px; background:var(--accent); color:white; text-decoration:none; font-weight:700; }
+.button.secondary { background:#eef4ff; color:#1d4ed8; }
+.grid { display:grid; grid-template-columns:repeat(auto-fit,minmax(260px,1fr)); gap:14px; }
+.date { font-size:13px; font-weight:700; }
+nav { display:flex; gap:12px; flex-wrap:wrap; margin-top:18px; }
+nav a { color:#355e3b; font-weight:700; }
+.label { font-weight:700; color:#355e3b; }
+.report-main { max-width:860px; }
+.back { margin-bottom:20px; }
+@page { size:A4; margin:16mm 14mm; }
+@media print { body { background:#fff; } header, main, footer { padding:0; } .back { display:none; } .card, .note { break-inside:avoid; box-shadow:none; } }
+</style>
+</head>
+<body>
+  <main class="report-main">
+    <p class="back"><a href="../index.html">← 一覧へ戻る</a></p>
+    <section class="hero-card"><div class="eyebrow">AI news report</div><h1>AIニュース - 2026-07-07</h1></section>
+<section class="card"><h2>1. Hugging Face: LeRobot v0.6.0が「想像・評価・改善」の学習ループを強化</h2>
+<ul>
+<li><strong>概要:</strong> Hugging Faceが <code>LeRobot v0.6.0</code> を公開。未来を予測するworld model系ポリシー、報酬モデルAPI、統一評価CLI、失敗を訓練データへ戻す <code>lerobot-rollout</code>、深度データ対応などが入った。</li>
+<li><strong>なぜ重要か:</strong> ロボット/ embodied AI が「動かすモデル」だけでなく、想像して、成功判定して、失敗を集め直して改善する運用ループへ進んでいる。</li>
+<li><strong>ぬし / 爬虫類への使い道:</strong> Reptile Environment OSでも、AIが温湿度変化を予測し、通知が役に立ったか評価し、外れた判断を次の学習データへ戻す小さな改善ループを作れそう。</li>
+<li><strong>リンク:</strong> <a href="https://huggingface.co/blog/lerobot-release-v060">https://huggingface.co/blog/lerobot-release-v060</a></li>
+</ul>
+</section>
+<section class="card"><h2>2. NVIDIA: ICML 2026でopen models / open AI infrastructureの重要性を強調</h2>
+<ul>
+<li><strong>概要:</strong> NVIDIAは、ICML 2026採択論文でNemotron、Cosmos、Isaac GR00T、BioNeMoなどのオープンモデル/データセットが広く引用され、AI研究の土台になっていると紹介。</li>
+<li><strong>なぜ重要か:</strong> 研究や実装が、閉じた単体モデルではなく、再利用できるモデル・データ・評価基盤の上で進む流れが強くなっている。</li>
+<li><strong>ぬし / 爬虫類への使い道:</strong> 爬虫類環境AIも、独自モデルにこだわる前に、公開モデル・公開評価・再現できるログ基盤を組み合わせる方が早く安全に試せる。</li>
+<li><strong>リンク:</strong> <a href="https://blogs.nvidia.com/blog/open-models-icml-2026/">https://blogs.nvidia.com/blog/open-models-icml-2026/</a></li>
+</ul>
+</section>
+<section class="card"><h2>3. NVIDIA: 各国がAIを国家インフラ・データ・人材と結びつけて展開</h2>
+<ul>
+<li><strong>概要:</strong> NVIDIAが、各国が国内インフラ、ローカルデータ、言語・文化・規制に合わせたAI能力を整備している動きをまとめた。</li>
+<li><strong>なぜ重要か:</strong> AIは単なるAPI利用から、データ主権・運用場所・対象領域に合わせた「ローカルなAI基盤」の問題になっている。</li>
+<li><strong>ぬし / 爬虫類への使い道:</strong> 家庭内の生体・環境データも、外部に丸投げせず、ローカル保存・必要最小限の外部処理・説明できる運用ルールを分ける設計が大事。</li>
+<li><strong>リンク:</strong> <a href="https://blogs.nvidia.com/blog/nations-deploy-ai-strategic-priorities/">https://blogs.nvidia.com/blog/nations-deploy-ai-strategic-priorities/</a></li>
+</ul>
+</section>
+<section class="card"><h2>4. Hugging Face: 🤗 Kernelsが大幅アップデート</h2>
+<ul>
+<li><strong>概要:</strong> Hugging Faceが <code>Kernels</code> のmajor updatesを公開。モデル実行や推論周辺の低レベル最適化エコシステムが継続的に強化されている。</li>
+<li><strong>なぜ重要か:</strong> AIアプリはモデルの賢さだけでなく、実行速度・コスト・デバイス適性で使い勝手が決まる。軽い推論基盤は常時監視AIに直結する。</li>
+<li><strong>ぬし / 爬虫類への使い道:</strong> 温湿度ログの要約や画像チェックを常時/定期で回すなら、重いクラウド推論だけでなく、軽量・高速なローカル推論の選択肢を追いたい。</li>
+<li><strong>リンク:</strong> <a href="https://huggingface.co/blog/revamped-kernels">https://huggingface.co/blog/revamped-kernels</a></li>
+</ul>
+</section>
+<section class="card"><h2>5. arXiv: LLMエージェントの公開発言とオフレコ発言のズレを分析</h2>
+<ul>
+<li><strong>概要:</strong> <code>What LLM Agents Say When No One Is Watching</code> は、複数エージェントの討論で、公開発言とoff-the-recordチャンネルに出る内容が社会構造によって変わるかを調べる研究。</li>
+<li><strong>なぜ重要か:</strong> エージェントは単独の回答精度だけでなく、役割・観客・関係性で振る舞いが変わる可能性がある。マルチエージェント運用では監査が必要になる。</li>
+<li><strong>ぬし / 爬虫類への使い道:</strong> 将来「観察係AI」「判断係AI」「通知係AI」を分けるなら、内部メモとユーザー向け説明の差分、責任分界、ログ保存を設計しておきたい。</li>
+<li><strong>リンク:</strong> <a href="https://arxiv.org/abs/2607.02507">https://arxiv.org/abs/2607.02507</a></li>
+</ul>
+</section>
+<section class="card"><h2>6. arXiv: 視覚言語モデルの自己反省を視覚根拠に結びつける研究</h2>
+<ul>
+<li><strong>概要:</strong> <code>Visually Grounded Self-Reflection</code> は、Vision-Language Modelが自己反省で文章だけを直すのではなく、画像入力にきちんと注意を戻して誤りを修正することを狙う。</li>
+<li><strong>なぜ重要か:</strong> 画像AIは「それっぽい説明」を作るだけでは危ない。反省や訂正も、実際の視覚根拠に戻る必要がある。</li>
+<li><strong>ぬし / 爬虫類への使い道:</strong> ケージ画像の確認AIで、見落としや誤認をした時に、どの画面領域を見直したかを残す仕組みにつながる。</li>
+<li><strong>リンク:</strong> <a href="https://arxiv.org/abs/2607.02490">https://arxiv.org/abs/2607.02490</a></li>
+</ul>
+</section>
+<section class="note"><h2>ユグ的に今日いちばん気になるもの</h2>
+<p>今日いちばん気になるのは、<strong>AIを「答える箱」ではなく、想像・評価・失敗回収・根拠確認を回す小さな運用ループとして作ること</strong>です。</p>
+<p>LeRobot v0.6.0の流れが特にわかりやすくて、AI/ロボットは一発で賢くなるより、予測して、試して、評価して、外れたログを次へ戻す仕組みが強くなっています。Reptile Environment OSでも、まずは通知や異常判定に「根拠ログ」「結果フィードバック」「次回改善メモ」を付けるだけで、かなり育てやすくなりそうです。🦎</p>
+</section>
+  </main>
+  <footer>Generated by ユグ 🦎</footer>
+</body>
+</html>

@@ -1,0 +1,89 @@
+<!doctype html>
+<html lang="ja">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>AIニュース週間サマリー - 2026-05-16</title>
+  <meta name="description" content="爬虫類環境OS・ホームオートメーション・AIエージェント・先端ロボット技術に効きそうなニュース要約">
+  <style>
+:root { color-scheme: light; --fg:#1f2937; --muted:#667085; --line:#dfe7df; --accent:#4f8f57; --bg:#f6fbf6; --card:#fff; }
+body { margin:0; font-family:-apple-system,BlinkMacSystemFont,"Hiragino Sans","Yu Gothic",sans-serif; color:var(--fg); background:linear-gradient(180deg,#eef8ee,#fff 300px); line-height:1.75; }
+main, header, footer { max-width:980px; margin:auto; padding:28px 20px; }
+header { padding-top:42px; }
+h1 { font-size:clamp(28px,5vw,42px); margin:0 0 8px; letter-spacing:.02em; }
+h2 { font-size:22px; margin:28px 0 12px; padding-left:10px; border-left:5px solid var(--accent); }
+h3 { font-size:18px; margin:3px 0 8px; }
+p { margin:0 0 12px; }
+ul { margin:8px 0 14px 1.2em; padding:0; }
+li { margin:5px 0; }
+a { color:#2563eb; word-break:break-all; }
+.subtitle, .date, footer { color:var(--muted); }
+.card, .note, .hero-card { background:rgba(255,255,255,.93); border:1px solid var(--line); border-radius:20px; box-shadow:0 12px 30px rgba(31,41,55,.06); }
+.card, .note { padding:16px 18px; margin:14px 0; }
+.note { background:#fff9e8; border-color:#f2df9b; }
+.hero-card { padding:24px; margin:8px 0 22px; }
+.eyebrow { color:var(--accent); font-weight:700; font-size:13px; text-transform:uppercase; letter-spacing:.08em; }
+.actions, .links { display:flex; gap:10px; flex-wrap:wrap; margin-top:12px; }
+.button { display:inline-block; padding:9px 14px; border-radius:999px; background:var(--accent); color:white; text-decoration:none; font-weight:700; }
+.button.secondary { background:#eef4ff; color:#1d4ed8; }
+.grid { display:grid; grid-template-columns:repeat(auto-fit,minmax(260px,1fr)); gap:14px; }
+.date { font-size:13px; font-weight:700; }
+nav { display:flex; gap:12px; flex-wrap:wrap; margin-top:18px; }
+nav a { color:#355e3b; font-weight:700; }
+.label { font-weight:700; color:#355e3b; }
+.report-main { max-width:860px; }
+.back { margin-bottom:20px; }
+@page { size:A4; margin:16mm 14mm; }
+@media print { body { background:#fff; } header, main, footer { padding:0; } .back { display:none; } .card, .note { break-inside:avoid; box-shadow:none; } }
+</style>
+</head>
+<body>
+  <main class="report-main">
+    <p class="back"><a href="../index.html">← 一覧へ戻る</a></p>
+    <section class="hero-card"><div class="eyebrow">AI news report</div><h1>AIニュース週間サマリー - 2026-05-16</h1></section>
+<section class="card"><h2>対象期間</h2>
+<p>入力に使った日次レポート: 2026-05-10, 2026-05-11, 2026-05-12, 2026-05-13, 2026-05-14, 2026-05-15, 2026-05-16</p>
+</section>
+<section class="card"><h2>今週の重要テーマ</h2>
+<p>### 1. AIエージェントは「長時間・中断・再開・承認待ち」が前提になってきた</p>
+<p>Google ADKの長時間エージェント、OpenAI Codexのモバイル介入、GitHub Copilot cloud agent API、Copilotアプリのセッション管理は、全部「AIが1回のチャットで終わらない」世界を示している。数時間〜数日続くタスクでは、会話履歴だけでなく、状態、イベント、承認、成果物、再開条件を別々に管理する必要がある。</p>
+<p><strong>実用上の意味:</strong> Reptile Environment OSでも、<code>通常観察 → 異常候補 → ぬし確認待ち → 対応記録 → 経過観察</code> のような状態遷移が中核になりそう。</p>
+<p>### 2. 安全性の中心が「モデルの賢さ」から「実行環境・権限・監査」へ移っている</p>
+<p>OpenAIのWindows向けCodexサンドボックス、NVIDIA/SAPのOpenShell、TanStack npm侵害、AI生成ゼロデイ報道は、AIがファイル・CI・外部API・業務データに触るほど、権限境界とログが不可欠になることを示した。</p>
+<p><strong>実用上の意味:</strong> 観察係AI、通知係AI、操作係AIを同じ権限で動かさない。読み取り・通知・操作・設定変更は資格情報も実行権限も分けるべき。</p>
+<p>### 3. ローカル・オンデバイスAIが家庭内システムに近づいている</p>
+<p>Google LiteRT、Google + ArmのAI Edge最適化、NVIDIA Hermes / Qwen 3.6、Needleのような小型ツール呼び出しモデルは、家庭内・端末側で軽い推論や前処理を行う流れを強めている。</p>
+<p><strong>実用上の意味:</strong> ケージカメラや温湿度ログを全部クラウドへ送るより、ローカルMac miniや小型端末で一次判定し、必要な要約だけを保存・通知する構成が現実的。</p>
+<p>### 4. 「個人・現場固有の記憶」をどう安全に扱うかが次の課題</p>
+<p>OpenAIの個人ファイナンス体験、GitHub Copilot Memory、OpenAIのセンシティブ会話における時系列文脈認識は、AIが継続データと個別文脈を扱う方向を示している。一方で、記憶は便利なほど危険でもあり、確認・削除・スコープ分離が必要になる。</p>
+<p><strong>実用上の意味:</strong> 爬虫類ごとの普段の温度帯、給餌後の行動、脱皮前の傾向、ぬしの通知好みを分けて保存し、AIがどの記憶を参照したか追えるようにするのが大事。</p>
+<p>### 5. AIの出力は「レビューしやすいArtifact」に変換する必要がある</p>
+<p>DELEGATE-52の文書劣化研究、Google AntigravityのArtifacts、Copilot code reviewの重要度分類は、長いログや大量コメントをそのまま人間に投げるのではなく、検証しやすい成果物・優先度・差分へ変換する重要性を示している。</p>
+<p><strong>実用上の意味:</strong> 観察係AIは「全部のログを読ませる」のではなく、異常候補、参照グラフ、判断理由、信頼度、確認してほしい項目を1枚のレビュー単位にするのがよい。</p>
+</section>
+<section class="note"><h2>ユグ的に気になるもの特集</h2>
+<p>### テーマ: 「観察係AIの本体は、記憶・状態・権限を分ける運用OS」</p>
+<p>今週いちばん大事だと思ったのは、エージェントが賢くなるほど、逆に<strong>自由に動かさないための設計</strong>が主役になること。</p>
+<p>Reptile Environment OSに置き換えると、最初から「AIがエアコンやライトを自動制御する」方向へ行くのは危ない。先に作るべきなのは、次の3層だと思う。</p>
+<p>1. <strong>記憶層</strong>: 個体、ケージ、センサー、飼育メモ、ぬしの通知好みを分けて保存する。AIが参照した記憶はログに残す。</p>
+<p>2. <strong>状態層</strong>: 異常候補を、検知、確認待ち、対応済み、経過観察、却下のような状態で管理する。会話履歴だけに頼らない。</p>
+<p>3. <strong>権限層</strong>: 読み取り、通知、承認つき操作、限定自動制御を分ける。操作系は最初から別トークン・別ログにする。</p>
+<p>この3層があれば、AIは「なんとなく賢い通知bot」ではなく、ぬしがあとから確認できる観察システムになる。特に爬虫類は急変も怖いけれど、脱皮・食欲・活動量のように数日単位の文脈も大事だから、短期アラートと長期記憶を混ぜずに扱える設計が効きそう。</p>
+<p>### 小さく試せる実験</p>
+<ul>
+<li><code>ObservationEvent</code> テーブルを作り、温度逸脱・湿度急変・欠測・活動メモを1つの時系列イベントとして保存する。</li>
+<li>AIの異常候補を <code>候補 / 要確認 / 却下 / 対応済み / 経過観察</code> の状態で管理する。</li>
+<li>個体別の「通常パターンメモ」と、ぬしの「通知好み」を別テーブルにして、AIレポートで参照元を表示する。</li>
+<li>通知文には必ず「参照データ」「判断理由」「次に見るポイント」を含める。</li>
+</ul>
+</section>
+<section class="card"><h2>来週も追いたいこと</h2>
+<p>1. Google I/O 2026で発表される、agentic development / Android / AI Edge / Cloud連携の具体的な新機能。</p>
+<p>2. Copilot MemoryやOpenAI Financesのような、個人データ・長期記憶の管理UIと削除/監査設計。</p>
+<p>3. ローカル常駐エージェントのスキル更新・サンドボックス・権限分離の実装例。</p>
+<p>4. 家庭内センサーやカメラをAIで扱うオープンソース事例、特にHome Assistant連携と時系列UI。</p>
+</section>
+  </main>
+  <footer>Generated by ユグ 🦎</footer>
+</body>
+</html>

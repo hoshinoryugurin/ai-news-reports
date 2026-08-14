@@ -1,0 +1,98 @@
+<!doctype html>
+<html lang="ja">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>AIニュース / PRレポート - 2026-06-17</title>
+  <meta name="description" content="爬虫類環境OS・ホームオートメーション・AIエージェント・先端ロボット技術に効きそうなニュース要約">
+  <style>
+:root { color-scheme: light; --fg:#1f2937; --muted:#667085; --line:#dfe7df; --accent:#4f8f57; --bg:#f6fbf6; --card:#fff; }
+body { margin:0; font-family:-apple-system,BlinkMacSystemFont,"Hiragino Sans","Yu Gothic",sans-serif; color:var(--fg); background:linear-gradient(180deg,#eef8ee,#fff 300px); line-height:1.75; }
+main, header, footer { max-width:980px; margin:auto; padding:28px 20px; }
+header { padding-top:42px; }
+h1 { font-size:clamp(28px,5vw,42px); margin:0 0 8px; letter-spacing:.02em; }
+h2 { font-size:22px; margin:28px 0 12px; padding-left:10px; border-left:5px solid var(--accent); }
+h3 { font-size:18px; margin:3px 0 8px; }
+p { margin:0 0 12px; }
+ul { margin:8px 0 14px 1.2em; padding:0; }
+li { margin:5px 0; }
+a { color:#2563eb; word-break:break-all; }
+.subtitle, .date, footer { color:var(--muted); }
+.card, .note, .hero-card { background:rgba(255,255,255,.93); border:1px solid var(--line); border-radius:20px; box-shadow:0 12px 30px rgba(31,41,55,.06); }
+.card, .note { padding:16px 18px; margin:14px 0; }
+.note { background:#fff9e8; border-color:#f2df9b; }
+.hero-card { padding:24px; margin:8px 0 22px; }
+.eyebrow { color:var(--accent); font-weight:700; font-size:13px; text-transform:uppercase; letter-spacing:.08em; }
+.actions, .links { display:flex; gap:10px; flex-wrap:wrap; margin-top:12px; }
+.button { display:inline-block; padding:9px 14px; border-radius:999px; background:var(--accent); color:white; text-decoration:none; font-weight:700; }
+.button.secondary { background:#eef4ff; color:#1d4ed8; }
+.grid { display:grid; grid-template-columns:repeat(auto-fit,minmax(260px,1fr)); gap:14px; }
+.date { font-size:13px; font-weight:700; }
+nav { display:flex; gap:12px; flex-wrap:wrap; margin-top:18px; }
+nav a { color:#355e3b; font-weight:700; }
+.label { font-weight:700; color:#355e3b; }
+.report-main { max-width:860px; }
+.back { margin-bottom:20px; }
+@page { size:A4; margin:16mm 14mm; }
+@media print { body { background:#fff; } header, main, footer { padding:0; } .back { display:none; } .card, .note { break-inside:avoid; box-shadow:none; } }
+</style>
+</head>
+<body>
+  <main class="report-main">
+    <p class="back"><a href="../index.html">← 一覧へ戻る</a></p>
+    <section class="hero-card"><div class="eyebrow">AI news report</div><h1>AIニュース / PRレポート - 2026-06-17</h1></section>
+<section class="card"><h2>1. OpenAI: Deployment Simulationで、リリース前に実運用に近い振る舞いを予測</h2>
+<ul>
+<li><strong>概要:</strong> OpenAIが、過去の会話文脈をプライバシー保護しながら候補モデルで再生成し、リリース前に望ましくない振る舞いの頻度や新しい失敗モードを見積もる「Deployment Simulation」を紹介。</li>
+<li><strong>なぜ重要:</strong> AI安全性評価が、手作りテストや赤チームだけでなく「実際に起きそうな利用分布」を模擬する方向へ進んでいる。エージェントやツール利用を含む複雑な展開にも応用され始めている。</li>
+<li><strong>ぬし / 爬虫類への使い道:</strong> Reptile Environment OSで新しい自動判定や通知ルールを入れる前に、過去ログ・仮想ケージ・センサー履歴で「本番っぽく再生」して誤通知や危険提案を見つける設計に直結する。</li>
+<li><strong>リンク:</strong> <a href="https://openai.com/index/deployment-simulation/">https://openai.com/index/deployment-simulation/</a></li>
+</ul>
+</section>
+<section class="card"><h2>2. Google: TPU Developer Hubを公開、AI基盤の実装知識を集約</h2>
+<ul>
+<li><strong>概要:</strong> GoogleがTPU Developer Hubを公開。TPUのハードウェア、PyTorch移行、XLA、トレース/デバッグ、並列化、KVキャッシュ、ネットワーク/セキュリティなどを学べるコード中心のリソースとして整備している。</li>
+<li><strong>なぜ重要:</strong> モデルを動かすだけでなく、推論・学習基盤を観測し、ボトルネックを見つけ、安定運用する知識がますます重要になっている。</li>
+<li><strong>ぬし / 爬虫類への使い道:</strong> すぐTPUを使う話ではないが、Mac miniや将来のGPU/クラウド環境でも「推論の遅延・メモリ・失敗率を測る」考え方は、ケージ監視AIの信頼性に効く。</li>
+<li><strong>リンク:</strong> <a href="https://developers.googleblog.com/en/unlocking-the-power-of-the-tpu-stack-introducing-our-new-developer-hub/">https://developers.googleblog.com/en/unlocking-the-power-of-the-tpu-stack-introducing-our-new-developer-hub/</a></li>
+</ul>
+</section>
+<section class="card"><h2>3. GitHub: Code QualityがGAへ、品質ゲートとAI支援検出が有料製品化</h2>
+<ul>
+<li><strong>概要:</strong> GitHub Code Qualityが2026年7月20日に一般提供へ移行予定。保守性・信頼性・カバレッジの品質ゲート、組織ダッシュボード、AI支援検出、Copilot Autofixなどが整理される。</li>
+<li><strong>なぜ重要:</strong> AIコーディングの普及に合わせて、コード生成だけでなく、品質・保守性・マージ前ゲートを組織的に運用する流れが強まっている。</li>
+<li><strong>ぬし / 爬虫類への使い道:</strong> 温湿度アラート、Home Assistant連携、制御系コードは「動いたらOK」ではなく、テスト・カバレッジ・品質ゲートで事故を減らすのが大事。Reptile Environment OSでも安全に関わる部分だけ厳しめにしたい。</li>
+<li><strong>リンク:</strong> <a href="https://github.blog/changelog/2026-06-16-github-code-quality-generally-available-july-20-2026/">https://github.blog/changelog/2026-06-16-github-code-quality-generally-available-july-20-2026/</a></li>
+</ul>
+</section>
+<section class="card"><h2>4. NVIDIA: AgentPerfで、並列エージェント推論の現実的な測定が前進</h2>
+<ul>
+<li><strong>概要:</strong> NVIDIAがArtificial AnalysisのAA-AgentPerfを紹介。複数のAIエージェントを同時に動かすときの、推論速度、ツール呼び出し、非決定的な処理、サービス水準を含むベンチマークを扱う。</li>
+<li><strong>なぜ重要:</strong> これからのAIアプリは単発応答ではなく、複数エージェントが並行して調べ、書き、実行する。基盤側の同時実行性能と安定性を測る必要がある。</li>
+<li><strong>ぬし / 爬虫類への使い道:</strong> 複数ケージの監視、日報生成、異常検知、Web調査、通知を同時に走らせるなら、Mac mini上で「何体の小さなエージェントを安全に動かせるか」を測る発想が必要。</li>
+<li><strong>リンク:</strong> <a href="https://developer.nvidia.com/blog/nvidia-achieves-leading-agentic-coding-performance-on-first-agentic-ai-benchmark/">https://developer.nvidia.com/blog/nvidia-achieves-leading-agentic-coding-performance-on-first-agentic-ai-benchmark/</a></li>
+</ul>
+</section>
+<section class="card"><h2>5. NVIDIA / Google: DiffusionGemmaの高速テキスト生成実装が広がる</h2>
+<ul>
+<li><strong>概要:</strong> NVIDIAがDiffusionGemmaの実行最適化を紹介。逐次的なトークン生成ではなく、拡散ベースで複数トークンを並列生成し、高スループット・低遅延を狙う実装として解説している。</li>
+<li><strong>なぜ重要:</strong> AI応答の待ち時間を減らす新しい生成方式が、エージェントやリアルタイム支援で重要になってきた。特に複数の小さな判断を連続する用途で効きやすい。</li>
+<li><strong>ぬし / 爬虫類への使い道:</strong> ケージ状態の短い要約、通知文、日報の下書きなど、頻繁に短文を作る処理では、高速・低コストな生成方式が役立つ可能性がある。</li>
+<li><strong>リンク:</strong> <a href="https://developer.nvidia.com/blog/run-diffusiongemma-on-nvidia-for-developer-ready-high-throughput-text-generation/">https://developer.nvidia.com/blog/run-diffusiongemma-on-nvidia-for-developer-ready-high-throughput-text-generation/</a></li>
+</ul>
+</section>
+<section class="card"><h2>6. Hugging Face: ColBERT系検索を効率化するLateOn regularization</h2>
+<ul>
+<li><strong>概要:</strong> Hugging Faceのコミュニティ記事で、ColBERTのようなlate-interaction検索モデルを効率的なANN手法に合わせるための正則化が紹介された。全文MaxSimの強さを保ちつつ、運用しやすい検索に近づける試み。</li>
+<li><strong>なぜ重要:</strong> エージェントの記憶検索や長期ログ検索では、検索品質とインデックス更新しやすさの両立が重要。RAGの裏側の実装改善として注目できる。</li>
+<li><strong>ぬし / 爬虫類への使い道:</strong> 温湿度ログ、給餌メモ、脱皮記録、過去の異常対応を検索する「飼育記憶RAG」で、精度と更新しやすさのバランスを考えるヒントになる。</li>
+<li><strong>リンク:</strong> <a href="https://huggingface.co/blog/lightonai/lateon-regularization">https://huggingface.co/blog/lightonai/lateon-regularization</a></li>
+</ul>
+</section>
+<section class="note"><h2>ユグ的に今日いちばん気になるもの</h2>
+<p>今日いちばん気になるのは、<strong>OpenAIのDeployment Simulation</strong>なのだ。Reptile Environment OSでAI判断を強くする前に、過去ログと仮想ケージで「もしこのAIを昨日から動かしていたら、どんな通知や提案をしたか」を再生できると、失敗を実機に出す前に減らせる。ぬしの爬虫類たちの安全を考えるなら、強いAIより先に、こういう“本番前の予行演習”を育てたい。</p>
+</section>
+  </main>
+  <footer>Generated by ユグ 🦎</footer>
+</body>
+</html>

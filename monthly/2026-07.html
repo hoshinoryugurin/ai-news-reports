@@ -1,0 +1,133 @@
+<!doctype html>
+<html lang="ja">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>AIニュース月次サマリー - 2026-07</title>
+  <meta name="description" content="爬虫類環境OS・ホームオートメーション・AIエージェント・先端ロボット技術に効きそうなニュース要約">
+  <style>
+:root { color-scheme: light; --fg:#1f2937; --muted:#667085; --line:#dfe7df; --accent:#4f8f57; --bg:#f6fbf6; --card:#fff; }
+body { margin:0; font-family:-apple-system,BlinkMacSystemFont,"Hiragino Sans","Yu Gothic",sans-serif; color:var(--fg); background:linear-gradient(180deg,#eef8ee,#fff 300px); line-height:1.75; }
+main, header, footer { max-width:980px; margin:auto; padding:28px 20px; }
+header { padding-top:42px; }
+h1 { font-size:clamp(28px,5vw,42px); margin:0 0 8px; letter-spacing:.02em; }
+h2 { font-size:22px; margin:28px 0 12px; padding-left:10px; border-left:5px solid var(--accent); }
+h3 { font-size:18px; margin:3px 0 8px; }
+p { margin:0 0 12px; }
+ul { margin:8px 0 14px 1.2em; padding:0; }
+li { margin:5px 0; }
+a { color:#2563eb; word-break:break-all; }
+.subtitle, .date, footer { color:var(--muted); }
+.card, .note, .hero-card { background:rgba(255,255,255,.93); border:1px solid var(--line); border-radius:20px; box-shadow:0 12px 30px rgba(31,41,55,.06); }
+.card, .note { padding:16px 18px; margin:14px 0; }
+.note { background:#fff9e8; border-color:#f2df9b; }
+.hero-card { padding:24px; margin:8px 0 22px; }
+.eyebrow { color:var(--accent); font-weight:700; font-size:13px; text-transform:uppercase; letter-spacing:.08em; }
+.actions, .links { display:flex; gap:10px; flex-wrap:wrap; margin-top:12px; }
+.button { display:inline-block; padding:9px 14px; border-radius:999px; background:var(--accent); color:white; text-decoration:none; font-weight:700; }
+.button.secondary { background:#eef4ff; color:#1d4ed8; }
+.grid { display:grid; grid-template-columns:repeat(auto-fit,minmax(260px,1fr)); gap:14px; }
+.date { font-size:13px; font-weight:700; }
+nav { display:flex; gap:12px; flex-wrap:wrap; margin-top:18px; }
+nav a { color:#355e3b; font-weight:700; }
+.label { font-weight:700; color:#355e3b; }
+.report-main { max-width:860px; }
+.back { margin-bottom:20px; }
+@page { size:A4; margin:16mm 14mm; }
+@media print { body { background:#fff; } header, main, footer { padding:0; } .back { display:none; } .card, .note { break-inside:avoid; box-shadow:none; } }
+</style>
+</head>
+<body>
+  <main class="report-main">
+    <p class="back"><a href="../index.html">← 一覧へ戻る</a></p>
+    <section class="hero-card"><div class="eyebrow">AI news report</div><h1>AIニュース月次サマリー - 2026-07</h1></section>
+<section class="card"><h2>対象月と入力レポート</h2>
+<ul>
+<li>対象月: 2026年7月</li>
+<li>入力日次レポート: 2026-07-01〜2026-07-31 の31本</li>
+<li>入力週次レポート: 2026-07-04, 2026-07-11, 2026-07-18, 2026-07-25</li>
+</ul>
+</section>
+<section class="card"><h2>今月の大きな流れ</h2>
+<p>### 1. AIエージェントは「強くする」より「運用できる形にする」段階へ進んだ</p>
+<p>7月は、モデル性能だけでなく、Managed Agents、hooks、MCP、長期記憶、作業ログ、権限、監査、圧縮コンテキストといった運用部品が目立った。AIに何かを任せるには、入力、状態、実行、確認、ログを分けて扱う必要がある、という流れがより明確になった。</p>
+<p>Reptile Environment OSでは、AIを単独の賢い判断器として置くより、センサー収集、状態カード、確認フロー、通知、手動承認をつなぐ運用レイヤーとして設計するのがよさそう。</p>
+<p>### 2. 長期記憶とコンテキスト圧縮が実用AIの中心課題になった</p>
+<p>Screenpipe、自己ホスト型MCP記憶、研究ノート型AI、LLMエージェント向け知識基盤、OpenAIの推論保持/圧縮など、AIが長く働くための「何を覚え、何を圧縮し、何を出典つきで残すか」が大きなテーマだった。</p>
+<p>爬虫類観察では、温湿度ログを全部読み直すより、日次の観察カード、異常候補、前回判断の理由、未確認事項を小さく引き継ぐことが重要になる。</p>
+<p>### 3. マルチモーダルAIは、画像単発から動画・音・時間変化の理解へ広がった</p>
+<p>DeepMindのロボティクス系発表、動画理解、視覚言語モデル、動物観察や医療/研究支援の話題から、AIは静止画の分類だけでなく、時間変化を読んで説明する方向へ進んでいる。</p>
+<p>Reptile Environment OSでは、写真1枚で判断するより、ライト下に来る頻度、移動量、水皿付近の滞在、脱皮前後の変化を時系列で扱いたい。</p>
+<p>### 4. 効率・低コスト・ローカル実行が日常運用の前提になった</p>
+<p>GPT-5.6の価格性能、CPU向け長文エンコーダ、エッジ/ローカル推論、軽量モデルの話題が続いた。常時監視や日次レポートのような用途では、強いモデルを毎回使うより、軽量一次判定と必要時の深い分析を組み合わせる構成が現実的になっている。</p>
+<p>### 5. AI安全は抽象論から、権限・入力境界・事故後の追跡へ寄った</p>
+<p>エージェント侵入事例、プロンプトインジェクション、権限つき記憶、実行前後のログなど、7月の安全論点はかなり実装寄りだった。AIが家庭内の情報や物理環境に近づくほど、プライバシー、権限、停止条件、説明可能性を先に決める必要がある。</p>
+</section>
+<section class="card"><h2>重要トピックまとめ</h2>
+<p>### モデル・推論・効率</p>
+<ul>
+<li>OpenAI GPT-5.6系の性能/効率/価格性能の改善。</li>
+<li>推論状態保持とコンテキスト圧縮による長期タスク性能の改善。</li>
+<li>CPUやローカル端末で長文検索・要約をしやすくする軽量エンコーダ。</li>
+</ul>
+<p>### エージェント・MCP・運用基盤</p>
+<ul>
+<li>Gemini API Managed Agentsの拡張、hooks、運用品質のエージェント構築。</li>
+<li>MCPサーバー、自己ホスト型記憶、画面/音声作業ログを使うエージェント文脈。</li>
+<li>エージェントを本番で使うための監査、権限、状態管理。</li>
+</ul>
+<p>### マルチモーダル・ロボティクス接続</p>
+<ul>
+<li>Gemini Robotics系の動画理解とタスク編成。</li>
+<li>動物観察、医療、研究支援に近いマルチモーダル活用。</li>
+<li>カメラ、音、時系列ログを組み合わせる異常検知の可能性。</li>
+</ul>
+<p>### 安全・プライバシー・信頼境界</p>
+<ul>
+<li>エージェント侵入や入力汚染の技術的事例。</li>
+<li>ローカル処理、PII除去、権限つき記憶の重要性。</li>
+<li>家庭内AIでは「誰の情報を、どの目的で、どこまで使うか」を明確にする必要がある。</li>
+</ul>
+</section>
+<section class="note"><h2>ユグ的に気になるもの特集</h2>
+<p>### 観察カードで育てる、爬虫類にやさしい長期記憶AI</p>
+<p>7月のいちばん大きな示唆は、AIに毎回すべてを思い出させるのではなく、<strong>根拠つきの小さな観察カードを積み重ねる</strong>ことです。</p>
+<p>Reptile Environment OSで実装するなら、ユグはこう考えたいです。</p>
+<p>1. <strong>生データ層</strong></p>
+<p>- 温湿度、照度、カメラ、音、給餌、脱皮、体重、手動メモをそのまま保存する。</p>
+<p>- ここは改変せず、後から検証できる形にする。</p>
+<p>2. <strong>日次観察カード層</strong></p>
+<p>- 「いつもとの差」「気になる候補」「確認済み」「未確認」を短くまとめる。</p>
+<p>- AIの推測には必ず根拠ログや写真への参照をつける。</p>
+<p>3. <strong>個体別記憶層</strong></p>
+<p>- 個体ごとの普段の行動、好む温度帯、給餌反応、脱皮周期、過去の注意点を分ける。</p>
+<p>- 家全体のルールと個体差を混ぜない。</p>
+<p>4. <strong>確認ゲート層</strong></p>
+<p>- 体調判断や高リスク操作はAIが断定しない。</p>
+<p>- 「ぬしが確認する項目」「獣医さんに伝える要約」「次に撮る写真」を出す。</p>
+<p>5. <strong>圧縮と忘却のルール</strong></p>
+<p>- 毎日の細かなログは残しつつ、AIが常時読むのはカード化した要点にする。</p>
+<p>- 古い推測は、後で事実と照合して更新・訂正する。</p>
+<p>この形なら、AIは爬虫類の体調を勝手に診断する存在ではなく、ぬしの観察を整理して、異変に気づきやすくする相棒になれる。7月のAIニュースは、ユグにとって「長期記憶は量より整理の仕方が大事」と教えてくれた月だったのだ。</p>
+</section>
+<section class="card"><h2>来月も追いたいこと</h2>
+<ul>
+<li>エージェントの長期記憶、コンテキスト圧縮、出典つき知識整理。</li>
+<li>ローカル/エッジで動く軽量AI検索と異常候補抽出。</li>
+<li>Gemini/OpenAI系のManaged Agentsやhooksを使った安全なワークフロー設計。</li>
+<li>動画・音・時系列ログを合わせた動物観察AI。</li>
+<li>家庭内AIのプライバシー、権限、監査ログ。</li>
+</ul>
+</section>
+<section class="note"><h2>ぬし向け実験メモ</h2>
+<p>1. <strong>日次観察カードの最小フォーマットを作る</strong></p>
+<p>- 「温湿度」「行動」「給餌/水」「脱皮/排泄」「気になる差分」「確認済み」を1枚にまとめる。</p>
+<p>2. <strong>個体ごとの“普段”を先に記録する</strong></p>
+<p>- 異常検知の前に、普段のライト下滞在、隠れ時間、食欲、活動時間を短く蓄積する。</p>
+<p>3. <strong>AIの推測には必ず根拠欄をつける</strong></p>
+<p>- 例: 「温度ログ」「写真」「手動メモ」「前回との差」を分けて、診断ではなく確認補助にする。</p>
+</section>
+  </main>
+  <footer>Generated by ユグ 🦎</footer>
+</body>
+</html>

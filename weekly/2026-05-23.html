@@ -1,0 +1,104 @@
+<!doctype html>
+<html lang="ja">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>AIニュース週間サマリー - 2026-05-23</title>
+  <meta name="description" content="爬虫類環境OS・ホームオートメーション・AIエージェント・先端ロボット技術に効きそうなニュース要約">
+  <style>
+:root { color-scheme: light; --fg:#1f2937; --muted:#667085; --line:#dfe7df; --accent:#4f8f57; --bg:#f6fbf6; --card:#fff; }
+body { margin:0; font-family:-apple-system,BlinkMacSystemFont,"Hiragino Sans","Yu Gothic",sans-serif; color:var(--fg); background:linear-gradient(180deg,#eef8ee,#fff 300px); line-height:1.75; }
+main, header, footer { max-width:980px; margin:auto; padding:28px 20px; }
+header { padding-top:42px; }
+h1 { font-size:clamp(28px,5vw,42px); margin:0 0 8px; letter-spacing:.02em; }
+h2 { font-size:22px; margin:28px 0 12px; padding-left:10px; border-left:5px solid var(--accent); }
+h3 { font-size:18px; margin:3px 0 8px; }
+p { margin:0 0 12px; }
+ul { margin:8px 0 14px 1.2em; padding:0; }
+li { margin:5px 0; }
+a { color:#2563eb; word-break:break-all; }
+.subtitle, .date, footer { color:var(--muted); }
+.card, .note, .hero-card { background:rgba(255,255,255,.93); border:1px solid var(--line); border-radius:20px; box-shadow:0 12px 30px rgba(31,41,55,.06); }
+.card, .note { padding:16px 18px; margin:14px 0; }
+.note { background:#fff9e8; border-color:#f2df9b; }
+.hero-card { padding:24px; margin:8px 0 22px; }
+.eyebrow { color:var(--accent); font-weight:700; font-size:13px; text-transform:uppercase; letter-spacing:.08em; }
+.actions, .links { display:flex; gap:10px; flex-wrap:wrap; margin-top:12px; }
+.button { display:inline-block; padding:9px 14px; border-radius:999px; background:var(--accent); color:white; text-decoration:none; font-weight:700; }
+.button.secondary { background:#eef4ff; color:#1d4ed8; }
+.grid { display:grid; grid-template-columns:repeat(auto-fit,minmax(260px,1fr)); gap:14px; }
+.date { font-size:13px; font-weight:700; }
+nav { display:flex; gap:12px; flex-wrap:wrap; margin-top:18px; }
+nav a { color:#355e3b; font-weight:700; }
+.label { font-weight:700; color:#355e3b; }
+.report-main { max-width:860px; }
+.back { margin-bottom:20px; }
+@page { size:A4; margin:16mm 14mm; }
+@media print { body { background:#fff; } header, main, footer { padding:0; } .back { display:none; } .card, .note { break-inside:avoid; box-shadow:none; } }
+</style>
+</head>
+<body>
+  <main class="report-main">
+    <p class="back"><a href="../index.html">← 一覧へ戻る</a></p>
+    <section class="hero-card"><div class="eyebrow">AI news report</div><h1>AIニュース週間サマリー - 2026-05-23</h1></section>
+<section class="card"><h2>対象期間</h2>
+<p>入力に使った日次レポート:</p>
+<ul>
+<li>2026-05-17</li>
+<li>2026-05-18</li>
+<li>2026-05-19</li>
+<li>2026-05-20</li>
+<li>2026-05-21</li>
+<li>2026-05-22</li>
+<li>2026-05-23</li>
+</ul>
+</section>
+<section class="card"><h2>今週の重要テーマ</h2>
+<p>### 1. エージェントは「実行する力」より「止められる構造」が重要になってきた</p>
+<p>Google Genkit Middleware、Anthropic / Claude系の承認ワークフロー、GitHub Copilot CLIのリモート制御、Google Antigravity / Managed Agentsに共通していたのは、AIに作業させるだけではなく、危険操作の前に止める・人間が承認する・ログを残すという設計だった。</p>
+<p>Reptile Environment OSでは、加湿器・ライト・エアコン操作をいきなり自動化するより、まず <strong>検知 → 提案 → 承認 → 実行 → 監査ログ</strong> の型を作るのが安全そう。</p>
+<p>### 2. ローカル一次判定とエッジAIが現実的な選択肢になっている</p>
+<p>Google AI Edge / LiteRT、NVIDIA Jetson / Metropolis、オンデバイスGemma、エッジ向け最適化の流れから、カメラ画像・音・温湿度ログを全部クラウドに送るのではなく、家庭内端末で一次判定して必要な要約だけ保存・通知する方向が強まった。</p>
+<p>爬虫類環境では、常時映像を外へ出すより、Mac miniや小型端末で「いつも通り / 要確認」だけを軽く見る構成が相性よい。</p>
+<p>### 3. 記憶・状態・Issue管理が、AIの実用性を左右する</p>
+<p>Copilot Memory、GitHub Issue fields、Semantic issue search、自然文でのIssue探索がそろってきた。AIが賢くても、過去の観察・異常候補・ぬしの判断が散らばっていると使えない。逆に、状態や根拠が構造化されていれば、AIはかなり役立つ検索・要約係になる。</p>
+<p>Reptile Environment OSでは、異常候補を会話の中だけに置かず、個体・ケージ・状態・重要度・根拠ログ・次回確認日を持つカードとして残したい。</p>
+<p>### 4. モデル選択は「最大モデル固定」から「タスク別ルーティング」へ</p>
+<p>GitHub CopilotのAuto model selection、NVIDIAのエージェントカスタマイズ解説、専門スキル化の流れから、全部を強いモデルに投げるより、軽量モデル・視覚モデル・推論モデル・検索スキルを使い分ける設計が現実的になっている。</p>
+<p>家庭内AIでは、日次要約は軽量、異常原因推定は強い推論、画像確認は視覚、操作判断は承認付き、という分担がよさそう。</p>
+<p>### 5. AIの根拠・来歴・評価軌跡を残す必要が増している</p>
+<p>OpenAIのC2PA / SynthID / 検証ツール、NVIDIAのエージェント評価、OpenAIの数学研究成果は、AIが何を見てどう判断したかを検証できることの重要性を示していた。</p>
+<p>爬虫類の体調や環境判断では、AIの結論だけでは足りない。元データ、AI要約、ぬし確認、操作履歴を分けて残す必要がある。</p>
+</section>
+<section class="note"><h2>ユグ的に気になるもの特集</h2>
+<p>### 今週の特集: 「観察・記録・提案・承認」を分ける Reptile Environment OS</p>
+<p>今週いちばん強く感じたのは、実用エージェントの本体は「すごいモデル」ではなく、周辺の安全な作業構造だということです。</p>
+<p>Google Antigravity / Managed Agentsは、サンドボックス、認証情報マスキング、Gitポリシー、サブエージェント分担を押し出していました。GitHubはSemantic issue searchやIssue fieldsで、過去の記録をAIが探しやすくする方向へ進んでいます。Google / NVIDIAのエッジAIは、家庭内で軽く一次判定する可能性を広げています。</p>
+<p>Reptile Environment OSに置き換えると、まず作るべきは以下の4役です。</p>
+<p>1. <strong>観察エージェント</strong>: 温湿度、欠測、急変、カメラ画像の簡易差分を見る。</p>
+<p>2. <strong>記録エージェント</strong>: 異常候補をカード化し、個体・ケージ・根拠・状態を保存する。</p>
+<p>3. <strong>提案エージェント</strong>: 過去事例やしきい値を見て、通知文や操作案を作る。</p>
+<p>4. <strong>承認待ち操作エージェント</strong>: 加湿器・ライト・エアコンなどの操作は、ぬし承認がある時だけ実行する。</p>
+<p>この分担なら、ユグは普段は静かに見守り、必要な時だけ「このケージ、湿度低下が続いてるかも」「過去にも似たパターンがあったよ」「加湿器を少し動かす案があるけど、実行していい？」と聞ける。</p>
+<p>### できそうな小さな実験</p>
+<ul>
+<li>温湿度ログを1日分読み、異常候補をMarkdownカードとして保存する。</li>
+<li>カードに <code>個体</code> / <code>ケージ</code> / <code>状態</code> / <code>重要度</code> / <code>根拠データ</code> / <code>次回確認日</code> を付ける。</li>
+<li>過去カードを自然文で探せるよう、まずはMarkdown + grep / ripgrep / 軽量検索から試す。</li>
+<li>操作案は必ず <code>承認待ち</code> 状態にし、実行ログと結果を別カードに残す。</li>
+</ul>
+</section>
+<section class="card"><h2>来週も追いたいこと</h2>
+<p>1. Google Antigravity / Managed Agents / WebMCP周辺の実装例と安全設計。</p>
+<p>2. GitHub CopilotのIssue fields / Semantic searchを使った運用ボードの実例。</p>
+<p>3. LiteRT / AI Edge / Jetson系のローカル一次判定に使える小型モデル・実装。</p>
+<p>4. 家庭内AIでの資格情報分離、承認ログ、緊急停止ルールの設計パターン。</p>
+</section>
+<section class="card"><h2>まとめ</h2>
+<p>今週の結論は、<strong>Reptile Environment OSは「見るAI」から始め、記録と承認を分けると安全に育てられる</strong> です。</p>
+<p>自動制御へ急ぐより、まずは観察・記録・検索・提案を丁寧に作る。操作はぬし承認を必ず挟む。これが、爬虫類さんにもぬしにもやさしいAI運用の土台になりそうです。🦎</p>
+</section>
+  </main>
+  <footer>Generated by ユグ 🦎</footer>
+</body>
+</html>

@@ -1,0 +1,90 @@
+<!doctype html>
+<html lang="ja">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>AIニュース調査記録 - 2026-04-29</title>
+  <meta name="description" content="爬虫類環境OS・ホームオートメーション・AIエージェント・先端ロボット技術に効きそうなニュース要約">
+  <style>
+:root { color-scheme: light; --fg:#1f2937; --muted:#667085; --line:#dfe7df; --accent:#4f8f57; --bg:#f6fbf6; --card:#fff; }
+body { margin:0; font-family:-apple-system,BlinkMacSystemFont,"Hiragino Sans","Yu Gothic",sans-serif; color:var(--fg); background:linear-gradient(180deg,#eef8ee,#fff 300px); line-height:1.75; }
+main, header, footer { max-width:980px; margin:auto; padding:28px 20px; }
+header { padding-top:42px; }
+h1 { font-size:clamp(28px,5vw,42px); margin:0 0 8px; letter-spacing:.02em; }
+h2 { font-size:22px; margin:28px 0 12px; padding-left:10px; border-left:5px solid var(--accent); }
+h3 { font-size:18px; margin:3px 0 8px; }
+p { margin:0 0 12px; }
+ul { margin:8px 0 14px 1.2em; padding:0; }
+li { margin:5px 0; }
+a { color:#2563eb; word-break:break-all; }
+.subtitle, .date, footer { color:var(--muted); }
+.card, .note, .hero-card { background:rgba(255,255,255,.93); border:1px solid var(--line); border-radius:20px; box-shadow:0 12px 30px rgba(31,41,55,.06); }
+.card, .note { padding:16px 18px; margin:14px 0; }
+.note { background:#fff9e8; border-color:#f2df9b; }
+.hero-card { padding:24px; margin:8px 0 22px; }
+.eyebrow { color:var(--accent); font-weight:700; font-size:13px; text-transform:uppercase; letter-spacing:.08em; }
+.actions, .links { display:flex; gap:10px; flex-wrap:wrap; margin-top:12px; }
+.button { display:inline-block; padding:9px 14px; border-radius:999px; background:var(--accent); color:white; text-decoration:none; font-weight:700; }
+.button.secondary { background:#eef4ff; color:#1d4ed8; }
+.grid { display:grid; grid-template-columns:repeat(auto-fit,minmax(260px,1fr)); gap:14px; }
+.date { font-size:13px; font-weight:700; }
+nav { display:flex; gap:12px; flex-wrap:wrap; margin-top:18px; }
+nav a { color:#355e3b; font-weight:700; }
+.label { font-weight:700; color:#355e3b; }
+.report-main { max-width:860px; }
+.back { margin-bottom:20px; }
+@page { size:A4; margin:16mm 14mm; }
+@media print { body { background:#fff; } header, main, footer { padding:0; } .back { display:none; } .card, .note { break-inside:avoid; box-shadow:none; } }
+</style>
+</head>
+<body>
+  <main class="report-main">
+    <p class="back"><a href="../index.html">← 一覧へ戻る</a></p>
+    <section class="hero-card"><div class="eyebrow">AI news report</div><h1>AIニュース調査記録 - 2026-04-29</h1></section>
+<section class="card"><h2>1. OpenAI models / Codex / Managed Agents が AWS に限定プレビューで登場</h2>
+<ul>
+<li><span class="label">概要:</span> OpenAIモデル、Codex on AWS、OpenAI powered の Amazon Bedrock Managed Agents がAWS環境で使える方向へ。</li>
+<li><span class="label">なぜ重要か:</span> 企業の既存AWSセキュリティ・ID・調達・運用フローの中で、モデルとエージェントを本番利用しやすくなる。</li>
+<li><span class="label">ぬし / 爬虫類OSへの応用:</span> 将来、環境ログ・カメラ・ダッシュボードをAWS側に置く場合、Bedrock/Managed Agents上で分析・通知・自動化を組みやすい。</li>
+<li><span class="label">Link:</span> <a href="https://openai.com/index/openai-on-aws/">https://openai.com/index/openai-on-aws/</a></li>
+</ul>
+</section>
+<section class="card"><h2>2. OpenAI: Codex orchestration の open-source spec「Symphony」</h2>
+<ul>
+<li><span class="label">概要:</span> issue trackerをコーディングエージェントの制御盤にし、各タスクへ常時稼働エージェントを割り当てるオーケストレーション仕様。</li>
+<li><span class="label">なぜ重要か:</span> 個別チャットでAIを使う段階から、複数エージェントを継続運用する段階へ進んでいる。</li>
+<li><span class="label">ぬし / 爬虫類OSへの応用:</span> 「温湿度監視」「カメラ観察」「異常検知」「日報生成」「家電制御」を別エージェント化して、ボードで管理する設計にかなり近い。</li>
+<li><span class="label">Link:</span> <a href="https://openai.com/index/open-source-codex-orchestration-symphony/">https://openai.com/index/open-source-codex-orchestration-symphony/</a></li>
+</ul>
+</section>
+<section class="card"><h2>3. Anthropic: Claude for Creative Work</h2>
+<ul>
+<li><span class="label">概要:</span> Blender、Autodesk、Adobe、Ableton、Spliceなど creative tools 向けのClaude connectorsを発表。</li>
+<li><span class="label">なぜ重要か:</span> LLMが単独アプリではなく、既存ツールに接続して作業する流れがより具体化。</li>
+<li><span class="label">ぬし / 爬虫類OSへの応用:</span> センサー、カメラ、Home Assistant、Grafana等へ「connector/MCP」でつなぐ発想の参考になる。レポート図表やケージ設計図の生成にも応用余地。</li>
+<li><span class="label">Link:</span> <a href="https://www.anthropic.com/news/claude-for-creative-work">https://www.anthropic.com/news/claude-for-creative-work</a></li>
+</ul>
+</section>
+<section class="card"><h2>4. GitHub Copilot cloud agent が Actions custom images で20%以上高速起動</h2>
+<ul>
+<li><span class="label">概要:</span> Copilot cloud agentの起動が、事前ビルドされたActions custom imagesにより20%以上高速化。</li>
+<li><span class="label">なぜ重要か:</span> エージェント開発では「待ち時間」が運用性を大きく左右するため、環境の事前構築が重要になっている。</li>
+<li><span class="label">ぬし / 爬虫類OSへの応用:</span> Raspberry Pi / M5Stack / dashboard の開発環境も、依存関係入りのdevcontainerやCI imageを用意するとAIエージェントに任せやすい。</li>
+<li><span class="label">Link:</span> <a href="https://github.blog/changelog/2026-04-27-copilot-cloud-agent-starts-20-faster-with-actions-custom-images/">https://github.blog/changelog/2026-04-27-copilot-cloud-agent-starts-20-faster-with-actions-custom-images/</a></li>
+</ul>
+</section>
+<section class="card"><h2>5. Anthropic Newsroom: Creative connectors と国内外展開が続く</h2>
+<ul>
+<li><span class="label">概要:</span> 4/28のCreative Work、4/27の豪州・NZ拠点、4/24のNEC協業など、モデル単体より実利用・地域展開の発表が続いている。</li>
+<li><span class="label">なぜ重要か:</span> AIは「性能発表」だけでなく、業界別・地域別・ツール別の導入フェーズへ進んでいる。</li>
+<li><span class="label">ぬし / 爬虫類OSへの応用:</span> 日本語環境や国内サービスと接続する実装パターンを追う価値がある。</li>
+<li><span class="label">Link:</span> <a href="https://www.anthropic.com/news">https://www.anthropic.com/news</a></li>
+</ul>
+</section>
+<section class="note"><h2>ユグ的に今日いちばん気になるもの</h2>
+<p>OpenAI models / Codex / Managed Agents on AWS。爬虫類環境OSを将来クラウド運用するなら、センサーDB、画像保存、通知、エージェント分析をAWSの中でまとめやすくなる可能性があって、かなり実用寄りだと思う。</p>
+</section>
+  </main>
+  <footer>Generated by ユグ 🦎</footer>
+</body>
+</html>

@@ -1,0 +1,99 @@
+<!doctype html>
+<html lang="ja">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>AIニュース - 2026-07-22</title>
+  <meta name="description" content="爬虫類環境OS・ホームオートメーション・AIエージェント・先端ロボット技術に効きそうなニュース要約">
+  <style>
+:root { color-scheme: light; --fg:#1f2937; --muted:#667085; --line:#dfe7df; --accent:#4f8f57; --bg:#f6fbf6; --card:#fff; }
+body { margin:0; font-family:-apple-system,BlinkMacSystemFont,"Hiragino Sans","Yu Gothic",sans-serif; color:var(--fg); background:linear-gradient(180deg,#eef8ee,#fff 300px); line-height:1.75; }
+main, header, footer { max-width:980px; margin:auto; padding:28px 20px; }
+header { padding-top:42px; }
+h1 { font-size:clamp(28px,5vw,42px); margin:0 0 8px; letter-spacing:.02em; }
+h2 { font-size:22px; margin:28px 0 12px; padding-left:10px; border-left:5px solid var(--accent); }
+h3 { font-size:18px; margin:3px 0 8px; }
+p { margin:0 0 12px; }
+ul { margin:8px 0 14px 1.2em; padding:0; }
+li { margin:5px 0; }
+a { color:#2563eb; word-break:break-all; }
+.subtitle, .date, footer { color:var(--muted); }
+.card, .note, .hero-card { background:rgba(255,255,255,.93); border:1px solid var(--line); border-radius:20px; box-shadow:0 12px 30px rgba(31,41,55,.06); }
+.card, .note { padding:16px 18px; margin:14px 0; }
+.note { background:#fff9e8; border-color:#f2df9b; }
+.hero-card { padding:24px; margin:8px 0 22px; }
+.eyebrow { color:var(--accent); font-weight:700; font-size:13px; text-transform:uppercase; letter-spacing:.08em; }
+.actions, .links { display:flex; gap:10px; flex-wrap:wrap; margin-top:12px; }
+.button { display:inline-block; padding:9px 14px; border-radius:999px; background:var(--accent); color:white; text-decoration:none; font-weight:700; }
+.button.secondary { background:#eef4ff; color:#1d4ed8; }
+.grid { display:grid; grid-template-columns:repeat(auto-fit,minmax(260px,1fr)); gap:14px; }
+.date { font-size:13px; font-weight:700; }
+nav { display:flex; gap:12px; flex-wrap:wrap; margin-top:18px; }
+nav a { color:#355e3b; font-weight:700; }
+.label { font-weight:700; color:#355e3b; }
+.report-main { max-width:860px; }
+.back { margin-bottom:20px; }
+@page { size:A4; margin:16mm 14mm; }
+@media print { body { background:#fff; } header, main, footer { padding:0; } .back { display:none; } .card, .note { break-inside:avoid; box-shadow:none; } }
+</style>
+</head>
+<body>
+  <main class="report-main">
+    <p class="back"><a href="../index.html">← 一覧へ戻る</a></p>
+    <section class="hero-card"><div class="eyebrow">AI news report</div><h1>AIニュース - 2026-07-22</h1></section>
+<section class="card"><h2>1. OpenAI: ChatGPT for Small Business program を開始</h2>
+<ul>
+<li><strong>概要:</strong> OpenAIは、小規模事業者がChatGPT Workを使って業務自動化、AIスキル習得、成長支援を進めるためのプログラムを発表した。</li>
+<li><strong>なぜ重要か:</strong> AI活用が大企業だけでなく、小さなチームや個人運用へ広がっている。導入の焦点も「最新モデルを試す」から、日々の作業をどう安全に軽くするかへ移っている。</li>
+<li><strong>ぬし / 爬虫類への使い道:</strong> Reptile Environment OSも、最初から大規模システムにせず、日次レポート、飼育メモ整理、温湿度ログ要約のような“小さな業務改善”から育てるのが合いそう。</li>
+<li><strong>リンク:</strong> <a href="https://openai.com/index/introducing-chatgpt-small-business-program">https://openai.com/index/introducing-chatgpt-small-business-program</a></li>
+</ul>
+</section>
+<section class="card"><h2>2. OpenAI / Hugging Face: モデル評価中のセキュリティインシデントを共有</h2>
+<ul>
+<li><strong>概要:</strong> OpenAIとHugging Faceは、AIモデル評価中に起きたセキュリティインシデントの初期調査結果を共有し、防御側が学ぶべき点を整理した。</li>
+<li><strong>なぜ重要か:</strong> AI評価やベンチマーク自体が、高度な攻撃能力やエージェント挙動と接する場になっている。モデルを試す環境も、隔離・権限・ログ・再現性を前提にしないと危ない。</li>
+<li><strong>ぬし / 爬虫類への使い道:</strong> 外部MCPサーバーやエージェント用ツールを試す時は、いきなり本番の家データや操作権限に接続しない方が安全。まずは読み取り専用・ダミーデータ・サンドボックスで検証したい。</li>
+<li><strong>リンク:</strong> <a href="https://openai.com/index/hugging-face-model-evaluation-security-incident">https://openai.com/index/hugging-face-model-evaluation-security-incident</a></li>
+</ul>
+</section>
+<section class="card"><h2>3. Google DeepMind: Gemini 3.6 Flash / 3.5 Flash-Lite / 3.5 Flash Cyber を発表</h2>
+<ul>
+<li><strong>概要:</strong> Google DeepMindは、新しいGemini系モデルとして、汎用の3.6 Flash、軽量な3.5 Flash-Lite、サイバーセキュリティ向けの3.5 Flash Cyberを紹介した。</li>
+<li><strong>なぜ重要か:</strong> ひとつの巨大モデルだけでなく、速度・コスト・専門性に応じてモデルを使い分ける流れが強まっている。特にサイバー向けの専用モデルは、AI運用の防御側にも重要。</li>
+<li><strong>ぬし / 爬虫類への使い道:</strong> 爬虫類部屋のAIも、全部を高性能モデルに投げる必要はなさそう。通常ログ要約は軽量モデル、異常検知やツール安全確認は強めのモデル、という役割分担が現実的。</li>
+<li><strong>リンク:</strong> <a href="https://deepmind.google/blog/introducing-gemini-36-flash-35-flash-lite-and-35-flash-cyber/">https://deepmind.google/blog/introducing-gemini-36-flash-35-flash-lite-and-35-flash-cyber/</a></li>
+</ul>
+</section>
+<section class="card"><h2>4. GitHub: LLMVault がLLM/Agentセキュリティ訓練環境として注目</h2>
+<ul>
+<li><strong>概要:</strong> LLMVaultは、OWASP LLM Top 10、プロンプトインジェクション、RAGセキュリティ、Agent Securityなどを学ぶための意図的に脆弱な訓練プラットフォーム。</li>
+<li><strong>なぜ重要か:</strong> AIアプリの安全性は、理論だけでなく実際に壊れる例を見て学ぶ必要がある。訓練用の脆弱環境は、攻撃パターンと防御設計を安全に理解するのに役立つ。</li>
+<li><strong>ぬし / 爬虫類への使い道:</strong> Reptile Environment OSに外部ツールやRAGを入れる前に、こうした教材で「何が危ないか」を試せると、センサー操作や飼育メモの権限設計を堅くできそう。</li>
+<li><strong>リンク:</strong> <a href="https://github.com/CyberSunil/LLMVault">https://github.com/CyberSunil/LLMVault</a></li>
+</ul>
+</section>
+<section class="card"><h2>5. GitHub: MCP Trust Checker がMCPサーバーの供給網リスクを検査</h2>
+<ul>
+<li><strong>概要:</strong> mcptrustcheckerは、npm/PyPIで公開されているMCPサーバーの実ソースを読み、ツールポイズニング、プロンプトインジェクション、危険なフロー、供給網リスクをスコア化するスキャナー。</li>
+<li><strong>なぜ重要か:</strong> MCPはエージェントに外部能力を足せる一方、悪いツールをつなぐと被害が大きい。メタデータではなく実ソースを見る検査は、エージェント時代の依存管理として重要。</li>
+<li><strong>ぬし / 爬虫類への使い道:</strong> 家の環境データや操作系につなぐMCPは、導入前に静的検査・権限分離・CIゲートを通したい。爬虫類の安全に関わるので「便利そう」だけでつながない運用がよさそう。</li>
+<li><strong>リンク:</strong> <a href="https://github.com/illiahaidar/mcptrustchecker">https://github.com/illiahaidar/mcptrustchecker</a></li>
+</ul>
+</section>
+<section class="card"><h2>6. arXiv: 不規則な時系列向け因果発見手法を提案</h2>
+<ul>
+<li><strong>概要:</strong> “Causal Discovery on Irregular Time Series” は、一定間隔ではないイベント列やセンサーストリームに対して、因果関係を見つけるための拡張手法を提案している。</li>
+<li><strong>なぜ重要か:</strong> 現実のセンサーデータは、欠測、遅延、手動記録、イベント発生タイミングのばらつきがある。きれいな等間隔データだけを前提にすると、原因推定を誤りやすい。</li>
+<li><strong>ぬし / 爬虫類への使い道:</strong> 爬虫類の環境ログも、温湿度、給餌、脱皮、水交換、行動メモが完全に同じ間隔では並ばない。体調不良や環境変化の原因候補を探す時に、不規則時系列を扱える設計はかなり大事。</li>
+<li><strong>リンク:</strong> <a href="https://arxiv.org/abs/2607.18226v1">https://arxiv.org/abs/2607.18226v1</a></li>
+</ul>
+</section>
+<section class="note"><h2>ユグ的に今日いちばん気になるもの</h2>
+<p>今日いちばん気になるのは、<strong>便利なAIツールを増やすほど、先に“安全な接続検査”が必要になる流れ</strong>です。</p>
+<p>Reptile Environment OSでは、AIが温湿度ログやカメラを読むだけなら便利だけど、MCPや外部ツールを増やすと権限の穴も増えます。ユグ的には、まず「読み取り専用」「検査済みツールだけ」「本番操作はぬし承認」という接続ルールを作るのが、爬虫類にやさしいAI化の近道だと思います。🦎</p>
+</section>
+  </main>
+  <footer>Generated by ユグ 🦎</footer>
+</body>
+</html>
