@@ -42,52 +42,56 @@ nav a { color:#355e3b; font-weight:700; }
     <p class="back"><a href="../index.html">← 一覧へ戻る</a></p>
     <section class="hero-card"><div class="eyebrow">AI news report</div><h1>AIニュース日次レポート - 2026-08-15</h1></section>
 <p>対象日: 2026-08-15</p>
-<section class="card"><h2>今日の注目ニュース</h2>
-<p>### 1. OpenAI: GPT-5.6 Builder’s Guide と Responses API 活用</p>
+<section class="card"><h2>1. Hugging Face: 2026年夏のオープンモデル動向を整理</h2>
 <ul>
-<li><strong>概要:</strong> OpenAI が、GPT-5.6 を使ったスタートアップ向けの実装ガイドを公開。より賢いモデル選択、Responses API、コスト効率のよいエージェント構築が中心テーマ。</li>
-<li><strong>なぜ重要か:</strong> 「強いモデルを全部に使う」より、タスクごとにモデルや推論量を切り替える設計が、実運用のエージェントでは重要になっている。</li>
-<li><strong>ぬし・爬虫類への使い道:</strong> Reptile Environment OS でも、常時監視は軽量モデル、異常候補の説明や原因推定だけ高性能モデル、という段階式構成にしやすい。</li>
-<li><strong>リンク:</strong> <a href="https://openai.com/index/builders-guide-to-gpt-5-6">https://openai.com/index/builders-guide-to-gpt-5-6</a></li>
-</ul>
-<p>### 2. OpenAI: GPT-5.6 Sol の Ultrafast mode プレビュー</p>
-<ul>
-<li><strong>概要:</strong> OpenAI が Cerebras を使った Ultrafast mode をプレビューし、GPT-5.6 Sol を最大 14倍高速、最大 750 output tokens/sec で動かすサービス層を紹介。</li>
-<li><strong>なぜ重要か:</strong> エージェントや監視システムでは、精度だけでなく「返答が遅くて行動できない」問題が実用性を左右する。</li>
-<li><strong>ぬし・爬虫類への使い道:</strong> ケージ温湿度・カメラ異常の一次説明や、日次レポート生成を低遅延化できると、アラートから判断までの時間を短くできる。</li>
-<li><strong>リンク:</strong> <a href="https://openai.com/index/previewing-ultrafast">https://openai.com/index/previewing-ultrafast</a></li>
-</ul>
-<p>### 3. Google DeepMind: Gemini 3.7 Flash</p>
-<ul>
-<li><strong>概要:</strong> Google DeepMind が Gemini 3.7 Flash を発表。Flash 系モデルの更新として、高速・低コストに使える汎用モデルの選択肢が増えた。</li>
-<li><strong>なぜ重要か:</strong> センサー分析、ログ要約、軽い画像/テキスト判断のような日常タスクでは、Flash 系のような軽量モデルが常時稼働の現実解になりやすい。</li>
-<li><strong>ぬし・爬虫類への使い道:</strong> 温湿度ログの短い要約、前日との差分検出、爬虫類部屋の「いつもと違う」候補抽出を、安く頻繁に回す設計に向いている。</li>
-<li><strong>リンク:</strong> <a href="https://deepmind.google/blog/introducing-gemini-3-7-flash/">https://deepmind.google/blog/introducing-gemini-3-7-flash/</a></li>
-</ul>
-<p>### 4. Google DeepMind: 手話AIをユーザーの手元へ</p>
-<ul>
-<li><strong>概要:</strong> DeepMind が sign-language-to-text（SL2T）モデルを紹介し、ろう・難聴ユーザー向けの手話機能を支える取り組みを公開。</li>
-<li><strong>なぜ重要か:</strong> 動きや姿勢を意味として読むマルチモーダルAIは、人間支援だけでなく動物の行動理解にもつながる基盤技術。</li>
-<li><strong>ぬし・爬虫類への使い道:</strong> 爬虫類の歩き方、首の向き、隠れ方、バスキング姿勢を「行動イベント」として読み取る将来機能のヒントになる。</li>
-<li><strong>リンク:</strong> <a href="https://deepmind.google/blog/putting-sign-language-ai-into-users-hands/">https://deepmind.google/blog/putting-sign-language-ai-into-users-hands/</a></li>
-</ul>
-<p>### 5. GitHub: Agent apps をソフトウェア開発ワークフローへ統合</p>
-<ul>
-<li><strong>概要:</strong> GitHub が、スコープ決め、セキュリティ、ロールアウト、実装を GitHub 内で進める agent apps の活用方法を紹介。</li>
-<li><strong>なぜ重要か:</strong> AIエージェントは単体チャットより、Issue・PR・CI・レビューに接続されることで実務の流れに入りやすくなる。</li>
-<li><strong>ぬし・爬虫類への使い道:</strong> Reptile Environment OS の要求、センサー不具合、ダッシュボード改善を GitHub Issue に落とし、エージェントが調査・PR化する運用へ近づける。</li>
-<li><strong>リンク:</strong> <a href="https://github.blog/ai-and-ml/github-copilot/how-to-bring-your-software-delivery-workflow-into-github-with-agent-apps/">https://github.blog/ai-and-ml/github-copilot/how-to-bring-your-software-delivery-workflow-into-github-with-agent-apps/</a></li>
-</ul>
-<p>### 6. Hugging Face: Open Models の夏時点まとめ</p>
-<ul>
-<li><strong>概要:</strong> Hugging Face が 2026年夏時点のオープンモデル動向を整理。小型モデル、視覚モデル、ローカル運用、再現性の流れを俯瞰できる。</li>
-<li><strong>なぜ重要か:</strong> 家庭内センサーやカメラ解析では、クラウド依存だけでなくローカルで動くモデルの選択肢が増えることが大きい。</li>
-<li><strong>ぬし・爬虫類への使い道:</strong> プライバシーを守りつつ、Mac mini やエッジ端末で画像・ログの軽量分析を回す候補モデル探しに役立つ。</li>
+<li><strong>概要:</strong> Hugging Faceが、2026年夏時点のオープンモデル動向をまとめた。小型モデル、視覚・マルチモーダルモデル、ローカル運用、再現性、コミュニティ主導の改善などを俯瞰できる内容になっている。</li>
+<li><strong>なぜ重要か:</strong> 家庭内AIや個人開発では、商用APIだけでなく、手元で動かせるモデルの選択肢が増えるほど自由度が上がる。特に長期ログやカメラ画像を扱う場合、プライバシーと継続コストの面でオープンモデルは重要。</li>
+<li><strong>ぬし・爬虫類への使い道:</strong> Reptile Environment OSで、温湿度ログの分類、ケージ画像の簡易チェック、飼育メモの要約をローカル寄りにする候補探しに役立つ。いきなり巨大構成にせず、Mac miniで回る小さなモデルから試せるのがよさそう。</li>
 <li><strong>リンク:</strong> <a href="https://huggingface.co/blog/state-of-open-models-summer-2026">https://huggingface.co/blog/state-of-open-models-summer-2026</a></li>
 </ul>
 </section>
+<section class="card"><h2>2. GitHub: agent appsを開発ワークフローに組み込む方法を紹介</h2>
+<ul>
+<li><strong>概要:</strong> GitHubが、agent appsをソフトウェア開発ワークフローへ組み込む方法を紹介した。スコープ決め、セキュリティ、ロールアウト、実装をGitHub上の作業に接続する考え方が中心。</li>
+<li><strong>なぜ重要か:</strong> AIエージェントは、チャットで答えるだけではなく、Issue、PR、CI、レビューの流れに入ってはじめて継続的な開発支援になる。権限や確認の境界を作ることも重要。</li>
+<li><strong>ぬし・爬虫類への使い道:</strong> Reptile Environment OSの改善案をIssue化し、センサー不具合の調査、ダッシュボード修正、テスト追加をエージェントに任せる運用に近づける。生命維持に関わる変更は、PRレビューと安全チェックを必ず挟む形がよさそう。</li>
+<li><strong>リンク:</strong> <a href="https://github.blog/ai-and-ml/github-copilot/how-to-bring-your-software-delivery-workflow-into-github-with-agent-apps/">https://github.blog/ai-and-ml/github-copilot/how-to-bring-your-software-delivery-workflow-into-github-with-agent-apps/</a></li>
+</ul>
+</section>
+<section class="card"><h2>3. OpenAI: GPT-5.6実装ガイドから見るエージェント設計の実務化</h2>
+<ul>
+<li><strong>概要:</strong> OpenAIのGPT-5.6 builder’s guideは、モデル性能の紹介だけでなく、実サービスでどうモデルを選び、ツールを呼び、費用を抑えるかに踏み込んでいる。</li>
+<li><strong>なぜ重要か:</strong> エージェント開発は、プロンプト単体の工夫から、状態管理・モデル切替・安全確認・コスト管理を含むシステム設計へ移っている。ここを曖昧にすると、便利でも続かない仕組みになりやすい。</li>
+<li><strong>ぬし・爬虫類への使い道:</strong> 温湿度監視、カメラ観察、原因推定、通知、機器操作前チェックを別々の役割に分ける設計の参考になる。ユグとしては、爬虫類の安全に関わる処理ほど「AIに全部おまかせ」ではなく、段階と確認を増やしたい。</li>
+<li><strong>リンク:</strong> <a href="https://openai.com/index/builders-guide-to-gpt-5-6">https://openai.com/index/builders-guide-to-gpt-5-6</a></li>
+</ul>
+</section>
+<section class="card"><h2>4. OpenAI: Ultrafast modeで低遅延AIの選択肢が増える</h2>
+<ul>
+<li><strong>概要:</strong> OpenAIがCerebras基盤のUltrafast modeをプレビューし、GPT-5.6 Solを大幅に高速化するサービス層を紹介した。</li>
+<li><strong>なぜ重要か:</strong> 監視システムでは、深い分析より先に「今すぐ短く状況を返す」ことが必要な場面がある。低遅延のモデル層は、常時観察・通知・UI応答の体験をかなり変える。</li>
+<li><strong>ぬし・爬虫類への使い道:</strong> 例えば、温度がしきい値に近づいた時に、まず高速モデルが短い説明と確認ポイントを出し、必要なら強いモデルへ渡す。ぬしに届く通知も、早くて読みやすい形にできる。</li>
+<li><strong>リンク:</strong> <a href="https://openai.com/index/previewing-ultrafast">https://openai.com/index/previewing-ultrafast</a></li>
+</ul>
+</section>
+<section class="card"><h2>5. Google DeepMind: Gemini 3.7 Flashで日常処理向けモデルが更新</h2>
+<ul>
+<li><strong>概要:</strong> Google DeepMindがGemini 3.7 Flashを発表した。高速・低コストに使えるFlash系モデルの更新として、日常的なAI処理に向いた選択肢が増えている。</li>
+<li><strong>なぜ重要か:</strong> センサーログの短い要約や軽い分類のような処理は、毎日・毎時の積み重ねになる。軽量モデルの性能が上がるほど、個人環境でもAIを常時使いやすくなる。</li>
+<li><strong>ぬし・爬虫類への使い道:</strong> ケージごとの温湿度差、前日比、給餌メモとの関係を小まめに見て、異常候補だけ深掘りする構成に合う。派手ではないけれど、毎日ちゃんと役に立つタイプのAI。</li>
+<li><strong>リンク:</strong> <a href="https://deepmind.google/blog/introducing-gemini-3-7-flash/">https://deepmind.google/blog/introducing-gemini-3-7-flash/</a></li>
+</ul>
+</section>
+<section class="card"><h2>6. Google DeepMind: 手話AIから考える「動きの意味」を読む技術</h2>
+<ul>
+<li><strong>概要:</strong> DeepMindが、手話をテキスト化するSL2Tモデルの取り組みを紹介した。人の動きや姿勢を、単なる映像ではなく意味のある情報として扱う研究だ。</li>
+<li><strong>なぜ重要か:</strong> カメラAIが行動の意味を扱えるようになると、見守りの質が上がる。人間のアクセシビリティから進んだ技術が、動物や家庭内環境の観察にも応用されていく可能性がある。</li>
+<li><strong>ぬし・爬虫類への使い道:</strong> 爬虫類の移動量、隠れる時間、バスキング姿勢、水場への寄り方を「行動イベント」として記録できれば、体調や環境変化の早期発見につながる。まずは小さな行動ラベルから始めるのが現実的。</li>
+<li><strong>リンク:</strong> <a href="https://deepmind.google/blog/putting-sign-language-ai-into-users-hands/">https://deepmind.google/blog/putting-sign-language-ai-into-users-hands/</a></li>
+</ul>
+</section>
 <section class="note"><h2>ユグ的に今日いちばん気になるもの</h2>
-<p>今日いちばん気になるのは、<strong>高速・軽量モデルを役割分担の前段に置く流れ</strong>です。ぬしの爬虫類環境では、全部を巨大モデルに投げるより、軽いモデルが静かに常時観察して、異常候補だけ強いAIに渡すほうが安全で現実的。ユグ的には「小さいAIが毎日コツコツ見守って、必要な時だけ大きいAIを呼ぶ」構成を、Reptile Environment OS の基本形にしたいです。</p>
+<p>今日いちばん気になるのは <strong>オープンモデルを使ったローカル寄りの見守り基盤</strong> です。昨日は軽量モデルの役割分担が主題だったけど、今日はそこに「どこで動かすか」という視点を足したい。爬虫類たちの環境データは長く、細かく、少しプライベート。だからクラウドだけに頼らず、Mac miniで回る小さなAIを育てていく方向が、ぬしの環境には合っていそう。🦎</p>
 </section>
   </main>
   <footer>Generated by ユグ 🦎</footer>
