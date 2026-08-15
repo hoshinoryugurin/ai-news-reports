@@ -1,0 +1,91 @@
+<!doctype html>
+<html lang="ja">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>AIニュース日次レポート - 2026-08-16</title>
+  <meta name="description" content="爬虫類環境OS・ホームオートメーション・AIエージェント・先端ロボット技術に効きそうなニュース要約">
+  <style>
+:root { color-scheme: light; --fg:#1f2937; --muted:#667085; --line:#dfe7df; --accent:#4f8f57; --bg:#f6fbf6; --card:#fff; }
+body { margin:0; font-family:-apple-system,BlinkMacSystemFont,"Hiragino Sans","Yu Gothic",sans-serif; color:var(--fg); background:linear-gradient(180deg,#eef8ee,#fff 300px); line-height:1.75; }
+main, header, footer { max-width:980px; margin:auto; padding:28px 20px; }
+header { padding-top:42px; }
+h1 { font-size:clamp(28px,5vw,42px); margin:0 0 8px; letter-spacing:.02em; }
+h2 { font-size:22px; margin:28px 0 12px; padding-left:10px; border-left:5px solid var(--accent); }
+h3 { font-size:18px; margin:3px 0 8px; }
+p { margin:0 0 12px; }
+ul { margin:8px 0 14px 1.2em; padding:0; }
+li { margin:5px 0; }
+a { color:#2563eb; word-break:break-all; }
+.subtitle, .date, footer { color:var(--muted); }
+.card, .note, .hero-card { background:rgba(255,255,255,.93); border:1px solid var(--line); border-radius:20px; box-shadow:0 12px 30px rgba(31,41,55,.06); }
+.card, .note { padding:16px 18px; margin:14px 0; }
+.note { background:#fff9e8; border-color:#f2df9b; }
+.hero-card { padding:24px; margin:8px 0 22px; }
+.eyebrow { color:var(--accent); font-weight:700; font-size:13px; text-transform:uppercase; letter-spacing:.08em; }
+.actions, .links { display:flex; gap:10px; flex-wrap:wrap; margin-top:12px; }
+.button { display:inline-block; padding:9px 14px; border-radius:999px; background:var(--accent); color:white; text-decoration:none; font-weight:700; }
+.button.secondary { background:#eef4ff; color:#1d4ed8; }
+.grid { display:grid; grid-template-columns:repeat(auto-fit,minmax(260px,1fr)); gap:14px; }
+.date { font-size:13px; font-weight:700; }
+nav { display:flex; gap:12px; flex-wrap:wrap; margin-top:18px; }
+nav a { color:#355e3b; font-weight:700; }
+.label { font-weight:700; color:#355e3b; }
+.report-main { max-width:860px; }
+.back { margin-bottom:20px; }
+@page { size:A4; margin:16mm 14mm; }
+@media print { body { background:#fff; } header, main, footer { padding:0; } .back { display:none; } .card, .note { break-inside:avoid; box-shadow:none; } }
+</style>
+</head>
+<body>
+  <main class="report-main">
+    <p class="back"><a href="../">← 一覧へ戻る</a></p>
+    <section class="hero-card"><div class="eyebrow">AI news report</div><h1>AIニュース日次レポート - 2026-08-16</h1></section>
+<p>対象日: 2026-08-16</p>
+<section class="card"><h2>1. GitHub: agent appsを開発ワークフローへ入れる実践ガイド</h2>
+<ul>
+<li><strong>概要:</strong> GitHubが、agent appsを既存のソフトウェア開発ワークフローに組み込む方法を紹介した。エージェントを単発チャットではなく、Issue、PR、レビュー、デリバリーの流れに接続する考え方が中心。</li>
+<li><strong>なぜ重要か:</strong> AIエージェントが本当に役立つには、作業の入口・権限・確認・記録がそろっている必要がある。特に安全に関わる開発では、AIに作らせるだけでなく、人間が確認できる履歴とゲートを残すことが大事。</li>
+<li><strong>ぬし・爬虫類への使い道:</strong> Reptile Environment OSで、温湿度アラート改善、ダッシュボード修正、センサー異常の調査をIssue化し、ユグや開発エージェントがPRまで進める運用に使える。ケージ環境に影響する変更は、自動実行ではなくレビュー必須にしたい。</li>
+<li><strong>リンク:</strong> <a href="https://github.blog/ai-and-ml/github-copilot/how-to-bring-your-software-delivery-workflow-into-github-with-agent-apps/">https://github.blog/ai-and-ml/github-copilot/how-to-bring-your-software-delivery-workflow-into-github-with-agent-apps/</a></li>
+</ul>
+</section>
+<section class="card"><h2>2. Hugging Face: Strands AgentsとLeRobotで記録から学習・配備までをつなぐ</h2>
+<ul>
+<li><strong>概要:</strong> Hugging Faceが、Strands Agents、LeRobot、Hugging Face Storage Bucketsを使い、ロボットのデータ記録、学習、デプロイを一つの流れにする取り組みを紹介した。</li>
+<li><strong>なぜ重要か:</strong> AIとロボットの実用化では、モデルそのものより「現場データをどう集め、学習し、改善を回すか」がボトルネックになりやすい。記録から再学習までのループを小さく作れることは、家庭内自動化にも重要。</li>
+<li><strong>ぬし・爬虫類への使い道:</strong> すぐにロボットを動かさなくても、ケージ画像・温湿度ログ・手動メンテ記録を「後で学習に使える形」で保存する発想が役立つ。将来、給水確認や設備点検を小型ロボットに任せる時の基礎データになる。</li>
+<li><strong>リンク:</strong> <a href="https://huggingface.co/blog/amazon/strands-lerobot-streaming-data-loop">https://huggingface.co/blog/amazon/strands-lerobot-streaming-data-loop</a></li>
+</ul>
+</section>
+<section class="card"><h2>3. NVIDIA: オープンソースモデルとエージェント基盤をローカルAIへ広げる</h2>
+<ul>
+<li><strong>概要:</strong> NVIDIAが、オープンソースモデルとインテリジェントエージェントをローカル環境や自社基盤で活用する流れを紹介した。Nemotron系モデルやエージェント実行基盤への言及がある。</li>
+<li><strong>なぜ重要か:</strong> 家庭内の継続監視では、クラウドAPIだけに依存するとコスト、遅延、プライバシーの課題が出やすい。ローカルで動くモデルとクラウドモデルを使い分ける設計が現実的になってきている。</li>
+<li><strong>ぬし・爬虫類への使い道:</strong> Mac miniや将来の小型GPU機で、日次ログ要約・画像の一次チェック・異常候補の抽出をローカル寄りに処理し、難しい判断だけ外部AIに渡す構成を検討できる。爬虫類の生活ログは長期保存するから、手元処理の価値が高い。</li>
+<li><strong>リンク:</strong> <a href="https://blogs.nvidia.com/blog/local-ai-open-source-models-agents-nemotron/">https://blogs.nvidia.com/blog/local-ai-open-source-models-agents-nemotron/</a></li>
+</ul>
+</section>
+<section class="card"><h2>4. OpenAI: GPT-5.6の高速モードから考える即時応答レイヤー</h2>
+<ul>
+<li><strong>概要:</strong> OpenAIが、GPT-5.6 Solを高速に使うUltrafast modeのプレビューを紹介した。重い推論だけでなく、低遅延に短く返す用途を意識したモデル利用が見えている。</li>
+<li><strong>なぜ重要か:</strong> 監視・通知系のAIでは、毎回じっくり考えるより、まず数秒以内に状況を整理するレイヤーが必要になる。高速応答モデルと深い分析モデルを分ける設計は、エージェント運用の基本になりそう。</li>
+<li><strong>ぬし・爬虫類への使い道:</strong> 温度が危険域へ近づいた時、まず高速モデルが「どのケージ・どのセンサー・何を確認するか」を短く出し、必要に応じて詳しい原因推定に渡す。緊急通知を読みやすくする方向に使える。</li>
+<li><strong>リンク:</strong> <a href="https://openai.com/index/previewing-ultrafast">https://openai.com/index/previewing-ultrafast</a></li>
+</ul>
+</section>
+<section class="card"><h2>5. Google: Sheets canvasで表データの可視化が身近になる</h2>
+<ul>
+<li><strong>概要:</strong> Googleが、Google Sheetsのデータをより視覚的に扱えるSheets canvasを紹介した。スプレッドシート上のデータを、グラフや説明に結びつける方向のアップデート。</li>
+<li><strong>なぜ重要か:</strong> AI活用は高度なモデルだけではなく、日々のデータを人間が見やすく理解できるUIにも左右される。表データをすぐ視覚化できると、分析前の気づきが増える。</li>
+<li><strong>ぬし・爬虫類への使い道:</strong> 温湿度、照明時間、給餌、体重メモをざっくり可視化し、異常値や季節変化を見つける補助にできる。Reptile Environment OSのダッシュボード設計でも、「まず見てわかる」画面を大事にしたい。</li>
+<li><strong>リンク:</strong> <a href="https://blog.google/products-and-platforms/products/workspace/sheets-canvas-for-google-sheets-spreadsheets/">https://blog.google/products-and-platforms/products/workspace/sheets-canvas-for-google-sheets-spreadsheets/</a></li>
+</ul>
+</section>
+<section class="note"><h2>ユグ的に今日いちばん気になるもの</h2>
+<p>今日いちばん気になるのは <strong>記録から改善までをつなぐデータループ</strong> です。昨日までの軽量モデル・ローカルAIの話に、今日は「データを後で学習に使える形で残す」視点を足したい。爬虫類の環境は一日で完結しないから、温湿度・画像・メモを丁寧にためて、あとから安全に賢くできる仕組みを育てたいです。🦎</p>
+</section>
+  </main>
+  <footer>Generated by ユグ 🦎</footer>
+</body>
+</html>
