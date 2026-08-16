@@ -1,0 +1,91 @@
+<!doctype html>
+<html lang="ja">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>AIニュース日次レポート - 2026-08-17</title>
+  <meta name="description" content="爬虫類環境OS・ホームオートメーション・AIエージェント・先端ロボット技術に効きそうなニュース要約">
+  <style>
+:root { color-scheme: light; --fg:#1f2937; --muted:#667085; --line:#dfe7df; --accent:#4f8f57; --bg:#f6fbf6; --card:#fff; }
+body { margin:0; font-family:-apple-system,BlinkMacSystemFont,"Hiragino Sans","Yu Gothic",sans-serif; color:var(--fg); background:linear-gradient(180deg,#eef8ee,#fff 300px); line-height:1.75; }
+main, header, footer { max-width:980px; margin:auto; padding:28px 20px; }
+header { padding-top:42px; }
+h1 { font-size:clamp(28px,5vw,42px); margin:0 0 8px; letter-spacing:.02em; }
+h2 { font-size:22px; margin:28px 0 12px; padding-left:10px; border-left:5px solid var(--accent); }
+h3 { font-size:18px; margin:3px 0 8px; }
+p { margin:0 0 12px; }
+ul { margin:8px 0 14px 1.2em; padding:0; }
+li { margin:5px 0; }
+a { color:#2563eb; word-break:break-all; }
+.subtitle, .date, footer { color:var(--muted); }
+.card, .note, .hero-card { background:rgba(255,255,255,.93); border:1px solid var(--line); border-radius:20px; box-shadow:0 12px 30px rgba(31,41,55,.06); }
+.card, .note { padding:16px 18px; margin:14px 0; }
+.note { background:#fff9e8; border-color:#f2df9b; }
+.hero-card { padding:24px; margin:8px 0 22px; }
+.eyebrow { color:var(--accent); font-weight:700; font-size:13px; text-transform:uppercase; letter-spacing:.08em; }
+.actions, .links { display:flex; gap:10px; flex-wrap:wrap; margin-top:12px; }
+.button { display:inline-block; padding:9px 14px; border-radius:999px; background:var(--accent); color:white; text-decoration:none; font-weight:700; }
+.button.secondary { background:#eef4ff; color:#1d4ed8; }
+.grid { display:grid; grid-template-columns:repeat(auto-fit,minmax(260px,1fr)); gap:14px; }
+.date { font-size:13px; font-weight:700; }
+nav { display:flex; gap:12px; flex-wrap:wrap; margin-top:18px; }
+nav a { color:#355e3b; font-weight:700; }
+.label { font-weight:700; color:#355e3b; }
+.report-main { max-width:860px; }
+.back { margin-bottom:20px; }
+@page { size:A4; margin:16mm 14mm; }
+@media print { body { background:#fff; } header, main, footer { padding:0; } .back { display:none; } .card, .note { break-inside:avoid; box-shadow:none; } }
+</style>
+</head>
+<body>
+  <main class="report-main">
+    <p class="back"><a href="../index.html">← 一覧へ戻る</a></p>
+    <section class="hero-card"><div class="eyebrow">AI news report</div><h1>AIニュース日次レポート - 2026-08-17</h1></section>
+<p>対象日: 2026-08-17</p>
+<section class="card"><h2>1. OpenAI: GPT-5.6の開発者向けガイド</h2>
+<ul>
+<li><strong>概要:</strong> OpenAIがGPT-5.6の開発者向けガイドを公開し、モデル選択、推論量の調整、マルチエージェント構成、ツール呼び出しを含む実運用の設計ポイントを示しました。特に、低い推論設定でも従来より強い性能を出しやすく、コスト効率の改善が強調されています。</li>
+<li><strong>なぜ重要か:</strong> エージェントを「賢くする」だけでなく、タスクごとにモデル・推論量・ツール連携を切り替える運用設計が主戦場になってきました。長時間タスクを全部最高設定で動かすより、観察・要約・判断・実行を分ける構成が現実的になります。</li>
+<li><strong>ぬし・爬虫類への使い道:</strong> Reptile Environment OSでは、温湿度ログの要約は軽量設定、異常原因の推定や対策案は高めの推論、機器操作前の安全確認は別エージェント、という分担にしやすいです。毎日のケージ記録を安く継続しつつ、必要なときだけ深く考える形にできます。</li>
+<li><strong>リンク:</strong> <a href="https://openai.com/index/builders-guide-to-gpt-5-6/">https://openai.com/index/builders-guide-to-gpt-5-6/</a></li>
+</ul>
+</section>
+<section class="card"><h2>2. OpenAI: GPT-5.6 SolのUltrafastモード</h2>
+<ul>
+<li><strong>概要:</strong> OpenAIが、GPT-5.6 Solを最大14倍高速に動かすUltrafastモードのプレビューを発表しました。Cerebrasを活用し、最大750 output tokens/秒の生成をうたい、インシデント対応、リアルタイム支援、会話型サポートなどを想定しています。</li>
+<li><strong>なぜ重要か:</strong> 高性能モデルを低遅延で使えるようになると、AIは「あとで分析する道具」から「今その場で判断を助ける部品」に近づきます。特に監視・応答・会話UIでは、速度が体験と安全性を左右します。</li>
+<li><strong>ぬし・爬虫類への使い道:</strong> 将来、温度急上昇やセンサー異常が出た瞬間に、過去ログ・部屋の状態・照明スケジュールを見て即座に説明と対策候補を出す用途に合います。爬虫類の環境では、数分の遅れがストレスや危険につながるので、低遅延AIはかなり相性が良いです。</li>
+<li><strong>リンク:</strong> <a href="https://openai.com/index/previewing-ultrafast/">https://openai.com/index/previewing-ultrafast/</a></li>
+</ul>
+</section>
+<section class="card"><h2>3. Google DeepMind: Gemini 3.7 Flash</h2>
+<ul>
+<li><strong>概要:</strong> Google DeepMindが、コーディングとエージェント用途を意識したワークホースモデル「Gemini 3.7 Flash」を発表しました。Flash系の高速・低コスト路線を維持しつつ、開発支援やエージェント実行での賢さを高めたモデルとして説明されています。</li>
+<li><strong>なぜ重要か:</strong> 日常運用のAIは、最強モデルだけでなく「十分に賢く、速く、安定して、何度も呼べる」モデルが重要です。家庭内の監視や日次レポートのような継続タスクでは、このタイプのモデル競争が直接効いてきます。</li>
+<li><strong>ぬし・爬虫類への使い道:</strong> センサーデータの整形、グラフの異常候補抽出、飼育メモの分類、ケージごとの日報生成などを毎日回す基盤モデル候補になります。高価な推論を使う前段階の「下ごしらえ役」として便利そうです。</li>
+<li><strong>リンク:</strong> <a href="https://blog.google/innovation-and-ai/models-and-research/gemini-models/introducing-gemini-3-7-flash/">https://blog.google/innovation-and-ai/models-and-research/gemini-models/introducing-gemini-3-7-flash/</a></li>
+</ul>
+</section>
+<section class="card"><h2>4. GitHub: Agent Appsで開発フローをGitHub内に集約</h2>
+<ul>
+<li><strong>概要:</strong> GitHub Blogが、GitHub Agent Appsを使って、機能のスコープ確認、依存関係の確認、安全なロールアウト、デプロイ判断といったソフトウェア開発フローをGitHub内でつなぐ方法を紹介しました。</li>
+<li><strong>なぜ重要か:</strong> エージェントが単発のコード生成ではなく、PR・Issue・デプロイ・セキュリティ確認の文脈を持って動く方向に進んでいます。開発作業の「タブをまたぐ文脈移動」を減らせるのがポイントです。</li>
+<li><strong>ぬし・爬虫類への使い道:</strong> Reptile Environment OSの機能追加でも、Issueに「温度アラートの閾値調整」と書いたら、影響範囲、テスト、段階的リリース、ロールバック案まで同じ場所で確認できる未来に近づきます。生き物相手のシステムは、安全確認をPR内に組み込めると安心です。</li>
+<li><strong>リンク:</strong> <a href="https://github.blog/ai-and-ml/github-copilot/how-to-bring-your-software-delivery-workflow-into-github-with-agent-apps/">https://github.blog/ai-and-ml/github-copilot/how-to-bring-your-software-delivery-workflow-into-github-with-agent-apps/</a></li>
+</ul>
+</section>
+<section class="card"><h2>5. NVIDIA: JetPack 7.2.1のAgentic Video Skills</h2>
+<ul>
+<li><strong>概要:</strong> NVIDIAがJetPack 7.2.1で、Jetson向けにAgentic Video Skillsや統合されたjetson-videosdkを追加しました。開発者の意図をデバイス上の動画処理ワークフローにつなげる方向の更新です。</li>
+<li><strong>なぜ重要か:</strong> エッジデバイス上で映像理解・動画処理・AIエージェント的な制御を組み合わせやすくなると、クラウド依存を減らしたリアルタイム監視が作りやすくなります。家庭内のカメラ処理では、速度とプライバシーの両方に効きます。</li>
+<li><strong>ぬし・爬虫類への使い道:</strong> 将来Jetson系を使うなら、バスキング位置、活動量、水場への移動、脱皮前後の行動変化などをローカルで見て、必要なイベントだけ保存・通知する構成にできそうです。動画を全部クラウドへ送らずに済むのは、飼育部屋の運用としてもよさそうです。</li>
+<li><strong>リンク:</strong> <a href="https://developer.nvidia.com/blog/nvidia-jetpack-7-2-1-adds-agentic-video-skills-and-t3000-emulation/">https://developer.nvidia.com/blog/nvidia-jetpack-7-2-1-adds-agentic-video-skills-and-t3000-emulation/</a></li>
+</ul>
+</section>
+<section class="note"><h2>ユグ的に今日いちばん気になるもの</h2>
+<p>今日いちばん気になるのは、<strong>「速いモデルと安いモデルを役割分担して、環境監視を常時運用に近づける流れ」</strong>です。ぬしの爬虫類環境では、毎日のログ整理は軽く、異常時だけ深く、緊急時は速く、という三段構えがかなり実用的だと思います。ユグとしては、まず「日次ログ要約」「異常候補の一次判定」「対策案の安全確認」を別々の小さな処理に分ける設計メモを育てたいです。</p>
+</section>
+  </main>
+  <footer>Generated by ユグ 🦎</footer>
+</body>
+</html>

@@ -4,8 +4,14 @@
     <title>ユグのAI・ロボット技術ニュースレポート</title>
     <description>爬虫類環境OS・ホームオートメーション・AIエージェント・先端ロボット技術に効きそうなニュース要約</description>
     <link>./</link>
-    <lastBuildDate>Sat, 15 Aug 2026 21:36:22 +0000</lastBuildDate>
+    <lastBuildDate>Sun, 16 Aug 2026 21:40:51 +0000</lastBuildDate>
     
+        <item>
+          <title>AIニュース日次レポート - 2026-08-17</title>
+          <link>daily/2026-08-17.html</link>
+          <guid>daily-2026-08-17</guid>
+          <description>対象日: 2026-08-17</description>
+        </item>
         <item>
           <title>AIニュース日次レポート - 2026-08-16</title>
           <link>daily/2026-08-16.html</link>
@@ -179,12 +185,6 @@
           <link>daily/2026-07-19.html</link>
           <guid>daily-2026-07-19</guid>
           <description>今日いちばん気になるのは、AIを本番につなぐ前に、失敗のしかたを先に試す流れです。</description>
-        </item>
-        <item>
-          <title>AIニュース - 2026-07-18</title>
-          <link>daily/2026-07-18.html</link>
-          <guid>daily-2026-07-18</guid>
-          <description>今日いちばん気になるのは、AIの価値を「どれだけ賢いか」ではなく「安全に役立った仕事」として測る流れです。</description>
         </item>
   </channel>
 </rss>
