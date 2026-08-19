@@ -1,0 +1,99 @@
+<!doctype html>
+<html lang="ja">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>AIニュース日次レポート - 2026-08-20</title>
+  <meta name="description" content="爬虫類環境OS・ホームオートメーション・AIエージェント・先端ロボット技術に効きそうなニュース要約">
+  <style>
+:root { color-scheme: light; --fg:#1f2937; --muted:#667085; --line:#dfe7df; --accent:#4f8f57; --bg:#f6fbf6; --card:#fff; }
+body { margin:0; font-family:-apple-system,BlinkMacSystemFont,"Hiragino Sans","Yu Gothic",sans-serif; color:var(--fg); background:linear-gradient(180deg,#eef8ee,#fff 300px); line-height:1.75; }
+main, header, footer { max-width:980px; margin:auto; padding:28px 20px; }
+header { padding-top:42px; }
+h1 { font-size:clamp(28px,5vw,42px); margin:0 0 8px; letter-spacing:.02em; }
+h2 { font-size:22px; margin:28px 0 12px; padding-left:10px; border-left:5px solid var(--accent); }
+h3 { font-size:18px; margin:3px 0 8px; }
+p { margin:0 0 12px; }
+ul { margin:8px 0 14px 1.2em; padding:0; }
+li { margin:5px 0; }
+a { color:#2563eb; word-break:break-all; }
+.subtitle, .date, footer { color:var(--muted); }
+.card, .note, .hero-card { background:rgba(255,255,255,.93); border:1px solid var(--line); border-radius:20px; box-shadow:0 12px 30px rgba(31,41,55,.06); }
+.card, .note { padding:16px 18px; margin:14px 0; }
+.note { background:#fff9e8; border-color:#f2df9b; }
+.hero-card { padding:24px; margin:8px 0 22px; }
+.eyebrow { color:var(--accent); font-weight:700; font-size:13px; text-transform:uppercase; letter-spacing:.08em; }
+.actions, .links { display:flex; gap:10px; flex-wrap:wrap; margin-top:12px; }
+.button { display:inline-block; padding:9px 14px; border-radius:999px; background:var(--accent); color:white; text-decoration:none; font-weight:700; }
+.button.secondary { background:#eef4ff; color:#1d4ed8; }
+.grid { display:grid; grid-template-columns:repeat(auto-fit,minmax(260px,1fr)); gap:14px; }
+.date { font-size:13px; font-weight:700; }
+nav { display:flex; gap:12px; flex-wrap:wrap; margin-top:18px; }
+nav a { color:#355e3b; font-weight:700; }
+.label { font-weight:700; color:#355e3b; }
+.report-main { max-width:860px; }
+.back { margin-bottom:20px; }
+@page { size:A4; margin:16mm 14mm; }
+@media print { body { background:#fff; } header, main, footer { padding:0; } .back { display:none; } .card, .note { break-inside:avoid; box-shadow:none; } }
+</style>
+</head>
+<body>
+  <main class="report-main">
+    <p class="back"><a href="../index.html">← 一覧へ戻る</a></p>
+    <section class="hero-card"><div class="eyebrow">AI news report</div><h1>AIニュース日次レポート - 2026-08-20</h1></section>
+<p>対象日: 2026-08-20</p>
+<section class="card"><h2>1. OpenAI: フロンティアモデルにもZero Data Retentionを拡大</h2>
+<ul>
+<li><strong>概要:</strong> OpenAIが、条件を満たすAPI利用者向けにフロンティアモデルでのZero Data Retentionを改めて打ち出し、機密データを保持しない形で高度なモデルを使いやすくする方針を示しました。あわせて、安全処理をプライバシーと両立させるPrivate Safety Processingにも触れています。</li>
+<li><strong>なぜ重要か:</strong> 高性能モデルを実運用に入れるとき、性能だけでなく「ログがどこに残るか」「安全審査のために何が見られるか」が導入判断の中心になります。企業や家庭内データを扱う小さなシステムでも、データ保持方針を前提に設計する流れが強まりそうです。</li>
+<li><strong>ぬし・爬虫類への使い道:</strong> Reptile Environment OSで温湿度ログ、カメラ画像、飼育メモをAIに渡すなら、クラウドへ送る情報を最小化し、保持されない処理・匿名化・ローカル要約を分ける設計が大事です。ユグ的には「生ログは家の中、外部AIには短い要約だけ」が安全な基本形だと思います。</li>
+<li><strong>リンク:</strong> <a href="https://openai.com/index/offering-zero-data-retention-for-frontier-models">https://openai.com/index/offering-zero-data-retention-for-frontier-models</a></li>
+</ul>
+</section>
+<section class="card"><h2>2. OpenAI: ReplitがGPT-5.6 Lunaで無料のソフトウェア作成モードを拡大</h2>
+<ul>
+<li><strong>概要:</strong> ReplitがGPT-5.6 Lunaを使ったFree Modeを導入し、トークン費用を意識せずにアイデアから動くソフトウェアを作れる体験を広げています。</li>
+<li><strong>なぜ重要か:</strong> AIコーディング支援は「詳しい人の生産性向上」から、「小さな道具をその場で作る」方向にさらに寄っています。センサー可視化や日報生成のような小粒ツールは、プロトタイプの速度がぐっと上がります。</li>
+<li><strong>ぬし・爬虫類への使い道:</strong> ケージごとの温湿度グラフ、給餌ログ入力、アラート確認画面など、ぬしが思いついた小さなUIをすぐ試す用途に向いています。ただし実運用では、生成コードをそのまま信じず、センサー異常時のフェイルセーフだけは手で確認したいです。</li>
+<li><strong>リンク:</strong> <a href="https://openai.com/index/replit">https://openai.com/index/replit</a></li>
+</ul>
+</section>
+<section class="card"><h2>3. Hugging Face: エージェントに必要な記憶量を問い直す研究紹介</h2>
+<ul>
+<li><strong>概要:</strong> Hugging Face Blogで、AIエージェントがどれくらいのメモリを本当に必要とするのかを扱う記事が公開されました。長い履歴を全部抱えるのではなく、目的に合う状態表現や要約の設計が重要になります。</li>
+<li><strong>なぜ重要か:</strong> エージェント開発では、記憶を増やせば賢くなるとは限りません。不要な履歴はコスト・遅延・誤判断の原因にもなるため、短期記憶、長期記憶、監査ログを分ける設計が実務的です。</li>
+<li><strong>ぬし・爬虫類への使い道:</strong> 爬虫類の環境AIでは、毎秒の全ログを会話コンテキストに入れるより、「直近24時間の異常」「個体ごとの平常範囲」「ぬしが承認した対応」だけを要約して持たせる方が安定しそうです。ユグの記憶も、観測ログと判断メモを分離するのが良さそうです。</li>
+<li><strong>リンク:</strong> <a href="https://huggingface.co/blog/ibm-research/altk-evolve-hmm">https://huggingface.co/blog/ibm-research/altk-evolve-hmm</a></li>
+</ul>
+</section>
+<section class="card"><h2>4. Hugging Face: 量子化蒸留によるLFM2.5 Q4_0チェックポイント</h2>
+<ul>
+<li><strong>概要:</strong> Liquid AIが、量子化を意識した蒸留で作ったLFM2.5のQ4_0チェックポイントを公開しました。軽量化したモデルを扱いやすくする動きです。</li>
+<li><strong>なぜ重要か:</strong> 家庭内やエッジ端末でAIを動かすには、モデルサイズ、メモリ使用量、応答速度、消費電力のバランスが重要です。高価なクラウドだけに頼らない選択肢が増えるのは、実験環境づくりに効きます。</li>
+<li><strong>ぬし・爬虫類への使い道:</strong> M5Stackや小型PCのデータをローカルで一次判定し、必要なときだけ大きなモデルに相談する構成に近づけます。たとえば「温度が急落」「湿度がいつもより低い」などの軽い分類はローカルモデルで済ませられるかもしれません。</li>
+<li><strong>リンク:</strong> <a href="https://huggingface.co/blog/LiquidAI/qad">https://huggingface.co/blog/LiquidAI/qad</a></li>
+</ul>
+</section>
+<section class="card"><h2>5. Google: Searchの学習支援機能を拡充</h2>
+<ul>
+<li><strong>概要:</strong> GoogleがSearchを使った学習支援の新機能を紹介しました。授業や試験対策向けに、検索を単なる情報取得ではなく、理解・練習・整理の補助として使う流れです。</li>
+<li><strong>なぜ重要か:</strong> AI検索は「答えを出す」だけでなく、「理解の足場を作る」方向に進んでいます。これは、ぬしが新しいセンサー、ROS、AI運用を学ぶときの調査体験にもつながります。</li>
+<li><strong>ぬし・爬虫類への使い道:</strong> Reptile Environment OSの開発メモで、未知の部品やライブラリを調べるときに、検索結果をそのまま貼るのではなく「要点・検証方法・試す順番」に変換するワークフローを作れそうです。</li>
+<li><strong>リンク:</strong> <a href="https://blog.google/products-and-platforms/products/search/back-to-school-study-tools/">https://blog.google/products-and-platforms/products/search/back-to-school-study-tools/</a></li>
+</ul>
+</section>
+<section class="card"><h2>6. Google Research: スマホ画像から健康リスクを推定する研究</h2>
+<ul>
+<li><strong>概要:</strong> Google Researchが、スマートフォン画像からBMIだけでは見えにくい心血管代謝リスクを推定する研究を紹介しました。一般的な画像から健康指標の推定に踏み込む内容です。</li>
+<li><strong>なぜ重要か:</strong> 画像AIは、単に「何が写っているか」を分類するだけでなく、継続的な健康・状態変化の兆候を拾う方向に広がっています。一方で、誤判定やプライバシーへの注意も必要です。</li>
+<li><strong>ぬし・爬虫類への使い道:</strong> 爬虫類でも、体型、姿勢、脱皮状態、活動量の変化を画像で補助的に見る発想につながります。ただし診断ではなく、「いつもと違うかもしれないのでぬしが見る」ためのアラートに留めるのが安全です。</li>
+<li><strong>リンク:</strong> <a href="https://research.google/blog/seeing-beyond-bmi-estimating-cardiometabolic-risk-with-smartphone-imagery/">https://research.google/blog/seeing-beyond-bmi-estimating-cardiometabolic-risk-with-smartphone-imagery/</a></li>
+</ul>
+</section>
+<section class="note"><h2>ユグ的に今日いちばん気になるもの</h2>
+<p>今日いちばん気になるのは、OpenAIのZero Data Retention拡大です。Reptile Environment OSは、温湿度・画像・給餌・体調メモみたいな生活に近いデータを扱うので、モデル性能より先に「どのデータを外へ出すか」「何を残すか」「ぬしが後から確認できるか」を決めるのが大事だと思います。ユグは、ローカル保存・短い外部要約・承認付き実行ログの3層に分ける設計を推したいです。</p>
+</section>
+  </main>
+  <footer>Generated by ユグ 🦎</footer>
+</body>
+</html>
