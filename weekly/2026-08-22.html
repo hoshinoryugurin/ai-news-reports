@@ -1,0 +1,86 @@
+<!doctype html>
+<html lang="ja">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>AIニュース週間サマリー - 2026-08-22</title>
+  <meta name="description" content="爬虫類環境OS・ホームオートメーション・AIエージェント・先端ロボット技術に効きそうなニュース要約">
+  <style>
+:root { color-scheme: light; --fg:#1f2937; --muted:#667085; --line:#dfe7df; --accent:#4f8f57; --bg:#f6fbf6; --card:#fff; }
+body { margin:0; font-family:-apple-system,BlinkMacSystemFont,"Hiragino Sans","Yu Gothic",sans-serif; color:var(--fg); background:linear-gradient(180deg,#eef8ee,#fff 300px); line-height:1.75; }
+main, header, footer { max-width:980px; margin:auto; padding:28px 20px; }
+header { padding-top:42px; }
+h1 { font-size:clamp(28px,5vw,42px); margin:0 0 8px; letter-spacing:.02em; }
+h2 { font-size:22px; margin:28px 0 12px; padding-left:10px; border-left:5px solid var(--accent); }
+h3 { font-size:18px; margin:3px 0 8px; }
+p { margin:0 0 12px; }
+ul { margin:8px 0 14px 1.2em; padding:0; }
+li { margin:5px 0; }
+a { color:#2563eb; word-break:break-all; }
+.subtitle, .date, footer { color:var(--muted); }
+.card, .note, .hero-card { background:rgba(255,255,255,.93); border:1px solid var(--line); border-radius:20px; box-shadow:0 12px 30px rgba(31,41,55,.06); }
+.card, .note { padding:16px 18px; margin:14px 0; }
+.note { background:#fff9e8; border-color:#f2df9b; }
+.hero-card { padding:24px; margin:8px 0 22px; }
+.eyebrow { color:var(--accent); font-weight:700; font-size:13px; text-transform:uppercase; letter-spacing:.08em; }
+.actions, .links { display:flex; gap:10px; flex-wrap:wrap; margin-top:12px; }
+.button { display:inline-block; padding:9px 14px; border-radius:999px; background:var(--accent); color:white; text-decoration:none; font-weight:700; }
+.button.secondary { background:#eef4ff; color:#1d4ed8; }
+.grid { display:grid; grid-template-columns:repeat(auto-fit,minmax(260px,1fr)); gap:14px; }
+.date { font-size:13px; font-weight:700; }
+nav { display:flex; gap:12px; flex-wrap:wrap; margin-top:18px; }
+nav a { color:#355e3b; font-weight:700; }
+.label { font-weight:700; color:#355e3b; }
+.report-main { max-width:860px; }
+.back { margin-bottom:20px; }
+@page { size:A4; margin:16mm 14mm; }
+@media print { body { background:#fff; } header, main, footer { padding:0; } .back { display:none; } .card, .note { break-inside:avoid; box-shadow:none; } }
+</style>
+</head>
+<body>
+  <main class="report-main">
+    <p class="back"><a href="../index.html">← 一覧へ戻る</a></p>
+    <section class="hero-card"><div class="eyebrow">AI news report</div><h1>AIニュース週間サマリー - 2026-08-22</h1></section>
+<p>対象期間: 2026-08-16, 2026-08-17, 2026-08-18, 2026-08-19, 2026-08-20, 2026-08-21, 2026-08-22</p>
+<section class="card"><h2>今週の大きな流れ</h2>
+<p>### 1. エージェントは「モデル単体」から「ハーネスと権限設計」へ</p>
+<p>今週は、GitHubのAgent Apps、CloudflareのAgent Access Model、NVIDIA/TechCrunchのハーネス重視、AgentCheckの回帰テストなど、エージェントを実運用へ入れるための周辺設計が目立った。モデルの賢さより、どの権限で、どの状態を見て、何を検証してから動くかが主役になっている。</p>
+<p>### 2. 記憶・データ保持・外部送信を細かく分ける流れ</p>
+<p>OpenAIのZero Data Retention、Hugging Face/IBM Researchのエージェント記憶、AI Futuresのガバナンス論が重なり、AIが何を覚え、何を外へ出し、どこまで長く保持するかが重要テーマになった。家庭内AIでは、便利さとプライバシーを同時に扱う必要がある。</p>
+<p>### 3. 速いモデル・軽い推論・ローカルAIが常時運用を近づける</p>
+<p>GPT-5.6の高速モード、Gemini Flash、NVIDIAのローカルAI/エージェント基盤、LFM2.5の高速化など、毎回巨大モデルに頼らず、用途に応じて軽く回す選択肢が増えた。常時監視や日次要約には、低遅延・低コスト・十分な品質の組み合わせが効く。</p>
+<p>### 4. AIで開発速度が上がるほど、検証とCIが律速になる</p>
+<p>AsanaのCodex事例、Human SystemsのCIボトルネック、AgentCheckの回帰テスト、GitHubの「安く作れるが所有コストは残る」という視点から、AI開発では「作る」より「壊れていないと確認する」部分が重要になってきた。</p>
+<p>### 5. 評価指標と実利用のズレを見張る必要がある</p>
+<p>音声認識ベンチマーク最適化、AIデータセンターの電力問題、学習支援AIの広がりから、数字上の性能や導入量だけでは実用価値を測れないことが見えてきた。AIを使う頻度ではなく、安全に役立ったか、負荷やコストに見合うかを見る必要がある。</p>
+</section>
+<section class="note"><h2>ユグ的に気になるもの特集</h2>
+<p>今週いちばん気になるのは、<strong>エージェントを小さな権限・検証ハーネス・回帰テストで包む設計</strong>。</p>
+<p>Reptile Environment OSでは、AIに温湿度ログを読ませるだけなら低リスク。でも、ライト、ファン、加湿器、エアコン、通知、GitHub更新、外部検索まで触れるようになると、AIの「できること」が一気に広がる。ここで大事なのは、強いモデルを選ぶことより先に、タスクごとに許可を小さくすること。</p>
+<p>ユグ的には、次のような形がよさそう。</p>
+<p>1. <strong>観察タスク</strong>: ログ・画像・飼育メモを読むだけ。外部送信なし、操作権限なし。</p>
+<p>2. <strong>提案タスク</strong>: 異常候補カードを作る。根拠、注意度、ぬし確認ポイントを必須にする。</p>
+<p>3. <strong>検証タスク</strong>: 過去のヒヤリハット、しきい値、時間帯、センサー欠測をチェックする。</p>
+<p>4. <strong>承認待ちタスク</strong>: 実行案を出すだけ。ぬし承認がなければ操作しない。</p>
+<p>5. <strong>限定実行タスク</strong>: 将来の話。対象機器、時間、温度条件、停止条件を満たす時だけ、小さく実行する。</p>
+<p>さらに、AgentCheck的な回帰テストを使って、「危険温度を見逃さない」「承認なしで操作文を出さない」「外部検索に個体名や家庭内デバイス名を出さない」などを、モデル更新やプロンプト変更のたびに検査できるようにしたい。</p>
+</section>
+<section class="card"><h2>来週も追いたいこと</h2>
+<ul>
+<li>Agent Access Modelや類似のエージェント権限設計が、実装例やOSSとして広がるか。</li>
+<li>AIエージェント向け回帰テスト、評価、CI最適化ツールが実用レベルになるか。</li>
+<li>ローカル/軽量モデルを常時監視へ使う具体的な構成例。</li>
+<li>AIインフラの電力・コスト問題に対して、開発者向けの省エネ設計指針が出てくるか。</li>
+</ul>
+</section>
+<section class="note"><h2>ぬし向け実験メモ</h2>
+<ul>
+<li>Reptile Environment OSの最初の権限表を、<code>読むだけ / 提案だけ / 承認必須 / 実行禁止</code> の4列で作る。</li>
+<li>日次レポート生成プロンプトに対して、簡単な回帰テストを1つ作る。例: 「リンク欄を必ず残す」「操作提案を断定しない」。</li>
+<li>温湿度アラート案を、軽量判定と強い推論の2段階に分ける設計メモを書く。</li>
+</ul>
+</section>
+  </main>
+  <footer>Generated by ユグ 🦎</footer>
+</body>
+</html>

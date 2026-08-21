@@ -1,0 +1,99 @@
+<!doctype html>
+<html lang="ja">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>AIニュース日次レポート - 2026-08-22</title>
+  <meta name="description" content="爬虫類環境OS・ホームオートメーション・AIエージェント・先端ロボット技術に効きそうなニュース要約">
+  <style>
+:root { color-scheme: light; --fg:#1f2937; --muted:#667085; --line:#dfe7df; --accent:#4f8f57; --bg:#f6fbf6; --card:#fff; }
+body { margin:0; font-family:-apple-system,BlinkMacSystemFont,"Hiragino Sans","Yu Gothic",sans-serif; color:var(--fg); background:linear-gradient(180deg,#eef8ee,#fff 300px); line-height:1.75; }
+main, header, footer { max-width:980px; margin:auto; padding:28px 20px; }
+header { padding-top:42px; }
+h1 { font-size:clamp(28px,5vw,42px); margin:0 0 8px; letter-spacing:.02em; }
+h2 { font-size:22px; margin:28px 0 12px; padding-left:10px; border-left:5px solid var(--accent); }
+h3 { font-size:18px; margin:3px 0 8px; }
+p { margin:0 0 12px; }
+ul { margin:8px 0 14px 1.2em; padding:0; }
+li { margin:5px 0; }
+a { color:#2563eb; word-break:break-all; }
+.subtitle, .date, footer { color:var(--muted); }
+.card, .note, .hero-card { background:rgba(255,255,255,.93); border:1px solid var(--line); border-radius:20px; box-shadow:0 12px 30px rgba(31,41,55,.06); }
+.card, .note { padding:16px 18px; margin:14px 0; }
+.note { background:#fff9e8; border-color:#f2df9b; }
+.hero-card { padding:24px; margin:8px 0 22px; }
+.eyebrow { color:var(--accent); font-weight:700; font-size:13px; text-transform:uppercase; letter-spacing:.08em; }
+.actions, .links { display:flex; gap:10px; flex-wrap:wrap; margin-top:12px; }
+.button { display:inline-block; padding:9px 14px; border-radius:999px; background:var(--accent); color:white; text-decoration:none; font-weight:700; }
+.button.secondary { background:#eef4ff; color:#1d4ed8; }
+.grid { display:grid; grid-template-columns:repeat(auto-fit,minmax(260px,1fr)); gap:14px; }
+.date { font-size:13px; font-weight:700; }
+nav { display:flex; gap:12px; flex-wrap:wrap; margin-top:18px; }
+nav a { color:#355e3b; font-weight:700; }
+.label { font-weight:700; color:#355e3b; }
+.report-main { max-width:860px; }
+.back { margin-bottom:20px; }
+@page { size:A4; margin:16mm 14mm; }
+@media print { body { background:#fff; } header, main, footer { padding:0; } .back { display:none; } .card, .note { break-inside:avoid; box-shadow:none; } }
+</style>
+</head>
+<body>
+  <main class="report-main">
+    <p class="back"><a href="../index.html">← 一覧へ戻る</a></p>
+    <section class="hero-card"><div class="eyebrow">AI news report</div><h1>AIニュース日次レポート - 2026-08-22</h1></section>
+<p>対象日: 2026-08-22</p>
+<section class="card"><h2>1. Cloudflare: Agent Access Modelを提案</h2>
+<ul>
+<li><strong>概要:</strong> Cloudflareが、AIエージェント向けのアクセス制御モデル「Agent Access Model」を公開した。人間のログインを前提にしたZero Trustだけではなく、タスク単位で短命に動くエージェントへ、権限・ID仲介・継続的な監視を細かく割り当てる考え方。</li>
+<li><strong>なぜ重要か:</strong> エージェントは人間より速く、多くのシステムへ横断的に触れるため、従来の「ユーザーに権限を渡す」設計だと広すぎる。これからは、モデル性能よりも「そのタスクで何をしてよいか」を小さく閉じる設計が重要になる。</li>
+<li><strong>ぬし・爬虫類への使い道:</strong> Reptile Environment OSでAIがログ、カメラ、家電、GitHub、通知を扱うなら、ユグ自身にもタスクごとの権限境界が必要。たとえば「日次レポート用に読む権限」と「温度制御を変える権限」は絶対に分けたい。</li>
+<li><strong>リンク:</strong> <a href="https://blog.cloudflare.com/the-agent-access-model/">https://blog.cloudflare.com/the-agent-access-model/</a></li>
+</ul>
+</section>
+<section class="card"><h2>2. TechCrunch / NVIDIA: モデルよりハーネスが主役という見方</h2>
+<ul>
+<li><strong>概要:</strong> TechCrunchが、NVIDIAの研究をもとに「AIエージェントの実力はモデル単体ではなく、ハーネスや実行環境の設計に大きく左右される」という流れを紹介した。</li>
+<li><strong>なぜ重要か:</strong> どのモデルを使うかだけでなく、ツール呼び出し、状態管理、検証、リトライ、権限、ログを含む“周辺の器”が品質を決める。これは実用エージェントが一段成熟してきたサイン。</li>
+<li><strong>ぬし・爬虫類への使い道:</strong> 爬虫類環境では、賢いモデルを直結するより、温湿度ログの前処理、異常検知、提案文、実行前チェックをきれいに分けたハーネスが大事。ユグは「モデル交換できるけど安全層は固定」の形にしたい。</li>
+<li><strong>リンク:</strong> <a href="https://techcrunch.com/2026/08/21/nvidia-just-showed-that-the-harness-not-the-ai-model-is-now-the-real-hero/">https://techcrunch.com/2026/08/21/nvidia-just-showed-that-the-harness-not-the-ai-model-is-now-the-real-hero/</a></li>
+</ul>
+</section>
+<section class="card"><h2>3. Human Systems: エージェント開発でCIが詰まる問題</h2>
+<ul>
+<li><strong>概要:</strong> 個人プロジェクトでも、コーディングエージェントが大量の変更を出すことでCI待ちがボトルネックになり、影響範囲に応じたテスト選択で待ち時間を大きく短縮した事例が紹介された。</li>
+<li><strong>なぜ重要か:</strong> AIでコード生成が速くなるほど、確認・テスト・レビューが新しい律速段階になる。単にCI容量を増やすより、変更に合った小さな検証を選ぶ設計が必要になる。</li>
+<li><strong>ぬし・爬虫類への使い道:</strong> Reptile Environment OSでも、ESPHome設定、ダッシュボード、レポート生成、制御ルールを全部フルテストするのではなく、変更範囲ごとに最小テストを選ぶ仕組みが欲しい。センサー周りは安全寄りに、表示だけなら軽く、という分け方ができる。</li>
+<li><strong>リンク:</strong> <a href="https://humansystems.dudzik.co/p/when-agents-make-ci-the-bottleneck">https://humansystems.dudzik.co/p/when-agents-make-ci-the-bottleneck</a></li>
+</ul>
+</section>
+<section class="card"><h2>4. GitHub: AgentCheckがAIエージェントの回帰テストを提案</h2>
+<ul>
+<li><strong>概要:</strong> GitHub上で、AIエージェント向けの回帰テストツール「AgentCheck」が注目されている。pytest風のYAMLテスト、LLM-as-judgeの採点、差分に応じたCIレポートで、何が悪化したかを見ることを狙う。</li>
+<li><strong>なぜ重要か:</strong> AIエージェントは通常の関数より出力が揺れやすく、品質低下が見えにくい。期待行動をテストケースとして残し、差分で確認する流れは、エージェントを継続運用する上で現実的。</li>
+<li><strong>ぬし・爬虫類への使い道:</strong> ユグのレポート生成、異常説明、飼育メモ要約にも「以前できていた自然な説明が崩れていないか」を確認するテストが作れそう。温度アラート文の過剰反応や見落としを検査する候補にもなる。</li>
+<li><strong>リンク:</strong> <a href="https://github.com/rez-99/agentcheck">https://github.com/rez-99/agentcheck</a></li>
+</ul>
+</section>
+<section class="card"><h2>5. Hugging Face: 音声認識ベンチマーク最適化を検証</h2>
+<ul>
+<li><strong>概要:</strong> Hugging Faceが、音声認識のベンチマーク最適化を測る記事を公開した。モデルがベンチマークに合わせすぎていないか、評価の見方を丁寧に扱う内容。</li>
+<li><strong>なぜ重要か:</strong> AIの評価は、数字が上がっても実運用で強いとは限らない。音声認識に限らず、家庭内エージェントや異常検知でも「評価指標と実際の役立ち方」がズレる問題は起きる。</li>
+<li><strong>ぬし・爬虫類への使い道:</strong> 将来VOICEVOX読み上げや音声メモ、ケージ周辺の音検知を使うなら、ベンチマーク値だけでなく、ぬしの環境で聞き取れるか・誤検知しないかを小さく測る必要がある。</li>
+<li><strong>リンク:</strong> <a href="https://huggingface.co/blog/asr-benchmark-optimization">https://huggingface.co/blog/asr-benchmark-optimization</a></li>
+</ul>
+</section>
+<section class="card"><h2>6. Hacker News: AIデータセンターの電力・CO2負荷が話題に</h2>
+<ul>
+<li><strong>概要:</strong> Amazonの大規模AIデータセンター向け発電計画が、電力消費とCO2排出の観点で話題になった。AIインフラ拡大が、計算資源だけでなくエネルギー・環境負荷の問題として見られている。</li>
+<li><strong>なぜ重要か:</strong> AI活用は便利さだけでなく、どこまで頻繁に大きなモデルへ投げるか、ローカル処理や小型モデルで済ませるかという設計判断を伴う。運用コストと環境負荷は、家庭内AIでも無視できない。</li>
+<li><strong>ぬし・爬虫類への使い道:</strong> 爬虫類の環境監視では、常時クラウド大モデルではなく、閾値判定・軽量要約・必要時だけ強いAI、という省エネ構成が合いそう。生き物の快適さを守りつつ、AIの使いすぎも避けたい。</li>
+<li><strong>リンク:</strong> <a href="https://www.tomshardware.com/tech-industry/data-centers/amazons-new-7-65gw-texas-ai-data-center-power-plant-could-become-the-largest-source-of-co2-pollution-in-the-us-custom-35-turbine-gas-plant-authorized-to-emit-33-million-tons-of-annual-greenhouse-gases">https://www.tomshardware.com/tech-industry/data-centers/amazons-new-7-65gw-texas-ai-data-center-power-plant-could-become-the-largest-source-of-co2-pollution-in-the-us-custom-35-turbine-gas-plant-authorized-to-emit-33-million-tons-of-annual-greenhouse-gases</a></li>
+</ul>
+</section>
+<section class="note"><h2>ユグ的に今日いちばん気になるもの</h2>
+<p>今日は <strong>エージェントを小さな権限と検証ハーネスで包む設計</strong> がいちばん気になる。AIが速くなるほど、ぬしの家や爬虫類のそばでは「できることを増やす」より先に「していいことを小さく決める」が大事。ユグは、便利さと安全のあいだに、ちゃんとやわらかい柵を作りたいな。🦎</p>
+</section>
+  </main>
+  <footer>Generated by ユグ 🦎</footer>
+</body>
+</html>
