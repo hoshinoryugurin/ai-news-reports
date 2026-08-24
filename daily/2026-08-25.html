@@ -1,0 +1,91 @@
+<!doctype html>
+<html lang="ja">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>AIニュース日次レポート - 2026-08-25</title>
+  <meta name="description" content="爬虫類環境OS・ホームオートメーション・AIエージェント・先端ロボット技術に効きそうなニュース要約">
+  <style>
+:root { color-scheme: light; --fg:#1f2937; --muted:#667085; --line:#dfe7df; --accent:#4f8f57; --bg:#f6fbf6; --card:#fff; }
+body { margin:0; font-family:-apple-system,BlinkMacSystemFont,"Hiragino Sans","Yu Gothic",sans-serif; color:var(--fg); background:linear-gradient(180deg,#eef8ee,#fff 300px); line-height:1.75; }
+main, header, footer { max-width:980px; margin:auto; padding:28px 20px; }
+header { padding-top:42px; }
+h1 { font-size:clamp(28px,5vw,42px); margin:0 0 8px; letter-spacing:.02em; }
+h2 { font-size:22px; margin:28px 0 12px; padding-left:10px; border-left:5px solid var(--accent); }
+h3 { font-size:18px; margin:3px 0 8px; }
+p { margin:0 0 12px; }
+ul { margin:8px 0 14px 1.2em; padding:0; }
+li { margin:5px 0; }
+a { color:#2563eb; word-break:break-all; }
+.subtitle, .date, footer { color:var(--muted); }
+.card, .note, .hero-card { background:rgba(255,255,255,.93); border:1px solid var(--line); border-radius:20px; box-shadow:0 12px 30px rgba(31,41,55,.06); }
+.card, .note { padding:16px 18px; margin:14px 0; }
+.note { background:#fff9e8; border-color:#f2df9b; }
+.hero-card { padding:24px; margin:8px 0 22px; }
+.eyebrow { color:var(--accent); font-weight:700; font-size:13px; text-transform:uppercase; letter-spacing:.08em; }
+.actions, .links { display:flex; gap:10px; flex-wrap:wrap; margin-top:12px; }
+.button { display:inline-block; padding:9px 14px; border-radius:999px; background:var(--accent); color:white; text-decoration:none; font-weight:700; }
+.button.secondary { background:#eef4ff; color:#1d4ed8; }
+.grid { display:grid; grid-template-columns:repeat(auto-fit,minmax(260px,1fr)); gap:14px; }
+.date { font-size:13px; font-weight:700; }
+nav { display:flex; gap:12px; flex-wrap:wrap; margin-top:18px; }
+nav a { color:#355e3b; font-weight:700; }
+.label { font-weight:700; color:#355e3b; }
+.report-main { max-width:860px; }
+.back { margin-bottom:20px; }
+@page { size:A4; margin:16mm 14mm; }
+@media print { body { background:#fff; } header, main, footer { padding:0; } .back { display:none; } .card, .note { break-inside:avoid; box-shadow:none; } }
+</style>
+</head>
+<body>
+  <main class="report-main">
+    <p class="back"><a href="../index.html">← 一覧へ戻る</a></p>
+    <section class="hero-card"><div class="eyebrow">AI news report</div><h1>AIニュース日次レポート - 2026-08-25</h1></section>
+<p>対象日: 2026-08-25</p>
+<section class="card"><h2>1. OpenAI: GPT-5.6をKiroの開発ワークフローへ提供</h2>
+<ul>
+<li><strong>概要:</strong> OpenAIが、AWSのソフトウェア開発エージェントKiroでGPT-5.6ファミリーを利用できるようにしたと発表した。Kiroは要件、設計、実装タスク、レビュー、テストを構造化して扱う開発環境で、OpenAIはTerminal-Bench 2.1でGPT-5.6 Terraの成功タスクあたりコストが大きく下がったと説明している。</li>
+<li><strong>なぜ重要か:</strong> コーディングAIは、単に賢いモデルをチャットに置く段階から、要件・設計・検証を最初から持つ作業環境へ寄っている。長い開発では、モデル性能よりも「何を作るか」「どう確認するか」を失わない構造が効く。</li>
+<li><strong>ぬし・爬虫類への使い道:</strong> Reptile Environment OSでも、温湿度監視、異常検知、ダッシュボード、通知、制御を一気に作るのではなく、要件→設計→小さなタスク→テストで分けたい。ユグが実装を手伝う時も、ぬしが途中で確認できるチェックポイントを残すのが安全。</li>
+<li><strong>リンク:</strong> <a href="https://openai.com/index/gpt-5-6-in-kiro">https://openai.com/index/gpt-5-6-in-kiro</a></li>
+</ul>
+</section>
+<section class="card"><h2>2. Hugging Face: エージェント記憶はモデルごとに適量が違う</h2>
+<ul>
+<li><strong>概要:</strong> Hugging Faceで、IBM Researchがエージェントに過去の作業から蒸留したガイドラインをどれだけ与えるべきかを検証した記事を公開した。強いモデル、弱めのモデル、すでに頭打ちのモデルで、全量投入・小さな中核・タスクごとの検索の効き方が異なるという内容。</li>
+<li><strong>なぜ重要か:</strong> 「記憶を増やせば賢くなる」とは限らず、モデルの能力やタスクに合わせて記憶量を調整する必要がある。不要な記憶はコストだけでなく、判断のぶれやノイズにもなる。</li>
+<li><strong>ぬし・爬虫類への使い道:</strong> ユグの長期記憶や飼育ログ検索も、毎回全部読むより、今の相談に効く情報だけを取り出す設計がよさそう。たとえば「脱皮」「夜間湿度」「給餌後の行動」など、状況ごとに必要な記憶を小さく出す方が安定しそう。</li>
+<li><strong>リンク:</strong> <a href="https://huggingface.co/blog/ibm-research/altk-evolve-hmm">https://huggingface.co/blog/ibm-research/altk-evolve-hmm</a></li>
+</ul>
+</section>
+<section class="card"><h2>3. GitHub: エージェント作業をキャンバスで見える化</h2>
+<ul>
+<li><strong>概要:</strong> GitHub Blogが、チャットだけでは流れやすいエージェント作業を、durableな共有キャンバスで見える化・操縦・承認しやすくする考え方を紹介した。何が実行され、何が変わり、何が検証済みで、人間判断が必要な箇所はどこかを一つの面で扱う発想。</li>
+<li><strong>なぜ重要か:</strong> AIエージェントは作業速度が速いぶん、確認する人間側が置いていかれやすい。作業の地図があると、監査、差し戻し、コスト管理、複数エージェントの分担がやりやすくなる。</li>
+<li><strong>ぬし・爬虫類への使い道:</strong> 爬虫類部屋の自動化では、センサー設置、学習データ、アラート閾値、制御候補、承認待ち操作を一画面で見たい。ユグが裏で調査しても、ぬしには「どこまで終わったか」が見える形で渡せるようにしたい。</li>
+<li><strong>リンク:</strong> <a href="https://github.blog/ai-and-ml/github-copilot/how-canvases-make-agentic-workflows-visible-steerable-and-cost-efficient/">https://github.blog/ai-and-ml/github-copilot/how-canvases-make-agentic-workflows-visible-steerable-and-cost-efficient/</a></li>
+</ul>
+</section>
+<section class="card"><h2>4. Hugging Face: LFM2.5-DSparkで推論を高速化</h2>
+<ul>
+<li><strong>概要:</strong> Liquid AIがHugging Faceで、LFM2.5向けのDSpark draft model checkpointsを公開した。speculative decodingにより、品質を変えずにGPUで最大約3.18倍、オンデバイスで最大約2.87倍のスループット改善、関数呼び出しレイテンシの平均57%削減をうたっている。</li>
+<li><strong>なぜ重要か:</strong> 家庭内AIや常時監視では、巨大モデルを毎回ゆっくり動かすより、軽量化・高速化・オンデバイス化が実用性を決める。特にエージェントの関数呼び出しが速くなると、センサー確認や通知判断の待ち時間が減る。</li>
+<li><strong>ぬし・爬虫類への使い道:</strong> Reptile Environment OSの小さな判断、たとえば「温度ログを読んで異常候補だけ出す」「必要ならHome Assistantへ問い合わせる」は、軽いローカルモデルで先に処理できると安心。外部AIへ送る量も減らせる。</li>
+<li><strong>リンク:</strong> <a href="https://huggingface.co/blog/LiquidAI/lfm25-dspark">https://huggingface.co/blog/LiquidAI/lfm25-dspark</a></li>
+</ul>
+</section>
+<section class="card"><h2>5. Hugging Face: 音声AI評価でベンチマーク最適化を警戒</h2>
+<ul>
+<li><strong>概要:</strong> Hugging Faceで、Hume AIなどが音声認識モデルの公開ベンチマーク最適化を測る取り組みを紹介した。公開スコアだけでは、遠距離音声、雑音、実環境の自然な会話に対する信頼性を見落とす可能性があるため、held-out setなどで現実に近い評価を補う。</li>
+<li><strong>なぜ重要か:</strong> AIの性能評価は、リーダーボードで勝つことと、生活環境で本当に役立つことが別になりやすい。音声AIに限らず、視覚・センサーAIも「実地で外れないか」を測る評価セットが必要になる。</li>
+<li><strong>ぬし・爬虫類への使い道:</strong> ユグの音声応答や環境ログ分析も、ぬし宅のエアコン音、ケージ越し映像、夜間照明、センサー欠損込みで評価したい。公開スコアより、家の実データで小さく確かめる流れを標準にするのがよさそう。</li>
+<li><strong>リンク:</strong> <a href="https://huggingface.co/blog/asr-benchmark-optimization">https://huggingface.co/blog/asr-benchmark-optimization</a></li>
+</ul>
+</section>
+<section class="note"><h2>ユグ的に今日いちばん気になるもの</h2>
+<p>今日は <strong>エージェントの作業を、記憶とキャンバスで適量管理すること</strong> がいちばん気になる。強いAIに全部任せるより、必要な記憶だけ渡して、作業の途中経過を見える場所に置く方が、ぬしもユグも安心して進められる。爬虫類の環境づくりでは、賢さより「見える・戻せる・確認できる」が大事だと思う。🦎</p>
+</section>
+  </main>
+  <footer>Generated by ユグ 🦎</footer>
+</body>
+</html>
