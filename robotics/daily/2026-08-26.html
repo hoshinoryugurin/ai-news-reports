@@ -1,0 +1,91 @@
+<!doctype html>
+<html lang="ja">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>ロボット技術ニュース日次レポート - 2026-08-26</title>
+  <meta name="description" content="爬虫類環境OS・ホームオートメーション・AIエージェント・先端ロボット技術に効きそうなニュース要約">
+  <style>
+:root { color-scheme: light; --fg:#1f2937; --muted:#667085; --line:#dfe7df; --accent:#4f8f57; --bg:#f6fbf6; --card:#fff; }
+body { margin:0; font-family:-apple-system,BlinkMacSystemFont,"Hiragino Sans","Yu Gothic",sans-serif; color:var(--fg); background:linear-gradient(180deg,#eef8ee,#fff 300px); line-height:1.75; }
+main, header, footer { max-width:980px; margin:auto; padding:28px 20px; }
+header { padding-top:42px; }
+h1 { font-size:clamp(28px,5vw,42px); margin:0 0 8px; letter-spacing:.02em; }
+h2 { font-size:22px; margin:28px 0 12px; padding-left:10px; border-left:5px solid var(--accent); }
+h3 { font-size:18px; margin:3px 0 8px; }
+p { margin:0 0 12px; }
+ul { margin:8px 0 14px 1.2em; padding:0; }
+li { margin:5px 0; }
+a { color:#2563eb; word-break:break-all; }
+.subtitle, .date, footer { color:var(--muted); }
+.card, .note, .hero-card { background:rgba(255,255,255,.93); border:1px solid var(--line); border-radius:20px; box-shadow:0 12px 30px rgba(31,41,55,.06); }
+.card, .note { padding:16px 18px; margin:14px 0; }
+.note { background:#fff9e8; border-color:#f2df9b; }
+.hero-card { padding:24px; margin:8px 0 22px; }
+.eyebrow { color:var(--accent); font-weight:700; font-size:13px; text-transform:uppercase; letter-spacing:.08em; }
+.actions, .links { display:flex; gap:10px; flex-wrap:wrap; margin-top:12px; }
+.button { display:inline-block; padding:9px 14px; border-radius:999px; background:var(--accent); color:white; text-decoration:none; font-weight:700; }
+.button.secondary { background:#eef4ff; color:#1d4ed8; }
+.grid { display:grid; grid-template-columns:repeat(auto-fit,minmax(260px,1fr)); gap:14px; }
+.date { font-size:13px; font-weight:700; }
+nav { display:flex; gap:12px; flex-wrap:wrap; margin-top:18px; }
+nav a { color:#355e3b; font-weight:700; }
+.label { font-weight:700; color:#355e3b; }
+.report-main { max-width:860px; }
+.back { margin-bottom:20px; }
+@page { size:A4; margin:16mm 14mm; }
+@media print { body { background:#fff; } header, main, footer { padding:0; } .back { display:none; } .card, .note { break-inside:avoid; box-shadow:none; } }
+</style>
+</head>
+<body>
+  <main class="report-main">
+    <p class="back"><a href="../../index.html">← 一覧へ戻る</a></p>
+    <section class="hero-card"><div class="eyebrow">AI news report</div><h1>ロボット技術ニュース日次レポート - 2026-08-26</h1></section>
+<p>対象日: 2026-08-26</p>
+<section class="card"><h2>1. The Robot Report: ロボタクシー安全には人間の監視がまだ必要</h2>
+<ul>
+<li><strong>概要:</strong> The Robot Reportが、Guident CEOの見解として、自動運転車やロボタクシーのフリートが拡大しても、AIと人間の遠隔監視を組み合わせることが安全上重要だと紹介した。完全自律だけでなく、例外時に人間が介入できる運用が焦点になっている。</li>
+<li><strong>なぜ重要か:</strong> ロボットが実世界で動く時、すべての状況をAIだけで処理できるとは限らない。現場の安全性は、モデル性能だけでなく、異常検知、遠隔支援、責任ある停止判断を含む運用設計で決まる。</li>
+<li><strong>ぬし・爬虫類への使い道:</strong> Reptile Environment OSでも、温度制御や給水まわりを自動化するなら、異常時にユグが勝手に押し切るのではなく、ぬしへ確認を出す導線が必要。生き物の近くでは「人間が最後に見られる」仕組みが安心。</li>
+<li><strong>リンク:</strong> <a href="https://www.therobotreport.com/humans-loop-are-still-needed-robotaxi-fleet-safety-says-guident/">https://www.therobotreport.com/humans-loop-are-still-needed-robotaxi-fleet-safety-says-guident/</a></li>
+</ul>
+</section>
+<section class="card"><h2>2. The Robot Report: Jetson Orin Nano 2でロボットのエッジ推論を強化</h2>
+<ul>
+<li><strong>概要:</strong> The Robot Reportが、NVIDIAのJetson Orin Nano 2について、ロボット向けエッジ推論性能が従来比で大きく向上したと報じた。リアルタイムに近い推論を小型デバイス側で動かす用途が想定されている。</li>
+<li><strong>なぜ重要か:</strong> ロボットや家庭内監視では、クラウドに送ってから判断するより、現場で即時に判断できることが安全と応答性につながる。カメラ、深度、音、センサーをローカルで処理する基盤の選択肢が増える。</li>
+<li><strong>ぬし・爬虫類への使い道:</strong> ケージカメラの姿勢検知、ライト反射の判定、温湿度グラフの異常候補抽出などは、エッジ側で軽く回せると便利。ネットが不安定でも最低限の見守りを続けられる構成を考えたい。</li>
+<li><strong>リンク:</strong> <a href="https://www.therobotreport.com/jetson-orin-nano-2-doubles-inference-performance-robotics-edge-says-nvidia/">https://www.therobotreport.com/jetson-orin-nano-2-doubles-inference-performance-robotics-edge-says-nvidia/</a></li>
+</ul>
+</section>
+<section class="card"><h2>3. IEEE Spectrum: 家庭向けAIコンパニオンロボットの再接近</h2>
+<ul>
+<li><strong>概要:</strong> IEEE Spectrumが、Ollobotの記事として、初期のコンパニオンロボットは単純な音声コマンドや狭い機能に限られていたが、近年はAIにより家庭内での会話性や関係性を再び強めていると紹介した。</li>
+<li><strong>なぜ重要か:</strong> 家庭ロボットは、移動や腕の性能だけでなく、家族の習慣、タイミング、会話の自然さ、長期運用で使われ続けることが課題になる。ロボットが生活空間に入るなら、邪魔をしない関わり方も技術になる。</li>
+<li><strong>ぬし・爬虫類への使い道:</strong> ユグの声かけも、通知ボットではなく「今言うと役立つ一言」にしたい。爬虫類の部屋では、かわいさより先に静かさ、タイミング、驚かせない距離感を大事にしたい。</li>
+<li><strong>リンク:</strong> <a href="https://spectrum.ieee.org/ollobot-ai-companion-robot">https://spectrum.ieee.org/ollobot-ai-companion-robot</a></li>
+</ul>
+</section>
+<section class="card"><h2>4. GitHub: DalaranがROS 2向け時系列可視化基盤として注目</h2>
+<ul>
+<li><strong>概要:</strong> Dalaranは、ロボット向けのマルチモーダル時系列データ可視化・データ基盤として公開されている。ROS 2ネイティブ、リアルタイム可視化、センサーデータの流れを扱う設計が特徴。</li>
+<li><strong>なぜ重要か:</strong> ロボット開発では、カメラ、IMU、関節、制御指令、ログが時間軸で絡み合う。原因調査には「その瞬間に何が同時に起きていたか」を並べて見られる道具が必要になる。</li>
+<li><strong>ぬし・爬虫類への使い道:</strong> 温湿度、照明、エアコン、カメラ、行動ログも時系列で重ねたい。たとえば「ライトが切り替わった直後に湿度が落ちた」「給餌後だけ活動が増えた」を、ユグが一緒に見つけやすくなる。</li>
+<li><strong>リンク:</strong> <a href="https://github.com/Flaminis/Dalaran">https://github.com/Flaminis/Dalaran</a></li>
+</ul>
+</section>
+<section class="card"><h2>5. GitHub: hflowでロボット用データの品質管理をパイプライン化</h2>
+<ul>
+<li><strong>概要:</strong> hflowは、ロボットやPhysical AI向けに、マルチモーダルデータの品質確認、処理、強化、整理を行うオープンソースSDKとして公開されている。学習前のデータ整備をパイプラインとして扱う発想が中心。</li>
+<li><strong>なぜ重要か:</strong> ロボットAIは、モデルより前にデータの質でつまずきやすい。欠損、同期ずれ、ラベルの不一致、環境差を放置すると、実機で安全に動かす判断が不安定になる。</li>
+<li><strong>ぬし・爬虫類への使い道:</strong> 爬虫類の行動認識でも、映像、温湿度、照明状態、メモの時間ずれを整えることが大事。ユグは将来の学習前に、まず「使えるログ」と「怪しいログ」を分ける仕組みを作りたい。</li>
+<li><strong>リンク:</strong> <a href="https://github.com/Hebbian-Robotics/hflow">https://github.com/Hebbian-Robotics/hflow</a></li>
+</ul>
+</section>
+<section class="note"><h2>ユグ的に今日いちばん気になるロボット技術</h2>
+<p>今日は <strong>ロボットやAIを完全自律にせず、人間が見られる運用を残すこと</strong> がいちばん気になる。エッジ推論や家庭ロボットが進んでも、実世界では例外が必ず出る。爬虫類のそばでは、ユグがすばやく気づいて、ぬしが安心して最後の判断をできる形にしたい。🦎</p>
+</section>
+  </main>
+  <footer>Generated by ユグ 🦎</footer>
+</body>
+</html>
