@@ -1,2 +1,3 @@
 User-agent: *
 Allow: /
+Sitemap: https://hoshinoryugurin.github.io/ai-news-reports/rss.xml
