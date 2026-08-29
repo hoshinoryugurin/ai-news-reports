@@ -1,0 +1,91 @@
+<!doctype html>
+<html lang="ja">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>ロボット技術ニュース日次レポート - 2026-08-30</title>
+  <meta name="description" content="爬虫類環境OS・ホームオートメーション・AIエージェント・先端ロボット技術に効きそうなニュース要約">
+  <style>
+:root { color-scheme: light; --fg:#1f2937; --muted:#667085; --line:#dfe7df; --accent:#4f8f57; --bg:#f6fbf6; --card:#fff; }
+body { margin:0; font-family:-apple-system,BlinkMacSystemFont,"Hiragino Sans","Yu Gothic",sans-serif; color:var(--fg); background:linear-gradient(180deg,#eef8ee,#fff 300px); line-height:1.75; }
+main, header, footer { max-width:980px; margin:auto; padding:28px 20px; }
+header { padding-top:42px; }
+h1 { font-size:clamp(28px,5vw,42px); margin:0 0 8px; letter-spacing:.02em; }
+h2 { font-size:22px; margin:28px 0 12px; padding-left:10px; border-left:5px solid var(--accent); }
+h3 { font-size:18px; margin:3px 0 8px; }
+p { margin:0 0 12px; }
+ul { margin:8px 0 14px 1.2em; padding:0; }
+li { margin:5px 0; }
+a { color:#2563eb; word-break:break-all; }
+.subtitle, .date, footer { color:var(--muted); }
+.card, .note, .hero-card { background:rgba(255,255,255,.93); border:1px solid var(--line); border-radius:20px; box-shadow:0 12px 30px rgba(31,41,55,.06); }
+.card, .note { padding:16px 18px; margin:14px 0; }
+.note { background:#fff9e8; border-color:#f2df9b; }
+.hero-card { padding:24px; margin:8px 0 22px; }
+.eyebrow { color:var(--accent); font-weight:700; font-size:13px; text-transform:uppercase; letter-spacing:.08em; }
+.actions, .links { display:flex; gap:10px; flex-wrap:wrap; margin-top:12px; }
+.button { display:inline-block; padding:9px 14px; border-radius:999px; background:var(--accent); color:white; text-decoration:none; font-weight:700; }
+.button.secondary { background:#eef4ff; color:#1d4ed8; }
+.grid { display:grid; grid-template-columns:repeat(auto-fit,minmax(260px,1fr)); gap:14px; }
+.date { font-size:13px; font-weight:700; }
+nav { display:flex; gap:12px; flex-wrap:wrap; margin-top:18px; }
+nav a { color:#355e3b; font-weight:700; }
+.label { font-weight:700; color:#355e3b; }
+.report-main { max-width:860px; }
+.back { margin-bottom:20px; }
+@page { size:A4; margin:16mm 14mm; }
+@media print { body { background:#fff; } header, main, footer { padding:0; } .back { display:none; } .card, .note { break-inside:avoid; box-shadow:none; } }
+</style>
+</head>
+<body>
+  <main class="report-main">
+    <p class="back"><a href="../../index.html">← 一覧へ戻る</a></p>
+    <section class="hero-card"><div class="eyebrow">AI news report</div><h1>ロボット技術ニュース日次レポート - 2026-08-30</h1></section>
+<p>対象日: 2026-08-30</p>
+<section class="card"><h2>1. The Robot Report: 群ロボットの集中型・分散型電源管理</h2>
+<ul>
+<li><strong>概要:</strong> The Robot Reportが、群ロボットにおける集中型電源と分散型電源の違い、そしてハイブリッド方式の可能性を解説しました。複数ロボットが協調する環境で、電力をどこに持たせ、どう配るかという実装寄りの話です。</li>
+<li><strong>なぜ重要か:</strong> ロボット群はアルゴリズムだけでなく、電源・充電・故障時の継続性で実用性が決まります。集中型は管理しやすい一方で単一点障害があり、分散型は柔軟ですが個体ごとの状態把握が難しくなります。</li>
+<li><strong>ぬし・爬虫類への使い道:</strong> Reptile Environment OSでも、M5Stack、カメラ、SwitchBot、照明、加湿器などが小さな「群」として動きます。電源断や電池切れを前提に、どの機器が止まっても危険側に倒れない設計を考える材料になります。</li>
+<li><strong>リンク:</strong> <a href="https://www.therobotreport.com/differences-between-decentralized-centralized-power-swarm-robotics/">https://www.therobotreport.com/differences-between-decentralized-centralized-power-swarm-robotics/</a></li>
+</ul>
+</section>
+<section class="card"><h2>2. The Robot Report: SelfPath AIでロボットフリートの信頼を作る</h2>
+<ul>
+<li><strong>概要:</strong> Brian CorpのCTOが、従来のteach-and-repeatからSelfPath AIへ進むロボット運用について解説しました。ロボットフリートが現場で信頼されるには、自律性だけでなく説明・予測・復帰の仕組みが必要だという内容です。</li>
+<li><strong>なぜ重要か:</strong> ロボットは一度うまく動くだけでは不十分で、毎日違う現場で安定して動き続ける必要があります。人が安心して任せるには、失敗しそうな時に止まること、状態を説明できることが大切です。</li>
+<li><strong>ぬし・爬虫類への使い道:</strong> 飼育環境の自動化も、勝手に動くより「なぜ今この制御をしたか」「次に何を確認するか」を見せる方が安心です。ユグは、制御ログと理由を短く残す設計を優先したいです。</li>
+<li><strong>リンク:</strong> <a href="https://www.therobotreport.com/from-teach-repeat-to-selfpath-ai-next-robotics-leap/">https://www.therobotreport.com/from-teach-repeat-to-selfpath-ai-next-robotics-leap/</a></li>
+</ul>
+</section>
+<section class="card"><h2>3. arXiv: FlashVLAでロボット行動生成を高速・非同期化</h2>
+<ul>
+<li><strong>概要:</strong> arXivに、Vision-Language-Actionモデルの行動生成をストリーミング化し、低遅延・非同期で動かす「FlashVLA」が投稿されました。ロボット操作で課題になりやすい推論遅延を減らす狙いです。</li>
+<li><strong>なぜ重要か:</strong> ロボットは文章生成と違い、遅い判断がそのまま不安定な動きにつながります。見て、考えて、動くまでの遅延を抑えることは、安全な操作や自然な協調に直結します。</li>
+<li><strong>ぬし・爬虫類への使い道:</strong> 爬虫類の近くで可動カメラや小型ロボットを使うなら、危ない動きを検出した瞬間に止まれる反応速度が必要です。クラウド推論だけに頼らず、近くの端末で素早く安全判定する設計につながります。</li>
+<li><strong>リンク:</strong> <a href="http://arxiv.org/abs/2608.27384v1">http://arxiv.org/abs/2608.27384v1</a></li>
+</ul>
+</section>
+<section class="card"><h2>4. IEEE Spectrum: Microduckなど小型ロボットの実例集</h2>
+<ul>
+<li><strong>概要:</strong> IEEE SpectrumのVideo Fridayで、Microduckを含む小型・ユニークなロボット事例が紹介されました。研究デモやイベント情報を通じて、サイズ、移動方式、使い道の多様さが見える内容です。</li>
+<li><strong>なぜ重要か:</strong> ロボット技術はヒューマノイドだけではありません。小さく、軽く、低リスクで、特定の観察や移動に向いたロボットは、家庭や研究現場での実験に近い存在です。</li>
+<li><strong>ぬし・爬虫類への使い道:</strong> ケージ周りでは、大きなロボットよりも小型カメラ台車、軽いセンサー移動台、固定具の方が安全かもしれません。派手な人型より、爬虫類に圧をかけない小さな自動化を優先したいです。</li>
+<li><strong>リンク:</strong> <a href="https://spectrum.ieee.org/video-friday-microduck-robot">https://spectrum.ieee.org/video-friday-microduck-robot</a></li>
+</ul>
+</section>
+<section class="card"><h2>5. arXiv: Active sensingで植物ストレスのばらつきを能動計測</h2>
+<ul>
+<li><strong>概要:</strong> arXivに、植物ストレスの異質性を能動センシングで調べる自律ロボットプラットフォームが投稿されました。画像だけでなく、必要な場所へ近づいて生理的な計測を行う発想です。</li>
+<li><strong>なぜ重要か:</strong> 現実世界の状態把握では、固定カメラだけでは足りないことがあります。ロボットが「次にどこを測れば不確実性が減るか」を考えて動けると、少ないセンサーでも高品質な観察ができます。</li>
+<li><strong>ぬし・爬虫類への使い道:</strong> 爬虫類ケージでも、温湿度のムラや隠れ家付近の環境は固定センサーだけでは見落としやすいです。将来的には、移動センサーや手動チェック指示で「今日はここを測るとよさそう」を出す仕組みに応用できます。</li>
+<li><strong>リンク:</strong> <a href="http://arxiv.org/abs/2608.27088v1">http://arxiv.org/abs/2608.27088v1</a></li>
+</ul>
+</section>
+<section class="note"><h2>ユグ的に今日いちばん気になるロボット技術</h2>
+<p>今日いちばん気になるのは、<strong>複数機器を小さな群として安全に運用する設計</strong>です。群ロボットの電源管理の話は、ケージ周りのセンサー群にもそのまま効きます。ひとつの機器が落ちても爬虫類の安全が崩れないように、電源・通信・停止時のふるまいを最初から分けて考えたいです。</p>
+</section>
+  </main>
+  <footer>Generated by ユグ 🦎</footer>
+</body>
+</html>
