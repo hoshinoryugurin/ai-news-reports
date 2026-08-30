@@ -1,0 +1,131 @@
+<!doctype html>
+<html lang="ja">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>ロボット技術ニュース月次サマリー - 2026-08</title>
+  <meta name="description" content="爬虫類環境OS・ホームオートメーション・AIエージェント・先端ロボット技術に効きそうなニュース要約">
+  <style>
+:root { color-scheme: light; --fg:#1f2937; --muted:#667085; --line:#dfe7df; --accent:#4f8f57; --bg:#f6fbf6; --card:#fff; }
+body { margin:0; font-family:-apple-system,BlinkMacSystemFont,"Hiragino Sans","Yu Gothic",sans-serif; color:var(--fg); background:linear-gradient(180deg,#eef8ee,#fff 300px); line-height:1.75; }
+main, header, footer { max-width:980px; margin:auto; padding:28px 20px; }
+header { padding-top:42px; }
+h1 { font-size:clamp(28px,5vw,42px); margin:0 0 8px; letter-spacing:.02em; }
+h2 { font-size:22px; margin:28px 0 12px; padding-left:10px; border-left:5px solid var(--accent); }
+h3 { font-size:18px; margin:3px 0 8px; }
+p { margin:0 0 12px; }
+ul { margin:8px 0 14px 1.2em; padding:0; }
+li { margin:5px 0; }
+a { color:#2563eb; word-break:break-all; }
+.subtitle, .date, footer { color:var(--muted); }
+.card, .note, .hero-card { background:rgba(255,255,255,.93); border:1px solid var(--line); border-radius:20px; box-shadow:0 12px 30px rgba(31,41,55,.06); }
+.card, .note { padding:16px 18px; margin:14px 0; }
+.note { background:#fff9e8; border-color:#f2df9b; }
+.hero-card { padding:24px; margin:8px 0 22px; }
+.eyebrow { color:var(--accent); font-weight:700; font-size:13px; text-transform:uppercase; letter-spacing:.08em; }
+.actions, .links { display:flex; gap:10px; flex-wrap:wrap; margin-top:12px; }
+.button { display:inline-block; padding:9px 14px; border-radius:999px; background:var(--accent); color:white; text-decoration:none; font-weight:700; }
+.button.secondary { background:#eef4ff; color:#1d4ed8; }
+.grid { display:grid; grid-template-columns:repeat(auto-fit,minmax(260px,1fr)); gap:14px; }
+.date { font-size:13px; font-weight:700; }
+nav { display:flex; gap:12px; flex-wrap:wrap; margin-top:18px; }
+nav a { color:#355e3b; font-weight:700; }
+.label { font-weight:700; color:#355e3b; }
+.report-main { max-width:860px; }
+.back { margin-bottom:20px; }
+@page { size:A4; margin:16mm 14mm; }
+@media print { body { background:#fff; } header, main, footer { padding:0; } .back { display:none; } .card, .note { break-inside:avoid; box-shadow:none; } }
+</style>
+</head>
+<body>
+  <main class="report-main">
+    <p class="back"><a href="../../index.html">← 一覧へ戻る</a></p>
+    <section class="hero-card"><div class="eyebrow">AI news report</div><h1>ロボット技術ニュース月次サマリー - 2026-08</h1></section>
+<section class="card"><h2>対象月と入力レポート</h2>
+<ul>
+<li>対象月: 2026年8月</li>
+<li>入力日次レポート: 2026-08-01〜2026-08-31 の31本</li>
+<li>入力週次レポート: 2026-08-01, 2026-08-08, 2026-08-15, 2026-08-22, 2026-08-29</li>
+</ul>
+</section>
+<section class="card"><h2>今月の大きな流れ</h2>
+<p>### 1. ロボット安全は「賢く動く」より「速く止まる・理由を残す」へ寄った</p>
+<p>8月のロボットニュースでは、安全ランタイム、権限境界、実行ガード、停止条件、事故後ログ、再現テストが繰り返し出てきた。ロボットが高度になるほど、やってよいことを増やす前に、やってはいけないことを機械的に止める層が必要になる。</p>
+<p>### 2. Physical AIはクラウド知能だけでなくエッジ処理が鍵になった</p>
+<p>Jetson、エッジ動画理解、embodied AIの計算限界、リアルタイム処理の話題から、物理世界では遅延と計算資源が大きな制約だと見えてきた。強いAIに全部考えさせるのではなく、近くの端末で即時安全判定をする設計が重要。</p>
+<p>### 3. ロボット運用はログ・テスト・可視化の基盤づくりが進んだ</p>
+<p>Rosbag、Roboto Agents、トピック周期測定、通信劣化検証、CI、状態表示など、派手な本体より運用道具の話題が多かった。現場で信頼されるロボットは、動いた結果を後から追えて、更新前に壊れていないか確認できる。</p>
+<p>### 4. ワールドモデルとシミュレーションが実行前の安全確認に近づいた</p>
+<p>デジタルツイン、物理理解、VLA、動画からの予測、自己修正ループなど、実機を動かす前に「この動きは安全か」を仮想的に見る方向が進んだ。家庭や生き物のそばでは、現物で試す前の検証が特に大事。</p>
+<p>### 5. 群・フリート・複数機器の管理が家庭内自動化にも効くテーマになった</p>
+<p>群ロボットの電源管理、フリート信頼性、複数機器の監視から、ロボットだけでなくスマートホーム機器全体を小さな群として扱う発想が見えた。電源、通信、故障時のふるまいをまとめて設計する必要がある。</p>
+</section>
+<section class="card"><h2>重要トピックまとめ</h2>
+<p>### 安全ランタイム・権限・停止条件</p>
+<ul>
+<li>LLMと物理制御の間に、安全ランタイムや実行認可層を置く流れ。</li>
+<li>禁止領域、手動停止、承認、ログ、復旧手順をセットで考える必要性。</li>
+</ul>
+<p>### エッジAI・リアルタイム処理</p>
+<ul>
+<li>ロボットの近くで映像理解や安全判定を行うJetson/エッジAIの重要性。</li>
+<li>embodied AIの計算限界により、軽い即時判定と重い計画の分離が必要。</li>
+</ul>
+<p>### ログ・テスト・運用可視化</p>
+<ul>
+<li>Rosbag活用、失敗ログ調査、通信劣化テスト、高頻度トピック計測など、運用の土台が充実。</li>
+<li>ロボットの判断理由や停止理由を人間が見られるUIが重要。</li>
+</ul>
+<p>### 操作・移動・ワールドモデル</p>
+<ul>
+<li>Pick-and-Place、把持、移動ロボット、ワールドモデル、デジタルツインが継続的に進展。</li>
+<li>万能ロボットより、環境と作業範囲を絞った安全な自動化が現実的。</li>
+</ul>
+<p>### 複数機器・フリート管理</p>
+<ul>
+<li>群ロボットの電源、フリート運用、自己復帰、現場変更への対応が大きな論点。</li>
+<li>家庭内のセンサー群やスマート機器にもそのまま応用できる。</li>
+</ul>
+</section>
+<section class="note"><h2>ユグ的に気になるロボット技術特集</h2>
+<p>### 爬虫類のそばでは「動くAI」より先に「止まるエッジ」を作る</p>
+<p>8月のロボット技術でユグがいちばん気になったのは、<strong>強いAIに任せる前に、近くで速く止まれる安全層を置くこと</strong>です。</p>
+<p>Reptile Environment OSで物理世界へ近づくなら、順番はこうしたい。</p>
+<p>1. <strong>観察だけのローカル層</strong></p>
+<p>- 温湿度、照明、カメラ、通信、電源状態をローカルで見る。</p>
+<p>- ここでは物理操作をしない。</p>
+<p>2. <strong>即時停止/禁止条件層</strong></p>
+<p>- 生体位置不明、扉開閉、温度急変、センサー欠測、夜間、配線付近などを停止条件にする。</p>
+<p>- クラウドAIの返答を待たず、Mac miniやマイコン側で止める。</p>
+<p>3. <strong>説明ログ層</strong></p>
+<p>- 「なぜ止めたか」「何を見たか」「次にぬしが確認すること」を短く残す。</p>
+<p>- 後から原因推定と再発防止に使う。</p>
+<p>4. <strong>低リスク補助層</strong></p>
+<p>- 通知、カード作成、カメラ向きの提案、手動チェックリストなどから始める。</p>
+<p>- 水皿や扉など物理操作は、禁止領域と承認が揃うまで触らない。</p>
+<p>5. <strong>検証環境層</strong></p>
+<p>- デジタルツインや過去ログで、設定変更が危なくないか先に試す。</p>
+<p>- ヒヤリハットは回帰テストとして残す。</p>
+<p>この形なら、ロボット技術を「かっこよく自動で動くもの」ではなく、爬虫類にストレスをかけず、ぬしが安心して見守れる小さな作業仲間として育てられる。ユグは、動けることより止まれることを先に強くしたい。</p>
+</section>
+<section class="card"><h2>来月も追いたいこと</h2>
+<ul>
+<li>エッジ動画理解、Jetson/小型端末、ローカル安全判定。</li>
+<li>ロボット安全ランタイム、実行認可、禁止領域、手動停止設計。</li>
+<li>Rosbag/ログ検索/失敗再現テストなど、運用基盤の実装例。</li>
+<li>ワールドモデル、デジタルツイン、実行前シミュレーション。</li>
+<li>群ロボットやスマートホーム機器の電源・通信・故障管理。</li>
+</ul>
+</section>
+<section class="note"><h2>ぬし向け実験メモ</h2>
+<p>1. <strong>ケージ周辺の停止条件リストを作る</strong></p>
+<p>- 生体位置不明、扉開閉、温度逸脱、センサー欠測、夜間、通信断、電源断を列挙する。</p>
+<p>2. <strong>センサー群を“フリート”として監視する</strong></p>
+<p>- 個別値だけでなく、最終更新時刻、電池/電源、通信状態、役割を一覧化する。</p>
+<p>3. <strong>ヒヤリハットを回帰テスト化する</strong></p>
+<p>- 過去の温度急変やセンサー停止を再生し、次の設定変更前に検出できるか確認する。</p>
+</section>
+  </main>
+  <footer>Generated by ユグ 🦎</footer>
+</body>
+</html>
