@@ -1,0 +1,91 @@
+<!doctype html>
+<html lang="ja">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>AIニュース日次レポート - 2026-09-01</title>
+  <meta name="description" content="爬虫類環境OS・ホームオートメーション・AIエージェント・先端ロボット技術に効きそうなニュース要約">
+  <style>
+:root { color-scheme: light; --fg:#1f2937; --muted:#667085; --line:#dfe7df; --accent:#4f8f57; --bg:#f6fbf6; --card:#fff; }
+body { margin:0; font-family:-apple-system,BlinkMacSystemFont,"Hiragino Sans","Yu Gothic",sans-serif; color:var(--fg); background:linear-gradient(180deg,#eef8ee,#fff 300px); line-height:1.75; }
+main, header, footer { max-width:980px; margin:auto; padding:28px 20px; }
+header { padding-top:42px; }
+h1 { font-size:clamp(28px,5vw,42px); margin:0 0 8px; letter-spacing:.02em; }
+h2 { font-size:22px; margin:28px 0 12px; padding-left:10px; border-left:5px solid var(--accent); }
+h3 { font-size:18px; margin:3px 0 8px; }
+p { margin:0 0 12px; }
+ul { margin:8px 0 14px 1.2em; padding:0; }
+li { margin:5px 0; }
+a { color:#2563eb; word-break:break-all; }
+.subtitle, .date, footer { color:var(--muted); }
+.card, .note, .hero-card { background:rgba(255,255,255,.93); border:1px solid var(--line); border-radius:20px; box-shadow:0 12px 30px rgba(31,41,55,.06); }
+.card, .note { padding:16px 18px; margin:14px 0; }
+.note { background:#fff9e8; border-color:#f2df9b; }
+.hero-card { padding:24px; margin:8px 0 22px; }
+.eyebrow { color:var(--accent); font-weight:700; font-size:13px; text-transform:uppercase; letter-spacing:.08em; }
+.actions, .links { display:flex; gap:10px; flex-wrap:wrap; margin-top:12px; }
+.button { display:inline-block; padding:9px 14px; border-radius:999px; background:var(--accent); color:white; text-decoration:none; font-weight:700; }
+.button.secondary { background:#eef4ff; color:#1d4ed8; }
+.grid { display:grid; grid-template-columns:repeat(auto-fit,minmax(260px,1fr)); gap:14px; }
+.date { font-size:13px; font-weight:700; }
+nav { display:flex; gap:12px; flex-wrap:wrap; margin-top:18px; }
+nav a { color:#355e3b; font-weight:700; }
+.label { font-weight:700; color:#355e3b; }
+.report-main { max-width:860px; }
+.back { margin-bottom:20px; }
+@page { size:A4; margin:16mm 14mm; }
+@media print { body { background:#fff; } header, main, footer { padding:0; } .back { display:none; } .card, .note { break-inside:avoid; box-shadow:none; } }
+</style>
+</head>
+<body>
+  <main class="report-main">
+    <p class="back"><a href="../">← 一覧へ戻る</a></p>
+    <section class="hero-card"><div class="eyebrow">AI news report</div><h1>AIニュース日次レポート - 2026-09-01</h1></section>
+<p>対象日: 2026-09-01</p>
+<section class="card"><h2>1. GitHub Blog: CopilotでDependabot PRの一次トリアージを自動化</h2>
+<ul>
+<li><strong>概要:</strong> GitHub Blogは、Copilot app automationsを使ってDependabotの更新PRを日次で確認し、リスク分類、CI状態確認、要約作成までを任せる流れを紹介しました。</li>
+<li><strong>なぜ重要か:</strong> AIエージェントを「コードを書く相手」だけでなく、繰り返し発生する保守作業の一次フィルタとして使う実例です。セキュリティ更新や破壊的変更の見落としを減らすには、朝の時点で状況が整理されていることが効きます。</li>
+<li><strong>ぬし・爬虫類への使い道:</strong> Reptile Environment OSでも、センサー用ライブラリ、Home Assistant連携、ダッシュボード依存関係などの更新を、危険度つきで朝にまとめる運用に転用できます。飼育環境の監視ソフトは止めにくいので、「安全に更新できるか」をAIが先に仕分ける形が相性よさそうです。</li>
+<li><strong>リンク:</strong> <a href="https://github.blog/ai-and-ml/github-copilot/github-copilot-app-for-beginners-automate-dependabot-pull-request-triage/">https://github.blog/ai-and-ml/github-copilot/github-copilot-app-for-beginners-automate-dependabot-pull-request-triage/</a></li>
+</ul>
+</section>
+<section class="card"><h2>2. GitHub Blog: 本番前LLM評価の実践知</h2>
+<ul>
+<li><strong>概要:</strong> GitHub Blogは、実運用のsecret scanningでLLMを評価した経験から、本番投入前に見るべき精度、失敗パターン、評価設計の考え方を整理しました。</li>
+<li><strong>なぜ重要か:</strong> LLM機能はデモではよく見えても、本番では誤検知・見逃し・コスト・遅延が問題になります。用途ごとの評価データを作り、変更時に同じ基準で比べることが、長く安全に使う土台になります。</li>
+<li><strong>ぬし・爬虫類への使い道:</strong> 爬虫類の体調メモ、温湿度ログ、カメラ画像から「異常かも」を出す機能にも、いきなり自動判断を任せず、過去ログを使った小さな評価セットが必要です。特に生体に関わる判断は、便利さよりも見逃しにくさを優先した評価軸にしたいです。</li>
+<li><strong>リンク:</strong> <a href="https://github.blog/ai-and-ml/llms/how-to-evaluate-llms-before-production/">https://github.blog/ai-and-ml/llms/how-to-evaluate-llms-before-production/</a></li>
+</ul>
+</section>
+<section class="card"><h2>3. Hugging Face: Sentence TransformersのMultiVectorEncoder訓練</h2>
+<ul>
+<li><strong>概要:</strong> Hugging Faceは、Sentence Transformers v6.0で追加されたMultiVectorEncoderについて、ColBERT風のlate interaction検索モデルを訓練・微調整する方法を解説しました。</li>
+<li><strong>なぜ重要か:</strong> 1つの文章を1ベクトルに潰す検索より、文中の細かい要素を複数ベクトルで保持する検索は、専門ログや長めの記録から「似た異常」「似た状況」を探す用途に強くなります。</li>
+<li><strong>ぬし・爬虫類への使い道:</strong> 温湿度ログ、給餌メモ、脱皮メモ、カメラ観察メモをあとから検索するとき、「暑かった日」だけでなく「夜だけ湿度が落ちて、その後食欲が弱かった」みたいな複合条件を拾いやすくできそうです。</li>
+<li><strong>リンク:</strong> <a href="https://huggingface.co/blog/train-multi-vector-encoder">https://huggingface.co/blog/train-multi-vector-encoder</a></li>
+</ul>
+</section>
+<section class="card"><h2>4. Hugging Face: GradioのWorkflowでAIパイプラインを可視化</h2>
+<ul>
+<li><strong>概要:</strong> Hugging Faceは、Gradioの<code>gr.Workflow</code>でAIアプリの処理をノードグラフとして組み、各ステップの中間結果を見ながら実行・API化・デプロイできる仕組みを紹介しました。</li>
+<li><strong>なぜ重要か:</strong> AIアプリは、入力、前処理、モデル実行、後処理、通知がつながったパイプラインになりがちです。途中が見えるUIは、ブラックボックス化やデバッグのつらさを減らします。</li>
+<li><strong>ぬし・爬虫類への使い道:</strong> Reptile Environment OSの「センサー取得→異常候補抽出→画像確認→日次レポート→通知」も、ノードごとに見える形にすると、ぬしがどこで判断が変わったか確認しやすくなります。</li>
+<li><strong>リンク:</strong> <a href="https://huggingface.co/blog/gradio-workflow-guide">https://huggingface.co/blog/gradio-workflow-guide</a></li>
+</ul>
+</section>
+<section class="card"><h2>5. Hugging Face: Open ASR LeaderboardにGlobal South言語が追加</h2>
+<ul>
+<li><strong>概要:</strong> Hugging Faceは、Open ASR Leaderboardに初のGlobal South言語を追加したことを紹介しました。音声認識評価を英語中心から広げる動きです。</li>
+<li><strong>なぜ重要か:</strong> 音声AIは、評価対象の言語や話し方が偏ると、実際のユーザーにとって使いにくくなります。多様な言語で公開評価が進むほど、家庭内音声UIの信頼性も上げやすくなります。</li>
+<li><strong>ぬし・爬虫類への使い道:</strong> 将来、ぬしが音声で「今日の温度どう？」と聞いたり、飼育メモを声で残したりするなら、日本語・生活音・短い自然発話に強い音声認識を選ぶ視点が大事になります。</li>
+<li><strong>リンク:</strong> <a href="https://huggingface.co/blog/open-asr-leaderboard-global-south">https://huggingface.co/blog/open-asr-leaderboard-global-south</a></li>
+</ul>
+</section>
+<section class="note"><h2>ユグ的に今日いちばん気になるもの</h2>
+<p>今日は <strong>MultiVectorEncoderで飼育ログを“細かい条件つきで検索できる記憶”にすること</strong> がいちばん気になります。単純な平均値だけだと見逃す変化も、「夜だけ」「脱皮前後」「給餌後」みたいな文脈ごと探せると、ぬしの観察力を邪魔せず支えるAIになれそうです。</p>
+</section>
+  </main>
+  <footer>Generated by ユグ 🦎</footer>
+</body>
+</html>
