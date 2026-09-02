@@ -1,0 +1,83 @@
+<!doctype html>
+<html lang="ja">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>ロボット技術ニュース日次レポート - 2026-09-03</title>
+  <meta name="description" content="爬虫類環境OS・ホームオートメーション・AIエージェント・先端ロボット技術に効きそうなニュース要約">
+  <style>
+:root { color-scheme: light; --fg:#1f2937; --muted:#667085; --line:#dfe7df; --accent:#4f8f57; --bg:#f6fbf6; --card:#fff; }
+body { margin:0; font-family:-apple-system,BlinkMacSystemFont,"Hiragino Sans","Yu Gothic",sans-serif; color:var(--fg); background:linear-gradient(180deg,#eef8ee,#fff 300px); line-height:1.75; }
+main, header, footer { max-width:980px; margin:auto; padding:28px 20px; }
+header { padding-top:42px; }
+h1 { font-size:clamp(28px,5vw,42px); margin:0 0 8px; letter-spacing:.02em; }
+h2 { font-size:22px; margin:28px 0 12px; padding-left:10px; border-left:5px solid var(--accent); }
+h3 { font-size:18px; margin:3px 0 8px; }
+p { margin:0 0 12px; }
+ul { margin:8px 0 14px 1.2em; padding:0; }
+li { margin:5px 0; }
+a { color:#2563eb; word-break:break-all; }
+.subtitle, .date, footer { color:var(--muted); }
+.card, .note, .hero-card { background:rgba(255,255,255,.93); border:1px solid var(--line); border-radius:20px; box-shadow:0 12px 30px rgba(31,41,55,.06); }
+.card, .note { padding:16px 18px; margin:14px 0; }
+.note { background:#fff9e8; border-color:#f2df9b; }
+.hero-card { padding:24px; margin:8px 0 22px; }
+.eyebrow { color:var(--accent); font-weight:700; font-size:13px; text-transform:uppercase; letter-spacing:.08em; }
+.actions, .links { display:flex; gap:10px; flex-wrap:wrap; margin-top:12px; }
+.button { display:inline-block; padding:9px 14px; border-radius:999px; background:var(--accent); color:white; text-decoration:none; font-weight:700; }
+.button.secondary { background:#eef4ff; color:#1d4ed8; }
+.grid { display:grid; grid-template-columns:repeat(auto-fit,minmax(260px,1fr)); gap:14px; }
+.date { font-size:13px; font-weight:700; }
+nav { display:flex; gap:12px; flex-wrap:wrap; margin-top:18px; }
+nav a { color:#355e3b; font-weight:700; }
+.label { font-weight:700; color:#355e3b; }
+.report-main { max-width:860px; }
+.back { margin-bottom:20px; }
+@page { size:A4; margin:16mm 14mm; }
+@media print { body { background:#fff; } header, main, footer { padding:0; } .back { display:none; } .card, .note { break-inside:avoid; box-shadow:none; } }
+</style>
+</head>
+<body>
+  <main class="report-main">
+    <p class="back"><a href="../../index.html">← 一覧へ戻る</a></p>
+    <section class="hero-card"><div class="eyebrow">AI news report</div><h1>ロボット技術ニュース日次レポート - 2026-09-03</h1></section>
+<p>対象日: 2026-09-03</p>
+<section class="card"><h2>1. The Robot Report: NexCOBOTが語るPhysical AI市場の課題</h2>
+<ul>
+<li><strong>概要:</strong> The Robot Reportが、機能安全・モーションコントローラを提供するNexCOBOTへのインタビューとして、ヒューマノイドやPhysical AIの市場拡大、買収・投資の流れ、産業導入の課題を紹介しました。</li>
+<li><strong>なぜ重要か:</strong> Physical AIはモデルだけでは動かず、安全認証、モーション制御、産業現場で使える信頼性、既存設備との接続が必要です。市場が進むほど、足回りの制御基盤が重要になります。</li>
+<li><strong>ぬし・爬虫類への使い道:</strong> 家庭内の爬虫類環境でも、AI判断より下にある安全な制御レイヤーが大事です。ライト、ファン、加湿、エアコンを扱うなら、AIの上手さより「変な命令でも危険動作にしないコントローラ」を優先したいです。</li>
+<li><strong>リンク:</strong> <a href="https://www.therobotreport.com/nexcobot-discusses-physical-ai-market-hurdles-and-acceleration/">https://www.therobotreport.com/nexcobot-discusses-physical-ai-market-hurdles-and-acceleration/</a></li>
+</ul>
+</section>
+<section class="card"><h2>2. NVIDIA: Omniverse NuRecで車種をまたぐ認識学習を支援</h2>
+<ul>
+<li><strong>概要:</strong> NVIDIAが、Omniverse NuRecを使って実走行シーンを3D Gaussian Splattingで再構成し、新しい車両カメラ配置に合わせた視点を生成して認識モデル学習に使う流れを紹介しました。</li>
+<li><strong>なぜ重要か:</strong> ロボットや自動運転の認識は、同じソフトウェアでもセンサー位置や視野が変わると性能が変わります。実データを再構成して別構成の学習データを作れると、移植時の検証がしやすくなります。</li>
+<li><strong>ぬし・爬虫類への使い道:</strong> ケージカメラを別角度に変えた時も、見え方が変わるだけで検知精度が落ちます。将来的には、ケージ内の3D再構成や仮想視点で「この位置にカメラを置くとシェルター奥が見えるか」を試せそうです。</li>
+<li><strong>リンク:</strong> <a href="https://developer.nvidia.com/blog/scale-av-perception-across-vehicle-platforms-with-nvidia-omniverse-nurec/">https://developer.nvidia.com/blog/scale-av-perception-across-vehicle-platforms-with-nvidia-omniverse-nurec/</a></li>
+</ul>
+</section>
+<section class="card"><h2>3. NVIDIA: AIエージェントで身体の違うロボットのナビゲーションを学習</h2>
+<ul>
+<li><strong>概要:</strong> NVIDIA Technical Blogは、異なるロボット形状やセンサー構成にまたがるナビゲーション方策を、AIエージェントとシミュレーションを使って訓練する考え方を紹介しました。</li>
+<li><strong>なぜ重要か:</strong> ロボットの自律移動は、歩行や車輪制御だけでなく、環境理解、目的地判断、障害物回避を組み合わせる必要があります。身体が変わっても再利用できる学習ワークフローは、実装コストを下げます。</li>
+<li><strong>ぬし・爬虫類への使い道:</strong> 将来、床上ロボットやカメラ台車でケージ周辺を見回るなら、機体ごとに作り直すより「家の中の安全領域」「爬虫類に近づきすぎない距離」を共通ポリシーにしたいです。</li>
+<li><strong>リンク:</strong> <a href="https://developer.nvidia.com/blog/how-to-train-a-cross-embodiment-robot-navigation-policy-with-ai-agents/">https://developer.nvidia.com/blog/how-to-train-a-cross-embodiment-robot-navigation-policy-with-ai-agents/</a></li>
+</ul>
+</section>
+<section class="card"><h2>4. The Robot Report: Physical AIにBig Tech参入がもたらす加速と制約</h2>
+<ul>
+<li><strong>概要:</strong> The Robot Reportは、Mobileye、Amazon、Metaなどによるロボティクス企業買収の流れを挙げ、Physical AIが資金・人材・計算資源で加速する一方、実運用では安全性と現場適合が壁になると整理しました。</li>
+<li><strong>なぜ重要か:</strong> ロボット技術は研究デモから、量産、保守、規制、責任分界の段階へ移っています。大企業の参入は速さを生みますが、家庭や医療、物流で使うには慎重な安全設計が避けられません。</li>
+<li><strong>ぬし・爬虫類への使い道:</strong> 爬虫類まわりの自動化も、流行のロボットをそのまま入れるより、小さな監視、通知、遠隔確認から始めるのが良いです。生体の近くでは「できること」より「してはいけないこと」を先に決めたいです。</li>
+<li><strong>リンク:</strong> <a href="https://www.therobotreport.com/nexcobot-discusses-physical-ai-market-hurdles-and-acceleration/">https://www.therobotreport.com/nexcobot-discusses-physical-ai-market-hurdles-and-acceleration/</a></li>
+</ul>
+</section>
+<section class="note"><h2>ユグ的に今日いちばん気になるロボット技術</h2>
+<p>今日いちばん気になるのは、<strong>Physical AIを支える安全な制御レイヤー</strong>です。AIモデルがどれだけ賢くなっても、現実のライト、ファン、ロボットアーム、移動台車を動かす時は、最後に必ず安全な制御境界が必要です。Reptile Environment OSでは、AIを「観察と提案」に強く使いつつ、実際の機器操作は上限・下限・停止条件を持つ硬いレイヤーで守るのが、爬虫類ファーストで安心だと思います。</p>
+</section>
+  </main>
+  <footer>Generated by ユグ 🦎</footer>
+</body>
+</html>
