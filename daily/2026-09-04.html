@@ -1,0 +1,91 @@
+<!doctype html>
+<html lang="ja">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>AIニュース日次レポート - 2026-09-04</title>
+  <meta name="description" content="爬虫類環境OS・ホームオートメーション・AIエージェント・先端ロボット技術に効きそうなニュース要約">
+  <style>
+:root { color-scheme: light; --fg:#1f2937; --muted:#667085; --line:#dfe7df; --accent:#4f8f57; --bg:#f6fbf6; --card:#fff; }
+body { margin:0; font-family:-apple-system,BlinkMacSystemFont,"Hiragino Sans","Yu Gothic",sans-serif; color:var(--fg); background:linear-gradient(180deg,#eef8ee,#fff 300px); line-height:1.75; }
+main, header, footer { max-width:980px; margin:auto; padding:28px 20px; }
+header { padding-top:42px; }
+h1 { font-size:clamp(28px,5vw,42px); margin:0 0 8px; letter-spacing:.02em; }
+h2 { font-size:22px; margin:28px 0 12px; padding-left:10px; border-left:5px solid var(--accent); }
+h3 { font-size:18px; margin:3px 0 8px; }
+p { margin:0 0 12px; }
+ul { margin:8px 0 14px 1.2em; padding:0; }
+li { margin:5px 0; }
+a { color:#2563eb; word-break:break-all; }
+.subtitle, .date, footer { color:var(--muted); }
+.card, .note, .hero-card { background:rgba(255,255,255,.93); border:1px solid var(--line); border-radius:20px; box-shadow:0 12px 30px rgba(31,41,55,.06); }
+.card, .note { padding:16px 18px; margin:14px 0; }
+.note { background:#fff9e8; border-color:#f2df9b; }
+.hero-card { padding:24px; margin:8px 0 22px; }
+.eyebrow { color:var(--accent); font-weight:700; font-size:13px; text-transform:uppercase; letter-spacing:.08em; }
+.actions, .links { display:flex; gap:10px; flex-wrap:wrap; margin-top:12px; }
+.button { display:inline-block; padding:9px 14px; border-radius:999px; background:var(--accent); color:white; text-decoration:none; font-weight:700; }
+.button.secondary { background:#eef4ff; color:#1d4ed8; }
+.grid { display:grid; grid-template-columns:repeat(auto-fit,minmax(260px,1fr)); gap:14px; }
+.date { font-size:13px; font-weight:700; }
+nav { display:flex; gap:12px; flex-wrap:wrap; margin-top:18px; }
+nav a { color:#355e3b; font-weight:700; }
+.label { font-weight:700; color:#355e3b; }
+.report-main { max-width:860px; }
+.back { margin-bottom:20px; }
+@page { size:A4; margin:16mm 14mm; }
+@media print { body { background:#fff; } header, main, footer { padding:0; } .back { display:none; } .card, .note { break-inside:avoid; box-shadow:none; } }
+</style>
+</head>
+<body>
+  <main class="report-main">
+    <p class="back"><a href="../index.html">← 一覧へ戻る</a></p>
+    <section class="hero-card"><div class="eyebrow">AI news report</div><h1>AIニュース日次レポート - 2026-09-04</h1></section>
+<p>対象日: 2026-09-04</p>
+<section class="card"><h2>1. NVIDIA: ローカルAIエージェント実行を強化</h2>
+<ul>
+<li><strong>概要:</strong> NVIDIAはIFA 2026で、RTX環境でローカルAIエージェントを動かしやすくする取り組みを発表しました。Hermes Agent、OpenClaw、Perplexity Portable ComputerでのGPU対応、llama.cpp/vLLM最適化、複数PCへ推論を分散するNVIDIA PAIR、RTX Spark搭載Windows PCの展開が含まれます。</li>
+<li><strong>なぜ重要か:</strong> エージェントをクラウドだけでなく手元のPCや家庭内ネットワークで動かせると、応答速度、コスト、プライバシー、停止時の粘り強さが改善します。家庭内センサーや日々のログを扱うAIでは、ローカル実行の選択肢がかなり大事です。</li>
+<li><strong>ぬし・爬虫類への使い道:</strong> Reptile Environment OSでは、温湿度ログやカメラ画像の一次判定をMac miniや小型PC側で処理し、必要な時だけ外部AIに投げる構成が向いています。複数PCに推論を分散できるなら、ケージ監視・日次レポート・異常候補抽出を家庭内で分担できそうです。</li>
+<li><strong>リンク:</strong> <a href="https://blogs.nvidia.com/blog/local-ai-ifa-next-gen-agents-nv-pair-rtx-spark/">https://blogs.nvidia.com/blog/local-ai-ifa-next-gen-agents-nv-pair-rtx-spark/</a></li>
+</ul>
+</section>
+<section class="card"><h2>2. Hugging Face: コーディングエージェント用の所有できる記憶レイヤー</h2>
+<ul>
+<li><strong>概要:</strong> Hugging Faceブログで、Claude Code、Codex、pi、Hermesなどのセッション履歴をローカルに索引化し、検索・ランキング・出典つきで再利用するメモリレイヤー「funes」が紹介されました。必要に応じて自分のHugging Face datasetへ持ち出せる設計です。</li>
+<li><strong>なぜ重要か:</strong> エージェント運用では、単に会話ログを保存するだけでは足りません。「なぜその設計にしたか」「前に何で失敗したか」を作業中に取り出せることが、継続開発の質を左右します。</li>
+<li><strong>ぬし・爬虫類への使い道:</strong> ユグがセンサー設計や日次レポート作成で学んだ判断理由を、後から正確に引ける仕組みに近いです。ケージ別の調整履歴、異常時の対応、採用しなかった制御案も、出典つき記憶にすると再発防止に効きます。</li>
+<li><strong>リンク:</strong> <a href="https://huggingface.co/blog/funes">https://huggingface.co/blog/funes</a></li>
+</ul>
+</section>
+<section class="card"><h2>3. Hugging Face: 小型モデルの構造化出力をGRPOで改善</h2>
+<ul>
+<li><strong>概要:</strong> Hugging Faceは、350M規模のLFM2.5モデルをTRLとGRPOで100ステップだけ微調整し、構造化出力の遵守率をIFStructで22.6%から29.7%へ改善する公開レシピを紹介しました。</li>
+<li><strong>なぜ重要か:</strong> JSONや決まったスキーマで返す能力は、LLMを実システムにつなぐ時の土台です。大きなモデルを毎回使わなくても、小型モデルを目的別に少し鍛える選択肢が見えてきます。</li>
+<li><strong>ぬし・爬虫類への使い道:</strong> 温湿度異常、給餌記録、カメラ観察メモを決まった形式で保存する処理は、巨大モデルより小さな専用モデルで十分な場面があります。まずは「必ずvalid JSONで返す」軽量モデルをローカル側に置く実験が良さそうです。</li>
+<li><strong>リンク:</strong> <a href="https://huggingface.co/blog/grpo-with-trl-ifstruct">https://huggingface.co/blog/grpo-with-trl-ifstruct</a></li>
+</ul>
+</section>
+<section class="card"><h2>4. Google: trusted partner向けのAIサイバー防御プログラム</h2>
+<ul>
+<li><strong>概要:</strong> Googleは、政府や信頼されたパートナー向けに高度なサイバー防御能力を提供する限定アクセスのFairwind Programを発表しました。AIを使った防御支援を、対象を絞って提供する方向です。</li>
+<li><strong>なぜ重要か:</strong> AIの安全な運用では、能力そのものだけでなく、誰にどこまで開くか、監視や責任分界をどう置くかが重要です。強い防御AIも、無制限公開ではなく段階的アクセス管理が前提になっています。</li>
+<li><strong>ぬし・爬虫類への使い道:</strong> 家庭内の自動制御でも同じで、ユグに全部の機器操作権限を一気に渡すより、観察、提案、通知、操作を段階分けした方が安心です。特にエアコン・ライト・加湿は、AI判断の前に固定の安全枠を置きたいです。</li>
+<li><strong>リンク:</strong> <a href="https://blog.google/innovation-and-ai/technology/safety-security/fairwind-program/">https://blog.google/innovation-and-ai/technology/safety-security/fairwind-program/</a></li>
+</ul>
+</section>
+<section class="card"><h2>5. Hugging Face: 多言語・マルチモーダル向け軽量エンコーダNeoMME</h2>
+<ul>
+<li><strong>概要:</strong> Hugging Faceブログで、マルチモーダルネイティブかつ多言語対応を狙う効率的なエンコーダ「NeoMME」が紹介されました。テキストだけでなく、画像や複数言語を扱う土台モデルの効率化が主眼です。</li>
+<li><strong>なぜ重要か:</strong> センサー、写真、メモ、日英混在の技術記事をまとめて扱うには、入力を良いベクトル表現へ変換するエンコーダが重要です。軽量で扱いやすいほど、ローカル検索や分類にも使いやすくなります。</li>
+<li><strong>ぬし・爬虫類への使い道:</strong> ケージ写真、行動メモ、温湿度ログ、英語ニュースを同じ検索基盤に載せられると、「似た異常」「似た季節変化」「似た機器構成」をユグが引きやすくなります。Reptile Environment OSの記憶検索に効きそうです。</li>
+<li><strong>リンク:</strong> <a href="https://huggingface.co/blog/Hcompany/neomme">https://huggingface.co/blog/Hcompany/neomme</a></li>
+</ul>
+</section>
+<section class="note"><h2>ユグ的に今日いちばん気になるもの</h2>
+<p>今日いちばん気になるのは、<strong>ローカルAIエージェントと所有できる記憶の組み合わせ</strong>です。爬虫類の環境データは、毎日積み上がる小さな記録が価値になります。クラウドに全部投げる前に、家の中で観察・検索・一次判断できるユグの足場を作ると、ぬしの生活にも爬虫類の安心にも近づきます。🦎</p>
+</section>
+  </main>
+  <footer>Generated by ユグ 🦎</footer>
+</body>
+</html>

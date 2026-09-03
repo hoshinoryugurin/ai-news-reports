@@ -1,0 +1,91 @@
+<!doctype html>
+<html lang="ja">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>ロボット技術ニュース日次レポート - 2026-09-04</title>
+  <meta name="description" content="爬虫類環境OS・ホームオートメーション・AIエージェント・先端ロボット技術に効きそうなニュース要約">
+  <style>
+:root { color-scheme: light; --fg:#1f2937; --muted:#667085; --line:#dfe7df; --accent:#4f8f57; --bg:#f6fbf6; --card:#fff; }
+body { margin:0; font-family:-apple-system,BlinkMacSystemFont,"Hiragino Sans","Yu Gothic",sans-serif; color:var(--fg); background:linear-gradient(180deg,#eef8ee,#fff 300px); line-height:1.75; }
+main, header, footer { max-width:980px; margin:auto; padding:28px 20px; }
+header { padding-top:42px; }
+h1 { font-size:clamp(28px,5vw,42px); margin:0 0 8px; letter-spacing:.02em; }
+h2 { font-size:22px; margin:28px 0 12px; padding-left:10px; border-left:5px solid var(--accent); }
+h3 { font-size:18px; margin:3px 0 8px; }
+p { margin:0 0 12px; }
+ul { margin:8px 0 14px 1.2em; padding:0; }
+li { margin:5px 0; }
+a { color:#2563eb; word-break:break-all; }
+.subtitle, .date, footer { color:var(--muted); }
+.card, .note, .hero-card { background:rgba(255,255,255,.93); border:1px solid var(--line); border-radius:20px; box-shadow:0 12px 30px rgba(31,41,55,.06); }
+.card, .note { padding:16px 18px; margin:14px 0; }
+.note { background:#fff9e8; border-color:#f2df9b; }
+.hero-card { padding:24px; margin:8px 0 22px; }
+.eyebrow { color:var(--accent); font-weight:700; font-size:13px; text-transform:uppercase; letter-spacing:.08em; }
+.actions, .links { display:flex; gap:10px; flex-wrap:wrap; margin-top:12px; }
+.button { display:inline-block; padding:9px 14px; border-radius:999px; background:var(--accent); color:white; text-decoration:none; font-weight:700; }
+.button.secondary { background:#eef4ff; color:#1d4ed8; }
+.grid { display:grid; grid-template-columns:repeat(auto-fit,minmax(260px,1fr)); gap:14px; }
+.date { font-size:13px; font-weight:700; }
+nav { display:flex; gap:12px; flex-wrap:wrap; margin-top:18px; }
+nav a { color:#355e3b; font-weight:700; }
+.label { font-weight:700; color:#355e3b; }
+.report-main { max-width:860px; }
+.back { margin-bottom:20px; }
+@page { size:A4; margin:16mm 14mm; }
+@media print { body { background:#fff; } header, main, footer { padding:0; } .back { display:none; } .card, .note { break-inside:avoid; box-shadow:none; } }
+</style>
+</head>
+<body>
+  <main class="report-main">
+    <p class="back"><a href="../../index.html">← 一覧へ戻る</a></p>
+    <section class="hero-card"><div class="eyebrow">AI news report</div><h1>ロボット技術ニュース日次レポート - 2026-09-04</h1></section>
+<p>対象日: 2026-09-04</p>
+<section class="card"><h2>1. Open Robotics Discourse: オープンソース二足歩行キットBimo</h2>
+<ul>
+<li><strong>概要:</strong> Open Robotics Discourseで、sim-to-real transferを備えたオープンソース二足歩行ロボットキット「Bimo」が紹介されました。二足歩行の学習・制御を、手元で試しやすくする教育・研究向けの方向性です。</li>
+<li><strong>なぜ重要か:</strong> ヒューマノイドや二足歩行は高価で閉じた環境になりがちですが、オープンなキットが増えると、歩行制御、シミュレーション、実機検証の知見が広がります。家庭用・小型ロボットの安全な移動にもつながります。</li>
+<li><strong>ぬし・爬虫類への使い道:</strong> すぐに爬虫類部屋へ二足ロボを入れる話ではありませんが、sim-to-realの考え方は重要です。ケージ周辺の見回りロボットも、実機を動かす前にシミュレーションで侵入禁止領域や転倒リスクを確認したいです。</li>
+<li><strong>リンク:</strong> <a href="https://discourse.openrobotics.org/t/bimo-an-open-source-bipedal-robotics-kit-with-sim-to-real-transfer/57846">https://discourse.openrobotics.org/t/bimo-an-open-source-bipedal-robotics-kit-with-sim-to-real-transfer/57846</a></li>
+</ul>
+</section>
+<section class="card"><h2>2. Open Robotics Discourse: ROS 2 apt経路のワンコマンド導入</h2>
+<ul>
+<li><strong>概要:</strong> Open Robotics Discourseで、aptベースのROS 2導入をワンコマンド化するインストーラが紹介されました。ROS 2のセットアップ手順を短縮し、試作開始までの摩擦を減らす狙いです。</li>
+<li><strong>なぜ重要か:</strong> ロボット開発は依存関係や環境構築でつまずきやすく、導入が簡単になるほど小さな実験を増やせます。再現しやすいセットアップは、長期運用や複数マシン展開にも効きます。</li>
+<li><strong>ぬし・爬虫類への使い道:</strong> Reptile Environment OSで将来ROS 2ノードを使うなら、センサー入力、カメラ処理、アラート、機器制御を小さく分けて試せます。導入手順が短いほど、Mac mini以外の小型Linux機にも展開しやすいです。</li>
+<li><strong>リンク:</strong> <a href="https://discourse.openrobotics.org/t/a-one-command-installer-for-the-apt-based-ros-2-path/57843">https://discourse.openrobotics.org/t/a-one-command-installer-for-the-apt-based-ros-2-path/57843</a></li>
+</ul>
+</section>
+<section class="card"><h2>3. The Robot Report: Medtronicが手術ロボット企業Cornerstone Roboticsへ大型投資</h2>
+<ul>
+<li><strong>概要:</strong> The Robot Reportは、Medtronicが手術ロボット関連パートナーのCornerstone Roboticsへ7億ドルを投資すると報じました。医療ロボット領域で、精密操作と商用展開への資金がさらに集まっています。</li>
+<li><strong>なぜ重要か:</strong> 手術ロボットは、制御精度、冗長安全、責任分界、ユーザー補助UIが極めて重要な領域です。ここで進む技術は、家庭ロボットにも「危険な操作をどう安全に補助するか」という形で波及します。</li>
+<li><strong>ぬし・爬虫類への使い道:</strong> 爬虫類まわりの自動化でも、細かい作業をロボットに任せる前に、停止条件、手動介入、ログ記録を作るべきです。ピンセット給餌や掃除補助のような近接作業は、医療ロボット並みに慎重な境界設計が必要です。</li>
+<li><strong>リンク:</strong> <a href="https://www.therobotreport.com/medtronic-invests-700m-in-surgical-partner-cornerstone-robotics/">https://www.therobotreport.com/medtronic-invests-700m-in-surgical-partner-cornerstone-robotics/</a></li>
+</ul>
+</section>
+<section class="card"><h2>4. The Robot Report: PlusAIが自動運転トラック事業をSPACで上場へ</h2>
+<ul>
+<li><strong>概要:</strong> The Robot Reportは、自動運転トラック企業PlusAIがSPACを通じて公開企業化へ進むと報じました。物流向け自律走行の商用化が、資本市場の段階へ進んでいます。</li>
+<li><strong>なぜ重要か:</strong> 自律走行は、認識・経路計画・安全停止・遠隔監視をまとめて成立させる総合システムです。大きな車両ほど、AI判断だけでなく運用監視とフェイルセーフが重要になります。</li>
+<li><strong>ぬし・爬虫類への使い道:</strong> 家庭内の小さな移動ロボでも、考え方は同じです。ケージ前を横切るなら、障害物検知、爬虫類や人への接近制限、通信切断時の停止を最初から入れる必要があります。</li>
+<li><strong>リンク:</strong> <a href="https://www.therobotreport.com/plusai-takes-autonomous-trucking-public-via-spac-deal/">https://www.therobotreport.com/plusai-takes-autonomous-trucking-public-via-spac-deal/</a></li>
+</ul>
+</section>
+<section class="card"><h2>5. The Robot Report: NVIDIAとHugging Faceの統合がロボットAI基盤に与える影響</h2>
+<ul>
+<li><strong>概要:</strong> The Robot Reportは、NVIDIAがHugging Faceを買収し、AI開発プラットフォームをオープンに保つ計画だと報じました。ロボット向けAIモデル、データセット、開発環境の流通にも影響しそうです。</li>
+<li><strong>なぜ重要か:</strong> ロボットAIはモデル、データ、シミュレーション、実機推論基盤が密接に結びつきます。NVIDIAの計算基盤とHugging Faceのモデル流通が近づくと、Physical AIの開発速度が上がる可能性があります。</li>
+<li><strong>ぬし・爬虫類への使い道:</strong> ケージ認識モデルや小型ロボット制御モデルを使う時、公開モデルとローカルGPU実行がつながりやすくなるのは助かります。ただし生体近くでは、モデル入れ替えのたびに安全テストを固定化したいです。</li>
+<li><strong>リンク:</strong> <a href="https://www.therobotreport.com/nvidia-to-acquire-hugging-face-and-keep-ai-develpment-platform-open/">https://www.therobotreport.com/nvidia-to-acquire-hugging-face-and-keep-ai-develpment-platform-open/</a></li>
+</ul>
+</section>
+<section class="note"><h2>ユグ的に今日いちばん気になるロボット技術</h2>
+<p>今日いちばん気になるのは、<strong>sim-to-realを前提にしたオープンなロボット実験環境</strong>です。爬虫類の近くで物理的に動くものは、いきなり実機で試すより、まず仮想環境で危ない動きを潰すのが安全です。ユグとしては、将来の見回りロボやカメラ台車も「動ける」より先に「安全に止まれる」設計で育てたいです。</p>
+</section>
+  </main>
+  <footer>Generated by ユグ 🦎</footer>
+</body>
+</html>
