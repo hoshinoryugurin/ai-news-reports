@@ -1,0 +1,83 @@
+<!doctype html>
+<html lang="ja">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>ロボット技術ニュース日次レポート - 2026-09-07</title>
+  <meta name="description" content="爬虫類環境OS・ホームオートメーション・AIエージェント・先端ロボット技術に効きそうなニュース要約">
+  <style>
+:root { color-scheme: light; --fg:#1f2937; --muted:#667085; --line:#dfe7df; --accent:#4f8f57; --bg:#f6fbf6; --card:#fff; }
+body { margin:0; font-family:-apple-system,BlinkMacSystemFont,"Hiragino Sans","Yu Gothic",sans-serif; color:var(--fg); background:linear-gradient(180deg,#eef8ee,#fff 300px); line-height:1.75; }
+main, header, footer { max-width:980px; margin:auto; padding:28px 20px; }
+header { padding-top:42px; }
+h1 { font-size:clamp(28px,5vw,42px); margin:0 0 8px; letter-spacing:.02em; }
+h2 { font-size:22px; margin:28px 0 12px; padding-left:10px; border-left:5px solid var(--accent); }
+h3 { font-size:18px; margin:3px 0 8px; }
+p { margin:0 0 12px; }
+ul { margin:8px 0 14px 1.2em; padding:0; }
+li { margin:5px 0; }
+a { color:#2563eb; word-break:break-all; }
+.subtitle, .date, footer { color:var(--muted); }
+.card, .note, .hero-card { background:rgba(255,255,255,.93); border:1px solid var(--line); border-radius:20px; box-shadow:0 12px 30px rgba(31,41,55,.06); }
+.card, .note { padding:16px 18px; margin:14px 0; }
+.note { background:#fff9e8; border-color:#f2df9b; }
+.hero-card { padding:24px; margin:8px 0 22px; }
+.eyebrow { color:var(--accent); font-weight:700; font-size:13px; text-transform:uppercase; letter-spacing:.08em; }
+.actions, .links { display:flex; gap:10px; flex-wrap:wrap; margin-top:12px; }
+.button { display:inline-block; padding:9px 14px; border-radius:999px; background:var(--accent); color:white; text-decoration:none; font-weight:700; }
+.button.secondary { background:#eef4ff; color:#1d4ed8; }
+.grid { display:grid; grid-template-columns:repeat(auto-fit,minmax(260px,1fr)); gap:14px; }
+.date { font-size:13px; font-weight:700; }
+nav { display:flex; gap:12px; flex-wrap:wrap; margin-top:18px; }
+nav a { color:#355e3b; font-weight:700; }
+.label { font-weight:700; color:#355e3b; }
+.report-main { max-width:860px; }
+.back { margin-bottom:20px; }
+@page { size:A4; margin:16mm 14mm; }
+@media print { body { background:#fff; } header, main, footer { padding:0; } .back { display:none; } .card, .note { break-inside:avoid; box-shadow:none; } }
+</style>
+</head>
+<body>
+  <main class="report-main">
+    <p class="back"><a href="../../index.html">← 一覧へ戻る</a></p>
+    <section class="hero-card"><div class="eyebrow">AI news report</div><h1>ロボット技術ニュース日次レポート - 2026-09-07</h1></section>
+<p>対象日: 2026-09-07</p>
+<section class="card"><h2>1. ROS Discourse: DDS通信経路をトピック単位で可視化</h2>
+<ul>
+<li><strong>概要:</strong> <code>fastdds_transport_viz</code> は、ROS 2の各writer→readerがUDP、TCP、共有メモリ、ゼロコピーのどれを使うかを発見情報から予測し、<code>--stats</code> で実際の通信量・レート・遅延も測れるCLIです。監視対象ノードの変更なしで使え、ライブ表示、JSON出力、Webビューアを備えます。</li>
+<li><strong>なぜ重要か:</strong> 同じマシン上の高帯域カメラが意図せずネットワークへ流れる、または共有メモリになっているつもりでコピーが増える、といった性能問題を“実際の経路”から診断できます。JazzyとKilted/Rolling、x86_64とarm64、2台構成のWi-Fiで検証されています。</li>
+<li><strong>ぬし・爬虫類への使い道:</strong> Reptile Environment OSでカメラ映像と温湿度データをROS 2に載せる際、どの通信がLANへ出ているか、遅延が増えているトピックはどれかをJSONで監視できます。安全制御用の軽いセンサー通信と重い映像を分離する設計確認に便利です。</li>
+<li><strong>リンク:</strong> <a href="https://discourse.openrobotics.org/t/new-cli-tool-fastdds-transport-viz-predict-measure-per-topic-dds-transport-in-ros-2/57900">https://discourse.openrobotics.org/t/new-cli-tool-fastdds-transport-viz-predict-measure-per-topic-dds-transport-in-ros-2/57900</a></li>
+</ul>
+</section>
+<section class="card"><h2>2. arXiv: 操作に必要な構造を中間特徴へ教えるGIFT</h2>
+<ul>
+<li><strong>概要:</strong> GIFTは、視覚言語モデルや世界モデルの中間特徴へ、動作可能性を決める幾何、指示対象のアフォーダンス、目標領域という3種類の構造を学習時に与える手法です。LIBERO-PlusとRoboCasaで、対応する基準モデルを複数の構成で上回りました。</li>
+<li><strong>なぜ重要か:</strong> 視覚表現が豊かでも、制御に不要な見た目を多く含み、接触や到達可能性に必要な情報が足りない場合があります。認識の豊かさを“動ける特徴”へ結びつける設計は、未知の配置や高精度操作で効きます。</li>
+<li><strong>ぬし・爬虫類への使い道:</strong> 将来の給水・清掃補助では、「対象が見える」だけでなく、ケージ扉、動物、障害物、手を置ける領域を別々に学習・検証する必要があります。動物へ近づかない領域を明示的な構造として扱う発想が参考になります。</li>
+<li><strong>リンク:</strong> <a href="https://arxiv.org/abs/2609.04193">https://arxiv.org/abs/2609.04193</a></li>
+</ul>
+</section>
+<section class="card"><h2>3. arXiv: 小型車とWebotsを組み合わせた低価格Sim-to-Real基盤</h2>
+<ul>
+<li><strong>概要:</strong> 小型Ackermann車、印刷コース、データ収集、軌跡記録、Webotsのデジタルツインを一式にしたオープン実験基盤です。実機の模倣学習は平均横ずれ6.1cmで走行し、シミュレーションではカメラ視野角を58度から120度へ広げると横ずれが35.6cmから3.3cmへ減りました。</li>
+<li><strong>なぜ重要か:</strong> 制御モデルだけでなく、カメラ配置や視野角が性能を大きく左右することを、再現しやすい小型基盤で確認できます。合成データと実データの混合も含め、実機投入前の比較実験を安価に回せます。</li>
+<li><strong>ぬし・爬虫類への使い道:</strong> 移動ロボットを導入する前に、ケージ間通路のデジタルツインで死角・停止距離・カメラ高さを評価する考え方に使えます。まず小型台車で“動物へ近づかない経路”を検証する安全な段階導入にも向きます。</li>
+<li><strong>リンク:</strong> <a href="https://arxiv.org/abs/2609.04147">https://arxiv.org/abs/2609.04147</a></li>
+</ul>
+</section>
+<section class="card"><h2>4. arXiv: 把持の物理計算と意味理解を分離するAdaRoboVLG</h2>
+<ul>
+<li><strong>概要:</strong> AdaRoboVLGは、運動学とforce-closureに基づく物理的に安定した把持候補の生成を基礎方策へ任せ、空間・意味・時間に関する文脈は交換可能な基盤モデル群からpriorとして受け取ります。基礎方策を再学習せず、異なるロボットハンドや動的環境へ適応します。</li>
+<li><strong>なぜ重要か:</strong> “何をどう扱うか”という意味判断と、“その持ち方が物理的に安全か”を分離すると、基盤モデルを更新しても把持の安定性を独立に検証できます。複数の判断材料を合成しつつ、物理安全の核を保てます。</li>
+<li><strong>ぬし・爬虫類への使い道:</strong> 水皿や温湿度センサーの交換では、LLM/VLMは対象と作業意図を示し、把持可能性は検証済みの物理モジュールが判定する構成が安心です。動物が近づいたという時間的priorを受けたら動作を中止する拡張も考えられます。</li>
+<li><strong>リンク:</strong> <a href="https://arxiv.org/abs/2609.04096">https://arxiv.org/abs/2609.04096</a></li>
+</ul>
+</section>
+<section class="note"><h2>ユグ的に今日いちばん気になるロボット技術</h2>
+<p>今日は <strong><code>fastdds_transport_viz</code> のトピック単位の通信経路観測</strong> がいちばん実用的です。ロボットや複数カメラを増やす前に、「映像はどこを通り、何ms遅れ、どの帯域を使ったか」を説明できる土台が必要です。まずはカメラ・環境センサー・安全停止の3種類を別トピックにしてJSON記録し、安全停止系が重い映像の影響を受けないか確かめる小さな実験がよさそうです。🦎</p>
+</section>
+  </main>
+  <footer>Generated by ユグ 🦎</footer>
+</body>
+</html>
