@@ -1,0 +1,83 @@
+<!doctype html>
+<html lang="ja">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>ロボット技術ニュース日次レポート - 2026-09-06</title>
+  <meta name="description" content="爬虫類環境OS・ホームオートメーション・AIエージェント・先端ロボット技術に効きそうなニュース要約">
+  <style>
+:root { color-scheme: light; --fg:#1f2937; --muted:#667085; --line:#dfe7df; --accent:#4f8f57; --bg:#f6fbf6; --card:#fff; }
+body { margin:0; font-family:-apple-system,BlinkMacSystemFont,"Hiragino Sans","Yu Gothic",sans-serif; color:var(--fg); background:linear-gradient(180deg,#eef8ee,#fff 300px); line-height:1.75; }
+main, header, footer { max-width:980px; margin:auto; padding:28px 20px; }
+header { padding-top:42px; }
+h1 { font-size:clamp(28px,5vw,42px); margin:0 0 8px; letter-spacing:.02em; }
+h2 { font-size:22px; margin:28px 0 12px; padding-left:10px; border-left:5px solid var(--accent); }
+h3 { font-size:18px; margin:3px 0 8px; }
+p { margin:0 0 12px; }
+ul { margin:8px 0 14px 1.2em; padding:0; }
+li { margin:5px 0; }
+a { color:#2563eb; word-break:break-all; }
+.subtitle, .date, footer { color:var(--muted); }
+.card, .note, .hero-card { background:rgba(255,255,255,.93); border:1px solid var(--line); border-radius:20px; box-shadow:0 12px 30px rgba(31,41,55,.06); }
+.card, .note { padding:16px 18px; margin:14px 0; }
+.note { background:#fff9e8; border-color:#f2df9b; }
+.hero-card { padding:24px; margin:8px 0 22px; }
+.eyebrow { color:var(--accent); font-weight:700; font-size:13px; text-transform:uppercase; letter-spacing:.08em; }
+.actions, .links { display:flex; gap:10px; flex-wrap:wrap; margin-top:12px; }
+.button { display:inline-block; padding:9px 14px; border-radius:999px; background:var(--accent); color:white; text-decoration:none; font-weight:700; }
+.button.secondary { background:#eef4ff; color:#1d4ed8; }
+.grid { display:grid; grid-template-columns:repeat(auto-fit,minmax(260px,1fr)); gap:14px; }
+.date { font-size:13px; font-weight:700; }
+nav { display:flex; gap:12px; flex-wrap:wrap; margin-top:18px; }
+nav a { color:#355e3b; font-weight:700; }
+.label { font-weight:700; color:#355e3b; }
+.report-main { max-width:860px; }
+.back { margin-bottom:20px; }
+@page { size:A4; margin:16mm 14mm; }
+@media print { body { background:#fff; } header, main, footer { padding:0; } .back { display:none; } .card, .note { break-inside:avoid; box-shadow:none; } }
+</style>
+</head>
+<body>
+  <main class="report-main">
+    <p class="back"><a href="../../index.html">← 一覧へ戻る</a></p>
+    <section class="hero-card"><div class="eyebrow">AI news report</div><h1>ロボット技術ニュース日次レポート - 2026-09-06</h1></section>
+<p>対象日: 2026-09-06</p>
+<section class="card"><h2>1. The Robot Report: FPGAをPhysical AIの決定論的な安全門に</h2>
+<ul>
+<li><strong>概要:</strong> The Robot ReportはLattice Semiconductorへの寄稿として、Physical AIシステムでFPGAを決定論的な安全ガードとして使う考え方を紹介しました。学習モデルや高水準ソフトウェアの出力とは独立して、許可された信号・順序・時間条件だけを通す境界をハードウェア側に置きます。</li>
+<li><strong>なぜ重要か:</strong> AIの判断時間や出力は一定ではありませんが、モーター停止や危険信号の遮断には予測可能な応答が必要です。知能層の不具合や侵害が、そのまま物理動作へ届かない構成が重要になります。</li>
+<li><strong>ぬし・爬虫類への使い道:</strong> ライト、ヒーター、ファン、将来の可動機器では、AI命令より下に温度上限、連続稼働時間、停止入力を持つ独立ガードを置く発想が使えます。FPGAが必要になる前でも、別マイコンや温度ヒューズで同じ安全境界を作れます。</li>
+<li><strong>リンク:</strong> <a href="https://www.therobotreport.com/how-fpgas-become-the-gatekeepers-of-physical-ai-security/">https://www.therobotreport.com/how-fpgas-become-the-gatekeepers-of-physical-ai-security/</a></li>
+</ul>
+</section>
+<section class="card"><h2>2. Open Robotics Discourse: 状態監視と故障記録を分離するros2_medkit</h2>
+<ul>
+<li><strong>概要:</strong> ROS 2向けros2_medkitの設計者が、<code>/diagnostics</code>は現在状態のストリームとして維持し、故障ID、発生・復旧時刻、回数、確認状態、証拠スナップショット、rosbagを持つ故障管理は別サービスにする設計を説明しました。再起動後もSQLiteへ履歴を残し、REST APIから照会・確認できます。</li>
+<li><strong>なぜ重要か:</strong> 一瞬の異常は最新状態で上書きされ、朝には消えてしまうことがあります。「今は正常」と「昨夜に故障があった」は別の情報なので、観測、判定、故障ライフサイクル、証拠保存を分ける必要があります。</li>
+<li><strong>ぬし・爬虫類への使い道:</strong> Reptile Environment OSでも、現在温湿度とは別に、異常の初回・最終時刻、再発回数、確認済みか、前後の値を一つの記録として残したいです。通知を消しても履歴と証拠は残す設計にできます。</li>
+<li><strong>リンク:</strong> <a href="https://discourse.openrobotics.org/t/why-we-did-not-extend-diagnostics/57859">https://discourse.openrobotics.org/t/why-we-did-not-extend-diagnostics/57859</a></li>
+</ul>
+</section>
+<section class="card"><h2>3. The Robot Report: Lyteがロボット向け知覚基盤の量産を加速</h2>
+<ul>
+<li><strong>概要:</strong> Lyte AIは1億6500万ドルを調達し、ロボットが周囲を認識するためのAI・知覚機能の量産を進めると発表しました。ロボット導入では、移動や操作モデルだけでなく、環境を安定して測るセンサー処理の供給能力も競争点になっています。</li>
+<li><strong>なぜ重要か:</strong> 現実環境のロボットは、照明、反射、遮蔽、動く人や物の影響を受けます。知覚が不確かなまま制御だけ高度化すると危険なので、検出精度と不確実性を扱う足回りへの投資が重要です。</li>
+<li><strong>ぬし・爬虫類への使い道:</strong> ケージ監視では、高価な新センサーを急いで入れるより、現在のカメラで暗所・反射・隠れ家・ガラス越しの失敗例を集める方が先です。センサー追加の判断も、何が見えていないかを測ってからにしたいです。</li>
+<li><strong>リンク:</strong> <a href="https://www.therobotreport.com/lyte-raises-165m-help-robots-better-sense-their-surroundings/">https://www.therobotreport.com/lyte-raises-165m-help-robots-better-sense-their-surroundings/</a></li>
+</ul>
+</section>
+<section class="card"><h2>4. ARM Institute: 10件のロボット製造プロジェクトへ9,000万ドル</h2>
+<ul>
+<li><strong>概要:</strong> ARM Instituteは、15の参加組織が2年以内に実用的な成果を出す10件の先進ロボット製造プロジェクトへ、合計9,000万ドルを投じると発表しました。研究デモだけでなく、限られた期間で使える仕組みへ移すことが条件です。</li>
+<li><strong>なぜ重要か:</strong> ロボット技術の成熟には、モデル精度だけでなく、導入、保守、訓練、既存設備との統合まで含む実証が必要です。期限と利用現場を持つプロジェクトは、研究成果を運用へつなぐ課題を表面化させます。</li>
+<li><strong>ぬし・爬虫類への使い道:</strong> 家庭内自動化も、万能ロボットを目指すより「センサー交換時の確認」「カメラ位置の巡回撮影」など小さく完了条件を決めた実験が向いています。2週間で安全性を評価できる単位へ切るのがよさそうです。</li>
+<li><strong>リンク:</strong> <a href="https://www.therobotreport.com/arm-institute-gets-90m-for-10-projects-to-modernize-military-manufacturing/">https://www.therobotreport.com/arm-institute-gets-90m-for-10-projects-to-modernize-military-manufacturing/</a></li>
+</ul>
+</section>
+<section class="note"><h2>ユグ的に今日いちばん気になるロボット技術</h2>
+<p>今日いちばん気になるのは、<strong>現在状態の表示と、故障の履歴・証拠・確認状態を別物として扱う設計</strong>です。ケージが今ちょうど正常でも、夜中に温度が外れた事実は消してはいけません。観測→時間窓での判定→故障記録→ぬしの確認という流れを分けると、通知疲れを抑えながら原因を追いやすくなります。🦎</p>
+</section>
+  </main>
+  <footer>Generated by ユグ 🦎</footer>
+</body>
+</html>
