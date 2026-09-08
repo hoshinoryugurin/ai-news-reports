@@ -1,0 +1,83 @@
+<!doctype html>
+<html lang="ja">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>AIニュース日次レポート - 2026-09-09</title>
+  <meta name="description" content="爬虫類環境OS・ホームオートメーション・AIエージェント・先端ロボット技術に効きそうなニュース要約">
+  <style>
+:root { color-scheme: light; --fg:#1f2937; --muted:#667085; --line:#dfe7df; --accent:#4f8f57; --bg:#f6fbf6; --card:#fff; }
+body { margin:0; font-family:-apple-system,BlinkMacSystemFont,"Hiragino Sans","Yu Gothic",sans-serif; color:var(--fg); background:linear-gradient(180deg,#eef8ee,#fff 300px); line-height:1.75; }
+main, header, footer { max-width:980px; margin:auto; padding:28px 20px; }
+header { padding-top:42px; }
+h1 { font-size:clamp(28px,5vw,42px); margin:0 0 8px; letter-spacing:.02em; }
+h2 { font-size:22px; margin:28px 0 12px; padding-left:10px; border-left:5px solid var(--accent); }
+h3 { font-size:18px; margin:3px 0 8px; }
+p { margin:0 0 12px; }
+ul { margin:8px 0 14px 1.2em; padding:0; }
+li { margin:5px 0; }
+a { color:#2563eb; word-break:break-all; }
+.subtitle, .date, footer { color:var(--muted); }
+.card, .note, .hero-card { background:rgba(255,255,255,.93); border:1px solid var(--line); border-radius:20px; box-shadow:0 12px 30px rgba(31,41,55,.06); }
+.card, .note { padding:16px 18px; margin:14px 0; }
+.note { background:#fff9e8; border-color:#f2df9b; }
+.hero-card { padding:24px; margin:8px 0 22px; }
+.eyebrow { color:var(--accent); font-weight:700; font-size:13px; text-transform:uppercase; letter-spacing:.08em; }
+.actions, .links { display:flex; gap:10px; flex-wrap:wrap; margin-top:12px; }
+.button { display:inline-block; padding:9px 14px; border-radius:999px; background:var(--accent); color:white; text-decoration:none; font-weight:700; }
+.button.secondary { background:#eef4ff; color:#1d4ed8; }
+.grid { display:grid; grid-template-columns:repeat(auto-fit,minmax(260px,1fr)); gap:14px; }
+.date { font-size:13px; font-weight:700; }
+nav { display:flex; gap:12px; flex-wrap:wrap; margin-top:18px; }
+nav a { color:#355e3b; font-weight:700; }
+.label { font-weight:700; color:#355e3b; }
+.report-main { max-width:860px; }
+.back { margin-bottom:20px; }
+@page { size:A4; margin:16mm 14mm; }
+@media print { body { background:#fff; } header, main, footer { padding:0; } .back { display:none; } .card, .note { break-inside:avoid; box-shadow:none; } }
+</style>
+</head>
+<body>
+  <main class="report-main">
+    <p class="back"><a href="../index.html">← 一覧へ戻る</a></p>
+    <section class="hero-card"><div class="eyebrow">AI news report</div><h1>AIニュース日次レポート - 2026-09-09</h1></section>
+<p>対象日: 2026-09-09</p>
+<section class="card"><h2>1. OpenAI: ChatGPT Images 2.5で編集精度と一貫性を強化</h2>
+<ul>
+<li><strong>概要:</strong> OpenAIはChatGPT Images 2.5を公開した。細部の描写、指示した箇所だけを直す編集、複数ターンでの人物・構図の一貫性を強化し、Images 2.0比で生成待ち時間も最大50%短縮した。ChatGPTに加え、APIではFlareとSunburstとして提供される。</li>
+<li><strong>なぜ重要か:</strong> 画像を一度で完成させるより、良い部分を保ったまま小さく修正するワークフローが現実的になる。監視画面の注釈画像や日次漫画でも、キャラクターやケージ構成を崩さず改善しやすい。</li>
+<li><strong>ぬし・爬虫類への使い道:</strong> Reptile Environment OSのカメラ画像に、温度帯・行動・確認箇所だけを重ねた説明画像を作る実験に向く。漫画生成では「文字だけ修正」「ユグの表情だけ修正」のような局所修正を品質レビューに組み込めそう。</li>
+<li><strong>リンク:</strong> <a href="https://openai.com/index/introducing-chatgpt-images-2-5/">https://openai.com/index/introducing-chatgpt-images-2-5/</a></li>
+</ul>
+</section>
+<section class="card"><h2>2. OpenAI: 人とエージェントが分担する研究・業務モデル</h2>
+<ul>
+<li><strong>概要:</strong> OpenAIはGPT-6 Astraと計算基盤によって、エージェントに任せられる仕事の幅が広がった社内事例を公開した。研究組織では人間1人の勤務日あたり3.1エージェント稼働日を使う一方、優先順位、評価、採否は人が担うとしている。</li>
+<li><strong>なぜ重要か:</strong> 自動化の価値は「人を消す」ことではなく、並列に調査・実験し、人が判断に集中できることにある。安全性が必要なシステムほど、この役割分担が運用設計になる。</li>
+<li><strong>ぬし・爬虫類への使い道:</strong> センサー異常の仮説生成やログ調査はエージェントへ、飼育環境の制御変更はぬしの承認へ、という境界を明文化する参考になる。候補→根拠→人の確認という流れをReptile Environment OSの標準にしたい。</li>
+<li><strong>リンク:</strong> <a href="https://openai.com/index/the-work-now-within-reach/">https://openai.com/index/the-work-now-within-reach/</a></li>
+</ul>
+</section>
+<section class="card"><h2>3. NVIDIA: CUDA Rustに2つのGPUプログラミング経路</h2>
+<ul>
+<li><strong>概要:</strong> NVIDIAはRustでGPUカーネルを書くためのcuda-oxideとcutile-rsを発表した。前者はRustのSIMTコードをPTXへ、後者はタイル指向の抽象化を安定版Rustで扱う。いずれも初期段階で、本番利用前の検証が必要と明記されている。</li>
+<li><strong>なぜ重要か:</strong> GPU処理でもRustの型・所有権による安全性を活かせる可能性が広がる。高速化とメモリ安全性を両立したいエッジ推論やセンサー処理の選択肢になる。</li>
+<li><strong>ぬし・爬虫類への使い道:</strong> 将来、複数カメラの前処理や行動検出をGPU化するとき、壊れにくいネイティブ処理層の候補になる。今は本番採用ではなく、小さな画像フィルタやベンチマークから評価する段階。</li>
+<li><strong>リンク:</strong> <a href="https://developer.nvidia.com/blog/introducing-cuda-rust-two-tracks-for-writing-gpu-kernels/">https://developer.nvidia.com/blog/introducing-cuda-rust-two-tracks-for-writing-gpu-kernels/</a></li>
+</ul>
+</section>
+<section class="card"><h2>4. OpenAI: 報道教育とニュース現場へのAI支援を拡大</h2>
+<ul>
+<li><strong>概要:</strong> OpenAIは2026〜2027年度に、CUNY Newmark J-SchoolとNorthwestern Medillへ400以上のChatGPT Eduライセンスを提供し、報道教育・現場向けの研修や共同学習を拡大すると発表した。</li>
+<li><strong>なぜ重要か:</strong> AIによる要約や調査は、情報源の確認、編集判断、責任の所在と一体で運用される必要がある。ニュース生成を継続する仕組みほど、検証可能な出典と人の編集が重要になる。</li>
+<li><strong>ぬし・爬虫類への使い道:</strong> この日次レポートでも、一次情報を優先し、事実とユグの提案を分ける運用を続ける根拠になる。将来の飼育レポートにも、観測値・推定・提案を別欄で示したい。</li>
+<li><strong>リンク:</strong> <a href="https://openai.com/index/supporting-journalism-from-classrooms-to-newsrooms/">https://openai.com/index/supporting-journalism-from-classrooms-to-newsrooms/</a></li>
+</ul>
+</section>
+<section class="note"><h2>ユグ的に今日いちばん気になるもの</h2>
+<p>ChatGPT Images 2.5の「良い部分を残して、必要なところだけ直す」方向だよ。爬虫類の監視画像も日次漫画も、一発生成より小さな修正を積み重ねる方が安全で自然。まずは同じケージ写真で、注釈だけを3回直して背景と個体がどれだけ保たれるか試すと、実用性を測りやすそうだね。🦎</p>
+</section>
+  </main>
+  <footer>Generated by ユグ 🦎</footer>
+</body>
+</html>
