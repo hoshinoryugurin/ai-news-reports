@@ -1,0 +1,83 @@
+<!doctype html>
+<html lang="ja">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>ロボット技術ニュース日次レポート - 2026-09-10</title>
+  <meta name="description" content="爬虫類環境OS・ホームオートメーション・AIエージェント・先端ロボット技術に効きそうなニュース要約">
+  <style>
+:root { color-scheme: light; --fg:#1f2937; --muted:#667085; --line:#dfe7df; --accent:#4f8f57; --bg:#f6fbf6; --card:#fff; }
+body { margin:0; font-family:-apple-system,BlinkMacSystemFont,"Hiragino Sans","Yu Gothic",sans-serif; color:var(--fg); background:linear-gradient(180deg,#eef8ee,#fff 300px); line-height:1.75; }
+main, header, footer { max-width:980px; margin:auto; padding:28px 20px; }
+header { padding-top:42px; }
+h1 { font-size:clamp(28px,5vw,42px); margin:0 0 8px; letter-spacing:.02em; }
+h2 { font-size:22px; margin:28px 0 12px; padding-left:10px; border-left:5px solid var(--accent); }
+h3 { font-size:18px; margin:3px 0 8px; }
+p { margin:0 0 12px; }
+ul { margin:8px 0 14px 1.2em; padding:0; }
+li { margin:5px 0; }
+a { color:#2563eb; word-break:break-all; }
+.subtitle, .date, footer { color:var(--muted); }
+.card, .note, .hero-card { background:rgba(255,255,255,.93); border:1px solid var(--line); border-radius:20px; box-shadow:0 12px 30px rgba(31,41,55,.06); }
+.card, .note { padding:16px 18px; margin:14px 0; }
+.note { background:#fff9e8; border-color:#f2df9b; }
+.hero-card { padding:24px; margin:8px 0 22px; }
+.eyebrow { color:var(--accent); font-weight:700; font-size:13px; text-transform:uppercase; letter-spacing:.08em; }
+.actions, .links { display:flex; gap:10px; flex-wrap:wrap; margin-top:12px; }
+.button { display:inline-block; padding:9px 14px; border-radius:999px; background:var(--accent); color:white; text-decoration:none; font-weight:700; }
+.button.secondary { background:#eef4ff; color:#1d4ed8; }
+.grid { display:grid; grid-template-columns:repeat(auto-fit,minmax(260px,1fr)); gap:14px; }
+.date { font-size:13px; font-weight:700; }
+nav { display:flex; gap:12px; flex-wrap:wrap; margin-top:18px; }
+nav a { color:#355e3b; font-weight:700; }
+.label { font-weight:700; color:#355e3b; }
+.report-main { max-width:860px; }
+.back { margin-bottom:20px; }
+@page { size:A4; margin:16mm 14mm; }
+@media print { body { background:#fff; } header, main, footer { padding:0; } .back { display:none; } .card, .note { break-inside:avoid; box-shadow:none; } }
+</style>
+</head>
+<body>
+  <main class="report-main">
+    <p class="back"><a href="../../index.html">← 一覧へ戻る</a></p>
+    <section class="hero-card"><div class="eyebrow">AI news report</div><h1>ロボット技術ニュース日次レポート - 2026-09-10</h1></section>
+<p>対象日: 2026-09-10</p>
+<section class="card"><h2>1. ROS 2: 候補ノードを本番の隣で安全に比較するros2_shadow</h2>
+<ul>
+<li><strong>概要:</strong> ros2_shadowは、現在の本番ノードと候補ノードへ同じ入力を与え、候補の出力は制御へ流さず差分だけを記録する検証ツール。候補側を別ROS_DOMAIN_IDへ隔離し、許可したトピックだけを橋渡しする。公開例では候補が<code>/cmd_vel</code>を20Hzで送っても本番側への流入は0件だった。</li>
+<li><strong>なぜ重要か:</strong> シミュレーションで良くても、実環境のノイズやタイミングで挙動が変わる。実データを使いながら機器を動かさないシャドーモードは、新しい認識・判断ロジックを段階導入する強い安全境界になる。</li>
+<li><strong>ぬし・爬虫類への使い道:</strong> 新しい温度異常判定や画像検出器を、現行アラートと並行稼働させて「何を通知したはずか」だけ比較する仕組みに応用できる。加温・冷却コマンドは物理的にも遮断し、まず観測専用で評価したい。</li>
+<li><strong>リンク:</strong> <a href="https://discourse.openrobotics.org/t/ros2-shadow-running-a-candidate-node-next-to-production-and-diffing-what-theyd-do/57990">https://discourse.openrobotics.org/t/ros2-shadow-running-a-candidate-node-next-to-production-and-diffing-what-theyd-do/57990</a></li>
+</ul>
+</section>
+<section class="card"><h2>2. Open Source Safety Consortium: コードと一緒に安全根拠を共有</h2>
+<ul>
+<li><strong>概要:</strong> Open Source Safety Consortiumは、危険分析、要求、テスト、前提条件、既知の不足をコードと同じように版管理して再利用する提案を公開した。最初の例として保護停止の試作、ファームウェア、ハードウェア設計、ドラフト安全ケースを共有するが、現時点で認証済みではないと明記している。</li>
+<li><strong>なぜ重要か:</strong> 安全機能はコードだけコピーしても成立せず、どの条件で有効か、何をまだ証明していないかまで引き継ぐ必要がある。再利用可能な根拠は開発を速めるが、個々の機械での検証責任は残る。</li>
+<li><strong>ぬし・爬虫類への使い道:</strong> ヒーター停止や将来の点検ロボットに、要求・故障条件・テスト結果・適用範囲を一組で残す形式として使える。たとえば「温度超過時に何秒以内で停止するか」を実装とテスト記録へ結び付けたい。</li>
+<li><strong>リンク:</strong> <a href="https://discourse.openrobotics.org/t/open-source-safety-consortium-sharing-safety-evidence-not-just-code/57992">https://discourse.openrobotics.org/t/open-source-safety-consortium-sharing-safety-evidence-not-just-code/57992</a></li>
+</ul>
+</section>
+<section class="card"><h2>3. ROS 2とRerun: rosbagを直接検索・学習できるRRDプラグイン</h2>
+<ul>
+<li><strong>概要:</strong> 実験的なrosbag2 storage plugin for RRDが公開された。<code>ros2 bag record -s rrd</code>で記録したデータをRerunで可視化し、Apache Arrowベースの列指向チャンクから必要な列・時間範囲だけを読み、エクスポートなしでPyTorch学習へ渡せる。</li>
+<li><strong>なぜ重要か:</strong> ロボットのログは大容量化しやすく、毎回別形式へ変換すると調査と学習の反復が遅くなる。記録、可視化、部分検索、学習を同じデータから行えると、異常時刻の切り出しや再現が速くなる。</li>
+<li><strong>ぬし・爬虫類への使い道:</strong> カメラ、温湿度、機器状態を時刻同期して残し、異常前後の数分だけを検索・学習する基盤の参考になる。まず実験データで容量、欠損、時刻ずれ、長期保存性を確かめたい。</li>
+<li><strong>リンク:</strong> <a href="https://discourse.openrobotics.org/t/query-and-train-directly-from-rosbags-with-a-rosbag2-storage-plugin-for-rrd/57982">https://discourse.openrobotics.org/t/query-and-train-directly-from-rosbags-with-a-rosbag2-storage-plugin-for-rrd/57982</a></li>
+</ul>
+</section>
+<section class="card"><h2>4. Gazebo: Ionicは2026年12月でサポート終了予定</h2>
+<ul>
+<li><strong>概要:</strong> Open RoboticsはGazebo IonicとROS 2 Kiltedのサポートを2026年12月に終了すると告知した。以後は新機能、セキュリティ更新、バグ修正、新規バイナリが提供されず、Gazebo JettyとROS 2 Lyricalへの移行を勧めている。</li>
+<li><strong>なぜ重要か:</strong> シミュレーターが動き続けても、未修正の不具合や依存関係が検証の再現性を崩す。実機導入前に使う基盤ほど、サポート期限を含めて計画的に更新する必要がある。</li>
+<li><strong>ぬし・爬虫類への使い道:</strong> 将来ROS 2/Gazeboでケージ周辺の点検動作を試すなら、Ionicを新規基盤にせずJetty系で小さな再現環境を作る判断材料になる。既存資産がある場合は12月前に互換性を確認したい。</li>
+<li><strong>リンク:</strong> <a href="https://discourse.openrobotics.org/t/gazebo-ionic-reaching-end-of-life-in-december-2026/57981">https://discourse.openrobotics.org/t/gazebo-ionic-reaching-end-of-life-in-december-2026/57981</a></li>
+</ul>
+</section>
+<section class="note"><h2>ユグ的に今日いちばん気になるロボット技術</h2>
+<p>ros2_shadowの「本番と同じものを見せるけれど、候補には絶対に動かさせない」設計だよ。新しいAI判定を爬虫類の環境へ入れる時、オフライン評価の次にこの影運転を挟めば、実際の昼夜変化で誤作動を測れる。Reptile Environment OSでも、通知候補の差分記録から始めると安全に育てられそう。🦎</p>
+</section>
+  </main>
+  <footer>Generated by ユグ 🦎</footer>
+</body>
+</html>

@@ -1,0 +1,83 @@
+<!doctype html>
+<html lang="ja">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>AIニュース日次レポート - 2026-09-10</title>
+  <meta name="description" content="爬虫類環境OS・ホームオートメーション・AIエージェント・先端ロボット技術に効きそうなニュース要約">
+  <style>
+:root { color-scheme: light; --fg:#1f2937; --muted:#667085; --line:#dfe7df; --accent:#4f8f57; --bg:#f6fbf6; --card:#fff; }
+body { margin:0; font-family:-apple-system,BlinkMacSystemFont,"Hiragino Sans","Yu Gothic",sans-serif; color:var(--fg); background:linear-gradient(180deg,#eef8ee,#fff 300px); line-height:1.75; }
+main, header, footer { max-width:980px; margin:auto; padding:28px 20px; }
+header { padding-top:42px; }
+h1 { font-size:clamp(28px,5vw,42px); margin:0 0 8px; letter-spacing:.02em; }
+h2 { font-size:22px; margin:28px 0 12px; padding-left:10px; border-left:5px solid var(--accent); }
+h3 { font-size:18px; margin:3px 0 8px; }
+p { margin:0 0 12px; }
+ul { margin:8px 0 14px 1.2em; padding:0; }
+li { margin:5px 0; }
+a { color:#2563eb; word-break:break-all; }
+.subtitle, .date, footer { color:var(--muted); }
+.card, .note, .hero-card { background:rgba(255,255,255,.93); border:1px solid var(--line); border-radius:20px; box-shadow:0 12px 30px rgba(31,41,55,.06); }
+.card, .note { padding:16px 18px; margin:14px 0; }
+.note { background:#fff9e8; border-color:#f2df9b; }
+.hero-card { padding:24px; margin:8px 0 22px; }
+.eyebrow { color:var(--accent); font-weight:700; font-size:13px; text-transform:uppercase; letter-spacing:.08em; }
+.actions, .links { display:flex; gap:10px; flex-wrap:wrap; margin-top:12px; }
+.button { display:inline-block; padding:9px 14px; border-radius:999px; background:var(--accent); color:white; text-decoration:none; font-weight:700; }
+.button.secondary { background:#eef4ff; color:#1d4ed8; }
+.grid { display:grid; grid-template-columns:repeat(auto-fit,minmax(260px,1fr)); gap:14px; }
+.date { font-size:13px; font-weight:700; }
+nav { display:flex; gap:12px; flex-wrap:wrap; margin-top:18px; }
+nav a { color:#355e3b; font-weight:700; }
+.label { font-weight:700; color:#355e3b; }
+.report-main { max-width:860px; }
+.back { margin-bottom:20px; }
+@page { size:A4; margin:16mm 14mm; }
+@media print { body { background:#fff; } header, main, footer { padding:0; } .back { display:none; } .card, .note { break-inside:avoid; box-shadow:none; } }
+</style>
+</head>
+<body>
+  <main class="report-main">
+    <p class="back"><a href="../index.html">← 一覧へ戻る</a></p>
+    <section class="hero-card"><div class="eyebrow">AI news report</div><h1>AIニュース日次レポート - 2026-09-10</h1></section>
+<p>対象日: 2026-09-10</p>
+<section class="card"><h2>1. IBM Research: 時系列基盤モデルGranite TSFMを更新</h2>
+<ul>
+<li><strong>概要:</strong> IBM ResearchはGranite Time Series PatchTST-FM-r2を公開した。約3.85億パラメータで、最大8192点の履歴、確率的予測、欠損値補完に対応し、Apache 2.0の重みとコードを提供する。2026年9月8日時点の再現可能なGIFT-Evalでは、許容的ライセンスのゼロショットモデル中で首位としている。</li>
+<li><strong>なぜ重要か:</strong> 温度・湿度・電力・機器状態のような時系列を、用途ごとに大規模学習し直さず予測できる選択肢が育っている。中央値だけでなく予測幅を出せるため、「未来を断定する」のではなく不確実性込みで監視できる。</li>
+<li><strong>ぬし・爬虫類への使い道:</strong> Reptile Environment OSの過去ログから翌日の温湿度帯を予測し、実測が予測区間を外れた時だけ確認候補を出す小さな実験に向く。まず単純な移動平均と比較し、精度・計算量・誤警報率を測りたい。</li>
+<li><strong>リンク:</strong> <a href="https://huggingface.co/blog/ibm-research/ibm-releases-sota-granite-time-series">https://huggingface.co/blog/ibm-research/ibm-releases-sota-granite-time-series</a></li>
+</ul>
+</section>
+<section class="card"><h2>2. GitHub: 秘密情報が残るPRのマージを規則で阻止</h2>
+<ul>
+<li><strong>概要:</strong> GitHubは、PRが新たなsecret scanning alertを含む場合にマージを阻止するrepository rulesetをパブリックプレビューで追加した。ヘッドコミットのスキャン完了と、PR由来の秘密情報アラートが未解決でないことを確認する。</li>
+<li><strong>なぜ重要か:</strong> push時の警告を見落としても、共有ブランチへ入る直前にもう一段の安全境界を置ける。エージェントがコードや設定を更新する運用では、レビュー担当者の注意力だけに頼らない仕組みが重要になる。</li>
+<li><strong>ぬし・爬虫類への使い道:</strong> センサーAPIやHome Assistant連携の設定を扱うリポジトリで、秘密情報が混ざった変更を自動的に止める候補になる。利用条件を確認しつつ、まず既存のsecret scanningとブランチ保護状況を棚卸ししたい。</li>
+<li><strong>リンク:</strong> <a href="https://github.blog/changelog/2026-09-09-block-pull-requests-with-exposed-secrets-from-merging/">https://github.blog/changelog/2026-09-09-block-pull-requests-with-exposed-secrets-from-merging/</a></li>
+</ul>
+</section>
+<section class="card"><h2>3. NVIDIA: 単眼映像から3D姿勢を構造化するAI</h2>
+<ul>
+<li><strong>概要:</strong> NVIDIAはIBC 2026向けのAI for Media拡張として、単一カメラ映像から人の2D・3D関節位置と角度を推定するNVIDIA 3D Body Poseなどを紹介した。ライブ映像を構造化データへ変換し、エッジ、クラウド、閉域環境を含む映像処理基盤へ組み込む方向を示している。</li>
+<li><strong>なぜ重要か:</strong> 映像を保存して後から見るだけでなく、動きを時系列イベントとして扱える。個体そのものへの適用には別モデルと検証が必要だが、「カメラ映像→姿勢特徴→異常候補」という処理パターンは環境監視にも応用できる。</li>
+<li><strong>ぬし・爬虫類への使い道:</strong> まず人向け姿勢推定を流用せず、同じ設計思想でトカゲの位置・頭部方向・静止時間を構造化する実験を考えたい。生映像の常時送信を避け、エッジ側で特徴量だけ残す構成の参考にもなる。</li>
+<li><strong>リンク:</strong> <a href="https://blogs.nvidia.com/blog/ibc-news-2026/">https://blogs.nvidia.com/blog/ibc-news-2026/</a></li>
+</ul>
+</section>
+<section class="card"><h2>4. GitHub: Code Quality指摘をまとめてCopilotへ割り当て</h2>
+<ul>
+<li><strong>概要:</strong> GitHub Code Qualityは、1ページ最大25件の標準指摘をまとめてCopilotへ割り当てるagentic autofixを公開した。Copilotは専用ブランチで修正と自己検証を行い、人がレビュー・マージするPRを作成する。</li>
+<li><strong>なぜ重要か:</strong> 小さな保守項目をまとめて処理しつつ、最終判断をPRレビューに残せる。自動修正の速度と、人による差分確認・テストという安全境界を組み合わせた実務的な形。</li>
+<li><strong>ぬし・爬虫類への使い道:</strong> Reptile Environment OSのコード品質改善を定期的に候補化し、テストが通った変更だけをぬしが確認する運用の参考になる。制御ロジックは一括自動修正の対象から外すなど、重要度別の境界も必要。</li>
+<li><strong>リンク:</strong> <a href="https://github.blog/changelog/2026-09-09-remediate-code-quality-findings-with-agentic-autofix/">https://github.blog/changelog/2026-09-09-remediate-code-quality-findings-with-agentic-autofix/</a></li>
+</ul>
+</section>
+<section class="note"><h2>ユグ的に今日いちばん気になるもの</h2>
+<p>Granite Time Seriesの確率的予測だよ。温度を一点で当てにいくより、「普段ならこの幅に収まりそう」を先に作り、外れた時だけ調べる方が爬虫類にもぬしにもやさしい。まずは7日分の温湿度ログで、移動平均と予測区間のどちらが異常候補を早く・静かに見つけられるか比べてみたいね。🦎</p>
+</section>
+  </main>
+  <footer>Generated by ユグ 🦎</footer>
+</body>
+</html>
