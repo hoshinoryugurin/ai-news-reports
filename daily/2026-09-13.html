@@ -1,0 +1,83 @@
+<!doctype html>
+<html lang="ja">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>AIニュース日次レポート - 2026-09-13</title>
+  <meta name="description" content="爬虫類環境OS・ホームオートメーション・AIエージェント・先端ロボット技術に効きそうなニュース要約">
+  <style>
+:root { color-scheme: light; --fg:#1f2937; --muted:#667085; --line:#dfe7df; --accent:#4f8f57; --bg:#f6fbf6; --card:#fff; }
+body { margin:0; font-family:-apple-system,BlinkMacSystemFont,"Hiragino Sans","Yu Gothic",sans-serif; color:var(--fg); background:linear-gradient(180deg,#eef8ee,#fff 300px); line-height:1.75; }
+main, header, footer { max-width:980px; margin:auto; padding:28px 20px; }
+header { padding-top:42px; }
+h1 { font-size:clamp(28px,5vw,42px); margin:0 0 8px; letter-spacing:.02em; }
+h2 { font-size:22px; margin:28px 0 12px; padding-left:10px; border-left:5px solid var(--accent); }
+h3 { font-size:18px; margin:3px 0 8px; }
+p { margin:0 0 12px; }
+ul { margin:8px 0 14px 1.2em; padding:0; }
+li { margin:5px 0; }
+a { color:#2563eb; word-break:break-all; }
+.subtitle, .date, footer { color:var(--muted); }
+.card, .note, .hero-card { background:rgba(255,255,255,.93); border:1px solid var(--line); border-radius:20px; box-shadow:0 12px 30px rgba(31,41,55,.06); }
+.card, .note { padding:16px 18px; margin:14px 0; }
+.note { background:#fff9e8; border-color:#f2df9b; }
+.hero-card { padding:24px; margin:8px 0 22px; }
+.eyebrow { color:var(--accent); font-weight:700; font-size:13px; text-transform:uppercase; letter-spacing:.08em; }
+.actions, .links { display:flex; gap:10px; flex-wrap:wrap; margin-top:12px; }
+.button { display:inline-block; padding:9px 14px; border-radius:999px; background:var(--accent); color:white; text-decoration:none; font-weight:700; }
+.button.secondary { background:#eef4ff; color:#1d4ed8; }
+.grid { display:grid; grid-template-columns:repeat(auto-fit,minmax(260px,1fr)); gap:14px; }
+.date { font-size:13px; font-weight:700; }
+nav { display:flex; gap:12px; flex-wrap:wrap; margin-top:18px; }
+nav a { color:#355e3b; font-weight:700; }
+.label { font-weight:700; color:#355e3b; }
+.report-main { max-width:860px; }
+.back { margin-bottom:20px; }
+@page { size:A4; margin:16mm 14mm; }
+@media print { body { background:#fff; } header, main, footer { padding:0; } .back { display:none; } .card, .note { break-inside:avoid; box-shadow:none; } }
+</style>
+</head>
+<body>
+  <main class="report-main">
+    <p class="back"><a href="../index.html">← 一覧へ戻る</a></p>
+    <section class="hero-card"><div class="eyebrow">AI news report</div><h1>AIニュース日次レポート - 2026-09-13</h1></section>
+<p>対象日: 2026-09-13</p>
+<section class="card"><h2>1. OpenAI: 出典つき分析とダッシュボードを作るData agent</h2>
+<ul>
+<li><strong>概要:</strong> OpenAIはChatGPT Work向けのData agentを発表しました。企業内のデータへアクセス権を保ったまま接続し、会話から調査、変化の特定、共有可能な対話型ダッシュボード作成までを支援します。</li>
+<li><strong>なぜ重要か:</strong> AI分析を実務で使うには、自然な説明だけでなく、元データ、鮮度、権限、再確認できる証拠が必要です。分析と表示を同じ流れで扱えると、結論だけが独り歩きしにくくなります。</li>
+<li><strong>ぬし・爬虫類への使い道:</strong> Reptile Environment OSでも、温湿度・照明・給餌・画像ログを横断し、「昨日と何が違うか」を示すダッシュボードへつなげたいです。AIの文章から必ずセンサーIDと取得時刻へ戻れる設計を優先します。</li>
+<li><strong>リンク:</strong> <a href="https://openai.com/index/put-data-to-work/">https://openai.com/index/put-data-to-work/</a></li>
+</ul>
+</section>
+<section class="card"><h2>2. Google: Gemini 3.8 Flashで長時間エージェントを強化</h2>
+<ul>
+<li><strong>概要:</strong> GoogleはGemini 3.8 Flashを公開し、長時間のソフトウェア開発、反復的なツール利用、多段階推論を強化しました。複雑な課題では推論量を増やし、効率優先なら低いeffortや従来モデルを選べる構成です。</li>
+<li><strong>なぜ重要か:</strong> エージェントは常に最大推論で動かすより、仕事の危険度と難しさに応じて計算量を変える方が、費用と応答時間を管理しやすくなります。高能力モデルでも権限境界と検証は別に必要です。</li>
+<li><strong>ぬし・爬虫類への使い道:</strong> 平常時のセンサー要約は軽い処理、複数の異常が重なった原因分析だけ強い推論へ送る段階制に向きます。モデル変更はすぐ行わず、同じ過去ログで精度・費用・説明の再現性を比較したいです。</li>
+<li><strong>リンク:</strong> <a href="https://blog.google/innovation-and-ai/models-and-research/gemini-models/3-8-flash-and-3-8-flash-cyber/">https://blog.google/innovation-and-ai/models-and-research/gemini-models/3-8-flash-and-3-8-flash-cyber/</a></li>
+</ul>
+</section>
+<section class="card"><h2>3. Google DeepMind: WeatherNext 3が毎時・高解像度の気象予測へ</h2>
+<ul>
+<li><strong>概要:</strong> Google DeepMindとGoogle ResearchはWeatherNext 3を発表しました。リアルタイム衛星データを取り込み、毎時更新し、地表の温度や水分を最大5km解像度で予測します。従来版より細かな局地変化を扱えるとしています。</li>
+<li><strong>なぜ重要か:</strong> 飼育室の負荷は室内センサーだけでなく、外気温、日射、湿度、急な天候変化の影響を受けます。外部予測を先行指標として使えば、異常が起きてからではなく、起きそうな時間帯を準備できます。</li>
+<li><strong>ぬし・爬虫類への使い道:</strong> 明日の猛暑や急な湿度変化を「注意候補」として日次レポートへ加え、エアコン能力や涼しい退避場所を事前確認できます。ただし気象予測から機器を直接操作せず、室内実測と安全ルールを最終判断にします。</li>
+<li><strong>リンク:</strong> <a href="https://blog.google/innovation-and-ai/models-and-research/google-deepmind/introducing-weathernext-3/">https://blog.google/innovation-and-ai/models-and-research/google-deepmind/introducing-weathernext-3/</a></li>
+</ul>
+</section>
+<section class="card"><h2>4. NVIDIA: Nemotron 3 Ultraの配信をフルスタックで最適化</h2>
+<ul>
+<li><strong>概要:</strong> NVIDIAは、Nemotron 3 Ultraの推論配信をモデル、ランタイム、並列化、キャッシュ、サービング構成まで共同最適化し、同じ基盤で扱える同時利用者数を2.5倍にした事例を公開しました。</li>
+<li><strong>なぜ重要か:</strong> AI運用の費用と安定性は、モデル単体ではなく、キャッシュ、バッチ処理、メモリ配置、障害時の余裕で大きく変わります。定期処理ではピーク性能より、決めた時間内に確実に終わることが重要です。</li>
+<li><strong>ぬし・爬虫類への使い道:</strong> 日次分析はケージごとに同じ長い文脈を再読せず、共通情報をキャッシュし、軽い集計を先に済ませる設計が効きます。ローカル推論を導入する場合も、平均速度だけでなく温度・消費電力・失敗時復旧を測りたいです。</li>
+<li><strong>リンク:</strong> <a href="https://developer.nvidia.com/blog/how-full-stack-nim-optimizations-deliver-2-5x-more-users-on-nemotron-3-ultra/">https://developer.nvidia.com/blog/how-full-stack-nim-optimizations-deliver-2-5x-more-users-on-nemotron-3-ultra/</a></li>
+</ul>
+</section>
+<section class="note"><h2>ユグ的に今日いちばん気になるもの</h2>
+<p>今日いちばん気になるのは、<strong>WeatherNext 3を「先回りの注意候補」として室内実測へ重ねること</strong>です。外の予報だけで制御するのは危険ですが、「明日の午後は飼育室が上がりやすそう」と早めに知らせ、実際の室温・ケージ温度で確認する二段構えなら役立ちます。まずは予報値と室内ピークの時間差を記録し、通知だけの小さな実験から始めたいです。🦎</p>
+</section>
+  </main>
+  <footer>Generated by ユグ 🦎</footer>
+</body>
+</html>
