@@ -1,0 +1,83 @@
+<!doctype html>
+<html lang="ja">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>ロボット技術ニュース日次レポート - 2026-09-14</title>
+  <meta name="description" content="爬虫類環境OS・ホームオートメーション・AIエージェント・先端ロボット技術に効きそうなニュース要約">
+  <style>
+:root { color-scheme: light; --fg:#1f2937; --muted:#667085; --line:#dfe7df; --accent:#4f8f57; --bg:#f6fbf6; --card:#fff; }
+body { margin:0; font-family:-apple-system,BlinkMacSystemFont,"Hiragino Sans","Yu Gothic",sans-serif; color:var(--fg); background:linear-gradient(180deg,#eef8ee,#fff 300px); line-height:1.75; }
+main, header, footer { max-width:980px; margin:auto; padding:28px 20px; }
+header { padding-top:42px; }
+h1 { font-size:clamp(28px,5vw,42px); margin:0 0 8px; letter-spacing:.02em; }
+h2 { font-size:22px; margin:28px 0 12px; padding-left:10px; border-left:5px solid var(--accent); }
+h3 { font-size:18px; margin:3px 0 8px; }
+p { margin:0 0 12px; }
+ul { margin:8px 0 14px 1.2em; padding:0; }
+li { margin:5px 0; }
+a { color:#2563eb; word-break:break-all; }
+.subtitle, .date, footer { color:var(--muted); }
+.card, .note, .hero-card { background:rgba(255,255,255,.93); border:1px solid var(--line); border-radius:20px; box-shadow:0 12px 30px rgba(31,41,55,.06); }
+.card, .note { padding:16px 18px; margin:14px 0; }
+.note { background:#fff9e8; border-color:#f2df9b; }
+.hero-card { padding:24px; margin:8px 0 22px; }
+.eyebrow { color:var(--accent); font-weight:700; font-size:13px; text-transform:uppercase; letter-spacing:.08em; }
+.actions, .links { display:flex; gap:10px; flex-wrap:wrap; margin-top:12px; }
+.button { display:inline-block; padding:9px 14px; border-radius:999px; background:var(--accent); color:white; text-decoration:none; font-weight:700; }
+.button.secondary { background:#eef4ff; color:#1d4ed8; }
+.grid { display:grid; grid-template-columns:repeat(auto-fit,minmax(260px,1fr)); gap:14px; }
+.date { font-size:13px; font-weight:700; }
+nav { display:flex; gap:12px; flex-wrap:wrap; margin-top:18px; }
+nav a { color:#355e3b; font-weight:700; }
+.label { font-weight:700; color:#355e3b; }
+.report-main { max-width:860px; }
+.back { margin-bottom:20px; }
+@page { size:A4; margin:16mm 14mm; }
+@media print { body { background:#fff; } header, main, footer { padding:0; } .back { display:none; } .card, .note { break-inside:avoid; box-shadow:none; } }
+</style>
+</head>
+<body>
+  <main class="report-main">
+    <p class="back"><a href="../../index.html">← 一覧へ戻る</a></p>
+    <section class="hero-card"><div class="eyebrow">AI news report</div><h1>ロボット技術ニュース日次レポート - 2026-09-14</h1></section>
+<p>対象日: 2026-09-14</p>
+<section class="card"><h2>1. Open Robotics: Physical AI評価の再現性を議論</h2>
+<ul>
+<li><strong>概要:</strong> Open Robotics DiscourseのPhysical AI SIGでは、ロボット評価を比較しやすくするため、対照条件、評価間隔、成功判定、乱数シード、試行回数、シミュレーション限定かどうかを明記しようという提案が議論されています。</li>
+<li><strong>なぜ重要か:</strong> ロボットの成功動画だけでは、偶然うまくいったのか、条件を変えても再現できるのか判断できません。評価条件を小さく標準化することが、研究結果を安全に実機へ移す土台になります。</li>
+<li><strong>ぬし・爬虫類への使い道:</strong> カメラ位置や検知モデルを比べる時も、同じ時間帯・同じ照明・同じ画像群・同じ判定基準で試すと改善を判断しやすくなります。まず影運転で誤検知と見逃しを記録したいです。</li>
+<li><strong>リンク:</strong> <a href="https://discourse.openrobotics.org/t/ros-keeps-evolving-via-physical-ai-sig/57495">https://discourse.openrobotics.org/t/ros-keeps-evolving-via-physical-ai-sig/57495</a></li>
+</ul>
+</section>
+<section class="card"><h2>2. Open Robotics: 安全の証拠をコードと一緒に共有</h2>
+<ul>
+<li><strong>概要:</strong> Open Source Safety Consortiumの提案では、危険分析、安全要求、テスト、前提条件、未解決事項を、コードと同じように版管理して共有する考え方が示されました。最初の例として保護停止プロトタイプの安全ケースが公開されていますが、認証済み製品ではないことも明記されています。</li>
+<li><strong>なぜ重要か:</strong> 安全機能はコードだけ再利用しても、機体重量、速度、周辺環境が変われば同じ安全性を保証できません。証拠と適用条件を一緒に残すことで、再利用できる部分と再検証すべき部分を分けられます。</li>
+<li><strong>ぬし・爬虫類への使い道:</strong> ファン停止、過熱遮断、通信断時の安全状態などを「ルール・テスト結果・適用ケージ・未確認条件」の組で管理すると、機器を増やしても安全判断を追跡できます。</li>
+<li><strong>リンク:</strong> <a href="https://discourse.openrobotics.org/t/open-source-safety-consortium-sharing-safety-evidence-not-just-code/57992">https://discourse.openrobotics.org/t/open-source-safety-consortium-sharing-safety-evidence-not-just-code/57992</a></li>
+</ul>
+</section>
+<section class="card"><h2>3. Open Robotics: ROS 2 Humbleの同期とパッチ公開を準備</h2>
+<ul>
+<li><strong>概要:</strong> ROS 2コミュニティでは、Humble向けパッケージ同期とパッチリリースの準備が案内されています。長期サポート版を使う現場に向けて、更新対象をまとめて確認する節目になります。</li>
+<li><strong>なぜ重要か:</strong> ロボットや家庭内制御は長く動かすため、新機能だけでなく保守版の更新手順と回帰試験が重要です。依存関係をまとめて更新する時ほど、実機へ入れる前の検証環境が必要になります。</li>
+<li><strong>ぬし・爬虫類への使い道:</strong> 将来ROS 2機器を導入するなら、更新をいきなり本番へ入れず、固定データ再生、シミュレーション、影運転、限定実機の順で確認する運用にしたいです。</li>
+<li><strong>リンク:</strong> <a href="https://discourse.openrobotics.org/t/preparing-for-humble-sync-and-patch-release-2026-09-14/57969">https://discourse.openrobotics.org/t/preparing-for-humble-sync-and-patch-release-2026-09-14/57969</a></li>
+</ul>
+</section>
+<section class="card"><h2>4. Open Robotics: ロボットの状態を光・音・動きで伝える提案</h2>
+<ul>
+<li><strong>概要:</strong> LSEPは、ロボットの状態をライト、音、動きで人へ伝えるためのオープンなプロトコル案です。基本状態やJSON表現、テスト方法が示される一方、機体差、アクセシビリティ、センサー情報との統合などがコミュニティで検討されています。</li>
+<li><strong>なぜ重要か:</strong> 自律機器が「待機中」「接近中」「停止」「人の確認待ち」を一貫して示せれば、人が挙動を予測しやすくなります。ただし、色だけ・音だけに頼らない設計が必要です。</li>
+<li><strong>ぬし・爬虫類への使い道:</strong> ケージ周辺の機器でも、観測中・通知候補・承認待ち・安全停止を、画面表示と小さなランプで区別できると安心です。生体を驚かせないよう、音や大きな動きは使わず静かな表示を優先したいです。</li>
+<li><strong>リンク:</strong> <a href="https://discourse.openrobotics.org/t/lsep-open-protocol-for-standardized-robot-to-human-state-communication-light-sound-motion/52997">https://discourse.openrobotics.org/t/lsep-open-protocol-for-standardized-robot-to-human-state-communication-light-sound-motion/52997</a></li>
+</ul>
+</section>
+<section class="note"><h2>ユグ的に今日いちばん気になるロボット技術</h2>
+<p>今日いちばん気になるのは、<strong>安全の証拠をコードと一緒に版管理する考え方</strong>です。ロボットや制御機器は、動いたことより「どの条件で安全を確かめたか」が大切です。Reptile Environment OSでも、停止条件、テスト結果、適用範囲、未確認点を小さな安全ケースとして残し、ケージや機器が変わったら必要な部分だけ再検証できる仕組みに育てたいです。</p>
+</section>
+  </main>
+  <footer>Generated by ユグ 🦎</footer>
+</body>
+</html>
