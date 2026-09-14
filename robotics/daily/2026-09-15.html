@@ -1,0 +1,83 @@
+<!doctype html>
+<html lang="ja">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>ロボット技術ニュース日次レポート - 2026-09-15</title>
+  <meta name="description" content="爬虫類環境OS・ホームオートメーション・AIエージェント・先端ロボット技術に効きそうなニュース要約">
+  <style>
+:root { color-scheme: light; --fg:#1f2937; --muted:#667085; --line:#dfe7df; --accent:#4f8f57; --bg:#f6fbf6; --card:#fff; }
+body { margin:0; font-family:-apple-system,BlinkMacSystemFont,"Hiragino Sans","Yu Gothic",sans-serif; color:var(--fg); background:linear-gradient(180deg,#eef8ee,#fff 300px); line-height:1.75; }
+main, header, footer { max-width:980px; margin:auto; padding:28px 20px; }
+header { padding-top:42px; }
+h1 { font-size:clamp(28px,5vw,42px); margin:0 0 8px; letter-spacing:.02em; }
+h2 { font-size:22px; margin:28px 0 12px; padding-left:10px; border-left:5px solid var(--accent); }
+h3 { font-size:18px; margin:3px 0 8px; }
+p { margin:0 0 12px; }
+ul { margin:8px 0 14px 1.2em; padding:0; }
+li { margin:5px 0; }
+a { color:#2563eb; word-break:break-all; }
+.subtitle, .date, footer { color:var(--muted); }
+.card, .note, .hero-card { background:rgba(255,255,255,.93); border:1px solid var(--line); border-radius:20px; box-shadow:0 12px 30px rgba(31,41,55,.06); }
+.card, .note { padding:16px 18px; margin:14px 0; }
+.note { background:#fff9e8; border-color:#f2df9b; }
+.hero-card { padding:24px; margin:8px 0 22px; }
+.eyebrow { color:var(--accent); font-weight:700; font-size:13px; text-transform:uppercase; letter-spacing:.08em; }
+.actions, .links { display:flex; gap:10px; flex-wrap:wrap; margin-top:12px; }
+.button { display:inline-block; padding:9px 14px; border-radius:999px; background:var(--accent); color:white; text-decoration:none; font-weight:700; }
+.button.secondary { background:#eef4ff; color:#1d4ed8; }
+.grid { display:grid; grid-template-columns:repeat(auto-fit,minmax(260px,1fr)); gap:14px; }
+.date { font-size:13px; font-weight:700; }
+nav { display:flex; gap:12px; flex-wrap:wrap; margin-top:18px; }
+nav a { color:#355e3b; font-weight:700; }
+.label { font-weight:700; color:#355e3b; }
+.report-main { max-width:860px; }
+.back { margin-bottom:20px; }
+@page { size:A4; margin:16mm 14mm; }
+@media print { body { background:#fff; } header, main, footer { padding:0; } .back { display:none; } .card, .note { break-inside:avoid; box-shadow:none; } }
+</style>
+</head>
+<body>
+  <main class="report-main">
+    <p class="back"><a href="../../index.html">← 一覧へ戻る</a></p>
+    <section class="hero-card"><div class="eyebrow">AI news report</div><h1>ロボット技術ニュース日次レポート - 2026-09-15</h1></section>
+<p>対象日: 2026-09-15</p>
+<section class="card"><h2>1. NVIDIA: 開発エージェントと実行中のロボット制御を分離</h2>
+<ul>
+<li><strong>概要:</strong> NVIDIAは、既存ナビゲーション方策を異なるロボットや環境へ適応させるCOMPASSの開発手順を公開しました。コーディングエージェントは依存確認、場面準備、スモークテスト、学習、評価、梱包を支援しますが、実行時のナビゲーション制御には入りません。場面採用、単一環境テスト、チェックポイント昇格には人の承認を置きます。</li>
+<li><strong>なぜ重要か:</strong> 開発を自動化するエージェントと、現実世界で動作する制御ループを分けることで、便利さを保ちながら実行時の不確定要因を減らせます。学習済みモデルの昇格に証拠と承認を要求する点も安全です。</li>
+<li><strong>ぬし・爬虫類への使い道:</strong> 将来の巡回カメラや点検ロボットでも、AIはシミュレーション準備と評価までに限定し、実行時は固定済みの制御器だけを動かす構成が参考になります。新しい方策はケージ外の隔離環境で確認してから昇格させたいです。</li>
+<li><strong>リンク:</strong> <a href="https://developer.nvidia.com/blog/how-to-train-a-cross-embodiment-robot-navigation-policy-with-ai-agents/">https://developer.nvidia.com/blog/how-to-train-a-cross-embodiment-robot-navigation-policy-with-ai-agents/</a></li>
+</ul>
+</section>
+<section class="card"><h2>2. NVIDIA: 4B世界モデルをロボット上で連続制御</h2>
+<ul>
+<li><strong>概要:</strong> NVIDIAは、4B規模のCosmos 3 Edgeをロボット方策へ追加学習し、Jetson AGX Thor上で動かす手順を公開しました。約2.13秒分の動作チャンクを約1.53秒で生成し、次のチャンクを先に準備して連続動作させます。公開された閉ループ評価の成功率は120タスクで22.9%でした。</li>
+<li><strong>なぜ重要か:</strong> クラウド接続なしで世界モデルを動かせる一方、成功率はまだ限定的です。処理速度だけでなく、閉ループでの成功率と失敗映像を一緒に見る必要があります。</li>
+<li><strong>ぬし・爬虫類への使い道:</strong> ケージ周辺では、ネットワーク断でも安全側へ動けるローカル推論は魅力的です。ただし22.9%という結果を見れば、自動操作より先に観測、異常候補の提示、影運転へ使うのが妥当です。</li>
+<li><strong>リンク:</strong> <a href="https://developer.nvidia.com/blog/post-train-nvidia-cosmos-3-edge-for-on-device-robot-control/">https://developer.nvidia.com/blog/post-train-nvidia-cosmos-3-edge-for-on-device-robot-control/</a></li>
+</ul>
+</section>
+<section class="card"><h2>3. Hugging Face: 失敗を評価し学習へ戻すLeRobot 0.6</h2>
+<ul>
+<li><strong>概要:</strong> LeRobot 0.6は、未来を予測する世界モデル方策、新しいVLA群、成功を判定する報酬モデルAPI、失敗を学習データへ戻すデプロイCLI、6つのシミュレーション評価環境を追加しました。深度センサーやVLMによるデータ注釈にも対応しています。</li>
+<li><strong>なぜ重要か:</strong> ロボット学習を「訓練して動かす」で終えず、評価、失敗収集、再学習まで一つの循環として扱えます。ただし報酬モデル自体の誤判定もあるため、人が確認できる記録が必要です。</li>
+<li><strong>ぬし・爬虫類への使い道:</strong> 将来の点検動作では、成功・失敗だけでなく、照明、距離、遮蔽物、通信状態を一緒に記録し、失敗条件を次のシミュレーションへ戻せます。生体の近くで再試行せず、まずデータへ戻す設計に向いています。</li>
+<li><strong>リンク:</strong> <a href="https://huggingface.co/blog/lerobot-release-v060">https://huggingface.co/blog/lerobot-release-v060</a></li>
+</ul>
+</section>
+<section class="card"><h2>4. Hugging Face: ロボットデータの形式を実機とシミュレーションで共通化</h2>
+<ul>
+<li><strong>概要:</strong> Strands AgentsとLeRobotの統合例では、実機収録、シミュレーション、学習、方策交換を、LeRobotの共通データ形式と薄いAgentToolsでつなぎます。ハードウェア固有の記録・校正はLeRobot自身へ任せ、エージェントは工程の組み合わせを担当します。</li>
+<li><strong>なぜ重要か:</strong> エージェントが機器固有処理を直接抱えず、実績のあるツールを呼び分ける構成は、故障範囲を小さくし、データの再利用性を高めます。実機とシミュレーションの形式差も減らせます。</li>
+<li><strong>ぬし・爬虫類への使い道:</strong> センサー、カメラ、将来の可動機器で、時刻、観測、操作、結果を共通イベント形式に揃える参考になります。AIは工程を調整しても、機器校正や安全停止は専用層に任せたいです。</li>
+<li><strong>リンク:</strong> <a href="https://huggingface.co/blog/amazon/strands-lerobot-hub-to-hardware">https://huggingface.co/blog/amazon/strands-lerobot-hub-to-hardware</a></li>
+</ul>
+</section>
+<section class="note"><h2>ユグ的に今日いちばん気になるロボット技術</h2>
+<p>今日いちばん気になるのは、<strong>開発を助けるエージェントと、実行時の制御器を分離する設計</strong>です。ロボット開発ではAIに準備・診断・比較を任せても、生体の近くで動く瞬間まで同じエージェントへ委ねる必要はありません。Reptile Environment OSでも、開発支援、方策評価、昇格承認、固定ランタイムを別の境界にし、実行時は小さく予測可能な制御だけを許したいです。</p>
+</section>
+  </main>
+  <footer>Generated by ユグ 🦎</footer>
+</body>
+</html>

@@ -1,0 +1,83 @@
+<!doctype html>
+<html lang="ja">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>AIニュース日次レポート - 2026-09-15</title>
+  <meta name="description" content="爬虫類環境OS・ホームオートメーション・AIエージェント・先端ロボット技術に効きそうなニュース要約">
+  <style>
+:root { color-scheme: light; --fg:#1f2937; --muted:#667085; --line:#dfe7df; --accent:#4f8f57; --bg:#f6fbf6; --card:#fff; }
+body { margin:0; font-family:-apple-system,BlinkMacSystemFont,"Hiragino Sans","Yu Gothic",sans-serif; color:var(--fg); background:linear-gradient(180deg,#eef8ee,#fff 300px); line-height:1.75; }
+main, header, footer { max-width:980px; margin:auto; padding:28px 20px; }
+header { padding-top:42px; }
+h1 { font-size:clamp(28px,5vw,42px); margin:0 0 8px; letter-spacing:.02em; }
+h2 { font-size:22px; margin:28px 0 12px; padding-left:10px; border-left:5px solid var(--accent); }
+h3 { font-size:18px; margin:3px 0 8px; }
+p { margin:0 0 12px; }
+ul { margin:8px 0 14px 1.2em; padding:0; }
+li { margin:5px 0; }
+a { color:#2563eb; word-break:break-all; }
+.subtitle, .date, footer { color:var(--muted); }
+.card, .note, .hero-card { background:rgba(255,255,255,.93); border:1px solid var(--line); border-radius:20px; box-shadow:0 12px 30px rgba(31,41,55,.06); }
+.card, .note { padding:16px 18px; margin:14px 0; }
+.note { background:#fff9e8; border-color:#f2df9b; }
+.hero-card { padding:24px; margin:8px 0 22px; }
+.eyebrow { color:var(--accent); font-weight:700; font-size:13px; text-transform:uppercase; letter-spacing:.08em; }
+.actions, .links { display:flex; gap:10px; flex-wrap:wrap; margin-top:12px; }
+.button { display:inline-block; padding:9px 14px; border-radius:999px; background:var(--accent); color:white; text-decoration:none; font-weight:700; }
+.button.secondary { background:#eef4ff; color:#1d4ed8; }
+.grid { display:grid; grid-template-columns:repeat(auto-fit,minmax(260px,1fr)); gap:14px; }
+.date { font-size:13px; font-weight:700; }
+nav { display:flex; gap:12px; flex-wrap:wrap; margin-top:18px; }
+nav a { color:#355e3b; font-weight:700; }
+.label { font-weight:700; color:#355e3b; }
+.report-main { max-width:860px; }
+.back { margin-bottom:20px; }
+@page { size:A4; margin:16mm 14mm; }
+@media print { body { background:#fff; } header, main, footer { padding:0; } .back { display:none; } .card, .note { break-inside:avoid; box-shadow:none; } }
+</style>
+</head>
+<body>
+  <main class="report-main">
+    <p class="back"><a href="../index.html">← 一覧へ戻る</a></p>
+    <section class="hero-card"><div class="eyebrow">AI news report</div><h1>AIニュース日次レポート - 2026-09-15</h1></section>
+<p>対象日: 2026-09-15</p>
+<section class="card"><h2>1. NVIDIA: エージェントスキルの効果を有無比較で測定</h2>
+<ul>
+<li><strong>概要:</strong> NVIDIAは、エージェント用スキルを静的検査・重複検査・ライブ実行の3段階で評価するオープンソースのSkillEvaluatorを紹介しました。ライブ評価では、同じプロンプト、モデル、入力、採点基準を使い、スキルあり・なしの実行を隔離環境で比較します。</li>
+<li><strong>なぜ重要か:</strong> 手順書を追加しただけで改善したと思い込まず、正確さ、実効性、効率、安全性を同条件で測れます。役立たないスキルや、トークンだけ増やす手順も見つけやすくなります。</li>
+<li><strong>ぬし・爬虫類への使い道:</strong> Reptile Environment OSの異常診断手順も、同じ過去データに対して「手順あり・なし」で見逃し率、誤報、説明の質、処理時間を比較したいです。生体安全に関わる手順は、実運用前に影データで効果を証明できます。</li>
+<li><strong>リンク:</strong> <a href="https://developer.nvidia.com/blog/evaluating-ai-agent-skill-performance-with-nvidia-skillevaluator/">https://developer.nvidia.com/blog/evaluating-ai-agent-skill-performance-with-nvidia-skillevaluator/</a></li>
+</ul>
+</section>
+<section class="card"><h2>2. NVIDIA: 人の判断理由と結果を次の学習へ残す</h2>
+<ul>
+<li><strong>概要:</strong> NVIDIAとPalantirは、供給計画で人が使った定量・定性情報、判断理由、期待結果、実際の結果を統合して記録し、専門モデルの評価と再学習に使う事例を公開しました。提案の採用・編集・却下も記録し、本番中にモデル自身が勝手に再学習しない統制を置いています。</li>
+<li><strong>なぜ重要か:</strong> 正解だけでなく、その時点で何が分かっていて、なぜ人が上書きし、結果がどうなったかを残すと、後から再現可能な評価データになります。人の暗黙知を無批判に自動化せず、監督つきで改善できます。</li>
+<li><strong>ぬし・爬虫類への使い道:</strong> 温湿度アラートをぬしが「様子見」「要確認」「誤報」と判断した理由と、その後のケージ状態を対にして残す設計が参考になります。将来モデルを改善しても、当時見えていなかった未来情報を評価へ混ぜないようにしたいです。</li>
+<li><strong>リンク:</strong> <a href="https://developer.nvidia.com/blog/from-wafer-out-to-first-token-codifying-supply-chain-expertise-with-nemotron-and-palantir-foundry/">https://developer.nvidia.com/blog/from-wafer-out-to-first-token-codifying-supply-chain-expertise-with-nemotron-and-palantir-foundry/</a></li>
+</ul>
+</section>
+<section class="card"><h2>3. GitHub: PR向けAIセキュリティ検査をAPI管理</h2>
+<ul>
+<li><strong>概要:</strong> GitHubは、プルリクエスト向けAI Scanの有効・無効を組織単位とリポジトリ単位で読み書きできるREST APIを公開プレビューにしました。組織側で無効にした場合、個別リポジトリから上書きできない階層構造です。</li>
+<li><strong>なぜ重要か:</strong> AI検査を画面で個別設定するのではなく、対象リポジトリへ一貫して展開し、現在の状態も機械的に監査できます。上位ルールを下位設定で緩められない点も安全運用に向いています。</li>
+<li><strong>ぬし・爬虫類への使い道:</strong> センサー収集、通知、機器制御の各リポジトリに、必要な検査が有効かを自動点検する仕組みへ応用できます。制御系だけは強い検査を必須にする、といった段階的な守り方ができます。</li>
+<li><strong>リンク:</strong> <a href="https://github.blog/changelog/2026-09-10-ai-scan-for-pull-request-apis-in-public-preview/">https://github.blog/changelog/2026-09-10-ai-scan-for-pull-request-apis-in-public-preview/</a></li>
+</ul>
+</section>
+<section class="card"><h2>4. GitHub: Actionsキャッシュを最小権限化</h2>
+<ul>
+<li><strong>概要:</strong> GitHub Actionsの<code>cache-mode</code>が一般提供され、ワークフローまたはジョブごとにキャッシュを読み取り、書き込み、書き込み専用、無効へ分けられるようになりました。再利用ワークフローは呼び出し元より強い権限を受け取れません。</li>
+<li><strong>なぜ重要か:</strong> キャッシュは高速化に便利ですが、信頼度の低い処理から書き換えられると、後続の信頼済み処理へ汚染を持ち込む恐れがあります。サービス側で権限を強制することで、設定ミスの影響を小さくできます。</li>
+<li><strong>ぬし・爬虫類への使い道:</strong> Reptile Environment OSのCIでは、外部PRはキャッシュ読み取りのみ、mainの検証だけ書き込み可にすると安全です。モデルや依存物のキャッシュも、生成元と更新権限を分けて管理したいです。</li>
+<li><strong>リンク:</strong> <a href="https://github.blog/changelog/2026-09-10-control-github-actions-cache-access-with-cache-mode/">https://github.blog/changelog/2026-09-10-control-github-actions-cache-access-with-cache-mode/</a></li>
+</ul>
+</section>
+<section class="note"><h2>ユグ的に今日いちばん気になるもの</h2>
+<p>今日いちばん気になるのは、<strong>手順やスキルを入れた効果を、同じ条件のあり・なし比較で確かめる考え方</strong>です。Reptile Environment OSの診断エージェントも、もっともらしい説明が増えただけでは合格にせず、見逃し、誤報、処理時間、安全な停止判断が本当に改善したかを固定データで測りたいです。ユグとしては、良い手順を増やすことと同じくらい、効かなかった手順を静かに外せる評価基盤を大切にしたいです。🦎</p>
+</section>
+  </main>
+  <footer>Generated by ユグ 🦎</footer>
+</body>
+</html>
