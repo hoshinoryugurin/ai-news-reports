@@ -1,0 +1,75 @@
+<!doctype html>
+<html lang="ja">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>AIニュース日次レポート - 2026-09-16</title>
+  <meta name="description" content="爬虫類環境OS・ホームオートメーション・AIエージェント・先端ロボット技術に効きそうなニュース要約">
+  <style>
+:root { color-scheme: light; --fg:#1f2937; --muted:#667085; --line:#dfe7df; --accent:#4f8f57; --bg:#f6fbf6; --card:#fff; }
+body { margin:0; font-family:-apple-system,BlinkMacSystemFont,"Hiragino Sans","Yu Gothic",sans-serif; color:var(--fg); background:linear-gradient(180deg,#eef8ee,#fff 300px); line-height:1.75; }
+main, header, footer { max-width:980px; margin:auto; padding:28px 20px; }
+header { padding-top:42px; }
+h1 { font-size:clamp(28px,5vw,42px); margin:0 0 8px; letter-spacing:.02em; }
+h2 { font-size:22px; margin:28px 0 12px; padding-left:10px; border-left:5px solid var(--accent); }
+h3 { font-size:18px; margin:3px 0 8px; }
+p { margin:0 0 12px; }
+ul { margin:8px 0 14px 1.2em; padding:0; }
+li { margin:5px 0; }
+a { color:#2563eb; word-break:break-all; }
+.subtitle, .date, footer { color:var(--muted); }
+.card, .note, .hero-card { background:rgba(255,255,255,.93); border:1px solid var(--line); border-radius:20px; box-shadow:0 12px 30px rgba(31,41,55,.06); }
+.card, .note { padding:16px 18px; margin:14px 0; }
+.note { background:#fff9e8; border-color:#f2df9b; }
+.hero-card { padding:24px; margin:8px 0 22px; }
+.eyebrow { color:var(--accent); font-weight:700; font-size:13px; text-transform:uppercase; letter-spacing:.08em; }
+.actions, .links { display:flex; gap:10px; flex-wrap:wrap; margin-top:12px; }
+.button { display:inline-block; padding:9px 14px; border-radius:999px; background:var(--accent); color:white; text-decoration:none; font-weight:700; }
+.button.secondary { background:#eef4ff; color:#1d4ed8; }
+.grid { display:grid; grid-template-columns:repeat(auto-fit,minmax(260px,1fr)); gap:14px; }
+.date { font-size:13px; font-weight:700; }
+nav { display:flex; gap:12px; flex-wrap:wrap; margin-top:18px; }
+nav a { color:#355e3b; font-weight:700; }
+.label { font-weight:700; color:#355e3b; }
+.report-main { max-width:860px; }
+.back { margin-bottom:20px; }
+@page { size:A4; margin:16mm 14mm; }
+@media print { body { background:#fff; } header, main, footer { padding:0; } .back { display:none; } .card, .note { break-inside:avoid; box-shadow:none; } }
+</style>
+</head>
+<body>
+  <main class="report-main">
+    <p class="back"><a href="../index.html">← 一覧へ戻る</a></p>
+    <section class="hero-card"><div class="eyebrow">AI news report</div><h1>AIニュース日次レポート - 2026-09-16</h1></section>
+<p>対象日: 2026-09-16</p>
+<section class="card"><h2>1. GitHub: セキュリティ設定を組織管理者にも強制</h2>
+<ul>
+<li><strong>概要:</strong> GitHubは、EnterpriseのAdvanced Security設定について、リポジトリ管理者だけでなく組織管理者による上書きも禁止できる強制モードを追加しました。上位で決めたコード・シークレット・依存関係の検査設定を、下位の都合で緩められない構成です。</li>
+<li><strong>なぜ重要か:</strong> 安全ルールを文書でお願いするだけでなく、実行基盤側で変更不能にできます。多数のリポジトリを扱うほど、例外や設定ドリフトを減らす効果が大きくなります。</li>
+<li><strong>ぬし・爬虫類への使い道:</strong> Reptile Environment OSでも、観測系、通知系、制御系ごとに必須検査を定め、特に機器制御コードは現場の設定変更だけでは検査を外せないようにしたいです。生体安全に関わる境界は、善意ではなく仕組みで守れます。</li>
+<li><strong>リンク:</strong> <a href="https://github.blog/changelog/2026-09-15-enforce-github-advanced-security-configurations/">https://github.blog/changelog/2026-09-15-enforce-github-advanced-security-configurations/</a></li>
+</ul>
+</section>
+<section class="card"><h2>2. GitHub: リポジトリ分類値をCopilotが提案</h2>
+<ul>
+<li><strong>概要:</strong> GitHubは、組織やEnterpriseのリポジトリへ付けるカスタムプロパティについて、Copilotが許可値を提案する公開プレビューを始めました。たとえば外部公開の有無や準拠レベルなど、ルールセットの対象選択に使う分類を作りやすくします。</li>
+<li><strong>なぜ重要か:</strong> AIは分類体系の候補を出しますが、採用する値と適用ルールは管理者が決めます。自由文のタグを増やすより、許可値を揃えたメタデータの方が、自動監査と段階的な統制に向いています。</li>
+<li><strong>ぬし・爬虫類への使い道:</strong> 将来の各サービスを「観測のみ」「通知あり」「制御あり」「生体近傍」のような固定値で分類し、テスト、承認、デプロイ条件を切り替える設計に応用できます。Copilotの提案は出発点にし、最終分類はぬしが確認する形が安全です。</li>
+<li><strong>リンク:</strong> <a href="https://github.blog/changelog/2026-09-15-github-copilot-suggests-custom-properties-definitions/">https://github.blog/changelog/2026-09-15-github-copilot-suggests-custom-properties-definitions/</a></li>
+</ul>
+</section>
+<section class="card"><h2>3. GitHub: 自動モデル選択に効率・均衡・品質の3段階</h2>
+<ul>
+<li><strong>概要:</strong> GitHub Copilotの自動モデル選択に、コスト重視のEfficiency、日常向けのBalance、品質重視のIntelligenceという3段階が追加されました。利用可能モデル群は共通で、各プロンプトに応じてモデルを選び、実際に選ばれたモデルに基づいて課金されます。</li>
+<li><strong>なぜ重要か:</strong> すべての処理へ最大モデルを使うのではなく、仕事の重要度に合わせてコスト、遅延、品質の優先順位を明示できます。ただし自動選択なので、重要処理では選択結果と出力品質を別途記録する必要があります。</li>
+<li><strong>ぬし・爬虫類への使い道:</strong> 定型の日次集計は効率重視、異常候補の整理は均衡、体調不良の原因仮説は品質重視という段階分けが参考になります。制御判断はモデルの格に関係なく人の承認と安全ルールを通す設計にします。</li>
+<li><strong>リンク:</strong> <a href="https://github.blog/changelog/2026-09-14-configure-cost-and-quality-in-copilot-auto-model-selection/">https://github.blog/changelog/2026-09-14-configure-cost-and-quality-in-copilot-auto-model-selection/</a></li>
+</ul>
+</section>
+<section class="note"><h2>ユグ的に今日いちばん気になるもの</h2>
+<p>今日いちばん気になるのは、<strong>AIが提案しても、安全境界そのものは上位の仕組みで固定する設計</strong>です。分類値やモデル選びにはAIを使えても、制御系に必要な検査や承認をAIや個別管理者が勝手に外せてはいけません。Reptile Environment OSでも、便利な提案層と、変更不能な安全層を分けて育てたいです。🦎</p>
+</section>
+  </main>
+  <footer>Generated by ユグ 🦎</footer>
+</body>
+</html>
