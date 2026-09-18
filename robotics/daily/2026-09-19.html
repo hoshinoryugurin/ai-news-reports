@@ -1,0 +1,75 @@
+<!doctype html>
+<html lang="ja">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>ロボット技術ニュース日次レポート - 2026-09-19</title>
+  <meta name="description" content="爬虫類環境OS・ホームオートメーション・AIエージェント・先端ロボット技術に効きそうなニュース要約">
+  <style>
+:root { color-scheme: light; --fg:#1f2937; --muted:#667085; --line:#dfe7df; --accent:#4f8f57; --bg:#f6fbf6; --card:#fff; }
+body { margin:0; font-family:-apple-system,BlinkMacSystemFont,"Hiragino Sans","Yu Gothic",sans-serif; color:var(--fg); background:linear-gradient(180deg,#eef8ee,#fff 300px); line-height:1.75; }
+main, header, footer { max-width:980px; margin:auto; padding:28px 20px; }
+header { padding-top:42px; }
+h1 { font-size:clamp(28px,5vw,42px); margin:0 0 8px; letter-spacing:.02em; }
+h2 { font-size:22px; margin:28px 0 12px; padding-left:10px; border-left:5px solid var(--accent); }
+h3 { font-size:18px; margin:3px 0 8px; }
+p { margin:0 0 12px; }
+ul { margin:8px 0 14px 1.2em; padding:0; }
+li { margin:5px 0; }
+a { color:#2563eb; word-break:break-all; }
+.subtitle, .date, footer { color:var(--muted); }
+.card, .note, .hero-card { background:rgba(255,255,255,.93); border:1px solid var(--line); border-radius:20px; box-shadow:0 12px 30px rgba(31,41,55,.06); }
+.card, .note { padding:16px 18px; margin:14px 0; }
+.note { background:#fff9e8; border-color:#f2df9b; }
+.hero-card { padding:24px; margin:8px 0 22px; }
+.eyebrow { color:var(--accent); font-weight:700; font-size:13px; text-transform:uppercase; letter-spacing:.08em; }
+.actions, .links { display:flex; gap:10px; flex-wrap:wrap; margin-top:12px; }
+.button { display:inline-block; padding:9px 14px; border-radius:999px; background:var(--accent); color:white; text-decoration:none; font-weight:700; }
+.button.secondary { background:#eef4ff; color:#1d4ed8; }
+.grid { display:grid; grid-template-columns:repeat(auto-fit,minmax(260px,1fr)); gap:14px; }
+.date { font-size:13px; font-weight:700; }
+nav { display:flex; gap:12px; flex-wrap:wrap; margin-top:18px; }
+nav a { color:#355e3b; font-weight:700; }
+.label { font-weight:700; color:#355e3b; }
+.report-main { max-width:860px; }
+.back { margin-bottom:20px; }
+@page { size:A4; margin:16mm 14mm; }
+@media print { body { background:#fff; } header, main, footer { padding:0; } .back { display:none; } .card, .note { break-inside:avoid; box-shadow:none; } }
+</style>
+</head>
+<body>
+  <main class="report-main">
+    <p class="back"><a href="../../index.html">← 一覧へ戻る</a></p>
+    <section class="hero-card"><div class="eyebrow">AI news report</div><h1>ロボット技術ニュース日次レポート - 2026-09-19</h1></section>
+<p>対象日: 2026-09-19</p>
+<section class="card"><h2>1. NVIDIA: 3DシーンをSimReadyへ整えるAIエージェント</h2>
+<ul>
+<li><strong>概要:</strong> NVIDIAは、Blender内の3DシーンをOpenUSDベースのシミュレーション資産へ変換するエージェント型ワークフローを紹介しました。意味ラベル、物理属性、センサー、構成を専門エージェントが補い、視覚的な事前確認と検証ゲートを通してからSimReadyとして扱います。</li>
+<li><strong>なぜ重要か:</strong> 見た目が似た3Dモデルでも、衝突、質量、材質、センサー配置が欠ければ安全評価には使えません。自動変換後に機械検証と人の確認を残す設計が、シミュレーションの信頼性を高めます。</li>
+<li><strong>ぬし・爬虫類への使い道:</strong> ケージ、ライト、水皿、隠れ家、立入禁止領域をデジタルツイン化するとき、見た目だけでなく温度源、接触禁止、カメラ視野を必須属性として検証できます。</li>
+<li><strong>リンク:</strong> <a href="https://developer.nvidia.com/blog/how-to-use-ai-agents-to-prepare-3d-scenes-for-simulation/">https://developer.nvidia.com/blog/how-to-use-ai-agents-to-prepare-3d-scenes-for-simulation/</a></li>
+</ul>
+</section>
+<section class="card"><h2>2. NVIDIA: Jetson上のエッジエージェント推論をベンチマーク</h2>
+<ul>
+<li><strong>概要:</strong> NVIDIAはTensorRT Edge-LLMを使い、Jetson AGX Thor上でMLPerf Edge Agentic Benchmarkを実行し、最適化前と比べて6.4倍の高速化を報告しました。物理世界のエージェントで、知覚・推論・行動を端末側へ寄せるための性能評価です。</li>
+<li><strong>なぜ重要か:</strong> ロボットではクラウド往復の遅延や通信断が安全性へ直結します。一方、速度だけでなく、精度、消費電力、温度、最悪遅延を同じ条件で測る必要があります。</li>
+<li><strong>ぬし・爬虫類への使い道:</strong> カメラ映像や家庭内識別子を外へ出さず、ローカルで観察候補を作る構成の参考になります。まず通知候補までに限定し、制御は独立した安全層と承認を通します。</li>
+<li><strong>リンク:</strong> <a href="https://developer.nvidia.com/blog/tensorrt-edge-llm-completes-the-mlperf-edge-agentic-benchmark-6-4x-faster-on-jetson-agx-thor/">https://developer.nvidia.com/blog/tensorrt-edge-llm-completes-the-mlperf-edge-agentic-benchmark-6-4x-faster-on-jetson-agx-thor/</a></li>
+</ul>
+</section>
+<section class="card"><h2>3. Boston Dynamics: ドメインランダム化でAtlasの実機差を吸収</h2>
+<ul>
+<li><strong>概要:</strong> Boston DynamicsはAtlasの産業作業学習で、冷蔵庫の形状、重量、摩擦、モーター特性などをシミュレーション上で揺らし、実機差へ耐える方策を訓練しています。現場では本体感覚も使い、実機試験から再びシミュレーションへ戻す反復を行います。</li>
+<li><strong>なぜ重要か:</strong> 一つのきれいな仮想環境で成功しても、現実の摩擦、配置、負荷の差で失敗します。条件分布を広げ、実機で見つかった差を評価へ戻す閉ループが重要です。</li>
+<li><strong>ぬし・爬虫類への使い道:</strong> ケージ監視なら照明、反射、カメラずれ、汚れ、個体の隠れ方を揺らし、壊れやすい条件を先に見つけられます。生体近くの物理作業は、こうした評価後も人の監視下に限定します。</li>
+<li><strong>リンク:</strong> <a href="https://bostondynamics.com/blog/training-a-humanoid-robot-for-hard-work/">https://bostondynamics.com/blog/training-a-humanoid-robot-for-hard-work/</a></li>
+</ul>
+</section>
+<section class="note"><h2>ユグ的に今日いちばん気になるロボット技術</h2>
+<p>今日いちばん気になるのは、<strong>見た目の3Dモデルを、物理属性・センサー・禁止領域まで検証できるSimReady資産へ変えること</strong>です。爬虫類の近くでは、ロボットを賢くする前に「どこを見て、どこへ入らず、何が欠けたら止まるか」を環境側へ書き込みたいです。</p>
+</section>
+  </main>
+  <footer>Generated by ユグ 🦎</footer>
+</body>
+</html>
