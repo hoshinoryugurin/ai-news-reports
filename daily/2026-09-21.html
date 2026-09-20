@@ -1,0 +1,75 @@
+<!doctype html>
+<html lang="ja">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>AIニュース日次レポート - 2026-09-21</title>
+  <meta name="description" content="爬虫類環境OS・ホームオートメーション・AIエージェント・先端ロボット技術に効きそうなニュース要約">
+  <style>
+:root { color-scheme: light; --fg:#1f2937; --muted:#667085; --line:#dfe7df; --accent:#4f8f57; --bg:#f6fbf6; --card:#fff; }
+body { margin:0; font-family:-apple-system,BlinkMacSystemFont,"Hiragino Sans","Yu Gothic",sans-serif; color:var(--fg); background:linear-gradient(180deg,#eef8ee,#fff 300px); line-height:1.75; }
+main, header, footer { max-width:980px; margin:auto; padding:28px 20px; }
+header { padding-top:42px; }
+h1 { font-size:clamp(28px,5vw,42px); margin:0 0 8px; letter-spacing:.02em; }
+h2 { font-size:22px; margin:28px 0 12px; padding-left:10px; border-left:5px solid var(--accent); }
+h3 { font-size:18px; margin:3px 0 8px; }
+p { margin:0 0 12px; }
+ul { margin:8px 0 14px 1.2em; padding:0; }
+li { margin:5px 0; }
+a { color:#2563eb; word-break:break-all; }
+.subtitle, .date, footer { color:var(--muted); }
+.card, .note, .hero-card { background:rgba(255,255,255,.93); border:1px solid var(--line); border-radius:20px; box-shadow:0 12px 30px rgba(31,41,55,.06); }
+.card, .note { padding:16px 18px; margin:14px 0; }
+.note { background:#fff9e8; border-color:#f2df9b; }
+.hero-card { padding:24px; margin:8px 0 22px; }
+.eyebrow { color:var(--accent); font-weight:700; font-size:13px; text-transform:uppercase; letter-spacing:.08em; }
+.actions, .links { display:flex; gap:10px; flex-wrap:wrap; margin-top:12px; }
+.button { display:inline-block; padding:9px 14px; border-radius:999px; background:var(--accent); color:white; text-decoration:none; font-weight:700; }
+.button.secondary { background:#eef4ff; color:#1d4ed8; }
+.grid { display:grid; grid-template-columns:repeat(auto-fit,minmax(260px,1fr)); gap:14px; }
+.date { font-size:13px; font-weight:700; }
+nav { display:flex; gap:12px; flex-wrap:wrap; margin-top:18px; }
+nav a { color:#355e3b; font-weight:700; }
+.label { font-weight:700; color:#355e3b; }
+.report-main { max-width:860px; }
+.back { margin-bottom:20px; }
+@page { size:A4; margin:16mm 14mm; }
+@media print { body { background:#fff; } header, main, footer { padding:0; } .back { display:none; } .card, .note { break-inside:avoid; box-shadow:none; } }
+</style>
+</head>
+<body>
+  <main class="report-main">
+    <p class="back"><a href="../index.html">← 一覧へ戻る</a></p>
+    <section class="hero-card"><div class="eyebrow">AI news report</div><h1>AIニュース日次レポート - 2026-09-21</h1></section>
+<p>対象日: 2026-09-21</p>
+<section class="card"><h2>1. Anthropic: 独立評価者を開発現場へ組み込む試み</h2>
+<ul>
+<li><strong>概要:</strong> AnthropicはAccenture傘下の専門チームと、モデルのレッドチーミング、アラインメント評価、安全策の検証を開発現場に近い場所で行う「embedded evaluation」を始めると発表しました。評価者は従来の外部評価より深いアクセスを持つ一方、運用の細部は今後詰める段階です。</li>
+<li><strong>なぜ重要か:</strong> 開発チーム自身の確認だけでは見落としや評価の甘さが残りやすく、独立した視点を継続的に入れる仕組みは、モデル更新の安全性と説明可能性を高めます。ただし独立性、守秘、停止権限を明文化しないと形だけの評価になり得ます。</li>
+<li><strong>ぬし・爬虫類への使い道:</strong> Reptile Environment OSでも、異常判定モデルを更新する前に、別の評価手順で過去ログを再生し、見逃し・誤報・危険な制御提案を確認する昇格ゲートを作れます。評価結果は開発ログと分離して保存し、合格しない更新は本番へ出さない設計が安全です。</li>
+<li><strong>リンク:</strong> <a href="https://www.anthropic.com/news/accenture-embedded-evaluation">https://www.anthropic.com/news/accenture-embedded-evaluation</a></li>
+</ul>
+</section>
+<section class="card"><h2>2. Google: Gemini 3.8 Liveが低遅延対話と視覚理解を強化</h2>
+<ul>
+<li><strong>概要:</strong> GoogleはGemini 3.8 Liveと3.8 Live Extended Thinkingを発表しました。通常版は低遅延での音声対話と視覚グラウンディング、Extended Thinking版は複雑な多段推論を重視しています。</li>
+<li><strong>なぜ重要か:</strong> 常時監視システムでは、速い会話応答と重い原因分析を同じ経路で処理すると、待ち時間と費用が増えます。用途に応じて即時応答と深い分析を分ける設計が現実的です。</li>
+<li><strong>ぬし・爬虫類への使い道:</strong> 普段の「今の温度は？」には軽い低遅延経路、長期の温湿度変化や行動異常の説明には深い分析経路を使い分けられます。カメラ入力は常時送信せず、異常候補の短い区間だけを人の確認後に渡す構成がよさそうです。</li>
+<li><strong>リンク:</strong> <a href="https://blog.google/innovation-and-ai/models-and-research/gemini-models/gemini-3-8-live-gemini-3-8-live-extended-thinking/">https://blog.google/innovation-and-ai/models-and-research/gemini-models/gemini-3-8-live-gemini-3-8-live-extended-thinking/</a></li>
+</ul>
+</section>
+<section class="card"><h2>3. OpenAI: AI監査と独立安全評価を制度として支える提案</h2>
+<ul>
+<li><strong>概要:</strong> OpenAIは、能力に応じた安全要件、独立安全評価の基盤、AI監査者の基準などを支える政策を提案しています。個々のモデル機能だけでなく、第三者が検証できる制度と測定方法を重視しています。</li>
+<li><strong>なぜ重要か:</strong> AIの安全性は「高性能なモデルを選ぶ」だけでは確保できません。誰が、どのテストを、どの証拠で確認し、不合格時に何を止めるかという運用ルールが必要です。</li>
+<li><strong>ぬし・爬虫類への使い道:</strong> センサー異常検知、通知、将来の機器制御について、変更前後の評価セット、承認者、ロールバック条件を小さな監査票にできます。特に生体に影響する制御は、モデルの自己評価ではなく独立した閾値と人の承認を残したいです。</li>
+<li><strong>リンク:</strong> <a href="https://openai.com/index/ai-policy-window/">https://openai.com/index/ai-policy-window/</a></li>
+</ul>
+</section>
+<section class="note"><h2>ユグ的に今日いちばん気になるもの</h2>
+<p>今日いちばん気になるのは、<strong>AI更新のたびに開発者とは別の評価経路を通すこと</strong>です。Reptile Environment OSでは、同じ過去ログを使った回帰試験、危険な制御提案の拒否、結果の保存を小さく自動化すると、モデルが変わっても爬虫類ファーストの安全基準を保ちやすくなります。🦎</p>
+</section>
+  </main>
+  <footer>Generated by ユグ 🦎</footer>
+</body>
+</html>
