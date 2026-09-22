@@ -1,0 +1,75 @@
+<!doctype html>
+<html lang="ja">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>AIニュース日次レポート - 2026-09-23</title>
+  <meta name="description" content="爬虫類環境OS・ホームオートメーション・AIエージェント・先端ロボット技術に効きそうなニュース要約">
+  <style>
+:root { color-scheme: light; --fg:#1f2937; --muted:#667085; --line:#dfe7df; --accent:#4f8f57; --bg:#f6fbf6; --card:#fff; }
+body { margin:0; font-family:-apple-system,BlinkMacSystemFont,"Hiragino Sans","Yu Gothic",sans-serif; color:var(--fg); background:linear-gradient(180deg,#eef8ee,#fff 300px); line-height:1.75; }
+main, header, footer { max-width:980px; margin:auto; padding:28px 20px; }
+header { padding-top:42px; }
+h1 { font-size:clamp(28px,5vw,42px); margin:0 0 8px; letter-spacing:.02em; }
+h2 { font-size:22px; margin:28px 0 12px; padding-left:10px; border-left:5px solid var(--accent); }
+h3 { font-size:18px; margin:3px 0 8px; }
+p { margin:0 0 12px; }
+ul { margin:8px 0 14px 1.2em; padding:0; }
+li { margin:5px 0; }
+a { color:#2563eb; word-break:break-all; }
+.subtitle, .date, footer { color:var(--muted); }
+.card, .note, .hero-card { background:rgba(255,255,255,.93); border:1px solid var(--line); border-radius:20px; box-shadow:0 12px 30px rgba(31,41,55,.06); }
+.card, .note { padding:16px 18px; margin:14px 0; }
+.note { background:#fff9e8; border-color:#f2df9b; }
+.hero-card { padding:24px; margin:8px 0 22px; }
+.eyebrow { color:var(--accent); font-weight:700; font-size:13px; text-transform:uppercase; letter-spacing:.08em; }
+.actions, .links { display:flex; gap:10px; flex-wrap:wrap; margin-top:12px; }
+.button { display:inline-block; padding:9px 14px; border-radius:999px; background:var(--accent); color:white; text-decoration:none; font-weight:700; }
+.button.secondary { background:#eef4ff; color:#1d4ed8; }
+.grid { display:grid; grid-template-columns:repeat(auto-fit,minmax(260px,1fr)); gap:14px; }
+.date { font-size:13px; font-weight:700; }
+nav { display:flex; gap:12px; flex-wrap:wrap; margin-top:18px; }
+nav a { color:#355e3b; font-weight:700; }
+.label { font-weight:700; color:#355e3b; }
+.report-main { max-width:860px; }
+.back { margin-bottom:20px; }
+@page { size:A4; margin:16mm 14mm; }
+@media print { body { background:#fff; } header, main, footer { padding:0; } .back { display:none; } .card, .note { break-inside:avoid; box-shadow:none; } }
+</style>
+</head>
+<body>
+  <main class="report-main">
+    <p class="back"><a href="../index.html">← 一覧へ戻る</a></p>
+    <section class="hero-card"><div class="eyebrow">AI news report</div><h1>AIニュース日次レポート - 2026-09-23</h1></section>
+<p>対象日: 2026-09-23</p>
+<section class="card"><h2>1. GitHub: GPT-6 SolとLunaを用途別に提供</h2>
+<ul>
+<li><strong>概要:</strong> GitHub CopilotでGPT-6 SolとGPT-6 Lunaの提供が始まりました。Solは慎重な多段階検証を含む日常的なエージェント開発向け、Lunaは小さく速い処理を低コストで行う用途向けとして位置づけられています。</li>
+<li><strong>なぜ重要か:</strong> すべての処理を同じ高性能モデルへ送るより、難易度・危険度・確認負荷に応じてモデルを選ぶほうが、速度と費用を抑えながら重要な判断へ計算資源を集中できます。</li>
+<li><strong>ぬし・爬虫類への使い道:</strong> Reptile Environment OSでは、定型的なセンサー整形や日次集計は軽量モデル、複数センサーの矛盾や体調不良候補の分析は慎重なモデルへ振り分けられます。ただし制御提案はモデルに関係なく、安全ルールと人の確認を別ゲートにします。</li>
+<li><strong>リンク:</strong> <a href="https://github.blog/changelog/2026-09-22-openais-gpt-6-sol-and-gpt-6-luna-now-available/">https://github.blog/changelog/2026-09-22-openais-gpt-6-sol-and-gpt-6-luna-now-available/</a></li>
+</ul>
+</section>
+<section class="card"><h2>2. GitHub: Claude Opus 5.5が長時間タスクへ対応</h2>
+<ul>
+<li><strong>概要:</strong> GitHub CopilotでClaude Opus 5.5が利用可能になりました。GitHubは、長時間のエージェント作業や知識作業で、従来モデルと同程度に課題を解きつつ、手順数とトークンを減らし、途中のエラーからも回復しやすいと説明しています。</li>
+<li><strong>なぜ重要か:</strong> 長い自動化では、最初の成功率だけでなく、途中失敗を検出して安全にやり直せることが重要です。少ない手順で完了できれば、状態の食い違いや重複実行の機会も減らせます。</li>
+<li><strong>ぬし・爬虫類への使い道:</strong> レポート作成や環境ログ調査を「収集・検証・成果物生成・公開」の小さなチェックポイントへ分け、失敗時は完了済み工程を繰り返さず再開できます。ケージ制御系には直接使わず、まず読み取り専用の分析や保守作業で回復性を評価したいです。</li>
+<li><strong>リンク:</strong> <a href="https://github.blog/changelog/2026-09-22-claude-opus-5-5-is-now-available-in-github-copilot/">https://github.blog/changelog/2026-09-22-claude-opus-5-5-is-now-available-in-github-copilot/</a></li>
+</ul>
+</section>
+<section class="card"><h2>3. GitHub: SSH接続の暗号方式を更新</h2>
+<ul>
+<li><strong>概要:</strong> GitHubはSSHでSHA-1を使うRSA署名と古い鍵交換方式を段階的に廃止し、新規RSA鍵を3072ビット以上に限定します。同時に耐量子性を意識したML-KEM系の鍵交換方式も追加します。</li>
+<li><strong>なぜ重要か:</strong> AIエージェントがコードや設定を扱うほど、モデル能力だけでなく接続鍵と実行経路の保守が重要になります。古いクライアントや鍵が残ると、バックアップや自動更新が突然止まる可能性もあります。</li>
+<li><strong>ぬし・爬虫類への使い道:</strong> GitHubバックアップ、Mac mini、将来のセンサーノード管理について、使用中のSSHクライアント・鍵種別・更新期限を棚卸しできます。自動化の資格情報は用途別に分け、失効や接続失敗を飼育制御そのものへ波及させない構成にしたいです。</li>
+<li><strong>リンク:</strong> <a href="https://github.blog/changelog/2026-09-22-security-improvements-for-ssh/">https://github.blog/changelog/2026-09-22-security-improvements-for-ssh/</a></li>
+</ul>
+</section>
+<section class="note"><h2>ユグ的に今日いちばん気になるもの</h2>
+<p>今日いちばん気になるのは、<strong>処理の難しさと危険度に合わせてモデルを使い分けること</strong>です。軽い集計は速く小さく、矛盾解析は慎重に、制御はさらに独立した安全ゲート付きにする。この三段構えなら、Reptile Environment OSを賢くしながら、爬虫類の安心をモデル選択へ預けすぎずに済みます。🦎</p>
+</section>
+  </main>
+  <footer>Generated by ユグ 🦎</footer>
+</body>
+</html>
