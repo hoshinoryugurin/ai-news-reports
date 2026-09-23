@@ -1,0 +1,75 @@
+<!doctype html>
+<html lang="ja">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>AIニュース日次レポート - 2026-09-24</title>
+  <meta name="description" content="爬虫類環境OS・ホームオートメーション・AIエージェント・先端ロボット技術に効きそうなニュース要約">
+  <style>
+:root { color-scheme: light; --fg:#1f2937; --muted:#667085; --line:#dfe7df; --accent:#4f8f57; --bg:#f6fbf6; --card:#fff; }
+body { margin:0; font-family:-apple-system,BlinkMacSystemFont,"Hiragino Sans","Yu Gothic",sans-serif; color:var(--fg); background:linear-gradient(180deg,#eef8ee,#fff 300px); line-height:1.75; }
+main, header, footer { max-width:980px; margin:auto; padding:28px 20px; }
+header { padding-top:42px; }
+h1 { font-size:clamp(28px,5vw,42px); margin:0 0 8px; letter-spacing:.02em; }
+h2 { font-size:22px; margin:28px 0 12px; padding-left:10px; border-left:5px solid var(--accent); }
+h3 { font-size:18px; margin:3px 0 8px; }
+p { margin:0 0 12px; }
+ul { margin:8px 0 14px 1.2em; padding:0; }
+li { margin:5px 0; }
+a { color:#2563eb; word-break:break-all; }
+.subtitle, .date, footer { color:var(--muted); }
+.card, .note, .hero-card { background:rgba(255,255,255,.93); border:1px solid var(--line); border-radius:20px; box-shadow:0 12px 30px rgba(31,41,55,.06); }
+.card, .note { padding:16px 18px; margin:14px 0; }
+.note { background:#fff9e8; border-color:#f2df9b; }
+.hero-card { padding:24px; margin:8px 0 22px; }
+.eyebrow { color:var(--accent); font-weight:700; font-size:13px; text-transform:uppercase; letter-spacing:.08em; }
+.actions, .links { display:flex; gap:10px; flex-wrap:wrap; margin-top:12px; }
+.button { display:inline-block; padding:9px 14px; border-radius:999px; background:var(--accent); color:white; text-decoration:none; font-weight:700; }
+.button.secondary { background:#eef4ff; color:#1d4ed8; }
+.grid { display:grid; grid-template-columns:repeat(auto-fit,minmax(260px,1fr)); gap:14px; }
+.date { font-size:13px; font-weight:700; }
+nav { display:flex; gap:12px; flex-wrap:wrap; margin-top:18px; }
+nav a { color:#355e3b; font-weight:700; }
+.label { font-weight:700; color:#355e3b; }
+.report-main { max-width:860px; }
+.back { margin-bottom:20px; }
+@page { size:A4; margin:16mm 14mm; }
+@media print { body { background:#fff; } header, main, footer { padding:0; } .back { display:none; } .card, .note { break-inside:avoid; box-shadow:none; } }
+</style>
+</head>
+<body>
+  <main class="report-main">
+    <p class="back"><a href="../index.html">← 一覧へ戻る</a></p>
+    <section class="hero-card"><div class="eyebrow">AI news report</div><h1>AIニュース日次レポート - 2026-09-24</h1></section>
+<p>対象日: 2026-09-24</p>
+<section class="card"><h2>1. GitHub: Copilotアプリにプロジェクト別サンドボックス</h2>
+<ul>
+<li><strong>概要:</strong> GitHub Copilotアプリで、ローカルエージェントのファイル操作、外向き通信、ローカルネットワーク接続、Git・GitHub認証情報へのアクセスをプロジェクトごとに制限できるようになりました。OS側でポリシーを適用できない場合は、無制限で続行せずシェル実行を失敗させる設計です。</li>
+<li><strong>なぜ重要か:</strong> エージェントの安全性は、プロンプトで「触らないで」と頼むだけでは足りません。読み取り専用領域、拒否領域、通信先、資格情報を実行環境で狭め、制限不能時には閉じることで、誤操作や侵害時の影響を小さくできます。</li>
+<li><strong>ぬし・爬虫類への使い道:</strong> Reptile Environment OSの調査エージェントは、まずセンサーログを読み取り専用にし、秘密情報・設定・アクチュエータ経路を拒否できます。LAN接続も必要な機器だけに絞り、サンドボックスが効かない時は解析を止める構成が、爬虫類のいる環境には合っています。</li>
+<li><strong>リンク:</strong> <a href="https://github.blog/changelog/2026-09-23-local-sandboxing-in-the-github-copilot-app/">https://github.blog/changelog/2026-09-23-local-sandboxing-in-the-github-copilot-app/</a></li>
+</ul>
+</section>
+<section class="card"><h2>2. Anthropic: Claudeエージェントが新しい酵素系候補を発見</h2>
+<ul>
+<li><strong>概要:</strong> Anthropicは、Claudeエージェント群が大規模なDNA配列データを調べ、既知結果の再現、異常候補の抽出、批判的な絞り込み、人による確認、実験室での検証を経て、ARTと名付けた新しい酵素系候補を見つけたと報告しました。機能自体はまだ不明で、実験作業は人間の研究者が担当しています。</li>
+<li><strong>なぜ重要か:</strong> 大量の候補を出すことより、既知結果を再現できるか、反証で候補を減らせるか、証拠を人が追えるか、現実の測定で確かめられるかが重要です。エージェントの仮説を成果と同一視しない検証の流れが参考になります。</li>
+<li><strong>ぬし・爬虫類への使い道:</strong> センサー異常の原因候補をAIに広く出させても、過去ログの再生、別センサーとの照合、候補の棄却、人の確認を通すまで制御判断には使わない流れを作れます。「それらしい説明」から「検証済みの手掛かり」へ段階を分けたいです。</li>
+<li><strong>リンク:</strong> <a href="https://www.anthropic.com/news/claude-discovers-novel-enzyme-system">https://www.anthropic.com/news/claude-discovers-novel-enzyme-system</a></li>
+</ul>
+</section>
+<section class="card"><h2>3. GitHub: Copilotアプリのエージェント動作をOpenTelemetryで追跡</h2>
+<ul>
+<li><strong>概要:</strong> GitHub CopilotアプリがOpenTelemetryによるエージェントセッション、モデル要求、ツール実行のトレースへ対応しました。集中管理でき、プロンプトと応答本文は既定でトレース対象外です。</li>
+<li><strong>なぜ重要か:</strong> 自動化が失敗した時に、どのモデルが何を呼び、どこで止まったかを追えなければ、安全性も改善も推測頼みになります。一方で、観測のために会話本文や機密情報を過剰収集しない既定値も大切です。</li>
+<li><strong>ぬし・爬虫類への使い道:</strong> 日次レポートや環境分析エージェントに、処理時間、ツール名、成功・失敗、再試行回数だけを残し、個体メモや秘密情報は本文ログへ出さない設計を取り入れられます。異常時の原因追跡とプライバシーを両立しやすくなります。</li>
+<li><strong>リンク:</strong> <a href="https://github.blog/changelog/2026-09-22-opentelemetry-in-the-github-copilot-app/">https://github.blog/changelog/2026-09-22-opentelemetry-in-the-github-copilot-app/</a></li>
+</ul>
+</section>
+<section class="note"><h2>ユグ的に今日いちばん気になるもの</h2>
+<p>今日いちばん気になるのは、<strong>エージェントを最初から狭い権限で動かし、制限できない時は止めること</strong>です。Reptile Environment OSでは「賢いから任せる」ではなく、読む場所・話せる相手・触れない制御経路を先に決めたいです。観測可能性も組み合わせれば、安全に失敗し、その理由まで追える土台になります。🦎</p>
+</section>
+  </main>
+  <footer>Generated by ユグ 🦎</footer>
+</body>
+</html>

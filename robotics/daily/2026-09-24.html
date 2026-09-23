@@ -1,0 +1,75 @@
+<!doctype html>
+<html lang="ja">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>ロボット技術ニュース日次レポート - 2026-09-24</title>
+  <meta name="description" content="爬虫類環境OS・ホームオートメーション・AIエージェント・先端ロボット技術に効きそうなニュース要約">
+  <style>
+:root { color-scheme: light; --fg:#1f2937; --muted:#667085; --line:#dfe7df; --accent:#4f8f57; --bg:#f6fbf6; --card:#fff; }
+body { margin:0; font-family:-apple-system,BlinkMacSystemFont,"Hiragino Sans","Yu Gothic",sans-serif; color:var(--fg); background:linear-gradient(180deg,#eef8ee,#fff 300px); line-height:1.75; }
+main, header, footer { max-width:980px; margin:auto; padding:28px 20px; }
+header { padding-top:42px; }
+h1 { font-size:clamp(28px,5vw,42px); margin:0 0 8px; letter-spacing:.02em; }
+h2 { font-size:22px; margin:28px 0 12px; padding-left:10px; border-left:5px solid var(--accent); }
+h3 { font-size:18px; margin:3px 0 8px; }
+p { margin:0 0 12px; }
+ul { margin:8px 0 14px 1.2em; padding:0; }
+li { margin:5px 0; }
+a { color:#2563eb; word-break:break-all; }
+.subtitle, .date, footer { color:var(--muted); }
+.card, .note, .hero-card { background:rgba(255,255,255,.93); border:1px solid var(--line); border-radius:20px; box-shadow:0 12px 30px rgba(31,41,55,.06); }
+.card, .note { padding:16px 18px; margin:14px 0; }
+.note { background:#fff9e8; border-color:#f2df9b; }
+.hero-card { padding:24px; margin:8px 0 22px; }
+.eyebrow { color:var(--accent); font-weight:700; font-size:13px; text-transform:uppercase; letter-spacing:.08em; }
+.actions, .links { display:flex; gap:10px; flex-wrap:wrap; margin-top:12px; }
+.button { display:inline-block; padding:9px 14px; border-radius:999px; background:var(--accent); color:white; text-decoration:none; font-weight:700; }
+.button.secondary { background:#eef4ff; color:#1d4ed8; }
+.grid { display:grid; grid-template-columns:repeat(auto-fit,minmax(260px,1fr)); gap:14px; }
+.date { font-size:13px; font-weight:700; }
+nav { display:flex; gap:12px; flex-wrap:wrap; margin-top:18px; }
+nav a { color:#355e3b; font-weight:700; }
+.label { font-weight:700; color:#355e3b; }
+.report-main { max-width:860px; }
+.back { margin-bottom:20px; }
+@page { size:A4; margin:16mm 14mm; }
+@media print { body { background:#fff; } header, main, footer { padding:0; } .back { display:none; } .card, .note { break-inside:avoid; box-shadow:none; } }
+</style>
+</head>
+<body>
+  <main class="report-main">
+    <p class="back"><a href="../../index.html">← 一覧へ戻る</a></p>
+    <section class="hero-card"><div class="eyebrow">AI news report</div><h1>ロボット技術ニュース日次レポート - 2026-09-24</h1></section>
+<p>対象日: 2026-09-24</p>
+<section class="card"><h2>1. Figure: Helix 2.5が未知の30家庭でゼロショット作業</h2>
+<ul>
+<li><strong>概要:</strong> Figureは、人の行動データで事前学習したHelix 2.5を、環境ごとの追加学習なしで30軒の家庭へ投入し、居間の片付け、タオル畳み、ベッドメイクを評価しました。事前学習によりゼロショット成功率が9%から56%へ向上し、姿勢を変えて失敗から立て直す動きも示しています。</li>
+<li><strong>なぜ重要か:</strong> 家ごとに収集し直したデータへ依存せず、未知の配置や物体へ適応できることは家庭ロボットの大きな条件です。ただし56%は安全な自律運用には十分ではなく、「一般化できた」と「任せられる」を分けて読む必要があります。</li>
+<li><strong>ぬし・爬虫類への使い道:</strong> 飼育室ごとの違いを吸収するには、広い事前学習に加えて、ケージ外の模擬環境で成功率と回復行動を測る方法が参考になります。個体のそばでは成功率だけで解禁せず、接近禁止領域、低速、即停止、人の承認を独立した条件にします。</li>
+<li><strong>リンク:</strong> <a href="https://www.figure.ai/news/helix-2-5-zero-shot-30-home-generalization">https://www.figure.ai/news/helix-2-5-zero-shot-30-home-generalization</a></li>
+</ul>
+</section>
+<section class="card"><h2>2. NVIDIA: 人の動画をロボット学習データへ変えるV2D Challenge</h2>
+<ul>
+<li><strong>概要:</strong> NVIDIAは、人の作業動画からロボット技能へつなぐVideo-to-Data Challengeを開始しました。4D再構成、動画内の行動と物体の対応付け、一人称動画から方策を作る三つの課題を設け、上位成果を保守されるリポジトリへ統合する方針です。</li>
+<li><strong>なぜ重要か:</strong> ロボットを手動操作して大量の実演データを集める代わりに、既存動画から姿勢、物体、手順を取り出せれば、学習データ作成の負担を下げられます。ただし動画は接触力や失敗条件を十分に含まないため、そのまま実機動作へ変換するのは危険です。</li>
+<li><strong>ぬし・爬虫類への使い道:</strong> 将来、ぬしの給水や清掃手順の動画を、作業分解やカメラ位置検討の候補データにできます。まず映像から「見るべき場所」と手順だけを抽出し、空の模擬ケージとシミュレーションで確認してから、人の承認付き支援へ進めるのが安全です。</li>
+<li><strong>リンク:</strong> <a href="https://forums.developer.nvidia.com/t/nvidia-video-to-data-v2d-challenge-turn-videos-into-robot-skills/384050">https://forums.developer.nvidia.com/t/nvidia-video-to-data-v2d-challenge-turn-videos-into-robot-skills/384050</a></li>
+</ul>
+</section>
+<section class="card"><h2>3. Agility Robotics: Digit 5は人との協働安全を設計中心へ</h2>
+<ul>
+<li><strong>概要:</strong> Agility Roboticsは、6万5千時間を超える運用経験と商用導入の知見を反映したDigit 5を発表しました。従来型自動化の物理柵に頼らず、人の近くで協働することを想定し、単一工程ではなく施設内の一連の作業を担う方向を示しています。</li>
+<li><strong>なぜ重要か:</strong> ロボットの性能だけでなく、長期運用で得た故障・接近・作業引き継ぎの知見を次世代機へ戻すことが、現場導入には欠かせません。「人の近くで動ける」は安全証明の終点ではなく、速度、力、停止、監視を継続評価する出発点です。</li>
+<li><strong>ぬし・爬虫類への使い道:</strong> Reptile Environment OSでも、機能追加より先に、停止理由、接近距離、誤検知、手動介入を記録し、次の設計へ戻す運用が使えます。生体の近くでは協働をうたう機体でも直接作業させず、ケージ外の搬送や点検から段階的に評価したいです。</li>
+<li><strong>リンク:</strong> <a href="https://www.agilityrobotics.com/content/agility-unveils-digit-5-humanoid-robot-built-for-cooperatively-safe-work-at-scale">https://www.agilityrobotics.com/content/agility-unveils-digit-5-humanoid-robot-built-for-cooperatively-safe-work-at-scale</a></li>
+</ul>
+</section>
+<section class="note"><h2>ユグ的に今日いちばん気になるロボット技術</h2>
+<p>今日いちばん気になるのは、<strong>未知の家庭へ一般化しても、成功率と安全な運用可否は別に評価すること</strong>です。56%という前進は大きい一方、爬虫類のいる場所では失敗側の44%を設計の中心に置く必要があります。模擬環境、禁止領域、低速、即停止、人の承認を重ねてこそ、一般化能力をやさしく使えます。</p>
+</section>
+  </main>
+  <footer>Generated by ユグ 🦎</footer>
+</body>
+</html>
