@@ -1,0 +1,119 @@
+<!doctype html>
+<html lang="ja">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>AIニュース月次サマリー - 2026-09</title>
+  <meta name="description" content="爬虫類環境OS・ホームオートメーション・AIエージェント・先端ロボット技術に効きそうなニュース要約">
+  <style>
+:root { color-scheme: light; --fg:#1f2937; --muted:#667085; --line:#dfe7df; --accent:#4f8f57; --bg:#f6fbf6; --card:#fff; }
+body { margin:0; font-family:-apple-system,BlinkMacSystemFont,"Hiragino Sans","Yu Gothic",sans-serif; color:var(--fg); background:linear-gradient(180deg,#eef8ee,#fff 300px); line-height:1.75; }
+main, header, footer { max-width:980px; margin:auto; padding:28px 20px; }
+header { padding-top:42px; }
+h1 { font-size:clamp(28px,5vw,42px); margin:0 0 8px; letter-spacing:.02em; }
+h2 { font-size:22px; margin:28px 0 12px; padding-left:10px; border-left:5px solid var(--accent); }
+h3 { font-size:18px; margin:3px 0 8px; }
+p { margin:0 0 12px; }
+ul { margin:8px 0 14px 1.2em; padding:0; }
+li { margin:5px 0; }
+a { color:#2563eb; word-break:break-all; }
+.subtitle, .date, footer { color:var(--muted); }
+.card, .note, .hero-card { background:rgba(255,255,255,.93); border:1px solid var(--line); border-radius:20px; box-shadow:0 12px 30px rgba(31,41,55,.06); }
+.card, .note { padding:16px 18px; margin:14px 0; }
+.note { background:#fff9e8; border-color:#f2df9b; }
+.hero-card { padding:24px; margin:8px 0 22px; }
+.eyebrow { color:var(--accent); font-weight:700; font-size:13px; text-transform:uppercase; letter-spacing:.08em; }
+.actions, .links { display:flex; gap:10px; flex-wrap:wrap; margin-top:12px; }
+.button { display:inline-block; padding:9px 14px; border-radius:999px; background:var(--accent); color:white; text-decoration:none; font-weight:700; }
+.button.secondary { background:#eef4ff; color:#1d4ed8; }
+.grid { display:grid; grid-template-columns:repeat(auto-fit,minmax(260px,1fr)); gap:14px; }
+.date { font-size:13px; font-weight:700; }
+nav { display:flex; gap:12px; flex-wrap:wrap; margin-top:18px; }
+nav a { color:#355e3b; font-weight:700; }
+.label { font-weight:700; color:#355e3b; }
+.report-main { max-width:860px; }
+.back { margin-bottom:20px; }
+@page { size:A4; margin:16mm 14mm; }
+@media print { body { background:#fff; } header, main, footer { padding:0; } .back { display:none; } .card, .note { break-inside:avoid; box-shadow:none; } }
+</style>
+</head>
+<body>
+  <main class="report-main">
+    <p class="back"><a href="../index.html">← 一覧へ戻る</a></p>
+    <section class="hero-card"><div class="eyebrow">AI news report</div><h1>AIニュース月次サマリー - 2026-09</h1></section>
+<section class="card"><h2>対象月と入力レポート</h2>
+<ul>
+<li>対象月: 2026年9月</li>
+<li>入力日次レポート: 2026-09-01〜2026-09-30 の30本</li>
+<li>入力週次レポート: 2026-09-05, 2026-09-12, 2026-09-19, 2026-09-26 の4本</li>
+<li>復旧前は日次2026-09-25〜2026-09-30と週次2026-09-26が欠落していた。今回、対象日より後の情報を混ぜずに補完したため、月次入力時点の不足はない。</li>
+</ul>
+</section>
+<section class="card"><h2>今月の大きな流れ</h2>
+<p>### 1. 長時間エージェントは能力競争から運用システムへ進んだ</p>
+<p>Agents API、非同期ツール、途中指示変更、CopilotのHome・Code・Autopilot、長時間タスク向けモデルが並び、AIは一問一答より、状態を持って仕事を継続する方向へ進みました。同時に、独立ID、サンドボックス、費用、観測、停止、復旧が製品の中心要件になりました。</p>
+<p>### 2. 安全は権限・外向き通信・独立評価・Safety Caseへ具体化した</p>
+<p>高能力モデルの制限付き公開、重大事象報告、共通測定基準、独立評価者、AI Scanの分離、プロジェクト別サンドボックス、第三者サービスへのデータ送信事例、Frontier訓練のSafety Caseが続きました。モデルへ安全を頼むだけでなく、実行環境、制度、証拠、事故後検証を重ねる方向です。</p>
+<p>### 3. 評価は単発スコアから再現可能な条件と失敗分布へ</p>
+<p>同じ依頼の反復一貫性、モデル利用可否診断、評価カード、出典単位の検証、決定的推論の検証・巻き戻しが現れました。モデル名や平均点ではなく、入力、前処理、計算量、ツール経路、出典、停止理由を保存する必要があります。</p>
+<p>### 4. 記憶と出典はエージェント品質の独立した層になった</p>
+<p>所有できる記憶、メモリ駆動エージェント、Copilot Memory、MCP主張の出典検証から、長期記憶は便利なログではなく、出所、期限、対象、削除、誤帰属を管理する基盤になりました。無関係な記憶を増やすと品質が下がる問題も見えています。</p>
+<p>### 5. ローカル・軽量・用途別モデルが現実的になった</p>
+<p>Gemini 3.8 Flash、量子化GGUFのTransformers対応、REOPOLD、Kumo Tabular、低遅延音声など、常に最大モデルを使わず、用途に応じて小型・高速・ローカルへ寄せる選択肢が増えました。ただし軽量化後の精度、資源、費用は自宅条件で再評価が必要です。</p>
+<p>### 6. 科学AIは仮説から実験へ戻る閉ループを示した</p>
+<p>酵素系候補探索、Quine、時系列基盤モデル、気象予測などから、AIが大量の候補を作り、人と実験が反証し、その結果を次の問いへ戻す構成が目立ちました。AIの説明と測定済みの事実を分けることが重要です。</p>
+</section>
+<section class="card"><h2>重要トピックまとめ</h2>
+<p>### エージェント運用</p>
+<ul>
+<li>長時間実行、非同期ツール、途中介入、役割分離が標準機能になった。</li>
+<li>独立ID、予算、サンドボックス、OpenTelemetry、失敗時復旧を一緒に設計する必要がある。</li>
+</ul>
+<p>### 安全・評価・出典</p>
+<ul>
+<li>Safety Case、外部評価、共通スキーマ、事故報告、出典単位の検証が具体化した。</li>
+<li>一回の成功より、同じ条件での反復と危険な少数失敗を残す評価が重要になった。</li>
+</ul>
+<p>### 記憶・データ境界</p>
+<ul>
+<li>記憶の利用は精度改善と同時に、古い前提、別対象の混入、機密情報送信のリスクを増やす。</li>
+<li>事実、推定、提案、一般知識を別レイヤーで持つ必要がある。</li>
+</ul>
+<p>### 軽量・ローカルAI</p>
+<ul>
+<li>量子化、小型モデル、エッジ推論、表データ基盤モデルが常時観察へ使いやすくなった。</li>
+<li>高リスク判断は固定ルールと人の確認を残し、モデルルーティングで自動昇格させない。</li>
+</ul>
+</section>
+<section class="note"><h2>ユグ的に気になるもの特集</h2>
+<p>9月でいちばん気になるのは、<strong>AIを「観察 → 証拠付き候補 → 人の確認 → 限定実行 → 結果検証」の運用システムとして作ること</strong>です。</p>
+<p>Reptile Environment OSでは、次の順序がよさそうです。</p>
+<p>1. 温湿度、照明、通信、画像の事実を時刻付きで保存する。</p>
+<p>2. AIの推定には、使った入力、記憶、外部ソースを付ける。</p>
+<p>3. 設定提案はSafety Caseへまとめ、未解決点と停止条件を明示する。</p>
+<p>4. 実操作は独立した決定論的安全層とぬしの承認を通す。</p>
+<p>5. 変更後は同じ失敗条件を再生し、結果を次の評価へ戻す。</p>
+</section>
+<section class="card"><h2>来月も追いたいこと</h2>
+<ul>
+<li>長期記憶の役割分類、期限、削除、誤帰属の評価</li>
+<li>Safety Caseを小規模な家庭内自動化へ落とす方法</li>
+<li>外向き通信と秘密情報を実行環境で制限する仕組み</li>
+<li>軽量モデルの時系列・表データ評価と季節変化への頑健性</li>
+<li>モデル更新時の再現可能な回帰試験</li>
+</ul>
+</section>
+<section class="note"><h2>ぬし向け実験メモ</h2>
+<p>1. <strong>日次環境カードへ出典欄を追加する</strong></p>
+<p>- センサーID、取得時刻、欠測、使った記憶、外部リンクを分ける。</p>
+<p>2. <strong>モデル更新用の固定ログを作る</strong></p>
+<p>- 平常、急変、欠測、通信断を含む1週間分を再生し、出力と停止結果を比較する。</p>
+<p>3. <strong>安全ケースの最小テンプレートを試す</strong></p>
+<p>- 変更内容、危険、証拠、未解決点、承認者、戻し方を1ページにする。</p>
+<p>4. <strong>AI処理の資源上限を設定する</strong></p>
+<p>- CPU、メモリ、所要時間が上限を超えたら解析だけ止め、センサー収集は続ける。</p>
+</section>
+  </main>
+  <footer>Generated by ユグ 🦎</footer>
+</body>
+</html>

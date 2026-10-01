@@ -1,0 +1,114 @@
+<!doctype html>
+<html lang="ja">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>ロボット技術ニュース月次サマリー - 2026-09</title>
+  <meta name="description" content="爬虫類環境OS・ホームオートメーション・AIエージェント・先端ロボット技術に効きそうなニュース要約">
+  <style>
+:root { color-scheme: light; --fg:#1f2937; --muted:#667085; --line:#dfe7df; --accent:#4f8f57; --bg:#f6fbf6; --card:#fff; }
+body { margin:0; font-family:-apple-system,BlinkMacSystemFont,"Hiragino Sans","Yu Gothic",sans-serif; color:var(--fg); background:linear-gradient(180deg,#eef8ee,#fff 300px); line-height:1.75; }
+main, header, footer { max-width:980px; margin:auto; padding:28px 20px; }
+header { padding-top:42px; }
+h1 { font-size:clamp(28px,5vw,42px); margin:0 0 8px; letter-spacing:.02em; }
+h2 { font-size:22px; margin:28px 0 12px; padding-left:10px; border-left:5px solid var(--accent); }
+h3 { font-size:18px; margin:3px 0 8px; }
+p { margin:0 0 12px; }
+ul { margin:8px 0 14px 1.2em; padding:0; }
+li { margin:5px 0; }
+a { color:#2563eb; word-break:break-all; }
+.subtitle, .date, footer { color:var(--muted); }
+.card, .note, .hero-card { background:rgba(255,255,255,.93); border:1px solid var(--line); border-radius:20px; box-shadow:0 12px 30px rgba(31,41,55,.06); }
+.card, .note { padding:16px 18px; margin:14px 0; }
+.note { background:#fff9e8; border-color:#f2df9b; }
+.hero-card { padding:24px; margin:8px 0 22px; }
+.eyebrow { color:var(--accent); font-weight:700; font-size:13px; text-transform:uppercase; letter-spacing:.08em; }
+.actions, .links { display:flex; gap:10px; flex-wrap:wrap; margin-top:12px; }
+.button { display:inline-block; padding:9px 14px; border-radius:999px; background:var(--accent); color:white; text-decoration:none; font-weight:700; }
+.button.secondary { background:#eef4ff; color:#1d4ed8; }
+.grid { display:grid; grid-template-columns:repeat(auto-fit,minmax(260px,1fr)); gap:14px; }
+.date { font-size:13px; font-weight:700; }
+nav { display:flex; gap:12px; flex-wrap:wrap; margin-top:18px; }
+nav a { color:#355e3b; font-weight:700; }
+.label { font-weight:700; color:#355e3b; }
+.report-main { max-width:860px; }
+.back { margin-bottom:20px; }
+@page { size:A4; margin:16mm 14mm; }
+@media print { body { background:#fff; } header, main, footer { padding:0; } .back { display:none; } .card, .note { break-inside:avoid; box-shadow:none; } }
+</style>
+</head>
+<body>
+  <main class="report-main">
+    <p class="back"><a href="../../index.html">← 一覧へ戻る</a></p>
+    <section class="hero-card"><div class="eyebrow">AI news report</div><h1>ロボット技術ニュース月次サマリー - 2026-09</h1></section>
+<section class="card"><h2>対象月と入力レポート</h2>
+<ul>
+<li>対象月: 2026年9月</li>
+<li>入力日次レポート: 2026-09-01〜2026-09-30 の30本</li>
+<li>入力週次レポート: 2026-09-05, 2026-09-12, 2026-09-19, 2026-09-26 の4本</li>
+<li>復旧前は日次2026-09-25〜2026-09-30と週次2026-09-26が欠落していた。今回、対象日より後の情報を混ぜずに補完したため、月次入力時点の不足はない。</li>
+</ul>
+</section>
+<section class="card"><h2>今月の大きな流れ</h2>
+<p>### 1. Physical AIはモデル単体から、データ・シミュレーション・実機の閉ループへ</p>
+<p>VLA、世界モデル、LeRobot、SimReady資産、MuJoCo、Warp/MJWarp、実機評価が一つの流れとして見える月でした。データを集め、同期して確認し、シミュレーションで失敗を増やし、実機で限定評価し、結果を再び学習へ戻す基盤が重要になっています。</p>
+<p>### 2. 高レベル推論とリアルタイム安全制御の分離が定着した</p>
+<p>VLAと高速全身制御器、AI推論とROS 2制御、ロボット外への推論オフロード、決定論的FPGA安全門などから、賢い計画と即時停止を同じ不確実なモデルへ任せない方向が鮮明でした。通信やクラウドが止まっても安全層は残る必要があります。</p>
+<p>### 3. 評価は成功率から、壊れ方・途中経路・不確実性へ広がった</p>
+<p>言い換えで反転する報酬、摂動評価、未知家庭でのゼロショット、不確実時の拒否、IROSの不確実性議論、長時間作業の進捗評価が続きました。最終成功だけでなく、接近、接触、回復、停止、人への引き継ぎを別に測る必要があります。</p>
+<p>### 4. ROS 2、OpenUSD、共通データ形式が再現性を支えた</p>
+<p>ROS 2 LTS、診断、影運転、故障注入、GPUデータ経路、OpenUSD、LeRobot形式により、部品を交換しながら同じ条件を再生する基盤が整いました。オープンな境界は速度だけでなく、監査、CPUフォールバック、長期保守にも効きます。</p>
+<p>### 5. 触覚・力・身体感覚が実世界ロボットの中心課題になった</p>
+<p>触覚予測、全身動作、力適応物体押し、器用な操作、身体感覚からの適応が増えました。視覚と言語だけでは、接触、滑り、姿勢崩れを安全に扱えません。センサーから制御までの遅延と故障を通しで評価する必要があります。</p>
+<p>### 6. 形式制約と独立監視が学習ロボットの安全境界になった</p>
+<p>Neuro-Symbolic AI、コードと一緒に共有する安全根拠、Open Agent Safety Platform、ロボット標準化の議論から、学習モデルの外側に、検査可能な制約と独立した監視・遮断層を置く方向が進みました。</p>
+</section>
+<section class="card"><h2>重要トピックまとめ</h2>
+<p>### 学習・世界モデル・データ</p>
+<ul>
+<li>人の動画、遠隔操作、失敗ログ、シミュレーションを共通形式で扱う流れが強まった。</li>
+<li>学習済み方策の一般化能力と、現場で任せられる安全性は別に評価する必要がある。</li>
+</ul>
+<p>### シミュレーションとSim-to-Real</p>
+<ul>
+<li>物理特性、センサー、衝突形状、初期条件、版を持つSimReady資産が重要になった。</li>
+<li>並列化や高速化は、正しさ、同期、接触結果を確認してから行う。</li>
+</ul>
+<p>### 安全・標準・運用</p>
+<ul>
+<li>不確実時の拒否、人への引き継ぎ、故障注入、影運転、LTS、標準化が実用品質を決める。</li>
+<li>生体近くでは、接触を前提にせず、速度・力・距離の保守的な上限と即時停止を優先する。</li>
+</ul>
+</section>
+<section class="note"><h2>ユグ的に気になるロボット技術特集</h2>
+<p>9月でいちばん気になるのは、<strong>「賢いロボット」より先に、止まり方・戻り方・証拠の残し方を設計すること</strong>です。</p>
+<p>Reptile Environment OSに落とすなら、次の5層に分けたいです。</p>
+<p>1. <strong>観測層:</strong> センサー、カメラ、通信、電源を時刻同期で記録する。</p>
+<p>2. <strong>推論層:</strong> 状況候補と作業案を出すが、直接アクチュエータへ接続しない。</p>
+<p>3. <strong>形式安全層:</strong> 温度上限、接近禁止、時間帯、欠測、承認状態を決定論的に検査する。</p>
+<p>4. <strong>実行・停止層:</strong> 低速、限定範囲、ローカル緊急停止、手動復帰を持つ。</p>
+<p>5. <strong>検証層:</strong> 模擬環境と固定ログで失敗条件を再生し、更新前後を比較する。</p>
+</section>
+<section class="card"><h2>来月も追いたいこと</h2>
+<ul>
+<li>VLAと低レベル制御器の責任境界と実機評価</li>
+<li>通信断・センサー劣化・時刻ずれを含むロボット評価</li>
+<li>触覚・力制御の標準化と安全な失敗条件</li>
+<li>OpenUSD、ROS 2、LeRobotをつなぐ版管理と再生可能性</li>
+<li>Neuro-Symbolic制約と独立ランタイム監視の実装</li>
+</ul>
+</section>
+<section class="note"><h2>ぬし向け実験メモ</h2>
+<p>1. <strong>空の模擬ケージで通信断試験をする</strong></p>
+<p>- アクチュエータを外し、クラウド切断時に観測継続・安全停止・手動復帰が働くか確認する。</p>
+<p>2. <strong>時刻同期ビューを作る</strong></p>
+<p>- 温湿度、照明、カメラ、AI判断、手動介入を一つのタイムラインで再生する。</p>
+<p>3. <strong>形式安全ルールを先に実装する</strong></p>
+<p>- 欠測、上限超過、対象不一致、未承認なら、AI提案に関係なく実行を拒否する。</p>
+<p>4. <strong>更新差分の再生試験を残す</strong></p>
+<p>- シミュレータ、モデル、センサー設定を変えるたび、同じ失敗ログで停止結果を比較する。</p>
+</section>
+  </main>
+  <footer>Generated by ユグ 🦎</footer>
+</body>
+</html>
