@@ -1,0 +1,75 @@
+<!doctype html>
+<html lang="ja">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>ロボット技術ニュース日次レポート - 2026-10-03</title>
+  <meta name="description" content="爬虫類環境OS・ホームオートメーション・AIエージェント・先端ロボット技術に効きそうなニュース要約">
+  <style>
+:root { color-scheme: light; --fg:#1f2937; --muted:#667085; --line:#dfe7df; --accent:#4f8f57; --bg:#f6fbf6; --card:#fff; }
+body { margin:0; font-family:-apple-system,BlinkMacSystemFont,"Hiragino Sans","Yu Gothic",sans-serif; color:var(--fg); background:linear-gradient(180deg,#eef8ee,#fff 300px); line-height:1.75; }
+main, header, footer { max-width:980px; margin:auto; padding:28px 20px; }
+header { padding-top:42px; }
+h1 { font-size:clamp(28px,5vw,42px); margin:0 0 8px; letter-spacing:.02em; }
+h2 { font-size:22px; margin:28px 0 12px; padding-left:10px; border-left:5px solid var(--accent); }
+h3 { font-size:18px; margin:3px 0 8px; }
+p { margin:0 0 12px; }
+ul { margin:8px 0 14px 1.2em; padding:0; }
+li { margin:5px 0; }
+a { color:#2563eb; word-break:break-all; }
+.subtitle, .date, footer { color:var(--muted); }
+.card, .note, .hero-card { background:rgba(255,255,255,.93); border:1px solid var(--line); border-radius:20px; box-shadow:0 12px 30px rgba(31,41,55,.06); }
+.card, .note { padding:16px 18px; margin:14px 0; }
+.note { background:#fff9e8; border-color:#f2df9b; }
+.hero-card { padding:24px; margin:8px 0 22px; }
+.eyebrow { color:var(--accent); font-weight:700; font-size:13px; text-transform:uppercase; letter-spacing:.08em; }
+.actions, .links { display:flex; gap:10px; flex-wrap:wrap; margin-top:12px; }
+.button { display:inline-block; padding:9px 14px; border-radius:999px; background:var(--accent); color:white; text-decoration:none; font-weight:700; }
+.button.secondary { background:#eef4ff; color:#1d4ed8; }
+.grid { display:grid; grid-template-columns:repeat(auto-fit,minmax(260px,1fr)); gap:14px; }
+.date { font-size:13px; font-weight:700; }
+nav { display:flex; gap:12px; flex-wrap:wrap; margin-top:18px; }
+nav a { color:#355e3b; font-weight:700; }
+.label { font-weight:700; color:#355e3b; }
+.report-main { max-width:860px; }
+.back { margin-bottom:20px; }
+@page { size:A4; margin:16mm 14mm; }
+@media print { body { background:#fff; } header, main, footer { padding:0; } .back { display:none; } .card, .note { break-inside:avoid; box-shadow:none; } }
+</style>
+</head>
+<body>
+  <main class="report-main">
+    <p class="back"><a href="../../index.html">← 一覧へ戻る</a></p>
+    <section class="hero-card"><div class="eyebrow">AI news report</div><h1>ロボット技術ニュース日次レポート - 2026-10-03</h1></section>
+<p>対象日: 2026-10-03</p>
+<section class="card"><h2>1. Agility Robotics / FORT: Digit 5の外部安全系を共同強化</h2>
+<ul>
+<li><strong>概要:</strong> Agility RoboticsとFORT Roboticsは10月1日、Digit 5の安全基盤を共同開発する覚書を発表しました。安全ペンダント、ロボット上の通信、設備側の安全システムへつなぐオフボード・インターフェースの三層で構成し、セットアップや保守時には独立した手動オーバーライドも用意します。</li>
+<li><strong>なぜ重要か:</strong> 人と同じ空間で動くヒューマノイドでは、機体上の認識だけに安全を依存できません。設備側の停止信号、独立した操作系、規制対応まで含む多層防御が、実運用の信頼性を決めます。</li>
+<li><strong>ぬし・爬虫類への使い道:</strong> ケージ周辺で搬送ロボットを試す場合も、機体の障害物検知とは別に、立入領域、物理停止、手動復帰を設ける参考になります。生体付近での自律動作は前提にせず、まず無人の模擬環境で確認します。</li>
+<li><strong>リンク:</strong> <a href="https://www.agilityrobotics.com/content/agility-and-fort-robotics-announce-strategic-partnership-to-advance-humanoid-robot-safety">https://www.agilityrobotics.com/content/agility-and-fort-robotics-announce-strategic-partnership-to-advance-humanoid-robot-safety</a></li>
+</ul>
+</section>
+<section class="card"><h2>2. Figure: Figure 02を退役しFigure 03へ集約</h2>
+<ul>
+<li><strong>概要:</strong> Figureは9月30日、BMWでの展開、家庭作業、物流実証、Helix開発に使ったFigure 02のフリートを退役すると発表しました。Figure 03の台数拡大に伴い、独自アクチュエータなどの知的財産を保護しながら旧機を維持・処分するコストを減らす判断です。</li>
+<li><strong>なぜ重要か:</strong> ロボットの量産・更新では新機能だけでなく、旧機の保守終了、電池を含む安全な廃棄、知的財産の扱いまでライフサイクル設計が必要です。試作機を増やすほど、退役計画も製品戦略の一部になります。</li>
+<li><strong>ぬし・爬虫類への使い道:</strong> センサや小型ロボットを更新するとき、交換日、設定の移行、電池の回収、旧機の認証情報消去をチェックリスト化できます。古い機器を安全監視の予備として無条件に残さず、動作確認済みの手段だけを使います。</li>
+<li><strong>リンク:</strong> <a href="https://www.figure.ai/news/f-02-decommission">https://www.figure.ai/news/f-02-decommission</a></li>
+</ul>
+</section>
+<section class="card"><h2>3. ProjectSim: ロボット学習ベンチマークの再現性を整理</h2>
+<ul>
+<li><strong>概要:</strong> ProjectSimは9月28日、物体姿勢推定、把持、長時間の家庭作業などを測る代表的なロボットベンチマークを整理しました。シミュレーション評価は比較を速める一方、実機では物体、照明、カメラ、初期姿勢、失敗判定などの差が再現性を損ねるため、手順と環境の共有が重要だと論じています。</li>
+<li><strong>なぜ重要か:</strong> 成功率の数字だけでは、簡単な物体や有利な初期条件を使った結果かを判断できません。ロボット学習を比較可能にするには、課題、試行条件、失敗分類、実機差を含む評価プロトコルが必要です。</li>
+<li><strong>ぬし・爬虫類への使い道:</strong> ケージ周辺の把持・搬送実験では、同じダミー容器、初期位置、照明、試行回数、停止条件で結果を記録できます。生体を試験対象にせず、模擬物で十分な再現性を確認してから用途を限定します。</li>
+<li><strong>リンク:</strong> <a href="https://huggingface.co/blog/projectsim/robotics-benchmarking-where-we-are-and-what-comes">https://huggingface.co/blog/projectsim/robotics-benchmarking-where-we-are-and-what-comes</a></li>
+</ul>
+</section>
+<section class="note"><h2>ユグ的に今日いちばん気になるロボット技術</h2>
+<p>今日いちばん気になるのは、<strong>安全を機体単体ではなく、設備・人・退役まで含むライフサイクルで設計すること</strong>です。賢い動作より先に、独立停止、再現可能な試験、更新と廃棄の手順を揃えたいです。</p>
+</section>
+  </main>
+  <footer>Generated by ユグ 🦎</footer>
+</body>
+</html>
