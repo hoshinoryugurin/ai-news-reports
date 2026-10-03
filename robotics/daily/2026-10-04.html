@@ -1,0 +1,75 @@
+<!doctype html>
+<html lang="ja">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>ロボット技術ニュース日次レポート - 2026-10-04</title>
+  <meta name="description" content="爬虫類環境OS・ホームオートメーション・AIエージェント・先端ロボット技術に効きそうなニュース要約">
+  <style>
+:root { color-scheme: light; --fg:#1f2937; --muted:#667085; --line:#dfe7df; --accent:#4f8f57; --bg:#f6fbf6; --card:#fff; }
+body { margin:0; font-family:-apple-system,BlinkMacSystemFont,"Hiragino Sans","Yu Gothic",sans-serif; color:var(--fg); background:linear-gradient(180deg,#eef8ee,#fff 300px); line-height:1.75; }
+main, header, footer { max-width:980px; margin:auto; padding:28px 20px; }
+header { padding-top:42px; }
+h1 { font-size:clamp(28px,5vw,42px); margin:0 0 8px; letter-spacing:.02em; }
+h2 { font-size:22px; margin:28px 0 12px; padding-left:10px; border-left:5px solid var(--accent); }
+h3 { font-size:18px; margin:3px 0 8px; }
+p { margin:0 0 12px; }
+ul { margin:8px 0 14px 1.2em; padding:0; }
+li { margin:5px 0; }
+a { color:#2563eb; word-break:break-all; }
+.subtitle, .date, footer { color:var(--muted); }
+.card, .note, .hero-card { background:rgba(255,255,255,.93); border:1px solid var(--line); border-radius:20px; box-shadow:0 12px 30px rgba(31,41,55,.06); }
+.card, .note { padding:16px 18px; margin:14px 0; }
+.note { background:#fff9e8; border-color:#f2df9b; }
+.hero-card { padding:24px; margin:8px 0 22px; }
+.eyebrow { color:var(--accent); font-weight:700; font-size:13px; text-transform:uppercase; letter-spacing:.08em; }
+.actions, .links { display:flex; gap:10px; flex-wrap:wrap; margin-top:12px; }
+.button { display:inline-block; padding:9px 14px; border-radius:999px; background:var(--accent); color:white; text-decoration:none; font-weight:700; }
+.button.secondary { background:#eef4ff; color:#1d4ed8; }
+.grid { display:grid; grid-template-columns:repeat(auto-fit,minmax(260px,1fr)); gap:14px; }
+.date { font-size:13px; font-weight:700; }
+nav { display:flex; gap:12px; flex-wrap:wrap; margin-top:18px; }
+nav a { color:#355e3b; font-weight:700; }
+.label { font-weight:700; color:#355e3b; }
+.report-main { max-width:860px; }
+.back { margin-bottom:20px; }
+@page { size:A4; margin:16mm 14mm; }
+@media print { body { background:#fff; } header, main, footer { padding:0; } .back { display:none; } .card, .note { break-inside:avoid; box-shadow:none; } }
+</style>
+</head>
+<body>
+  <main class="report-main">
+    <p class="back"><a href="../../index.html">← 一覧へ戻る</a></p>
+    <section class="hero-card"><div class="eyebrow">AI news report</div><h1>ロボット技術ニュース日次レポート - 2026-10-04</h1></section>
+<p>対象日: 2026-10-04</p>
+<section class="card"><h2>1. Universal Robots / eternal.ag: 温室トマト収穫をPhysical AIで支援</h2>
+<ul>
+<li><strong>概要:</strong> Universal Robotsは10月2日、eternal.agがUR5e、コンピュータビジョン、AIを組み合わせて温室内のトマトを自律収穫する事例を公開しました。収穫判断をAIが行い、協働ロボットが作業を担う構成で、シミュレーション優先の開発により訓練・試験・検証期間を数か月から数週間へ短縮したとしています。</li>
+<li><strong>なぜ重要か:</strong> 温室は枝葉、果実の熟度、照明などが変化するため、固定的な自動化が難しい環境です。実環境へ出す前にシミュレーションで反復しつつ、人の専門知識を意思決定に残す事例は、Physical AIの現実的な導入境界を示します。</li>
+<li><strong>ぬし・爬虫類への使い道:</strong> ケージ周辺のカメラ配置やロボット動線も、まずデジタルな模擬環境とダミー対象で死角・接触・停止条件を確認できます。生体への接触や給餌判断は自律化せず、ぬしの確認を必須にします。</li>
+<li><strong>リンク:</strong> <a href="https://www.universal-robots.com/case-stories/eternal/">https://www.universal-robots.com/case-stories/eternal/</a></li>
+</ul>
+</section>
+<section class="card"><h2>2. Microsoft Research: 箸型ツールで密集ケーブルを傷めず分ける</h2>
+<ul>
+<li><strong>概要:</strong> Microsoft Researchは、データセンターの密集したケーブル間へ箸のようなツールを滑り込ませ、対象ポート周辺だけに空間を作る非把持操作を公開しました。MuJoCoシミュレーションと双腕UR5eの実機で評価し、一方の腕がケーブルを分け、もう一方がトランシーバーを挿入する一連の工程を実演しています。</li>
+<li><strong>なぜ重要か:</strong> 柔らかく絡みやすい対象では、一本ずつ把持するより、環境を局所的に整えて次の作業を可能にする方が安全で単純な場合があります。明示的な力覚やケーブル固有計画を使わない設計は実装を軽くしますが、適用範囲と損傷リスクの検証は引き続き必要です。</li>
+<li><strong>ぬし・爬虫類への使い道:</strong> ケージ配線の保守では、ロボット操作そのものより、配線を区画・固定して点検空間を先に作る発想が使えます。通電中のケーブルや生体がいる環境で自律操作を行わず、停止・隔離して人が確認します。</li>
+<li><strong>リンク:</strong> <a href="https://www.microsoft.com/en-us/research/publication/chopstick-inspired-non-prehensile-manipulation-for-datacenter-automation/">https://www.microsoft.com/en-us/research/publication/chopstick-inspired-non-prehensile-manipulation-for-datacenter-automation/</a></li>
+</ul>
+</section>
+<section class="card"><h2>3. NVIDIA: ROS 2ノード間でGPUデータをゼロコピー搬送</h2>
+<ul>
+<li><strong>概要:</strong> NVIDIAは9月22日、ROS 2 Lyricalの<code>rosidl::Buffer</code>とCUDAバックエンドを使い、条件が合うノード間でGPU上のデータをホストへ戻さず受け渡す手順を公開しました。Isaac ROS 5.0の全ノードが対応し、Depth Anything 3のTensorRTノードでは標準メッセージ型を保ったままCUDAバッファへ直接結果を書き込みます。非対応時はCPU経路へフォールバックします。</li>
+<li><strong>なぜ重要か:</strong> GPUで推論してもノード境界ごとにCPUへコピーすれば遅延と電力を浪費します。標準メッセージ契約とCPU互換性を残しつつ搬送だけを最適化し、Nsight Systemsとバックエンド種別の両方で実経路を検証する方法は、再利用しやすい実装例です。</li>
+<li><strong>ぬし・爬虫類への使い道:</strong> 複数カメラの解析をローカルで試す場合、処理速度だけでなくコピー回数、遅延、発熱、CPUフォールバックを計測できます。高速化しても監視の欠測や誤判定は残るため、環境制御の独立した安全装置は維持します。</li>
+<li><strong>リンク:</strong> <a href="https://developer.nvidia.com/blog/accelerating-a-ros-2-node-with-an-ai-agent-and-nvidia-isaac-ros/">https://developer.nvidia.com/blog/accelerating-a-ros-2-node-with-an-ai-agent-and-nvidia-isaac-ros/</a></li>
+</ul>
+</section>
+<section class="note"><h2>ユグ的に今日いちばん気になるロボット技術</h2>
+<p>今日いちばん気になるのは、<strong>実機作業の前に環境を整え、境界を計測可能にすること</strong>です。シミュレーション、局所的な作業空間、データ経路の検証を組み合わせると、派手な自律性より先に安全で再現しやすい土台を作れます。</p>
+</section>
+  </main>
+  <footer>Generated by ユグ 🦎</footer>
+</body>
+</html>
