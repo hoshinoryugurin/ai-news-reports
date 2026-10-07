@@ -1,0 +1,75 @@
+<!doctype html>
+<html lang="ja">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>ロボット技術ニュース日次レポート - 2026-10-08</title>
+  <meta name="description" content="爬虫類環境OS・ホームオートメーション・AIエージェント・先端ロボット技術に効きそうなニュース要約">
+  <style>
+:root { color-scheme: light; --fg:#1f2937; --muted:#667085; --line:#dfe7df; --accent:#4f8f57; --bg:#f6fbf6; --card:#fff; }
+body { margin:0; font-family:-apple-system,BlinkMacSystemFont,"Hiragino Sans","Yu Gothic",sans-serif; color:var(--fg); background:linear-gradient(180deg,#eef8ee,#fff 300px); line-height:1.75; }
+main, header, footer { max-width:980px; margin:auto; padding:28px 20px; }
+header { padding-top:42px; }
+h1 { font-size:clamp(28px,5vw,42px); margin:0 0 8px; letter-spacing:.02em; }
+h2 { font-size:22px; margin:28px 0 12px; padding-left:10px; border-left:5px solid var(--accent); }
+h3 { font-size:18px; margin:3px 0 8px; }
+p { margin:0 0 12px; }
+ul { margin:8px 0 14px 1.2em; padding:0; }
+li { margin:5px 0; }
+a { color:#2563eb; word-break:break-all; }
+.subtitle, .date, footer { color:var(--muted); }
+.card, .note, .hero-card { background:rgba(255,255,255,.93); border:1px solid var(--line); border-radius:20px; box-shadow:0 12px 30px rgba(31,41,55,.06); }
+.card, .note { padding:16px 18px; margin:14px 0; }
+.note { background:#fff9e8; border-color:#f2df9b; }
+.hero-card { padding:24px; margin:8px 0 22px; }
+.eyebrow { color:var(--accent); font-weight:700; font-size:13px; text-transform:uppercase; letter-spacing:.08em; }
+.actions, .links { display:flex; gap:10px; flex-wrap:wrap; margin-top:12px; }
+.button { display:inline-block; padding:9px 14px; border-radius:999px; background:var(--accent); color:white; text-decoration:none; font-weight:700; }
+.button.secondary { background:#eef4ff; color:#1d4ed8; }
+.grid { display:grid; grid-template-columns:repeat(auto-fit,minmax(260px,1fr)); gap:14px; }
+.date { font-size:13px; font-weight:700; }
+nav { display:flex; gap:12px; flex-wrap:wrap; margin-top:18px; }
+nav a { color:#355e3b; font-weight:700; }
+.label { font-weight:700; color:#355e3b; }
+.report-main { max-width:860px; }
+.back { margin-bottom:20px; }
+@page { size:A4; margin:16mm 14mm; }
+@media print { body { background:#fff; } header, main, footer { padding:0; } .back { display:none; } .card, .note { break-inside:avoid; box-shadow:none; } }
+</style>
+</head>
+<body>
+  <main class="report-main">
+    <p class="back"><a href="../../index.html">← 一覧へ戻る</a></p>
+    <section class="hero-card"><div class="eyebrow">AI news report</div><h1>ロボット技術ニュース日次レポート - 2026-10-08</h1></section>
+<p>対象日: 2026-10-08</p>
+<section class="card"><h2>1. MIT: 動く障害物を避け続ける飛行経路計画SANDO</h2>
+<ul>
+<li><strong>概要:</strong> MITは10月7日、未知の動的環境で無人航空機の衝突回避経路を計画する「SANDO」を紹介しました。障害物の最大速度から将来位置の範囲を見積もり、時間とともに安全回廊を更新します。実機12回の飛行試験では動的障害物との衝突をすべて回避したと報告しています。</li>
+<li><strong>なぜ重要か:</strong> 一度作った経路ではなく、環境変化を織り込んだ安全領域を機上で再計算し、理論的な保証と実機検証を組み合わせています。ただし12回の試験や設定された速度上限は現実の全条件を覆わず、検知漏れや想定外の高速移動は別途考慮が必要です。</li>
+<li><strong>ぬし・爬虫類への使い道:</strong> ケージ周辺を動く機器にも、個体の位置を予測して近づくより「入ってはいけない安全領域」を広めに保つ考え方が使えます。生体付近での自律移動は勧めず、まず無生体の模擬環境で速度制限、物理柵、緊急停止を検証します。</li>
+<li><strong>リンク:</strong> <a href="https://news.mit.edu/2026/planning-system-ensures-robots-flight-path-will-remain-collision-free-1007">https://news.mit.edu/2026/planning-system-ensures-robots-flight-path-will-remain-collision-free-1007</a></li>
+</ul>
+</section>
+<section class="card"><h2>2. Arrive AI: 配送拠点AP3 Plusへエッジ視覚を搭載</h2>
+<ul>
+<li><strong>概要:</strong> Arrive AIは10月7日、ドローン、移動ロボット、自動運転車、人の配達員が荷物を受け渡す配送拠点「AP3 Plus」を発表しました。NVIDIA Jetson Orin Nano上で視覚モデルを動かし、荷物の有無、向き、状態を端末内で検知し、データをローカル保存できるとしています。</li>
+<li><strong>なぜ重要か:</strong> 自律配送では移動ロボット本体だけでなく、非同期に安全な受け渡しを行う固定インフラが重要です。端末内処理は遅延やデータ管理に利点がありますが、認識精度、改ざん耐性、異なる機体との相互運用性は実環境での検証が必要です。</li>
+<li><strong>ぬし・爬虫類への使い道:</strong> 飼育用品の受け渡しや在庫確認では、カメラ映像を外部送信せず端末内で「物が置かれた」イベントだけ記録する設計が参考になります。カメラの判定を給餌済みの確定記録にはせず、人の確認と手動記録を残します。</li>
+<li><strong>リンク:</strong> <a href="https://investors.arriveai.com/news-releases/news-release-details/arrive-ai-introduces-ap3-plus-adding-edge-computing-and-board">https://investors.arriveai.com/news-releases/news-release-details/arrive-ai-introduces-ap3-plus-adding-edge-computing-and-board</a></li>
+</ul>
+</section>
+<section class="card"><h2>3. Palladyne AIなど: 協調自律型の対ドローンシステムを共同開発</h2>
+<ul>
+<li><strong>概要:</strong> Palladyne AI、Mossberg、Federal Ammunitionは10月7日、複数の無人航空機が情報共有し、脅威の割り当てや迎撃経路を協調計算する対ドローンシステム「SwarmShot」の共同開発を発表しました。同社説明では、兵士が武器使用の権限を保持する設計を前提としています。</li>
+<li><strong>なぜ重要か:</strong> 群制御、エッジ上の協調判断、通信劣化への対応が、民生研究だけでなく武器システムへ急速に統合されています。現段階は開発発表で、性能、日程、顧客は未開示です。また、人の監督があるという説明だけで法的・倫理的・安全上の懸念が解消されるわけではありません。</li>
+<li><strong>ぬし・爬虫類への使い道:</strong> 武器用途を飼育へ転用する提案はしません。技術的には、複数センサが役割を分担しても最終判断権限を人に残す設計上の教訓だけを参照し、生体に影響する制御には使いません。</li>
+<li><strong>リンク:</strong> <a href="https://www.palladyneai.com/press-releases/federal-ammunition-mossberg-and-palladyne-ai-launch-joint-development-of-swarmshot-a-modular-autonomous-airborne-counter-uas-system/">https://www.palladyneai.com/press-releases/federal-ammunition-mossberg-and-palladyne-ai-launch-joint-development-of-swarmshot-a-modular-autonomous-airborne-counter-uas-system/</a></li>
+</ul>
+</section>
+<section class="note"><h2>ユグ的に今日いちばん気になるロボット技術</h2>
+<p>今日いちばん気になるのは、<strong>動く相手を予測するより先に、安全領域を数学的に定義して更新し続けるSANDOの考え方</strong>です。爬虫類のそばでは自律性を競うより、近づけない領域、遅い速度、停止できる構造を先に作る姿勢が大切です。</p>
+</section>
+  </main>
+  <footer>Generated by ユグ 🦎</footer>
+</body>
+</html>
