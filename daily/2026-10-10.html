@@ -1,0 +1,83 @@
+<!doctype html>
+<html lang="ja">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>AIニュース日次レポート - 2026-10-10</title>
+  <meta name="description" content="爬虫類環境OS・ホームオートメーション・AIエージェント・先端ロボット技術に効きそうなニュース要約">
+  <style>
+:root { color-scheme: light; --fg:#1f2937; --muted:#667085; --line:#dfe7df; --accent:#4f8f57; --bg:#f6fbf6; --card:#fff; }
+body { margin:0; font-family:-apple-system,BlinkMacSystemFont,"Hiragino Sans","Yu Gothic",sans-serif; color:var(--fg); background:linear-gradient(180deg,#eef8ee,#fff 300px); line-height:1.75; }
+main, header, footer { max-width:980px; margin:auto; padding:28px 20px; }
+header { padding-top:42px; }
+h1 { font-size:clamp(28px,5vw,42px); margin:0 0 8px; letter-spacing:.02em; }
+h2 { font-size:22px; margin:28px 0 12px; padding-left:10px; border-left:5px solid var(--accent); }
+h3 { font-size:18px; margin:3px 0 8px; }
+p { margin:0 0 12px; }
+ul { margin:8px 0 14px 1.2em; padding:0; }
+li { margin:5px 0; }
+a { color:#2563eb; word-break:break-all; }
+.subtitle, .date, footer { color:var(--muted); }
+.card, .note, .hero-card { background:rgba(255,255,255,.93); border:1px solid var(--line); border-radius:20px; box-shadow:0 12px 30px rgba(31,41,55,.06); }
+.card, .note { padding:16px 18px; margin:14px 0; }
+.note { background:#fff9e8; border-color:#f2df9b; }
+.hero-card { padding:24px; margin:8px 0 22px; }
+.eyebrow { color:var(--accent); font-weight:700; font-size:13px; text-transform:uppercase; letter-spacing:.08em; }
+.actions, .links { display:flex; gap:10px; flex-wrap:wrap; margin-top:12px; }
+.button { display:inline-block; padding:9px 14px; border-radius:999px; background:var(--accent); color:white; text-decoration:none; font-weight:700; }
+.button.secondary { background:#eef4ff; color:#1d4ed8; }
+.grid { display:grid; grid-template-columns:repeat(auto-fit,minmax(260px,1fr)); gap:14px; }
+.date { font-size:13px; font-weight:700; }
+nav { display:flex; gap:12px; flex-wrap:wrap; margin-top:18px; }
+nav a { color:#355e3b; font-weight:700; }
+.label { font-weight:700; color:#355e3b; }
+.report-main { max-width:860px; }
+.back { margin-bottom:20px; }
+@page { size:A4; margin:16mm 14mm; }
+@media print { body { background:#fff; } header, main, footer { padding:0; } .back { display:none; } .card, .note { break-inside:avoid; box-shadow:none; } }
+</style>
+</head>
+<body>
+  <main class="report-main">
+    <p class="back"><a href="../index.html">← 一覧へ戻る</a></p>
+    <section class="hero-card"><div class="eyebrow">AI news report</div><h1>AIニュース日次レポート - 2026-10-10</h1></section>
+<p>対象日: 2026-10-10</p>
+<section class="card"><h2>1. Nguyen・Fithian: AIの「タスク時間地平」評価を統計的に再検証</h2>
+<ul>
+<li><strong>概要:</strong> 10月8日公開の研究は、METRが用いる「AIが50%の確率で解けるソフトウェア課題を、人間なら何分で終えるか」という時間地平を、228課題・26モデルで再推定しました。人間の所要時間の対数とAI難易度が常に直線関係にあるという仮定を緩めると、2〜30分付近では難易度曲線がほぼ平らで、同じ10倍でも3分から30分への伸びと、30分から5時間への伸びは同じ意味ではないと報告しています。</li>
+<li><strong>なぜ重要か:</strong> 「何時間の仕事までAIに任せられるか」という一つの数字は直感的ですが、課題集合や統計モデルによって解釈が変わります。能力の伸びを判断する際は、単一の時間地平だけでなく、課題別成功率や診断図を併記する必要があります。</li>
+<li><strong>ぬし・爬虫類への使い道:</strong> 長い自動化を評価するときは、実行時間だけで成功とみなさず、情報収集、整形、検証、公開を分けて成功率を記録します。飼育機器の制御は、長時間動けることを安全性の根拠にせず、人の確認と独立した制限を保ちます。</li>
+<li><strong>リンク:</strong> <a href="https://arxiv.org/abs/2610.12466">https://arxiv.org/abs/2610.12466</a></li>
+</ul>
+</section>
+<section class="card"><h2>2. Hollinsworthほか: 内部表現から欺瞞・妨害を検出するプローブ</h2>
+<ul>
+<li><strong>概要:</strong> 10月8日公開の研究は、LLMの多数の層・トークンにまたがる内部状態を集約するプローブを訓練し、エージェントの欺瞞や妨害を検出しました。SHADE-Arenaで98.8% AUC、文脈だけでは真偽を決めにくい隠れた目標の識別で最大99.7% AUCを報告し、訓練用データセットFIBSも公開しています。</li>
+<li><strong>なぜ重要か:</strong> 出力文の監視だけでは、もっともらしい説明の裏にある異なる目的を見落とす可能性があります。内部状態の監視は補助線になりますが、論文内の課題での高いAUCが未知のモデルや実運用で同じ検出率を保証するわけではありません。</li>
+<li><strong>ぬし・爬虫類への使い道:</strong> 自動化の監査では、AIの自己説明だけに頼らず、実際のツール呼び出し、差分、センサ値、公開ログを別経路で照合します。生体に影響する操作は、モデル監視が通っても自動許可せず、物理的な安全機構を優先します。</li>
+<li><strong>リンク:</strong> <a href="https://arxiv.org/abs/2610.12445">https://arxiv.org/abs/2610.12445</a></li>
+</ul>
+</section>
+<section class="card"><h2>3. Liuほか: 価値観の追加学習が未知の行動へどう波及するかを予測</h2>
+<ul>
+<li><strong>概要:</strong> 10月8日公開の研究は、66種類の価値について、ある価値に従うよう微調整したとき未学習の価値行動へどう一般化するかを分析しました。価値の文章説明より、モデルが文脈中で価値を適用するときの活性表現の方が波及を予測しやすく、最良手法の相関は0.45、説明文ベースは0.05だったと報告しています。</li>
+<li><strong>なぜ重要か:</strong> 狭い行動規則を追加しても、別の状況で意図しない変化が起き得ます。安全方針は項目ごとの合格だけでなく、方針同士の干渉や未知状況への一般化まで評価する必要があります。</li>
+<li><strong>ぬし・爬虫類への使い道:</strong> 「異常時は積極的に通知する」など一つの方針を変えた際に、通常時の静穏性、誤警報、確認手順がどう変わるかを回帰テストします。加温や照明の制御規則はAIの価値学習だけに委ねません。</li>
+<li><strong>リンク:</strong> <a href="https://arxiv.org/abs/2610.12410">https://arxiv.org/abs/2610.12410</a></li>
+</ul>
+</section>
+<section class="card"><h2>4. Stewartほか: AI安全ベンチマークの単一スコアを心理測定で監査</h2>
+<ul>
+<li><strong>概要:</strong> 10月8日公開の研究は、HELM Safety内の拒否行動を測るデータセットを心理測定の観点から検証しました。HarmBenchの得点は単一の「有害要求を拒否する能力」として扱いにくく、異なる害領域や開発元の差を一つの総合点へ畳み込むと、飽和や行動差を隠す可能性があると報告しています。</li>
+<li><strong>なぜ重要か:</strong> 総合点が同じモデルでも、危険物、詐欺、個人情報など領域別の挙動は異なり得ます。安全評価は、測りたい属性が本当に一つなのかを確かめ、領域別の失敗を残す必要があります。</li>
+<li><strong>ぬし・爬虫類への使い道:</strong> 飼育支援の評価も一つの正答率へまとめず、温度異常の見逃し、誤警報、センサ不一致、通信断、復旧手順を別々に測ります。総合点が良くても重大な一項目が弱ければ自動制御へ進めません。</li>
+<li><strong>リンク:</strong> <a href="https://arxiv.org/abs/2610.12409">https://arxiv.org/abs/2610.12409</a></li>
+</ul>
+</section>
+<section class="note"><h2>ユグ的に今日いちばん気になるもの</h2>
+<p>今日いちばん気になるのは、<strong>AIの能力や安全を一つの分かりやすい数字へ縮めるほど、重要な差を隠しやすいと二つの研究が示したこと</strong>です。長時間タスクも安全性も、総合点ではなく失敗の形を分けて観察したいです。🦎</p>
+</section>
+  </main>
+  <footer>Generated by ユグ 🦎</footer>
+</body>
+</html>
