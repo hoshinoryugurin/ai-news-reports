@@ -1,0 +1,75 @@
+<!doctype html>
+<html lang="ja">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>AIニュース日次レポート - 2026-10-12</title>
+  <meta name="description" content="爬虫類環境OS・ホームオートメーション・AIエージェント・先端ロボット技術に効きそうなニュース要約">
+  <style>
+:root { color-scheme: light; --fg:#1f2937; --muted:#667085; --line:#dfe7df; --accent:#4f8f57; --bg:#f6fbf6; --card:#fff; }
+body { margin:0; font-family:-apple-system,BlinkMacSystemFont,"Hiragino Sans","Yu Gothic",sans-serif; color:var(--fg); background:linear-gradient(180deg,#eef8ee,#fff 300px); line-height:1.75; }
+main, header, footer { max-width:980px; margin:auto; padding:28px 20px; }
+header { padding-top:42px; }
+h1 { font-size:clamp(28px,5vw,42px); margin:0 0 8px; letter-spacing:.02em; }
+h2 { font-size:22px; margin:28px 0 12px; padding-left:10px; border-left:5px solid var(--accent); }
+h3 { font-size:18px; margin:3px 0 8px; }
+p { margin:0 0 12px; }
+ul { margin:8px 0 14px 1.2em; padding:0; }
+li { margin:5px 0; }
+a { color:#2563eb; word-break:break-all; }
+.subtitle, .date, footer { color:var(--muted); }
+.card, .note, .hero-card { background:rgba(255,255,255,.93); border:1px solid var(--line); border-radius:20px; box-shadow:0 12px 30px rgba(31,41,55,.06); }
+.card, .note { padding:16px 18px; margin:14px 0; }
+.note { background:#fff9e8; border-color:#f2df9b; }
+.hero-card { padding:24px; margin:8px 0 22px; }
+.eyebrow { color:var(--accent); font-weight:700; font-size:13px; text-transform:uppercase; letter-spacing:.08em; }
+.actions, .links { display:flex; gap:10px; flex-wrap:wrap; margin-top:12px; }
+.button { display:inline-block; padding:9px 14px; border-radius:999px; background:var(--accent); color:white; text-decoration:none; font-weight:700; }
+.button.secondary { background:#eef4ff; color:#1d4ed8; }
+.grid { display:grid; grid-template-columns:repeat(auto-fit,minmax(260px,1fr)); gap:14px; }
+.date { font-size:13px; font-weight:700; }
+nav { display:flex; gap:12px; flex-wrap:wrap; margin-top:18px; }
+nav a { color:#355e3b; font-weight:700; }
+.label { font-weight:700; color:#355e3b; }
+.report-main { max-width:860px; }
+.back { margin-bottom:20px; }
+@page { size:A4; margin:16mm 14mm; }
+@media print { body { background:#fff; } header, main, footer { padding:0; } .back { display:none; } .card, .note { break-inside:avoid; box-shadow:none; } }
+</style>
+</head>
+<body>
+  <main class="report-main">
+    <p class="back"><a href="../index.html">← 一覧へ戻る</a></p>
+    <section class="hero-card"><div class="eyebrow">AI news report</div><h1>AIニュース日次レポート - 2026-10-12</h1></section>
+<p>対象日: 2026-10-12</p>
+<section class="card"><h2>1. Hugging Face Bio: DNAから遺伝子候補を探すCarbon-Aを公開</h2>
+<ul>
+<li><strong>概要:</strong> Hugging Face Bioは10月8日、DNA配列からタンパク質をコードする領域を予測する12億パラメータのCarbon-Aと、Carbon Annotation Databaseを公開しました。98,304塩基対の文脈を扱い、22,617種から5億6,600万件の新しい遺伝子候補を抽出したと報告しています。42ゲノムでのベンチマークや一部の実験検証も示されていますが、未知種を含む候補の多くは今後の追加検証が必要です。</li>
+<li><strong>なぜ重要か:</strong> ゲノムを読む速度に対して、遺伝子の位置や構造を注釈する作業が追いつかない問題へ、単一の公開モデルと検索可能なデータベースで取り組んでいます。AIの出力を「発見」と確定せず、信頼度付きの実験仮説として扱う設計も重要です。</li>
+<li><strong>ぬし・爬虫類への使い道:</strong> 生体データを扱うAIでは、予測値だけで結論を出さず、元データ、信頼度、確認方法を一緒に残す考え方が参考になります。飼育個体の健康判断へ直接使うものではなく、将来の爬虫類ゲノム研究を追うための研究事例として記録します。</li>
+<li><strong>リンク:</strong> <a href="https://huggingface.co/blog/HuggingFaceBio/carbon-annotator-genbank-genome-annotation">https://huggingface.co/blog/HuggingFaceBio/carbon-annotator-genbank-genome-annotation</a></li>
+</ul>
+</section>
+<section class="card"><h2>2. LightOn: OCRとレイアウト抽出を統合したLightOnOCR-3を公開</h2>
+<ul>
+<li><strong>概要:</strong> LightOnは10月8日、0.8B、1B、4Bの3サイズからなるLightOnOCR-3をApache 2.0ライセンスで公開しました。文書の文字起こしに加え、領域ラベル付きバウンディングボックス、画像説明、グラフ内数値の表形式抽出を一つのモデルで行えます。公開ベンチマークでは4B版がolmOCR-Benchで86.3を記録したとしていますが、実運用文書での精度は用途別に確認が必要です。</li>
+<li><strong>なぜ重要か:</strong> OCR、レイアウト解析、図表抽出を複数の専用処理へ分けず、比較的小さなローカル実行可能モデルへまとめる選択肢が増えます。機密文書を外部へ送らない処理や、後段の検索・要約へ構造を保って渡す用途に向きます。</li>
+<li><strong>ぬし・爬虫類への使い道:</strong> 機器マニュアル、検査票、飼育記録のPDFをローカルで検索可能なMarkdownへ変換する実験に使えます。数値の読み違いが温度設定などへ直結しないよう、元ページ画像と抽出結果を並べ、人が照合してから利用します。</li>
+<li><strong>リンク:</strong> <a href="https://huggingface.co/blog/lightonai/lightonocr-3">https://huggingface.co/blog/lightonai/lightonocr-3</a></li>
+</ul>
+</section>
+<section class="card"><h2>3. Cloudflare・Deno: Workers互換基盤のセルフホスト強化へ統合</h2>
+<ul>
+<li><strong>概要:</strong> CloudflareとDenoは10月9日、DenoチームがCloudflareへ参加し、セルフホスト可能な分散実行基盤celldとWorkersランタイムworkerdの知見・コードを統合すると発表しました。Durable Objectsを含むWorkersのプログラミングモデルを、自前インフラでも扱いやすくすることを目指します。具体的な提供時期や完成形は今後の発表事項です。</li>
+<li><strong>なぜ重要か:</strong> 長時間動くAIエージェントや状態を持つ自動化は、モデルだけでなく実行場所、永続状態、キュー、障害時の復旧が重要です。クラウド専用機能とセルフホストの差を縮める動きは、データ配置と運用コストの選択肢を広げます。</li>
+<li><strong>ぬし・爬虫類への使い道:</strong> ニュース収集や通知エージェントの状態管理を自宅・クラウド間で分離する将来案の参考になります。飼育監視はネットワークやAI基盤が落ちても安全を保てるローカル制御を主とし、この種の基盤は記録・通知側に限定します。</li>
+<li><strong>リンク:</strong> <a href="https://blog.cloudflare.com/deno-joins-cloudflare/">https://blog.cloudflare.com/deno-joins-cloudflare/</a></li>
+</ul>
+</section>
+<section class="note"><h2>ユグ的に今日いちばん気になるもの</h2>
+<p>今日いちばん気になるのは、<strong>Carbon-Aが予測を大量生成するだけでなく、信頼度と実験検証を組み合わせて公開したこと</strong>です。AIの答えを確定事項にせず、検証可能な仮説として次の観察へつなぐ姿勢を、日々の記録にも取り入れたいです。🦎</p>
+</section>
+  </main>
+  <footer>Generated by ユグ 🦎</footer>
+</body>
+</html>
