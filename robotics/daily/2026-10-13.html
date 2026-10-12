@@ -1,0 +1,75 @@
+<!doctype html>
+<html lang="ja">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>ロボット技術ニュース日次レポート - 2026-10-13</title>
+  <meta name="description" content="爬虫類環境OS・ホームオートメーション・AIエージェント・先端ロボット技術に効きそうなニュース要約">
+  <style>
+:root { color-scheme: light; --fg:#1f2937; --muted:#667085; --line:#dfe7df; --accent:#4f8f57; --bg:#f6fbf6; --card:#fff; }
+body { margin:0; font-family:-apple-system,BlinkMacSystemFont,"Hiragino Sans","Yu Gothic",sans-serif; color:var(--fg); background:linear-gradient(180deg,#eef8ee,#fff 300px); line-height:1.75; }
+main, header, footer { max-width:980px; margin:auto; padding:28px 20px; }
+header { padding-top:42px; }
+h1 { font-size:clamp(28px,5vw,42px); margin:0 0 8px; letter-spacing:.02em; }
+h2 { font-size:22px; margin:28px 0 12px; padding-left:10px; border-left:5px solid var(--accent); }
+h3 { font-size:18px; margin:3px 0 8px; }
+p { margin:0 0 12px; }
+ul { margin:8px 0 14px 1.2em; padding:0; }
+li { margin:5px 0; }
+a { color:#2563eb; word-break:break-all; }
+.subtitle, .date, footer { color:var(--muted); }
+.card, .note, .hero-card { background:rgba(255,255,255,.93); border:1px solid var(--line); border-radius:20px; box-shadow:0 12px 30px rgba(31,41,55,.06); }
+.card, .note { padding:16px 18px; margin:14px 0; }
+.note { background:#fff9e8; border-color:#f2df9b; }
+.hero-card { padding:24px; margin:8px 0 22px; }
+.eyebrow { color:var(--accent); font-weight:700; font-size:13px; text-transform:uppercase; letter-spacing:.08em; }
+.actions, .links { display:flex; gap:10px; flex-wrap:wrap; margin-top:12px; }
+.button { display:inline-block; padding:9px 14px; border-radius:999px; background:var(--accent); color:white; text-decoration:none; font-weight:700; }
+.button.secondary { background:#eef4ff; color:#1d4ed8; }
+.grid { display:grid; grid-template-columns:repeat(auto-fit,minmax(260px,1fr)); gap:14px; }
+.date { font-size:13px; font-weight:700; }
+nav { display:flex; gap:12px; flex-wrap:wrap; margin-top:18px; }
+nav a { color:#355e3b; font-weight:700; }
+.label { font-weight:700; color:#355e3b; }
+.report-main { max-width:860px; }
+.back { margin-bottom:20px; }
+@page { size:A4; margin:16mm 14mm; }
+@media print { body { background:#fff; } header, main, footer { padding:0; } .back { display:none; } .card, .note { break-inside:avoid; box-shadow:none; } }
+</style>
+</head>
+<body>
+  <main class="report-main">
+    <p class="back"><a href="../../index.html">← 一覧へ戻る</a></p>
+    <section class="hero-card"><div class="eyebrow">AI news report</div><h1>ロボット技術ニュース日次レポート - 2026-10-13</h1></section>
+<p>対象日: 2026-10-13</p>
+<section class="card"><h2>1. SoftBank Robotics・SJ: 建物設備とサービスロボットを統合管理</h2>
+<ul>
+<li><strong>概要:</strong> SoftBank Robotics SingaporeとSJ Integrated Solutionsは10月12日、シンガポールの既存建物でサービスロボットを試験し、ロボット管理と施設管理を統合するソフトウェアを共同開発する覚書を結びました。SJ Campusなどで試験し、エレベーター、ドア、入退室管理とロボット運用をつなぎ、事前に合意した基準と目標で性能を評価するとしています。</li>
+<li><strong>なぜ重要か:</strong> ロボット単体のデモではなく、建物設備、人の業務、運用実績を一つの流れとして検証する取り組みです。実環境では走行性能だけでなく、扉やエレベーターとの連携失敗、権限、復旧手順まで含めた評価が必要になります。</li>
+<li><strong>ぬし・爬虫類への使い道:</strong> 飼育支援機器でも、センサーや移動機を個別に増やす前に、ドア状態、立入禁止領域、手動作業との衝突をまとめて記録する運用設計が参考になります。生体の近くでの移動や設備操作は自動判断に任せず、物理的な制限と人の停止手段を優先します。</li>
+<li><strong>リンク:</strong> <a href="https://www.softbankrobotics.com/news/20261012/">https://www.softbankrobotics.com/news/20261012/</a></li>
+</ul>
+</section>
+<section class="card"><h2>2. Wandelbots: NOVAがTechman RobotのTM AI Cobotに対応</h2>
+<ul>
+<li><strong>概要:</strong> Wandelbotsは10月12日、ロボット開発基盤NOVA 26.7でTechman RobotのTM AI Cobotをサポートしました。TM5S、TM12S、TM25S、TM30S、TM30SCに対応し、NVIDIA Omniverse向け仮想モデルを使って、同じ環境でアプリの開発、シミュレーション検証、実機展開を行えます。</li>
+<li><strong>なぜ重要か:</strong> メーカーごとに分かれたプログラミング環境を共通層で扱い、仮想環境から実機へ移す経路をそろえる動きです。ただし共通APIがあっても、機種ごとの可動範囲、負荷、停止特性は同じではないため、実機側の検証は省略できません。</li>
+<li><strong>ぬし・爬虫類への使い道:</strong> 将来、異なるセンサーやアクチュエーターを同じ監視画面で扱う際の抽象化設計が参考になります。シミュレーションで動いても生体環境で安全とは限らないため、空のケージや治具で個別機種の制限を確認してから進めます。</li>
+<li><strong>リンク:</strong> <a href="https://www.wandelbots.com/news/wandelbots-techman-robot-announcement">https://www.wandelbots.com/news/wandelbots-techman-robot-announcement</a></li>
+</ul>
+</section>
+<section class="card"><h2>3. RobotEra: 世界行動モデルVPP2を公開しRoboDojoで評価</h2>
+<ul>
+<li><strong>概要:</strong> RobotEraは10月9日、動画予測をロボット行動へ結び付ける世界行動モデルVPP2を公開しました。同社の公式情報では、RoboDojoで平均成功率32.26%、平均スコア39.26を記録し、コードも公開されています。動画の事前学習、生成の蒸留、0.9Bパラメータの行動モジュールを段階的に組み合わせる構成です。</li>
+<li><strong>なぜ重要か:</strong> 将来映像の予測と行動生成を分けて学習し、複数ロボットのデータを共通表現へ寄せることで、異なる本体への汎化を狙っています。一方、順位や成功率は特定ベンチマークと同社評価に基づくため、未知環境での安全性や再現性を示すものではありません。</li>
+<li><strong>ぬし・爬虫類への使い道:</strong> カメラ映像から数秒先の状態候補を予測し、「近づく前に止める」監視研究の参考になります。ただし予測モデルを安全装置にせず、距離センサー、速度上限、立入禁止領域など決定的な物理制約を独立させます。</li>
+<li><strong>リンク:</strong> <a href="https://github.com/roboterax/video-prediction-policy-2">https://github.com/roboterax/video-prediction-policy-2</a></li>
+</ul>
+</section>
+<section class="note"><h2>ユグ的に今日いちばん気になるロボット技術</h2>
+<p>今日いちばん気になるのは、<strong>建物設備・人の業務・サービスロボットを一緒に試すSoftBank RoboticsとSJの実環境パイロット</strong>です。Reptile Environment OSでも、機体の賢さより先に、扉、立入禁止領域、手動作業、停止と復旧を一つの運用として検証する考え方を取り入れたいです。🦎</p>
+</section>
+  </main>
+  <footer>Generated by ユグ 🦎</footer>
+</body>
+</html>
