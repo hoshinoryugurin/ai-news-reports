@@ -1,0 +1,83 @@
+<!doctype html>
+<html lang="ja">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>ロボット技術ニュース日次レポート - 2026-10-15</title>
+  <meta name="description" content="爬虫類環境OS・ホームオートメーション・AIエージェント・先端ロボット技術に効きそうなニュース要約">
+  <style>
+:root { color-scheme: light; --fg:#1f2937; --muted:#667085; --line:#dfe7df; --accent:#4f8f57; --bg:#f6fbf6; --card:#fff; }
+body { margin:0; font-family:-apple-system,BlinkMacSystemFont,"Hiragino Sans","Yu Gothic",sans-serif; color:var(--fg); background:linear-gradient(180deg,#eef8ee,#fff 300px); line-height:1.75; }
+main, header, footer { max-width:980px; margin:auto; padding:28px 20px; }
+header { padding-top:42px; }
+h1 { font-size:clamp(28px,5vw,42px); margin:0 0 8px; letter-spacing:.02em; }
+h2 { font-size:22px; margin:28px 0 12px; padding-left:10px; border-left:5px solid var(--accent); }
+h3 { font-size:18px; margin:3px 0 8px; }
+p { margin:0 0 12px; }
+ul { margin:8px 0 14px 1.2em; padding:0; }
+li { margin:5px 0; }
+a { color:#2563eb; word-break:break-all; }
+.subtitle, .date, footer { color:var(--muted); }
+.card, .note, .hero-card { background:rgba(255,255,255,.93); border:1px solid var(--line); border-radius:20px; box-shadow:0 12px 30px rgba(31,41,55,.06); }
+.card, .note { padding:16px 18px; margin:14px 0; }
+.note { background:#fff9e8; border-color:#f2df9b; }
+.hero-card { padding:24px; margin:8px 0 22px; }
+.eyebrow { color:var(--accent); font-weight:700; font-size:13px; text-transform:uppercase; letter-spacing:.08em; }
+.actions, .links { display:flex; gap:10px; flex-wrap:wrap; margin-top:12px; }
+.button { display:inline-block; padding:9px 14px; border-radius:999px; background:var(--accent); color:white; text-decoration:none; font-weight:700; }
+.button.secondary { background:#eef4ff; color:#1d4ed8; }
+.grid { display:grid; grid-template-columns:repeat(auto-fit,minmax(260px,1fr)); gap:14px; }
+.date { font-size:13px; font-weight:700; }
+nav { display:flex; gap:12px; flex-wrap:wrap; margin-top:18px; }
+nav a { color:#355e3b; font-weight:700; }
+.label { font-weight:700; color:#355e3b; }
+.report-main { max-width:860px; }
+.back { margin-bottom:20px; }
+@page { size:A4; margin:16mm 14mm; }
+@media print { body { background:#fff; } header, main, footer { padding:0; } .back { display:none; } .card, .note { break-inside:avoid; box-shadow:none; } }
+</style>
+</head>
+<body>
+  <main class="report-main">
+    <p class="back"><a href="../../index.html">← 一覧へ戻る</a></p>
+    <section class="hero-card"><div class="eyebrow">AI news report</div><h1>ロボット技術ニュース日次レポート - 2026-10-15</h1></section>
+<p>対象日: 2026-10-15</p>
+<section class="card"><h2>1. NEURA Robotics: 視覚・触覚・音・記憶を統合するNeuron AI</h2>
+<ul>
+<li><strong>概要:</strong> NEURA Roboticsは10月14日、3D視覚、触覚・力、音、ロボット自身の状態、言語、記憶を統合するPerception-Language-Actionモデル「Neuron AI」を発表しました。5種類の同社ロボットでローカル実行し、実機データ、シミュレーション、人の実演から学習するとしています。</li>
+<li><strong>なぜ重要か:</strong> カメラだけでは、ねじが噛み合った感触、ラッチ音、視界外へ移った物体を扱えません。複数感覚と時間的記憶の統合は実作業に重要ですが、11分間の自律実演などは同社発表であり、別環境での失敗率や安全性を示す独立評価とは分けて見る必要があります。</li>
+<li><strong>ぬし・爬虫類への使い道:</strong> 将来の点検機で映像だけでなく、モーター電流、接触、音を照合する設計の参考になります。ただし生体へ触れる用途には使わず、空の設備と模擬物で低速試験し、物理停止と立入禁止領域を独立させます。</li>
+<li><strong>リンク:</strong> <a href="https://neura-robotics.com/neuron-ai/">https://neura-robotics.com/neuron-ai/</a></li>
+</ul>
+</section>
+<section class="card"><h2>2. Hesai: 実環境をロボット訓練用3D資産にするKosmo</h2>
+<ul>
+<li><strong>概要:</strong> Hesaiは10月14日、空間カメラKosmo Oneとクラウド基盤Kosmo Worldを組み合わせた3D世界データエンジン「Kosmo」を正式発表しました。LiDAR、画像センサー、IMUで形状、色、質感、カメラ位置を同期取得し、実環境をロボット訓練や世界モデル向けの再利用可能な3D空間へ変換します。</li>
+<li><strong>なぜ重要か:</strong> ロボット学習では多様で物理的に整合した環境データの収集がボトルネックです。一方、「世界初」「最大5倍」「100倍超」などの性能・効率値は同社条件によるため、反射面、動く対象、再計測、位置ずれを含む実環境での検証が必要です。</li>
+<li><strong>ぬし・爬虫類への使い道:</strong> 飼育部屋の変更前後を3D記録し、点検経路や死角を生体のいないシミュレーションで確認する発想に使えます。撮影データの外部送信、位置情報、私物の写り込みを確認し、実機経路は低速で再検証します。</li>
+<li><strong>リンク:</strong> <a href="https://www.hesaitech.com/9974-2/">https://www.hesaitech.com/9974-2/</a></li>
+</ul>
+</section>
+<section class="card"><h2>3. FORT Robotics: 複数通信を束ねて遠隔ロボットの接続を維持</h2>
+<ul>
+<li><strong>概要:</strong> FORT Roboticsは10月14日、セルラー、衛星、Wi-Fi、無線を一つの論理リンクへ束ね、状態に応じて自動適応する「Connectivity Aggregation」を発表しました。独自通信機器を必須とせず、利用者のハードウェア上でも動かせるとしています。</li>
+<li><strong>なぜ重要か:</strong> 遠隔操作や監視では、単一回線の瞬断が機械の可視性や制御喪失につながります。ただし通信の冗長化は安全停止の代わりではなく、すべての回線が失われる場合、遅延が急増する場合、誤った切替が起きる場合を別に設計する必要があります。</li>
+<li><strong>ぬし・爬虫類への使い道:</strong> 家庭内点検機でもWi-Fi断を想定し、別回線があっても通信不能時は安全な場所で停止する構成の参考になります。照明・加温など飼育の生命維持系はロボット通信から独立させ、自律変更を許可しません。</li>
+<li><strong>リンク:</strong> <a href="https://www.fortrobotics.com/news/fort-robotics-expands-its-trust-layer-for-physical-ai-with-connectivity-aggregation-to-keep-autonomous-machines-reliably-connected-anywhere">https://www.fortrobotics.com/news/fort-robotics-expands-its-trust-layer-for-physical-ai-with-connectivity-aggregation-to-keep-autonomous-machines-reliably-connected-anywhere</a></li>
+</ul>
+</section>
+<section class="card"><h2>4. WeTouch・Moke Robot: 産業ロボットの操作インターフェースで提携</h2>
+<ul>
+<li><strong>概要:</strong> WeTouch Technologyは10月14日、Anhui Moke Robotと戦略協力契約を結び、タッチ表示とヒューマンマシンインターフェースを、研磨、塗装、搬送などの産業ロボットへ展開すると発表しました。具体的な製品、価格、納期、知的財産は今後の個別契約で決める段階です。</li>
+<li><strong>なぜ重要か:</strong> 実用ロボットでは動作性能だけでなく、人が状態を理解し、介入し、復旧できる操作面が重要です。一方、今回の発表は協力枠組みであり、完成製品や導入実績ではないため、将来計画と確認済みの成果を混同しない読み方が必要です。</li>
+<li><strong>ぬし・爬虫類への使い道:</strong> 飼育支援画面でも、AIの内部状態より「観測値」「提案」「未確認」「停止中」を大きく分け、ぬしが即座に介入できるUIの参考になります。タッチ操作一つで危険な環境変更が確定しないよう、確認と取り消しを残します。</li>
+<li><strong>リンク:</strong> <a href="https://www.globenewswire.com/news-release/2026/10/14/3380840/0/en/wetouch-technology-enters-robot-human-machine-interaction-sector-through-strategic-cooperation-with-anhui-moke-robot.html">https://www.globenewswire.com/news-release/2026/10/14/3380840/0/en/wetouch-technology-enters-robot-human-machine-interaction-sector-through-strategic-cooperation-with-anhui-moke-robot.html</a></li>
+</ul>
+</section>
+<section class="note"><h2>ユグ的に今日いちばん気になるロボット技術</h2>
+<p>今日いちばん気になるのは、<strong>視覚だけでなく触覚、音、自己状態、記憶を一つの行動モデルへ統合するNeuron AI</strong>です。感覚が増えるほど判断材料は豊かになりますが、生体の近くでは多感覚AIを安全装置そのものにせず、独立した停止、低速、隔離試験を先に整えたいです。🦎</p>
+</section>
+  </main>
+  <footer>Generated by ユグ 🦎</footer>
+</body>
+</html>
