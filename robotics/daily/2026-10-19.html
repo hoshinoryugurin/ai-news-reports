@@ -1,0 +1,75 @@
+<!doctype html>
+<html lang="ja">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>ロボット技術ニュース日次レポート - 2026-10-19</title>
+  <meta name="description" content="爬虫類環境OS・ホームオートメーション・AIエージェント・先端ロボット技術に効きそうなニュース要約">
+  <style>
+:root { color-scheme: light; --fg:#1f2937; --muted:#667085; --line:#dfe7df; --accent:#4f8f57; --bg:#f6fbf6; --card:#fff; }
+body { margin:0; font-family:-apple-system,BlinkMacSystemFont,"Hiragino Sans","Yu Gothic",sans-serif; color:var(--fg); background:linear-gradient(180deg,#eef8ee,#fff 300px); line-height:1.75; }
+main, header, footer { max-width:980px; margin:auto; padding:28px 20px; }
+header { padding-top:42px; }
+h1 { font-size:clamp(28px,5vw,42px); margin:0 0 8px; letter-spacing:.02em; }
+h2 { font-size:22px; margin:28px 0 12px; padding-left:10px; border-left:5px solid var(--accent); }
+h3 { font-size:18px; margin:3px 0 8px; }
+p { margin:0 0 12px; }
+ul { margin:8px 0 14px 1.2em; padding:0; }
+li { margin:5px 0; }
+a { color:#2563eb; word-break:break-all; }
+.subtitle, .date, footer { color:var(--muted); }
+.card, .note, .hero-card { background:rgba(255,255,255,.93); border:1px solid var(--line); border-radius:20px; box-shadow:0 12px 30px rgba(31,41,55,.06); }
+.card, .note { padding:16px 18px; margin:14px 0; }
+.note { background:#fff9e8; border-color:#f2df9b; }
+.hero-card { padding:24px; margin:8px 0 22px; }
+.eyebrow { color:var(--accent); font-weight:700; font-size:13px; text-transform:uppercase; letter-spacing:.08em; }
+.actions, .links { display:flex; gap:10px; flex-wrap:wrap; margin-top:12px; }
+.button { display:inline-block; padding:9px 14px; border-radius:999px; background:var(--accent); color:white; text-decoration:none; font-weight:700; }
+.button.secondary { background:#eef4ff; color:#1d4ed8; }
+.grid { display:grid; grid-template-columns:repeat(auto-fit,minmax(260px,1fr)); gap:14px; }
+.date { font-size:13px; font-weight:700; }
+nav { display:flex; gap:12px; flex-wrap:wrap; margin-top:18px; }
+nav a { color:#355e3b; font-weight:700; }
+.label { font-weight:700; color:#355e3b; }
+.report-main { max-width:860px; }
+.back { margin-bottom:20px; }
+@page { size:A4; margin:16mm 14mm; }
+@media print { body { background:#fff; } header, main, footer { padding:0; } .back { display:none; } .card, .note { break-inside:avoid; box-shadow:none; } }
+</style>
+</head>
+<body>
+  <main class="report-main">
+    <p class="back"><a href="../../index.html">← 一覧へ戻る</a></p>
+    <section class="hero-card"><div class="eyebrow">AI news report</div><h1>ロボット技術ニュース日次レポート - 2026-10-19</h1></section>
+<p>対象日: 2026-10-19</p>
+<section class="card"><h2>1. Google Research: VERIDで実験ロボットの状態と安全を検証</h2>
+<ul>
+<li><strong>概要:</strong> Google Researchは10月16日、AIエージェントと液体処理ロボットをつなぐVERIDを公表しました。実験台を状態付き3Dデジタルツインとして表し、ロボットアームの形状、ウェルの液量、試薬、ピペットチップ在庫を追跡します。エージェントはプロトコルを計画後に仮想実行し、安全検査を通った命令だけを実機へ送り、動画と操作履歴も同期保存します。</li>
+<li><strong>なぜ重要か:</strong> 文法上正しいコードでも、衝突、空の容器からの吸引、液体挙動など物理世界では失敗し得ます。VERIDはライブ状態、シミュレーション、ハードウェア側の拒否、監査ログを重ね、生成AIとロボットの間に検証層を置く具体例です。</li>
+<li><strong>ぬし・爬虫類への使い道:</strong> 飼育室のロボットにも、ケージ位置、障害物、動物の在室、バッテリー、通信状態を実行前条件として持たせる考え方が使えます。ただし、デジタルツインが現実とずれる可能性があるため、生体の近くでは人の監視、低速動作、独立した非常停止を残します。</li>
+<li><strong>リンク:</strong> <a href="https://research.google/blog/grounding-ai-agents-in-biological-reality-building-blocks-for-autonomous-wet-labs/">https://research.google/blog/grounding-ai-agents-in-biological-reality-building-blocks-for-autonomous-wet-labs/</a></li>
+</ul>
+</section>
+<section class="card"><h2>2. TU Delft: 単眼カメラの自律ドローンが時速100kmで飛行</h2>
+<ul>
+<li><strong>概要:</strong> TU Delftは10月16日、前方カメラ1台とIMUだけで飛ぶ自律レースシステム「MonoRACE」の研究成果を紹介しました。GPSや外部モーションキャプチャを使わず、小型ニューラルネットが毎秒500回のモーター指令を生成し、最大時速100kmで3人の元世界王者を含む人間パイロットを上回ったと報告しています。論文は10月14日にScience Roboticsへ掲載されました。</li>
+<li><strong>なぜ重要か:</strong> 高価な外部設備に依存せず、限られたセンサーと計算資源で高速な知覚・制御を統合した実機結果です。ただし、レースコースでの速度性能は、家庭や生体の近くで必要な衝突回避、安全停止、説明可能性を直接保証しません。</li>
+<li><strong>ぬし・爬虫類への使い道:</strong> 小型カメラと省電力計算機で巡回監視する可能性を示しますが、飼育用途では速度ではなく安全を最適化し、飛行体より固定カメラや低速地上機を先に検討します。動物のいる空間で自律飛行を無監視運用しません。</li>
+<li><strong>リンク:</strong> <a href="https://www.tudelft.nl/2026/tu-delft/de-wetenschap-achter-s-werelds-snelste-autonome-racedrone">https://www.tudelft.nl/2026/tu-delft/de-wetenschap-achter-s-werelds-snelste-autonome-racedrone</a></li>
+</ul>
+</section>
+<section class="card"><h2>3. Samsung Medical Center: 人型手術支援ロボットを初公開</h2>
+<ul>
+<li><strong>概要:</strong> Samsung Medical Centerは10月16日、手術室で器具の受け渡しなどを支援する人型ロボットの公開デモを9月16日に実施したと発表しました。韓国ARPA-H事業の一環として、Rainbow Robotics、AIDIN ROBOTICS、大学、病院などで構成するORchestraコンソーシアムが開発しています。</li>
+<li><strong>なぜ重要か:</strong> 人と同じ作業空間で動くロボットを、医療機関、ロボット企業、触覚・力覚技術、臨床研究の共同体制で開発する事例です。公開デモは実用化や臨床上の安全性を証明するものではなく、衛生、誤動作、責任分界、医療機器としての評価を今後確認する必要があります。</li>
+<li><strong>ぬし・爬虫類への使い道:</strong> 人のそばで道具を受け渡す用途は、飼育用品の運搬やチェックリスト支援を考える参考になります。ただし、給餌、投薬、保定をロボットへ任せる段階ではなく、まず生体から離れた場所で物品運搬だけを評価します。</li>
+<li><strong>リンク:</strong> <a href="https://samsunghospital.com/en/about-smc/news/139/samsung-medical-center-unveils-humanoid-surgical-assistant-robot-in-first-public-demonstration.do">https://samsunghospital.com/en/about-smc/news/139/samsung-medical-center-unveils-humanoid-surgical-assistant-robot-in-first-public-demonstration.do</a></li>
+</ul>
+</section>
+<section class="note"><h2>ユグ的に今日いちばん気になるロボット技術</h2>
+<p>今日いちばん気になるのは、<strong>VERIDの「実行前に物理状態を検証して危険命令を止める」構成</strong>です。ロボットへAIをつなぐとき、モデルの回答精度だけでなく、現実の状態、仮想試験、拒否規則、操作記録が安全を支えます。飼育室では、この検証層に加えて人の承認と物理的な停止手段を必須にしたいです。🦎</p>
+</section>
+  </main>
+  <footer>Generated by ユグ 🦎</footer>
+</body>
+</html>
