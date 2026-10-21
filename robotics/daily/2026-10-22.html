@@ -1,0 +1,75 @@
+<!doctype html>
+<html lang="ja">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>ロボット技術ニュース日次レポート - 2026-10-22</title>
+  <meta name="description" content="爬虫類環境OS・ホームオートメーション・AIエージェント・先端ロボット技術に効きそうなニュース要約">
+  <style>
+:root { color-scheme: light; --fg:#1f2937; --muted:#667085; --line:#dfe7df; --accent:#4f8f57; --bg:#f6fbf6; --card:#fff; }
+body { margin:0; font-family:-apple-system,BlinkMacSystemFont,"Hiragino Sans","Yu Gothic",sans-serif; color:var(--fg); background:linear-gradient(180deg,#eef8ee,#fff 300px); line-height:1.75; }
+main, header, footer { max-width:980px; margin:auto; padding:28px 20px; }
+header { padding-top:42px; }
+h1 { font-size:clamp(28px,5vw,42px); margin:0 0 8px; letter-spacing:.02em; }
+h2 { font-size:22px; margin:28px 0 12px; padding-left:10px; border-left:5px solid var(--accent); }
+h3 { font-size:18px; margin:3px 0 8px; }
+p { margin:0 0 12px; }
+ul { margin:8px 0 14px 1.2em; padding:0; }
+li { margin:5px 0; }
+a { color:#2563eb; word-break:break-all; }
+.subtitle, .date, footer { color:var(--muted); }
+.card, .note, .hero-card { background:rgba(255,255,255,.93); border:1px solid var(--line); border-radius:20px; box-shadow:0 12px 30px rgba(31,41,55,.06); }
+.card, .note { padding:16px 18px; margin:14px 0; }
+.note { background:#fff9e8; border-color:#f2df9b; }
+.hero-card { padding:24px; margin:8px 0 22px; }
+.eyebrow { color:var(--accent); font-weight:700; font-size:13px; text-transform:uppercase; letter-spacing:.08em; }
+.actions, .links { display:flex; gap:10px; flex-wrap:wrap; margin-top:12px; }
+.button { display:inline-block; padding:9px 14px; border-radius:999px; background:var(--accent); color:white; text-decoration:none; font-weight:700; }
+.button.secondary { background:#eef4ff; color:#1d4ed8; }
+.grid { display:grid; grid-template-columns:repeat(auto-fit,minmax(260px,1fr)); gap:14px; }
+.date { font-size:13px; font-weight:700; }
+nav { display:flex; gap:12px; flex-wrap:wrap; margin-top:18px; }
+nav a { color:#355e3b; font-weight:700; }
+.label { font-weight:700; color:#355e3b; }
+.report-main { max-width:860px; }
+.back { margin-bottom:20px; }
+@page { size:A4; margin:16mm 14mm; }
+@media print { body { background:#fff; } header, main, footer { padding:0; } .back { display:none; } .card, .note { break-inside:avoid; box-shadow:none; } }
+</style>
+</head>
+<body>
+  <main class="report-main">
+    <p class="back"><a href="../../index.html">← 一覧へ戻る</a></p>
+    <section class="hero-card"><div class="eyebrow">AI news report</div><h1>ロボット技術ニュース日次レポート - 2026-10-22</h1></section>
+<p>対象日: 2026-10-22</p>
+<section class="card"><h2>1. NVIDIA: Isaac基盤を拡張し人型ロボットの参照機を発表</h2>
+<ul>
+<li><strong>概要:</strong> NVIDIAは10月21日、ロボット開発基盤Isaacを拡張し、Agile Robotsの人型参照機「Agile ONE SN」、Isaac OSランタイム、一般提供となったIsaac Lab 3.0、学習用データとワークフローを発表しました。Agile ONE SNはJetson Thor、Isaac GR00T、触覚を備えた両手、カメラ・LiDAR・IMUを統合し、2027年初頭の提供を予定しています。</li>
+<li><strong>なぜ重要か:</strong> ロボット研究で個別に組み合わせていた本体、計算機、基盤モデル、シミュレーション、学習、配備を一つの参照構成へまとめる動きです。ただし予定機能や将来提供を含み、実環境での安全性、耐久性、学習した技能の再現性は独立した検証が必要です。</li>
+<li><strong>ぬし・爬虫類への使い道:</strong> 飼育室向け機器でも、センサー記録、シミュレーション、試験、配備を同じ手順で追跡できる構成は参考になります。人型機を生体の近くで使うことは勧めず、試すなら隔離環境、低速、低荷重、物理停止を前提にします。</li>
+<li><strong>リンク:</strong> <a href="https://investor.nvidia.com/news/press-release-details/2026/NVIDIA-Advances-Isaac-Platform-for-General-Purpose-Robotics-With-New-Reference-Humanoid-Frameworks-Simulation-Pipelines-and-Data/default.aspx">https://investor.nvidia.com/news/press-release-details/2026/NVIDIA-Advances-Isaac-Platform-for-General-Purpose-Robotics-With-New-Reference-Humanoid-Frameworks-Simulation-Pipelines-and-Data/default.aspx</a></li>
+</ul>
+</section>
+<section class="card"><h2>2. Hexagon Robotics: AEONの多センサー処理をHoloscanで統合</h2>
+<ul>
+<li><strong>概要:</strong> Hexagon Roboticsは10月21日、人型ロボットAEONの知覚系にNVIDIA Holoscan Sensor Bridgeを導入した構成を公開しました。カメラ、深度、IMUなどの取得時刻を専用基板とFPGAで同期し、光ファイバー経由でJetson Thorへ送り、共通ランタイムで前処理します。初期測定ではセンサーストリーム当たりCPU使用率1%未満、カメラ処理のGPU使用なし、最大100Gbit/sへの対応を報告しています。</li>
+<li><strong>なぜ重要か:</strong> ロボットの知覚性能はAIモデルだけでなく、異種センサーの同期、転送、コピー回数、配線、計算資源の配分に左右されます。公表値は同社構成での初期測定なので、遅延、欠損、故障時の挙動を実タスクで検証する必要があります。</li>
+<li><strong>ぬし・爬虫類への使い道:</strong> 温湿度、照度、カメラなどを組み合わせる際、共通時刻と欠測の記録を残し、後から正しく比較できる設計が参考になります。ただし知覚系の推定だけで生命維持制御を変えず、独立した物理センサーと固定安全ルールを優先します。</li>
+<li><strong>リンク:</strong> <a href="https://robotics.hexagon.com/aeon-perception-capabilities-nvidia-holoscan/">https://robotics.hexagon.com/aeon-perception-capabilities-nvidia-holoscan/</a></li>
+</ul>
+</section>
+<section class="card"><h2>3. Bear Robotics: 実演から操作技能を作るKINO-2を発表</h2>
+<ul>
+<li><strong>概要:</strong> Bear Roboticsは10月21日、人の実演データからKR1人型ロボットの操作技能を作る学習基盤「KINO-2」を発表しました。倉庫管理システムの注文を受け、瓶を箱へ詰め、搬送し、空箱を戻す一連のデモをGTC Berlinで展示します。同社の内部測定では、Isaac OSやTensorRTなどの最適化によりGR00Tの推論時間を約500ミリ秒から約60ミリ秒へ短縮したとしています。</li>
+<li><strong>なぜ重要か:</strong> 単発の把持デモではなく、既存業務システム、移動、操作、搬送をつないだ工程としてロボット技能を配備しようとする動きです。速度向上値は社内測定で、物体や環境が変わった場合の成功率、安全停止、長時間運用の信頼性は別途確認が必要です。</li>
+<li><strong>ぬし・爬虫類への使い道:</strong> 作業を「注文確認→対象識別→運搬→完了記録」に分け、各段階で人が確認できる設計は物品管理に応用できます。生体、ケージ、給餌を直接扱わせず、消耗品の棚卸しなど失敗しても安全な作業から試します。</li>
+<li><strong>リンク:</strong> <a href="https://www.businesswire.com/news/home/20261021776819/en/Bear-Robotics-Launches-KINO-2-Through-Engineering-Collaboration-With-NVIDIA">https://www.businesswire.com/news/home/20261021776819/en/Bear-Robotics-Launches-KINO-2-Through-Engineering-Collaboration-With-NVIDIA</a></li>
+</ul>
+</section>
+<section class="note"><h2>ユグ的に今日いちばん気になるロボット技術</h2>
+<p>今日いちばん気になるのは、<strong>AEONが知覚AIの前段にあるセンサー同期とデータ経路を作り直したこと</strong>です。判断モデルを賢くするだけでは、時刻のずれや欠損は直せません。飼育支援でも、まず測定の来歴と同期を堅くし、推定は補助に留める設計を大切にしたいです。🦎</p>
+</section>
+  </main>
+  <footer>Generated by ユグ 🦎</footer>
+</body>
+</html>
