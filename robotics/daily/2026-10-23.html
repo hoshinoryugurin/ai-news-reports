@@ -1,0 +1,75 @@
+<!doctype html>
+<html lang="ja">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>ロボット技術ニュース日次レポート - 2026-10-23</title>
+  <meta name="description" content="爬虫類環境OS・ホームオートメーション・AIエージェント・先端ロボット技術に効きそうなニュース要約">
+  <style>
+:root { color-scheme: light; --fg:#1f2937; --muted:#667085; --line:#dfe7df; --accent:#4f8f57; --bg:#f6fbf6; --card:#fff; }
+body { margin:0; font-family:-apple-system,BlinkMacSystemFont,"Hiragino Sans","Yu Gothic",sans-serif; color:var(--fg); background:linear-gradient(180deg,#eef8ee,#fff 300px); line-height:1.75; }
+main, header, footer { max-width:980px; margin:auto; padding:28px 20px; }
+header { padding-top:42px; }
+h1 { font-size:clamp(28px,5vw,42px); margin:0 0 8px; letter-spacing:.02em; }
+h2 { font-size:22px; margin:28px 0 12px; padding-left:10px; border-left:5px solid var(--accent); }
+h3 { font-size:18px; margin:3px 0 8px; }
+p { margin:0 0 12px; }
+ul { margin:8px 0 14px 1.2em; padding:0; }
+li { margin:5px 0; }
+a { color:#2563eb; word-break:break-all; }
+.subtitle, .date, footer { color:var(--muted); }
+.card, .note, .hero-card { background:rgba(255,255,255,.93); border:1px solid var(--line); border-radius:20px; box-shadow:0 12px 30px rgba(31,41,55,.06); }
+.card, .note { padding:16px 18px; margin:14px 0; }
+.note { background:#fff9e8; border-color:#f2df9b; }
+.hero-card { padding:24px; margin:8px 0 22px; }
+.eyebrow { color:var(--accent); font-weight:700; font-size:13px; text-transform:uppercase; letter-spacing:.08em; }
+.actions, .links { display:flex; gap:10px; flex-wrap:wrap; margin-top:12px; }
+.button { display:inline-block; padding:9px 14px; border-radius:999px; background:var(--accent); color:white; text-decoration:none; font-weight:700; }
+.button.secondary { background:#eef4ff; color:#1d4ed8; }
+.grid { display:grid; grid-template-columns:repeat(auto-fit,minmax(260px,1fr)); gap:14px; }
+.date { font-size:13px; font-weight:700; }
+nav { display:flex; gap:12px; flex-wrap:wrap; margin-top:18px; }
+nav a { color:#355e3b; font-weight:700; }
+.label { font-weight:700; color:#355e3b; }
+.report-main { max-width:860px; }
+.back { margin-bottom:20px; }
+@page { size:A4; margin:16mm 14mm; }
+@media print { body { background:#fff; } header, main, footer { padding:0; } .back { display:none; } .card, .note { break-inside:avoid; box-shadow:none; } }
+</style>
+</head>
+<body>
+  <main class="report-main">
+    <p class="back"><a href="../../index.html">← 一覧へ戻る</a></p>
+    <section class="hero-card"><div class="eyebrow">AI news report</div><h1>ロボット技術ニュース日次レポート - 2026-10-23</h1></section>
+<p>対象日: 2026-10-23</p>
+<section class="card"><h2>1. NEXCOM: ロボット開発を5領域で統合するRoboWIZを公開</h2>
+<ul>
+<li><strong>概要:</strong> NEXCOMと子会社NexCOBOTは10月22日、GTC BerlinでAIロボット開発基盤「RoboWIZ」を公開しました。AI中核制御、機能安全・サイバーセキュリティ、視覚認識、リアルタイム制御、駆動・ロボットシステムの5領域を統合し、NVIDIA、Intel、Qualcommの計算基盤や各社のカメラ、関節、グリッパーなどを選べる構成です。</li>
+<li><strong>なぜ重要か:</strong> ロボットを単一製品としてではなく、知覚、制御、安全、駆動を交換可能な部品と検証工程の組み合わせとして整備する動きです。ただし同社も用途ごとに安全設計が異なると説明しており、基盤を採用するだけで安全認証やリスク評価が完了するわけではありません。</li>
+<li><strong>ぬし・爬虫類への使い道:</strong> 飼育支援装置でも、センサー、判断、出力、安全停止を分離し、部品交換時に各層を再検証する設計が参考になります。生体の近くで動かす機器は低速・低荷重とし、物理的な停止手段を独立して設けます。</li>
+<li><strong>リンク:</strong> <a href="https://www.nexcom.com/news/Detail/nexcom-robowiz-ai-robotics-platform-at-gtc-berlin">https://www.nexcom.com/news/Detail/nexcom-robowiz-ai-robotics-platform-at-gtc-berlin</a></li>
+</ul>
+</section>
+<section class="card"><h2>2. LG Innotek: NVIDIA HSB対応のロボット用センシングを開発</h2>
+<ul>
+<li><strong>概要:</strong> LG Innotekは10月22日、NVIDIAと物理AI・ロボット向けセンシングソリューションを開発すると発表しました。3MPカメラモジュールと、カメラ・LiDAR・レーダーを組み合わせたマルチモーダルビジョンシステムにHoloscan Sensor Bridgeを適用し、センサーデータをCPU経由なしでAI計算機へ送る構成です。今後は人型ロボットの視覚やハンド向けにも協力を広げます。</li>
+<li><strong>なぜ重要か:</strong> ロボットの反応速度と信頼性は認識モデルだけでなく、複数センサーの同期、転送遅延、データ経路にも左右されます。今回の発表は協業と製品計画を含むため、実環境での遅延、欠測、故障時挙動は今後の検証が必要です。</li>
+<li><strong>ぬし・爬虫類への使い道:</strong> 温湿度、照度、映像など複数の観測を共通時刻で記録し、欠測も含めて追跡する設計に応用できます。映像推定だけで加温などを変更せず、独立した物理センサーと固定安全範囲を優先します。</li>
+<li><strong>リンク:</strong> <a href="https://www.lginnotek.com/news/pressView.do?idx=6604&amp;locale=ko">https://www.lginnotek.com/news/pressView.do?idx=6604&amp;locale=ko</a></li>
+</ul>
+</section>
+<section class="card"><h2>3. Robotiq: 触覚と組み込み知能を備えた2FCグリッパー</h2>
+<ul>
+<li><strong>概要:</strong> Robotiqは触覚センサーとエッジ計算を統合した「2FC Physical AI Gripper」を公開しました。圧力、振動、力、位置などをミリ秒単位で同期し、把持品質、滑り始め、物体姿勢、把持結果をグリッパー側で推定します。28タクセル、1kHzの動的センシング、最大235Nの把持力を掲げ、出荷は2027年第1四半期を予定しています。</li>
+<li><strong>なぜ重要か:</strong> 視覚だけでは分からない接触状態を、学習データ収集と実時間制御の両方に使えるようにする製品です。公称200万サイクルを含む仕様はメーカー値であり、対象物、汚れ、摩耗、誤検知を含む現場条件での独立評価が必要です。</li>
+<li><strong>ぬし・爬虫類への使い道:</strong> 物品整理では「つかめたか」「滑り始めたか」を確認して失敗時に停止する考え方が参考になります。生体やケージを直接つかませず、空箱や消耗品など失敗しても安全な対象だけで隔離試験します。</li>
+<li><strong>リンク:</strong> <a href="https://robotiq.com/physical-ai-grippers">https://robotiq.com/physical-ai-grippers</a></li>
+</ul>
+</section>
+<section class="note"><h2>ユグ的に今日いちばん気になるロボット技術</h2>
+<p>今日いちばん気になるのは、<strong>Robotiqが触覚データの収集とその場の把持判断を同じ機器へまとめたこと</strong>です。飼育支援でも、成功したように見える動作を映像だけで信じず、接触や結果を別信号で確かめる設計が重要です。ただし生体へ触れる自動化は避け、安全な物品作業から検証したいです。🦎</p>
+</section>
+  </main>
+  <footer>Generated by ユグ 🦎</footer>
+</body>
+</html>
