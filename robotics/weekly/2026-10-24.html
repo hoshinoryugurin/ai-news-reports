@@ -1,0 +1,100 @@
+<!doctype html>
+<html lang="ja">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>ロボット技術ニュース週間サマリー - 2026-10-24</title>
+  <meta name="description" content="爬虫類環境OS・ホームオートメーション・AIエージェント・先端ロボット技術に効きそうなニュース要約">
+  <style>
+:root { color-scheme: light; --fg:#1f2937; --muted:#667085; --line:#dfe7df; --accent:#4f8f57; --bg:#f6fbf6; --card:#fff; }
+body { margin:0; font-family:-apple-system,BlinkMacSystemFont,"Hiragino Sans","Yu Gothic",sans-serif; color:var(--fg); background:linear-gradient(180deg,#eef8ee,#fff 300px); line-height:1.75; }
+main, header, footer { max-width:980px; margin:auto; padding:28px 20px; }
+header { padding-top:42px; }
+h1 { font-size:clamp(28px,5vw,42px); margin:0 0 8px; letter-spacing:.02em; }
+h2 { font-size:22px; margin:28px 0 12px; padding-left:10px; border-left:5px solid var(--accent); }
+h3 { font-size:18px; margin:3px 0 8px; }
+p { margin:0 0 12px; }
+ul { margin:8px 0 14px 1.2em; padding:0; }
+li { margin:5px 0; }
+a { color:#2563eb; word-break:break-all; }
+.subtitle, .date, footer { color:var(--muted); }
+.card, .note, .hero-card { background:rgba(255,255,255,.93); border:1px solid var(--line); border-radius:20px; box-shadow:0 12px 30px rgba(31,41,55,.06); }
+.card, .note { padding:16px 18px; margin:14px 0; }
+.note { background:#fff9e8; border-color:#f2df9b; }
+.hero-card { padding:24px; margin:8px 0 22px; }
+.eyebrow { color:var(--accent); font-weight:700; font-size:13px; text-transform:uppercase; letter-spacing:.08em; }
+.actions, .links { display:flex; gap:10px; flex-wrap:wrap; margin-top:12px; }
+.button { display:inline-block; padding:9px 14px; border-radius:999px; background:var(--accent); color:white; text-decoration:none; font-weight:700; }
+.button.secondary { background:#eef4ff; color:#1d4ed8; }
+.grid { display:grid; grid-template-columns:repeat(auto-fit,minmax(260px,1fr)); gap:14px; }
+.date { font-size:13px; font-weight:700; }
+nav { display:flex; gap:12px; flex-wrap:wrap; margin-top:18px; }
+nav a { color:#355e3b; font-weight:700; }
+.label { font-weight:700; color:#355e3b; }
+.report-main { max-width:860px; }
+.back { margin-bottom:20px; }
+@page { size:A4; margin:16mm 14mm; }
+@media print { body { background:#fff; } header, main, footer { padding:0; } .back { display:none; } .card, .note { break-inside:avoid; box-shadow:none; } }
+</style>
+</head>
+<body>
+  <main class="report-main">
+    <p class="back"><a href="../../index.html">← 一覧へ戻る</a></p>
+    <section class="hero-card"><div class="eyebrow">AI news report</div><h1>ロボット技術ニュース週間サマリー - 2026-10-24</h1></section>
+<p>対象期間: 2026-10-18〜2026-10-24</p>
+<section class="card"><h2>入力レポート</h2>
+<ul>
+<li>2026-10-18, 2026-10-19, 2026-10-20, 2026-10-21, 2026-10-22, 2026-10-23, 2026-10-24 の日次7本</li>
+<li>不足日はなし。各日次に記録された一次情報と、その公開日・対象範囲を入力として整理した。</li>
+</ul>
+</section>
+<section class="card"><h2>今週の大きな流れ</h2>
+<p>### 1. Physical AIの知能が共通API・参照基盤へ向かい、安全は機体側の独立層へ移った</p>
+<p>Dream-1は未知の双腕機へ短い動作を返すAPI、NVIDIAはIsaac OS、Isaac Lab 3.0、GR00T、参照ヒューマノイドを組み合わせた基盤を発表しました。同時にFORT Roboticsは機体やAI提供者から独立した停止・通信・監視層を拡大しています。知能を交換しやすくするほど、速度、力、領域、通信断時停止をモデルから独立して固定する必要があります。</p>
+<p>### 2. ロボットの性能競争は、モデルからセンサー同期・実時間制御・触覚へ深く広がった</p>
+<p>HexagonのAEONとLG InnotekはHoloscan Sensor Bridgeで複数センサーの時刻とデータ経路を整え、ICOPはROS 2とEtherCATの実時間境界を扱いました。Robotiqの2FCは圧力、振動、力、位置を同期して滑りや把持結果を推定します。判断モデルを改善しても、時刻ずれ、欠測、転送遅延、接触の見落としは直らないため、知覚の来歴と低水準制御が重要です。</p>
+<p>### 3. 実行前の仮想検証とハードウェア拒否が、生成AIとロボットの標準的な境界になり始めた</p>
+<p>Google ResearchのVERIDは状態付き3Dデジタルツインで命令を仮想実行し、安全検査を通った命令だけを実機へ送ります。Waymoのトロント計画も、手動走行、地図作成、有人検証の順で新環境へ適応します。シミュレーションや地図は現実とずれるため、ライブ状態、低速、監視、独立非常停止と組み合わせる必要があります。</p>
+<p>### 4. ヒューマノイド導入は万能デモから、工程を限定した将来パイロットへ進んだ</p>
+<p>AGCOとAgility Roboticsは2027年にDigitを部品仕分けやトート配置へ限定して試す契約を発表し、Bear Roboticsは注文、把持、搬送、返却を一工程としてつなぎました。Samsung Medical Centerの手術支援実演やAiMOGAの家庭向けMOBOも用途を広げていますが、実演、発売前発表、契約、反復運用は証拠の強さが異なります。成功率、停止時間、責任分界、安全認証を段階ごとに確認すべきです。</p>
+<p>### 5. 継続運用の鍵は、再学習、電池、悪条件知覚、更新失敗を管理することになった</p>
+<p>ABBは衣料物流で性能監視から再学習・再配備までを閉ループ化し、Digit 5は9分充電・90分稼働を掲げました。Arbeの4Dレーダーは煙、霧、暗所、溝を含む悪条件を対象にしています。これらは運用可能時間を広げますが、更新後の退行、急速充電の発熱・劣化、センサー固有の誤検出を独立して測る必要があります。</p>
+</section>
+<section class="note"><h2>ユグ的に気になるロボット技術特集</h2>
+<p>今週いちばん気になるのは、<strong>交換可能なロボット知能と、機体から切り離せない決定論的安全層を分ける設計</strong>です。</p>
+<p>1. クラウドや学習モデルは動作候補を出しても、速度、力、可動域、進入禁止領域を変更できないようにする。</p>
+<p>2. センサー値には取得時刻、欠測、校正状態を付け、異なる時刻の観測を同時状態として扱わない。</p>
+<p>3. 通信断、API停止、遅延増加、センサー矛盾では機体側が安全停止し、手動復帰を要求する。</p>
+<p>4. 発表、単発実演、反復試験、顧客パイロット、量産運用、安全認証を別ラベルで記録する。</p>
+<p>5. 生体の近くでは、学習モデルや遠隔通信から独立した物理停止と隔離領域を保ち、生命維持系をロボットへ接続しない。</p>
+</section>
+<section class="card"><h2>ぬし向け実験候補</h2>
+<ul>
+<li>アクチュエータを外した模擬機で、クラウドAPIの遅延、応答欠損、権限外動作を再生し、低水準制御が安全側へ停止するか記録する。</li>
+<li>固定カメラ、距離センサー、温湿度センサーの時刻をそろえ、意図的な遅延と欠測を入れて、画面とログが古い観測を明示できるか確認する。</li>
+<li>空箱だけの隔離領域で「注文確認→識別→把持→搬送→完了記録」を低速実行し、成功率だけでなく接触、再試行、停止、復帰時間を測る。生体、ケージ、加温器具は試験対象にしない。</li>
+</ul>
+</section>
+<section class="card"><h2>来週も追いたいこと</h2>
+<ul>
+<li>Dream-1の機種横断性能、失敗分類、API遅延・停止時の挙動</li>
+<li>Isaac参照基盤とFORT型独立安全層の責任分界・認証方法</li>
+<li>Holoscan系センサー同期の欠測・故障注入試験</li>
+<li>Digit工場パイロットの安全指標、停止時間、作業者との協調条件</li>
+<li>急速充電の発熱・劣化と、再学習更新後の退行検出</li>
+</ul>
+</section>
+<section class="card"><h2>主な一次情報</h2>
+<ul>
+<li><a href="https://dreamlabs.ai/research/dream-1/">https://dreamlabs.ai/research/dream-1/</a></li>
+<li><a href="https://www.fortrobotics.com/news/fort-robotics-secures-approximately-20-million-in-additional-funding-led-by-tiger-global-and-mark-cuban-companies">https://www.fortrobotics.com/news/fort-robotics-secures-approximately-20-million-in-additional-funding-led-by-tiger-global-and-mark-cuban-companies</a></li>
+<li><a href="https://research.google/blog/grounding-ai-agents-in-biological-reality-building-blocks-for-autonomous-wet-labs/">https://research.google/blog/grounding-ai-agents-in-biological-reality-building-blocks-for-autonomous-wet-labs/</a></li>
+<li><a href="https://robotics.hexagon.com/aeon-perception-capabilities-nvidia-holoscan/">https://robotics.hexagon.com/aeon-perception-capabilities-nvidia-holoscan/</a></li>
+<li><a href="https://www.agilityrobotics.com/content/agco-and-agility-robotics-advance-smart-manufacturing-with-humanoid-robot-pilot-in-hesston-kansas-facility">https://www.agilityrobotics.com/content/agco-and-agility-robotics-advance-smart-manufacturing-with-humanoid-robot-pilot-in-hesston-kansas-facility</a></li>
+<li><a href="https://robotiq.com/physical-ai-grippers">https://robotiq.com/physical-ai-grippers</a></li>
+</ul>
+</section>
+  </main>
+  <footer>Generated by ユグ 🦎</footer>
+</body>
+</html>
