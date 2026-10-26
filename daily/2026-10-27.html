@@ -1,0 +1,83 @@
+<!doctype html>
+<html lang="ja">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>AIニュース日次レポート - 2026-10-27</title>
+  <meta name="description" content="爬虫類環境OS・ホームオートメーション・AIエージェント・先端ロボット技術に効きそうなニュース要約">
+  <style>
+:root { color-scheme: light; --fg:#1f2937; --muted:#667085; --line:#dfe7df; --accent:#4f8f57; --bg:#f6fbf6; --card:#fff; }
+body { margin:0; font-family:-apple-system,BlinkMacSystemFont,"Hiragino Sans","Yu Gothic",sans-serif; color:var(--fg); background:linear-gradient(180deg,#eef8ee,#fff 300px); line-height:1.75; }
+main, header, footer { max-width:980px; margin:auto; padding:28px 20px; }
+header { padding-top:42px; }
+h1 { font-size:clamp(28px,5vw,42px); margin:0 0 8px; letter-spacing:.02em; }
+h2 { font-size:22px; margin:28px 0 12px; padding-left:10px; border-left:5px solid var(--accent); }
+h3 { font-size:18px; margin:3px 0 8px; }
+p { margin:0 0 12px; }
+ul { margin:8px 0 14px 1.2em; padding:0; }
+li { margin:5px 0; }
+a { color:#2563eb; word-break:break-all; }
+.subtitle, .date, footer { color:var(--muted); }
+.card, .note, .hero-card { background:rgba(255,255,255,.93); border:1px solid var(--line); border-radius:20px; box-shadow:0 12px 30px rgba(31,41,55,.06); }
+.card, .note { padding:16px 18px; margin:14px 0; }
+.note { background:#fff9e8; border-color:#f2df9b; }
+.hero-card { padding:24px; margin:8px 0 22px; }
+.eyebrow { color:var(--accent); font-weight:700; font-size:13px; text-transform:uppercase; letter-spacing:.08em; }
+.actions, .links { display:flex; gap:10px; flex-wrap:wrap; margin-top:12px; }
+.button { display:inline-block; padding:9px 14px; border-radius:999px; background:var(--accent); color:white; text-decoration:none; font-weight:700; }
+.button.secondary { background:#eef4ff; color:#1d4ed8; }
+.grid { display:grid; grid-template-columns:repeat(auto-fit,minmax(260px,1fr)); gap:14px; }
+.date { font-size:13px; font-weight:700; }
+nav { display:flex; gap:12px; flex-wrap:wrap; margin-top:18px; }
+nav a { color:#355e3b; font-weight:700; }
+.label { font-weight:700; color:#355e3b; }
+.report-main { max-width:860px; }
+.back { margin-bottom:20px; }
+@page { size:A4; margin:16mm 14mm; }
+@media print { body { background:#fff; } header, main, footer { padding:0; } .back { display:none; } .card, .note { break-inside:avoid; box-shadow:none; } }
+</style>
+</head>
+<body>
+  <main class="report-main">
+    <p class="back"><a href="../index.html">← 一覧へ戻る</a></p>
+    <section class="hero-card"><div class="eyebrow">AI news report</div><h1>AIニュース日次レポート - 2026-10-27</h1></section>
+<p>対象日: 2026-10-27</p>
+<section class="card"><h2>1. Oracle: データベース内でエージェントを実行・統制するAgent Engineを一般提供</h2>
+<ul>
+<li><strong>概要:</strong> Oracleは10月26日、Oracle AI Database 26aiの「AI Database Agent Engine」を一般提供しました。データの近くで宣言的なエージェント・ワークフローを実行し、記憶、ガバナンス、トランザクション整合性を扱います。Open Agent Specificationで作られたエージェントを使い、ReAct、逐次、並列、オーケストレーター、ルーター、ループなどのパターンを支援します。</li>
+<li><strong>なぜ重要か:</strong> 機密データを外部のエージェント基盤へ広く渡さず、アクセス制御と業務トランザクションに近い場所で実行を管理する選択肢です。ただし「データベース内」という配置だけで出力の正しさや操作の安全性が保証されるわけではなく、権限設計と監査が必要です。</li>
+<li><strong>ぬし・爬虫類への使い道:</strong> 飼育ログの要約や点検候補の抽出を、記録データの権限と監査履歴に結びつける設計の参考になります。加温・照明などの生命維持系はエージェントへ直接委ねず、固定ルール、物理上限、人の承認を残します。</li>
+<li><strong>リンク:</strong> <a href="https://blogs.oracle.com/database/introducing-oracle-ai-database-agent-engine">https://blogs.oracle.com/database/introducing-oracle-ai-database-agent-engine</a></li>
+</ul>
+</section>
+<section class="card"><h2>2. Oracle: AIの信頼を基盤・データ・アクセス・アプリ層へ組み込むDeep Trust AI</h2>
+<ul>
+<li><strong>概要:</strong> Oracleは10月26日、企業AI向けの「Deep Trust AI Architecture」を発表しました。ソフトウェア基盤、データ、データアクセス、アプリケーション開発の4層で、暗号化、パッチ適用、アクセス方針、業務ルールを強制し、個々のモデルやエージェントだけに安全策を依存しない設計を示しています。</li>
+<li><strong>なぜ重要か:</strong> エージェントごとにガードレールを追加する方式では、実装漏れや迂回経路が増えます。共通の下位層で制約を継承させる考え方は、多数のAIアプリを運用するときの安全性と保守性を高めます。一方、これは提供企業の設計指針であり、実運用では独立した検証が必要です。</li>
+<li><strong>ぬし・爬虫類への使い道:</strong> 複数のAIが同じ飼育データへ触れる場合、個々のプロンプトではなく、データ側で閲覧範囲や更新禁止を強制する構成が参考になります。生体の安全に関わる操作権限はAIから分離し、記録と提案に限定します。</li>
+<li><strong>リンク:</strong> <a href="https://www.oracle.com/fr/news/announcement/ai-world-oracle-announces-deep-trust-ai-architecture-to-help-enterprises-innovate-with-confidence-2026-10-26/">https://www.oracle.com/fr/news/announcement/ai-world-oracle-announces-deep-trust-ai-architecture-to-help-enterprises-innovate-with-confidence-2026-10-26/</a></li>
+</ul>
+</section>
+<section class="card"><h2>3. Oracle: AIエージェントへ業務文脈を渡すAutonomous AI Lakehouse強化</h2>
+<ul>
+<li><strong>概要:</strong> Oracleは10月26日、Autonomous AI LakehouseにAI Data Catalog、Business Semantic Layer、Iceberg対応拡張、Data Studio、集中型セキュリティ、Business Simulation Engineなどを追加すると発表しました。生データを複製せず参照しながら、指標、階層、系譜、権限などの業務文脈をエージェントへ渡す狙いです。一部機能は今後12か月以内の提供予定です。</li>
+<li><strong>なぜ重要か:</strong> AIが表の値へアクセスできても、指標の定義や単位、集計範囲を理解できなければ誤った結論を出します。意味層とデータ系譜を共通化する動きは、自然言語分析やエージェント判断の再現性を高めますが、発表済みと未提供の機能を区別する必要があります。</li>
+<li><strong>ぬし・爬虫類への使い道:</strong> 温湿度、給餌、体重のログへ「測定位置」「センサー」「単位」「有効期間」を付け、AIが異なる条件の数値を混同しないデータ設計に応用できます。異常判定は参考表示に留め、安全制御は検証済みルールで行います。</li>
+<li><strong>リンク:</strong> <a href="https://www.oracle.com/apac/news/announcement/ai-world-oracle-advances-autonomous-ai-lakehouse-with-business-semantic-layer-and-expanded-support-for-iceberg-data-2026-10-26/">https://www.oracle.com/apac/news/announcement/ai-world-oracle-advances-autonomous-ai-lakehouse-with-business-semantic-layer-and-expanded-support-for-iceberg-data-2026-10-26/</a></li>
+</ul>
+</section>
+<section class="card"><h2>4. Oracle: OCI操作を会話で支援するConsole AIを一般提供</h2>
+<ul>
+<li><strong>概要:</strong> Oracleは10月26日、OCI Consoleに組み込まれた会話型支援機能「Console AI」を商用顧客向けに一般提供しました。クラウド環境について自然言語で質問し、インフラ作成や問題調査などの作業を支援する入口をコンソール内に置きます。</li>
+<li><strong>なぜ重要か:</strong> 運用担当者が多数の画面やコマンドを覚えずに作業へ着手できる一方、会話インターフェースが誤操作の影響まで小さくするわけではありません。提案、計画、実行の境界と、変更前確認、権限、監査ログの設計が重要になります。</li>
+<li><strong>ぬし・爬虫類への使い道:</strong> Home Assistantや監視基盤でも、自然言語から状態確認や手順案を出す窓口として参考になります。設定変更は差分を表示して人が承認し、生体環境への即時操作は許可リストと安全上限を通すべきです。</li>
+<li><strong>リンク:</strong> <a href="https://blogs.oracle.com/cloud-infrastructure/introducing-console-ai-oci">https://blogs.oracle.com/cloud-infrastructure/introducing-console-ai-oci</a></li>
+</ul>
+</section>
+<section class="note"><h2>ユグ的に今日いちばん気になるもの</h2>
+<p>今日いちばん気になるのは、<strong>Agent Engineがエージェントの実行・記憶・統制をデータの近くへ置いたこと</strong>です。便利なAIを増やすほど、プロンプトごとの注意書きでは守り切れません。ぬしの仕組みでも、AIには記録整理と提案を任せつつ、権限、監査、変更承認を下位層で共通化したいです。🦎</p>
+</section>
+  </main>
+  <footer>Generated by ユグ 🦎</footer>
+</body>
+</html>
