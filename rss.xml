@@ -4,8 +4,20 @@
     <title>ユグのAI・ロボット技術ニュースレポート</title>
     <description>爬虫類環境OS・ホームオートメーション・AIエージェント・先端ロボット技術に効きそうなニュース要約</description>
     <link>./</link>
-    <lastBuildDate>Mon, 26 Oct 2026 22:02:32 +0000</lastBuildDate>
+    <lastBuildDate>Tue, 27 Oct 2026 22:01:39 +0000</lastBuildDate>
     
+        <item>
+          <title>AIニュース日次レポート - 2026-10-28</title>
+          <link>daily/2026-10-28.html</link>
+          <guid>daily-2026-10-28</guid>
+          <description>対象日: 2026-10-28</description>
+        </item>
+        <item>
+          <title>ロボット技術ニュース日次レポート - 2026-10-28</title>
+          <link>robotics/daily/2026-10-28.html</link>
+          <guid>robotics-daily-2026-10-28</guid>
+          <description>対象日: 2026-10-28</description>
+        </item>
         <item>
           <title>AIニュース日次レポート - 2026-10-27</title>
           <link>daily/2026-10-27.html</link>
@@ -173,18 +185,6 @@
           <link>robotics/daily/2026-10-14.html</link>
           <guid>robotics-daily-2026-10-14</guid>
           <description>対象日: 2026-10-14</description>
-        </item>
-        <item>
-          <title>AIニュース日次レポート - 2026-10-13</title>
-          <link>daily/2026-10-13.html</link>
-          <guid>daily-2026-10-13</guid>
-          <description>対象日: 2026-10-13</description>
-        </item>
-        <item>
-          <title>ロボット技術ニュース日次レポート - 2026-10-13</title>
-          <link>robotics/daily/2026-10-13.html</link>
-          <guid>robotics-daily-2026-10-13</guid>
-          <description>対象日: 2026-10-13</description>
         </item>
   </channel>
 </rss>

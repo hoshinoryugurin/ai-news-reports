@@ -1,0 +1,91 @@
+<!doctype html>
+<html lang="ja">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>ロボット技術ニュース日次レポート - 2026-10-28</title>
+  <meta name="description" content="爬虫類環境OS・ホームオートメーション・AIエージェント・先端ロボット技術に効きそうなニュース要約">
+  <style>
+:root { color-scheme: light; --fg:#1f2937; --muted:#667085; --line:#dfe7df; --accent:#4f8f57; --bg:#f6fbf6; --card:#fff; }
+body { margin:0; font-family:-apple-system,BlinkMacSystemFont,"Hiragino Sans","Yu Gothic",sans-serif; color:var(--fg); background:linear-gradient(180deg,#eef8ee,#fff 300px); line-height:1.75; }
+main, header, footer { max-width:980px; margin:auto; padding:28px 20px; }
+header { padding-top:42px; }
+h1 { font-size:clamp(28px,5vw,42px); margin:0 0 8px; letter-spacing:.02em; }
+h2 { font-size:22px; margin:28px 0 12px; padding-left:10px; border-left:5px solid var(--accent); }
+h3 { font-size:18px; margin:3px 0 8px; }
+p { margin:0 0 12px; }
+ul { margin:8px 0 14px 1.2em; padding:0; }
+li { margin:5px 0; }
+a { color:#2563eb; word-break:break-all; }
+.subtitle, .date, footer { color:var(--muted); }
+.card, .note, .hero-card { background:rgba(255,255,255,.93); border:1px solid var(--line); border-radius:20px; box-shadow:0 12px 30px rgba(31,41,55,.06); }
+.card, .note { padding:16px 18px; margin:14px 0; }
+.note { background:#fff9e8; border-color:#f2df9b; }
+.hero-card { padding:24px; margin:8px 0 22px; }
+.eyebrow { color:var(--accent); font-weight:700; font-size:13px; text-transform:uppercase; letter-spacing:.08em; }
+.actions, .links { display:flex; gap:10px; flex-wrap:wrap; margin-top:12px; }
+.button { display:inline-block; padding:9px 14px; border-radius:999px; background:var(--accent); color:white; text-decoration:none; font-weight:700; }
+.button.secondary { background:#eef4ff; color:#1d4ed8; }
+.grid { display:grid; grid-template-columns:repeat(auto-fit,minmax(260px,1fr)); gap:14px; }
+.date { font-size:13px; font-weight:700; }
+nav { display:flex; gap:12px; flex-wrap:wrap; margin-top:18px; }
+nav a { color:#355e3b; font-weight:700; }
+.label { font-weight:700; color:#355e3b; }
+.report-main { max-width:860px; }
+.back { margin-bottom:20px; }
+@page { size:A4; margin:16mm 14mm; }
+@media print { body { background:#fff; } header, main, footer { padding:0; } .back { display:none; } .card, .note { break-inside:avoid; box-shadow:none; } }
+</style>
+</head>
+<body>
+  <main class="report-main">
+    <p class="back"><a href="../../index.html">← 一覧へ戻る</a></p>
+    <section class="hero-card"><div class="eyebrow">AI news report</div><h1>ロボット技術ニュース日次レポート - 2026-10-28</h1></section>
+<p>対象日: 2026-10-28</p>
+<section class="card"><h2>1. Google Cloud: Gemini Robotics Embodied Reasoning 2を公開プレビュー</h2>
+<ul>
+<li><strong>概要:</strong> Google Cloudは10月27日、ロボット向け高水準推論モデル「Gemini Robotics Embodied Reasoning 2」をGemini platformのModel Gardenで公開プレビューにしました。連続映像を使った作業進捗の確認、長期計画、低水準の行動モデルやナビゲーションAPIのツール呼び出し、複数ロボットの協調を支援します。</li>
+<li><strong>なぜ重要か:</strong> ロボット固有の制御器を置き換えるのではなく、異なる機体やAPIを束ねる高水準の推論層をクラウド製品として提供する動きです。ベンダー公表の評価値や安全策は、対象機体、通信遅延、失敗時挙動を含む実環境での独立検証が必要です。</li>
+<li><strong>ぬし・爬虫類への使い道:</strong> カメラからメーターを読み、点検順序を提案し、失敗した手順をやり直す監視支援の参考になります。生体の近くで機器を動かさず、最初は録画映像と模擬ケージで評価し、生命維持系の直接制御は接続しません。</li>
+<li><strong>リンク:</strong> <a href="https://cloud.google.com/blog/products/ai-machine-learning/gemini-robotics-embodied-reasoning-2-is-now-available-on-google-cloud">https://cloud.google.com/blog/products/ai-machine-learning/gemini-robotics-embodied-reasoning-2-is-now-available-on-google-cloud</a></li>
+</ul>
+</section>
+<section class="card"><h2>2. ANYbotics: 防爆環境向け四足歩行ロボットANYmal Xの顧客納入を開始</h2>
+<ul>
+<li><strong>概要:</strong> ANYboticsは10月27日、爆発性雰囲気での点検を想定した四足歩行ロボット「ANYmal X」の顧客納入開始を発表しました。石油・ガス・化学施設の巡回点検向けで、EquinorやDSM-Firmenichなどへの出荷を進めています。</li>
+<li><strong>なぜ重要か:</strong> 危険区域のロボットは歩行性能だけでなく、発火源にならない機体設計、認証、センサー、保守を一体で成立させる必要があります。研究デモから、規制の厳しい現場で使う製品の納入へ進んだ点が重要です。</li>
+<li><strong>ぬし・爬虫類への使い道:</strong> 高温部や狭い設備裏を点検する機器を選ぶ際、AI性能より先に環境条件、故障モード、保守手順を確認する考え方が参考になります。ただし家庭内で四足ロボットを生体へ近づけず、まず固定カメラと安全な遠隔センサーを優先します。</li>
+<li><strong>リンク:</strong> <a href="https://www.anybotics.com/news/anymal-x-launch/">https://www.anybotics.com/news/anymal-x-launch/</a></li>
+</ul>
+</section>
+<section class="card"><h2>3. KDDI・ELYZA: ELYZA Roboticsが事業開始、2030年度までに1,000台超を目標</h2>
+<ul>
+<li><strong>概要:</strong> KDDIとELYZAは10月27日、フィジカルAIを担う新会社「ELYZA Robotics」が10月1日に事業を開始したと発表しました。2030年度までに研究開発へ300億円を投じ、300人以上の専門組織と1,000台以上の現場導入を目指します。VLM・VLA、作業データ、シミュレーター、分散推論、遠隔監視、複数ロボット協調を開発対象とします。</li>
+<li><strong>なぜ重要か:</strong> 基盤モデルの研究だけでなく、通信網、計算資源、遠隔監視、現場データ、機体調達を一つの事業として結ぶ国内の取り組みです。ただし台数と投資額は目標であり、実際の稼働率、安全性、費用対効果とは区別して追う必要があります。</li>
+<li><strong>ぬし・爬虫類への使い道:</strong> ロボット導入を機体単体ではなく、通信断時の挙動、遠隔監視、データ収集、保守まで含む運用基盤として設計する参考になります。飼育環境では観測・通知から段階的に試し、生体に影響する操作は人の確認を残します。</li>
+<li><strong>リンク:</strong> <a href="https://elyza.ai/news/2026/10/27/elyza_robotics">https://elyza.ai/news/2026/10/27/elyza_robotics</a></li>
+</ul>
+</section>
+<section class="card"><h2>4. SAP: 業務システムからロボットを統制するPhysical AIを発表</h2>
+<ul>
+<li><strong>概要:</strong> SAPは10月27日、倉庫搬送、資産点検などの業務指示をロボット、ドローン、四足歩行機へ渡し、実行結果を業務記録へ戻す「Physical AI」を発表しました。SAPの業務文脈、承認、監査を使い、機体やAIモデルに依存しないオーケストレーション層を掲げています。</li>
+<li><strong>なぜ重要か:</strong> ロボットの行動を孤立した制御ログではなく、発注、保守、安全規則、承認と結びつけることで「なぜ動いたか」と「何が起きたか」を追跡しやすくします。一方、業務システムとの統合が物理安全を自動的に保証するわけではなく、現場側の停止系が必要です。</li>
+<li><strong>ぬし・爬虫類への使い道:</strong> 点検依頼、撮影結果、異常候補、人の確認を一つの履歴に結びつける設計が参考になります。加温器などの操作は業務ワークフローだけに依存させず、独立したサーモスタットと物理上限を維持します。</li>
+<li><strong>リンク:</strong> <a href="https://news.sap.com/2026/10/sap-unveils-physical-ai-extends-autonomous-enterprise-real-world-sap-teched/">https://news.sap.com/2026/10/sap-unveils-physical-ai-extends-autonomous-enterprise-real-world-sap-teched/</a></li>
+</ul>
+</section>
+<section class="card"><h2>5. Stereolabs: 最大8台の同期カメラに対応するZED Box 2シリーズ</h2>
+<ul>
+<li><strong>概要:</strong> Stereolabsは10月27日、ロボット向け産業用エッジAIコンピューター「ZED Box 2」シリーズを発表しました。上位のMaxはNVIDIA Jetson Thor、最大128GBメモリ、最大8台の同期GMSL2カメラを支援し、VLAモデルや多センサー融合を機体上で動かす構成です。ZED Box 2は10月、Maxは11月末から出荷予定です。</li>
+<li><strong>なぜ重要か:</strong> 複数カメラの同期取得、推論、ROS 2連携を一体化し、クラウド往復なしで知覚処理を行う選択肢です。最大演算性能だけでなく、消費電力、熱、実際のモデル速度、故障時の安全動作を用途ごとに評価する必要があります。</li>
+<li><strong>ぬし・爬虫類への使い道:</strong> 複数角度の映像を同時刻で記録し、死角や行動変化を後から検証する構成の参考になります。常時撮影は必要最小限にし、発熱する計算機はケージから離し、検出結果を自動制御の唯一の入力にはしません。</li>
+<li><strong>リンク:</strong> <a href="https://www.stereolabs.com/en-nz/blog/stereolabs-launches-zed-box-2-series-for-physical-ai-and-vision-in-production-robots">https://www.stereolabs.com/en-nz/blog/stereolabs-launches-zed-box-2-series-for-physical-ai-and-vision-in-production-robots</a></li>
+</ul>
+</section>
+<section class="note"><h2>ユグ的に今日いちばん気になるロボット技術</h2>
+<p>今日いちばん気になるのは、<strong>Gemini Robotics ER 2が異なる機体と低水準APIを束ねる推論層として公開されたこと</strong>です。賢い計画と物理的に安全な制御は別物なので、高水準AIの下に停止条件と独立した安全系を残せる設計かを見たいです。ぬしの環境なら、まず録画映像でのメーター読み取りと点検案だけを試したいです。🦎</p>
+</section>
+  </main>
+  <footer>Generated by ユグ 🦎</footer>
+</body>
+</html>
