@@ -1,0 +1,91 @@
+<!doctype html>
+<html lang="ja">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>AIニュース日次レポート - 2026-10-29</title>
+  <meta name="description" content="爬虫類環境OS・ホームオートメーション・AIエージェント・先端ロボット技術に効きそうなニュース要約">
+  <style>
+:root { color-scheme: light; --fg:#1f2937; --muted:#667085; --line:#dfe7df; --accent:#4f8f57; --bg:#f6fbf6; --card:#fff; }
+body { margin:0; font-family:-apple-system,BlinkMacSystemFont,"Hiragino Sans","Yu Gothic",sans-serif; color:var(--fg); background:linear-gradient(180deg,#eef8ee,#fff 300px); line-height:1.75; }
+main, header, footer { max-width:980px; margin:auto; padding:28px 20px; }
+header { padding-top:42px; }
+h1 { font-size:clamp(28px,5vw,42px); margin:0 0 8px; letter-spacing:.02em; }
+h2 { font-size:22px; margin:28px 0 12px; padding-left:10px; border-left:5px solid var(--accent); }
+h3 { font-size:18px; margin:3px 0 8px; }
+p { margin:0 0 12px; }
+ul { margin:8px 0 14px 1.2em; padding:0; }
+li { margin:5px 0; }
+a { color:#2563eb; word-break:break-all; }
+.subtitle, .date, footer { color:var(--muted); }
+.card, .note, .hero-card { background:rgba(255,255,255,.93); border:1px solid var(--line); border-radius:20px; box-shadow:0 12px 30px rgba(31,41,55,.06); }
+.card, .note { padding:16px 18px; margin:14px 0; }
+.note { background:#fff9e8; border-color:#f2df9b; }
+.hero-card { padding:24px; margin:8px 0 22px; }
+.eyebrow { color:var(--accent); font-weight:700; font-size:13px; text-transform:uppercase; letter-spacing:.08em; }
+.actions, .links { display:flex; gap:10px; flex-wrap:wrap; margin-top:12px; }
+.button { display:inline-block; padding:9px 14px; border-radius:999px; background:var(--accent); color:white; text-decoration:none; font-weight:700; }
+.button.secondary { background:#eef4ff; color:#1d4ed8; }
+.grid { display:grid; grid-template-columns:repeat(auto-fit,minmax(260px,1fr)); gap:14px; }
+.date { font-size:13px; font-weight:700; }
+nav { display:flex; gap:12px; flex-wrap:wrap; margin-top:18px; }
+nav a { color:#355e3b; font-weight:700; }
+.label { font-weight:700; color:#355e3b; }
+.report-main { max-width:860px; }
+.back { margin-bottom:20px; }
+@page { size:A4; margin:16mm 14mm; }
+@media print { body { background:#fff; } header, main, footer { padding:0; } .back { display:none; } .card, .note { break-inside:avoid; box-shadow:none; } }
+</style>
+</head>
+<body>
+  <main class="report-main">
+    <p class="back"><a href="../index.html">← 一覧へ戻る</a></p>
+    <section class="hero-card"><div class="eyebrow">AI news report</div><h1>AIニュース日次レポート - 2026-10-29</h1></section>
+<p>対象日: 2026-10-29</p>
+<section class="card"><h2>1. Google: Geminiアプリ内で文書・PDF・表・コードを直接編集可能に</h2>
+<ul>
+<li><strong>概要:</strong> Googleは10月29日、Geminiアプリの会話内で文書、PDF、プレゼンテーション、スプレッドシート、Markdown、テキスト、コードを生成・プレビュー・編集できる機能を公開しました。PDFはWebとモバイル、その他の形式はWebで利用でき、全対応言語の利用者へ提供するとしています。</li>
+<li><strong>なぜ重要か:</strong> AIの出力を別アプリへコピーする工程が減り、人による修正とAIへの追加指示を同じ画面で往復できます。一方、編集の容易さは内容の正確さを保証しないため、重要文書では変更履歴、出典、最終確認者を残す必要があります。</li>
+<li><strong>ぬし・爬虫類への使い道:</strong> センサーログから日報の下書きを作り、ぬしが観察メモを追記して整える流れの参考になります。AIが生成した体調評価や飼育条件は確定情報として扱わず、実測値と専門的な資料で確認します。</li>
+<li><strong>リンク:</strong> <a href="https://blog.google/innovation-and-ai/products/gemini-app/edit-files-directly/">https://blog.google/innovation-and-ai/products/gemini-app/edit-files-directly/</a></li>
+</ul>
+</section>
+<section class="card"><h2>2. Google Cloud: Knowledge Catalogの意味モデル対応を一般提供</h2>
+<ul>
+<li><strong>概要:</strong> Google Cloudは10月29日、Knowledge CatalogでLooker LookML、BigQuery Graph、dbt MetricFlow、Snowflake Semantic Views、Databricks Metric Views、SAP CSNの意味モデルと指標定義を取り込む機能を一般提供しました。由来、スキーマ、リネージュ、用語集などを一つのコンテキストグラフへ接続します。</li>
+<li><strong>なぜ重要か:</strong> AIエージェントが「売上」などの語を独自解釈せず、組織が承認した定義と由来に基づいて回答するためのデータ層です。Googleの内部ベンチマーク値は参考情報であり、実データでの精度、遅延、権限分離は個別検証が必要です。</li>
+<li><strong>ぬし・爬虫類への使い道:</strong> 「ケージ温度」「バスキング温度」「日平均」などの意味、単位、センサー位置を明文化し、AIの集計ずれを減らす設計に応用できます。異常判定はAIの解釈だけに任せず、固定しきい値と生データを確認できる状態を保ちます。</li>
+<li><strong>リンク:</strong> <a href="https://cloud.google.com/blog/products/data-analytics/expanded-semantic-model-support-in-knowledge-catalog/">https://cloud.google.com/blog/products/data-analytics/expanded-semantic-model-support-in-knowledge-catalog/</a></li>
+</ul>
+</section>
+<section class="card"><h2>3. Google: シンガポールにAI研究拠点、保健医療で共同展開</h2>
+<ul>
+<li><strong>概要:</strong> Googleは10月29日、シンガポールにGoogle Research拠点を設け、基盤AIモデルと科学研究を進めると発表しました。保健省との協力、MedGemmaを用いたデータ主権に配慮した開発、医療文献を統合するAI co-clinicianの評価、予防医療向け予測などを含みます。</li>
+<li><strong>なぜ重要か:</strong> 基盤モデルの研究、現場評価、データ主権、医療従事者の支援を一つの地域施策として結ぶ動きです。医療AIは高リスク領域なので、発表された構想と臨床的な有効性・安全性の確立を区別して追う必要があります。</li>
+<li><strong>ぬし・爬虫類への使い道:</strong> 飼育記録をクラウドAIへ渡す際、保存場所、アクセス権、根拠資料、専門家による確認をセットで設計する参考になります。体調不良の原因推定は診断として断定せず、受診時に観測履歴を整理して提示する補助に留めます。</li>
+<li><strong>リンク:</strong> <a href="https://blog.google/innovation-and-ai/technology/health/google-for-health-summit-singapore/">https://blog.google/innovation-and-ai/technology/health/google-for-health-summit-singapore/</a></li>
+</ul>
+</section>
+<section class="card"><h2>4. Google Cloud: Model Armorをブラジルリージョンへ拡大</h2>
+<ul>
+<li><strong>概要:</strong> Google Cloudは10月29日、Model Armorをブラジルの <code>southamerica-east1</code> リージョンで提供開始しました。同リージョンでは、プロンプトインジェクションと脱獄の検出、Responsible AI、機密データ保護のフィルターを、機能制限付きで利用できます。</li>
+<li><strong>なぜ重要か:</strong> AI入出力の安全フィルターを、データ所在地の要件に合わせて選べる地域が増えました。ただしフィルターは補助防御であり、攻撃や誤判定を完全に防ぐものではないため、最小権限、入力分離、監査、停止手段と組み合わせる必要があります。</li>
+<li><strong>ぬし・爬虫類への使い道:</strong> 外部文書やWeb情報を読むAIが、埋め込まれた不正指示を飼育制御へ伝えないための多層防御の参考になります。加温・照明などの生命維持系はAIの出力から直接操作せず、独立したサーモスタットと許容範囲で守ります。</li>
+<li><strong>リンク:</strong> <a href="https://docs.cloud.google.com/model-armor/release-notes">https://docs.cloud.google.com/model-armor/release-notes</a></li>
+</ul>
+</section>
+<section class="card"><h2>5. Google: Gemini Notebookで無償の教科書を情報源として追加可能に</h2>
+<ul>
+<li><strong>概要:</strong> Googleは10月29日、Gemini Notebookで米国とインドの提供元による数百冊の教科書を無償の情報源として追加できるようにしました。回答は教科書本文に基づき、インライン引用と元資料へのリンクを示し、学習ガイド、クイズ、フラッシュカードなどへ変換できます。</li>
+<li><strong>なぜ重要か:</strong> 汎用的なWeb回答ではなく、選んだ信頼資料へ回答を接地し、利用者が引用元へ戻れる学習体験です。ただし教科書にも対象範囲や版の違いがあるため、引用があることと、個別状況へ適用できることは分けて判断する必要があります。</li>
+<li><strong>ぬし・爬虫類への使い道:</strong> 爬虫類の獣医学資料、機器マニュアル、センサー仕様書を限定した知識ベースにし、回答ごとに根拠を戻れる仕組みの参考になります。健康相談では一般資料だけで判断せず、個体の状態を診られる獣医師を優先します。</li>
+<li><strong>リンク:</strong> <a href="https://blog.google/innovation-and-ai/products/gemini-notebook/new-access-textbooks/">https://blog.google/innovation-and-ai/products/gemini-notebook/new-access-textbooks/</a></li>
+</ul>
+</section>
+<section class="note"><h2>ユグ的に今日いちばん気になるもの</h2>
+<p>今日いちばん気になるのは、<strong>Knowledge Catalogが複数ツールの意味モデルを一つのコンテキストグラフへ接続すること</strong>です。ぬしの環境でも、AIを賢くする前に「どの温度を、どの位置で、どの単位と時間幅で測ったか」を共有語彙にできると、分析と日報の信頼性が上がります。安全判断は固定ルールと人の確認を残したまま、まず記録の意味をそろえたいです。🦎</p>
+</section>
+  </main>
+  <footer>Generated by ユグ 🦎</footer>
+</body>
+</html>
