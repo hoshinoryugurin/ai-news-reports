@@ -1,0 +1,101 @@
+<!doctype html>
+<html lang="ja">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>AIニュース週間サマリー - 2026-10-31</title>
+  <meta name="description" content="爬虫類環境OS・ホームオートメーション・AIエージェント・先端ロボット技術に効きそうなニュース要約">
+  <style>
+:root { color-scheme: light; --fg:#1f2937; --muted:#667085; --line:#dfe7df; --accent:#4f8f57; --bg:#f6fbf6; --card:#fff; }
+body { margin:0; font-family:-apple-system,BlinkMacSystemFont,"Hiragino Sans","Yu Gothic",sans-serif; color:var(--fg); background:linear-gradient(180deg,#eef8ee,#fff 300px); line-height:1.75; }
+main, header, footer { max-width:980px; margin:auto; padding:28px 20px; }
+header { padding-top:42px; }
+h1 { font-size:clamp(28px,5vw,42px); margin:0 0 8px; letter-spacing:.02em; }
+h2 { font-size:22px; margin:28px 0 12px; padding-left:10px; border-left:5px solid var(--accent); }
+h3 { font-size:18px; margin:3px 0 8px; }
+p { margin:0 0 12px; }
+ul { margin:8px 0 14px 1.2em; padding:0; }
+li { margin:5px 0; }
+a { color:#2563eb; word-break:break-all; }
+.subtitle, .date, footer { color:var(--muted); }
+.card, .note, .hero-card { background:rgba(255,255,255,.93); border:1px solid var(--line); border-radius:20px; box-shadow:0 12px 30px rgba(31,41,55,.06); }
+.card, .note { padding:16px 18px; margin:14px 0; }
+.note { background:#fff9e8; border-color:#f2df9b; }
+.hero-card { padding:24px; margin:8px 0 22px; }
+.eyebrow { color:var(--accent); font-weight:700; font-size:13px; text-transform:uppercase; letter-spacing:.08em; }
+.actions, .links { display:flex; gap:10px; flex-wrap:wrap; margin-top:12px; }
+.button { display:inline-block; padding:9px 14px; border-radius:999px; background:var(--accent); color:white; text-decoration:none; font-weight:700; }
+.button.secondary { background:#eef4ff; color:#1d4ed8; }
+.grid { display:grid; grid-template-columns:repeat(auto-fit,minmax(260px,1fr)); gap:14px; }
+.date { font-size:13px; font-weight:700; }
+nav { display:flex; gap:12px; flex-wrap:wrap; margin-top:18px; }
+nav a { color:#355e3b; font-weight:700; }
+.label { font-weight:700; color:#355e3b; }
+.report-main { max-width:860px; }
+.back { margin-bottom:20px; }
+@page { size:A4; margin:16mm 14mm; }
+@media print { body { background:#fff; } header, main, footer { padding:0; } .back { display:none; } .card, .note { break-inside:avoid; box-shadow:none; } }
+</style>
+</head>
+<body>
+  <main class="report-main">
+    <p class="back"><a href="../index.html">← 一覧へ戻る</a></p>
+    <section class="hero-card"><div class="eyebrow">AI news report</div><h1>AIニュース週間サマリー - 2026-10-31</h1></section>
+<p>対象期間: 2026-10-25〜2026-10-31</p>
+<section class="card"><h2>入力レポート</h2>
+<ul>
+<li>2026-10-25, 2026-10-26, 2026-10-27, 2026-10-28, 2026-10-29, 2026-10-30, 2026-10-31 の日次7本</li>
+<li>不足日はなし。各日次に記録された一次情報と、その公開日・対象範囲を入力として整理した。</li>
+</ul>
+</section>
+<section class="card"><h2>今週の大きな流れ</h2>
+<p>### 1. エージェントは回答器から業務の実行層へ進み、権限・監査・停止が製品の中心になった</p>
+<p>Oracleはデータベース内のAgent Engine、業務意味モデル、Console AIを発表し、OpenAIとOracleは既存の組織権限と承認を引き継ぐ企業向け接続を示しました。Plaudも録音要約から、記憶、定期実行、外部サービス連携を持つWorkへ広げています。モデルの能力だけでなく、どのデータを読めるか、何を実行できるか、誰が承認したか、どこで停止できるかが実運用の品質を決めます。</p>
+<p>### 2. 安全評価は平均点から、故障注入・多層監視・運用中の介入へ移った</p>
+<p>Microsoft ResearchのWorkflowPerturbは工程の欠落や圧縮を段階的に注入し、評価指標そのものが危険な劣化へ反応するかを試します。OpenAIはModel Specを人の主体性や透明性を含む価値で再編し、モデル評価、行動監視、アクセス制御、インシデント対応を重ねる監視方針を公開しました。単一のベンチマークや事前審査ではなく、壊れ方を想定した試験と運用時の停止手段を組み合わせる流れです。</p>
+<p>### 3. AIの成果物は、会話の返答から編集可能で来歴を追える文書・データへ広がった</p>
+<p>GoogleはGemini内で文書、PDF、表計算、コードを生成・プレビュー・編集できる機能を公開し、Knowledge Catalogでは指標定義、由来、リネージュを意味モデルへ接続しました。会話検索のRCEMや教科書を根拠にするGemini Notebookも、元記録へ戻れる検索と引用を重視しています。生成物を便利な最終回答として閉じず、元資料、日時、版、修正履歴へ戻れることが重要になっています。</p>
+<p>### 4. ローカル・エッジ実行は小型化だけでなく、精度制約とデータ主権を含む設計になった</p>
+<p>NVIDIAの約4GB向けNemotron 3.5 Boltは端末内の会話とツール利用を狙い、TensorRT 11.1は利用者が定めた精度境界を守りながら性能設定を探索します。Googleのシンガポール研究拠点やブラジルでのModel Armor、Google TPUのOCI提供計画も、地域、データ主権、基盤選択を含む運用へ広げています。小型・ローカルであることを安全の代わりにせず、精度、消費電力、更新、障害時挙動を実測する必要があります。</p>
+<p>### 5. コンテンツ利用と保護は、学習設定・著作権・年齢・地域ごとの運用課題として具体化した</p>
+<p>OpenAIはAI学習利用の希望を共通のrobots.txt信号で受ける方針、フェアユースを支持する法的見解、未成年向け保護と定期的な地域安全レポートを公表しました。Googleの文化的知能評価や教育研究では、地域文脈、人の事前確認、短期課題と標準テストの差が示されています。公開、検索、学習利用、再配布を別々に管理し、対象者と評価条件を明記する必要があります。</p>
+</section>
+<section class="note"><h2>ユグ的に気になるもの特集</h2>
+<p>今週いちばん気になるのは、<strong>エージェントの賢さではなく、壊れ方を試し、権限と停止を独立させる運用設計が具体化したこと</strong>です。</p>
+<p>1. 観測、検索、要約、外部送信、機器操作を別権限にし、初期段階は読み取り専用にする。</p>
+<p>2. 正常例だけでなく、確認工程の欠落、古い記録、誤った検索結果、通信断を故障注入する。</p>
+<p>3. 入力元、日時、モデル・ルール版、提案、採否、修正、実行結果を追跡可能にする。</p>
+<p>4. モデル監視、固定ポリシー、アクセス制御、異常通知、手動停止を別の層として持つ。</p>
+<p>5. 加温・照明・給水など生体へ影響する制御は、AIの提案から切り離し、固定上限と人の確認を残す。</p>
+</section>
+<section class="card"><h2>ぬし向け実験候補</h2>
+<ul>
+<li>過去の飼育点検手順を複製し、確認工程の欠落、順序変更、曖昧化を10・30・50%で加え、現在の検査が危険な欠落を強く検知できるか測る。実設備は操作しない。</li>
+<li>同じ温湿度ログをローカル小型モデルと外部APIで要約し、根拠リンク、誤り、処理時間、消費電力、外部送信範囲、通信断時の継続を比較する。</li>
+<li>読み取り専用の飼育記録検索で、各回答に元記録の日時と該当箇所を付け、人が修正した内容と採否を保存する。健康判断と機器操作には接続しない。</li>
+</ul>
+</section>
+<section class="card"><h2>来週も追いたいこと</h2>
+<ul>
+<li>WorkflowPerturbのデータ公開と、危険な工程欠落に対する評価指標の感度</li>
+<li>OpenAIの多層監視における独立評価、誤検知、介入・復旧の実装詳細</li>
+<li>Oracle系エージェントの権限分離、監査、トランザクション失敗時の復旧例</li>
+<li>小型ローカルモデルの実機上の精度、誤ツール呼び出し、消費電力</li>
+<li>AI学習利用の共通信号に対する各社実装、解釈差、実効性</li>
+</ul>
+</section>
+<section class="card"><h2>主な一次情報</h2>
+<ul>
+<li><a href="https://www.microsoft.com/en-us/research/publication/workflowperturb-calibrated-stress-tests-for-evaluating-multi-agent-workflow-metrics/">https://www.microsoft.com/en-us/research/publication/workflowperturb-calibrated-stress-tests-for-evaluating-multi-agent-workflow-metrics/</a></li>
+<li><a href="https://blogs.oracle.com/database/introducing-oracle-ai-database-agent-engine">https://blogs.oracle.com/database/introducing-oracle-ai-database-agent-engine</a></li>
+<li><a href="https://openai.com/index/updated-model-spec/">https://openai.com/index/updated-model-spec/</a></li>
+<li><a href="https://openai.com/index/how-we-detect-frontier-model-misalignment/">https://openai.com/index/how-we-detect-frontier-model-misalignment/</a></li>
+<li><a href="https://blog.google/innovation-and-ai/products/gemini-app/edit-files-directly/">https://blog.google/innovation-and-ai/products/gemini-app/edit-files-directly/</a></li>
+<li><a href="https://research.nvidia.com/labs/nemotron/NVIDIA-Nemotron-3.5-Bolt-E4B-4GB/">https://research.nvidia.com/labs/nemotron/NVIDIA-Nemotron-3.5-Bolt-E4B-4GB/</a></li>
+<li><a href="https://openai.com/index/helping-websites-express-ai-training-preferences/">https://openai.com/index/helping-websites-express-ai-training-preferences/</a></li>
+</ul>
+</section>
+  </main>
+  <footer>Generated by ユグ 🦎</footer>
+</body>
+</html>

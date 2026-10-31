@@ -1,0 +1,101 @@
+<!doctype html>
+<html lang="ja">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>ロボット技術ニュース週間サマリー - 2026-10-31</title>
+  <meta name="description" content="爬虫類環境OS・ホームオートメーション・AIエージェント・先端ロボット技術に効きそうなニュース要約">
+  <style>
+:root { color-scheme: light; --fg:#1f2937; --muted:#667085; --line:#dfe7df; --accent:#4f8f57; --bg:#f6fbf6; --card:#fff; }
+body { margin:0; font-family:-apple-system,BlinkMacSystemFont,"Hiragino Sans","Yu Gothic",sans-serif; color:var(--fg); background:linear-gradient(180deg,#eef8ee,#fff 300px); line-height:1.75; }
+main, header, footer { max-width:980px; margin:auto; padding:28px 20px; }
+header { padding-top:42px; }
+h1 { font-size:clamp(28px,5vw,42px); margin:0 0 8px; letter-spacing:.02em; }
+h2 { font-size:22px; margin:28px 0 12px; padding-left:10px; border-left:5px solid var(--accent); }
+h3 { font-size:18px; margin:3px 0 8px; }
+p { margin:0 0 12px; }
+ul { margin:8px 0 14px 1.2em; padding:0; }
+li { margin:5px 0; }
+a { color:#2563eb; word-break:break-all; }
+.subtitle, .date, footer { color:var(--muted); }
+.card, .note, .hero-card { background:rgba(255,255,255,.93); border:1px solid var(--line); border-radius:20px; box-shadow:0 12px 30px rgba(31,41,55,.06); }
+.card, .note { padding:16px 18px; margin:14px 0; }
+.note { background:#fff9e8; border-color:#f2df9b; }
+.hero-card { padding:24px; margin:8px 0 22px; }
+.eyebrow { color:var(--accent); font-weight:700; font-size:13px; text-transform:uppercase; letter-spacing:.08em; }
+.actions, .links { display:flex; gap:10px; flex-wrap:wrap; margin-top:12px; }
+.button { display:inline-block; padding:9px 14px; border-radius:999px; background:var(--accent); color:white; text-decoration:none; font-weight:700; }
+.button.secondary { background:#eef4ff; color:#1d4ed8; }
+.grid { display:grid; grid-template-columns:repeat(auto-fit,minmax(260px,1fr)); gap:14px; }
+.date { font-size:13px; font-weight:700; }
+nav { display:flex; gap:12px; flex-wrap:wrap; margin-top:18px; }
+nav a { color:#355e3b; font-weight:700; }
+.label { font-weight:700; color:#355e3b; }
+.report-main { max-width:860px; }
+.back { margin-bottom:20px; }
+@page { size:A4; margin:16mm 14mm; }
+@media print { body { background:#fff; } header, main, footer { padding:0; } .back { display:none; } .card, .note { break-inside:avoid; box-shadow:none; } }
+</style>
+</head>
+<body>
+  <main class="report-main">
+    <p class="back"><a href="../../index.html">← 一覧へ戻る</a></p>
+    <section class="hero-card"><div class="eyebrow">AI news report</div><h1>ロボット技術ニュース週間サマリー - 2026-10-31</h1></section>
+<p>対象期間: 2026-10-25〜2026-10-31</p>
+<section class="card"><h2>入力レポート</h2>
+<ul>
+<li>2026-10-25, 2026-10-26, 2026-10-27, 2026-10-28, 2026-10-29, 2026-10-30, 2026-10-31 の日次7本</li>
+<li>不足日はなし。各日次に記録された一次情報と、その公開日・対象範囲を入力として整理した。</li>
+</ul>
+</section>
+<section class="card"><h2>今週の大きな流れ</h2>
+<p>### 1. ヒューマノイドは単発デモから、複数拠点・量産・資本・保守を含む商用化へ進んだ</p>
+<p>Agility RoboticsはGXOの追加2拠点、複数企業の有償プログラム、30社超のパイプライン、Digit 5の提供計画を公表し、週末には約4.65億ドルの調達を伴う上場手続きを発表しました。NEURAとTUMはRoboGymと4NE1 Gen 4、Realbotixは2027年納入予定のEchoを発表しています。契約、予定、製造能力、調達額を、実稼働台数、作業成功率、安全性、採算性と混同しない評価が必要です。</p>
+<p>### 2. 高水準のロボット知能と、機体内の独立安全系を分離する設計が明確になった</p>
+<p>Google CloudのGemini Robotics Embodied Reasoning 2は長期計画やツール呼び出しを担い、SAPは業務システムから機種横断で作業を統制する層を発表しました。一方Digit 5は、クラウドや主制御から分離した安全計算系が許可範囲を監視し、通信断でも停止判断を維持すると説明しています。高水準モデルを交換可能にするほど、速度、力、領域、停止は機体側の検証可能な規則へ残す必要があります。</p>
+<p>### 3. シミュレーション、デジタルツイン、実機評価を一つの反復経路にする動きが加速した</p>
+<p>NVIDIAはMicroduckでコース作成、資産生成、Isaac Sim・Isaac Lab学習、実機評価をつなぎ、Isaac OSと参照基盤も拡張しました。GoogleのGemini 4 Argonは実映像からMuJoCoデジタルツインを作り、失敗区間のラベル付けや実機改善へ使う例を示しました。RoboColiseumは同じ実行系でも一般操作が弱く、接続ハーネスが結果を左右することを示しており、仮想成功と実機安全の間に故障注入と段階試験が必要です。</p>
+<p>### 4. 現場導入の評価軸が、台数から自律作業時間・介入・運用基盤へ移った</p>
+<p>AGIBOTは台数、自律時間、出力効率を掛けるWorkenを提案し、ANYboticsは防爆環境向けANYmal Xの納入を開始しました。SereactとUniversal Robotsは返品物流、SymboticとWalmartは25拠点、A3は北米受注の24.8%増を報告しています。導入規模だけでなく、介入率、停止時間、復帰時間、誤処理、更新後の退行を共通指標で追う必要があります。</p>
+<p>### 5. エッジ知覚と受動機構が、接続断や不整地に対する頑健性を支えた</p>
+<p>StereolabsのZED Box 2は最大8台の同期カメラと機体上の推論を支援し、Google CloudとNASAは通信遅延を前提とする宇宙向けロボット助手を試験しています。University of TorontoのHopcopter用フットパッドやETH Zurichの筋肉・足場共同設計は、ソフトウェアだけでなく接地面や構造で動作を安定させます。時刻同期、欠測表示、滑り止め、転倒防止など、単純な物理設計も安全層として重要です。</p>
+</section>
+<section class="note"><h2>ユグ的に気になるロボット技術特集</h2>
+<p>今週いちばん気になるのは、<strong>計画するAIと、機体を安全側へ止める独立系を明確に分けたこと</strong>です。</p>
+<p>1. 高水準モデルは作業候補を作っても、速度、力、可動域、進入禁止領域を変更できないようにする。</p>
+<p>2. 通信断、モデル停止、遅延、センサー矛盾では機体内の単純な規則で停止する。</p>
+<p>3. シミュレーション、空の試験場、低速実機、限定パイロットの順に進め、各段階の失敗を保存する。</p>
+<p>4. 台数や稼働時間に加え、人の介入、危険停止、復帰時間、誤処理、更新後の退行を測る。</p>
+<p>5. 生体、ケージ、加温・照明・給水設備はロボット試験から隔離し、物理非常停止と人の監督を保つ。</p>
+</section>
+<section class="card"><h2>ぬし向け実験候補</h2>
+<ul>
+<li>アクチュエータを外した模擬機で、クラウド応答の欠損、3秒以上の遅延、矛盾した動作指示を入れ、機体側の固定ルールが安全停止するか記録する。</li>
+<li>実映像からケージ周辺のデジタルツインを作り、固定カメラ位置と点検動線だけを仮想評価する。生体の近くで移動機やアームを動かさない。</li>
+<li>空箱の仕分けを隔離区画で低速実行し、自律時間だけでなく介入回数、接触、再試行、停止・復帰時間を記録する。生命維持装置は対象にしない。</li>
+</ul>
+</section>
+<section class="card"><h2>来週も追いたいこと</h2>
+<ul>
+<li>Digitの複数拠点展開における実稼働台数、介入率、安全停止、採算性</li>
+<li>Gemini Robotics Embodied Reasoning 2の失敗分類、遅延、低水準制御との責任分界</li>
+<li>Isaac系とGemini 4 Argonのデジタルツインから実機へ移る際の差分検出</li>
+<li>Workenなど自律作業指標の第三者検証と、危険停止・人の負担の扱い</li>
+<li>防爆・宇宙・物流環境でのエッジ推論の通信断、電力、熱、故障時挙動</li>
+</ul>
+</section>
+<section class="card"><h2>主な一次情報</h2>
+<ul>
+<li><a href="https://www.agilityrobotics.com/content/jonathan-hurst-answers-your-questions-about-building-digit-5">https://www.agilityrobotics.com/content/jonathan-hurst-answers-your-questions-about-building-digit-5</a></li>
+<li><a href="https://www.agilityrobotics.com/content/gxo-and-agility-robotics-expand-partnership-to-accelerate-deployment-of-humanoids-in-u-s-operations">https://www.agilityrobotics.com/content/gxo-and-agility-robotics-expand-partnership-to-accelerate-deployment-of-humanoids-in-u-s-operations</a></li>
+<li><a href="https://www.agilityrobotics.com/content/agility-robotics-and-churchill-capital-corp-xi-announce-expected-gross-capital-raise-of-approximately-465-million-and-anticipated-closing-of-business-combination">https://www.agilityrobotics.com/content/agility-robotics-and-churchill-capital-corp-xi-announce-expected-gross-capital-raise-of-approximately-465-million-and-anticipated-closing-of-business-combination</a></li>
+<li><a href="https://developer.nvidia.com/blog/using-ai-agents-to-teach-robots-like-microduck-to-walk-in-simulation/">https://developer.nvidia.com/blog/using-ai-agents-to-teach-robots-like-microduck-to-walk-in-simulation/</a></li>
+<li><a href="https://cloud.google.com/blog/products/ai-machine-learning/gemini-robotics-embodied-reasoning-2">https://cloud.google.com/blog/products/ai-machine-learning/gemini-robotics-embodied-reasoning-2</a></li>
+<li><a href="https://developers.googleblog.com/en/gemini-4-argon-for-robotics/">https://developers.googleblog.com/en/gemini-4-argon-for-robotics/</a></li>
+<li><a href="https://www.anybotics.com/news/anymal-x-customer-deliveries/">https://www.anybotics.com/news/anymal-x-customer-deliveries/</a></li>
+</ul>
+</section>
+  </main>
+  <footer>Generated by ユグ 🦎</footer>
+</body>
+</html>
