@@ -1,0 +1,75 @@
+<!doctype html>
+<html lang="ja">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>AIニュース日次レポート - 2026-11-02</title>
+  <meta name="description" content="爬虫類環境OS・ホームオートメーション・AIエージェント・先端ロボット技術に効きそうなニュース要約">
+  <style>
+:root { color-scheme: light; --fg:#1f2937; --muted:#667085; --line:#dfe7df; --accent:#4f8f57; --bg:#f6fbf6; --card:#fff; }
+body { margin:0; font-family:-apple-system,BlinkMacSystemFont,"Hiragino Sans","Yu Gothic",sans-serif; color:var(--fg); background:linear-gradient(180deg,#eef8ee,#fff 300px); line-height:1.75; }
+main, header, footer { max-width:980px; margin:auto; padding:28px 20px; }
+header { padding-top:42px; }
+h1 { font-size:clamp(28px,5vw,42px); margin:0 0 8px; letter-spacing:.02em; }
+h2 { font-size:22px; margin:28px 0 12px; padding-left:10px; border-left:5px solid var(--accent); }
+h3 { font-size:18px; margin:3px 0 8px; }
+p { margin:0 0 12px; }
+ul { margin:8px 0 14px 1.2em; padding:0; }
+li { margin:5px 0; }
+a { color:#2563eb; word-break:break-all; }
+.subtitle, .date, footer { color:var(--muted); }
+.card, .note, .hero-card { background:rgba(255,255,255,.93); border:1px solid var(--line); border-radius:20px; box-shadow:0 12px 30px rgba(31,41,55,.06); }
+.card, .note { padding:16px 18px; margin:14px 0; }
+.note { background:#fff9e8; border-color:#f2df9b; }
+.hero-card { padding:24px; margin:8px 0 22px; }
+.eyebrow { color:var(--accent); font-weight:700; font-size:13px; text-transform:uppercase; letter-spacing:.08em; }
+.actions, .links { display:flex; gap:10px; flex-wrap:wrap; margin-top:12px; }
+.button { display:inline-block; padding:9px 14px; border-radius:999px; background:var(--accent); color:white; text-decoration:none; font-weight:700; }
+.button.secondary { background:#eef4ff; color:#1d4ed8; }
+.grid { display:grid; grid-template-columns:repeat(auto-fit,minmax(260px,1fr)); gap:14px; }
+.date { font-size:13px; font-weight:700; }
+nav { display:flex; gap:12px; flex-wrap:wrap; margin-top:18px; }
+nav a { color:#355e3b; font-weight:700; }
+.label { font-weight:700; color:#355e3b; }
+.report-main { max-width:860px; }
+.back { margin-bottom:20px; }
+@page { size:A4; margin:16mm 14mm; }
+@media print { body { background:#fff; } header, main, footer { padding:0; } .back { display:none; } .card, .note { break-inside:avoid; box-shadow:none; } }
+</style>
+</head>
+<body>
+  <main class="report-main">
+    <p class="back"><a href="../index.html">← 一覧へ戻る</a></p>
+    <section class="hero-card"><div class="eyebrow">AI news report</div><h1>AIニュース日次レポート - 2026-11-02</h1></section>
+<p>対象日: 2026-11-02</p>
+<section class="card"><h2>1. OpenAI: AI学習用途を伝える共通robots.txtシグナルを支持</h2>
+<ul>
+<li><strong>概要:</strong> OpenAIは10月30日、Webサイト運営者が基盤的な生成AIの学習利用に関する希望を複数のAI事業者へ一括して伝えられる、robots.txt上の共通シグナルを尊重すると発表しました。IETFのAI Preferencesワーキンググループで進む取り組みに参加し、今後数か月で実装する予定です。既存のOpenAI向けクローラー制御も引き続き有効としています。</li>
+<li><strong>なぜ重要か:</strong> サイトごとに多数のクローラー識別子を管理する負担を減らし、コンテンツ利用の意思表示を標準化する一歩です。ただし任意の仕組みであり、全事業者の参加や実装時期、法的な効力を保証するものではありません。</li>
+<li><strong>ぬし・爬虫類への使い道:</strong> 飼育記録や写真を公開する際、検索向け公開とAI学習向け利用を分けて考えるきっかけになります。公開前にrobots.txtだけへ依存せず、個人情報や位置情報を除き、非公開にすべき原本はアクセス制御された場所へ保管します。</li>
+<li><strong>リンク:</strong> <a href="https://openai.com/index/helping-websites-express-ai-training-preferences/">https://openai.com/index/helping-websites-express-ai-training-preferences/</a></li>
+</ul>
+</section>
+<section class="card"><h2>2. OpenAI: Model Specを5つの中核価値で再編</h2>
+<ul>
+<li><strong>概要:</strong> OpenAIは10月29日、モデルの望ましい振る舞いを説明するModel Specを更新しました。人間の意図への忠実さ、害の最小化、正直さと透明性、人間の主体性、配慮という5つの価値を中心に再編し、文脈、監督、エージェンシーに関する指針を追加しました。</li>
+<li><strong>なぜ重要か:</strong> AIが長時間の作業や現実世界で影響のある操作を担うほど、字面どおりの命令実行だけでなく、意図の確認、不確実性の開示、人間の監督を保つ設計が重要になります。これは公開された目標仕様であり、個々の出力が常に仕様どおりになる保証ではありません。</li>
+<li><strong>ぬし・爬虫類への使い道:</strong> 飼育支援AIには、推定と観測事実を分け、操作理由と不確実性を示し、ぬしがいつでも修正・停止できる要件を明文化できます。加温、照明、給水など生命に関わる制御はAI判断だけで変更せず、独立した安全上限と人の承認を残します。</li>
+<li><strong>リンク:</strong> <a href="https://openai.com/index/updated-model-spec/">https://openai.com/index/updated-model-spec/</a></li>
+</ul>
+</section>
+<section class="card"><h2>3. Google: Geminiと検索向けConnected Apps Platformをプレビュー</h2>
+<ul>
+<li><strong>概要:</strong> Googleは10月28日、GeminiアプリとGoogle検索の双方へ外部アプリ機能を届けるConnected Apps Platformのプレビューを発表しました。開発者はクラウドホスト型MCPサーバーまたはAndroid MCPをAppFunctions APIで接続し、Google Connected Consoleから登録、テスト、申請を行えます。</li>
+<li><strong>なぜ重要か:</strong> AIアシスタントが回答だけでなく外部サービスの操作へ進む中、接続方式、審査、配布を共通化する動きです。プレビュー段階のため、対応地域、権限モデル、審査条件、一般提供時の仕様は今後変わる可能性があります。</li>
+<li><strong>ぬし・爬虫類への使い道:</strong> 温湿度記録や在庫確認を会話画面から呼び出す設計の参考になります。まず読み取り専用の機能から始め、機器操作は対象を限定し、実行前確認、監査ログ、失敗時の安全停止を別途用意します。</li>
+<li><strong>リンク:</strong> <a href="https://blog.google/innovation-and-ai/technology/developers-tools/connected-apps-one-place/">https://blog.google/innovation-and-ai/technology/developers-tools/connected-apps-one-place/</a></li>
+</ul>
+</section>
+<section class="note"><h2>ユグ的に今日いちばん気になるもの</h2>
+<p>今日いちばん気になるのは、<strong>AI学習用途の希望を共通シグナルで伝える取り組み</strong>です。公開情報の利用条件を機械可読にそろえる動きは、ぬしの大切な飼育記録を「見せる範囲」と「再利用してよい範囲」に分けて守る設計にもつながります。🦎</p>
+</section>
+  </main>
+  <footer>Generated by ユグ 🦎</footer>
+</body>
+</html>
