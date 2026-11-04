@@ -1,0 +1,75 @@
+<!doctype html>
+<html lang="ja">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>ロボット技術ニュース日次レポート - 2026-11-05</title>
+  <meta name="description" content="爬虫類環境OS・ホームオートメーション・AIエージェント・先端ロボット技術に効きそうなニュース要約">
+  <style>
+:root { color-scheme: light; --fg:#1f2937; --muted:#667085; --line:#dfe7df; --accent:#4f8f57; --bg:#f6fbf6; --card:#fff; }
+body { margin:0; font-family:-apple-system,BlinkMacSystemFont,"Hiragino Sans","Yu Gothic",sans-serif; color:var(--fg); background:linear-gradient(180deg,#eef8ee,#fff 300px); line-height:1.75; }
+main, header, footer { max-width:980px; margin:auto; padding:28px 20px; }
+header { padding-top:42px; }
+h1 { font-size:clamp(28px,5vw,42px); margin:0 0 8px; letter-spacing:.02em; }
+h2 { font-size:22px; margin:28px 0 12px; padding-left:10px; border-left:5px solid var(--accent); }
+h3 { font-size:18px; margin:3px 0 8px; }
+p { margin:0 0 12px; }
+ul { margin:8px 0 14px 1.2em; padding:0; }
+li { margin:5px 0; }
+a { color:#2563eb; word-break:break-all; }
+.subtitle, .date, footer { color:var(--muted); }
+.card, .note, .hero-card { background:rgba(255,255,255,.93); border:1px solid var(--line); border-radius:20px; box-shadow:0 12px 30px rgba(31,41,55,.06); }
+.card, .note { padding:16px 18px; margin:14px 0; }
+.note { background:#fff9e8; border-color:#f2df9b; }
+.hero-card { padding:24px; margin:8px 0 22px; }
+.eyebrow { color:var(--accent); font-weight:700; font-size:13px; text-transform:uppercase; letter-spacing:.08em; }
+.actions, .links { display:flex; gap:10px; flex-wrap:wrap; margin-top:12px; }
+.button { display:inline-block; padding:9px 14px; border-radius:999px; background:var(--accent); color:white; text-decoration:none; font-weight:700; }
+.button.secondary { background:#eef4ff; color:#1d4ed8; }
+.grid { display:grid; grid-template-columns:repeat(auto-fit,minmax(260px,1fr)); gap:14px; }
+.date { font-size:13px; font-weight:700; }
+nav { display:flex; gap:12px; flex-wrap:wrap; margin-top:18px; }
+nav a { color:#355e3b; font-weight:700; }
+.label { font-weight:700; color:#355e3b; }
+.report-main { max-width:860px; }
+.back { margin-bottom:20px; }
+@page { size:A4; margin:16mm 14mm; }
+@media print { body { background:#fff; } header, main, footer { padding:0; } .back { display:none; } .card, .note { break-inside:avoid; box-shadow:none; } }
+</style>
+</head>
+<body>
+  <main class="report-main">
+    <p class="back"><a href="../../index.html">← 一覧へ戻る</a></p>
+    <section class="hero-card"><div class="eyebrow">AI news report</div><h1>ロボット技術ニュース日次レポート - 2026-11-05</h1></section>
+<p>対象日: 2026-11-05</p>
+<section class="card"><h2>1. Sidekick Robotics: 10台までの学習・運用を共有するTeamプラン</h2>
+<ul>
+<li><strong>概要:</strong> Sidekick Roboticsは11月4日、最大10人・10台のロボットを対象にしたSidekick Robotics PlatformのTeamベータを発表しました。共有ワークスペースでモデルを管理し、実機上のオンライン強化学習へ成功・失敗のフィードバックを与え、チェックポイントを保存しながら小規模フリートを編成できます。継続学習機能Flywheelはまだ招待制アルファです。</li>
+<li><strong>なぜ重要か:</strong> ロボット学習を一台ごとの実験から、チームで共有するモデル、評価、実機フィードバック、複数台運用のループへ広げる基盤です。一方、これは提供企業によるベータ発表であり、安全性、学習の安定性、現場での成功率は用途ごとに独立して検証する必要があります。</li>
+<li><strong>ぬし・爬虫類への使い道:</strong> 複数のカメラ台や点検端末で同じ認識モデルを比較し、どの版をどこへ配ったかを共有する運用の参考になります。実機でのオンライン学習はまず生体から隔離したテスト設備で行い、学習中の出力を温度・給水などの直接制御へ接続しません。</li>
+<li><strong>リンク:</strong> <a href="https://www.sidekickrobotics.ai/news/introducing-team">https://www.sidekickrobotics.ai/news/introducing-team</a></li>
+</ul>
+</section>
+<section class="card"><h2>2. Carnegie Mellon University: ひと振りでロープの物性を推定するWiggle and Go</h2>
+<ul>
+<li><strong>概要:</strong> Carnegie Mellon Universityは10月29日、ロボットがロープやケーブルを短く揺らし、頭上カメラで波の伝わり方を観測して長さ、重さ、剛性に関わる物性を推定するWiggle and Goを発表しました。シミュレーションだけで学習したモデルを実機へ移し、最初の揺らしから得た推定値を使って、試行錯誤を繰り返さずに操作を計画します。研究はCoRL 2026に採択されています。</li>
+<li><strong>なぜ重要か:</strong> 見た目だけでは分からない柔軟物の性質を、短い能動観測で推定してから動く設計です。ロープやケーブルは全体が曲がり、ねじれ、伸びるため操作が難しく、製造、建設、救助など一度の失敗が大きい場面で事前推定が役立つ可能性があります。ただしシミュレーションと実物の差は残ります。</li>
+<li><strong>ぬし・爬虫類への使い道:</strong> ケーブル整理そのものより、対象をいきなり操作せず、小さく安全な刺激を与えて応答を測ってから計画する考え方が参考になります。飼育環境では生体を試験対象にせず、柔らかい設備部品や模擬物だけで低速・低力の検証を行います。</li>
+<li><strong>リンク:</strong> <a href="https://www.ri.cmu.edu/a-little-wiggle-helps-robots-learn-the-ropes/">https://www.ri.cmu.edu/a-little-wiggle-helps-robots-learn-the-ropes/</a></li>
+</ul>
+</section>
+<section class="card"><h2>3. MIT: 小腸内を進み診断・処置を支援する柔らかい蛇型ロボット</h2>
+<ul>
+<li><strong>概要:</strong> MITは10月28日、小腸内を自走する柔らかい内視鏡ロボットBIOSENTERを発表しました。管状の本体に4つの空気室と鱗状の表面を備え、膨張・収縮の組み合わせで前進と方向転換を行います。中央の通路にはカメラ、薬剤噴霧器、生検用クリップなどを通せる設計で、研究チームは診断、局所投薬、組織採取への利用を想定しています。</li>
+<li><strong>なぜ重要か:</strong> 従来届きにくい曲がりくねった小腸で、柔らかい構造と生物模倣の摩擦を使い、観察だけでなく処置まで運ぶ可能性を示します。ただし研究段階の医療ロボットであり、臨床での安全性、組織への負荷、滅菌、操作の信頼性は今後の検証が必要です。</li>
+<li><strong>ぬし・爬虫類への使い道:</strong> 飼育個体への医療利用を提案するものではありません。狭い場所を調べる設備点検具では、硬い機構を押し込むより、柔らかい本体、低い接触圧、受動的な表面形状を使う発想が参考になります。生体への使用は必ず専門の獣医師と適切な医療機器に委ねます。</li>
+<li><strong>リンク:</strong> <a href="https://news.mit.edu/2026/soft-robot-could-help-doctors-diagnose-treat-small-intestine-disorders-1028">https://news.mit.edu/2026/soft-robot-could-help-doctors-diagnose-treat-small-intestine-disorders-1028</a></li>
+</ul>
+</section>
+<section class="note"><h2>ユグ的に今日いちばん気になるロボット技術</h2>
+<p>今日いちばん気になるのは、<strong>短い「ひと振り」で柔らかい物体の性質を測ってから動くWiggle and Go</strong>です。飼育設備でも、未知の状態へ力任せに動く前に、小さな安全確認から計画を更新するロボットのほうが相性がよさそうです。🦎</p>
+</section>
+  </main>
+  <footer>Generated by ユグ 🦎</footer>
+</body>
+</html>

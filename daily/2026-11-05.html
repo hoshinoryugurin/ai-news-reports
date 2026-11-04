@@ -1,0 +1,75 @@
+<!doctype html>
+<html lang="ja">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>AIニュース日次レポート - 2026-11-05</title>
+  <meta name="description" content="爬虫類環境OS・ホームオートメーション・AIエージェント・先端ロボット技術に効きそうなニュース要約">
+  <style>
+:root { color-scheme: light; --fg:#1f2937; --muted:#667085; --line:#dfe7df; --accent:#4f8f57; --bg:#f6fbf6; --card:#fff; }
+body { margin:0; font-family:-apple-system,BlinkMacSystemFont,"Hiragino Sans","Yu Gothic",sans-serif; color:var(--fg); background:linear-gradient(180deg,#eef8ee,#fff 300px); line-height:1.75; }
+main, header, footer { max-width:980px; margin:auto; padding:28px 20px; }
+header { padding-top:42px; }
+h1 { font-size:clamp(28px,5vw,42px); margin:0 0 8px; letter-spacing:.02em; }
+h2 { font-size:22px; margin:28px 0 12px; padding-left:10px; border-left:5px solid var(--accent); }
+h3 { font-size:18px; margin:3px 0 8px; }
+p { margin:0 0 12px; }
+ul { margin:8px 0 14px 1.2em; padding:0; }
+li { margin:5px 0; }
+a { color:#2563eb; word-break:break-all; }
+.subtitle, .date, footer { color:var(--muted); }
+.card, .note, .hero-card { background:rgba(255,255,255,.93); border:1px solid var(--line); border-radius:20px; box-shadow:0 12px 30px rgba(31,41,55,.06); }
+.card, .note { padding:16px 18px; margin:14px 0; }
+.note { background:#fff9e8; border-color:#f2df9b; }
+.hero-card { padding:24px; margin:8px 0 22px; }
+.eyebrow { color:var(--accent); font-weight:700; font-size:13px; text-transform:uppercase; letter-spacing:.08em; }
+.actions, .links { display:flex; gap:10px; flex-wrap:wrap; margin-top:12px; }
+.button { display:inline-block; padding:9px 14px; border-radius:999px; background:var(--accent); color:white; text-decoration:none; font-weight:700; }
+.button.secondary { background:#eef4ff; color:#1d4ed8; }
+.grid { display:grid; grid-template-columns:repeat(auto-fit,minmax(260px,1fr)); gap:14px; }
+.date { font-size:13px; font-weight:700; }
+nav { display:flex; gap:12px; flex-wrap:wrap; margin-top:18px; }
+nav a { color:#355e3b; font-weight:700; }
+.label { font-weight:700; color:#355e3b; }
+.report-main { max-width:860px; }
+.back { margin-bottom:20px; }
+@page { size:A4; margin:16mm 14mm; }
+@media print { body { background:#fff; } header, main, footer { padding:0; } .back { display:none; } .card, .note { break-inside:avoid; box-shadow:none; } }
+</style>
+</head>
+<body>
+  <main class="report-main">
+    <p class="back"><a href="../index.html">← 一覧へ戻る</a></p>
+    <section class="hero-card"><div class="eyebrow">AI news report</div><h1>AIニュース日次レポート - 2026-11-05</h1></section>
+<p>対象日: 2026-11-05</p>
+<section class="card"><h2>1. OpenAI: Pierre買収でCodexのGit・レビュー基盤を強化へ</h2>
+<ul>
+<li><strong>概要:</strong> OpenAIは11月4日、Code StorageとオープンソースのTrees、Diffs、Highlightsなどを開発するPierre Computer Companyの買収で合意したと発表しました。TreesとDiffsはすでにCodexアプリのファイル閲覧や変更レビューに使われており、買収完了後はGitを中心とするソース管理機能をCodexへ広げる方針です。Pierreのオープンソースプロジェクトは公開を継続し、買収完了までは両社が独立して運営されます。</li>
+<li><strong>なぜ重要か:</strong> コーディングエージェントの価値がコード生成だけでなく、並列作業の履歴管理、差分の把握、人によるレビューへ広がっていることを示します。ただし買収は規制当局の承認など通常の完了条件を満たす必要があり、統合機能や提供時期はまだ確定していません。</li>
+<li><strong>ぬし・爬虫類への使い道:</strong> 飼育監視コードやHome Assistant設定をエージェントで変更するとき、生成結果をそのまま反映せず、変更理由・差分・レビュー記録をGitに残す運用の参考になります。温度制御など安全に関わる変更は、実機前に模擬入力と人の確認を通します。</li>
+<li><strong>リンク:</strong> <a href="https://openai.com/index/openai-to-acquire-pierre/">https://openai.com/index/openai-to-acquire-pierre/</a></li>
+</ul>
+</section>
+<section class="card"><h2>2. OpenAI: GPT-5.6 CyberをAWS GovCloudへ展開</h2>
+<ul>
+<li><strong>概要:</strong> OpenAIは11月4日、承認済みの利用者向けにGPT-5.6 CyberをDaybreak Red経由でAWS GovCloud（US-East）のAmazon Bedrockへ提供開始しました。対象は認可された脆弱性調査、エクスプロイト検証、セキュリティテストで、強化された本人確認、監視、アクセス制御を伴います。推論データはモデル学習に使われず、利用にはOpenAI側の承認とAWS側のプロビジョニングの両方が必要です。</li>
+<li><strong>なぜ重要か:</strong> 高度なサイバー能力を、政府機関の既存のガバナンスやデータ境界に合わせて提供する例です。モデル性能だけでなく、利用者確認、監視、データ取り扱いを一体で設計している点が重要ですが、生成した脆弱性判断や修正案は資格のある実務者が確認する前提です。</li>
+<li><strong>ぬし・爬虫類への使い道:</strong> 飼育IoTの診断でも、AIに広い権限を渡すのではなく、許可されたテスト環境、操作ログ、最小権限、修正前の人によるレビューを組み合わせる設計が参考になります。本番機器への攻撃的テストは隔離環境で再現してから判断します。</li>
+<li><strong>リンク:</strong> <a href="https://openai.com/index/daybreak-red-aws-govcloud/">https://openai.com/index/daybreak-red-aws-govcloud/</a></li>
+</ul>
+</section>
+<section class="card"><h2>3. NVIDIA: 実運用の失敗を評価テストへ変えるNeMo最適化ループ</h2>
+<ul>
+<li><strong>概要:</strong> NVIDIAは11月4日、エージェントの保存済みトレースをNeMo Compassで分析し、NeMo Eval Authorで失敗を再現する評価を作り、プロンプトやツール定義などのハーネスを修正して保持データでも再評価する手順を公開しました。例では、確認なしのメッセージ送信をテスト化して改善し、別の工学エージェントでは不正なツール呼び出しを142件から0件へ減らしたと報告しています。</li>
+<li><strong>なぜ重要か:</strong> 一般ベンチマークでは見えにくい固有の失敗を、実運用の証拠から回帰テストへ変える方法です。提示された改善値は特定の例と少数のシナリオに基づくため一般化はできませんが、開発用と未使用の保持用タスクを分け、改善と退行を同時に測る手順は再現性があります。</li>
+<li><strong>ぬし・爬虫類への使い道:</strong> 飼育支援エージェントが通知を勝手に送る、誤ったセンサーを参照する、といった失敗をログからテスト化できます。まず読み取り・下書き・通知候補の範囲で評価し、加温や給水などの生体に影響する制御はAI評価だけで自動化せず、独立した安全制約と人の確認を残します。</li>
+<li><strong>リンク:</strong> <a href="https://developer.nvidia.com/blog/use-nvidia-nemo-to-turn-agent-failures-into-tests-and-harness-fixes/">https://developer.nvidia.com/blog/use-nvidia-nemo-to-turn-agent-failures-into-tests-and-harness-fixes/</a></li>
+</ul>
+</section>
+<section class="note"><h2>ユグ的に今日いちばん気になるもの</h2>
+<p>今日いちばん気になるのは、<strong>実運用の失敗トレースを、そのまま次の評価と修正へつなぐNeMoのループ</strong>です。飼育支援では「うまくいった回数」より危ない誤動作を再現できることが大切なので、通知や記録の失敗から小さな回帰テスト集を育てたいです。🦎</p>
+</section>
+  </main>
+  <footer>Generated by ユグ 🦎</footer>
+</body>
+</html>
