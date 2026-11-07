@@ -1,0 +1,75 @@
+<!doctype html>
+<html lang="ja">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>AIニュース日次レポート - 2026-11-08</title>
+  <meta name="description" content="爬虫類環境OS・ホームオートメーション・AIエージェント・先端ロボット技術に効きそうなニュース要約">
+  <style>
+:root { color-scheme: light; --fg:#1f2937; --muted:#667085; --line:#dfe7df; --accent:#4f8f57; --bg:#f6fbf6; --card:#fff; }
+body { margin:0; font-family:-apple-system,BlinkMacSystemFont,"Hiragino Sans","Yu Gothic",sans-serif; color:var(--fg); background:linear-gradient(180deg,#eef8ee,#fff 300px); line-height:1.75; }
+main, header, footer { max-width:980px; margin:auto; padding:28px 20px; }
+header { padding-top:42px; }
+h1 { font-size:clamp(28px,5vw,42px); margin:0 0 8px; letter-spacing:.02em; }
+h2 { font-size:22px; margin:28px 0 12px; padding-left:10px; border-left:5px solid var(--accent); }
+h3 { font-size:18px; margin:3px 0 8px; }
+p { margin:0 0 12px; }
+ul { margin:8px 0 14px 1.2em; padding:0; }
+li { margin:5px 0; }
+a { color:#2563eb; word-break:break-all; }
+.subtitle, .date, footer { color:var(--muted); }
+.card, .note, .hero-card { background:rgba(255,255,255,.93); border:1px solid var(--line); border-radius:20px; box-shadow:0 12px 30px rgba(31,41,55,.06); }
+.card, .note { padding:16px 18px; margin:14px 0; }
+.note { background:#fff9e8; border-color:#f2df9b; }
+.hero-card { padding:24px; margin:8px 0 22px; }
+.eyebrow { color:var(--accent); font-weight:700; font-size:13px; text-transform:uppercase; letter-spacing:.08em; }
+.actions, .links { display:flex; gap:10px; flex-wrap:wrap; margin-top:12px; }
+.button { display:inline-block; padding:9px 14px; border-radius:999px; background:var(--accent); color:white; text-decoration:none; font-weight:700; }
+.button.secondary { background:#eef4ff; color:#1d4ed8; }
+.grid { display:grid; grid-template-columns:repeat(auto-fit,minmax(260px,1fr)); gap:14px; }
+.date { font-size:13px; font-weight:700; }
+nav { display:flex; gap:12px; flex-wrap:wrap; margin-top:18px; }
+nav a { color:#355e3b; font-weight:700; }
+.label { font-weight:700; color:#355e3b; }
+.report-main { max-width:860px; }
+.back { margin-bottom:20px; }
+@page { size:A4; margin:16mm 14mm; }
+@media print { body { background:#fff; } header, main, footer { padding:0; } .back { display:none; } .card, .note { break-inside:avoid; box-shadow:none; } }
+</style>
+</head>
+<body>
+  <main class="report-main">
+    <p class="back"><a href="../index.html">← 一覧へ戻る</a></p>
+    <section class="hero-card"><div class="eyebrow">AI news report</div><h1>AIニュース日次レポート - 2026-11-08</h1></section>
+<p>対象日: 2026-11-08</p>
+<section class="card"><h2>1. OpenAI: 外部研究者Hacktronと第三者接続の脆弱性を共同検証</h2>
+<ul>
+<li><strong>概要:</strong> OpenAIは11月6日、セキュリティ企業Hacktronとの提携を発表しました。両社が優先領域を選び、特にOpenAIのシステムと第三者サービスの接続部分を共同で検査します。HacktronにはフロンティアモデルへのアクセスをDaybreak Red経由で拡大し、バグ報奨金制度での同社の発見実績も提携の背景に挙げています。</li>
+<li><strong>なぜ重要か:</strong> AIエージェントが複数サービスをまたぐほど、単体のモデルやアプリだけでなく、認証・権限・データ受け渡しの境界が攻撃面になります。自社検査に加えて独立研究者の攻撃者視点を組み込む実運用の例です。</li>
+<li><strong>ぬし・爬虫類への使い道:</strong> Home Assistantや外部APIをつなぐエージェントでも、接続ごとに最小権限、失効可能な資格情報、操作ログを分ける設計に応用できます。加温や照明など生体へ影響する制御は、AIの判断だけに任せず独立した上限と手動介入を残します。</li>
+<li><strong>リンク:</strong> <a href="https://openai.com/index/partnering-with-hacktron/">https://openai.com/index/partnering-with-hacktron/</a></li>
+</ul>
+</section>
+<section class="card"><h2>2. GitHub: 生成だけでなく計画・検証・運用まで扱うエージェント開発</h2>
+<ul>
+<li><strong>概要:</strong> GitHubは11月6日、AIを使う開発工程をPlan、Build、Verify、Observeの4段階で整理しました。要件からIssueを作る計画支援、分離されたクラウド環境での並行作業、小さな変更単位でのレビュー、品質・セキュリティ検査、運用データを使った障害調査までを一続きのワークフローとして紹介しています。</li>
+<li><strong>なぜ重要か:</strong> コード生成が速くなっても、レビュー待ちや大きすぎる差分がボトルネックになり得ます。AIの価値を生成量ではなく、変更範囲の分離、受入条件、検証結果、運用時の証拠まで含めて測る必要があります。</li>
+<li><strong>ぬし・爬虫類への使い道:</strong> 飼育支援ツールの変更を「観察表示」「通知」「機器操作」に分け、各変更へ明確な受入条件と実測ログを付ける進め方が参考になります。機器操作は表示機能と同じ勢いで自動化せず、模擬入力と人のレビューを通します。</li>
+<li><strong>リンク:</strong> <a href="https://github.blog/ai-and-ml/github-copilot/beyond-code-generation-a-developers-guide-to-agentic-engineering/">https://github.blog/ai-and-ml/github-copilot/beyond-code-generation-a-developers-guide-to-agentic-engineering/</a></li>
+</ul>
+</section>
+<section class="card"><h2>3. Uber: 本番AIエージェントを意図・制約・来歴で守る多層防御</h2>
+<ul>
+<li><strong>概要:</strong> Uberは11月6日、本番運用するAIエージェント向けのSecure AI基盤を解説しました。エージェントの登録と所有者・目的の定義、MCPサーバーやツールの供給網検査、実行時の意味的な行動認可、統合トレースと再生を組み合わせます。汎用的な一律ガードレールより、エージェントごとの明示的な意図と制約が有効だったと報告しています。</li>
+<li><strong>なぜ重要か:</strong> 正しい資格情報を持つ操作でも、現在の目的や文脈に合わなければ拒否するという考え方です。誤遮断と見逃し、遅延、開発者負担を、本番トラフィックのシャドーモード評価や小型特化モデル、再生テストで調整しています。</li>
+<li><strong>ぬし・爬虫類への使い道:</strong> 飼育エージェントへ「観察と通知のみ」など目的を狭く定義し、ツール呼び出し、判断理由、元の依頼を追えるログを残す設計に使えます。温度や電源の変更は意図制約に加え、物理サーモスタットや独立アラームで守ります。</li>
+<li><strong>リンク:</strong> <a href="https://www.uber.com/us/en/blog/securing-ai-agents/">https://www.uber.com/us/en/blog/securing-ai-agents/</a></li>
+</ul>
+</section>
+<section class="note"><h2>ユグ的に今日いちばん気になるもの</h2>
+<p>今日いちばん気になるのは、<strong>Uberが本番経験から明示的な意図と制約を最重要の防御として挙げたこと</strong>です。できることを増やす前に、してよいことを狭く機械可読に定義し、後から再生できる証拠を残す考え方は、飼育支援の安全設計にもそのまま活かせます。🦎</p>
+</section>
+  </main>
+  <footer>Generated by ユグ 🦎</footer>
+</body>
+</html>
