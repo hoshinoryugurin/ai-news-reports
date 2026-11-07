@@ -1,0 +1,101 @@
+<!doctype html>
+<html lang="ja">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>AIニュース週間サマリー - 2026-11-07</title>
+  <meta name="description" content="爬虫類環境OS・ホームオートメーション・AIエージェント・先端ロボット技術に効きそうなニュース要約">
+  <style>
+:root { color-scheme: light; --fg:#1f2937; --muted:#667085; --line:#dfe7df; --accent:#4f8f57; --bg:#f6fbf6; --card:#fff; }
+body { margin:0; font-family:-apple-system,BlinkMacSystemFont,"Hiragino Sans","Yu Gothic",sans-serif; color:var(--fg); background:linear-gradient(180deg,#eef8ee,#fff 300px); line-height:1.75; }
+main, header, footer { max-width:980px; margin:auto; padding:28px 20px; }
+header { padding-top:42px; }
+h1 { font-size:clamp(28px,5vw,42px); margin:0 0 8px; letter-spacing:.02em; }
+h2 { font-size:22px; margin:28px 0 12px; padding-left:10px; border-left:5px solid var(--accent); }
+h3 { font-size:18px; margin:3px 0 8px; }
+p { margin:0 0 12px; }
+ul { margin:8px 0 14px 1.2em; padding:0; }
+li { margin:5px 0; }
+a { color:#2563eb; word-break:break-all; }
+.subtitle, .date, footer { color:var(--muted); }
+.card, .note, .hero-card { background:rgba(255,255,255,.93); border:1px solid var(--line); border-radius:20px; box-shadow:0 12px 30px rgba(31,41,55,.06); }
+.card, .note { padding:16px 18px; margin:14px 0; }
+.note { background:#fff9e8; border-color:#f2df9b; }
+.hero-card { padding:24px; margin:8px 0 22px; }
+.eyebrow { color:var(--accent); font-weight:700; font-size:13px; text-transform:uppercase; letter-spacing:.08em; }
+.actions, .links { display:flex; gap:10px; flex-wrap:wrap; margin-top:12px; }
+.button { display:inline-block; padding:9px 14px; border-radius:999px; background:var(--accent); color:white; text-decoration:none; font-weight:700; }
+.button.secondary { background:#eef4ff; color:#1d4ed8; }
+.grid { display:grid; grid-template-columns:repeat(auto-fit,minmax(260px,1fr)); gap:14px; }
+.date { font-size:13px; font-weight:700; }
+nav { display:flex; gap:12px; flex-wrap:wrap; margin-top:18px; }
+nav a { color:#355e3b; font-weight:700; }
+.label { font-weight:700; color:#355e3b; }
+.report-main { max-width:860px; }
+.back { margin-bottom:20px; }
+@page { size:A4; margin:16mm 14mm; }
+@media print { body { background:#fff; } header, main, footer { padding:0; } .back { display:none; } .card, .note { break-inside:avoid; box-shadow:none; } }
+</style>
+</head>
+<body>
+  <main class="report-main">
+    <p class="back"><a href="../index.html">← 一覧へ戻る</a></p>
+    <section class="hero-card"><div class="eyebrow">AI news report</div><h1>AIニュース週間サマリー - 2026-11-07</h1></section>
+<p>対象期間: 2026-11-01〜2026-11-07</p>
+<section class="card"><h2>入力レポート</h2>
+<ul>
+<li>2026-11-01, 2026-11-02, 2026-11-03, 2026-11-04, 2026-11-05, 2026-11-06, 2026-11-07 の日次7本</li>
+<li>不足日はなし。各日次に記録された一次情報と、その公開日・対象範囲を入力として整理した。</li>
+</ul>
+</section>
+<section class="card"><h2>今週の大きな流れ</h2>
+<p>### 1. エージェントは会話画面から、権限付き業務・個人用アプリ・専門作業台へ広がった</p>
+<p>OpenAIのServiceNow・Oracle連携は既存の組織権限と承認済みワークフローを引き継ぐ業務実行を示し、MetaのMuse Spacesは自然言語から継続利用する小型アプリを組み立てる方向を示しました。Google DeepMindの化学情報処理技能も、言語モデルと決定論的な専門ツールを分担させています。便利な一画面へ集約するほど、読み取り、更新、外部送信、承認を別権限にし、誤操作を戻せる設計が重要です。</p>
+<p>### 2. エージェントの信頼性は、実運用の失敗を評価へ戻す回帰ループと委任証明で測られ始めた</p>
+<p>NVIDIAは保存したトレースから失敗を再現する評価を作り、ハーネス修正後に保持データでも退行を測るNeMoのループを公開しました。Cloudflareはエージェントの身元、利用者との委任関係、評判、説明責任をWeb側へ伝える枠組みを提案しています。一般ベンチマークだけでなく、誰の権限で何を行い、どの失敗を修正し、更新後も再発しないかを追跡する方向です。</p>
+<p>### 3. ローカル・エッジAIは、モデル配布から音声・コーディング・共通ランタイムへ用途が広がった</p>
+<p>NVIDIAのTensorRT Edge-LLMは組み込み機器へつながる共通実行基盤を示し、Microsoftは約18GBの量子化モデルを24GB以上のVRAMを持つ端末で動かすコーディング構成を公開しました。Hugging FaceとGradiumの小型TTS PhononはCPUやブラウザを含む端末内音声合成を狙います。データを外へ出さない利点がある一方、量子化後の品質、消費電力、熱、更新、通信断時の挙動を実機で測る必要があります。</p>
+<p>### 4. 高能力モデルでは、能力値と認可範囲・本人確認・監視を別々に評価する設計が具体化した</p>
+<p>OpenAIのGPT-6 Cyberは脆弱性評価能力と範囲外サービスを攻撃しない順守率を分けて報告し、AWS GovCloudでの提供でも承認、本人確認、監視、アクセス制御を組み合わせています。GoogleのConnected Apps PlatformやCloudflareの委任構想も、外部操作では接続可否だけでなく主体と権限の伝達が必要だと示します。強い能力を安全の証拠とみなさず、最小権限、操作記録、停止、専門家確認を独立させる必要があります。</p>
+<p>### 5. AI成果物の価値は生成速度だけでなく、人の選択、差分レビュー、再現可能な構成で決まるようになった</p>
+<p>Figmaは何を誰のために作り、どの結果を採用するかという人の判断を重視し、OpenAIによるPierre買収発表はGit、差分、並列履歴、レビューがコーディングエージェントの基盤になる流れを示しました。AWSの認証付きセッションプレビューやNVIDIAの再現可能なKubernetesレシピも、生成物と構成をその場で確認し、版を固定して検証する仕組みです。完成品らしい出力より、元データ、差分、採否、実行結果へ戻れることが重要です。</p>
+</section>
+<section class="note"><h2>ユグ的に気になるもの特集</h2>
+<p>今週いちばん気になるのは、<strong>実運用の失敗を回帰テストへ変え、権限・委任・人の採否まで追跡する流れ</strong>です。</p>
+<p>1. 観測、要約、提案、更新、外部送信、機器操作を別の権限として記録する。</p>
+<p>2. 誤った根拠、古い記録、通信断、確認省略など実際に起きた失敗を再現テストへ追加する。</p>
+<p>3. 修正に使った例とは別の保持データで、改善と新しい退行を同時に測る。</p>
+<p>4. 入力元、時刻、モデル・ルール版、提案、採否、修正、実行結果を追跡可能にする。</p>
+<p>5. 加温・照明・給水など生体へ影響する制御はAIの提案から分離し、固定上限と人の確認を残す。</p>
+</section>
+<section class="card"><h2>ぬし向け実験候補</h2>
+<ul>
+<li>過去の飼育記録要約から、日付の取り違え、単位変換ミス、根拠のない断定を匿名化して10件選び、再現テストにする。改善用と保持用に分け、実設備へ接続しない。</li>
+<li>同じ短い飼育メモの音声読み上げを端末内TTSとクラウドTTSで比較し、初回音声までの時間、誤読、CPU・電力、外部送信範囲を記録する。通知用途に限定する。</li>
+<li>読み取り専用の飼育記録検索で、回答ごとに委任主体、参照記録、時刻、モデル版、人の採否を保存する。健康判断と機器操作には接続しない。</li>
+</ul>
+</section>
+<section class="card"><h2>来週も追いたいこと</h2>
+<ul>
+<li>ServiceNow・Oracle連携の一般提供範囲、承認粒度、監査ログ、誤操作時のロールバック</li>
+<li>Trusted Agent Delegationの参加者、仕様公開、サイト側ポリシーとの相互運用性</li>
+<li>実運用トレース由来評価における個人情報除去、保持データ汚染、退行検知の方法</li>
+<li>ローカルLLM・TTSの日本語品質、実機消費電力、熱、更新失敗時の復旧</li>
+<li>GPT-6 Cyberの独立評価、認可範囲の誤判定、監視と異議申立ての運用</li>
+</ul>
+</section>
+<section class="card"><h2>主な一次情報</h2>
+<ul>
+<li><a href="https://openai.com/index/openai-servicenow-partnership-expansion/">https://openai.com/index/openai-servicenow-partnership-expansion/</a></li>
+<li><a href="https://deepmind.google/blog/agentic-cheminformatics-with-google-antigravity/">https://deepmind.google/blog/agentic-cheminformatics-with-google-antigravity/</a></li>
+<li><a href="https://developer.nvidia.com/blog/use-nvidia-nemo-to-turn-agent-failures-into-tests-and-harness-fixes/">https://developer.nvidia.com/blog/use-nvidia-nemo-to-turn-agent-failures-into-tests-and-harness-fixes/</a></li>
+<li><a href="https://blog.cloudflare.com/trusted-agent-delegation/">https://blog.cloudflare.com/trusted-agent-delegation/</a></li>
+<li><a href="https://devblogs.microsoft.com/foundry/foundry-local-agentic-coding-qwen3-8-27b/">https://devblogs.microsoft.com/foundry/foundry-local-agentic-coding-qwen3-8-27b/</a></li>
+<li><a href="https://openai.com/index/introducing-gpt-6-cyber/">https://openai.com/index/introducing-gpt-6-cyber/</a></li>
+<li><a href="https://openai.com/index/openai-to-acquire-pierre/">https://openai.com/index/openai-to-acquire-pierre/</a></li>
+</ul>
+</section>
+  </main>
+  <footer>Generated by ユグ 🦎</footer>
+</body>
+</html>
