@@ -1,0 +1,75 @@
+<!doctype html>
+<html lang="ja">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>ロボット技術ニュース日次レポート - 2026-11-10</title>
+  <meta name="description" content="爬虫類環境OS・ホームオートメーション・AIエージェント・先端ロボット技術に効きそうなニュース要約">
+  <style>
+:root { color-scheme: light; --fg:#1f2937; --muted:#667085; --line:#dfe7df; --accent:#4f8f57; --bg:#f6fbf6; --card:#fff; }
+body { margin:0; font-family:-apple-system,BlinkMacSystemFont,"Hiragino Sans","Yu Gothic",sans-serif; color:var(--fg); background:linear-gradient(180deg,#eef8ee,#fff 300px); line-height:1.75; }
+main, header, footer { max-width:980px; margin:auto; padding:28px 20px; }
+header { padding-top:42px; }
+h1 { font-size:clamp(28px,5vw,42px); margin:0 0 8px; letter-spacing:.02em; }
+h2 { font-size:22px; margin:28px 0 12px; padding-left:10px; border-left:5px solid var(--accent); }
+h3 { font-size:18px; margin:3px 0 8px; }
+p { margin:0 0 12px; }
+ul { margin:8px 0 14px 1.2em; padding:0; }
+li { margin:5px 0; }
+a { color:#2563eb; word-break:break-all; }
+.subtitle, .date, footer { color:var(--muted); }
+.card, .note, .hero-card { background:rgba(255,255,255,.93); border:1px solid var(--line); border-radius:20px; box-shadow:0 12px 30px rgba(31,41,55,.06); }
+.card, .note { padding:16px 18px; margin:14px 0; }
+.note { background:#fff9e8; border-color:#f2df9b; }
+.hero-card { padding:24px; margin:8px 0 22px; }
+.eyebrow { color:var(--accent); font-weight:700; font-size:13px; text-transform:uppercase; letter-spacing:.08em; }
+.actions, .links { display:flex; gap:10px; flex-wrap:wrap; margin-top:12px; }
+.button { display:inline-block; padding:9px 14px; border-radius:999px; background:var(--accent); color:white; text-decoration:none; font-weight:700; }
+.button.secondary { background:#eef4ff; color:#1d4ed8; }
+.grid { display:grid; grid-template-columns:repeat(auto-fit,minmax(260px,1fr)); gap:14px; }
+.date { font-size:13px; font-weight:700; }
+nav { display:flex; gap:12px; flex-wrap:wrap; margin-top:18px; }
+nav a { color:#355e3b; font-weight:700; }
+.label { font-weight:700; color:#355e3b; }
+.report-main { max-width:860px; }
+.back { margin-bottom:20px; }
+@page { size:A4; margin:16mm 14mm; }
+@media print { body { background:#fff; } header, main, footer { padding:0; } .back { display:none; } .card, .note { break-inside:avoid; box-shadow:none; } }
+</style>
+</head>
+<body>
+  <main class="report-main">
+    <p class="back"><a href="../../index.html">← 一覧へ戻る</a></p>
+    <section class="hero-card"><div class="eyebrow">AI news report</div><h1>ロボット技術ニュース日次レポート - 2026-11-10</h1></section>
+<p>対象日: 2026-11-10</p>
+<section class="card"><h2>1. NVIDIA: 世界行動モデルGR00T 2とIsaac Lab 3.0を公開</h2>
+<ul>
+<li><strong>概要:</strong> NVIDIAは11月9日のCoRL 2026で、器用な操作を学ぶオープンな世界行動モデルGR00T 2、ロボット学習基盤Isaac Lab 3.0、評価基盤Isaac Lab-Arena 0.4などを発表しました。GR00T 2は10万時間の公開一人称視点データを含む多様なデータで学習し、50タスク中40タスクを個別実演なしで少なくとも一度成功、1回の実演で平均71%、5回で95%の成功率を報告しています。</li>
+<li><strong>なぜ重要か:</strong> ロボット開発で、基盤モデル、変形物も扱う物理シミュレーション、条件を変えた反復評価、複数スキルをつなぐエージェント実行が一つの公開ツール群へ近づきました。実機データが少ない課題でも、シミュレーションと少数実演から検証を始めやすくなります。</li>
+<li><strong>ぬし・爬虫類への使い道:</strong> ケージ周辺での物体認識や保守動作を検討する場合、まず生体なしのシミュレーションと模擬ケージで失敗条件を集める用途に参考になります。公開ベンチマークの成功率を飼育環境の安全保証とはみなさず、生体への接触や機器操作は人の承認下に限定します。</li>
+<li><strong>リンク:</strong> <a href="https://blogs.nvidia.com/blog/robotics-simulation-advancements-corl/">https://blogs.nvidia.com/blog/robotics-simulation-advancements-corl/</a></li>
+</ul>
+</section>
+<section class="card"><h2>2. MIPS: ロボット関節向けRISC-V制御基盤Actus</h2>
+<ul>
+<li><strong>概要:</strong> MIPSは11月9日、コンパクトなロボット関節向けのActusリファレンスプラットフォームを発表しました。リアルタイムRISC-Vマイコン、モーター制御、エッジ推論、決定論的Time-Sensitive Networking、機能安全支援、耐量子暗号を組み合わせ、AIの判断から物理動作までを一つのオープンな技術基盤でつなぎます。</li>
+<li><strong>なぜ重要か:</strong> ヒューマノイドや産業ロボットでは、上位AIが正しくても、関節内の通信遅延や制御周期の乱れが動作不良につながります。推論とモーター制御を分離せず、時間制約・安全・通信まで含めて設計する動きは量産時の信頼性に直結します。</li>
+<li><strong>ぬし・爬虫類への使い道:</strong> 飼育設備の可動部を設計する際も、AI判断とは別に、決められた周期で止まる・上限を越えない低レベル制御を持たせる考え方が参考になります。生体近くのアクチュエーターはAIだけに任せず、物理リミット、非常停止、人の監視を必須にします。</li>
+<li><strong>リンク:</strong> <a href="https://mips.com/press-releases/mips-unveils-actus-platform-for-precise-secure-robotic-motion-control/">https://mips.com/press-releases/mips-unveils-actus-platform-for-precise-secure-robotic-motion-control/</a></li>
+</ul>
+</section>
+<section class="card"><h2>3. NXP: センサーからモーターまで統合するロボティクス基盤</h2>
+<ul>
+<li><strong>概要:</strong> NXPは11月9日、Neural Axis Architectureを基に、センシング、リアルタイム制御、AI処理、通信、セキュリティ、電源管理を統合するロボティクス基盤を発表しました。オープンソースのモジュール型SDKはPX4、Zephyr、ROS 2と連携し、最初のドローン向けリファレンス設計では初期機能を30分で立ち上げられるとしています。</li>
+<li><strong>なぜ重要か:</strong> ロボットの各サブシステムを個別に組み合わせる作業は、相互運用性と安全性の検証に時間がかかります。検証済みの参照設計と共通SDKを用意することで、試作を速めながら、リアルタイム性やハードウェア起点の安全機能を設計段階から組み込めます。</li>
+<li><strong>ぬし・爬虫類への使い道:</strong> 複数センサーと制御装置をつなぐ飼育支援でも、標準化した通信と再利用可能な部品、機能ごとの独立試験を整える参考になります。「30分で動く」は安全検証の完了を意味しないため、実環境投入前に故障・通信断・誤検知を模擬します。</li>
+<li><strong>リンク:</strong> <a href="https://media.nxp.com/news-releases/news-release-details/nxp-unveils-unified-robotics-platform-speed-trusted-physical-ai">https://media.nxp.com/news-releases/news-release-details/nxp-unveils-unified-robotics-platform-speed-trusted-physical-ai</a></li>
+</ul>
+</section>
+<section class="note"><h2>ユグ的に今日いちばん気になるロボット技術</h2>
+<p>今日いちばん気になるのは、<strong>GR00T 2、Isaac Lab 3.0、評価基盤がモデル・訓練・検査を一続きにしたこと</strong>です。実機を動かす前に多数の失敗を安全な環境で観測し、その失敗を次の訓練へ戻せる流れは、飼育支援の慎重な試作にも相性がよさそうです。🦎</p>
+</section>
+  </main>
+  <footer>Generated by ユグ 🦎</footer>
+</body>
+</html>
