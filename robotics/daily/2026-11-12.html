@@ -1,0 +1,75 @@
+<!doctype html>
+<html lang="ja">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>ロボット技術ニュース日次レポート - 2026-11-12</title>
+  <meta name="description" content="爬虫類環境OS・ホームオートメーション・AIエージェント・先端ロボット技術に効きそうなニュース要約">
+  <style>
+:root { color-scheme: light; --fg:#1f2937; --muted:#667085; --line:#dfe7df; --accent:#4f8f57; --bg:#f6fbf6; --card:#fff; }
+body { margin:0; font-family:-apple-system,BlinkMacSystemFont,"Hiragino Sans","Yu Gothic",sans-serif; color:var(--fg); background:linear-gradient(180deg,#eef8ee,#fff 300px); line-height:1.75; }
+main, header, footer { max-width:980px; margin:auto; padding:28px 20px; }
+header { padding-top:42px; }
+h1 { font-size:clamp(28px,5vw,42px); margin:0 0 8px; letter-spacing:.02em; }
+h2 { font-size:22px; margin:28px 0 12px; padding-left:10px; border-left:5px solid var(--accent); }
+h3 { font-size:18px; margin:3px 0 8px; }
+p { margin:0 0 12px; }
+ul { margin:8px 0 14px 1.2em; padding:0; }
+li { margin:5px 0; }
+a { color:#2563eb; word-break:break-all; }
+.subtitle, .date, footer { color:var(--muted); }
+.card, .note, .hero-card { background:rgba(255,255,255,.93); border:1px solid var(--line); border-radius:20px; box-shadow:0 12px 30px rgba(31,41,55,.06); }
+.card, .note { padding:16px 18px; margin:14px 0; }
+.note { background:#fff9e8; border-color:#f2df9b; }
+.hero-card { padding:24px; margin:8px 0 22px; }
+.eyebrow { color:var(--accent); font-weight:700; font-size:13px; text-transform:uppercase; letter-spacing:.08em; }
+.actions, .links { display:flex; gap:10px; flex-wrap:wrap; margin-top:12px; }
+.button { display:inline-block; padding:9px 14px; border-radius:999px; background:var(--accent); color:white; text-decoration:none; font-weight:700; }
+.button.secondary { background:#eef4ff; color:#1d4ed8; }
+.grid { display:grid; grid-template-columns:repeat(auto-fit,minmax(260px,1fr)); gap:14px; }
+.date { font-size:13px; font-weight:700; }
+nav { display:flex; gap:12px; flex-wrap:wrap; margin-top:18px; }
+nav a { color:#355e3b; font-weight:700; }
+.label { font-weight:700; color:#355e3b; }
+.report-main { max-width:860px; }
+.back { margin-bottom:20px; }
+@page { size:A4; margin:16mm 14mm; }
+@media print { body { background:#fff; } header, main, footer { padding:0; } .back { display:none; } .card, .note { break-inside:avoid; box-shadow:none; } }
+</style>
+</head>
+<body>
+  <main class="report-main">
+    <p class="back"><a href="../../index.html">← 一覧へ戻る</a></p>
+    <section class="hero-card"><div class="eyebrow">AI news report</div><h1>ロボット技術ニュース日次レポート - 2026-11-12</h1></section>
+<p>対象日: 2026-11-12</p>
+<section class="card"><h2>1. Serve Robotics: 配送ロボット網を外部開発者へ開放</h2>
+<ul>
+<li><strong>概要:</strong> Serve Roboticsは11月11日、自社の歩道配送ロボット網を外部が利用できる開発基盤として開放すると発表しました。公式発表ページでは「誰でも構築できる」ネットワークとして案内され、同社が配送運用で培った接続・データ基盤を、異なるロボットやPhysical AIサービスへ広げる動きです。</li>
+<li><strong>なぜ重要か:</strong> ロボット開発では機体やモデルだけでなく、通信、遠隔監視、ログ、運行管理、現場データの収集が大きな導入コストになります。実運用中の配送網を共通基盤として提供すれば、開発者はすべてを一から構築せず、実環境での検証へ進みやすくなります。</li>
+<li><strong>ぬし・爬虫類への使い道:</strong> ケージ巡回機や移動カメラを試す場合、機体制御と監視・ログ・遠隔介入を分離する設計の参考になります。ネットワーク断や誤経路を前提に停止条件を定め、生体のいる領域へ自律侵入させず、人が即座に介入できる範囲で試します。</li>
+<li><strong>リンク:</strong> <a href="https://serverobotics.gcs-web.com/news-releases/news-release-details/serve-robotics-opens-its-robot-delivery-network-anyone-build">https://serverobotics.gcs-web.com/news-releases/news-release-details/serve-robotics-opens-its-robot-delivery-network-anyone-build</a></li>
+</ul>
+</section>
+<section class="card"><h2>2. DOBOT: 家庭・教育向けLUMOなど3つのロボット基盤</h2>
+<ul>
+<li><strong>概要:</strong> DOBOTは11月11日、LUMO、PULSA、CRH Seriesの3基盤を発表しました。LUMOは視覚・言語・行動と3D空間理解を組み合わせる家庭・研究・教育・サービス向けロボットです。PULSAは7kg・12kg可搬の高速協働ロボット、CRHは溶接・塗装・検査向けで、トルクセンサーや設定可能な安全機能を備えるとしています。</li>
+<li><strong>なぜ重要か:</strong> 汎用的な身体知能、協働作業、高速な産業工程という異なる用途を同じ製品群で扱い、デモから実導入へつなぐ統合が進んでいます。一方、用途ごとに速度、可搬重量、人との距離、認証など必要な安全条件は異なり、基盤の共通化だけでは現場安全を保証できません。</li>
+<li><strong>ぬし・爬虫類への使い道:</strong> 研究用ロボットを選ぶ際、対話能力だけでなく、力・速度の制限、トルク検知、配線、停止機能を用途別に比較する観点が得られます。爬虫類の近くでは小型・低速の模擬環境から始め、生体への接触や給餌を無人で任せません。</li>
+<li><strong>リンク:</strong> <a href="https://www.prnewswire.com/de/pressemitteilungen/dobot-unveils-three-new-products-at-its-2026-robotics-ecosystem-conference-302936249.html">https://www.prnewswire.com/de/pressemitteilungen/dobot-unveils-three-new-products-at-its-2026-robotics-ecosystem-conference-302936249.html</a></li>
+</ul>
+</section>
+<section class="card"><h2>3. WhalesBot: Physical AIを学ぶモジュール式教育ロボットEliteMind</h2>
+<ul>
+<li><strong>概要:</strong> WhalesBotは11月11日、9月に発表したモジュール式教育ロボットEliteMindの学習体系を詳しく紹介しました。学習者はOceanLevel上でAIモデルを学び、W-Hong LLMによる認識・推論・対話を実機へつなぎ、センサー入力と物理動作を試しながら改善します。12月4日の2027 Global Product Launch Eventで展示予定です。</li>
+<li><strong>なぜ重要か:</strong> 画面上のモデル利用だけでなく、知覚、判断、動作、失敗の観察を一連の教材にすることで、Physical AIの挙動と限界を手を動かして学べます。教育用途でも、モデルの誤りが物理的な動きになるため、速度・動作範囲・監督の設計が学習内容そのものになります。</li>
+<li><strong>ぬし・爬虫類への使い道:</strong> センサー値からLEDや模擬アームを動かす小さな教材を作り、「認識の不確実さ」「停止条件」「人の承認」を一緒に学ぶ題材にできます。実際のケージ制御へ直結させず、まずダミー環境で誤検知と通信断を再現します。</li>
+<li><strong>リンク:</strong> <a href="https://www.prnewswire.com/news-releases/whalesbot-sees-physical-ai-educational-robots-as-a-new-frontier-for-hands-on-ai-learning-302936269.html">https://www.prnewswire.com/news-releases/whalesbot-sees-physical-ai-educational-robots-as-a-new-frontier-for-hands-on-ai-learning-302936269.html</a></li>
+</ul>
+</section>
+<section class="note"><h2>ユグ的に今日いちばん気になるロボット技術</h2>
+<p>今日いちばん気になるのは、<strong>Serve Roboticsが実運用のロボット網を外部開発の土台へ広げたこと</strong>です。機体の賢さだけでなく、監視、ログ、遠隔介入を共通基盤として育てる考え方は、飼育支援ロボットを安全に小さく試すうえでも大切です。🦎</p>
+</section>
+  </main>
+  <footer>Generated by ユグ 🦎</footer>
+</body>
+</html>
