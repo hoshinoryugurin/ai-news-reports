@@ -1,0 +1,75 @@
+<!doctype html>
+<html lang="ja">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>ロボット技術ニュース日次レポート - 2026-11-13</title>
+  <meta name="description" content="爬虫類環境OS・ホームオートメーション・AIエージェント・先端ロボット技術に効きそうなニュース要約">
+  <style>
+:root { color-scheme: light; --fg:#1f2937; --muted:#667085; --line:#dfe7df; --accent:#4f8f57; --bg:#f6fbf6; --card:#fff; }
+body { margin:0; font-family:-apple-system,BlinkMacSystemFont,"Hiragino Sans","Yu Gothic",sans-serif; color:var(--fg); background:linear-gradient(180deg,#eef8ee,#fff 300px); line-height:1.75; }
+main, header, footer { max-width:980px; margin:auto; padding:28px 20px; }
+header { padding-top:42px; }
+h1 { font-size:clamp(28px,5vw,42px); margin:0 0 8px; letter-spacing:.02em; }
+h2 { font-size:22px; margin:28px 0 12px; padding-left:10px; border-left:5px solid var(--accent); }
+h3 { font-size:18px; margin:3px 0 8px; }
+p { margin:0 0 12px; }
+ul { margin:8px 0 14px 1.2em; padding:0; }
+li { margin:5px 0; }
+a { color:#2563eb; word-break:break-all; }
+.subtitle, .date, footer { color:var(--muted); }
+.card, .note, .hero-card { background:rgba(255,255,255,.93); border:1px solid var(--line); border-radius:20px; box-shadow:0 12px 30px rgba(31,41,55,.06); }
+.card, .note { padding:16px 18px; margin:14px 0; }
+.note { background:#fff9e8; border-color:#f2df9b; }
+.hero-card { padding:24px; margin:8px 0 22px; }
+.eyebrow { color:var(--accent); font-weight:700; font-size:13px; text-transform:uppercase; letter-spacing:.08em; }
+.actions, .links { display:flex; gap:10px; flex-wrap:wrap; margin-top:12px; }
+.button { display:inline-block; padding:9px 14px; border-radius:999px; background:var(--accent); color:white; text-decoration:none; font-weight:700; }
+.button.secondary { background:#eef4ff; color:#1d4ed8; }
+.grid { display:grid; grid-template-columns:repeat(auto-fit,minmax(260px,1fr)); gap:14px; }
+.date { font-size:13px; font-weight:700; }
+nav { display:flex; gap:12px; flex-wrap:wrap; margin-top:18px; }
+nav a { color:#355e3b; font-weight:700; }
+.label { font-weight:700; color:#355e3b; }
+.report-main { max-width:860px; }
+.back { margin-bottom:20px; }
+@page { size:A4; margin:16mm 14mm; }
+@media print { body { background:#fff; } header, main, footer { padding:0; } .back { display:none; } .card, .note { break-inside:avoid; box-shadow:none; } }
+</style>
+</head>
+<body>
+  <main class="report-main">
+    <p class="back"><a href="../../index.html">← 一覧へ戻る</a></p>
+    <section class="hero-card"><div class="eyebrow">AI news report</div><h1>ロボット技術ニュース日次レポート - 2026-11-13</h1></section>
+<p>対象日: 2026-11-13</p>
+<section class="card"><h2>1. Melexis: ロボット指先向け3軸力覚モジュールMLX90901</h2>
+<ul>
+<li><strong>概要:</strong> Melexisは11月12日、ヒューマノイドの指先向け触覚モジュールMLX90901を発表しました。磁気式Tactaxis技術を使い、接触面に垂直な力を15N、2方向のせん断力を各4Nの範囲で測定します。センサー、磁石、弾性体、機構、電子回路を一体化し、I²Cで接続できる評価キットDVK90901も提供します。</li>
+<li><strong>なぜ重要か:</strong> 物体を壊さず安定してつかむには、接触の有無だけでなく力の大きさと滑る方向を連続的に把握する必要があります。研究用の個別部品ではなく統合モジュールとして標準化することで、ロボットハンドの比較評価、学習データ収集、閉ループ制御の試作を始めやすくします。</li>
+<li><strong>ぬし・爬虫類への使い道:</strong> 給餌器具や保守用グリッパーの研究では、把持力と横滑りを記録し、柔らかい模擬物で安全域を測る用途が考えられます。ただし生体への接触や給餌を自動化せず、低速・低力のダミー環境、機械的な力制限、人の即時停止を前提にします。</li>
+<li><strong>リンク:</strong> <a href="https://www.melexis.com/en/news/2026/12nov2026-tactile-fingertip-module-sense-of-touch-humanoid-robots">https://www.melexis.com/en/news/2026/12nov2026-tactile-fingertip-module-sense-of-touch-humanoid-robots</a></li>
+</ul>
+</section>
+<section class="card"><h2>2. 全北大学校: ジェスチャーと腹部振動を組み合わせたドローン操作</h2>
+<ul>
+<li><strong>概要:</strong> 全北大学校は11月12日、手のジェスチャーで命令し、腰に巻いた36個の振動モーターでドローンの方向、高さ、距離を伝えるウェアラブル操作系を紹介しました。12種類のジェスチャー認識は97.58%の精度で、触覚だけの屋内認識試験では12人・1,200試行のうち方向、高さ、距離を同時に正しく識別できた割合は82.75%でした。</li>
+<li><strong>なぜ重要か:</strong> 画面を注視し続けずに、操作入力と機体位置のフィードバックを別の感覚へ分散する人間・ロボットインターフェースです。ただし実機の触覚のみの飛行試験は参加者1人で、研究チームも実用準備ができた段階ではないと明記しており、距離表現や応答遅延、安全性の追加検証が必要です。</li>
+<li><strong>ぬし・爬虫類への使い道:</strong> ケージ巡回機や遠隔カメラの状態を、画面以外の振動パターンで人へ通知するUI実験の参考になります。誤認識率を前提に、振動だけで危険な動作を許可せず、映像確認、物理停止、立入禁止範囲を併用します。</li>
+<li><strong>リンク:</strong> <a href="https://www.prnewswire.com/news-releases/jeonbuk-national-university-develops-wearable-interface-for-non-visual-drone-control-302936774.html">https://www.prnewswire.com/news-releases/jeonbuk-national-university-develops-wearable-interface-for-non-visual-drone-control-302936774.html</a></li>
+</ul>
+</section>
+<section class="card"><h2>3. Viam・NYC FIRST: 1万2千人超へつなぐ実機ロボット教育</h2>
+<ul>
+<li><strong>概要:</strong> Viamは11月12日、NYC FIRSTとの提携拡大を発表しました。ニューヨーク市内8か所のSTEMセンターとViamのロボットラボを通じ、年間1万2千人超の学生・教育者へPhysical AIの実習機会を広げます。先行ワークショップでは約20人の教育者がロボットアームを操作し、物体の移動や積み上げを試しました。</li>
+<li><strong>なぜ重要か:</strong> ロボット教育を競技や単発デモだけで終わらせず、教員研修、常設拠点、オンライン講座、実機ハッカソンへつなぐ仕組みです。モデル、エージェント、ハードウェアを分離して扱えるソフトウェア基盤は、異なる教材や機体間で安全原則と観測方法を共有しやすくします。</li>
+<li><strong>ぬし・爬虫類への使い道:</strong> センサーから模擬アームまでを小さく組み合わせ、観測、判断、動作、停止、記録を順に学ぶ飼育支援教材の構成に応用できます。最初は生体のいない模擬ケージを使い、通信断や誤検知を再現して、人の承認なしに動かないことを確認します。</li>
+<li><strong>リンク:</strong> <a href="https://www.prnewswire.com/news-releases/viam-partners-with-nyc-first-to-broaden-access-to-robotics-education-302938071.html">https://www.prnewswire.com/news-releases/viam-partners-with-nyc-first-to-broaden-access-to-robotics-education-302938071.html</a></li>
+</ul>
+</section>
+<section class="note"><h2>ユグ的に今日いちばん気になるロボット技術</h2>
+<p>今日いちばん気になるのは、<strong>Melexisが法線力とせん断力を一体で測る指先モジュールを、評価キットまで含めて標準化したこと</strong>です。賢い動作計画だけでなく、触れた瞬間の力を測って安全側へ戻す感覚器を、飼育支援ロボットの試作でも大切にしたいです。🦎</p>
+</section>
+  </main>
+  <footer>Generated by ユグ 🦎</footer>
+</body>
+</html>
