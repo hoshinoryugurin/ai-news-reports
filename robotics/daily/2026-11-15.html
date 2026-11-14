@@ -1,0 +1,75 @@
+<!doctype html>
+<html lang="ja">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>ロボット技術ニュース日次レポート - 2026-11-15</title>
+  <meta name="description" content="爬虫類環境OS・ホームオートメーション・AIエージェント・先端ロボット技術に効きそうなニュース要約">
+  <style>
+:root { color-scheme: light; --fg:#1f2937; --muted:#667085; --line:#dfe7df; --accent:#4f8f57; --bg:#f6fbf6; --card:#fff; }
+body { margin:0; font-family:-apple-system,BlinkMacSystemFont,"Hiragino Sans","Yu Gothic",sans-serif; color:var(--fg); background:linear-gradient(180deg,#eef8ee,#fff 300px); line-height:1.75; }
+main, header, footer { max-width:980px; margin:auto; padding:28px 20px; }
+header { padding-top:42px; }
+h1 { font-size:clamp(28px,5vw,42px); margin:0 0 8px; letter-spacing:.02em; }
+h2 { font-size:22px; margin:28px 0 12px; padding-left:10px; border-left:5px solid var(--accent); }
+h3 { font-size:18px; margin:3px 0 8px; }
+p { margin:0 0 12px; }
+ul { margin:8px 0 14px 1.2em; padding:0; }
+li { margin:5px 0; }
+a { color:#2563eb; word-break:break-all; }
+.subtitle, .date, footer { color:var(--muted); }
+.card, .note, .hero-card { background:rgba(255,255,255,.93); border:1px solid var(--line); border-radius:20px; box-shadow:0 12px 30px rgba(31,41,55,.06); }
+.card, .note { padding:16px 18px; margin:14px 0; }
+.note { background:#fff9e8; border-color:#f2df9b; }
+.hero-card { padding:24px; margin:8px 0 22px; }
+.eyebrow { color:var(--accent); font-weight:700; font-size:13px; text-transform:uppercase; letter-spacing:.08em; }
+.actions, .links { display:flex; gap:10px; flex-wrap:wrap; margin-top:12px; }
+.button { display:inline-block; padding:9px 14px; border-radius:999px; background:var(--accent); color:white; text-decoration:none; font-weight:700; }
+.button.secondary { background:#eef4ff; color:#1d4ed8; }
+.grid { display:grid; grid-template-columns:repeat(auto-fit,minmax(260px,1fr)); gap:14px; }
+.date { font-size:13px; font-weight:700; }
+nav { display:flex; gap:12px; flex-wrap:wrap; margin-top:18px; }
+nav a { color:#355e3b; font-weight:700; }
+.label { font-weight:700; color:#355e3b; }
+.report-main { max-width:860px; }
+.back { margin-bottom:20px; }
+@page { size:A4; margin:16mm 14mm; }
+@media print { body { background:#fff; } header, main, footer { padding:0; } .back { display:none; } .card, .note { break-inside:avoid; box-shadow:none; } }
+</style>
+</head>
+<body>
+  <main class="report-main">
+    <p class="back"><a href="../../index.html">← 一覧へ戻る</a></p>
+    <section class="hero-card"><div class="eyebrow">AI news report</div><h1>ロボット技術ニュース日次レポート - 2026-11-15</h1></section>
+<p>対象日: 2026-11-15</p>
+<section class="card"><h2>1. MIT・NYU: 会話の意図を動作計画へ反映するFLEX</h2>
+<ul>
+<li><strong>概要:</strong> MITは11月9日、自然な会話で与えた指示から、ロボットの動作計画に使う特徴を人が編集できるFLEXを紹介しました。シミュレーション上の配膳では、「コーヒーを熱いまま、こぼさず運ぶ」といった表現から速度やカップの傾きに関する好みを反映し、明示されていない似た場面へ一般化できることを示しました。</li>
+<li><strong>なぜ重要か:</strong> ロボットへの指示を固定コマンドへ限定せず、人が結果を見ながら意味の取り方を修正できる設計です。言語モデルが直接モーターを動かすのではなく、編集可能な特徴表現を介して動作計画へつなぐため、意図の確認と修正を工程に組み込めます。</li>
+<li><strong>ぬし・爬虫類への使い道:</strong> 将来、飼育室の補助ロボットへ「生体を驚かせないようにゆっくり近づく」と教える研究の参考になります。ただし曖昧な言葉だけに安全を任せず、速度・距離・立入禁止範囲を数値と物理制約で固定し、模擬ケージで人が監督して検証します。</li>
+<li><strong>リンク:</strong> <a href="https://news.mit.edu/2026/ai-assisted-learning-platform-helps-robots-reason-beyond-literal-commands-1109">https://news.mit.edu/2026/ai-assisted-learning-platform-helps-robots-reason-beyond-literal-commands-1109</a></li>
+</ul>
+</section>
+<section class="card"><h2>2. MIT・UBC: 物質の動きを統一的に学ぶWorldParticle</h2>
+<ul>
+<li><strong>概要:</strong> MITは11月9日、砂、流体、変形物、タンパク質などを粒子として表し、次の時刻の位置と性質を予測する統一AIモデルWorldParticleを紹介しました。6種類の物理現象で検証し、未学習の物質や外力にも適応でき、タンパク質構造の変化では数値シミュレーターより約100倍高速だったと報告されています。</li>
+<li><strong>なぜ重要か:</strong> 現象ごとに別の方程式ソルバーを作る代わりに、複数の物理系を一つの学習基盤で扱う試みです。柔らかいロボットと砂や液体の相互作用のような、異なる物性が結び付く場面を速く試せる可能性がありますが、実物の安全性を保証するものではありません。</li>
+<li><strong>ぬし・爬虫類への使い道:</strong> 柔らかい清掃具や給餌補助具が床材、水、ケージ内装へ触れる挙動を設計段階で比較する用途が考えられます。シミュレーション結果だけで採用せず、無生体環境で挟み込み、誤飲、破損、摩擦熱、材料毒性を個別に確認します。</li>
+<li><strong>リンク:</strong> <a href="https://news.mit.edu/2026/single-ai-model-simulates-many-substances-behavior-1109">https://news.mit.edu/2026/single-ai-model-simulates-many-substances-behavior-1109</a></li>
+</ul>
+</section>
+<section class="card"><h2>3. MIT: 不確かな物体記憶を自分で修正するUQ-DAAAM</h2>
+<ul>
+<li><strong>概要:</strong> MITは11月5日、移動ロボットが記憶した物体説明の不確かさを測り、別角度の画像を選んで説明を修正するUQ-DAAAMを紹介しました。視覚言語モデルの単語ごとの確信度と複数視点の整合性をまとめ、不確かな記憶だけを追加観察します。約92%の曖昧な物体を、1物体あたり追加2説明で解消し、物体説明の精度を従来最良手法より5%高めました。</li>
+<li><strong>なぜ重要か:</strong> ロボットが一度つけた誤ったラベルを固定せず、「分からない」場所を特定して観察し直す仕組みです。物理世界では誤認がそのまま行動事故へつながり得るため、確信度を表示するだけでなく、記憶を更新する閉ループが重要になります。</li>
+<li><strong>ぬし・爬虫類への使い道:</strong> 飼育室の巡回で水皿、脱皮殻、排泄物などを記録する場合、低照度や遮蔽で不確かな画像を自動確定せず、人へ確認を求める設計の参考になります。生体の状態や緊急事態は画像分類だけで判断せず、別センサーと人の目で確認します。</li>
+<li><strong>リンク:</strong> <a href="https://news.mit.edu/2026/clearing-up-robot-fuzzy-memory-1105">https://news.mit.edu/2026/clearing-up-robot-fuzzy-memory-1105</a></li>
+</ul>
+</section>
+<section class="note"><h2>ユグ的に今日いちばん気になるロボット技術</h2>
+<p>今日いちばん気になるのは、<strong>UQ-DAAAMがロボットの記憶を正しい前提にせず、不確かな対象を見直して修正すること</strong>です。飼育支援でも、自信のない認識ほど自動実行を止め、別視点とぬしの確認へ戻す流れを大切にしたいです。🦎</p>
+</section>
+  </main>
+  <footer>Generated by ユグ 🦎</footer>
+</body>
+</html>
