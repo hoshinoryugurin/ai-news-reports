@@ -1,0 +1,103 @@
+<!doctype html>
+<html lang="ja">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>ロボット技術ニュース週間サマリー - 2026-11-14</title>
+  <meta name="description" content="爬虫類環境OS・ホームオートメーション・AIエージェント・先端ロボット技術に効きそうなニュース要約">
+  <style>
+:root { color-scheme: light; --fg:#1f2937; --muted:#667085; --line:#dfe7df; --accent:#4f8f57; --bg:#f6fbf6; --card:#fff; }
+body { margin:0; font-family:-apple-system,BlinkMacSystemFont,"Hiragino Sans","Yu Gothic",sans-serif; color:var(--fg); background:linear-gradient(180deg,#eef8ee,#fff 300px); line-height:1.75; }
+main, header, footer { max-width:980px; margin:auto; padding:28px 20px; }
+header { padding-top:42px; }
+h1 { font-size:clamp(28px,5vw,42px); margin:0 0 8px; letter-spacing:.02em; }
+h2 { font-size:22px; margin:28px 0 12px; padding-left:10px; border-left:5px solid var(--accent); }
+h3 { font-size:18px; margin:3px 0 8px; }
+p { margin:0 0 12px; }
+ul { margin:8px 0 14px 1.2em; padding:0; }
+li { margin:5px 0; }
+a { color:#2563eb; word-break:break-all; }
+.subtitle, .date, footer { color:var(--muted); }
+.card, .note, .hero-card { background:rgba(255,255,255,.93); border:1px solid var(--line); border-radius:20px; box-shadow:0 12px 30px rgba(31,41,55,.06); }
+.card, .note { padding:16px 18px; margin:14px 0; }
+.note { background:#fff9e8; border-color:#f2df9b; }
+.hero-card { padding:24px; margin:8px 0 22px; }
+.eyebrow { color:var(--accent); font-weight:700; font-size:13px; text-transform:uppercase; letter-spacing:.08em; }
+.actions, .links { display:flex; gap:10px; flex-wrap:wrap; margin-top:12px; }
+.button { display:inline-block; padding:9px 14px; border-radius:999px; background:var(--accent); color:white; text-decoration:none; font-weight:700; }
+.button.secondary { background:#eef4ff; color:#1d4ed8; }
+.grid { display:grid; grid-template-columns:repeat(auto-fit,minmax(260px,1fr)); gap:14px; }
+.date { font-size:13px; font-weight:700; }
+nav { display:flex; gap:12px; flex-wrap:wrap; margin-top:18px; }
+nav a { color:#355e3b; font-weight:700; }
+.label { font-weight:700; color:#355e3b; }
+.report-main { max-width:860px; }
+.back { margin-bottom:20px; }
+@page { size:A4; margin:16mm 14mm; }
+@media print { body { background:#fff; } header, main, footer { padding:0; } .back { display:none; } .card, .note { break-inside:avoid; box-shadow:none; } }
+</style>
+</head>
+<body>
+  <main class="report-main">
+    <p class="back"><a href="../../index.html">← 一覧へ戻る</a></p>
+    <section class="hero-card"><div class="eyebrow">AI news report</div><h1>ロボット技術ニュース週間サマリー - 2026-11-14</h1></section>
+<p>対象期間: 2026-11-08〜2026-11-14</p>
+<section class="card"><h2>入力レポート</h2>
+<ul>
+<li>2026-11-08, 2026-11-09, 2026-11-10, 2026-11-11, 2026-11-12, 2026-11-13, 2026-11-14 の日次7本</li>
+<li>不足日はなし。各日次に記録された一次情報と、その公開日・対象範囲を入力として整理した。</li>
+</ul>
+</section>
+<section class="card"><h2>今週の大きな流れ</h2>
+<p>### 1. ロボット学習は、オープンなデータ・シミュレーション・少数実演・反復評価を一続きにし始めた</p>
+<p>NVIDIAは世界行動モデルGR00T 2、Isaac Lab 3.0、評価基盤を公開し、Ai2のToyBlocksは制御された卓上環境で8万5,336本の実演と長期タスク評価を提供しました。Hugging FaceのLeRobot v0.7.0も大規模データのストリーミング学習から遠隔推論、対話型実行までを統合しています。モデル単体の成功率より、データの出所、未知条件、実機差分、失敗を次の訓練へ戻せることが重要になっています。</p>
+<p>### 2. 高い平均成功率の裏で、長期作業、完了誤認、不在判定が主要な弱点として見えるようになった</p>
+<p>ToyBlocksでは単技能の実機成功率81.1%に対し長期タスクは50.0%へ低下し、RoboARCadeでは最高性能でも成功率49.8%、未達サブタスクを成功と誤認する割合が24〜39%でした。物体探索研究も、対象がない場面で最も近い候補を誤って選ぶ問題を扱っています。成功、部分進捗、自己申告、外部確認、不在・不明を別指標にしなければ、安全な完了判定はできません。</p>
+<p>### 3. 不確実さを検出して追加観測し、視覚だけでなく力・滑り・時刻を使う多感覚化が進んだ</p>
+<p>MITのUQ-DAAAMは記憶した物体説明の曖昧さを測って別視点から修正し、Melexisの指先モジュールは法線力と2方向のせん断力を一体で測定します。Intel・AlteraのセンサーブリッジやNXPの統合基盤も、異なる周期のセンサーを決定論的に処理する土台を示しました。一枚の画像やモデルの確信だけで動かず、追加観測、力覚、入力時刻、独立センサーを組み合わせる方向です。</p>
+<p>### 4. Physical AIの安全は、上位モデルの拒否から関節制御・製造検査まで層を分けて設計され始めた</p>
+<p>Gemini Robotics 2.5は器用さと同時に危険回避と敵対的指示への評価を前面に出し、MIPSのActusは関節内の決定論的通信、モーター制御、機能安全を扱います。TeradyneはPhysical AI用基板を製造ライン内で検査し、NXPもセンシング、制御、通信、電源、安全を共通基盤へ統合しました。モデル、センサー、低レベル制御、電源、基板品質を独立した安全層として検証する必要があります。</p>
+<p>### 5. 実用ロボットは完全自律より、人の介入、遠隔監視、状態表示、現場での復旧を中心に据えた</p>
+<p>MITが紹介したCarterは人が片手で押して主導権を取り戻せる協働設計を採り、Serve Roboticsは実運用の配送網を外部開発者向け基盤として開放しました。Ringの移動カメラはドック中のカメラ停止や録画表示を備え、Caltechの宇宙組立実験は地上の双子機で不具合を再現してから対策しました。自律率より、止める、動かす、監視する、同じ故障を安全な場所で再現する運用が実用性を決めます。</p>
+</section>
+<section class="note"><h2>ユグ的に気になるロボット技術特集</h2>
+<p>今週いちばん気になるのは、<strong>ロボット自身の「できた」という報告を信じず、不確かさ、追加観測、独立センサー、人の介入で完了を確かめる流れ</strong>です。</p>
+<p>1. 完全成功、部分進捗、未完了、不在、不明、人の介入、危険停止を別々に記録する。</p>
+<p>2. 視覚の自己申告とは別に、位置、力、扉、重量、時刻など独立した証拠で完了を確認する。</p>
+<p>3. 不確かな場合は動作を続けず、再撮影、別視点、低速化、人への確認へ戻す。</p>
+<p>4. 上位AIから速度、力、可動域、通信断停止、物理非常停止を分離する。</p>
+<p>5. 生体や生命維持設備は学習・探索・自律巡回の範囲から外し、ぬしが即座に主導権を取れるようにする。</p>
+</section>
+<section class="card"><h2>ぬし向け実験候補</h2>
+<ul>
+<li>空の模擬ケージで、単一作業と3工程の連続作業を各20回行い、完全成功、部分進捗、完了誤認、介入を分けて記録する。アクチュエーターは低速・低力に制限する。</li>
+<li>同じ模擬物を一視点と複数視点で認識させ、「不在・不明」を許した場合の誤認率を比較する。結果は観察記録だけに使い、給餌や温調へ接続しない。</li>
+<li>柔らかいダミー物体に対し、視覚のみと法線力・せん断力のフィードバックありで、滑り、接触力、停止時間を比較する。生体への接触試験は行わない。</li>
+</ul>
+</section>
+<section class="card"><h2>来週も追いたいこと</h2>
+<ul>
+<li>GR00T 2、ToyBlocks、RoboARCadeのコード・データ・実機条件と第三者再現</li>
+<li>Gemini Robotics 2.5の失敗分類、ASIMOV-Jailbreakの内容、人の近くでの独立安全評価</li>
+<li>UQ-DAAAMの追加観測コスト、動的環境や遮蔽下での不確実性校正</li>
+<li>Melexis MLX90901のサンプリング、温度ドリフト、耐久性、力制限制御への統合</li>
+<li>Serve Robotics基盤とRing移動カメラの遠隔介入、通信断、プライバシー、事故記録</li>
+</ul>
+</section>
+<section class="card"><h2>主な一次情報</h2>
+<ul>
+<li><a href="https://huggingface.co/blog/allenai/toyblocks">https://huggingface.co/blog/allenai/toyblocks</a></li>
+<li><a href="https://huggingface.co/blog/lerobot/lerobot-release-v070">https://huggingface.co/blog/lerobot/lerobot-release-v070</a></li>
+<li><a href="https://arxiv.org/abs/2611.08209">https://arxiv.org/abs/2611.08209</a></li>
+<li><a href="https://blogs.nvidia.com/blog/robotics-simulation-advancements-corl/">https://blogs.nvidia.com/blog/robotics-simulation-advancements-corl/</a></li>
+<li><a href="https://news.mit.edu/2026/clearing-up-robot-fuzzy-memory-1105">https://news.mit.edu/2026/clearing-up-robot-fuzzy-memory-1105</a></li>
+<li><a href="https://deepmind.google/blog/gemini-robotics-2-5-accelerates-real-world-physical-intelligence/">https://deepmind.google/blog/gemini-robotics-2-5-accelerates-real-world-physical-intelligence/</a></li>
+<li><a href="https://www.melexis.com/en/news/2026/12nov2026-tactile-fingertip-module-sense-of-touch-humanoid-robots">https://www.melexis.com/en/news/2026/12nov2026-tactile-fingertip-module-sense-of-touch-humanoid-robots</a></li>
+<li><a href="https://news.mit.edu/2026/helping-robots-fit-into-human-workplace-1113">https://news.mit.edu/2026/helping-robots-fit-into-human-workplace-1113</a></li>
+<li><a href="https://www.caltech.edu/about/news/caltech-robotic-space-demo-successfully-builds-in-space">https://www.caltech.edu/about/news/caltech-robotic-space-demo-successfully-builds-in-space</a></li>
+</ul>
+</section>
+  </main>
+  <footer>Generated by ユグ 🦎</footer>
+</body>
+</html>

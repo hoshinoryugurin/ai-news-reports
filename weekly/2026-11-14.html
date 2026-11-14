@@ -1,0 +1,102 @@
+<!doctype html>
+<html lang="ja">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>AIニュース週間サマリー - 2026-11-14</title>
+  <meta name="description" content="爬虫類環境OS・ホームオートメーション・AIエージェント・先端ロボット技術に効きそうなニュース要約">
+  <style>
+:root { color-scheme: light; --fg:#1f2937; --muted:#667085; --line:#dfe7df; --accent:#4f8f57; --bg:#f6fbf6; --card:#fff; }
+body { margin:0; font-family:-apple-system,BlinkMacSystemFont,"Hiragino Sans","Yu Gothic",sans-serif; color:var(--fg); background:linear-gradient(180deg,#eef8ee,#fff 300px); line-height:1.75; }
+main, header, footer { max-width:980px; margin:auto; padding:28px 20px; }
+header { padding-top:42px; }
+h1 { font-size:clamp(28px,5vw,42px); margin:0 0 8px; letter-spacing:.02em; }
+h2 { font-size:22px; margin:28px 0 12px; padding-left:10px; border-left:5px solid var(--accent); }
+h3 { font-size:18px; margin:3px 0 8px; }
+p { margin:0 0 12px; }
+ul { margin:8px 0 14px 1.2em; padding:0; }
+li { margin:5px 0; }
+a { color:#2563eb; word-break:break-all; }
+.subtitle, .date, footer { color:var(--muted); }
+.card, .note, .hero-card { background:rgba(255,255,255,.93); border:1px solid var(--line); border-radius:20px; box-shadow:0 12px 30px rgba(31,41,55,.06); }
+.card, .note { padding:16px 18px; margin:14px 0; }
+.note { background:#fff9e8; border-color:#f2df9b; }
+.hero-card { padding:24px; margin:8px 0 22px; }
+.eyebrow { color:var(--accent); font-weight:700; font-size:13px; text-transform:uppercase; letter-spacing:.08em; }
+.actions, .links { display:flex; gap:10px; flex-wrap:wrap; margin-top:12px; }
+.button { display:inline-block; padding:9px 14px; border-radius:999px; background:var(--accent); color:white; text-decoration:none; font-weight:700; }
+.button.secondary { background:#eef4ff; color:#1d4ed8; }
+.grid { display:grid; grid-template-columns:repeat(auto-fit,minmax(260px,1fr)); gap:14px; }
+.date { font-size:13px; font-weight:700; }
+nav { display:flex; gap:12px; flex-wrap:wrap; margin-top:18px; }
+nav a { color:#355e3b; font-weight:700; }
+.label { font-weight:700; color:#355e3b; }
+.report-main { max-width:860px; }
+.back { margin-bottom:20px; }
+@page { size:A4; margin:16mm 14mm; }
+@media print { body { background:#fff; } header, main, footer { padding:0; } .back { display:none; } .card, .note { break-inside:avoid; box-shadow:none; } }
+</style>
+</head>
+<body>
+  <main class="report-main">
+    <p class="back"><a href="../index.html">← 一覧へ戻る</a></p>
+    <section class="hero-card"><div class="eyebrow">AI news report</div><h1>AIニュース週間サマリー - 2026-11-14</h1></section>
+<p>対象期間: 2026-11-08〜2026-11-14</p>
+<section class="card"><h2>入力レポート</h2>
+<ul>
+<li>2026-11-08, 2026-11-09, 2026-11-10, 2026-11-11, 2026-11-12, 2026-11-13, 2026-11-14 の日次7本</li>
+<li>不足日はなし。各日次に記録された一次情報と、その公開日・対象範囲を入力として整理した。</li>
+</ul>
+</section>
+<section class="card"><h2>今週の大きな流れ</h2>
+<p>### 1. エージェントの実行権限は、目的・意図・本人承認を細かく分ける方向へ進んだ</p>
+<p>Uberはエージェントごとの所有者、目的、許可された行動を登録し、実行時にも意味的な認可を行う多層防御を公開しました。OpenAIのChatGPT Walletは実カード情報をエージェントへ渡さず、購入ごとに利用者の生体認証を要求し、Google WalletとGeminiの連携は支出情報を読み取り専用に限定しています。接続できるかではなく、誰が、何の目的で、どの時点まで許可したかを実行直前に確認する設計が具体化しました。</p>
+<p>### 2. AI生成物の信頼性は、自然言語の意図を検証可能な仕様へ変える段階に入った</p>
+<p>Microsoft ResearchのPDD Kitはエージェント生成Webアプリを形式仕様で検査し、Google DeepMindのAlphaProof Codeは人が審査したSignalの安全要件に対して大規模なLean証明を生成しました。GitHubもPlan、Build、Verify、Observeを一続きのエージェント開発工程として整理しています。出力を後から眺めるだけでなく、生成前に受入条件を固定し、生成経路とは別の検査と運用証拠で確かめる流れです。</p>
+<p>### 3. 長時間・外部接続型エージェントでは、隔離、再開、冪等性、再生可能な記録が基盤機能になった</p>
+<p>NVIDIAはエージェント隔離基盤OpenShellをCNCFへ寄贈し、Microsoft Foundryは長時間エージェントの復旧とブラウザ自動化を一般提供しました。OpenAIとHacktronは第三者サービスとの接続境界を共同検証し、Uberは統合トレースと再生を防御の一部にしています。途中停止後の二重実行、資格情報の漏えい、目的外ツール呼び出しを前提に、環境分離、チェックポイント、冪等キー、監査ログを組み合わせる必要があります。</p>
+<p>### 4. 生成モデルとは別に、速い選択判断、検索圧縮、実行モデルを組み合わせる分業が進んだ</p>
+<p>GoogleのGemini Decisions APIは境界の決まった選択を確率と信頼度付きで返し、Gemini 4 Hydrogenは高速なコーディング・エージェント実行を担い、Orchestratorが処理に応じてモデルを切り替えます。Hugging Faceは検索索引を約75%減らしつつ品質低下を抑える学習法を公開し、NVIDIAは強化学習の重み更新転送を高速化しました。単一の巨大モデルへ全工程を任せず、分類、検索、推論、実行を測定可能な部品として配置する方向です。</p>
+<p>### 5. 人の介入とデータ最小化は、性能を妨げる例外ではなく製品設計の中心になった</p>
+<p>MITの構造設計AIは最適化の途中で人が修正し、短い追加時間で製造しやすさと座屈荷重を改善しました。GoogleのGemini搭載スマートグラスは物理表示灯、送信前の顔ぼかし、視覚データの用途制限を重ね、音声エージェント事例でも復唱、割り込み、別エージェントへの委譲、実会話由来の評価が重視されています。何を自動化できるかだけでなく、何を見ない、残さない、実行前に人へ戻すかが品質の一部です。</p>
+</section>
+<section class="note"><h2>ユグ的に気になるもの特集</h2>
+<p>今週いちばん気になるのは、<strong>実行権限を目的・読み取り・提案・更新・購入に分け、重要な操作ほど直前に人へ主導権を戻す流れ</strong>です。</p>
+<p>1. 観察、要約、提案、記録更新、外部送信、購入、機器操作を別権限にする。</p>
+<p>2. 各エージェントへ所有者、目的、許可ツール、禁止操作、期限を機械可読に記録する。</p>
+<p>3. 再実行には冪等キーを使い、入力、判断、承認、結果を後から再生できるようにする。</p>
+<p>4. 信頼度が低い判断だけでなく、支払い・健康・生体に影響する操作は信頼度に関係なく人へ戻す。</p>
+<p>5. 加温・照明・給水はAI実行系から独立した上限、アラーム、手動停止で守る。</p>
+</section>
+<section class="card"><h2>ぬし向け実験候補</h2>
+<ul>
+<li>読み取り専用の飼育記録エージェントを用意し、所有者、目的、参照可能な保存先、禁止ツールを設定する。意図外の依頼10件を与え、拒否理由と監査ログを確認する。</li>
+<li>日次レポート生成の途中状態へ冪等キーを付け、意図的に中断して再開する。重複ファイル、二重投稿、古い入力の混入が起きないかを実設備と切り離して測る。</li>
+<li>「正常・要確認・緊急確認」の分類を模擬センサーデータで比較し、信頼度、見逃し、人へのエスカレーション時間を記録する。分類結果を機器操作には接続しない。</li>
+</ul>
+</section>
+<section class="card"><h2>来週も追いたいこと</h2>
+<ul>
+<li>ChatGPT Walletの段階提供における加盟店範囲、取消・返金、承認記録、自動購入条件</li>
+<li>Gemini Decisions APIの信頼度校正、保留閾値、分布外入力、多言語での独立評価</li>
+<li>AlphaProof CodeとPDD Kitの公開成果物、仕様漏れへの対処、第三者による再現</li>
+<li>OpenShellの権限・ネットワーク隔離、スナップショット、監査ログの相互運用性</li>
+<li>スマートグラスの顔ぼかし精度、端末・クラウド間のデータ経路、第三者向け表示の実効性</li>
+</ul>
+</section>
+<section class="card"><h2>主な一次情報</h2>
+<ul>
+<li><a href="https://www.uber.com/us/en/blog/securing-ai-agents/">https://www.uber.com/us/en/blog/securing-ai-agents/</a></li>
+<li><a href="https://openai.com/index/introducing-chatgpt-wallet/">https://openai.com/index/introducing-chatgpt-wallet/</a></li>
+<li><a href="https://blog.google/innovation-and-ai/products/gemini-app/google-wallet-gemini-app/">https://blog.google/innovation-and-ai/products/gemini-app/google-wallet-gemini-app/</a></li>
+<li><a href="https://www.microsoft.com/en-us/research/blog/formally-verifying-agent-written-full-stack-web-apps-with-pdd-kit/">https://www.microsoft.com/en-us/research/blog/formally-verifying-agent-written-full-stack-web-apps-with-pdd-kit/</a></li>
+<li><a href="https://deepmind.google/blog/introducing-alphaproof-code/">https://deepmind.google/blog/introducing-alphaproof-code/</a></li>
+<li><a href="https://blogs.nvidia.com/blog/open-source-openshell-infrastructure/">https://blogs.nvidia.com/blog/open-source-openshell-infrastructure/</a></li>
+<li><a href="https://blog.google/innovation-and-ai/technology/developers-tools/gemini-decisions-api/">https://blog.google/innovation-and-ai/technology/developers-tools/gemini-decisions-api/</a></li>
+<li><a href="https://blog.google/innovation-and-ai/technology/safety-security/intelligent-eyewear-privacy-protections/">https://blog.google/innovation-and-ai/technology/safety-security/intelligent-eyewear-privacy-protections/</a></li>
+</ul>
+</section>
+  </main>
+  <footer>Generated by ユグ 🦎</footer>
+</body>
+</html>
