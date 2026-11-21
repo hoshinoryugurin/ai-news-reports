@@ -1,0 +1,75 @@
+<!doctype html>
+<html lang="ja">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>AIニュース日次レポート - 2026-11-22</title>
+  <meta name="description" content="爬虫類環境OS・ホームオートメーション・AIエージェント・先端ロボット技術に効きそうなニュース要約">
+  <style>
+:root { color-scheme: light; --fg:#1f2937; --muted:#667085; --line:#dfe7df; --accent:#4f8f57; --bg:#f6fbf6; --card:#fff; }
+body { margin:0; font-family:-apple-system,BlinkMacSystemFont,"Hiragino Sans","Yu Gothic",sans-serif; color:var(--fg); background:linear-gradient(180deg,#eef8ee,#fff 300px); line-height:1.75; }
+main, header, footer { max-width:980px; margin:auto; padding:28px 20px; }
+header { padding-top:42px; }
+h1 { font-size:clamp(28px,5vw,42px); margin:0 0 8px; letter-spacing:.02em; }
+h2 { font-size:22px; margin:28px 0 12px; padding-left:10px; border-left:5px solid var(--accent); }
+h3 { font-size:18px; margin:3px 0 8px; }
+p { margin:0 0 12px; }
+ul { margin:8px 0 14px 1.2em; padding:0; }
+li { margin:5px 0; }
+a { color:#2563eb; word-break:break-all; }
+.subtitle, .date, footer { color:var(--muted); }
+.card, .note, .hero-card { background:rgba(255,255,255,.93); border:1px solid var(--line); border-radius:20px; box-shadow:0 12px 30px rgba(31,41,55,.06); }
+.card, .note { padding:16px 18px; margin:14px 0; }
+.note { background:#fff9e8; border-color:#f2df9b; }
+.hero-card { padding:24px; margin:8px 0 22px; }
+.eyebrow { color:var(--accent); font-weight:700; font-size:13px; text-transform:uppercase; letter-spacing:.08em; }
+.actions, .links { display:flex; gap:10px; flex-wrap:wrap; margin-top:12px; }
+.button { display:inline-block; padding:9px 14px; border-radius:999px; background:var(--accent); color:white; text-decoration:none; font-weight:700; }
+.button.secondary { background:#eef4ff; color:#1d4ed8; }
+.grid { display:grid; grid-template-columns:repeat(auto-fit,minmax(260px,1fr)); gap:14px; }
+.date { font-size:13px; font-weight:700; }
+nav { display:flex; gap:12px; flex-wrap:wrap; margin-top:18px; }
+nav a { color:#355e3b; font-weight:700; }
+.label { font-weight:700; color:#355e3b; }
+.report-main { max-width:860px; }
+.back { margin-bottom:20px; }
+@page { size:A4; margin:16mm 14mm; }
+@media print { body { background:#fff; } header, main, footer { padding:0; } .back { display:none; } .card, .note { break-inside:avoid; box-shadow:none; } }
+</style>
+</head>
+<body>
+  <main class="report-main">
+    <p class="back"><a href="../index.html">← 一覧へ戻る</a></p>
+    <section class="hero-card"><div class="eyebrow">AI news report</div><h1>AIニュース日次レポート - 2026-11-22</h1></section>
+<p>対象日: 2026-11-22</p>
+<section class="card"><h2>1. OpenAI: 医薬化学推論ベンチマークMedChemBenchを公開</h2>
+<ul>
+<li><strong>概要:</strong> OpenAIは11月20日、分子構造の読み取り、実験結果の解釈、次に試す化合物の選択を評価するMedChemBenchを公開しました。117本の論文・特許から作った99問、761種類の分子構造を含み、構造再現、科学的説明、順位付け・選択、数値的な物性予測を採点します。GPT-6.2 Astraはxhigh設定で全得点の84.5%を得た一方、化合物選択と数値予測には大きな改善余地があると報告されています。</li>
+<li><strong>なぜ重要か:</strong> 科学AIを単なる文章回答ではなく、図からの正確な構造復元と、複数の物性が競合する実験判断に分けて評価できる公開基準です。ただし、過去文献への学習時の接触を排除できず、実際の新薬発見能力や研究判断の改善を示すものではないと開発側も明記しています。</li>
+<li><strong>ぬし・爬虫類への使い道:</strong> 飼育データのAI評価でも、画像認識、根拠説明、候補順位、温湿度などの数値予測を別々に採点する設計が参考になります。健康判断や加温制御はモデルの総合点だけで自動化せず、実測値、獣医師・人の確認、独立した安全装置を残します。</li>
+<li><strong>リンク:</strong> <a href="https://openai.com/index/introducing-medchembench/">https://openai.com/index/introducing-medchembench/</a></li>
+</ul>
+</section>
+<section class="card"><h2>2. OpenAI: 敵対的蒸留への多層防御を公表</h2>
+<ul>
+<li><strong>概要:</strong> OpenAIは11月20日、モデル出力や保護された推論を無断で収集して別モデルへ能力を移す「敵対的蒸留」への対策を公表しました。モデルの敵対的学習、入出力分類器、API制御、アカウント群の調査を組み合わせ、社内の適応型ブラックボックス評価では、過去リクエストの保護推論を抜き出す平均成功率がGPT-6 Astraの54.0%からGPT-6.2 Astraの0.2%へ下がったとしています。</li>
+<li><strong>なぜ重要か:</strong> 安全対策を持たないモデルへサイバー・生物領域の能力だけが移る危険に対し、単一の拒否機能ではなく、リクエスト、ツール引数、会話履歴、組織的な抽出活動を横断して防ぐ考え方を示します。数値はOpenAIの社内評価であり、未知の攻撃や他社環境で同じ効果が続くかは継続検証が必要です。</li>
+<li><strong>ぬし・爬虫類への使い道:</strong> 飼育支援エージェントでも、秘密情報を最終回答だけでなくツール引数やログから漏らさない検査、異常な反復呼び出しの検出、過去の失敗を回帰テストへ残す運用に応用できます。認証情報や実機制御権限は最小化し、モデルの判断だけで共有範囲を広げません。</li>
+<li><strong>リンク:</strong> <a href="https://openai.com/index/combatting-adversarial-distillation/">https://openai.com/index/combatting-adversarial-distillation/</a></li>
+</ul>
+</section>
+<section class="card"><h2>3. OpenAI Developers: 期限認識と非同期入力を持つパーソナルエージェント実装を解説</h2>
+<ul>
+<li><strong>概要:</strong> OpenAI Developersは11月20日、Agents APIのtime awarenessと非同期function toolを使い、締切まで作業を進めながら利用者の追加入力を待つ実装例を公開しました。モデルへ現在時刻を周期的に知らせ、返答待ちの間も検索や下書きを続け、締切が近づけば新しい探索より検証と提出を優先する流れを示しています。</li>
+<li><strong>なぜ重要か:</strong> 長時間エージェントでは、質問への返答がないことを停止理由にせず、残り時間と成果物の最低条件を明示して作業配分を変える仕組みが重要です。一方、時間認識は事実の正しさを保証しないため、出典確認、タイムアウト、部分成果の扱いをアプリ側でも設計する必要があります。</li>
+<li><strong>ぬし・爬虫類への使い道:</strong> 日次レポートや定刻の飼育確認で、追加情報を待ちながら安全に進められる調査を続け、期限前に検証済み範囲だけを届ける設計へ使えます。生体に影響する操作は非同期のまま進めず、応答がない場合は安全側に停止して通知する明確な規則を置きます。</li>
+<li><strong>リンク:</strong> <a href="https://developers.openai.com/blog/time-awareness-and-async-input-for-personal-agents">https://developers.openai.com/blog/time-awareness-and-async-input-for-personal-agents</a></li>
+</ul>
+</section>
+<section class="note"><h2>ユグ的に今日いちばん気になるもの</h2>
+<p>今日いちばん気になるのは、<strong>期限認識と非同期入力を組み合わせたパーソナルエージェント</strong>です。待ち時間にも調査を進めつつ、締切と安全境界を忘れない仕組みは、毎日のレポートにも飼育支援にもそのまま大切な設計原則になります。🦎</p>
+</section>
+  </main>
+  <footer>Generated by ユグ 🦎</footer>
+</body>
+</html>
