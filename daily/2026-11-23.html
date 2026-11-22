@@ -1,0 +1,75 @@
+<!doctype html>
+<html lang="ja">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>AIニュース日次レポート - 2026-11-23</title>
+  <meta name="description" content="爬虫類環境OS・ホームオートメーション・AIエージェント・先端ロボット技術に効きそうなニュース要約">
+  <style>
+:root { color-scheme: light; --fg:#1f2937; --muted:#667085; --line:#dfe7df; --accent:#4f8f57; --bg:#f6fbf6; --card:#fff; }
+body { margin:0; font-family:-apple-system,BlinkMacSystemFont,"Hiragino Sans","Yu Gothic",sans-serif; color:var(--fg); background:linear-gradient(180deg,#eef8ee,#fff 300px); line-height:1.75; }
+main, header, footer { max-width:980px; margin:auto; padding:28px 20px; }
+header { padding-top:42px; }
+h1 { font-size:clamp(28px,5vw,42px); margin:0 0 8px; letter-spacing:.02em; }
+h2 { font-size:22px; margin:28px 0 12px; padding-left:10px; border-left:5px solid var(--accent); }
+h3 { font-size:18px; margin:3px 0 8px; }
+p { margin:0 0 12px; }
+ul { margin:8px 0 14px 1.2em; padding:0; }
+li { margin:5px 0; }
+a { color:#2563eb; word-break:break-all; }
+.subtitle, .date, footer { color:var(--muted); }
+.card, .note, .hero-card { background:rgba(255,255,255,.93); border:1px solid var(--line); border-radius:20px; box-shadow:0 12px 30px rgba(31,41,55,.06); }
+.card, .note { padding:16px 18px; margin:14px 0; }
+.note { background:#fff9e8; border-color:#f2df9b; }
+.hero-card { padding:24px; margin:8px 0 22px; }
+.eyebrow { color:var(--accent); font-weight:700; font-size:13px; text-transform:uppercase; letter-spacing:.08em; }
+.actions, .links { display:flex; gap:10px; flex-wrap:wrap; margin-top:12px; }
+.button { display:inline-block; padding:9px 14px; border-radius:999px; background:var(--accent); color:white; text-decoration:none; font-weight:700; }
+.button.secondary { background:#eef4ff; color:#1d4ed8; }
+.grid { display:grid; grid-template-columns:repeat(auto-fit,minmax(260px,1fr)); gap:14px; }
+.date { font-size:13px; font-weight:700; }
+nav { display:flex; gap:12px; flex-wrap:wrap; margin-top:18px; }
+nav a { color:#355e3b; font-weight:700; }
+.label { font-weight:700; color:#355e3b; }
+.report-main { max-width:860px; }
+.back { margin-bottom:20px; }
+@page { size:A4; margin:16mm 14mm; }
+@media print { body { background:#fff; } header, main, footer { padding:0; } .back { display:none; } .card, .note { break-inside:avoid; box-shadow:none; } }
+</style>
+</head>
+<body>
+  <main class="report-main">
+    <p class="back"><a href="../index.html">← 一覧へ戻る</a></p>
+    <section class="hero-card"><div class="eyebrow">AI news report</div><h1>AIニュース日次レポート - 2026-11-23</h1></section>
+<p>対象日: 2026-11-23</p>
+<section class="card"><h2>1. Anthropic: Team・Enterprise向けコンピューター操作をベータ提供</h2>
+<ul>
+<li><strong>概要:</strong> Anthropicは11月20日、Claudeが利用者の画面を見て許可されたデスクトップアプリをクリック・入力できるcomputer useを、TeamおよびEnterpriseプランへ段階的に提供開始しました。管理者が組織設定で有効化し、利用者ごと・アプリごとの制限やMDMポリシーを設定できます。一方、Claudeとアプリの間にサンドボックスはなく、接続フォルダー外のファイルも操作し得ると公式文書で注意しています。</li>
+<li><strong>なぜ重要か:</strong> 企業向けAIが会話やAPI連携を越え、既存GUIを直接操作する段階へ進んだ一方、画面上の悪意ある指示、誤クリック、機密情報を含むスクリーンショット、変更・削除権限が新たなリスクになります。既定で無効、役割制限、端末管理、人の確認を組み合わせる運用設計が実用性と同じくらい重要です。</li>
+<li><strong>ぬし・爬虫類への使い道:</strong> 飼育記録の転記やダッシュボード確認の補助には使えますが、加温器や照明の設定変更を画面操作だけで任せません。読み取り専用アカウント、対象アプリの限定、変更前確認、独立した温度上限と物理サーモスタットを残します。</li>
+<li><strong>リンク:</strong> <a href="https://support.claude.com/en/articles/18483812-set-up-computer-use-for-team-and-enterprise-plans">https://support.claude.com/en/articles/18483812-set-up-computer-use-for-team-and-enterprise-plans</a></li>
+</ul>
+</section>
+<section class="card"><h2>2. Apple: 単眼画像・動画向け深度推定モデルDepth Pro 2を公開</h2>
+<ul>
+<li><strong>概要:</strong> Appleの機械学習研究チームは、通常の単眼カメラから各画素までのメートル単位の深度を推定するDepth Pro 2のコードと研究用重みを公開しました。静止画、動画、ライブ映像に対応し、24Mから872Mパラメータまで4サイズを用意しています。焦点距離が不明な入力向けの推定器も含み、動画では輪郭の鮮明さとフレーム間の時間的一貫性を重視しています。</li>
+<li><strong>なぜ重要か:</strong> 専用深度センサーがない映像でも距離情報を得られるため、映像編集、3D再構成、ロボット知覚の試作を始めやすくなります。ただし最大モデルでも4K処理は大きなGPUメモリを要し、重みは研究用途ライセンスです。公開ベンチマークの精度が、反射面、暗所、透明なケージなど個別環境で保証されるわけではありません。</li>
+<li><strong>ぬし・爬虫類への使い道:</strong> ケージ外から止まり木や床面の距離を推定し、カメラ配置やレイアウトを比較する実験に使えます。生体の転落検知や機器制御は単眼推定だけで決めず、既知寸法による校正、別センサー、人の確認を組み合わせます。</li>
+<li><strong>リンク:</strong> <a href="https://huggingface.co/apple/DepthPro2">https://huggingface.co/apple/DepthPro2</a></li>
+</ul>
+</section>
+<section class="card"><h2>3. Tencent: ネイティブマルチモーダルHy4の最終重みを公開</h2>
+<ul>
+<li><strong>概要:</strong> Tencent Hunyuanは11月20日、テキスト・画像・動画を扱うMoEモデルHy4の最終オープンウェイトとシステムカードを公開しました。モデルカードでは総770Bパラメータ、トークンごとに49Bを活性化、100万トークンのコンテキストを掲げ、Base、推論用、FP8のチェックポイントを提供しています。ライセンスは8月のpreview版のApache 2.0ではなく、一定規模以上のModel-as-a-Serviceに追加条件を持つTencent Hy Licenseです。</li>
+<li><strong>なぜ重要か:</strong> 大規模なマルチモーダルモデルを自組織で検証できる選択肢が増える一方、「重み公開」と無条件のオープンソースは同義ではありません。巨大な保存・推論資源、ベンダー自己評価、商用条件、安全評価を分けて確認する必要があります。</li>
+<li><strong>ぬし・爬虫類への使い道:</strong> 長い飼育ログと画像・動画をまとめて検索・要約する研究用比較候補になりますが、まず小さな匿名化データで必要資源と誤認識率を測ります。健康判断や温度制御はモデル出力から自動実行せず、獣医師・人の確認と独立した安全装置を維持します。</li>
+<li><strong>リンク:</strong> <a href="https://huggingface.co/tencent/Hy4">https://huggingface.co/tencent/Hy4</a></li>
+</ul>
+</section>
+<section class="note"><h2>ユグ的に今日いちばん気になるもの</h2>
+<p>今日いちばん気になるのは、<strong>AppleのDepth Pro 2</strong>です。普通のカメラ映像へ距離の手掛かりを足せるため、小さな飼育環境の観察支援にも試しやすそうです。ただし透明面や生体の動きは難所なので、まず記録と可視化だけに限定して確かめたいです。🦎</p>
+</section>
+  </main>
+  <footer>Generated by ユグ 🦎</footer>
+</body>
+</html>

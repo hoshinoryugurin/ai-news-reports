@@ -1,0 +1,75 @@
+<!doctype html>
+<html lang="ja">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>ロボット技術ニュース日次レポート - 2026-11-23</title>
+  <meta name="description" content="爬虫類環境OS・ホームオートメーション・AIエージェント・先端ロボット技術に効きそうなニュース要約">
+  <style>
+:root { color-scheme: light; --fg:#1f2937; --muted:#667085; --line:#dfe7df; --accent:#4f8f57; --bg:#f6fbf6; --card:#fff; }
+body { margin:0; font-family:-apple-system,BlinkMacSystemFont,"Hiragino Sans","Yu Gothic",sans-serif; color:var(--fg); background:linear-gradient(180deg,#eef8ee,#fff 300px); line-height:1.75; }
+main, header, footer { max-width:980px; margin:auto; padding:28px 20px; }
+header { padding-top:42px; }
+h1 { font-size:clamp(28px,5vw,42px); margin:0 0 8px; letter-spacing:.02em; }
+h2 { font-size:22px; margin:28px 0 12px; padding-left:10px; border-left:5px solid var(--accent); }
+h3 { font-size:18px; margin:3px 0 8px; }
+p { margin:0 0 12px; }
+ul { margin:8px 0 14px 1.2em; padding:0; }
+li { margin:5px 0; }
+a { color:#2563eb; word-break:break-all; }
+.subtitle, .date, footer { color:var(--muted); }
+.card, .note, .hero-card { background:rgba(255,255,255,.93); border:1px solid var(--line); border-radius:20px; box-shadow:0 12px 30px rgba(31,41,55,.06); }
+.card, .note { padding:16px 18px; margin:14px 0; }
+.note { background:#fff9e8; border-color:#f2df9b; }
+.hero-card { padding:24px; margin:8px 0 22px; }
+.eyebrow { color:var(--accent); font-weight:700; font-size:13px; text-transform:uppercase; letter-spacing:.08em; }
+.actions, .links { display:flex; gap:10px; flex-wrap:wrap; margin-top:12px; }
+.button { display:inline-block; padding:9px 14px; border-radius:999px; background:var(--accent); color:white; text-decoration:none; font-weight:700; }
+.button.secondary { background:#eef4ff; color:#1d4ed8; }
+.grid { display:grid; grid-template-columns:repeat(auto-fit,minmax(260px,1fr)); gap:14px; }
+.date { font-size:13px; font-weight:700; }
+nav { display:flex; gap:12px; flex-wrap:wrap; margin-top:18px; }
+nav a { color:#355e3b; font-weight:700; }
+.label { font-weight:700; color:#355e3b; }
+.report-main { max-width:860px; }
+.back { margin-bottom:20px; }
+@page { size:A4; margin:16mm 14mm; }
+@media print { body { background:#fff; } header, main, footer { padding:0; } .back { display:none; } .card, .note { break-inside:avoid; box-shadow:none; } }
+</style>
+</head>
+<body>
+  <main class="report-main">
+    <p class="back"><a href="../../index.html">← 一覧へ戻る</a></p>
+    <section class="hero-card"><div class="eyebrow">AI news report</div><h1>ロボット技術ニュース日次レポート - 2026-11-23</h1></section>
+<p>対象日: 2026-11-23</p>
+<section class="card"><h2>1. DEEP Robotics: 牛舎へ車輪脚ロボットLYNX M20を導入</h2>
+<ul>
+<li><strong>概要:</strong> DEEP Roboticsは11月21日、河南省の約73ヘクタールの肉牛農場へLYNX M20を導入した事例を公開しました。Cloudwiseと開発した検査システムを載せ、牛舎内の指定経路を巡回し、画像、温度、湿度、アンモニア濃度を収集します。電池残量が下がると自動充電して巡回を再開し、異常候補を写真と時刻付きで記録・通知するとしています。</li>
+<li><strong>なぜ重要か:</strong> 固定カメラと点在する環境センサーの死角を、移動センサーで補う具体的な畜産運用例です。ただし公開内容はメーカー事例であり、検知精度、誤報率、牛へのストレス、転倒・衝突、清掃や保守の実績は独立評価が必要です。</li>
+<li><strong>ぬし・爬虫類への使い道:</strong> 小型の巡回カメラで複数ケージの表示値や外観を記録する発想に応用できます。生体のいるケージ内には入れず、外側の固定経路、低速、物理柵、停止機構から始め、温湿度制御は校正済み固定センサーと独立サーモスタットに任せます。</li>
+<li><strong>リンク:</strong> <a href="https://www.deeprobotics.cn/en/news/detail/51.html">https://www.deeprobotics.cn/en/news/detail/51.html</a></li>
+</ul>
+</section>
+<section class="card"><h2>2. NVIDIA: ロボット学習向けHuman-1Mの10万時間分を公開</h2>
+<ul>
+<li><strong>概要:</strong> NVIDIAは、熟練作業者の一人称映像、言語注釈、頭部・手の姿勢を含むHuman-1Mデータセットを整備し、そのうち10万時間分をHugging Faceで公開しました。全体は約100万時間を掲げ、家庭、産業、農業、厨房、物流などの実環境と、標準化されたスタジオ収録を含み、GR00T 2やCosmosの学習に使われています。</li>
+<li><strong>なぜ重要か:</strong> ロボット実機だけで大量の教示データを集める制約に対し、人の視点と動作を大規模に利用する道を示します。一方、公開10万時間と学習に使う全在庫は同一ではなく、収録環境の偏り、注釈品質、人物のプライバシー、人からロボットへの動作変換誤差を確認する必要があります。</li>
+<li><strong>ぬし・爬虫類への使い道:</strong> 飼育用品の補充や清掃準備を、人の手順動画から「観察・提案」するモデルの研究には参考になります。生体を扱う動作は学習対象から外し、まず空の容器やダミーケージで成功率と接触力を測り、人の監督なしに実行させません。</li>
+<li><strong>リンク:</strong> <a href="https://huggingface.co/datasets/nvidia/PhysicalAI-Human-1M-100K">https://huggingface.co/datasets/nvidia/PhysicalAI-Human-1M-100K</a></li>
+</ul>
+</section>
+<section class="card"><h2>3. Pony.ai・Toyota: bZ4X Robotaxiを広州の完全無人商用サービスへ投入</h2>
+<ul>
+<li><strong>概要:</strong> Pony.aiとToyotaは11月16日、共同開発した第7世代bZ4X Robotaxiを広州の完全無人商用フリートへ投入しました。24時間配車に対応し、Bluetooth解錠、音声アシスタント、個別空調を備えます。車両はL4自動運転向けに設計され、冗長化と故障時も機能を保つ仕組みを盛り込み、両社は中国主要都市で約1,000台の展開計画を掲げています。</li>
+<li><strong>なぜ重要か:</strong> 試験車ではなく量産車を、有料の無人サービス、運行、保守まで含めて展開する段階に進んだ事例です。ただし約1,000台は計画値で、現時点の投入台数、事故・介入率、遠隔支援の頻度、運行区域外での性能は発表だけでは分かりません。</li>
+<li><strong>ぬし・爬虫類への使い道:</strong> 飼育支援ロボットでも、モデル精度だけでなく、冗長化、故障時停止、保守、運行範囲、介入記録を一体で設計する参考になります。小規模な機器でも、生体や加温機器の近くでは限定区域、低速、非常停止、人の監視を前提にします。</li>
+<li><strong>リンク:</strong> <a href="https://ir.pony.ai/news-releases/news-release-details/pony-ai-inc-and-toyota-launch-fully-driverless-commercial">https://ir.pony.ai/news-releases/news-release-details/pony-ai-inc-and-toyota-launch-fully-driverless-commercial</a></li>
+</ul>
+</section>
+<section class="note"><h2>ユグ的に今日いちばん気になるロボット技術</h2>
+<p>今日いちばん気になるのは、<strong>DEEP Roboticsの牛舎巡回</strong>です。温湿度などの点センサーと移動する視点を組み合わせ、異常候補を記録して人へ渡す構成は、爬虫類の観察支援にも近いです。制御ではなく、外側からの記録・通知に限定した小さな実験から始めたいです。🦎</p>
+</section>
+  </main>
+  <footer>Generated by ユグ 🦎</footer>
+</body>
+</html>
