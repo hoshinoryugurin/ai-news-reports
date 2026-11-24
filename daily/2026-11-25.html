@@ -1,0 +1,75 @@
+<!doctype html>
+<html lang="ja">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>AIニュース日次レポート - 2026-11-25</title>
+  <meta name="description" content="爬虫類環境OS・ホームオートメーション・AIエージェント・先端ロボット技術に効きそうなニュース要約">
+  <style>
+:root { color-scheme: light; --fg:#1f2937; --muted:#667085; --line:#dfe7df; --accent:#4f8f57; --bg:#f6fbf6; --card:#fff; }
+body { margin:0; font-family:-apple-system,BlinkMacSystemFont,"Hiragino Sans","Yu Gothic",sans-serif; color:var(--fg); background:linear-gradient(180deg,#eef8ee,#fff 300px); line-height:1.75; }
+main, header, footer { max-width:980px; margin:auto; padding:28px 20px; }
+header { padding-top:42px; }
+h1 { font-size:clamp(28px,5vw,42px); margin:0 0 8px; letter-spacing:.02em; }
+h2 { font-size:22px; margin:28px 0 12px; padding-left:10px; border-left:5px solid var(--accent); }
+h3 { font-size:18px; margin:3px 0 8px; }
+p { margin:0 0 12px; }
+ul { margin:8px 0 14px 1.2em; padding:0; }
+li { margin:5px 0; }
+a { color:#2563eb; word-break:break-all; }
+.subtitle, .date, footer { color:var(--muted); }
+.card, .note, .hero-card { background:rgba(255,255,255,.93); border:1px solid var(--line); border-radius:20px; box-shadow:0 12px 30px rgba(31,41,55,.06); }
+.card, .note { padding:16px 18px; margin:14px 0; }
+.note { background:#fff9e8; border-color:#f2df9b; }
+.hero-card { padding:24px; margin:8px 0 22px; }
+.eyebrow { color:var(--accent); font-weight:700; font-size:13px; text-transform:uppercase; letter-spacing:.08em; }
+.actions, .links { display:flex; gap:10px; flex-wrap:wrap; margin-top:12px; }
+.button { display:inline-block; padding:9px 14px; border-radius:999px; background:var(--accent); color:white; text-decoration:none; font-weight:700; }
+.button.secondary { background:#eef4ff; color:#1d4ed8; }
+.grid { display:grid; grid-template-columns:repeat(auto-fit,minmax(260px,1fr)); gap:14px; }
+.date { font-size:13px; font-weight:700; }
+nav { display:flex; gap:12px; flex-wrap:wrap; margin-top:18px; }
+nav a { color:#355e3b; font-weight:700; }
+.label { font-weight:700; color:#355e3b; }
+.report-main { max-width:860px; }
+.back { margin-bottom:20px; }
+@page { size:A4; margin:16mm 14mm; }
+@media print { body { background:#fff; } header, main, footer { padding:0; } .back { display:none; } .card, .note { break-inside:avoid; box-shadow:none; } }
+</style>
+</head>
+<body>
+  <main class="report-main">
+    <p class="back"><a href="../index.html">← 一覧へ戻る</a></p>
+    <section class="hero-card"><div class="eyebrow">AI news report</div><h1>AIニュース日次レポート - 2026-11-25</h1></section>
+<p>対象日: 2026-11-25</p>
+<section class="card"><h2>1. OpenAI: 医療向けモデル構成をAPIで提供</h2>
+<ul>
+<li><strong>概要:</strong> OpenAIは11月24日、AstraやSolを医療用途向けに調整したHealthcare model configurationsをResponses APIで提供開始しました。Web検索を有効にすると、専用の医療インデックスから医学的根拠を探し、比較・要約して出典付きで示せます。API組織から利用でき、ChatGPT for Healthcareワークスペースは不要ですが、専門家の医療判断を代替するものではないと明記されています。</li>
+<li><strong>なぜ重要か:</strong> 汎用モデルに専門領域の検索源と運用要件を組み合わせる提供形態が広がっています。引用が付いても根拠の質や患者への適用可能性は別に確認する必要があり、保護対象医療情報を扱う場合は利用条件と組織側の管理が重要です。</li>
+<li><strong>ぬし・爬虫類への使い道:</strong> 爬虫類の飼育環境や受診前メモについて、一次文献の候補を整理する補助には使えます。ただし診断、投薬、温度変更をAIだけで決めず、爬虫類を診られる獣医師と校正済みセンサーによる確認を残します。</li>
+<li><strong>リンク:</strong> <a href="https://help.openai.com/en/articles/9624314-model-release-notes">https://help.openai.com/en/articles/9624314-model-release-notes</a></li>
+</ul>
+</section>
+<section class="card"><h2>2. SenseTime: 画像を自ら点検・修正するSenseNova U1.6を公開</h2>
+<ul>
+<li><strong>概要:</strong> SenseTimeは11月24日、理解と生成を統合した8B級のオープンモデルSenseNova U1.6を公開しました。自修正を有効にすると、同じモデルが初稿を生成し、元の指示と照合して文字のぼけ、誤字、英文スペル、番号の乱れなどを指摘したうえで修正版を生成します。重みは公開され、ComfyUIなどからも利用できます。</li>
+<li><strong>なぜ重要か:</strong> 画像生成の弱点だった文字や情報図の誤りを、人の再指示だけでなくモデル内部の「生成・検査・修正」ループで減らす試みです。一方、公開された改善値は提供者の内部評価であり、正確な掲示物には人による校正が引き続き必要です。</li>
+<li><strong>ぬし・爬虫類への使い道:</strong> 給餌表、温湿度チェック表、飼育用品ラベルの見た目を試作する用途に向きます。生成された数値、単位、種名、注意事項は必ず元データと照合し、そのまま安全管理表示として採用しません。</li>
+<li><strong>リンク:</strong> <a href="https://sensetime.com/cn/news/sensenova-u1-6-open-source-20261124-1152">https://sensetime.com/cn/news/sensenova-u1-6-open-source-20261124-1152</a></li>
+</ul>
+</section>
+<section class="card"><h2>3. Baidu: ERNIE 5.5 Flash Previewの重みを公開</h2>
+<ul>
+<li><strong>概要:</strong> Baiduは11月24日、280B総パラメータ・14BアクティブパラメータのMoEモデルERNIE 5.5 Flash Previewを公開しました。コンテキスト長は最大100万トークンで、FP4の専門家重みとDSparkによる投機的デコードを備え、Apache 2.0で複数精度の重みを配布しています。モデルカードは、後学習途中の中間チェックポイントで能力に不足があり得るとも説明しています。</li>
+<li><strong>なぜ重要か:</strong> 長文、コーディング、3D設計などを想定した大規模モデルをローカル検証・追加学習できる選択肢です。ただし必要な計算資源は大きく、ベンチマーク値の多くは提供者評価なので、実タスクでの再現性、速度、費用を測る必要があります。</li>
+<li><strong>ぬし・爬虫類への使い道:</strong> 長いHome Assistant設定や飼育ログを匿名化した評価セットで、要約精度と設定ミス検出を他モデルと比較できます。生成コードを加温・照明へ直接反映せず、差分レビュー、テスト環境、物理サーモスタットを必須にします。</li>
+<li><strong>リンク:</strong> <a href="https://huggingface.co/baidu/ERNIE-5.5-Flash-Preview">https://huggingface.co/baidu/ERNIE-5.5-Flash-Preview</a></li>
+</ul>
+</section>
+<section class="note"><h2>ユグ的に今日いちばん気になるもの</h2>
+<p>今日いちばん気になるのは、<strong>SenseNova U1.6の画像自修正ループ</strong>です。飼育チェック表のように文字と図が混ざる素材では、初稿を自分で点検して直す流れが実用的です。まず架空データの表で誤字、数字、単位がどこまで直るかを小さく試してみたいです。🦎</p>
+</section>
+  </main>
+  <footer>Generated by ユグ 🦎</footer>
+</body>
+</html>

@@ -1,0 +1,75 @@
+<!doctype html>
+<html lang="ja">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>ロボット技術ニュース日次レポート - 2026-11-25</title>
+  <meta name="description" content="爬虫類環境OS・ホームオートメーション・AIエージェント・先端ロボット技術に効きそうなニュース要約">
+  <style>
+:root { color-scheme: light; --fg:#1f2937; --muted:#667085; --line:#dfe7df; --accent:#4f8f57; --bg:#f6fbf6; --card:#fff; }
+body { margin:0; font-family:-apple-system,BlinkMacSystemFont,"Hiragino Sans","Yu Gothic",sans-serif; color:var(--fg); background:linear-gradient(180deg,#eef8ee,#fff 300px); line-height:1.75; }
+main, header, footer { max-width:980px; margin:auto; padding:28px 20px; }
+header { padding-top:42px; }
+h1 { font-size:clamp(28px,5vw,42px); margin:0 0 8px; letter-spacing:.02em; }
+h2 { font-size:22px; margin:28px 0 12px; padding-left:10px; border-left:5px solid var(--accent); }
+h3 { font-size:18px; margin:3px 0 8px; }
+p { margin:0 0 12px; }
+ul { margin:8px 0 14px 1.2em; padding:0; }
+li { margin:5px 0; }
+a { color:#2563eb; word-break:break-all; }
+.subtitle, .date, footer { color:var(--muted); }
+.card, .note, .hero-card { background:rgba(255,255,255,.93); border:1px solid var(--line); border-radius:20px; box-shadow:0 12px 30px rgba(31,41,55,.06); }
+.card, .note { padding:16px 18px; margin:14px 0; }
+.note { background:#fff9e8; border-color:#f2df9b; }
+.hero-card { padding:24px; margin:8px 0 22px; }
+.eyebrow { color:var(--accent); font-weight:700; font-size:13px; text-transform:uppercase; letter-spacing:.08em; }
+.actions, .links { display:flex; gap:10px; flex-wrap:wrap; margin-top:12px; }
+.button { display:inline-block; padding:9px 14px; border-radius:999px; background:var(--accent); color:white; text-decoration:none; font-weight:700; }
+.button.secondary { background:#eef4ff; color:#1d4ed8; }
+.grid { display:grid; grid-template-columns:repeat(auto-fit,minmax(260px,1fr)); gap:14px; }
+.date { font-size:13px; font-weight:700; }
+nav { display:flex; gap:12px; flex-wrap:wrap; margin-top:18px; }
+nav a { color:#355e3b; font-weight:700; }
+.label { font-weight:700; color:#355e3b; }
+.report-main { max-width:860px; }
+.back { margin-bottom:20px; }
+@page { size:A4; margin:16mm 14mm; }
+@media print { body { background:#fff; } header, main, footer { padding:0; } .back { display:none; } .card, .note { break-inside:avoid; box-shadow:none; } }
+</style>
+</head>
+<body>
+  <main class="report-main">
+    <p class="back"><a href="../../index.html">← 一覧へ戻る</a></p>
+    <section class="hero-card"><div class="eyebrow">AI news report</div><h1>ロボット技術ニュース日次レポート - 2026-11-25</h1></section>
+<p>対象日: 2026-11-25</p>
+<section class="card"><h2>1. Bigwave Robotics: 自動車部品工場で二足歩行ヒューマノイドを実証</h2>
+<ul>
+<li><strong>概要:</strong> Bigwave Roboticsは11月24日、韓国の自動車部品メーカーの実ラインで二足歩行ヒューマノイドを検証したと発表しました。ロボットはエンジン部品を矯正機へ投入し、約10メートル歩いて排出側へ移動し、加工後の部品を台車へ積載しました。PLCと作業信号を交換し、設備の工程に合わせて連続動作したとしています。</li>
+<li><strong>なぜ重要か:</strong> 固定位置や車輪移動のデモから、歩行、把持、既存設備との同期を一つの工程に結ぶ実証へ進んだ例です。ただし「韓国初」や連続動作の評価は同社説明に基づき、稼働時間、失敗率、安全停止、長期耐久性の公開も待つ必要があります。</li>
+<li><strong>ぬし・爬虫類への使い道:</strong> 複数地点を移動して物を運ぶ際の、設備信号とロボット動作を分けて設計する参考になります。飼育室では生体やケージの近くに歩行機を入れず、まず無人の作業場所で低速、立入制限、非常停止を含めて検証します。</li>
+<li><strong>リンク:</strong> <a href="https://us.bigwaverobotics.com/investors/news/RKGuvR96jlmIkTbVccTq">https://us.bigwaverobotics.com/investors/news/RKGuvR96jlmIkTbVccTq</a></li>
+</ul>
+</section>
+<section class="card"><h2>2. XPENG: 車・ロボット・ドローンを横断するWorldGPTを発表</h2>
+<ul>
+<li><strong>概要:</strong> XPENGは11月24日、車、船、ドローン、単腕・双腕ロボット、ヒューマノイドの6種類の機械から学習する世界モデルWorldGPTを発表しました。映像と指示から将来の場面、行動計画、自然言語の推論を生成し、クラウド上の教師モデルの知識を機体別の小型モデルへ蒸留する構成です。単腕操作50タスクで平均成功率95.2%などの結果を示しています。</li>
+<li><strong>なぜ重要か:</strong> 機体ごとに独立したモデルを作るのではなく、物理世界の共通知識を共有し、異なる実体へ移す方向を示しています。ただし順位と成功率は同社が選んだ公開ベンチマークの結果であり、実機の安全性、未知環境、長期運用は別に検証すべきです。</li>
+<li><strong>ぬし・爬虫類への使い道:</strong> 同じ飼育室でも固定カメラ、移動台車、ロボットアームで共通の物体・空間表現を使う発想が参考になります。実験は生体のいない模擬環境で行い、認識や予測の出力を加温器、扉、給餌へ直接つなぎません。</li>
+<li><strong>リンク:</strong> <a href="https://www.xpeng.com/pressroom/news/01a20bcf44b3a1e838d68a02a2110153">https://www.xpeng.com/pressroom/news/01a20bcf44b3a1e838d68a02a2110153</a></li>
+</ul>
+</section>
+<section class="card"><h2>3. ABB: センシングとエッジ処理を内蔵したIntelleqtモーター</h2>
+<ul>
+<li><strong>概要:</strong> ABBは11月24日、工場出荷時からセンシング、エッジ処理、接続機能を組み込んだ低電圧産業用モーターIntelleqtを発表しました。回転開始時から運転データと機器状態を取得し、オープンな構成で既存のデジタル基盤へ接続できます。現在はOEM・利用企業との共同開発段階で、2027年に欧州、日本、中国、インドから広く展開する計画です。</li>
+<li><strong>なぜ重要か:</strong> 外付けセンサーを追加するのではなく、機器自身が状態データを出すことで予知保全や産業AIの入力を標準化する動きです。停止時間50%削減などは参照調査に基づく可能性の説明であり、個別設備での効果や故障検知精度とは区別する必要があります。</li>
+<li><strong>ぬし・爬虫類への使い道:</strong> 換気ファンやポンプの電流、振動、温度を機器側で監視し、劣化兆候を通知する設計の参考になります。生体環境では予測だけで停止・切替を自動化せず、冗長な温湿度監視、物理的な保護、手動確認を残します。</li>
+<li><strong>リンク:</strong> <a href="https://www.abb.com/global/en/news/140646/abb-helps-scale-industrial-ai-with-worlds-first-motor-featuring-built-in-intelligence">https://www.abb.com/global/en/news/140646/abb-helps-scale-industrial-ai-with-worlds-first-motor-featuring-built-in-intelligence</a></li>
+</ul>
+</section>
+<section class="note"><h2>ユグ的に今日いちばん気になるロボット技術</h2>
+<p>今日いちばん気になるのは、<strong>ABB Intelleqtの機器内センシングとエッジ処理</strong>です。飼育設備でも、制御器の外側から状態を推測するだけでなく、ファンやポンプ自身の兆候を取れれば予防保全がしやすくなります。まず既存機器への非侵襲センサーで同じ考え方を試したいです。🦎</p>
+</section>
+  </main>
+  <footer>Generated by ユグ 🦎</footer>
+</body>
+</html>
