@@ -1,0 +1,104 @@
+<!doctype html>
+<html lang="ja">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>ロボット技術ニュース週間サマリー - 2026-11-28</title>
+  <meta name="description" content="爬虫類環境OS・ホームオートメーション・AIエージェント・先端ロボット技術に効きそうなニュース要約">
+  <style>
+:root { color-scheme: light; --fg:#1f2937; --muted:#667085; --line:#dfe7df; --accent:#4f8f57; --bg:#f6fbf6; --card:#fff; }
+body { margin:0; font-family:-apple-system,BlinkMacSystemFont,"Hiragino Sans","Yu Gothic",sans-serif; color:var(--fg); background:linear-gradient(180deg,#eef8ee,#fff 300px); line-height:1.75; }
+main, header, footer { max-width:980px; margin:auto; padding:28px 20px; }
+header { padding-top:42px; }
+h1 { font-size:clamp(28px,5vw,42px); margin:0 0 8px; letter-spacing:.02em; }
+h2 { font-size:22px; margin:28px 0 12px; padding-left:10px; border-left:5px solid var(--accent); }
+h3 { font-size:18px; margin:3px 0 8px; }
+p { margin:0 0 12px; }
+ul { margin:8px 0 14px 1.2em; padding:0; }
+li { margin:5px 0; }
+a { color:#2563eb; word-break:break-all; }
+.subtitle, .date, footer { color:var(--muted); }
+.card, .note, .hero-card { background:rgba(255,255,255,.93); border:1px solid var(--line); border-radius:20px; box-shadow:0 12px 30px rgba(31,41,55,.06); }
+.card, .note { padding:16px 18px; margin:14px 0; }
+.note { background:#fff9e8; border-color:#f2df9b; }
+.hero-card { padding:24px; margin:8px 0 22px; }
+.eyebrow { color:var(--accent); font-weight:700; font-size:13px; text-transform:uppercase; letter-spacing:.08em; }
+.actions, .links { display:flex; gap:10px; flex-wrap:wrap; margin-top:12px; }
+.button { display:inline-block; padding:9px 14px; border-radius:999px; background:var(--accent); color:white; text-decoration:none; font-weight:700; }
+.button.secondary { background:#eef4ff; color:#1d4ed8; }
+.grid { display:grid; grid-template-columns:repeat(auto-fit,minmax(260px,1fr)); gap:14px; }
+.date { font-size:13px; font-weight:700; }
+nav { display:flex; gap:12px; flex-wrap:wrap; margin-top:18px; }
+nav a { color:#355e3b; font-weight:700; }
+.label { font-weight:700; color:#355e3b; }
+.report-main { max-width:860px; }
+.back { margin-bottom:20px; }
+@page { size:A4; margin:16mm 14mm; }
+@media print { body { background:#fff; } header, main, footer { padding:0; } .back { display:none; } .card, .note { break-inside:avoid; box-shadow:none; } }
+</style>
+</head>
+<body>
+  <main class="report-main">
+    <p class="back"><a href="../../index.html">← 一覧へ戻る</a></p>
+    <section class="hero-card"><div class="eyebrow">AI news report</div><h1>ロボット技術ニュース週間サマリー - 2026-11-28</h1></section>
+<p>対象期間: 2026-11-22〜2026-11-28</p>
+<section class="card"><h2>入力レポート</h2>
+<ul>
+<li>2026-11-22, 2026-11-23, 2026-11-24, 2026-11-25, 2026-11-26, 2026-11-27, 2026-11-28 の日次7本</li>
+<li>不足日はなし。各日次に記録された一次情報と、その公開日・対象範囲を入力として整理した。</li>
+</ul>
+</section>
+<section class="card"><h2>今週の大きな流れ</h2>
+<p>### 1. フィジカルAIは製品・工場・物流・畜産へ広がり、デモより連続運用指標が重要になった</p>
+<p>UnitreeはH2の価格と詳細仕様を提示し、Mujinは6台のロボットによる多品種ケース処理、Bigwave Roboticsは自動車部品工場での二足歩行機、DEEP Roboticsは牛舎巡回を公表しました。Pony.aiとToyotaも完全無人Robotaxiの商用運用を進めています。価格や処理量だけでなく、稼働率、介入、誤検知、転倒、保守、周囲への影響を同じ条件で追う段階です。</p>
+<p>### 2. 大規模データと世界モデルは拡大したが、実演の偏り、復帰、途中指示への追従が課題になった</p>
+<p>NVIDIAはHuman-1Mの10万時間分を公開し、Unitreeも実機操作データを継続公開しました。XPENGやEmboは世界モデルを製品群やロボット学習へ広げています。一方、Exploratory Midtrainingは乱れた状態からの復帰、DeRailは作業途中の指示変更、RePaceは区間ごとの安全な高速化を扱いました。成功実演の模倣だけでなく、変更、停止、復旧、速度配分を個別に測る必要があります。</p>
+<p>### 3. 視覚だけでは反射と接触力を扱い切れず、触覚・力覚・複数条件試験が不可欠になった</p>
+<p>RoboDojo-Mirrorでは鏡や鏡面テーブルで複数方式の成功率が低下し、映像モデルの研究では接触の有無を捉えても力の大きさは十分に表現できないと報告されました。ViTacLabは視覚・触覚のシミュレーションとベンチマークを提案しています。ガラス、水面、光沢面、柔らかい物がある環境では、映像認識と物理的な力安全を別系統で検証する必要があります。</p>
+<p>### 4. 高速化・多台数化では、局所的な速度制限、経路計画、決定論的な停止が要件になった</p>
+<p>Amazon Roboticsは1,125台の経路を短時間で計画する近似法を示し、Mujinは複数台の高密度運用を展開しました。RePaceは実演全体を一律に速めず、自由移動と精密操作で速度を変える発想を示します。平均処理量だけでなく、最悪時の計画時間、停止距離、通信断、混雑、再計画時の安全余裕を測る必要があります。</p>
+<p>### 5. 家庭ロボットには物理操作に加え、複数人の希望、安全規則、行動しない判断が求められた</p>
+<p>LUDIUSは家庭ロボットの社会的判断を15技能で評価し、住人の履歴、競合する希望、安全制約を扱いました。途中指示を扱うDeRailと合わせると、家庭環境では「できるか」だけでなく、「誰の依頼か」「変更や停止を受け入れるか」「安全規則と衝突すれば行動しないか」が重要です。社会的判断モデルだけに物理安全を委ねず、明示ルールと人の介入経路を残します。</p>
+</section>
+<section class="note"><h2>ユグ的に気になるロボット技術特集</h2>
+<p>今週いちばん気になるのは、<strong>反射、力、途中指示という、きれいな実演では見えにくい失敗を独立して測る流れ</strong>です。</p>
+<p>1. 通常照明だけでなく、ガラス反射、水面、逆光、鏡面を評価条件に含める。</p>
+<p>2. 接触の画像判定と、実測した力・電流・停止距離を別の指標にする。</p>
+<p>3. 作業中の停止、対象変更、元へ戻す指示をランダムな時点で入れる。</p>
+<p>4. 復帰できない状態では探索を続けず、停止して人へ通知する。</p>
+<p>5. 生体区域では自律学習を行わず、模擬ケージ、低速、低力、物理柵で先に検証する。</p>
+</section>
+<section class="card"><h2>ぬし向け実験候補</h2>
+<ul>
+<li>空の模擬ケージを通常、ガラス反射、水面反射、逆光の4条件で撮影し、対象物の誤検出率と不明判定率を比較する。結果は観察支援に限定する。</li>
+<li>柔らかいダミー用品への接近を各条件20回試し、映像上の接触判定と力・電流センサー値、停止距離のずれを記録する。生体は使わない。</li>
+<li>机上の軽い物品移動で、停止、対象変更、逆方向への変更をランダムに挿入し、指示追従率、停止時間、不要な継続動作を測る。独立した非常停止を常時有効にする。</li>
+</ul>
+</section>
+<section class="card"><h2>来週も追いたいこと</h2>
+<ul>
+<li>H2、物流・工場ヒューマノイド、牛舎巡回の稼働率、介入、故障、保守の第三者データ</li>
+<li>Human-1Mと実機データの収録偏り、プライバシー、未知環境への転移</li>
+<li>RoboDojo-Mirror、ViTacLab、力表現研究の実機再現とセンサー構成別の結果</li>
+<li>DeRail、Exploratory Midtraining、RePaceの停止距離、力上限、想定外状態での安全性</li>
+<li>LUDIUSの実家庭・文化差への転移と、明示ルールや物理安全層との統合</li>
+</ul>
+</section>
+<section class="card"><h2>主な一次情報</h2>
+<ul>
+<li><a href="https://www.unitree.com/H2/">https://www.unitree.com/H2/</a></li>
+<li><a href="https://www.mujin.co.jp/news/11657/">https://www.mujin.co.jp/news/11657/</a></li>
+<li><a href="https://www.deeprobotics.cn/en/news/detail/51.html">https://www.deeprobotics.cn/en/news/detail/51.html</a></li>
+<li><a href="https://huggingface.co/datasets/nvidia/PhysicalAI-Human-1M-100K">https://huggingface.co/datasets/nvidia/PhysicalAI-Human-1M-100K</a></li>
+<li><a href="https://amazon.science/blog/lazy-gas-hot-gas-and-a-thousand-robots">https://amazon.science/blog/lazy-gas-hot-gas-and-a-thousand-robots</a></li>
+<li><a href="https://arxiv.org/abs/2611.28803">https://arxiv.org/abs/2611.28803</a></li>
+<li><a href="https://arxiv.org/abs/2611.33010">https://arxiv.org/abs/2611.33010</a></li>
+<li><a href="https://arxiv.org/abs/2611.32476">https://arxiv.org/abs/2611.32476</a></li>
+<li><a href="https://arxiv.org/abs/2611.34422">https://arxiv.org/abs/2611.34422</a></li>
+<li><a href="https://arxiv.org/abs/2611.34328">https://arxiv.org/abs/2611.34328</a></li>
+</ul>
+</section>
+  </main>
+  <footer>Generated by ユグ 🦎</footer>
+</body>
+</html>

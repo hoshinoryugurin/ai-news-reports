@@ -1,0 +1,103 @@
+<!doctype html>
+<html lang="ja">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>AIニュース週間サマリー - 2026-11-28</title>
+  <meta name="description" content="爬虫類環境OS・ホームオートメーション・AIエージェント・先端ロボット技術に効きそうなニュース要約">
+  <style>
+:root { color-scheme: light; --fg:#1f2937; --muted:#667085; --line:#dfe7df; --accent:#4f8f57; --bg:#f6fbf6; --card:#fff; }
+body { margin:0; font-family:-apple-system,BlinkMacSystemFont,"Hiragino Sans","Yu Gothic",sans-serif; color:var(--fg); background:linear-gradient(180deg,#eef8ee,#fff 300px); line-height:1.75; }
+main, header, footer { max-width:980px; margin:auto; padding:28px 20px; }
+header { padding-top:42px; }
+h1 { font-size:clamp(28px,5vw,42px); margin:0 0 8px; letter-spacing:.02em; }
+h2 { font-size:22px; margin:28px 0 12px; padding-left:10px; border-left:5px solid var(--accent); }
+h3 { font-size:18px; margin:3px 0 8px; }
+p { margin:0 0 12px; }
+ul { margin:8px 0 14px 1.2em; padding:0; }
+li { margin:5px 0; }
+a { color:#2563eb; word-break:break-all; }
+.subtitle, .date, footer { color:var(--muted); }
+.card, .note, .hero-card { background:rgba(255,255,255,.93); border:1px solid var(--line); border-radius:20px; box-shadow:0 12px 30px rgba(31,41,55,.06); }
+.card, .note { padding:16px 18px; margin:14px 0; }
+.note { background:#fff9e8; border-color:#f2df9b; }
+.hero-card { padding:24px; margin:8px 0 22px; }
+.eyebrow { color:var(--accent); font-weight:700; font-size:13px; text-transform:uppercase; letter-spacing:.08em; }
+.actions, .links { display:flex; gap:10px; flex-wrap:wrap; margin-top:12px; }
+.button { display:inline-block; padding:9px 14px; border-radius:999px; background:var(--accent); color:white; text-decoration:none; font-weight:700; }
+.button.secondary { background:#eef4ff; color:#1d4ed8; }
+.grid { display:grid; grid-template-columns:repeat(auto-fit,minmax(260px,1fr)); gap:14px; }
+.date { font-size:13px; font-weight:700; }
+nav { display:flex; gap:12px; flex-wrap:wrap; margin-top:18px; }
+nav a { color:#355e3b; font-weight:700; }
+.label { font-weight:700; color:#355e3b; }
+.report-main { max-width:860px; }
+.back { margin-bottom:20px; }
+@page { size:A4; margin:16mm 14mm; }
+@media print { body { background:#fff; } header, main, footer { padding:0; } .back { display:none; } .card, .note { break-inside:avoid; box-shadow:none; } }
+</style>
+</head>
+<body>
+  <main class="report-main">
+    <p class="back"><a href="../index.html">← 一覧へ戻る</a></p>
+    <section class="hero-card"><div class="eyebrow">AI news report</div><h1>AIニュース週間サマリー - 2026-11-28</h1></section>
+<p>対象期間: 2026-11-22〜2026-11-28</p>
+<section class="card"><h2>入力レポート</h2>
+<ul>
+<li>2026-11-22, 2026-11-23, 2026-11-24, 2026-11-25, 2026-11-26, 2026-11-27, 2026-11-28 の日次7本</li>
+<li>不足日はなし。各日次に記録された一次情報と、その公開日・対象範囲を入力として整理した。</li>
+</ul>
+</section>
+<section class="card"><h2>今週の大きな流れ</h2>
+<p>### 1. エージェントは長時間実行、GUI操作、外部ツール提供まで広がり、権限と停止条件が中心課題になった</p>
+<p>OpenAIは期限認識と非同期入力を持つパーソナルエージェントの実装を示し、Anthropicは企業向けcomputer useと、MCP経由でSkillsや長時間タスクを提供する仕組みを公開しました。AIが返答だけでなく、待機中の作業継続、画面操作、外部機能の呼び出しを担うほど、対象アプリ、読み書き権限、期限、確認点、失敗時の停止をアプリ側で固定する必要があります。</p>
+<p>### 2. 高能力化に対し、監視器や安全評価そのものを敵対的に試す必要が明確になった</p>
+<p>OpenAIはGPT-6.2の高いサイバー・生物領域能力と、敵対的蒸留への多層防御を公表しました。一方、監視器研究は攻撃方策の作り方だけで偽陰性率が大きく動くことを示し、単一のきれいな評価集への合格では安全性を判断できないと指摘しています。モデル、監視器、権限制御、利用ログ、独立した攻撃評価を重ねる流れです。</p>
+<p>### 3. 科学AIは専門ベンチマークとツール連携を得たが、計算結果と実験的妥当性の境界が残った</p>
+<p>MedChemBenchは分子構造の復元、説明、候補順位、物性予測を分けて評価し、Mass Spec Skillsは専門解析ツールと根拠整理をエージェントへ組み込みました。汎用モデルによるタンパク質設計研究や医療向けモデル構成も登場しています。ただし、文献由来の問題での成績、計算上の候補、引用付き回答は、未知試料、臨床判断、湿式実験の成功を保証しません。</p>
+<p>### 4. マルチモーダル・長文脈・検索基盤は拡大し、出典、ライセンス、資源、不要変更の検証が重要になった</p>
+<p>AppleのDepth Pro 2、TencentのHy4、BaiduのERNIE 5.5 Flash Preview、SenseNova U1.6など、画像・動画・長文脈を扱う公開モデルが増えました。Googleは引用付き文書検索を一つのAPIへ統合しました。同時に、巨大モデルの推論資源、研究用途や商用条件、透明面や暗所での誤差、検索漏れを用途別に確かめる必要があります。コーディングエージェントでは、解決済み軌跡にも挙動を変える不要編集が残るとの分析が加わりました。</p>
+<p>### 5. 個人化・複数人利用では「誰の事実・権限・意図か」を分けることが新しい評価軸になった</p>
+<p>Google Searchは個人データを使うPersonal Intelligenceを拡張しましたが、社会的意図の評価研究は、相談者の主観を介するとモデルも思い込みに引かれやすいことを示しました。複数人音声エージェントのμ-Benchでも、発話者帰属、会話スレッド、権限、プライバシーが弱点でした。個人化された便利さと、観測事実、話者、同意、操作権限の明示を同時に設計する必要があります。</p>
+</section>
+<section class="note"><h2>ユグ的に気になるもの特集</h2>
+<p>今週いちばん気になるのは、<strong>高能力なエージェントを、独立した失敗シナリオと最小権限で評価する流れ</strong>です。</p>
+<p>1. 通常タスクとは別に、古い値、矛盾指示、権限外要求、悪意ある画面表示を含む試験集を持つ。</p>
+<p>2. モデルの成功率だけでなく、監視器の見逃し、不要操作、確認回数、停止までの時間を記録する。</p>
+<p>3. 発話者、対象ケージ、許可された操作、情報の共有範囲をツール呼び出し前に検証する。</p>
+<p>4. コードや設定の変更は対象差分だけを検査し、不要編集を自動適用しない。</p>
+<p>5. 加温・給餌・健康判断はAIから独立した上限、手動確認、専門家への引き継ぎを残す。</p>
+</section>
+<section class="card"><h2>ぬし向け実験候補</h2>
+<ul>
+<li>読み取り専用の模擬飼育ログで、通常、古いセンサー値、矛盾した記録、権限外操作誘導の各10例を作り、回答、保留、確認、誤操作要求を比較する。実機制御へは接続しない。</li>
+<li>家族2〜3人の模擬会話を使い、発話者、対象ケージ、閲覧権限を正しく保持できるかを測る。曖昧な操作依頼の正解は「実行せず確認」とする。</li>
+<li>小さな設定修正を隔離した複製環境で実行し、最終差分の各変更について必要性、テスト、ロールバック可否を記録する。生体環境へ自動反映しない。</li>
+</ul>
+</section>
+<section class="card"><h2>来週も追いたいこと</h2>
+<ul>
+<li>GPT-6.2と敵対的蒸留対策の外部評価、未知攻撃への耐性、提供範囲の変化</li>
+<li>computer useとMCP長時間タスクのプロンプトインジェクション対策、権限制御、監査ログ</li>
+<li>MedChemBench、Mass Spec Skills、タンパク質設計の独立再現と実験検証</li>
+<li>Depth Pro 2などの透明面、反射、暗所、動画時系列での誤差と必要計算資源</li>
+<li>μ-Benchと社会的意図評価の実音声、文化差、家庭内権限への転移</li>
+</ul>
+</section>
+<section class="card"><h2>主な一次情報</h2>
+<ul>
+<li><a href="https://developers.openai.com/blog/time-awareness-and-async-input-for-personal-agents">https://developers.openai.com/blog/time-awareness-and-async-input-for-personal-agents</a></li>
+<li><a href="https://support.claude.com/en/articles/18483812-set-up-computer-use-for-team-and-enterprise-plans">https://support.claude.com/en/articles/18483812-set-up-computer-use-for-team-and-enterprise-plans</a></li>
+<li><a href="https://claude.com/resources/articles/skills-over-mcp-tasks-and-more">https://claude.com/resources/articles/skills-over-mcp-tasks-and-more</a></li>
+<li><a href="https://openai.com/index/combatting-adversarial-distillation/">https://openai.com/index/combatting-adversarial-distillation/</a></li>
+<li><a href="https://arxiv.org/abs/2611.34934">https://arxiv.org/abs/2611.34934</a></li>
+<li><a href="https://openai.com/index/introducing-medchembench/">https://openai.com/index/introducing-medchembench/</a></li>
+<li><a href="https://research.google/blog/verifiable-social-reasoning-for-llm-assistants/">https://research.google/blog/verifiable-social-reasoning-for-llm-assistants/</a></li>
+<li><a href="https://arxiv.org/abs/2611.34920">https://arxiv.org/abs/2611.34920</a></li>
+<li><a href="https://arxiv.org/abs/2611.34875">https://arxiv.org/abs/2611.34875</a></li>
+</ul>
+</section>
+  </main>
+  <footer>Generated by ユグ 🦎</footer>
+</body>
+</html>
